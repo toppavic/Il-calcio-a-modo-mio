@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Gli Imbattibili – La linea difensiva</title>
+<style>
+  @font-face { font-family: Oswald; src: url(../gli-imbattibili/font/oswald.woff2) format("woff2"); font-weight: 200 700; }
+  @font-face { font-family: Inter; src: url(../gli-imbattibili/font/inter.woff2) format("woff2"); font-weight: 100 900; }
+  @page { size: A4; margin: 0; }
+  :root {
+    --verde: #0f3d2e;
+    --verde-2: #1d5c45;
+    --prato: #3f8f5a;
+    --prato-2: #46995f;
+    --oro: #d4a017;
+    --testo: #1d2421;
+    --tenue: #5d6b65;
+    --carta: #ffffff;
+    --fondo: #f3f5f2;
+    --rosso: #c8372d;
+    --blu: #2a5db0;
+    --giallo: #f2c230;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--carta); color: var(--testo); font-family: Inter, "Liberation Sans", sans-serif; font-size: 10.5pt; line-height: 1.5; }
+  .page { width: 210mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; padding: 18mm 18mm 20mm; }
+  .page:last-child { page-break-after: auto; }
+  h1, h2, h3, .oswald { font-family: Oswald, "DejaVu Sans Condensed", sans-serif; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
+  h2 { font-size: 22pt; color: var(--verde); line-height: 1.1; }
+  h3 { font-size: 13pt; color: var(--verde); margin: 0 0 2mm; }
+  p { margin: 0 0 3mm; }
+  .kicker { font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .18em; font-size: 9pt; color: var(--oro); }
+  .footer { position: absolute; left: 18mm; right: 18mm; bottom: 9mm; display: flex; justify-content: space-between; font-size: 8pt; color: var(--tenue); border-top: 1px solid #dfe5e1; padding-top: 2.5mm; }
+  .footer b { color: var(--verde); font-family: Oswald, sans-serif; letter-spacing: .08em; font-weight: 500; }
+
+  /* Copertina */
+  .cover { background: var(--verde); color: #fff; padding: 0; }
+  .cover svg.bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .cover .inner { position: absolute; left: 20mm; right: 20mm; top: 34mm; }
+  .cover .brand { font-family: Oswald, sans-serif; letter-spacing: .3em; text-transform: uppercase; font-size: 10pt; color: var(--oro); }
+  .cover h1 { font-size: 64pt; line-height: .95; margin: 8mm 0 6mm; color: #fff; }
+  .cover h1 span { color: var(--oro); display: block; }
+  .cover .sub { font-size: 14pt; max-width: 135mm; color: #dce8e2; line-height: 1.4; }
+  .cover .badge { position: absolute; left: 20mm; bottom: 26mm; right: 20mm; display: flex; gap: 6mm; }
+  .cover .badge > div { border: 1px solid rgba(255,255,255,.35); border-radius: 3mm; padding: 4mm 5mm; flex: 1; }
+  .cover .badge .n { font-family: Oswald, sans-serif; font-size: 22pt; color: var(--oro); line-height: 1; }
+  .cover .badge .l { font-size: 8.5pt; text-transform: uppercase; letter-spacing: .1em; color: #cfe0d8; margin-top: 1.5mm; }
+  .cover .prova { position: absolute; top: 14mm; right: 20mm; font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .15em; font-size: 8.5pt; background: var(--oro); color: var(--verde); padding: 1.5mm 3.5mm; border-radius: 1mm; }
+
+  /* Scheda */
+  .head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid var(--verde); padding-bottom: 4mm; margin-bottom: 7mm; }
+  .meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-bottom: 8mm; }
+  .meta > div { background: var(--fondo); border-radius: 2mm; padding: 3.5mm 4mm; }
+  .meta .l { font-size: 7.5pt; text-transform: uppercase; letter-spacing: .1em; color: var(--tenue); }
+  .meta .v { font-family: Oswald, sans-serif; font-size: 15pt; color: var(--verde); line-height: 1.2; }
+  table { width: 100%; border-collapse: collapse; }
+  .programma td { padding: 3.5mm 2mm; border-bottom: 1px solid #e3e8e5; vertical-align: top; }
+  .programma td.num { font-family: Oswald, sans-serif; color: var(--oro); font-size: 16pt; width: 12mm; line-height: 1; }
+  .programma td.min { font-family: Oswald, sans-serif; color: var(--verde); font-size: 12pt; text-align: right; width: 22mm; white-space: nowrap; }
+  .programma .t { font-weight: 600; }
+  .programma .d { color: var(--tenue); font-size: 9.5pt; }
+  .timeline { display: flex; height: 7mm; border-radius: 1.5mm; overflow: hidden; margin: 6mm 0 2mm; }
+  .timeline div { color: #fff; font-size: 7.5pt; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+  .legenda { margin-top: 9mm; background: var(--fondo); border-radius: 2mm; padding: 5mm 6mm; }
+  .legenda .items { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm; margin-top: 2mm; }
+  .legenda .it { display: flex; align-items: center; gap: 3mm; font-size: 9.5pt; }
+
+  /* Esercitazioni */
+  .ex-title { display: flex; align-items: baseline; gap: 4mm; margin-bottom: 1mm; }
+  .ex-title .num { font-family: Oswald, sans-serif; font-size: 30pt; color: var(--oro); line-height: 1; }
+  .ex-sub { display: flex; gap: 2mm; flex-wrap: wrap; margin: 2mm 0 5mm; }
+  .chip { font-size: 8pt; background: var(--fondo); color: var(--verde); border-radius: 10mm; padding: 1mm 3mm; font-weight: 600; }
+  .diagram { width: 100%; display: block; border-radius: 2mm; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; margin-top: 5mm; }
+  .box { border: 1px solid #dfe5e1; border-radius: 2mm; padding: 4mm 5mm; }
+  .box h4 { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 11pt; letter-spacing: .04em; margin-bottom: 1.5mm; }
+  ul.clean { list-style: none; }
+  ul.clean li { padding-left: 5mm; position: relative; margin-bottom: 1.2mm; }
+  ul.clean li::before { content: ""; position: absolute; left: 0; top: 2mm; width: 2mm; height: 2mm; background: var(--oro); border-radius: 50%; }
+  .chiave { margin-top: 5mm; border-left: 4px solid var(--oro); background: #fbf6e6; padding: 3.5mm 5mm; border-radius: 0 2mm 2mm 0; }
+  .chiave .kicker { color: #9a7410; display: block; margin-bottom: 1mm; }
+  .stazioni td { padding: 3mm 3mm; border-bottom: 1px solid #e3e8e5; vertical-align: middle; }
+  .stazioni th { text-align: left; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .1em; color: var(--tenue); padding: 0 3mm 2mm; font-weight: 600; border-bottom: 2px solid var(--verde); }
+  .stazioni .s { font-family: Oswald, sans-serif; font-size: 15pt; color: var(--oro); width: 12mm; }
+  .stazioni .vol { font-family: Oswald, sans-serif; color: var(--verde); white-space: nowrap; font-size: 11pt; }
+  .prog { display: grid; grid-template-columns: 100mm 1fr; gap: 6mm; align-items: start; margin-bottom: 6mm; }
+  .prog .step { font-family: Oswald, sans-serif; font-size: 9pt; letter-spacing: .14em; text-transform: uppercase; color: var(--oro); }
+  .prog h3 { font-size: 12.5pt; }
+  .prog p { font-size: 9.8pt; }
+</style>
+<style>
+  .stepper { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin: 4mm 0 8mm; }
+  .stepper > div { background: var(--fondo); border-radius: 2mm; padding: 5mm; border-top: 4px solid var(--oro); }
+  .stepper .n { font-family: Oswald, sans-serif; font-size: 26pt; color: var(--oro); line-height: 1; }
+  .stepper .t { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 12pt; margin: 2mm 0 1mm; }
+  .stepper .d { font-size: 9pt; color: var(--tenue); line-height: 1.4; }
+  .three { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; margin-top: 5mm; }
+  .three .box { font-size: 9.6pt; }
+  .bozza { position: absolute; top: 9mm; right: 18mm; font-family: Oswald, sans-serif; font-size: 8pt; letter-spacing: .15em; text-transform: uppercase; color: #9a7410; border: 1px solid #e3c87a; background: #fbf6e6; padding: 1mm 3mm; border-radius: 1mm; }
+  .cover .bozza { top: 14mm; right: 20mm; background: var(--oro); color: var(--verde); border: 0; }
+</style>
+</head>
+<body>
+<!-- SVG riutilizzabili -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <marker id="freccia" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ffffff"/>
+    </marker>
+    <marker id="freccia-oro" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2c230"/>
+    </marker>
+    <marker id="freccia-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d2421"/>
+    </marker>
+    <pattern id="strisce" width="60" height="400" patternUnits="userSpaceOnUse">
+      <rect width="30" height="400" fill="#3f8f5a"/><rect x="30" width="30" height="400" fill="#46995f"/>
+    </pattern>
+    <pattern id="strisce-h" width="500" height="60" patternUnits="userSpaceOnUse">
+      <rect width="500" height="30" fill="#3f8f5a"/><rect y="30" width="500" height="30" fill="#46995f"/>
+    </pattern>
+    <g id="pA"><circle r="11" fill="#c8372d" stroke="#fff" stroke-width="2"/></g>
+    <g id="pB"><circle r="11" fill="#2a5db0" stroke="#fff" stroke-width="2"/></g>
+    <g id="pP"><circle r="11" fill="#f2c230" stroke="#1d2421" stroke-width="2"/></g>
+    <g id="pJ"><circle r="11" fill="#ffffff" stroke="#1d2421" stroke-width="2"/></g>
+    <g id="palla"><circle r="5" fill="#fff" stroke="#1d2421" stroke-width="1.5"/></g>
+  </defs>
+</svg>
+<section class="page cover">
+  <svg class="bg" viewBox="0 0 210 297" preserveAspectRatio="none"><g fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width=".6"><rect x="15" y="150" width="180" height="200"/><rect x="60" y="150" width="90" height="35"/><rect x="82" y="150" width="46" height="12"/><line x1="40" y1="205" x2="170" y2="205" stroke-dasharray="3 3"/></g></svg>
+  <div class="bozza">Bozza</div>
+  <div class="inner">
+    <div class="brand">Il calcio a modo mio · Gli Imbattibili</div>
+    <h1>La linea<span>difensiva</span></h1>
+    <p class="sub">Una progressione in tre esercitazioni per costruire la difesa a 4 della Juniores che ha vinto il campionato provinciale senza perdere una partita.</p>
+  </div>
+  <div class="badge">
+    <div><div class="n">3</div><div class="l">Esercitazioni</div></div>
+    <div><div class="n">15–20'</div><div class="l">Per seduta</div></div>
+    <div><div class="n">0</div><div class="l">Sconfitte in stagione</div></div>
+  </div>
+</section>
+<section class="page">
+  <div class="bozza">Bozza</div>
+  <div class="kicker">Introduzione</div>
+  <h2>Come usare questa progressione</h2>
+  <p style="margin-top:5mm">Le tre esercitazioni sono pensate per essere svolte <b>una dopo l'altra</b>: ognuna parte da quella precedente e aggiunge una situazione nuova. Si lavora con la linea a 4 e il portiere mentre alcuni attaccanti muovono la palla davanti alla difesa. Il lavoro è guidato direttamente dall'allenatore.</p>
+  <div class="stepper">
+    <div><div class="n">1</div><div class="t">Scivolamenti</div><div class="d">La linea si muove insieme seguendo la palla</div></div>
+    <div><div class="n">2</div><div class="t">Spaccare la linea</div><div class="d">L'attaccante punta la difesa palla al piede</div></div>
+    <div><div class="n">3</div><div class="t">Sul lancio</div><div class="d">La difesa attacca il pallone lungo</div></div>
+  </div>
+  <div class="chiave">
+    <span class="kicker">Il principio che lega tutto</span>
+    La linea si muove insieme e guarda sempre la palla. Quando la palla viene attaccata un difensore esce, gli altri accorciano e gli danno copertura.
+  </div>
+  <div class="legenda">
+    <div class="kicker" style="color:var(--verde)">Legenda degli schemi</div>
+    <div class="items">
+      <div class="it"><svg width="26" height="26" viewBox="-13 -13 26 26"><use href="#pA"/></svg> Attaccanti</div>
+      <div class="it"><svg width="26" height="26" viewBox="-13 -13 26 26"><use href="#pB"/></svg> Difensori</div>
+      <div class="it"><svg width="26" height="26" viewBox="-13 -13 26 26"><use href="#pP"/></svg> Portiere</div>
+      <div class="it"><svg width="26" height="26" viewBox="-13 -13 26 26"><use href="#palla"/></svg> Palla</div>
+      <div class="it"><svg width="60" height="14" viewBox="0 0 60 14"><line x1="2" y1="7" x2="56" y2="7" stroke="#f2c230" stroke-width="2.5" marker-end="url(#freccia-oro)"/></svg> Movimento del difensore</div>
+      <div class="it"><svg width="60" height="14" viewBox="0 0 60 14"><line x1="2" y1="7" x2="56" y2="7" stroke="#1d2421" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#freccia-scura)"/></svg> Passaggio o lancio</div>
+      <div class="it"><svg width="60" height="14" viewBox="0 0 60 14"><polyline points="2,7 8,2 14,12 20,2 26,12 32,2 38,12 44,7 54,7" fill="none" stroke="#1d2421" stroke-width="2" marker-end="url(#freccia-scura)"/></svg> Conduzione palla</div>
+    </div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>La costruzione della linea difensiva</span><span>2</span></div>
+</section>
+<section class="page">
+  <div class="bozza">Bozza</div>
+  <div class="kicker">Progressione 1 di 3</div>
+  <div class="ex-title"><h2>Scivolamenti</h2></div>
+  <p style="color:var(--tenue);margin:1mm 0 4mm"><b style="color:var(--verde)">Obiettivo:</b> La linea si muove insieme in base alla posizione della palla.</p>
+  <svg class="diagram" style="width:150mm;margin:0 auto" viewBox="0 0 500 380">
+      <rect width="500" height="380" fill="url(#strisce)"/>
+      <g fill="none" stroke="#fff" stroke-width="2.5">
+        <rect x="10" y="10" width="480" height="360"/>
+        <rect x="103" y="10" width="294" height="110"/><rect x="186" y="10" width="128" height="38"/>
+        <path d="M205,120 A55,55 0 0 0 295,120"/>
+      </g>
+      <rect x="216" y="2" width="68" height="8" fill="#fff"/>
+      <use href="#pP" x="250" y="32"/>
+      <!-- attaccanti -->
+      <use href="#pA" x="55" y="215"/><use href="#pA" x="165" y="320"/><use href="#pA" x="320" y="330"/><use href="#pA" x="440" y="285"/>
+      <use href="#palla" x="72" y="226"/>
+      <path d="M430,285 L333,325" stroke="#fff" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#freccia)"/>
+      <path d="M308,330 L180,322" stroke="#fff" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#freccia)"/>
+      <path d="M155,312 L66,226" stroke="#fff" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#freccia)"/>
+      <!-- difensori -->
+      <path d="M120,140 L97,186" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M245,150 L198,150" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M325,150 L278,148" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M405,150 L358,146" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <use href="#pB" x="92" y="195"/><use href="#pB" x="186" y="150"/><use href="#pB" x="266" y="148"/><use href="#pB" x="346" y="146"/>
+      <g font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">
+        <text x="92" y="199">2</text><text x="186" y="154">5</text><text x="266" y="152">6</text><text x="346" y="150">3</text>
+      </g>
+    </svg>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla. I difensori si spostano curando la <b>posizione del corpo</b> e la <b>distanza tra i compagni</b>, sempre con l'attenzione rivolta alla palla.</p><p>Quando la palla arriva sull'esterno la linea si spacca e forma <b>due linee</b>: il difensore più vicino esce sulla palla e gli altri restano dietro.</p></div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Posizione del corpo</li><li>Distanza tra i compagni</li><li>Occhi sempre sulla palla</li><li><b>Dare sempre copertura al compagno che attacca la palla</b></li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>La costruzione della linea difensiva</span><span>3</span></div>
+</section>
+<section class="page">
+  <div class="bozza">Bozza</div>
+  <div class="kicker">Progressione 2 di 3</div>
+  <div class="ex-title"><h2>Spaccare la linea</h2></div>
+  <p style="color:var(--tenue);margin:1mm 0 4mm"><b style="color:var(--verde)">Obiettivo:</b> Gestire l'attaccante che punta la linea palla al piede.</p>
+  <svg class="diagram" style="width:150mm;margin:0 auto" viewBox="0 0 500 380">
+      <rect width="500" height="380" fill="url(#strisce)"/>
+      <g fill="none" stroke="#fff" stroke-width="2.5">
+        <rect x="10" y="10" width="480" height="360"/>
+        <rect x="103" y="10" width="294" height="110"/><rect x="186" y="10" width="128" height="38"/>
+        <path d="M205,120 A55,55 0 0 0 295,120"/>
+      </g>
+      <rect x="216" y="2" width="68" height="8" fill="#fff"/>
+      <use href="#pP" x="250" y="32"/>
+      <!-- attaccanti -->
+      <use href="#pA" x="250" y="310"/><use href="#pA" x="75" y="255"/><use href="#pA" x="425" y="255"/><use href="#pA" x="160" y="335"/>
+      <polyline points="250,296 243,286 257,276 243,266 257,256 243,246 250,236 250,226" fill="none" stroke="#fff" stroke-width="2.5" marker-end="url(#freccia)"/>
+      <use href="#palla" x="262" y="300"/>
+      <!-- difensori: la linea scappa fino al limite dell'area, il 5 esce sulla palla -->
+      <path d="M140,175 L140,140" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M300,175 L300,140" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M380,175 L380,140" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M215,170 L240,205" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <use href="#pB" x="140" y="128"/><use href="#pB" x="300" y="128"/><use href="#pB" x="380" y="128"/><use href="#pB" x="246" y="215"/>
+      <g font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">
+        <text x="140" y="132">2</text><text x="300" y="132">6</text><text x="380" y="132">3</text><text x="246" y="219">5</text>
+      </g>
+      <g opacity=".45"><circle cx="140" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="215" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="300" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="380" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/></g>
+    </svg>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla e i difensori si muovono come nella progressione 1.</p><p>Quando un attaccante <b>punta la linea</b> palla al piede, la linea <b>scappa fino al limite dell'area</b>. Poi si spacca: un difensore esce ad attaccare la palla, gli altri restano in linea.</p></div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Scappare insieme, senza lasciare buchi</li><li>Fermarsi al limite dell'area</li><li>Un solo difensore esce sulla palla</li><li>Gli altri restano in linea e coprono</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>La costruzione della linea difensiva</span><span>4</span></div>
+</section>
+<section class="page">
+  <div class="bozza">Bozza</div>
+  <div class="kicker">Progressione 3 di 3</div>
+  <div class="ex-title"><h2>Spaccare la linea sul lancio</h2></div>
+  <p style="color:var(--tenue);margin:1mm 0 4mm"><b style="color:var(--verde)">Obiettivo:</b> Difendere sul pallone lungo alle spalle o davanti alla linea.</p>
+  <svg class="diagram" style="width:150mm;margin:0 auto" viewBox="0 0 500 380">
+      <rect width="500" height="380" fill="url(#strisce)"/>
+      <g fill="none" stroke="#fff" stroke-width="2.5">
+        <rect x="10" y="10" width="480" height="360"/>
+        <rect x="103" y="10" width="294" height="110"/><rect x="186" y="10" width="128" height="38"/>
+        <path d="M205,120 A55,55 0 0 0 295,120"/>
+      </g>
+      <rect x="216" y="2" width="68" height="8" fill="#fff"/>
+      <use href="#pP" x="250" y="32"/>
+      <!-- attaccanti -->
+      <use href="#pA" x="80" y="330"/><use href="#pA" x="210" y="300"/><use href="#pA" x="330" y="315"/><use href="#pA" x="440" y="270"/>
+      <use href="#palla" x="96" y="336"/>
+      <path d="M82,315 Q60,230 150,200" stroke="#fff" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#freccia)"/>
+      <text x="40" y="270" font-family="Oswald" font-size="12" fill="#fff" transform="rotate(-70 40 270)" letter-spacing="2">LANCIO</text>
+      <!-- difensori -->
+      <path d="M170,160 L158,190" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M245,165 L232,135" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M320,165 L310,135" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <path d="M100,165 L118,140" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+      <use href="#pB" x="155" y="200"/><use href="#pB" x="230" y="125"/><use href="#pB" x="307" y="125"/><use href="#pB" x="124" y="130"/>
+      <g font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">
+        <text x="155" y="204">5</text><text x="230" y="129">6</text><text x="307" y="129">3</text><text x="124" y="134">2</text>
+      </g>
+    </svg>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla e i difensori si muovono come sopra.</p><p>Sul <b>lancio</b> la difesa si spacca: il difensore <b>più vicino alla palla</b> la attacca e la respinge, gli altri gli danno copertura.</p></div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Leggere il lancio in anticipo</li><li>Attacca la palla il più vicino</li><li>Respingere senza esitare</li><li>Gli altri coprono il compagno</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>La costruzione della linea difensiva</span><span>5</span></div>
+</section>
+</body>
+</html>
