@@ -25,6 +25,8 @@ partita**. La serie si chiama **"Gli Imbattibili"**.
 - `prodotti/linea-difensiva/` – PDF tematico sulla linea difensiva (bozza, messo da parte)
 - `prodotti/stili-grafici/` – prove di stile e copertine scartate (solo riferimento)
 - `strumenti/render.js` – HTML → PDF A4 + anteprime PNG
+- `marketing/social/` – post social: `genera-post.py` crea i caroselli 4:5 (IG/FB) e 9:16 (TikTok),
+  `strumenti/render-post.js` li salva in `immagini/`, testi e indicazioni in `testi-dei-post.md`
 
 ## Come si crea il PDF di un nuovo allenamento
 
@@ -74,6 +76,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 3 ✅ completo e confermato (125'; gioco di posizione 30 × 30 m, 15 passaggi = 1 punto).
 - Allenamento 4 ✅ completo (95' + suicidi; marcature preventive; 3' di recupero tra i blocchi atletici). Cross in diagonale invertita confermato.
 - Prossimo: **Allenamento 5**.
+- Marketing: Etsy da solo non porta clienti (già provato senza vendite). Strategia: post gratuiti
+  sui social (gruppi Facebook di allenatori, Instagram, TikTok) con la storia della Juniores imbattuta,
+  link a Etsy solo nel profilo. Primi 3 post pronti (cross, partita preventiva, gioco di posizione).
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.

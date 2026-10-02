@@ -1,0 +1,189 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Post social</title><style>
+@font-face { font-family: Oswald; src: url(../../prodotti/gli-imbattibili/font/oswald.woff2) format("woff2"); font-weight: 200 700; }
+@font-face { font-family: Inter; src: url(../../prodotti/gli-imbattibili/font/inter.woff2) format("woff2"); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #888; font-family: Inter, sans-serif; }
+.slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin: 0 0 20px; }
+h1, h2 { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppercase; }
+.cop, .fine { background: #0c120f; color: #fff; }
+.cop .bgimg { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; transform: rotate(-4deg) scale(1.08); filter: grayscale(1) contrast(1.1); opacity: .55; }
+.cop .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,18,15,.97) 0%, rgba(12,18,15,.9) 36%, rgba(12,18,15,.5) 52%, rgba(12,18,15,.85) 66%, rgba(12,18,15,.98) 80%); }
+.cop .logo { position: absolute; top: 40px; left: 50%; transform: translateX(-50%); width: 520px; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }
+.cop .txt { position: absolute; left: 80px; right: 80px; bottom: 80px; }
+.kick { font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-size: 28px; color: #84b94a; }
+.cop h1, .fine h1 { font-size: 130px; line-height: .92; margin: 20px 0 28px; }
+.cop h1 span, .fine h1 span { color: #84b94a; display: block; }
+.sub { font-size: 36px; line-height: 1.4; color: #dfe6e1; }
+.sub b { color: #fff; }
+.scorri { margin-top: 40px; font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .15em; font-size: 30px; color: #84b94a; }
+.int { background: #fff; padding: 90px 80px 0; color: #1d2421;  }
+.int .num { position: absolute; top: 40px; right: 60px; font-family: Oswald, sans-serif; font-size: 28px; color: #9aa59f; }
+.kicker { font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .2em; font-size: 28px; color: #d4a017; }
+.int h2 { font-size: 78px; line-height: 1.02; color: #0f3d2e; margin: 10px 0 40px; }
+.riq { display: flex; justify-content: center; }
+.riq .schema { width: 100%; max-height: 700px; display: block; border-radius: 16px; }
+.desc { font-size: 36px; line-height: 1.45; margin-top: 40px; }
+.desc b, .punti b { color: #0f3d2e; }
+.punti { list-style: none; margin-top: 20px; }
+.punti li { font-size: 42px; line-height: 1.35; padding: 34px 0 34px 70px; position: relative; border-bottom: 2px solid #e3e8e5; }
+.punti li::before { content: ""; position: absolute; left: 0; top: 50px; width: 30px; height: 30px; background: #d4a017; border-radius: 50%; }
+.marchio { position: absolute; left: 80px; right: 80px; bottom: 50px; display: flex; justify-content: space-between; align-items: center; border-top: 3px solid #0f3d2e; padding-top: 22px; font-size: 26px; color: #5d6b65; }
+.marchio b { font-family: Oswald, sans-serif; color: #0f3d2e; letter-spacing: .12em; font-weight: 600; font-size: 30px; }
+.fine { display: flex; flex-direction: column; justify-content: center; padding: 0 80px; }
+.fine .logo2 { width: 340px; margin: 0 0 30px -20px; -webkit-mask-image: linear-gradient(180deg, #000 75%, transparent 100%); }
+.azioni { display: flex; gap: 24px; margin-top: 60px; }
+.azioni div { flex: 1; text-align: center; font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: 32px; padding: 26px 10px; border-radius: 14px; background: #84b94a; color: #0c120f; }
+.azioni div + div { background: transparent; color: #fff; border: 2px solid #84b94a; }
+</style></head><body><svg width="0" height="0" style="position:absolute">
+  <defs>
+    <marker id="freccia" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ffffff"/>
+    </marker>
+    <marker id="freccia-oro" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2c230"/>
+    </marker>
+    <marker id="freccia-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d2421"/>
+    </marker>
+    <pattern id="strisce" width="60" height="400" patternUnits="userSpaceOnUse">
+      <rect width="30" height="400" fill="#3f8f5a"/><rect x="30" width="30" height="400" fill="#46995f"/>
+    </pattern>
+    <pattern id="strisce-h" width="500" height="60" patternUnits="userSpaceOnUse">
+      <rect width="500" height="30" fill="#3f8f5a"/><rect y="30" width="500" height="30" fill="#46995f"/>
+    </pattern>
+    <g id="pA"><circle r="11" fill="#c8372d" stroke="#fff" stroke-width="2"/></g>
+    <g id="pB"><circle r="11" fill="#2a5db0" stroke="#fff" stroke-width="2"/></g>
+    <g id="pP"><circle r="11" fill="#f2c230" stroke="#1d2421" stroke-width="2"/></g>
+    <g id="pJ"><circle r="11" fill="#ffffff" stroke="#1d2421" stroke-width="2"/></g>
+    <g id="palla"><circle r="5" fill="#fff" stroke="#1d2421" stroke-width="1.5"/></g>
+  </defs>
+</svg>
+<section class="slide cop">
+  <img class="bgimg" src="../../materiale/precampionato/allenamento-04.jpg">
+  <div class="veil"></div>
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
+    <h1>Come difendevamo<span>sui cross</span></h1>
+    <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b></p>
+    <div class="scorri">Scorri →</div>
+  </div>
+</section>
+<section class="slide int">
+  <div class="num">2/4</div>
+  <div class="kicker">Esercitazione</div>
+  <h2>La diagonale invertita</h2>
+  <div class="riq"><svg class="schema" viewBox="0 0 500 380">
+      <rect width="500" height="380" fill="url(#strisce)"/>
+      <g fill="none" stroke="#fff" stroke-width="2.5">
+        <rect x="10" y="10" width="480" height="360"/>
+        <rect x="103" y="10" width="294" height="110"/><rect x="186" y="10" width="128" height="38"/>
+        <path d="M205,120 A55,55 0 0 0 295,120"/>
+      </g>
+      <rect x="216" y="2" width="68" height="8" fill="#fff"/>
+      <use href="#pP" x="250" y="32"/>
+      <path d="M236,350 L72,346" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M62,334 L58,104" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M40,250 L40,62" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M62,44 Q170,6 262,62" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><use href="#pA" x="40" y="46"/><text x="40" y="50.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pA" x="60" y="346"/><text x="60" y="350.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><use href="#pA" x="440" y="92"/><use href="#pA" x="450" y="330"/><use href="#pJ" x="250" y="350"/><text x="250" y="354.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">M</text><use href="#palla" x="56" y="54"/><use href="#pB" x="140" y="60"/><text x="140" y="64.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="200" y="74"/><text x="200" y="78.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pB" x="262" y="88"/><text x="262" y="92.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pB" x="324" y="102"/><text x="324" y="106.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><use href="#pB" x="172" y="108"/><text x="172" y="112.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">4</text><use href="#pB" x="232" y="122"/><text x="232" y="126.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">8</text>
+    </svg></div>
+  <p class="desc">Il mister dà palla a <b>X1</b>, che la passa a <b>X2</b>. X2 arriva sul fondo e crossa. La linea si sistema per <b>respingere</b>.</p>
+  <div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>
+</section>
+<section class="slide int">
+  <div class="num">3/4</div>
+  <div class="kicker">La diagonale invertita</div>
+  <h2>Chi va dove</h2>
+  <ul class="punti"><li>Il <b>terzino lato palla</b> leggermente sotto la linea della palla</li><li><b>Centrali</b> e <b>terzino opposto</b> in leggera diagonale</li><li>Il <b>centrocampista più vicino</b> a cerniera tra terzino e centrale</li><li><b>L'altro centrocampista</b> tra i due centrali</li></ul>
+  <div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>
+</section>
+<section class="slide fine">
+  <img class="logo2" src="../../materiale/brand/logo-cerchio.png">
+  <h1>Gli<span>Imbattibili</span></h1>
+  <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b>. Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.</p>
+  <div class="azioni"><div>Salva il post</div><div>Seguici per il prossimo</div></div>
+</section>
+<section class="slide cop">
+  <img class="bgimg" src="../../materiale/precampionato/allenamento-04-b.jpg">
+  <div class="veil"></div>
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
+    <h1>Il punto non vale<span>il gol</span></h1>
+    <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b></p>
+    <div class="scorri">Scorri →</div>
+  </div>
+</section>
+<section class="slide int">
+  <div class="num">2/4</div>
+  <div class="kicker">Esercitazione</div>
+  <h2>Partita “lavoro preventivo”</h2>
+  <div class="riq"><svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5">
+      <rect x="30" y="20" width="440" height="260"/><line x1="250" y1="20" x2="250" y2="280"/>
+    </g>
+    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle">50 m</text>
+    <use href="#pP" x="30" y="150"/><text x="30" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">P</text><use href="#pP" x="470" y="150"/><text x="470" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">P</text>
+    <use href="#pA" x="430" y="70"/><use href="#pA" x="430" y="135"/><use href="#pA" x="430" y="200"/><use href="#pA" x="420" y="255"/><use href="#pA" x="340" y="60"/><use href="#pA" x="345" y="255"/><use href="#pA" x="225" y="75"/><use href="#pA" x="205" y="215"/><use href="#pA" x="120" y="100"/><use href="#pA" x="120" y="205"/><use href="#pB" x="70" y="70"/><use href="#pB" x="70" y="130"/><use href="#pB" x="70" y="190"/><use href="#pB" x="70" y="245"/><use href="#pB" x="160" y="60"/><use href="#pB" x="170" y="150"/><use href="#pB" x="160" y="240"/><use href="#pB" x="285" y="85"/><use href="#pB" x="300" y="205"/><use href="#pB" x="380" y="140"/>
+    <path d="M82,190 L284,154" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <path d="M300,150 q14,-4 18,10 q2,10 -6,14" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+    <use href="#pB" x="296" y="150"/><path d="M320,160 L452,152" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <text x="300" y="128" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">SI GIRA</text>
+    <use href="#palla" x="88" y="200"/>
+  </svg></div>
+  <p class="desc">10 contro 10 su 50 m. <b>1 punto</b> a chi riceve <b>spalle alla porta e riesce a girarsi</b>. Chi difende deve stargli addosso <b>prima</b> che arrivi la palla.</p>
+  <div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>
+</section>
+<section class="slide int">
+  <div class="num">3/4</div>
+  <div class="kicker">Partita “lavoro preventivo”</div>
+  <h2>Le regole</h2>
+  <ul class="punti"><li>Massimo <b>3 tocchi</b></li><li>Vietato passare al compagno di reparto (<b>gli attaccanti sì</b>)</li><li>Nel 2° tempo: chi si gira e fa <b>laterale + verticale</b> senza essere attaccato prende <b>2 punti</b></li><li>Chi perde fa <b>5 suicidi</b>, chi vince 1, pareggio 4 per tutti</li></ul>
+  <div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>
+</section>
+<section class="slide fine">
+  <img class="logo2" src="../../materiale/brand/logo-cerchio.png">
+  <h1>Gli<span>Imbattibili</span></h1>
+  <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b>. Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.</p>
+  <div class="azioni"><div>Salva il post</div><div>Seguici per il prossimo</div></div>
+</section>
+<section class="slide cop">
+  <img class="bgimg" src="../../materiale/precampionato/allenamento-03.jpg">
+  <div class="veil"></div>
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
+    <h1>15 passaggi<span>= 1 punto</span></h1>
+    <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b></p>
+    <div class="scorri">Scorri →</div>
+  </div>
+</section>
+<section class="slide int">
+  <div class="num">2/4</div>
+  <div class="kicker">Esercitazione</div>
+  <h2>Gioco di posizione</h2>
+  <div class="riq"><svg class="schema" viewBox="60 0 380 340">
+    <rect x="60" width="380" height="340" fill="url(#strisce)"/>
+    <rect x="110" y="30" width="280" height="280" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <text x="250" y="332" font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">30 m</text>
+    <text x="415" y="175" font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">30 m</text>
+    <path d="M180,188 L240,117" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M261,110 L361,214" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <use href="#palla" x="190" y="214"/>
+    <use href="#pJ" x="250" y="30"/><text x="250" y="34.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">9</text><use href="#pJ" x="250" y="105"/><text x="250" y="109.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">10</text>
+    <use href="#pB" x="140" y="120"/><text x="140" y="124.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">11</text><use href="#pB" x="185" y="200"/><text x="185" y="204.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">4</text><use href="#pB" x="370" y="225"/><text x="370" y="229.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="235" y="280"/><text x="235" y="284.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text>
+    <use href="#pA" x="360" y="110"/><text x="360" y="114.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">7</text><use href="#pA" x="235" y="190"/><text x="235" y="194.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">8</text><use href="#pA" x="140" y="275"/><text x="140" y="279.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><use href="#pA" x="305" y="270"/><text x="305" y="274.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text>
+  </svg></div>
+  <p class="desc"><b>4 contro 4 + 2 jolly</b> (il 9 e il 10) in un quadrato di <b>30 × 30 m</b>. <b>15 passaggi</b> consecutivi = <b>1 punto</b>.</p>
+  <div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>
+</section>
+<section class="slide int">
+  <div class="num">3/4</div>
+  <div class="kicker">Gioco di posizione</div>
+  <h2>Per renderlo difficile</h2>
+  <ul class="punti"><li>Si gioca a <b>2 tocchi</b></li><li>I jolly hanno <b>1 solo tocco</b></li><li>Con meno tocchi bisogna <b>smarcarsi prima</b> e più in fretta</li></ul>
+  <div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>
+</section>
+<section class="slide fine">
+  <img class="logo2" src="../../materiale/brand/logo-cerchio.png">
+  <h1>Gli<span>Imbattibili</span></h1>
+  <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b>. Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.</p>
+  <div class="azioni"><div>Salva il post</div><div>Seguici per il prossimo</div></div>
+</section></body></html>
