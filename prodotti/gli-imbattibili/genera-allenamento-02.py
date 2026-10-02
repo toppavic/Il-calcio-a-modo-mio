@@ -7,6 +7,14 @@ a1 = (QUI / "allenamento-01.html").read_text()
 
 # Testa, stili e simboli SVG condivisi
 testa = a1[: a1.index("<!-- 1. COPERTINA -->")]
+testa = testa.replace("</style>\n</head>", """.fasi { display: grid; gap: 3mm; }
+.fase { display: grid; grid-template-columns: 64mm 1fr; gap: 6mm; align-items: center; }
+.fase svg { width: 100%; display: block; border-radius: 1.5mm; }
+.fase-t { font-size: 10pt; line-height: 1.5; color: var(--testo); }
+.fase-t .n { display: inline-flex; width: 8mm; height: 8mm; border-radius: 50%; background: var(--oro); color: var(--verde); font-family: Oswald, sans-serif; font-weight: 700; align-items: center; justify-content: center; font-size: 13pt; margin-bottom: 2mm; }
+.fase-t h4 { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 12.5pt; letter-spacing: .03em; margin-bottom: 1mm; }
+</style>
+</head>""", 1)
 testa = testa.replace("<title>Gli Imbattibili – Precampionato, Allenamento 1</title>",
                       "<title>Gli Imbattibili – Precampionato, Allenamento 2</title>")
 copertina = re.search(r'<section class="page c5">.*?</section>', a1, re.S).group(0)
@@ -150,22 +158,66 @@ ld1 = pagina_esercizio(
     "<li>Scivolare insieme seguendo la palla</li><li>Leggere il lancio prima che parta</li><li>Il difensore più vicino attacca la palla</li><li>Gli altri coprono il compagno</li>",
     chips='<span class="chip">15 minuti per gruppo, poi cambio</span><span class="chip">Conduce l\'allenatore</span>')
 
-ld2 = pagina_esercizio(
-    "Esercitazione III · Gruppo A · Progressione 2 di 3", "Ti lascio alle spalle",
-    "difendere sulla giocata verso l'attaccante, scegliendo la soluzione giusta in base a come arriva la palla.",
-    mezzo_campo(
-        freccia("M95,322 L95,262", tratteggio=True)
-        + freccia("M108,325 Q170,230 205,165", tratteggio=True)
-        + '<text x="60" y="300" font-family="Oswald" font-size="11" fill="#fff" letter-spacing="1" transform="rotate(-90 60 300)">RASOTERRA</text>'
-        + '<text x="168" y="262" font-family="Oswald" font-size="11" fill="#fff" letter-spacing="1" transform="rotate(-55 168 262)">DIETRO LA LINEA</text>'
-        + freccia("M118,205 L104,228", True) + freccia("M160,128 L138,152", True) + freccia("M240,128 L222,140", True)
-        + g(95, 335, "pA") + g(95, 250, "pA") + g(230, 325, "pA") + g(420, 300, "pA") + g(430, 200, "pA")
-        + '<use href="#palla" x="110" y="342"/>'
-        + g(120, 195, "pB", 5) + g(160, 120, "pB", 2) + g(250, 120, "pB", 6) + g(345, 120, "pB", 3)),
-    "<li>Linea a 4 + portiere</li><li>Un difensore (il 5) segue l'attaccante che viene incontro</li><li>Metà campo con area di rigore</li>",
-    "<p>Gli attaccanti muovono la palla come in figura. Quando arriva la <b>giocata sull'attaccante</b> la linea deve respingere la palla oppure <b>non far giocare l'attaccante</b>, a seconda di come arriva la palla.</p>"
-    "<p><b>Palla rasoterra</b> sull'attaccante: il difensore non lo fa giocare. <b>Palla dietro la linea</b>: la linea la respinge.</p>",
-    "<li>Riconoscere subito come arriva la palla</li><li>Rasoterra: stare attaccati all'attaccante e non farlo girare</li><li>Dietro la linea: attaccare la palla e respingerla</li><li>Chi resta dietro copre lo spazio alle spalle</li>")
+def fase(n, titolo, testo, contenuto):
+    """Mini schema di una fase, con simboli più grandi per restare leggibile."""
+    return f'''<div class="fase">
+      <svg viewBox="0 0 500 420">
+        <rect width="500" height="420" fill="url(#strisce)"/>
+        <g fill="none" stroke="#fff" stroke-width="4">
+          <rect x="10" y="10" width="480" height="400"/>
+          <rect x="95" y="10" width="310" height="115"/><rect x="180" y="10" width="140" height="42"/>
+        </g>
+        <rect x="210" y="2" width="80" height="9" fill="#fff"/>
+        {contenuto}
+      </svg>
+      <div class="fase-t"><span class="n">{n}</span><h4>{titolo}</h4>{testo}</div>
+    </div>'''
+
+
+def gg(x, y, sim, n=""):
+    col = {"pA": "#c8372d", "pB": "#2a5db0", "pP": "#f2c230"}[sim]
+    t = (f'<text x="{x}" y="{y+8}" font-family="Oswald" font-size="24" font-weight="700" '
+         f'text-anchor="middle" fill="#fff">{n}</text>') if n != "" else ""
+    return f'<circle cx="{x}" cy="{y}" r="20" fill="{col}" stroke="#fff" stroke-width="3"/>{t}'
+
+
+def ff(d, oro=False, tratt=False):
+    col, m = ("#f2c230", "freccia-oro") if oro else ("#fff", "freccia")
+    da = ' stroke-dasharray="12 9"' if tratt else ""
+    return f'<path d="{d}" stroke="{col}" stroke-width="5" fill="none"{da} marker-end="url(#{m})"/>'
+
+
+palla = lambda x, y: f'<circle cx="{x}" cy="{y}" r="9" fill="#fff" stroke="#1d2421" stroke-width="2.5"/>'
+gk = gg(250, 36, "pP")
+att = lambda: gg(60, 260, "pA") + gg(230, 345, "pA") + gg(420, 300, "pA")
+
+f1 = fase(1, "Palla all'esterno", "Il <b>2 esce</b> in pressione sull'esterno. Il 5, il 6 e il 3 fanno la <b>copertura a L</b> alle sue spalle.", gk + att()
+          + ff("M120,180 L82,232", True)
+          + gg(105, 200, "pB", 2) + gg(175, 165, "pB", 5) + gg(255, 160, "pB", 6) + gg(335, 160, "pB", 3)
+          + palla(85, 275))
+f2 = fase(2, "Scarico", "L'esterno scarica la palla indietro. La linea <b>sale per un secondo</b>, tutta insieme.", gk + att()
+          + ff("M75,275 L205,335", tratt=True)
+          + ff("M140,185 L140,222", True) + ff("M200,175 L200,212", True) + ff("M270,170 L270,207", True) + ff("M345,170 L345,207", True)
+          + gg(140, 170, "pB", 2) + gg(200, 160, "pB", 5) + gg(270, 155, "pB", 6) + gg(345, 155, "pB", 3)
+          + palla(252, 358))
+f3 = fase(3, "Lancio dietro la linea", "Chi riceve lancia alle spalle della difesa. La linea <b>scappa</b> per togliere spazio e profondità.", gk + att()
+          + ff("M240,325 Q300,200 300,120", tratt=True)
+          + ff("M140,215 L140,165", True) + ff("M200,215 L200,165", True) + ff("M270,215 L270,165", True) + ff("M345,215 L345,165", True)
+          + gg(140, 228, "pB", 2) + gg(200, 228, "pB", 5) + gg(270, 228, "pB", 6) + gg(345, 228, "pB", 3)
+          + palla(252, 358))
+sequenza = f'<div class="fasi">{f1}{f2}{f3}</div>'
+
+ld2 = f'''<section class="page">
+  <div class="kicker">Esercitazione III · Gruppo A · Progressione 2 di 3</div>
+  <div class="ex-title"><h2>Ti lascio alle spalle</h2></div>
+  <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> rendere automatici i movimenti della linea. Gli attaccanti ripetono sempre la stessa sequenza in tre tempi.</p>
+  {sequenza}
+  <div class="two" style="margin-top:5mm">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che ripetono sempre la stessa sequenza</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Uscita decisa del 2, copertura immediata</li><li>Sullo scarico salire tutti insieme</li><li>Sul lancio scappare subito</li><li>Ripetere finché diventa automatico</li></ul></div>
+  </div>
+  {footer()}
+</section>'''
 
 ld3 = pagina_esercizio(
     "Esercitazione III · Gruppo A · Progressione 3 di 3", "6 contro 4",

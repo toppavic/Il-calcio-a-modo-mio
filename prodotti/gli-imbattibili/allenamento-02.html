@@ -104,6 +104,12 @@
 .obj { color: var(--tenue); margin: 0 0 4mm; }
 .obj b { color: var(--verde); }
 .stazioni .cue { color: var(--tenue); font-size: 9pt; display: block; margin-top: .5mm; }
+.fasi { display: grid; gap: 3mm; }
+.fase { display: grid; grid-template-columns: 64mm 1fr; gap: 6mm; align-items: center; }
+.fase svg { width: 100%; display: block; border-radius: 1.5mm; }
+.fase-t { font-size: 10pt; line-height: 1.5; color: var(--testo); }
+.fase-t .n { display: inline-flex; width: 8mm; height: 8mm; border-radius: 50%; background: var(--oro); color: var(--verde); font-family: Oswald, sans-serif; font-weight: 700; align-items: center; justify-content: center; font-size: 13pt; margin-bottom: 2mm; }
+.fase-t h4 { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 12.5pt; letter-spacing: .03em; margin-bottom: 1mm; }
 </style>
 </head>
 <body>
@@ -287,23 +293,44 @@
 <section class="page">
   <div class="kicker">Esercitazione III · Gruppo A · Progressione 2 di 3</div>
   <div class="ex-title"><h2>Ti lascio alle spalle</h2></div>
-  
-  <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> difendere sulla giocata verso l'attaccante, scegliendo la soluzione giusta in base a come arriva la palla.</p>
-  <svg class="diagram" viewBox="0 0 500 380" style="width:150mm;margin:0 auto">
-      <rect width="500" height="380" fill="url(#strisce)"/>
-      <g fill="none" stroke="#fff" stroke-width="2.5">
-        <rect x="10" y="10" width="480" height="360"/>
-        <rect x="103" y="10" width="294" height="110"/><rect x="186" y="10" width="128" height="38"/>
-        <path d="M205,120 A55,55 0 0 0 295,120"/>
-      </g>
-      <rect x="216" y="2" width="68" height="8" fill="#fff"/>
-      <use href="#pP" x="250" y="32"/>
-      <path d="M95,322 L95,262" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M108,325 Q170,230 205,165" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><text x="60" y="300" font-family="Oswald" font-size="11" fill="#fff" letter-spacing="1" transform="rotate(-90 60 300)">RASOTERRA</text><text x="168" y="262" font-family="Oswald" font-size="11" fill="#fff" letter-spacing="1" transform="rotate(-55 168 262)">DIETRO LA LINEA</text><path d="M118,205 L104,228" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M160,128 L138,152" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M240,128 L222,140" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><use href="#pA" x="95" y="335"/><use href="#pA" x="95" y="250"/><use href="#pA" x="230" y="325"/><use href="#pA" x="420" y="300"/><use href="#pA" x="430" y="200"/><use href="#palla" x="110" y="342"/><use href="#pB" x="120" y="195"/><text x="120" y="199.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pB" x="160" y="120"/><text x="160" y="124.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="250" y="120"/><text x="250" y="124.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pB" x="345" y="120"/><text x="345" y="124.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text>
-    </svg>
-  <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Un difensore (il 5) segue l'attaccante che viene incontro</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla come in figura. Quando arriva la <b>giocata sull'attaccante</b> la linea deve respingere la palla oppure <b>non far giocare l'attaccante</b>, a seconda di come arriva la palla.</p><p><b>Palla rasoterra</b> sull'attaccante: il difensore non lo fa giocare. <b>Palla dietro la linea</b>: la linea la respinge.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Riconoscere subito come arriva la palla</li><li>Rasoterra: stare attaccati all'attaccante e non farlo girare</li><li>Dietro la linea: attaccare la palla e respingerla</li><li>Chi resta dietro copre lo spazio alle spalle</li></ul></div>
+  <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> rendere automatici i movimenti della linea. Gli attaccanti ripetono sempre la stessa sequenza in tre tempi.</p>
+  <div class="fasi"><div class="fase">
+      <svg viewBox="0 0 500 420">
+        <rect width="500" height="420" fill="url(#strisce)"/>
+        <g fill="none" stroke="#fff" stroke-width="4">
+          <rect x="10" y="10" width="480" height="400"/>
+          <rect x="95" y="10" width="310" height="115"/><rect x="180" y="10" width="140" height="42"/>
+        </g>
+        <rect x="210" y="2" width="80" height="9" fill="#fff"/>
+        <circle cx="250" cy="36" r="20" fill="#f2c230" stroke="#fff" stroke-width="3"/><circle cx="60" cy="260" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><circle cx="230" cy="345" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><circle cx="420" cy="300" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><path d="M120,180 L82,232" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><circle cx="105" cy="200" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="105" y="208" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="175" cy="165" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="175" y="173" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">5</text><circle cx="255" cy="160" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="255" y="168" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">6</text><circle cx="335" cy="160" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="335" y="168" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">3</text><circle cx="85" cy="275" r="9" fill="#fff" stroke="#1d2421" stroke-width="2.5"/>
+      </svg>
+      <div class="fase-t"><span class="n">1</span><h4>Palla all'esterno</h4>Il <b>2 esce</b> in pressione sull'esterno. Il 5, il 6 e il 3 fanno la <b>copertura a L</b> alle sue spalle.</div>
+    </div><div class="fase">
+      <svg viewBox="0 0 500 420">
+        <rect width="500" height="420" fill="url(#strisce)"/>
+        <g fill="none" stroke="#fff" stroke-width="4">
+          <rect x="10" y="10" width="480" height="400"/>
+          <rect x="95" y="10" width="310" height="115"/><rect x="180" y="10" width="140" height="42"/>
+        </g>
+        <rect x="210" y="2" width="80" height="9" fill="#fff"/>
+        <circle cx="250" cy="36" r="20" fill="#f2c230" stroke="#fff" stroke-width="3"/><circle cx="60" cy="260" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><circle cx="230" cy="345" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><circle cx="420" cy="300" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><path d="M75,275 L205,335" stroke="#fff" stroke-width="5" fill="none" stroke-dasharray="12 9" marker-end="url(#freccia)"/><path d="M140,185 L140,222" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><path d="M200,175 L200,212" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><path d="M270,170 L270,207" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><path d="M345,170 L345,207" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><circle cx="140" cy="170" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="140" y="178" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="200" cy="160" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="200" y="168" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">5</text><circle cx="270" cy="155" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="270" y="163" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">6</text><circle cx="345" cy="155" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="345" y="163" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">3</text><circle cx="252" cy="358" r="9" fill="#fff" stroke="#1d2421" stroke-width="2.5"/>
+      </svg>
+      <div class="fase-t"><span class="n">2</span><h4>Scarico</h4>L'esterno scarica la palla indietro. La linea <b>sale per un secondo</b>, tutta insieme.</div>
+    </div><div class="fase">
+      <svg viewBox="0 0 500 420">
+        <rect width="500" height="420" fill="url(#strisce)"/>
+        <g fill="none" stroke="#fff" stroke-width="4">
+          <rect x="10" y="10" width="480" height="400"/>
+          <rect x="95" y="10" width="310" height="115"/><rect x="180" y="10" width="140" height="42"/>
+        </g>
+        <rect x="210" y="2" width="80" height="9" fill="#fff"/>
+        <circle cx="250" cy="36" r="20" fill="#f2c230" stroke="#fff" stroke-width="3"/><circle cx="60" cy="260" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><circle cx="230" cy="345" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><circle cx="420" cy="300" r="20" fill="#c8372d" stroke="#fff" stroke-width="3"/><path d="M240,325 Q300,200 300,120" stroke="#fff" stroke-width="5" fill="none" stroke-dasharray="12 9" marker-end="url(#freccia)"/><path d="M140,215 L140,165" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><path d="M200,215 L200,165" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><path d="M270,215 L270,165" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><path d="M345,215 L345,165" stroke="#f2c230" stroke-width="5" fill="none" marker-end="url(#freccia-oro)"/><circle cx="140" cy="228" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="140" y="236" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="200" cy="228" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="200" y="236" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">5</text><circle cx="270" cy="228" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="270" y="236" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">6</text><circle cx="345" cy="228" r="20" fill="#2a5db0" stroke="#fff" stroke-width="3"/><text x="345" y="236" font-family="Oswald" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">3</text><circle cx="252" cy="358" r="9" fill="#fff" stroke="#1d2421" stroke-width="2.5"/>
+      </svg>
+      <div class="fase-t"><span class="n">3</span><h4>Lancio dietro la linea</h4>Chi riceve lancia alle spalle della difesa. La linea <b>scappa</b> per togliere spazio e profondità.</div>
+    </div></div>
+  <div class="two" style="margin-top:5mm">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che ripetono sempre la stessa sequenza</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Uscita decisa del 2, copertura immediata</li><li>Sullo scarico salire tutti insieme</li><li>Sul lancio scappare subito</li><li>Ripetere finché diventa automatico</li></ul></div>
   </div>
   <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>5</span></div>
 </section>
