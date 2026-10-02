@@ -69,7 +69,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 
 - Allenamento 1 ✅ completo e confermato.
 - Allenamento 2 ✅ completo; in attesa di conferma sulla nuova versione di "Ti lascio alle spalle".
-- Allenamento 3 ✅ durate confermate (125'); manca solo la risposta su campo e punteggio del gioco di posizione.
+- Allenamento 3 ✅ completo e confermato (125'; gioco di posizione 30 × 30 m, 15 passaggi = 1 punto).
 - Prossimo: **Allenamento 4**.
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,

@@ -179,6 +179,8 @@ def gp():
     return f'''<svg class="diagram" viewBox="0 0 500 340" style="width:150mm;margin:0 auto">
     <rect width="500" height="340" fill="url(#strisce)"/>
     <rect x="110" y="30" width="280" height="280" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <text x="250" y="332" font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">30 m</text>
+    <text x="430" y="175" font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">30 m</text>
     {freccia("M180,188 L240,117", tratteggio=True)}{freccia("M261,110 L361,214", tratteggio=True)}
     <use href="#palla" x="190" y="214"/>
     {pl}
@@ -188,13 +190,13 @@ gioco = f'''<section class="page">
   <div class="kicker">Esercitazione III · Gruppo B</div>
   <div class="ex-title"><h2>Gioco di posizione a tocchi limitati</h2></div>
   <div class="ex-sub">
-    <span class="chip">20 minuti, poi cambio</span><span class="chip">4 contro 4 + 2 jolly</span><span class="chip">2 tocchi · jolly 1 tocco</span>
+    <span class="chip">20 minuti, poi cambio</span><span class="chip">4 contro 4 + 2 jolly</span><span class="chip">Campo 30 × 30 m</span><span class="chip">2 tocchi · jolly 1 tocco</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> smarcamento. È il gioco di posizione dell'Allenamento 2 reso più difficile: con meno tocchi bisogna smarcarsi prima e più velocemente.</p>
   {gp()}
   <div class="three">
     <div class="box"><h4>Organizzazione</h4><ul class="clean">
-      <li>Quadrato come nell'Allenamento 2</li>
+      <li>Quadrato di 30 × 30 metri</li>
       <li>Due squadre da 4 giocatori</li>
       <li>2 jolly: il 9 e il 10</li>
     </ul></div>
