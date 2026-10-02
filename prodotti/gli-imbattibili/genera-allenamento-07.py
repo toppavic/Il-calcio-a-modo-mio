@@ -166,7 +166,7 @@ partita = f'''<section class="page">
       <ul class="clean">
         <li>Metà difensiva: massimo <b>3 tocchi</b></li>
         <li>Metà offensiva: massimo <b>2 tocchi</b></li>
-        <li>Vietato passare al compagno di reparto</li>
+        <li>Vietato passare al compagno di reparto (solo nel 1° tempo)</li>
         <li>Gol valido solo se <b>tutti sono nella metà offensiva</b></li>
       </ul>
     </div>
@@ -202,7 +202,7 @@ partita = f'''<section class="page">
 stazioni = [
     ("Slalom + scatto", "slalom tra 4 conetti o paletti, poi 10 m di scatto", "7 volte"),
     ("Skip + scatto", "5 m di skip alto, basso o calciato, poi 10 m di scatto", "9 volte"),
-    ("Scaletta + scatto", "scaletta, poi 10 m di scatto", ""),
+    ("Scaletta + scatto", "scaletta, poi 10 m di scatto", "8 volte"),
     ("Partenze da seduti", "10 m di scatto partendo seduti: verso destra, sinistra, avanti, dietro", "8 volte"),
 ]
 st_html = "".join(
@@ -258,7 +258,7 @@ attacco = f'''<section class="page">
   <div class="kicker" style="margin-top:7mm">Esercitazione V</div>
   <div class="ex-title"><h2 style="font-size:17pt">Punizioni difensive e stretching · 20'</h2></div>
   <div class="two" style="margin-top:3mm">
-    <div class="box"><h4>Punizioni difensive</h4>Lavoro sulle punizioni a sfavore.</div>
+    <div class="box"><h4>Punizioni difensive</h4>Lavoro sulle punizioni a sfavore. Barriera, marcature e posizioni in area: ogni allenatore le organizza come preferisce.</div>
     <div class="box"><h4>Stretching finale</h4>Allungamento dei principali gruppi muscolari a fine seduta.</div>
   </div>
   {footer()}
