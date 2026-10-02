@@ -91,8 +91,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 8 ✅ completo e confermato (circa 110'; emergenza: O difende, XL attaccanti avversari; "30 m" sul foglio = 30 minuti).
 - Allenamento 9 ✅ completo e confermato (90-95'; gol normale 1 punto; angoli difensivi come le punizioni, ognuno li organizza come crede).
 - Allenamento 10 ✅ completo e confermato (85' + suicidi; corsia solo per il cross in entrambi i tempi).
-- Pacchetto "Il Precampionato" (Allenamenti 1-10) e annuncio Etsy pronti. Caricamento guidato passo passo con l'app Etsy Seller:
-  file salvati sul telefono, fermi al passo 2 (icona Annunci, la quarta in basso, poi +). Prossimo: Allenamento 11.
+- ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026 a 9,90 € (digitale, quantità 999,
+  rinnovo automatico, dichiarato "con un generatore di IA", tag inseriti). Titolo con "i primi 10 allenamenti".
+  Prossimo: post Instagram di lancio, poi Allenamento 11.
 - Marketing: Etsy da solo non porta clienti (già provato senza vendite). Strategia: post gratuiti
   sui social (gruppi Facebook di allenatori, Instagram, TikTok) con la storia della Juniores imbattuta,
   link a Etsy solo nel profilo. Primi 3 post pronti (cross, partita preventiva, gioco di posizione).
@@ -102,7 +103,6 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   La bio esiste già e cita **"Gli Imbattibili, il libro"** con link Amazon: non sostituirla.
   Il libro (Amazon) racconta la **stagione**; i PDF sono gli **allenamenti**: vanno presentati insieme
   ("il libro racconta cosa è successo, i PDF come ci siamo arrivati").
-  Negozio Etsy al momento vuoto.
   TikTok @matteo.falleri: 18 follower, contenuti musicali (canzoni sue), non di calcio. Consigliato
   un account TikTok separato per il calcio: creato **@il.calcio.a.modo** ("Il Calcio a Modo Mio").
   Pubblicati: post 1 (cross) su Instagram e TikTok il 2/10/2026. Prossimi: gruppi Facebook, post 2 fra 3–4 giorni.
