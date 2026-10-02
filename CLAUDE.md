@@ -82,6 +82,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   link a Etsy solo nel profilo. Primi 3 post pronti (cross, partita preventiva, gioco di posizione).
   Account: Instagram "Il calcio a modo mio", TikTok "Matteo Falleri", Facebook = profilo personale
   usato come diario (niente pagina): nei gruppi Facebook pubblica con il profilo personale.
+  Instagram (@ilcalcio.a…): ~4000 follower, 277 post, reel narrativi/emotivi (600–900 visualizzazioni).
+  La bio esiste già e cita **"Gli Imbattibili, il libro"** con link Amazon: non sostituirla.
+  Negozio Etsy al momento vuoto.
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
