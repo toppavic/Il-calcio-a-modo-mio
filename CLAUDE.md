@@ -63,7 +63,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Lavoro a gruppi: il gruppo si divide in due e **si invertono** (15' per gruppo).
 - "Ricerca del portiere": ogni squadra attacca verso un portiere che fa da bersaglio.
 - "Solo verticale": passaggi in avanti, all'indietro o in diagonale, mai orizzontali.
-- Difesa sul cross: "diagonale invertita". Terzino lato palla leggermente sotto la linea della palla, centrali e terzino
+- Difesa sul cross: "diagonale invertita" (il terzino lato palla è il più vicino alla linea di fondo, gli altri salgono man mano). Terzino lato palla leggermente sotto la linea della palla, centrali e terzino
   opposto in leggera diagonale, centrocampisti a cerniera (il più vicino tra terzino e centrale, l'altro tra i centrali).
 - Gioco di posizione: 4 contro 4 + 2 jolly (9 e 10), 15 passaggi consecutivi = 1 punto.
 
@@ -72,7 +72,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 1 ✅ completo e confermato.
 - Allenamento 2 ✅ completo; in attesa di conferma sulla nuova versione di "Ti lascio alle spalle".
 - Allenamento 3 ✅ completo e confermato (125'; gioco di posizione 30 × 30 m, 15 passaggi = 1 punto).
-- Allenamento 4 ✅ completo (95' + suicidi; marcature preventive; 3' di recupero tra i blocchi atletici). Cross ridisegnato in diagonale invertita: da confermare il verso della diagonale.
+- Allenamento 4 ✅ completo (95' + suicidi; marcature preventive; 3' di recupero tra i blocchi atletici). Cross in diagonale invertita confermato.
 - Prossimo: **Allenamento 5**.
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
