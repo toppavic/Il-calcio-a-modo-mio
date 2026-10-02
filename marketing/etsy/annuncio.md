@@ -10,11 +10,11 @@
 
 ## Titolo
 
-Gli Imbattibili · Il Precampionato: 10 allenamenti di calcio in PDF con schemi | Juniores imbattuta | Esercizi e partite a tema
+Gli Imbattibili · Il Precampionato: i primi 10 allenamenti di calcio in PDF con schemi | Juniores imbattuta | Esercizi e partite a tema
 
 ## Descrizione
 
-**10 allenamenti veri del precampionato della Juniores provinciale che ha vinto il campionato senza perdere una partita.**
+**I primi 10 allenamenti del precampionato della Juniores provinciale che ha vinto il campionato senza perdere una partita.**
 
 Non sono esercizi presi da internet. Sono le sedute fatte davvero in campo, trascritte dai quaderni dell'allenatore e impaginate una per una: dalla prima seduta di attivazione fino alle partite a tema della terza settimana.
 
