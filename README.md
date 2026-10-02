@@ -3,5 +3,5 @@
 Materiali e prodotti digitali (PDF) di calcio.
 
 - `materiale/` – foto originali degli appunti di allenamento
-- `prodotti/gli-imbattibili/` – il libro "Gli Imbattibili": sorgente HTML, font e PDF impaginato
+- `prodotti/gli-imbattibili/` – gli allenamenti della stagione, un PDF per allenamento (es. `allenamento-01.pdf`)
 - `prodotti/linea-difensiva/` – PDF tematico sulla costruzione della linea difensiva (bozza)
