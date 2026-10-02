@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><title>Stile C · Moderno italiano</title>
+<style>
+  @font-face { font-family: BarlowC; src: url(font/barlowcondensed-600.woff2); font-weight: 600; }
+  @font-face { font-family: BarlowC; src: url(font/barlowcondensed-700.woff2); font-weight: 700; }
+  @font-face { font-family: Barlow; src: url(font/barlow-400.woff2); font-weight: 400; }
+  @font-face { font-family: Barlow; src: url(font/barlow-600.woff2); font-weight: 600 700; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #9aa39e; display: flex; gap: 24px; padding: 24px; font-family: Barlow, sans-serif; color: #16202e; }
+  .page { width: 210mm; height: 297mm; position: relative; overflow: hidden; background: #ffffff; padding: 18mm; box-shadow: 0 6px 24px rgba(0,0,0,.25); font-size: 10.5pt; line-height: 1.5; }
+  .h { font-family: BarlowC, sans-serif; font-weight: 700; text-transform: none; letter-spacing: .02em; }
+  .kicker { font-family: BarlowC, sans-serif; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; font-size: 10pt; color: #0b3d91; }
+  .cover { background: #f4f6f9; color: #0b3d91; padding: 0; }
+  .cover .inner { position: absolute; left: 20mm; right: 20mm; top: 40mm; }
+  .cover h1 { font-size: 70pt; line-height: .92; margin: 8mm 0 7mm; color: #0b3d91; }
+  .cover h1 span { display: block; color: #16202e; }
+  .cover .sub { font-size: 15pt; color: #4a5566; max-width: 140mm; line-height: 1.4; }
+  .cover .sub b { color: #0b3d91; }
+  .cover .badge { position: absolute; left: 20mm; right: 20mm; bottom: 24mm; display: flex; gap: 5mm; }
+  .cover .badge > div { flex: 1; border-top: 3px solid #0b3d91; padding-top: 3mm; }
+  .cover .badge .n { font-size: 26pt; line-height: 1; color: #0b3d91; }
+  .cover .badge .l { font-size: 8.5pt; letter-spacing: .1em; text-transform: uppercase; color: #4a5566; margin-top: 1.5mm; }
+  .cover .brand { color: #0b3d91; }
+  .tric { position: absolute; top: 0; left: 0; right: 0; height: 5mm; display: flex; }
+  .tric i { flex: 1; }
+  .lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+  h2 { font-size: 30pt; line-height: 1.05; color: #0b3d91; }
+  .obj { color: #5f6b7a; margin: 2mm 0 5mm; }
+  .obj b { color: #0b3d91; }
+  .diagram { width: 150mm; display: block; margin: 0 auto; border-radius: 3mm; }
+  .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-top: 6mm; }
+  .box { background: #f4f6f9; border: 1px solid #f4f6f9; border-radius: 3mm; padding: 4mm 4.5mm; font-size: 9.6pt; }
+  .box h4 { font-family: BarlowC, sans-serif; font-weight: 700; text-transform: none; color: #0b3d91; font-size: 13pt; letter-spacing: .03em; margin-bottom: 2mm; }
+  .box p { margin-bottom: 2mm; }
+  ul { list-style: none; }
+  li { padding-left: 5mm; position: relative; margin-bottom: 1.3mm; }
+  li::before { content: ""; position: absolute; left: 0; top: 2mm; width: 2mm; height: 2mm; border-radius: 50%; background: #0b3d91; }
+  .key { background: #eaf0fa; border-color: #eaf0fa; }
+  .footer { position: absolute; left: 18mm; right: 18mm; bottom: 9mm; display: flex; justify-content: space-between; font-size: 8pt; color: #5f6b7a; border-top: 1px solid #f4f6f9; padding-top: 2.5mm; }
+</style></head>
+<body>
+<section class="page cover">
+  <div class="tric"><i style="background:#009246"></i><i style="background:#ffffff"></i><i style="background:#ce2b37"></i></div>
+  <svg class="lines" viewBox="0 0 210 297" preserveAspectRatio="none"><g fill="none" stroke="#0b3d91" stroke-opacity=".08" stroke-width=".6"><rect x="15" y="160" width="180" height="200"/><rect x="60" y="160" width="90" height="35"/><rect x="82" y="160" width="46" height="12"/></g></svg>
+  <div class="inner">
+    <div class="kicker brand">Il calcio a modo mio</div>
+    <h1 class="h">Gli<span>Imbattibili</span></h1>
+    <p class="sub"><b>La costruzione della linea difensiva.</b> La progressione della Juniores che ha vinto il campionato senza perdere una partita.</p>
+  </div>
+  <div class="badge">
+    <div><div class="n h">0</div><div class="l">Sconfitte</div></div>
+    <div><div class="n h">3</div><div class="l">Progressioni</div></div>
+    <div><div class="n h">1°</div><div class="l">In campionato</div></div>
+  </div>
+</section>
+<section class="page">
+  <div class="kicker">Progressione 1 di 3</div>
+  <h2 class="h">Scivolamenti</h2>
+  <p class="obj"><b>Obiettivo:</b> la linea si muove insieme in base alla posizione della palla.</p>
+  <svg class="diagram" viewBox="0 0 500 380">
+  <defs>
+    <marker id="fm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0b3d91"/></marker>
+    <marker id="fp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16202e"/></marker>
+    <pattern id="str" width="60" height="400" patternUnits="userSpaceOnUse"><rect width="30" height="400" fill="#e8efe9"/><rect x="30" width="30" height="400" fill="#e1eae3"/></pattern>
+  </defs>
+  <rect width="500" height="380" fill="url(#str)"/>
+  <g fill="none" stroke="#9db4a5" stroke-width="2.5">
+    <rect x="10" y="10" width="480" height="360"/><rect x="103" y="10" width="294" height="110"/>
+    <rect x="186" y="10" width="128" height="38"/><path d="M205,120 A55,55 0 0 0 295,120"/>
+  </g>
+  <rect x="216" y="2" width="68" height="8" fill="#9db4a5"/>
+  <circle cx="250" cy="32" r="11" fill="#f4b400" stroke="#1d2421" stroke-width="2"/>
+  <circle cx="55" cy="215" r="11" fill="#d7263d" stroke="#fff" stroke-width="2"/><circle cx="165" cy="320" r="11" fill="#d7263d" stroke="#fff" stroke-width="2"/><circle cx="320" cy="330" r="11" fill="#d7263d" stroke="#fff" stroke-width="2"/><circle cx="440" cy="285" r="11" fill="#d7263d" stroke="#fff" stroke-width="2"/>
+  <circle cx="74" cy="228" r="5" fill="#fff" stroke="#1d2421" stroke-width="1.5"/>
+  <path d="M430,285 L333,325" stroke="#16202e" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#fp)"/><path d="M308,330 L180,322" stroke="#16202e" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#fp)"/><path d="M155,312 L68,228" stroke="#16202e" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#fp)"/>
+  <path d="M120,140 L97,184" stroke="#0b3d91" stroke-width="2.5" fill="none" marker-end="url(#fm)"/><path d="M245,150 L200,150" stroke="#0b3d91" stroke-width="2.5" fill="none" marker-end="url(#fm)"/><path d="M325,150 L280,148" stroke="#0b3d91" stroke-width="2.5" fill="none" marker-end="url(#fm)"/><path d="M405,150 L360,146" stroke="#0b3d91" stroke-width="2.5" fill="none" marker-end="url(#fm)"/>
+  <circle cx="92" cy="195" r="12" fill="#0b3d91" stroke="#fff" stroke-width="2"/><text x="92" y="199.5" font-family="BarlowC" font-weight="700" font-size="13" text-anchor="middle" fill="#ffffff">2</text><circle cx="186" cy="150" r="12" fill="#0b3d91" stroke="#fff" stroke-width="2"/><text x="186" y="154.5" font-family="BarlowC" font-weight="700" font-size="13" text-anchor="middle" fill="#ffffff">5</text><circle cx="266" cy="148" r="12" fill="#0b3d91" stroke="#fff" stroke-width="2"/><text x="266" y="152.5" font-family="BarlowC" font-weight="700" font-size="13" text-anchor="middle" fill="#ffffff">6</text><circle cx="346" cy="146" r="12" fill="#0b3d91" stroke="#fff" stroke-width="2"/><text x="346" y="150.5" font-family="BarlowC" font-weight="700" font-size="13" text-anchor="middle" fill="#ffffff">3</text>
+</svg>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla. I difensori si spostano curando la <b>posizione del corpo</b> e la <b>distanza tra i compagni</b>.</p><p>Quando la palla arriva sull'esterno la linea si spacca e forma <b>due linee</b>.</p></div>
+    <div class="box key"><h4>Punti chiave</h4><ul><li>Posizione del corpo</li><li>Distanza tra i compagni</li><li>Occhi sempre sulla palla</li><li><b>Dare sempre copertura al compagno che attacca la palla</b></li></ul></div>
+  </div>
+  <div class="footer"><span>GLI IMBATTIBILI</span><span>La costruzione della linea difensiva</span><span>3</span></div>
+</section>
+</body></html>
