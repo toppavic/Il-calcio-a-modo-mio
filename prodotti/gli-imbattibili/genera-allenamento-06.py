@@ -161,6 +161,7 @@ pressione = f'''<section class="page">
       <ul class="clean">
         <li>Massimo <b>3 tocchi</b></li>
         <li><b>Solo gioco verticale</b>: passaggi in avanti, all'indietro o in diagonale, mai orizzontali</li>
+        <li>Gol normale: <b>1 punto</b></li>
         <li>Gol dopo un <b>recupero nella metà offensiva</b>: <b>3 punti</b></li>
         <li>Gol valido solo se <b>tutti sono nella metà offensiva</b></li>
       </ul>
@@ -169,7 +170,8 @@ pressione = f'''<section class="page">
       <h4>2° tempo · 15'</h4>
       <ul class="clean">
         <li>Massimo <b>2 tocchi</b></li>
-        <li>Vietato passare al compagno di reparto</li>
+        <li>Vietato passare al compagno di reparto (<b>gli attaccanti sì</b>)</li>
+        <li>Gol normale: <b>1 punto</b></li>
         <li>Gol dopo un <b>recupero nella metà offensiva</b>: <b>3 punti</b></li>
         <li>Gol valido solo se <b>tutti sono nella metà offensiva</b></li>
       </ul>
