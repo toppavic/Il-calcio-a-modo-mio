@@ -126,6 +126,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   L'allenatore: per partire con la linea a 4 i primi 10 allenamenti coprono tutto; più avanti nella stagione
   lavora in inferiorità (4c6, 4c8, 4c11, 8c10). Proposta: Volume 1 "le basi della linea a 4" subito con gli 11
   esercizi; Volume 2 "difesa in inferiorità" quando arrivano quegli allenamenti (da chiedere dove sono).
+- Divisione dei compiti (2/10): **Claude prepara** post, testi e PDF; **l'allenatore controlla e pubblica**.
+  Per lui i post sono la priorità. Estero (inglese, poi magari spagnolo/portoghese) solo dopo che l'Italia funziona;
+  adattare il gergo (suicidi, preventive, diagonale invertita), non tradurre parola per parola.
 - Esperienza precedente: 5 mesi su Etsy senza vendite (solo annuncio, nessun traffico portato). Ora il traffico
   arriva da Instagram. **Controllo statistiche Etsy ogni settimana**; primo controllo insieme verso il 16/10/2026
   (screenshot di Statistiche: visite, provenienza, vendite). Il negozio aveva già 1 vendita con 5 stelle.
