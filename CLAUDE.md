@@ -93,7 +93,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 10 ✅ completo e confermato (85' + suicidi; corsia solo per il cross in entrambi i tempi).
 - ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026 a 9,90 € (digitale, quantità 999,
   rinnovo automatico, dichiarato "con un generatore di IA", tag inseriti). Titolo con "i primi 10 allenamenti".
-  Niente post di vendita subito (proposta, l'allenatore era d'accordo a non postare subito): link Etsy in bio sotto quello del libro, una riga
+  Bio Instagram: link "Gli Imbattibili, gli allenamenti" (annuncio Etsy) sotto quello del libro, fatto il 2/10.
+  Niente post di vendita subito (proposta, l'allenatore era d'accordo a non postare subito). Poi una riga
   "le sedute complete sono nel link in bio" nelle didascalie dei prossimi post, lancio vero dopo 2-3 post di valore
   con Allenamento 1 gratis ("commenta PRECAMPIONATO"). Prossimo: Allenamento 11.
 - Marketing: Etsy da solo non porta clienti (già provato senza vendite). Strategia: post gratuiti
