@@ -25,6 +25,11 @@ partita**. La serie si chiama **"Gli Imbattibili"**.
 - `prodotti/linea-difensiva/` – PDF tematico sulla linea difensiva (bozza, messo da parte)
 - `prodotti/stili-grafici/` – prove di stile e copertine scartate (solo riferimento)
 - `strumenti/render.js` – HTML → PDF A4 + anteprime PNG
+- `prodotti/gli-imbattibili/precampionato-allenamenti-1-10.pdf` – **pacchetto in vendita** (64 pagine): `genera-precampionato.py`
+  unisce i 10 allenamenti con copertina, "Prima di cominciare" e indice. Le copertine vanno prima rese immagini
+  (`strumenti/render-copertine.js` → `copertine-pacchetto/*.jpg`) sennò il PDF pesa 26 MB (limite Etsy 20 MB).
+- `marketing/etsy/` – annuncio Etsy: `annuncio.md` (titolo, descrizione, tag), `immagini/` (foto 2000×1500,
+  da `immagini-annuncio.html` con `strumenti/render-etsy.js`)
 - `marketing/reel/` – Reel animati: HTML con `draw(t)`, `strumenti/render-reel.js` lo registra in MP4 1080×1920
 - `marketing/social/` – post social: `genera-post.py` crea i caroselli 4:5 (IG/FB) e 9:16 (TikTok),
   `strumenti/render-post.js` li salva in `immagini/`, testi e indicazioni in `testi-dei-post.md`
@@ -86,7 +91,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 8 ✅ completo e confermato (circa 110'; emergenza: O difende, XL attaccanti avversari; "30 m" sul foglio = 30 minuti).
 - Allenamento 9 ✅ completo e confermato (90-95'; gol normale 1 punto; angoli difensivi come le punizioni, ognuno li organizza come crede).
 - Allenamento 10 ✅ completo e confermato (85' + suicidi; corsia solo per il cross in entrambi i tempi).
-- Prossimo: pacchetto "Il Precampionato" (Allenamenti 1-10) oppure Allenamento 11.
+- Pacchetto "Il Precampionato" (Allenamenti 1-10) e annuncio Etsy pronti, da caricare. Prossimo: Allenamento 11.
 - Marketing: Etsy da solo non porta clienti (già provato senza vendite). Strategia: post gratuiti
   sui social (gruppi Facebook di allenatori, Instagram, TikTok) con la storia della Juniores imbattuta,
   link a Etsy solo nel profilo. Primi 3 post pronti (cross, partita preventiva, gioco di posizione).
