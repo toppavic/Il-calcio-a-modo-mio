@@ -87,6 +87,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Il libro (Amazon) racconta la **stagione**; i PDF sono gli **allenamenti**: vanno presentati insieme
   ("il libro racconta cosa è successo, i PDF come ci siamo arrivati").
   Negozio Etsy al momento vuoto.
+  TikTok @matteo.falleri: 18 follower, contenuti musicali (canzoni sue), non di calcio. Consigliato
+  un account TikTok separato "Il calcio a modo mio" per gli allenamenti (in attesa di risposta).
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
