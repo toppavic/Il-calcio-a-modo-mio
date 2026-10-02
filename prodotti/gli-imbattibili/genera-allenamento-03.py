@@ -56,7 +56,7 @@ scheda = f'''<section class="page">
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">130'</div></div>
+    <div><div class="l">Durata</div><div class="v">125'</div></div>
     <div><div class="l">Giocatori</div><div class="v">22</div></div>
     <div><div class="l">Campo</div><div class="v">50 m × largh.</div></div>
     <div><div class="l">Focus</div><div class="v">Gioco tra i reparti</div></div>
@@ -67,7 +67,7 @@ scheda = f'''<section class="page">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">10' di attivazione + 5' di combinazioni di passaggio in cerchio</div></td><td class="min">15'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Partita “no compagno di reparto”</div><div class="d">10 contro 10 · vietato passare la palla al compagno del proprio reparto · chi perde paga con i suicidi a fine allenamento</div></td><td class="min">30'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Lavoro a gruppi con cambio</div><div class="d">20' per gruppo · Gruppo A: linea difensiva con l'allenatore (le 3 progressioni dell'Allenamento 2) · Gruppo B: gioco di posizione 4 contro 4 + 2 jolly a tocchi limitati. Poi si invertono</div></td><td class="min">40'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">Lavoro atletico</div><div class="d">Corsa con variazioni di velocità · 2 blocchi da 12'</div></td><td class="min">35'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">Lavoro atletico</div><div class="d">Corsa con variazioni di velocità · 2 blocchi da 12'</div></td><td class="min">30'</td></tr>
     <tr><td class="num">V</td><td><div class="t">Defaticamento</div><div class="d">Stretching</div></td><td class="min">10'</td></tr>
   </table>
 
@@ -75,7 +75,7 @@ scheda = f'''<section class="page">
     <div style="flex:15;background:#7aa995">15'</div>
     <div style="flex:30;background:var(--verde-2)">Partita · 30'</div>
     <div style="flex:40;background:var(--verde)">Lavoro a gruppi · 20' + 20'</div>
-    <div style="flex:35;background:var(--oro);color:var(--verde)">Atletico · 35'</div>
+    <div style="flex:30;background:var(--oro);color:var(--verde)">Atletico · 30'</div>
     <div style="flex:10;background:#7aa995">10'</div>
   </div>
 
@@ -245,7 +245,7 @@ atletico = f'''<section class="page">
   <div class="kicker">Esercitazione IV</div>
   <div class="ex-title"><h2>Lavoro atletico</h2></div>
   <div class="ex-sub">
-    <span class="chip">35 minuti</span><span class="chip">Corsa con variazioni di velocità (CCVV)</span>
+    <span class="chip">30 minuti</span><span class="chip">Corsa con variazioni di velocità (CCVV)</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> incremento della capacità e della potenza aerobica, con blocchi più lunghi rispetto all'Allenamento 2.</p>
   {atletico_svg}
