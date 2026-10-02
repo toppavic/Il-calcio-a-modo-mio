@@ -84,7 +84,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 6 ✅ completo e confermato (100'; pressione a squadra corta, gol normale 1 punto; nell'attacco contro difesa X difende e O attacca).
 - Allenamento 7 ✅ completo e confermato (100'; vincolo di reparto solo nel 1° tempo, scaletta 8 volte). Punizioni difensive: l'allenatore non spiega il suo metodo, ognuno le gestisce come crede.
 - Allenamento 8 ✅ completo e confermato (circa 110'; emergenza: O difende, XL attaccanti avversari; "30 m" sul foglio = 30 minuti).
-- Allenamento 9 ✅ prima versione; in attesa di risposte (angoli difensivi come le punizioni?, gol normale 1 punto?).
+- Allenamento 9 ✅ completo e confermato (90-95'; gol normale 1 punto; angoli difensivi come le punizioni, ognuno li organizza come crede).
 - Prossimo: **Allenamento 10**.
 - Marketing: Etsy da solo non porta clienti (già provato senza vendite). Strategia: post gratuiti
   sui social (gruppi Facebook di allenatori, Instagram, TikTok) con la storia della Juniores imbattuta,

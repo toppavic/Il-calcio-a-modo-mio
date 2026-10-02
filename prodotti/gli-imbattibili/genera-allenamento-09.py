@@ -202,6 +202,7 @@ partita = f'''<section class="page">
       <h4>1° tempo · 15'</h4>
       <ul class="clean">
         <li>Massimo <b>2 tocchi</b></li>
+        <li>Gol normale: <b>1 punto</b></li>
         <li>Gol dopo un <b>recupero nella metà offensiva</b>: <b>2 punti</b></li>
         <li>Gol valido solo se <b>tutti sono nella metà offensiva</b></li>
       </ul>
@@ -210,6 +211,7 @@ partita = f'''<section class="page">
       <h4>2° tempo · 15'</h4>
       <ul class="clean">
         <li>Massimo <b>2 tocchi</b></li>
+        <li>Gol normale: <b>1 punto</b></li>
         <li>Gol dopo un <b>recupero nella metà offensiva</b>: <b>2 punti</b></li>
         <li>Gol valido solo se <b>tutti sono nella metà offensiva</b></li>
         <li><b>Gol doppio</b> se gli avversari non sono tutti nella propria metà difensiva</li>
