@@ -106,6 +106,21 @@
   .vuoto { background: #fde9a6; border-radius: 1mm; padding: 0 1.5mm; font-weight: 600; color: #6b5208; white-space: nowrap; }
   .firma { margin-top: 8mm; font-family: Oswald, sans-serif; font-size: 14pt; color: var(--verde); text-align: right; }
   .firma .ruolo { display: block; font-family: Inter, sans-serif; font-size: 9pt; color: var(--tenue); }
+.c4 { background: #222; }
+.c4 img { position: absolute; inset: -10mm; width: calc(100% + 20mm); height: calc(100% + 20mm); object-fit: cover; transform: rotate(-4deg) scale(1.08); filter: grayscale(.3) contrast(1.05); }
+.c4 .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,61,46,.97) 0%, rgba(15,61,46,.85) 22%, rgba(15,61,46,.35) 40%, rgba(15,61,46,.45) 55%, rgba(15,61,46,.96) 74%); }
+.c4 .zero { position: absolute; top: 16mm; left: 20mm; right: 20mm; display: flex; align-items: center; gap: 6mm; color: #d4a017; }
+.c4 .zero b { font-family: Oswald, sans-serif; font-weight: 700; font-size: 150pt; line-height: .8; }
+.c4 .zero div { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppercase; font-size: 46pt; line-height: .95; }
+.c4 .zero small { display: block; font-family: Inter, sans-serif; font-weight: 500; font-size: 11pt; letter-spacing: .04em; text-transform: none; color: #e3ece7; margin-top: 3mm; }
+.c4 .txt { position: absolute; left: 20mm; right: 20mm; bottom: 26mm; color: #fff; }
+.c4 h1 { font-size: 66pt; margin: 5mm 0 5mm; }
+.c4 h1 span { color: #d4a017; display: block; }
+.c4 .sub { font-size: 13.5pt; color: #e3ece7; max-width: 150mm; line-height: 1.45; }
+.c4 .brand { color: #d4a017; }
+.c4 .h { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppercase; line-height: .92; }
+.c4 .brand { font-family: Oswald, sans-serif; letter-spacing: .3em; text-transform: uppercase; font-size: 10pt; font-weight: 500; }
+.c4 .bozza { top: 9mm; right: 12mm; background: #d4a017; color: #0f3d2e; border: 0; }
 </style>
 </head>
 <body>
@@ -134,18 +149,15 @@
     <g id="palla"><circle r="5" fill="#fff" stroke="#1d2421" stroke-width="1.5"/></g>
   </defs>
 </svg>
-<section class="page cover">
-  <svg class="bg" viewBox="0 0 210 297" preserveAspectRatio="none"><g fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width=".6"><rect x="15" y="150" width="180" height="200"/><rect x="60" y="150" width="90" height="35"/><rect x="82" y="150" width="46" height="12"/><line x1="40" y1="205" x2="170" y2="205" stroke-dasharray="3 3"/></g></svg>
+<section class="page c4" style="padding:0">
+  <img src="../../materiale/precampionato/allenamento-01.jpg">
+  <div class="veil"></div>
   <div class="bozza">Bozza</div>
-  <div class="inner">
-    <div class="brand">Il calcio a modo mio · Gli Imbattibili</div>
-    <h1>La linea<span>difensiva</span></h1>
-    <p class="sub">Una progressione in tre esercitazioni per costruire la difesa a 4 della Juniores che ha vinto il campionato provinciale senza perdere una partita.</p>
-  </div>
-  <div class="badge">
-    <div><div class="n">3</div><div class="l">Esercitazioni</div></div>
-    <div><div class="n">15–20'</div><div class="l">Per seduta</div></div>
-    <div><div class="n">0</div><div class="l">Sconfitte in stagione</div></div>
+  <div class="zero"><b>0</b><div>Sconfitte<small>Un campionato intero senza perdere una partita</small></div></div>
+  <div class="txt">
+    <div class="brand">Il calcio a modo mio</div>
+    <h1 class="h">Gli<span>Imbattibili</span></h1>
+    <p class="sub"><b>La costruzione della linea difensiva.</b> Dai quaderni dell'allenatore, la progressione della Juniores che ha vinto il campionato provinciale.</p>
   </div>
 </section>
 <section class="page pref">
