@@ -87,8 +87,8 @@ scheda = f'''<section class="page">
   <h3>Programma della seduta</h3>
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione generale</div></td><td class="min">10'</td></tr>
-    <tr><td class="num">II</td><td><div class="t">Partita “ricerca del portiere”</div><div class="d">Seconda versione: tocchi e punteggi diversi, nel 2° tempo solo gioco verticale</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Lavoro a gruppi con cambio</div><div class="d">Gruppo A: linea difensiva con l'allenatore (3 progressioni) · Gruppo B: gioco di posizione 4 contro 4 + 2 jolly</div></td><td class="min">30'</td></tr>
+    <tr><td class="num">II</td><td><div class="t">Partita “ricerca del portiere”</div><div class="d">Seconda versione: tocchi e punteggi diversi, nel 2° tempo vietati i passaggi orizzontali</div></td><td class="min">30'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Lavoro a gruppi con cambio</div><div class="d">15' per gruppo · Gruppo A: linea difensiva con l'allenatore (3 progressioni) · Gruppo B: gioco di posizione 4 contro 4 + 2 jolly. Poi si invertono</div></td><td class="min">30'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">Lavoro aerobico</div><div class="d">Corsa con variazioni di velocità · 2 blocchi da 10'</div></td><td class="min">25'</td></tr>
     <tr><td class="num">V</td><td><div class="t">Defaticamento</div><div class="d">Stretching ed esercizi di scarico della colonna vertebrale</div></td><td class="min">10'</td></tr>
   </table>
@@ -96,7 +96,7 @@ scheda = f'''<section class="page">
   <div class="timeline">
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:30;background:var(--verde-2)">Partita · 30'</div>
-    <div style="flex:30;background:var(--verde)">Lavoro a gruppi · 30'</div>
+    <div style="flex:30;background:var(--verde)">Lavoro a gruppi · 15' + 15'</div>
     <div style="flex:25;background:var(--oro);color:var(--verde)">Aerobico · 25'</div>
     <div style="flex:10;background:#7aa995">10'</div>
   </div>
@@ -122,7 +122,7 @@ r = re.sub(r'<h4>2° tempo · 15\'</h4>.*?</ul>', '''<h4>2° tempo · 15'</h4>
       <ul class="clean">
         <li>Massimo <b>3 tocchi</b></li>
         <li>Stesso punteggio del 1° tempo</li>
-        <li><b>Solo gioco verticale</b></li>
+        <li><b>Solo gioco verticale</b>: passaggi in avanti, all'indietro o in diagonale, mai orizzontali</li>
       </ul>''', r, count=1, flags=re.S)
 r = r.replace("Nel secondo tempo cambiano tocchi e punteggio (vedi riquadri sopra).",
               "Rispetto all'Allenamento 1 il lancio dalla metà difensiva vale 2 punti fin dal primo tempo.")
@@ -142,27 +142,30 @@ ld1 = pagina_esercizio(
         + freccia("M160,322 Q300,250 430,196", tratteggio=True)
         + g(50, 230, "pA") + g(150, 330, "pA") + g(260, 338, "pA") + g(370, 330, "pA") + g(445, 200, "pA")
         + '<use href="#palla" x="165" y="338"/>'
-        + g(130, 152, "pB", 2) + g(210, 152, "pB", 6) + g(290, 152, "pB", 5) + g(380, 146, "pB", 3)
+        + g(130, 152, "pB", 2) + g(210, 152, "pB", 5) + g(290, 152, "pB", 6) + g(380, 146, "pB", 3)
         + '<text x="300" y="268" font-family="Oswald" font-size="12" fill="#fff" letter-spacing="2" transform="rotate(-22 300 268)">LANCIO</text>'),
     "<li>Linea a 4 + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li>",
     "<p>Gli attaccanti muovono la palla da destra a sinistra e viceversa. La linea difensiva <b>scivola</b> posizionandosi in funzione della palla.</p>"
     "<p>A turno un attaccante fa un <b>lancio in esterna</b>: la linea deve leggerlo e <b>respingere la palla</b>.</p>",
     "<li>Scivolare insieme seguendo la palla</li><li>Leggere il lancio prima che parta</li><li>Il difensore più vicino attacca la palla</li><li>Gli altri coprono il compagno</li>",
-    chips='<span class="chip">30 minuti con il cambio</span><span class="chip">Conduce l\'allenatore</span>')
+    chips='<span class="chip">15 minuti per gruppo, poi cambio</span><span class="chip">Conduce l\'allenatore</span>')
 
 ld2 = pagina_esercizio(
     "Esercitazione III · Gruppo A · Progressione 2 di 3", "Ti lascio alle spalle",
-    "difendere sulla giocata verso l'attaccante, scegliendo se anticipare o non farlo girare.",
+    "difendere sulla giocata verso l'attaccante, scegliendo la soluzione giusta in base a come arriva la palla.",
     mezzo_campo(
         freccia("M95,322 L95,262", tratteggio=True)
+        + freccia("M108,325 Q170,230 205,165", tratteggio=True)
+        + '<text x="60" y="300" font-family="Oswald" font-size="11" fill="#fff" letter-spacing="1" transform="rotate(-90 60 300)">RASOTERRA</text>'
+        + '<text x="168" y="262" font-family="Oswald" font-size="11" fill="#fff" letter-spacing="1" transform="rotate(-55 168 262)">DIETRO LA LINEA</text>'
         + freccia("M118,205 L104,228", True) + freccia("M160,128 L138,152", True) + freccia("M240,128 L222,140", True)
         + g(95, 335, "pA") + g(95, 250, "pA") + g(230, 325, "pA") + g(420, 300, "pA") + g(430, 200, "pA")
         + '<use href="#palla" x="110" y="342"/>'
         + g(120, 195, "pB", 5) + g(160, 120, "pB", 2) + g(250, 120, "pB", 6) + g(345, 120, "pB", 3)),
     "<li>Linea a 4 + portiere</li><li>Un difensore (il 5) segue l'attaccante che viene incontro</li><li>Metà campo con area di rigore</li>",
     "<p>Gli attaccanti muovono la palla come in figura. Quando arriva la <b>giocata sull'attaccante</b> la linea deve respingere la palla oppure <b>non far giocare l'attaccante</b>, a seconda di come arriva la palla.</p>"
-    "<p>Nel frattempo gli altri difensori si muovono per coprire lo spazio lasciato libero.</p>",
-    "<li>Palla che arriva lenta: anticipare</li><li>Palla tesa: stare attaccati e non far girare l'attaccante</li><li>Chi resta dietro copre lo spazio alle spalle</li>")
+    "<p><b>Palla rasoterra</b> sull'attaccante: il difensore non lo fa giocare. <b>Palla dietro la linea</b>: la linea la respinge.</p>",
+    "<li>Riconoscere subito come arriva la palla</li><li>Rasoterra: stare attaccati all'attaccante e non farlo girare</li><li>Dietro la linea: attaccare la palla e respingerla</li><li>Chi resta dietro copre lo spazio alle spalle</li>")
 
 ld3 = pagina_esercizio(
     "Esercitazione III · Gruppo A · Progressione 3 di 3", "6 contro 4",
@@ -197,7 +200,7 @@ gioco = f'''<section class="page">
   <div class="kicker">Esercitazione III · Gruppo B</div>
   <div class="ex-title"><h2>Gioco di posizione</h2></div>
   <div class="ex-sub">
-    <span class="chip">4 contro 4 + 2 jolly</span><span class="chip">Campo 30 × 30 m</span><span class="chip">3 serie da 4'</span>
+    <span class="chip">15 minuti</span><span class="chip">4 contro 4 + 2 jolly</span><span class="chip">Campo 30 × 30 m</span><span class="chip">3 serie da 4'</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> consolidare lo smarcamento. Ogni giocatore deve muoversi per offrire sempre una soluzione di passaggio.</p>
   {gp()}
