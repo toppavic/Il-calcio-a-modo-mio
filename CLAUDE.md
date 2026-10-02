@@ -119,6 +119,11 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Prodotto in vendita: pacchetto "Gli Imbattibili · Il Precampionato" (primi 10 allenamenti in un unico PDF
   con copertina, indice e prefazione). L'allenatore vuole un prezzo basso: proposta 9,90 €.
   Allenamento 1 gratis come assaggio ("commenta PRECAMPIONATO" su Instagram).
+- Idea dell'allenatore (2/10): pacchetto **"difesa di ferro"** con le sole esercitazioni difensive degli
+  Allenamenti 1-10 in progressione (scivolamenti, spaccare la linea, sul lancio, lancio in esterna, Ti lascio alle
+  spalle, 6c4, cross in diagonale invertita, 6c4 di verifica, uscite sul centrocampo, attacco-difesa, emergenza).
+  Ripartire dalla bozza `prodotti/linea-difensiva/`. Prezzo proposto circa 5 € IVA inclusa. In attesa di sapere
+  se farlo subito o aspettare i prossimi allenamenti.
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
