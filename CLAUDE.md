@@ -91,7 +91,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 8 ✅ completo e confermato (circa 110'; emergenza: O difende, XL attaccanti avversari; "30 m" sul foglio = 30 minuti).
 - Allenamento 9 ✅ completo e confermato (90-95'; gol normale 1 punto; angoli difensivi come le punizioni, ognuno li organizza come crede).
 - Allenamento 10 ✅ completo e confermato (85' + suicidi; corsia solo per il cross in entrambi i tempi).
-- Pacchetto "Il Precampionato" (Allenamenti 1-10) e annuncio Etsy pronti, da caricare. Prossimo: Allenamento 11.
+- Pacchetto "Il Precampionato" (Allenamenti 1-10) e annuncio Etsy pronti. Caricamento guidato passo passo con l'app Etsy Seller:
+  file salvati sul telefono, fermi al passo 2 (icona Annunci, la quarta in basso, poi +). Prossimo: Allenamento 11.
 - Marketing: Etsy da solo non porta clienti (già provato senza vendite). Strategia: post gratuiti
   sui social (gruppi Facebook di allenatori, Instagram, TikTok) con la storia della Juniores imbattuta,
   link a Etsy solo nel profilo. Primi 3 post pronti (cross, partita preventiva, gioco di posizione).
