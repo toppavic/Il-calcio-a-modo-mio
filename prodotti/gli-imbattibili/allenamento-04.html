@@ -119,6 +119,8 @@
 .intervalli { width: 100%; border-collapse: collapse; margin: 1mm 0 5mm; }
 .intervalli td { padding: 3mm 2mm; border-bottom: 1px solid #e3e8e5; font-size: 10pt; vertical-align: middle; }
 .intervalli .min { font-family: Oswald, sans-serif; font-size: 15pt; color: var(--verde); width: 14mm; }
+.intervalli tr.rec td { background: #f3f5f2; color: #5d6b65; padding: 1.5mm 2mm; }
+.intervalli tr.rec .min, .intervalli tr.rec .rit { font-size: 11pt; color: #7aa995; }
 .intervalli .rit { font-family: Oswald, sans-serif; font-size: 13pt; color: #9a7410; width: 26mm; }
 </style>
 </head>
@@ -171,7 +173,7 @@
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">86' + suicidi</div></div>
+    <div><div class="l">Durata</div><div class="v">95' + suicidi</div></div>
     <div><div class="l">Giocatori</div><div class="v">22</div></div>
     <div><div class="l">Campo</div><div class="v">50 m × largh.</div></div>
     <div><div class="l">Focus</div><div class="v">Marcature preventive</div></div>
@@ -182,7 +184,7 @@
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Partita “lavoro preventivo”</div><div class="d">Punti a chi riceve spalle alla porta e riesce a girarsi · vietato il compagno di reparto (gli attaccanti sì) · chi perde paga con i suicidi</div></td><td class="min">30'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Lavoro a gruppi con cambio</div><div class="d">15' per gruppo · Gruppo A: cross in fase difensiva e 6 contro 4 con l'allenatore · Gruppo B: circuito di forza a 5 stazioni. Poi si invertono</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">Parte atletica</div><div class="d">Intermittente a tempi decrescenti · 4 blocchi da 4'</div></td><td class="min">16'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">Parte atletica</div><div class="d">Intermittente a tempi decrescenti · 4 blocchi da 4' con 3' di recupero</div></td><td class="min">25'</td></tr>
     <tr><td class="num">V</td><td><div class="t">Suicidi</div><div class="d">Per chi ha perso la partita iniziale</div></td><td class="min">–</td></tr>
   </table>
 
@@ -190,7 +192,7 @@
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:30;background:var(--verde-2)">Partita · 30'</div>
     <div style="flex:30;background:var(--verde)">Lavoro a gruppi · 15' + 15'</div>
-    <div style="flex:16;background:var(--oro);color:var(--verde)">Atletica · 16'</div>
+    <div style="flex:25;background:var(--oro);color:var(--verde)">Atletica · 25'</div>
   </div>
 
   <div class="chiave" style="margin-top:9mm">
@@ -340,10 +342,10 @@
   <div class="kicker">Esercitazione IV</div>
   <div class="ex-title"><h2>Parte atletica</h2></div>
   <div class="ex-sub">
-    <span class="chip">4 blocchi da 4 minuti</span><span class="chip">Intermittente</span>
+    <span class="chip">25 minuti</span><span class="chip">4 blocchi da 4 minuti</span><span class="chip">3 minuti di recupero tra i blocchi</span><span class="chip">Intermittente</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> resistenza alla velocità. Il lavoro si accorcia e il ritmo cresce da un blocco all'altro.</p>
-  <table class="intervalli"><tr><td class="min">4'</td><td class="rit">45"-15"</td><td>15" di allungo sul lato lungo, 45" di recupero sulla diagonale</td></tr><tr><td class="min">4'</td><td class="rit">20"-20"</td><td>20" di corsa su 100 m, 20" di recupero</td></tr><tr><td class="min">4'</td><td class="rit">15"-15"</td><td>15" di corsa su 80 m, 15" di recupero</td></tr><tr><td class="min">4'</td><td class="rit">10"-10"</td><td>10" di navetta su 16 m, 10" di recupero</td></tr></table>
+  <table class="intervalli"><tr><td class="min">4'</td><td class="rit">45"-15"</td><td>15" di allungo sul lato lungo, 45" di recupero sulla diagonale</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">4'</td><td class="rit">20"-20"</td><td>20" di corsa su 100 m, 20" di recupero</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">4'</td><td class="rit">15"-15"</td><td>15" di corsa su 80 m, 15" di recupero</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">4'</td><td class="rit">10"-10"</td><td>10" di navetta su 16 m, 10" di recupero</td></tr></table>
   <div class="three">
     <div class="box"><h4>Organizzazione</h4><ul class="clean">
       <li>Campo intero per gli allunghi</li>
@@ -351,6 +353,7 @@
     </ul></div>
     <div class="box"><h4>Svolgimento</h4>
       <p>Ogni blocco dura 4 minuti: si alterna il tratto di corsa al recupero, con i tempi indicati in tabella.</p>
+      <p>Tra un blocco e l'altro <b>3 minuti di recupero</b>.</p>
     </div>
     <div class="box"><h4>Punti chiave</h4><ul class="clean">
       <li>Rispettare i tempi di partenza</li>
