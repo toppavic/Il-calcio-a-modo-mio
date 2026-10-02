@@ -98,6 +98,12 @@
 .c5 .sub { font-size: 13.5pt; color: #dfe6e1; max-width: 160mm; line-height: 1.45; }
 .c5 .sub b { color: #fff; }
 .c5 .bozza { top: 9mm; right: 12mm; background: #84b94a; color: #0c120f; border: 0; }
+.three { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; margin-top: 5mm; }
+.three .box { font-size: 9.4pt; line-height: 1.45; }
+.three .box p { margin-bottom: 2mm; }
+.obj { color: var(--tenue); margin: 0 0 4mm; }
+.obj b { color: var(--verde); }
+.stazioni .cue { color: var(--tenue); font-size: 9pt; display: block; margin-top: .5mm; }
 </style>
 </head>
 <body>
@@ -197,8 +203,9 @@
   <div class="ex-sub">
     <span class="chip">30 minuti</span><span class="chip">22 giocatori</span><span class="chip">Campo 50 m × tutta la larghezza</span><span class="chip">Diviso in 2 metà</span>
   </div>
+  <p class="obj"><b>Obiettivo:</b> possesso palla orientato alla profondità. Smarcarsi, giocare a pochi tocchi e servire il compagno più avanzato appena possibile.</p>
 
-  <svg class="diagram" viewBox="0 0 500 300">
+  <svg class="diagram" viewBox="0 0 500 300" style="width:135mm;margin:0 auto">
     <rect x="0" y="0" width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
       <rect x="30" y="20" width="440" height="260"/>
@@ -242,10 +249,24 @@
     </div>
   </div>
 
-  <div class="chiave">
-    <span class="kicker">Perché funziona</span>
-    Nel secondo tempo il lancio dalla propria metà vale doppio: la squadra impara a cercare la profondità appena c'è spazio, mentre chi difende deve restare corto e attento alle spalle.
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+      <li>Campo lungo 50 m e largo quanto il campo regolamentare, diviso in due metà</li>
+      <li>Due squadre da 10 giocatori</li>
+      <li>Un portiere per ogni lato corto, che fa da bersaglio</li>
+    </ul></div>
+    <div class="box"><h4>Svolgimento</h4>
+      <p>Le due squadre si contendono il pallone. Chi è in possesso deve far arrivare la palla al portiere del lato che attacca.</p>
+      <p>Ogni volta che il portiere riceve la palla la squadra conquista il punto. Nel secondo tempo cambiano tocchi e punteggio (vedi riquadri sopra).</p>
+    </div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+      <li>Smarcarsi sempre per offrire una linea di passaggio</li>
+      <li>Testa alta: guardare il portiere prima di ricevere</li>
+      <li>Nel 2° tempo cercare la profondità appena c'è spazio</li>
+      <li>Chi difende resta corto e attento alle spalle</li>
+    </ul></div>
   </div>
+
 
   <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>3</span></div>
 </section>
@@ -257,8 +278,9 @@
   <div class="ex-sub">
     <span class="chip">20 minuti</span><span class="chip">5 stazioni</span><span class="chip">3' per stazione</span><span class="chip">1' di recupero</span>
   </div>
+  <p class="obj"><b>Obiettivo:</b> forza generale ed esplosività degli arti inferiori, rapidità sui primi metri.</p>
 
-  <svg class="diagram" viewBox="0 0 500 225" style="margin-bottom:6mm">
+  <svg class="diagram" viewBox="0 0 500 225" style="width:150mm;margin:0 auto 5mm">
     <rect width="500" height="225" fill="url(#strisce)"/>
     <g font-family="Oswald" text-anchor="middle">
       <path d="M95,60 L250,35 L405,60 L360,165 L140,165 Z" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="7 6" opacity=".8"/>
@@ -276,16 +298,17 @@
 
   <table class="stazioni">
     <tr><th></th><th>Esercizio</th><th>Volume</th></tr>
-    <tr><td class="s">1</td><td><b>Addominali</b></td><td class="vol">2 × 10</td></tr>
-    <tr><td class="s">2</td><td><b>Balzi a piedi uniti con rimbalzo</b><br><span style="color:var(--tenue);font-size:9.5pt">Partenza dalla posizione di mezzo squat</span></td><td class="vol">3 serie × 4</td></tr>
-    <tr><td class="s">3</td><td><b>Skip 5 m + scatto 5 m</b></td><td class="vol">6 ripetizioni</td></tr>
-    <tr><td class="s">4</td><td><b>Flessioni</b></td><td class="vol">2 × 10</td></tr>
-    <tr><td class="s">5</td><td><b>Balzi a piedi uniti in avanti</b><br><span style="color:var(--tenue);font-size:9.5pt">Gambe tese</span></td><td class="vol">3 serie × 4 salti</td></tr>
+    <tr><td class="s">1</td><td><b>Addominali</b><span class="cue">Movimento controllato, senza strappi</span></td><td class="vol">2 × 10</td></tr>
+    <tr><td class="s">2</td><td><b>Balzi a piedi uniti con rimbalzo</b><span class="cue">Partenza da mezzo squat. Spinta esplosiva verso l'alto, atterraggio morbido e subito nuovo balzo</span></td><td class="vol">3 serie × 4</td></tr>
+    <tr><td class="s">3</td><td><b>Skip 5 m + scatto 5 m</b><span class="cue">Skip rapido e corto, poi scatto alla massima velocità. Ritorno al passo</span></td><td class="vol">6 ripetizioni</td></tr>
+    <tr><td class="s">4</td><td><b>Flessioni</b><span class="cue">Corpo in linea dalla testa ai piedi, petto vicino al terreno</span></td><td class="vol">2 × 10</td></tr>
+    <tr><td class="s">5</td><td><b>Balzi a piedi uniti in avanti</b><span class="cue">Gambe tese, spinta di caviglia e contatto breve con il terreno</span></td><td class="vol">3 serie × 4 salti</td></tr>
   </table>
 
   <div class="chiave">
     <span class="kicker">Organizzazione</span>
     I giocatori si dividono in 5 gruppi e ruotano in senso orario. Ogni stazione dura 3 minuti, poi 1 minuto di recupero durante il cambio.
+    <br><br><b>Attenzione:</b> la qualità del gesto viene prima della quantità. Se l'esecuzione peggiora è meglio ridurre le ripetizioni.
   </div>
 
   <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>4</span></div>
@@ -293,15 +316,10 @@
 
 <!-- 5. LINEA DIFENSIVA -->
 <section class="page">
-  <div class="kicker">Esercitazione IV · Gruppo A</div>
-  <div class="ex-title"><h2>Lavoro sulla linea difensiva</h2></div>
-  <div class="ex-sub">
-    <span class="chip">15–20 minuti</span><span class="chip">Linea a 4 + portiere</span><span class="chip">Conduce l'allenatore</span>
-  </div>
-
-  <!-- Progressione 1 -->
-  <div class="prog">
-    <svg class="diagram" viewBox="0 0 500 380">
+    <div class="kicker">Esercitazione IV · Gruppo A · Progressione 1 di 3</div>
+  <div class="ex-title"><h2>Scivolamenti</h2></div>
+  <p class="obj" style="margin-top:1mm"><b style="color:var(--verde)">Obiettivo:</b> la linea si muove insieme in base alla posizione della palla.</p>
+  <svg class="diagram" style="width:150mm;margin:0 auto" viewBox="0 0 500 380">
       <rect width="500" height="380" fill="url(#strisce)"/>
       <g fill="none" stroke="#fff" stroke-width="2.5">
         <rect x="10" y="10" width="480" height="360"/>
@@ -326,18 +344,19 @@
         <text x="92" y="199">2</text><text x="186" y="154">5</text><text x="266" y="152">6</text><text x="346" y="150">3</text>
       </g>
     </svg>
-    <div>
-      <div class="step">Progressione 1</div>
-      <h3>Scivolamenti</h3>
-      <p>Gli attaccanti muovono la palla. I difensori si spostano curando la <b>posizione del corpo</b> e la <b>distanza tra i compagni</b>, sempre con l'attenzione rivolta alla palla.</p>
-      <p>Quando la palla arriva sull'esterno la linea si spacca e forma <b>due linee</b>: il difensore più vicino esce sulla palla e gli altri restano dietro.</p>
-      <div class="chiave" style="margin-top:3mm"><span class="kicker">Importante</span>Dare sempre copertura al compagno che attacca la palla.</div>
-    </div>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li><li>15–20 minuti, guidati dall'allenatore</li></ul></div>
+    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla. I difensori si spostano curando la <b>posizione del corpo</b> e la <b>distanza tra i compagni</b>, sempre con l'attenzione rivolta alla palla.</p><p>Quando la palla arriva sull'esterno la linea si spacca e forma <b>due linee</b>: il difensore più vicino esce sulla palla e gli altri restano dietro.</p></div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Posizione del corpo</li><li>Distanza tra i compagni</li><li>Occhi sempre sulla palla</li><li><b>Dare sempre copertura al compagno che attacca la palla</b></li></ul></div>
   </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>5</span></div>
+</section>
 
-  <!-- Progressione 2 -->
-  <div class="prog">
-    <svg class="diagram" viewBox="0 0 500 380">
+<section class="page">
+    <div class="kicker">Esercitazione IV · Gruppo A · Progressione 2 di 3</div>
+  <div class="ex-title"><h2>Spaccare la linea</h2></div>
+  <p class="obj" style="margin-top:1mm"><b style="color:var(--verde)">Obiettivo:</b> gestire l'attaccante che punta la linea palla al piede.</p>
+  <svg class="diagram" style="width:150mm;margin:0 auto" viewBox="0 0 500 380">
       <rect width="500" height="380" fill="url(#strisce)"/>
       <g fill="none" stroke="#fff" stroke-width="2.5">
         <rect x="10" y="10" width="480" height="360"/>
@@ -361,21 +380,19 @@
       </g>
       <g opacity=".45"><circle cx="140" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="215" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="300" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="380" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/></g>
     </svg>
-    <div>
-      <div class="step">Progressione 2</div>
-      <h3>Spaccare la linea</h3>
-      <p>Gli attaccanti muovono la palla e i difensori si muovono come nella progressione 1.</p>
-      <p>Quando un attaccante <b>punta la linea</b> palla al piede, la linea <b>scappa fino al limite dell'area</b>. Poi si spacca: un difensore esce ad attaccare la palla, gli altri restano in linea.</p>
-    </div>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla e i difensori si muovono come nella progressione 1.</p><p>Quando un attaccante <b>punta la linea</b> palla al piede, la linea <b>scappa fino al limite dell'area</b>. Poi si spacca: un difensore esce ad attaccare la palla, gli altri restano in linea.</p></div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Scappare insieme, senza lasciare buchi</li><li>Fermarsi al limite dell'area</li><li>Un solo difensore esce sulla palla</li><li>Gli altri restano in linea e coprono</li></ul></div>
   </div>
-
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>6</span></div>
 </section>
 
 <section class="page">
-  <!-- Progressione 3 -->
-  <div class="prog">
-    <svg class="diagram" viewBox="0 0 500 380">
+    <div class="kicker">Esercitazione IV · Gruppo A · Progressione 3 di 3</div>
+  <div class="ex-title"><h2>Spaccare la linea sul lancio</h2></div>
+  <p class="obj" style="margin-top:1mm"><b style="color:var(--verde)">Obiettivo:</b> difendere sul pallone lungo alle spalle o davanti alla linea.</p>
+  <svg class="diagram" style="width:150mm;margin:0 auto" viewBox="0 0 500 380">
       <rect width="500" height="380" fill="url(#strisce)"/>
       <g fill="none" stroke="#fff" stroke-width="2.5">
         <rect x="10" y="10" width="480" height="360"/>
@@ -399,20 +416,12 @@
         <text x="155" y="204">5</text><text x="230" y="129">6</text><text x="307" y="129">3</text><text x="124" y="134">2</text>
       </g>
     </svg>
-    <div>
-      <div class="step">Progressione 3</div>
-      <h3>Spaccare la linea sul lancio</h3>
-      <p>Gli attaccanti muovono la palla e i difensori si muovono come sopra.</p>
-      <p>Sul <b>lancio</b> la difesa si spacca: il difensore <b>più vicino alla palla</b> la attacca e la respinge, gli altri gli danno copertura.</p>
-    </div>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla e i difensori si muovono come sopra.</p><p>Sul <b>lancio</b> la difesa si spacca: il difensore <b>più vicino alla palla</b> la attacca e la respinge, gli altri gli danno copertura.</p></div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Leggere il lancio in anticipo</li><li>Attacca la palla il più vicino</li><li>Respingere senza esitare</li><li>Gli altri coprono il compagno</li></ul></div>
   </div>
-
-  <div class="chiave" style="margin-top:8mm">
-    <span class="kicker">Il filo che lega le tre progressioni</span>
-    La linea si muove insieme e guarda sempre la palla. Quando la palla viene attaccata un difensore esce, gli altri accorciano e gli danno copertura.
-  </div>
-
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>6</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>7</span></div>
 </section>
 
 <!-- 7. GIOCO DI POSIZIONE -->
@@ -422,8 +431,9 @@
   <div class="ex-sub">
     <span class="chip">15–20 minuti</span><span class="chip">4 contro 4 + 2 jolly</span><span class="chip">4 serie da 4'</span><span class="chip">Recupero 1'30"</span>
   </div>
+  <p class="obj"><b>Obiettivo:</b> mantenere il possesso palla occupando bene gli spazi, con passaggi rapidi e precisi.</p>
 
-  <svg class="diagram" viewBox="0 0 500 340">
+  <svg class="diagram" viewBox="0 0 500 340" style="width:150mm;margin:0 auto">
     <rect width="500" height="340" fill="url(#strisce)"/>
     <rect x="100" y="40" width="300" height="265" fill="none" stroke="#fff" stroke-width="2.5"/>
     <path d="M186,176 L240,121" stroke="#fff" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#freccia)"/>
@@ -432,33 +442,32 @@
     <use href="#pJ" x="250" y="40"/><text x="250" y="44" font-family="Oswald" font-size="12" text-anchor="middle" fill="#1d2421">9</text><use href="#pJ" x="250" y="110"/><text x="250" y="114" font-family="Oswald" font-size="12" text-anchor="middle" fill="#1d2421">10</text><use href="#pB" x="100" y="140"/><text x="100" y="144" font-family="Oswald" font-size="12" text-anchor="middle" fill="#fff">11</text><use href="#pB" x="400" y="150"/><text x="400" y="154" font-family="Oswald" font-size="12" text-anchor="middle" fill="#fff">7</text><use href="#pB" x="175" y="180"/><text x="175" y="184" font-family="Oswald" font-size="12" text-anchor="middle" fill="#fff">4</text><use href="#pB" x="275" y="305"/><text x="275" y="309" font-family="Oswald" font-size="12" text-anchor="middle" fill="#fff">5</text><use href="#pA" x="100" y="250"/><text x="100" y="254" font-family="Oswald" font-size="12" text-anchor="middle" fill="#fff">3</text><use href="#pA" x="400" y="240"/><text x="400" y="244" font-family="Oswald" font-size="12" text-anchor="middle" fill="#fff">2</text><use href="#pA" x="225" y="268"/><text x="225" y="272" font-family="Oswald" font-size="12" text-anchor="middle" fill="#fff">6</text><use href="#pA" x="305" y="170"/><text x="305" y="174" font-family="Oswald" font-size="12" text-anchor="middle" fill="#fff">8</text>
   </svg>
 
-  <div class="two">
-    <div class="box">
-      <h4>Regole</h4>
-      <ul class="clean">
-        <li>Due squadre da 4 si contendono il possesso palla</li>
-        <li>Il <b>9</b> e il <b>10</b> sono <b>jolly</b>: giocano sempre con la squadra che ha la palla</li>
-        <li>Ogni <b>15 passaggi</b> consecutivi: <b>1 punto</b></li>
-      </ul>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+      <li>Due squadre da 4 giocatori in un quadrato</li>
+      <li>2 jolly: il 9 e il 10</li>
+      <li>4 serie da 4 minuti, recupero 1'30"</li>
+    </ul></div>
+    <div class="box"><h4>Svolgimento</h4>
+      <p>La squadra in possesso, aiutata dai due jolly, cerca di tenere palla il più a lungo possibile. Ogni <b>15 passaggi consecutivi</b> vale 1 punto.</p>
+      <p>Al termine delle serie <b>si invertono i gruppi</b> con la linea difensiva.</p>
     </div>
-    <div class="box">
-      <h4>Volume</h4>
-      <ul class="clean">
-        <li><b>4 serie</b> da <b>4 minuti</b></li>
-        <li>Recupero <b>1'30"</b> tra le serie</li>
-        <li>Al termine <b>si invertono i gruppi</b> con la linea difensiva</li>
-      </ul>
-    </div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+      <li>Smarcarsi sempre per dare una linea di passaggio</li>
+      <li>Usare i jolly per uscire dalla pressione</li>
+      <li>Pochi tocchi e palla che viaggia veloce</li>
+      <li>Chi difende pressa insieme per spezzare la sequenza</li>
+    </ul></div>
   </div>
 
-  <div class="kicker" style="margin-top:9mm">Esercitazione V</div>
+  <div class="kicker" style="margin-top:7mm">Esercitazione V</div>
   <div class="ex-title"><h2 style="font-size:17pt">Defaticamento</h2></div>
   <div class="two" style="margin-top:3mm">
     <div class="box"><h4>Stretching · 5'</h4>Allungamento a fine seduta.</div>
     <div class="box"><h4>1 giro di campo</h4>Per chiudere l'allenamento.</div>
   </div>
 
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>7</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>8</span></div>
 </section>
 
 </body>
