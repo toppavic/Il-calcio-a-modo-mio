@@ -102,14 +102,14 @@ scheda = f'''<section class="page">
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Partita “ricerca del portiere”</div><div class="d">2 tocchi · lancio dalla metà difensiva e recupero palla nella metà offensiva premiati · nel 2° tempo solo gioco verticale</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Lavoro a gruppi con cambio</div><div class="d">20' per gruppo · Gruppo A: fase difensiva, uscite della difesa contro il centrocampo · Gruppo B: rondo, 4 serie da 3'. Poi si invertono</div></td><td class="min">40'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Lavoro a gruppi con cambio</div><div class="d">Gruppo A: uscite della difesa sul centrocampo a partita, 4 serie da 4' · Gruppo B: rondo, 4 serie da 3'. Poi si invertono</div></td><td class="min">40'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">Parte atletica · navette</div><div class="d">Intermittente a tempi decrescenti · 4 blocchi da 6' con 3' di recupero</div></td><td class="min">33'</td></tr>
   </table>
 
   <div class="timeline">
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:30;background:var(--verde-2)">Partita · 30'</div>
-    <div style="flex:40;background:var(--verde)">Lavoro a gruppi · 20' + 20'</div>
+    <div style="flex:40;background:var(--verde)">Lavoro a gruppi · 40'</div>
     <div style="flex:33;background:var(--oro);color:var(--verde)">Atletica · 33'</div>
   </div>
 
@@ -210,20 +210,20 @@ def campo_uscite():
 
 uscite = f'''<section class="page">
   <div class="kicker">Esercitazione III · Gruppo A</div>
-  <div class="ex-title"><h2>Uscite della difesa sul centrocampo</h2></div>
+  <div class="ex-title"><h2>Uscite della difesa sul centrocampo a partita</h2></div>
   <div class="ex-sub">
-    <span class="chip">20 minuti per gruppo, poi cambio</span><span class="chip">2 parti da 10'</span><span class="chip">Conduce l'allenatore</span>
+    <span class="chip">4 serie da 4'</span><span class="chip">Recupero 2'</span><span class="chip">Poi cambio</span><span class="chip">Conduce l'allenatore</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> uscire sul centrocampista in possesso senza lasciare spazio alle spalle, curando le piramidi e le coperture d'uscita.</p>
   {campo_uscite()}
   <div class="two">
     <div class="box">
-      <h4>1ª parte · 10'</h4>
+      <h4>Le uscite</h4>
       <p>Uscite della <b>difesa contro il centrocampo</b>. È importante curare le <b>piramidi</b> e le <b>coperture d'uscita</b>.</p>
     </div>
     <div class="box">
-      <h4>2ª parte · 10'</h4>
-      <p>Si gioca a punti: <b>1 punto</b> ogni volta che i centrocampisti trovano <b>A</b> oppure i difensori trovano <b>C</b>.</p>
+      <h4>A partita · 4 serie da 4'</h4>
+      <p>Si gioca a punti: <b>1 punto</b> ogni volta che i centrocampisti trovano <b>A</b> oppure i difensori trovano <b>C</b>. Tra una serie e l'altra <b>2 minuti di recupero</b>.</p>
     </div>
   </div>
   <div class="three">
@@ -264,7 +264,7 @@ rondo = pagina_esercizio(
     "<p><b>4 serie da 3 minuti</b> con <b>2 minuti di recupero</b>.</p>"
     "<p>La squadra in possesso fa girare palla. I due in mezzo provano a recuperarla.</p>",
     "<li>Smarcarsi dentro il quadrato per dare la linea interna</li><li>Passaggi forti e precisi</li><li>Chi pressa lo fa in coppia, chiudendo una linea di passaggio</li>",
-    chips='<span class="chip">20 minuti, poi cambio</span><span class="chip">4 serie da 3\'</span><span class="chip">Recupero 2\'</span>')
+    chips='<span class="chip">Poi cambio</span><span class="chip">4 serie da 3\'</span><span class="chip">Recupero 2\'</span>')
 
 # ---------- 6. Parte atletica
 blocchi = [("45\"-15\"", "15\" di allungo sul lato lungo, 45\" di recupero sulla diagonale"),
