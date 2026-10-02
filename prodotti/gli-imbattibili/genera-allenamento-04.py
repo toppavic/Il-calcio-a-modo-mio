@@ -204,19 +204,28 @@ cross = pagina_esercizio(
     "posizionarsi nel modo giusto in area per affrontare e respingere il cross.",
     mezzo_campo(
         freccia("M236,350 L72,346", tratteggio=True)
-        + freccia("M52,334 L40,128", tratteggio=True)
-        + freccia("M48,104 Q170,40 236,82", tratteggio=True)
-        + g(40, 112, "pA", 2) + g(60, 346, "pA", 1) + g(440, 92, "pA") + g(450, 330, "pA")
+        + freccia("M62,334 L58,104", tratteggio=True)
+        + freccia("M40,250 L40,62", True)
+        + freccia("M62,44 Q170,6 262,62", tratteggio=True)
+        + g(40, 46, "pA", 2) + g(60, 346, "pA", 1) + g(440, 92, "pA") + g(450, 330, "pA")
         + g(250, 350, "pJ", "M", "#1d2421")
-        + '<use href="#palla" x="40" y="128"/>'
-        + g(150, 80, "pB", 2) + g(215, 66, "pB", 5) + g(290, 66, "pB", 6) + g(355, 80, "pB", 3)
-        + g(215, 128, "pB", 4) + g(290, 128, "pB", 8)
-        + '<text x="250" y="374" font-family="Oswald" font-size="11" fill="#fff" text-anchor="middle" letter-spacing="1">MISTER</text>'),
+        + '<use href="#palla" x="56" y="54"/>'
+        + g(140, 60, "pB", 2) + g(200, 74, "pB", 5) + g(262, 88, "pB", 6) + g(324, 102, "pB", 3)
+        + g(172, 108, "pB", 4) + g(232, 122, "pB", 8)
+        + '<text x="250" y="374" font-family="Oswald" font-size="11" fill="#fff" text-anchor="middle" letter-spacing="1">MISTER</text>', "128mm"),
     "<li>Linea a 4 + portiere, con il 4 e l'8 davanti</li><li>Attaccanti: X1, X2 e due in attesa del cross</li><li>Metà campo con area di rigore</li>",
-    "<p>Il mister dà la palla a <b>X1</b>, che la passa a <b>X2</b> sulla fascia. X2 <b>crossa</b>.</p>"
-    "<p>I difensori devono <b>posizionarsi nel modo giusto</b> per affrontare e <b>respingere</b> la palla.</p>",
-    "<li>Sistemarsi mentre la palla arriva al crossatore</li><li>Guardare insieme palla e avversario</li><li>Respingere lontano e verso l'esterno</li>",
+    "<p>Il mister dà la palla a <b>X1</b>, che la passa a <b>X2</b>. X2 <b>si abbassa fino al fondo</b> e crossa.</p>"
+    "<p>La linea si dispone in <b>diagonale invertita</b> per affrontare e <b>respingere</b> la palla.</p>",
+    "<li>Terzino lato palla leggermente sotto la linea della palla</li>"
+    "<li>Centrali e terzino opposto in leggera diagonale rispetto al cross</li>"
+    "<li>Centrocampisti a cerniera, anche loro in leggera diagonale</li>",
     chips='<span class="chip">15 minuti per gruppo, poi cambio</span><span class="chip">Conduce l\'allenatore</span>')
+cross = cross.replace('<div class="footer">', '''<div class="chiave">
+    <span class="kicker">La diagonale invertita</span>
+    Il <b>terzino lato palla</b> (2) si mette leggermente sotto la linea della palla. I <b>due centrali</b> (5 e 6) e il <b>terzino opposto</b> (3) formano una leggera diagonale rispetto al cross.
+    Il <b>centrocampista più vicino alla palla</b> (4) si mette a cerniera tra il terzino e il centrale, l'<b>altro centrocampista</b> (8) tra i due centrali.
+  </div>
+  <div class="footer">''', 1)
 
 # ---------- 5. 6 contro 4 di verifica
 sei4 = pagina_esercizio(
