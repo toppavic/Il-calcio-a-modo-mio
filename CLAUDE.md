@@ -75,7 +75,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 2 ✅ completo; in attesa di conferma sulla nuova versione di "Ti lascio alle spalle".
 - Allenamento 3 ✅ completo e confermato (125'; gioco di posizione 30 × 30 m, 15 passaggi = 1 punto).
 - Allenamento 4 ✅ completo (95' + suicidi; marcature preventive; 3' di recupero tra i blocchi atletici). Cross in diagonale invertita confermato.
-- Allenamento 5 ✅ completo (113'; uscite della difesa sul centrocampo a partita, 4 serie da 4' con 2' di recupero).
+- Allenamento 5 ✅ completo e confermato (113'; uscite della difesa sul centrocampo a partita, 4 serie da 4' tutte a punti con 2' di recupero).
 - Prossimo: **Allenamento 6**.
 - Marketing: Etsy da solo non porta clienti (già provato senza vendite). Strategia: post gratuiti
   sui social (gruppi Facebook di allenatori, Instagram, TikTok) con la storia della Juniores imbattuta,

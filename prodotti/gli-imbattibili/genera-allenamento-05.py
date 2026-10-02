@@ -223,7 +223,7 @@ uscite = f'''<section class="page">
     </div>
     <div class="box">
       <h4>A partita · 4 serie da 4'</h4>
-      <p>Si gioca a punti: <b>1 punto</b> ogni volta che i centrocampisti trovano <b>A</b> oppure i difensori trovano <b>C</b>. Tra una serie e l'altra <b>2 minuti di recupero</b>.</p>
+      <p><b>Tutte le serie</b> si giocano a punti: <b>1 punto</b> ogni volta che i centrocampisti trovano <b>A</b> oppure i difensori trovano <b>C</b>. Tra una serie e l'altra <b>2 minuti di recupero</b>.</p>
     </div>
   </div>
   <div class="three">
