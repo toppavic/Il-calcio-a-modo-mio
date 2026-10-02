@@ -82,7 +82,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 4 ✅ completo (95' + suicidi; marcature preventive; 3' di recupero tra i blocchi atletici). Cross in diagonale invertita confermato.
 - Allenamento 5 ✅ completo e confermato (113'; uscite della difesa sul centrocampo a partita, 4 serie da 4' tutte a punti con 2' di recupero).
 - Allenamento 6 ✅ completo e confermato (100'; pressione a squadra corta, gol normale 1 punto; nell'attacco contro difesa X difende e O attacca).
-- Prossimo: **Allenamento 7**.
+- Allenamento 7 ✅ prima versione; in attesa di risposte (vincolo di reparto nel 2° tempo, ripetizioni scaletta, contenuto delle punizioni difensive).
+- Prossimo: **Allenamento 8**.
 - Marketing: Etsy da solo non porta clienti (già provato senza vendite). Strategia: post gratuiti
   sui social (gruppi Facebook di allenatori, Instagram, TikTok) con la storia della Juniores imbattuta,
   link a Etsy solo nel profilo. Primi 3 post pronti (cross, partita preventiva, gioco di posizione).
