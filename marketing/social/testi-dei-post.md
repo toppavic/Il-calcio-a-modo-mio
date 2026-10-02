@@ -88,3 +88,22 @@ Dalla Juniores che ha vinto il campionato senza perdere una partita.
 3. **TikTok**: post con foto (carosello) usando le immagini verticali.
 
 Il link a Etsy va **solo nel profilo** (bio di Instagram e TikTok, info della pagina Facebook), non nei post.
+
+---
+
+## Reel 1 – Difesa sui cross (domenica)
+
+Video: `marketing/reel/reel-cross.mp4` (25 secondi, senza audio: la musica si sceglie dentro Instagram).
+
+**Instagram (Reel)**
+
+Come difendevamo sui cross ⚽️
+La linea si sistema in diagonale invertita mentre la palla va sul fondo.
+La spiegazione completa è nel post fissato sul profilo.
+Mandalo al tuo vice 👇
+
+#allenatoredicalcio #esercitazionicalcio #allenamentocalcio #calciodilettantistico #juniores #fasedifensiva #mister #calcio
+
+**TikTok (video)**
+
+La diagonale invertita sui cross: chi va dove 👇 #allenatore #calcio #esercizicalcio #mister

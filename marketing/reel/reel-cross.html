@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><title>Reel cross</title>
+<style>
+@font-face { font-family: Oswald; src: url(../../prodotti/gli-imbattibili/font/oswald.woff2) format("woff2"); font-weight: 200 700; }
+@font-face { font-family: Inter; src: url(../../prodotti/gli-imbattibili/font/inter.woff2) format("woff2"); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 1080px; height: 1920px; overflow: hidden; background: #0c120f; font-family: Inter, sans-serif; color: #fff; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+.layer { position: absolute; inset: 0; }
+#cop { background: #0c120f; }
+#cop .bgimg { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; transform: rotate(-4deg) scale(1.08); filter: grayscale(1) contrast(1.1); opacity: .5; }
+#cop .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,18,15,.95) 0%, rgba(12,18,15,.75) 40%, rgba(12,18,15,.9) 70%, rgba(12,18,15,.98) 100%); }
+.logo { position: absolute; left: 50%; transform: translateX(-50%); -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }
+#cop .logo { top: 220px; width: 600px; }
+#cop .txt { position: absolute; left: 80px; right: 80px; top: 820px; }
+.kick { font-family: Oswald; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-size: 30px; color: #84b94a; }
+h1 { font-family: Oswald; font-weight: 700; text-transform: uppercase; font-size: 150px; line-height: .92; margin: 20px 0 30px; }
+h1 span { color: #84b94a; display: block; }
+.sub { font-size: 40px; line-height: 1.4; color: #dfe6e1; }
+.sub b { color: #fff; }
+#campo .head { position: absolute; left: 60px; right: 60px; top: 200px; }
+#campo h2 { font-family: Oswald; font-weight: 700; text-transform: uppercase; font-size: 84px; line-height: 1; margin-top: 10px; }
+#campo svg { position: absolute; left: 40px; top: 500px; width: 1000px; height: 760px; border-radius: 20px; }
+.cap { position: absolute; left: 60px; right: 60px; top: 1310px; font-size: 50px; line-height: 1.32; font-weight: 500; opacity: 0; }
+.cap b { color: #f2c230; font-weight: 700; }
+.cap .n { display: inline-block; font-family: Oswald; color: #0c120f; background: #f2c230; border-radius: 50%; width: 64px; height: 64px; text-align: center; line-height: 64px; font-size: 38px; margin-right: 18px; vertical-align: 6px; }
+#fine .logo { top: 330px; width: 520px; }
+#fine .txt { position: absolute; left: 80px; right: 80px; top: 760px; }
+.azione { margin-top: 60px; font-family: Oswald; text-transform: uppercase; letter-spacing: .06em; font-size: 46px; color: #0c120f; background: #84b94a; border-radius: 18px; padding: 28px 30px; text-align: center; }
+.azione2 { margin-top: 24px; font-family: Oswald; text-transform: uppercase; letter-spacing: .06em; font-size: 40px; border: 3px solid #84b94a; border-radius: 18px; padding: 24px 30px; text-align: center; }
+</style></head>
+<body><div id="stage">
+
+<div class="layer" id="campo">
+  <div class="head"><div class="kick">Gli Imbattibili · dai quaderni del mister</div><h2>La diagonale<br>invertita</h2></div>
+  <svg viewBox="0 0 500 380">
+    <defs>
+      <pattern id="strisce" width="60" height="400" patternUnits="userSpaceOnUse"><rect width="30" height="400" fill="#3f8f5a"/><rect x="30" width="30" height="400" fill="#46995f"/></pattern>
+    </defs>
+    <rect width="500" height="380" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5">
+      <rect x="10" y="10" width="480" height="360"/>
+      <rect x="103" y="10" width="294" height="110"/><rect x="186" y="10" width="128" height="38"/>
+      <path d="M205,120 A55,55 0 0 0 295,120"/>
+    </g>
+    <rect x="216" y="2" width="68" height="8" fill="#fff"/>
+    <path id="scia" d="" stroke="#f2c230" stroke-width="3" fill="none" stroke-dasharray="7 5"/>
+    <path id="sciaPalla" d="" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" opacity=".8"/>
+    <g id="giocatori"></g>
+    <circle id="palla" r="6" fill="#fff" stroke="#1d2421" stroke-width="1.8"/>
+  </svg>
+  <div class="cap" id="c0">Il mister dà palla a <b>X1</b>, <b>X2</b> va sul fondo e crossa</div>
+  <div class="cap" id="c1"><span class="n">2</span>Il <b>terzino lato palla</b> leggermente sotto la linea della palla</div>
+  <div class="cap" id="c2"><span class="n">5</span><b>Centrali</b> e <b>terzino opposto</b> in leggera diagonale</div>
+  <div class="cap" id="c3"><span class="n">4</span>Il <b>centrocampista più vicino</b> a cerniera tra terzino e centrale</div>
+  <div class="cap" id="c4"><span class="n">8</span><b>L'altro centrocampista</b> tra i due centrali</div>
+</div>
+
+<div class="layer" id="cop">
+  <img class="bgimg" src="../../materiale/precampionato/allenamento-04.jpg">
+  <div class="veil"></div>
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <div class="kick">Gli Imbattibili</div>
+    <h1>Come difendevamo<span>sui cross</span></h1>
+    <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b></p>
+  </div>
+</div>
+
+<div class="layer" id="fine" style="background:#0c120f">
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <h1 style="font-size:130px">Gli<span>Imbattibili</span></h1>
+    <p class="sub">La spiegazione completa è nel post fissato sul profilo</p>
+    <div class="azione">Salvalo per il prossimo allenamento</div>
+    <div class="azione2">Mandalo al tuo vice</div>
+  </div>
+</div>
+
+</div>
+<script>
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = x => { x = clamp(x); return x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2; };
+const prog = (t, a, b) => ease((t - a) / (b - a));
+const lerp = (p, q, k) => [p[0] + (q[0] - p[0]) * k, p[1] + (q[1] - p[1]) * k];
+const quad = (p0, c, p1, k) => [(1-k)*(1-k)*p0[0] + 2*(1-k)*k*c[0] + k*k*p1[0], (1-k)*(1-k)*p0[1] + 2*(1-k)*k*c[1] + k*k*p1[1]];
+
+// Difensori: linea piatta con palla centrale → diagonale invertita (posizioni dello schema dell'Allenamento 4)
+const DIF = {2: [[130,150],[140,60]], 5: [[210,150],[200,74]], 6: [[290,150],[262,88]], 3: [[370,150],[324,102]],
+             4: [[190,215],[172,108]], 8: [[300,215],[232,122]]};
+const T = { cop: 3.2, m: 4.2, x1: 5.6, x2a: 5.6, x2b: 8.2, cross0: 8.6, cross1: 10.0, caps: 10.8, dur: 2.4, fine: 21.0, fine2: 21.6, end: 25 };
+
+function player(x, y, fill, stroke, n, col, ring) {
+  let s = ring ? `<circle cx="${x}" cy="${y}" r="20" fill="none" stroke="#f2c230" stroke-width="3.5"/>` : '';
+  s += `<circle cx="${x}" cy="${y}" r="11" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`;
+  if (n !== '') s += `<text x="${x}" y="${y + 4.5}" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="${col}">${n}</text>`;
+  return s;
+}
+
+function draw(t) {
+  const op = (id, v) => document.getElementById(id).style.opacity = v;
+  op('cop', 1 - clamp((t - T.cop) / .5));
+  op('fine', clamp((t - T.fine) / .5));
+
+  // Difensori
+  const kd = prog(t, 6.2, 9.4);
+  const capIdx = t >= T.caps ? Math.floor((t - T.caps) / T.dur) + 1 : 0;
+  const rings = {1: [2], 2: [5, 6, 3], 3: [4], 4: [8]}[capIdx] || [];
+  let s = '';
+  // Portiere
+  s += player(250, 32, '#f2c230', '#1d2421', '', '#1d2421', false);
+  // Attaccanti fermi e mister
+  s += player(440, 92, '#c8372d', '#fff', '', '#fff') + player(450, 330, '#c8372d', '#fff', '', '#fff');
+  s += player(250, 350, '#fff', '#1d2421', 'M', '#1d2421');
+  s += player(60, 346, '#c8372d', '#fff', 1, '#fff');
+  const x2 = lerp([40, 250], [40, 62], prog(t, T.x2a, T.x2b));
+  s += player(x2[0], x2[1], '#c8372d', '#fff', 2, '#fff');
+  for (const n of [2, 5, 6, 3, 4, 8]) {
+    const p = lerp(DIF[n][0], DIF[n][1], kd);
+    s += player(p[0], p[1], '#2a5db0', '#fff', n, '#fff', rings.includes(n));
+  }
+  document.getElementById('giocatori').innerHTML = s;
+  document.getElementById('scia').setAttribute('d', t > T.x2a ? `M40,250 L${x2[0]},${x2[1] + 14}` : '');
+
+  // Palla
+  let b, scia = '';
+  if (t < T.m) b = [262, 352];
+  else if (t < T.x1) { b = lerp([262, 352], [72, 346], prog(t, T.m, T.x1)); scia = `M250,350 L${b[0]},${b[1]}`; }
+  else if (t < 7.2) { b = lerp([72, 340], [52, 140], prog(t, T.x1, 7.2)); scia = `M66,334 L${b[0]},${b[1]}`; }
+  else if (t < T.cross0) { b = [x2[0] + 14, x2[1] + 8]; }
+  else if (t < T.cross1) { const k = prog(t, T.cross0, T.cross1); b = quad([56, 70], [170, -10], [262, 76], k); }
+  else if (t < 10.8) { b = lerp([262, 76], [330, 250], prog(t, T.cross1, 10.8)); }
+  else b = [330, 250];
+  const pal = document.getElementById('palla');
+  pal.setAttribute('cx', b[0]); pal.setAttribute('cy', b[1]);
+  document.getElementById('sciaPalla').setAttribute('d', scia);
+
+  // Didascalie
+  op('c0', t > T.m && t < T.caps ? clamp((t - T.m) / .4) * (1 - clamp((t - (T.caps - .4)) / .4)) : 0);
+  for (let i = 1; i <= 4; i++) {
+    const a = T.caps + (i - 1) * T.dur, z = a + T.dur;
+    const last = i === 4;
+    op('c' + i, t < a ? 0 : clamp((t - a) / .3) * (last ? 1 : 1 - clamp((t - (z - .3)) / .3)));
+  }
+}
+draw(0);
+</script></body></html>
