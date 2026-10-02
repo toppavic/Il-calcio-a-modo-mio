@@ -99,6 +99,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Post 1 Instagram dopo poche ore: 558 visualizzazioni, 8 like, **9 salvataggi**, 4 visite al profilo
   (più dell'intero mese precedente, 507). I caroselli tecnici funzionano: continuare così.
   Alle 10:48: 843 visualizzazioni, 10 salvataggi, 1 condivisione, 9 visite al profilo, non follower 0,8%.
+  Alle 11:43: 1220 visualizzazioni (483 account), 13 like, 11 salvataggi, 11 visite al profilo.
+  TikTok post 1: 0 visualizzazioni dopo 1h30 (account nuovo; impostazioni verificate, tutto pubblico).
   Ma il pubblico del carosello è 100% follower: per arrivare agli sconosciuti servono i **Reel**.
   Calendario: sab 3/10 gruppi Facebook · dom 4/10 Reel cross animato (confermato) · mar 6/10 carosello 2.
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
