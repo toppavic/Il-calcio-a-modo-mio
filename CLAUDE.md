@@ -126,6 +126,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   L'allenatore: per partire con la linea a 4 i primi 10 allenamenti coprono tutto; più avanti nella stagione
   lavora in inferiorità (4c6, 4c8, 4c11, 8c10). Proposta: Volume 1 "le basi della linea a 4" subito con gli 11
   esercizi; Volume 2 "difesa in inferiorità" quando arrivano quegli allenamenti (da chiedere dove sono).
+- **Collana "Gli Imbattibili"** (un'uscita alla volta, mai tutto insieme; ogni uscita = una notizia su Instagram):
+  1. Il precampionato ✅ in vendita · 2. La linea a 4 (Vol. 1, fra qualche settimana) · 3. La difesa in
+  inferiorità (Vol. 2, più avanti) · 4. Costruire un modello di gioco · altri temi da aggiungere quando li dice.
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
