@@ -124,12 +124,15 @@ scheda = f'''<section class="page">
 
 # ---------- 3. Pressione nella metà offensiva
 def campo_pressione():
-    blu = (g(270, 70, "pB") + g(275, 145, "pB") + g(270, 225, "pB")
-           + g(320, 50, "pB") + g(330, 115, "pB") + g(325, 185, "pB") + g(320, 250, "pB")
-           + g(375, 90, "pB") + g(395, 150, "pB") + g(375, 210, "pB"))
-    rossi = (g(440, 75, "pA") + g(445, 130, "pA") + g(440, 190, "pA") + g(435, 245, "pA")
-             + g(355, 150, "pA") + g(300, 85, "pA") + g(300, 205, "pA")
-             + g(130, 90, "pA") + g(150, 170, "pA") + g(120, 240, "pA"))
+    # 4-2-3-1: la squadra blu attacca a destra (il suo lato destro è in basso)
+    blu = (g(275, 60, "pB") + g(275, 120, "pB") + g(275, 180, "pB") + g(275, 240, "pB")
+           + g(318, 115, "pB") + g(318, 190, "pB")
+           + g(365, 60, "pB") + g(372, 150, "pB") + g(365, 240, "pB")
+           + g(415, 150, "pB"))
+    rossi = (g(430, 65, "pA") + g(430, 120, "pA") + g(430, 185, "pA") + g(430, 240, "pA")
+             + g(395, 100, "pA") + g(395, 205, "pA")
+             + g(328, 60, "pA") + g(338, 160, "pA") + g(328, 250, "pA")
+             + g(200, 150, "pA"))
     return f'''<svg class="diagram" viewBox="0 0 500 300" style="width:118mm;margin:0 auto">
     <rect x="0" y="0" width="500" height="300" fill="url(#strisce)"/>
     <rect x="252" y="21" width="217" height="258" fill="#f2c230" opacity=".13"/>
@@ -142,8 +145,8 @@ def campo_pressione():
     <text x="360" y="294" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">METÀ OFFENSIVA BLU · TUTTI DENTRO</text>
     {g(42, 150, "pP")}{g(458, 150, "pP")}
     {rossi}{blu}
-    {freccia("M384,146 L366,150", True)}
-    <use href="#palla" x="356" y="162"/>
+    {freccia("M362,153 L351,157", True)}
+    <use href="#palla" x="330" y="172"/>
   </svg>'''
 
 pressione = f'''<section class="page">
@@ -237,11 +240,13 @@ forza = f'''<section class="page">
 
 # ---------- 5. Attacco contro difesa + partita libera
 attacco_svg = mezzo_campo(
-    g(110, 150, "pB", 2) + g(200, 145, "pB", 5) + g(300, 145, "pB", 6) + g(390, 150, "pB", 3)
-    + g(150, 220, "pB") + g(250, 212, "pB") + g(350, 222, "pB") + g(200, 295, "pB") + g(305, 295, "pB")
-    + g(60, 200, "pA") + g(205, 185, "pA") + g(300, 190, "pA") + g(440, 195, "pA")
-    + g(105, 260, "pA") + g(250, 262, "pA") + g(400, 262, "pA") + g(170, 345, "pA") + g(330, 345, "pA")
-    + '<use href="#palla" x="182" y="352"/>', "122mm")
+    # chi difende (X sul foglio): 4-2-3-1 senza il trequartista
+    g(110, 140, "pB", 2) + g(200, 135, "pB", 5) + g(300, 135, "pB", 6) + g(390, 140, "pB", 3)
+    + g(205, 200, "pB", 4) + g(295, 200, "pB", 8)
+    + g(75, 240, "pB", 7) + g(425, 240, "pB", 11) + g(250, 300, "pB", 9)
+    + g(40, 180, "pA") + g(150, 180, "pA") + g(250, 175, "pA") + g(350, 180, "pA") + g(460, 180, "pA")
+    + g(140, 255, "pA") + g(250, 250, "pA") + g(360, 255, "pA") + g(250, 348, "pA")
+    + '<use href="#palla" x="262" y="356"/>', "122mm")
 
 attacco = f'''<section class="page">
   <div class="kicker">Esercitazione IV</div>

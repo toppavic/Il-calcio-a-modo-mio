@@ -60,6 +60,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 
 ## Convenzioni tecniche dell'allenatore
 
+- Sistema di gioco sempre **4-2-3-1**: difensori 2-5-6-3, mediani 4 e 8, esterni 7 (a sinistra
+  guardando lo schema con la porta in alto) e 11, trequartista 10, punta 9. Negli schemi con squadre
+  intere disporre i giocatori così; se sono 9 si toglie il trequartista (4 + 2 mediani + 2 esterni + punta).
 - Linea difensiva sempre **2-5-6-3** da sinistra a destra guardando lo schema (porta in alto).
 - Nei fogli: X = attaccanti, O = difensori, P = portiere. "Lo faccio io" = esercizio condotto
   dall'allenatore.
