@@ -151,7 +151,7 @@ partita = f'''<section class="page">
   <div class="kicker">Esercitazione II</div>
   <div class="ex-title"><h2>Partita “ultimo passaggio”</h2></div>
   <div class="ex-sub">
-    <span class="chip">30 minuti · 2 tempi da 15'</span><span class="chip">10 contro 10 + portieri</span><span class="chip">30 m</span><span class="chip">Diviso in 2 parti in verticale</span>
+    <span class="chip">30 minuti · 2 tempi da 15'</span><span class="chip">10 contro 10 + portieri</span><span class="chip">Diviso in 2 parti in verticale</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> cercare l'ultimo passaggio che cambia lato. Il gol vale doppio se arriva dopo un passaggio da una metà all'altra.</p>
   {campo_partita()}
