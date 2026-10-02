@@ -91,6 +91,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   TikTok @matteo.falleri: 18 follower, contenuti musicali (canzoni sue), non di calcio. Consigliato
   un account TikTok separato per il calcio: creato **@il.calcio.a.modo** ("Il Calcio a Modo Mio").
   Pubblicati: post 1 (cross) su Instagram e TikTok il 2/10/2026. Prossimi: gruppi Facebook, post 2 fra 3–4 giorni.
+  Post 1 Instagram dopo poche ore: 558 visualizzazioni, 8 like, **9 salvataggi**, 4 visite al profilo
+  (più dell'intero mese precedente, 507). I caroselli tecnici funzionano: continuare così.
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
