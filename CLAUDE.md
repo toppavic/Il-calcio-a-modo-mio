@@ -106,6 +106,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   TikTok post 1: 0 visualizzazioni dopo 1h30 (account nuovo; impostazioni verificate, tutto pubblico).
   Ma il pubblico del carosello è 100% follower: per arrivare agli sconosciuti servono i **Reel**.
   Calendario: sab 3/10 gruppi Facebook · dom 4/10 Reel cross animato (confermato) · mar 6/10 carosello 2.
+- Prodotto in vendita: pacchetto "Gli Imbattibili · Il Precampionato" (primi 10 allenamenti in un unico PDF
+  con copertina, indice e prefazione). L'allenatore vuole un prezzo basso: proposta 9,90 €.
+  Allenamento 1 gratis come assaggio ("commenta PRECAMPIONATO" su Instagram).
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
