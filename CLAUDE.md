@@ -91,7 +91,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 8 ✅ completo e confermato (circa 110'; emergenza: O difende, XL attaccanti avversari; "30 m" sul foglio = 30 minuti).
 - Allenamento 9 ✅ completo e confermato (90-95'; gol normale 1 punto; angoli difensivi come le punizioni, ognuno li organizza come crede).
 - Allenamento 10 ✅ completo e confermato (85' + suicidi; corsia solo per il cross in entrambi i tempi).
-- ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026 a 9,90 € (digitale, quantità 999,
+- ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026: prezzo annuncio 8,11 € + IVA 22% aggiunta da Etsy = 9,89 € per chi compra dall'Italia (digitale, quantità 999,
   rinnovo automatico, dichiarato "con un generatore di IA", tag inseriti). Titolo con "i primi 10 allenamenti".
   Bio Instagram: link "Gli Imbattibili, gli allenamenti" (annuncio Etsy) sotto quello del libro, fatto il 2/10.
   Niente post di vendita subito (proposta, l'allenatore era d'accordo a non postare subito). Poi una riga

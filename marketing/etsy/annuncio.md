@@ -5,7 +5,7 @@
 - **File digitale**: `prodotti/gli-imbattibili/precampionato-allenamenti-1-10.pdf` (64 pagine, 4,2 MB: sotto il limite di 20 MB di Etsy)
 - **Foto** (in quest'ordine): `marketing/etsy/immagini/etsy-1.png` … `etsy-4.png` (2000 × 1500)
 - **Tipo**: download digitale · fatto da me · prodotto finito
-- **Prezzo**: 9,90 €
+- **Prezzo**: 8,11 € (Etsy aggiunge l'IVA al 22% per i compratori italiani: 9,89 €)
 - **Categoria**: quella che Etsy propone scrivendo "allenamento calcio" o "ebook"
 
 ## Titolo
