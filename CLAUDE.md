@@ -122,8 +122,10 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Idea dell'allenatore (2/10): pacchetto **"difesa di ferro"** con le sole esercitazioni difensive degli
   Allenamenti 1-10 in progressione (scivolamenti, spaccare la linea, sul lancio, lancio in esterna, Ti lascio alle
   spalle, 6c4, cross in diagonale invertita, 6c4 di verifica, uscite sul centrocampo, attacco-difesa, emergenza).
-  Ripartire dalla bozza `prodotti/linea-difensiva/`. Prezzo proposto circa 5 € IVA inclusa. In attesa di sapere
-  se farlo subito o aspettare i prossimi allenamenti.
+  Ripartire dalla bozza `prodotti/linea-difensiva/`. Prezzo proposto circa 5 € IVA inclusa.
+  L'allenatore: per partire con la linea a 4 i primi 10 allenamenti coprono tutto; più avanti nella stagione
+  lavora in inferiorità (4c6, 4c8, 4c11, 8c10). Proposta: Volume 1 "le basi della linea a 4" subito con gli 11
+  esercizi; Volume 2 "difesa in inferiorità" quando arrivano quegli allenamenti (da chiedere dove sono).
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
