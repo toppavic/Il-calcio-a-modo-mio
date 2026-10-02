@@ -129,6 +129,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - **Collana "Gli Imbattibili"** (un'uscita alla volta, mai tutto insieme; ogni uscita = una notizia su Instagram):
   1. Il precampionato ✅ in vendita · 2. La linea a 4 (Vol. 1, fra qualche settimana) · 3. La difesa in
   inferiorità (Vol. 2, più avanti) · 4. Costruire un modello di gioco · altri temi da aggiungere quando li dice.
+- **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
+  **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
+  la collana Gli Imbattibili cammina da sola; serviranno stagione, nome della serie e numeri del campionato.
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
