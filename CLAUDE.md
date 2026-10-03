@@ -115,6 +115,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Alle 11:43: 1220 visualizzazioni (483 account), 13 like, 11 salvataggi, 11 visite al profilo.
   TikTok post 1: 0 visualizzazioni dopo 1h30 (account nuovo; impostazioni verificate, tutto pubblico).
   Ma il pubblico del carosello è 100% follower: per arrivare agli sconosciuti servono i **Reel**.
+  Facebook: già membro di "ALLENATORI.. uno stile di vita" (2904 membri, privato) → primo gruppo dove pubblicare.
+  allenatore.net (38k) e Club Allenatori Italiani (28k) sono **pagine**, non gruppi: lì non si pubblica
+  (allenatore.net accetta contributi sul sito: idea per dopo). "Carriera allenatore Italia" = videogioco, scartato.
   Calendario: sab 3/10 gruppi Facebook · dom 4/10 Reel cross animato (confermato) · mar 6/10 carosello 2.
 - Prodotto in vendita: pacchetto "Gli Imbattibili · Il Precampionato" (primi 10 allenamenti in un unico PDF
   con copertina, indice e prefazione). L'allenatore vuole un prezzo basso: proposta 9,90 €.
