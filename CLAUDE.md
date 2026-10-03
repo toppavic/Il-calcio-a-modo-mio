@@ -116,6 +116,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   (più dell'intero mese precedente, 507). I caroselli tecnici funzionano: continuare così.
   Alle 10:48: 843 visualizzazioni, 10 salvataggi, 1 condivisione, 9 visite al profilo, non follower 0,8%.
   Alle 11:43: 1220 visualizzazioni (483 account), 13 like, 11 salvataggi, 11 visite al profilo.
+  Dopo ~28 ore (3/10 14:11): 2245 visualizzazioni (914 account), 23 like, **19 salvataggi**, 2 condivisioni,
+  25 visite al profilo, **4 nuovi follower**, **2 tocchi sul link in bio**, non follower 15,1%, 0 commenti.
+  Età: 35-44 36%, 45-54 31% → pubblico giusto (allenatori). Prossimi post: chiudere con domanda per i commenti.
   TikTok post 1: 0 visualizzazioni dopo 1h30 (account nuovo; impostazioni verificate, tutto pubblico).
   Ma il pubblico del carosello è 100% follower: per arrivare agli sconosciuti servono i **Reel**.
   Facebook: già membro di "ALLENATORI.. uno stile di vita" (2904 membri, privato) → primo gruppo dove pubblicare.
