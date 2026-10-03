@@ -128,7 +128,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Gruppi toscani (Calcio Dilettanti Toscana, Dilettanti e Giovanile Toscana) e "Il calcio in provincia": NON sono
   di allenatori (lo ha fatto notare lui) → solo per post sulla storia/libro. Non nel gruppo del Vaglia.
   3/10: accettato in ALLENATORI CALCIO, Allenatori di calcio, Allenatori di base settore giovanile.
-  3/10 ore 14:07: post 1 (cross) pubblicato in ALLENATORI CALCIO. Stasera alle 21: Allenatori.. uno stile di vita.
+  3/10 ore 14:07: post 1 (cross) pubblicato in ALLENATORI CALCIO. Poco dopo anche in Allenatori.. uno stile di vita.
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
