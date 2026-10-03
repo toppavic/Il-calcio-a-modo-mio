@@ -126,7 +126,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Gruppi toscani (Calcio Dilettanti Toscana, Dilettanti e Giovanile Toscana) e "Il calcio in provincia": NON sono
   di allenatori (lo ha fatto notare lui) → solo per post sulla storia/libro. Non nel gruppo del Vaglia.
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
-  Calendario: sab 3/10 gruppi Facebook · dom 4/10 Reel cross animato (confermato) · mar 6/10 carosello 2.
+  Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
+  mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
 - Prodotto in vendita: pacchetto "Gli Imbattibili · Il Precampionato" (primi 10 allenamenti in un unico PDF
   con copertina, indice e prefazione). L'allenatore vuole un prezzo basso: proposta 9,90 €.
   Allenamento 1 gratis come assaggio ("commenta PRECAMPIONATO" su Instagram).
