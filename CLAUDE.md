@@ -2,7 +2,8 @@
 
 Progetto per vendere PDF di allenamento (prima su Etsy). Il materiale viene dagli appunti di
 un allenatore che con la sua **Juniores provinciale ha vinto il campionato senza perdere una
-partita**. La serie si chiama **"Gli Imbattibili"**.
+partita**. La serie si chiama **"Gli Imbattibili"**. Oggi (stagione 2026/27) allena il **Vaglia in Seconda
+Categoria** (Toscana).
 
 ## Come lavorare con l'allenatore
 
