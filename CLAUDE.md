@@ -119,9 +119,13 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Facebook: già membro di "ALLENATORI.. uno stile di vita" (2904 membri, privato) → primo gruppo dove pubblicare.
   allenatore.net (38k) e Club Allenatori Italiani (28k) sono **pagine**, non gruppi: lì non si pubblica
   (allenatore.net accetta contributi sul sito: idea per dopo). "Carriera allenatore Italia" = videogioco, scartato.
-  Gruppi scelti: Calcio Dilettanti Toscana (4761), Calcio Dilettanti e Giovanile Toscana (3297),
-  Allenatori di calcio (2067, privato), Club Allenatori Italiani attività di base (4693, privato);
-  "Il calcio in provincia: storie ed emozioni" (3944) per i post sulla storia/libro. Non nel gruppo del Vaglia.
+  Gruppi per gli esercizi (solo allenatori): Allenatori.. uno stile di vita (già dentro), ALLENATORI CALCIO
+  (135k, privato), L'allenatore di Calcio (16.9k), Allenatori di base settore giovanile (18k, privato),
+  A.A.C.I. Allenatori Associati Calcio Italiano (2.5k). Riserve: Allenatori di calcio (2k), Allenatori di calcio
+  giovanile, Allenatori e preparatori atletici, Club Allenatori Italiani attività di base.
+  Gruppi toscani (Calcio Dilettanti Toscana, Dilettanti e Giovanile Toscana) e "Il calcio in provincia": NON sono
+  di allenatori (lo ha fatto notare lui) → solo per post sulla storia/libro. Non nel gruppo del Vaglia.
+  Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Calendario: sab 3/10 gruppi Facebook · dom 4/10 Reel cross animato (confermato) · mar 6/10 carosello 2.
 - Prodotto in vendita: pacchetto "Gli Imbattibili · Il Precampionato" (primi 10 allenamenti in un unico PDF
   con copertina, indice e prefazione). L'allenatore vuole un prezzo basso: proposta 9,90 €.
