@@ -16,6 +16,8 @@ Categoria** (Toscana).
 - **Mai inventare contenuti tecnici presentandoli come suoi.** Obiettivi e punti chiave scritti
   da noi vanno bene, ma va sempre detto all'allenatore cosa è stato aggiunto perché lo controlli.
 - Salvare ogni foto ricevuta in `materiale/` e fare commit e push dopo ogni passo.
+- L'allenatore usa **due conversazioni separate**: una per gli **allenamenti** (trascrizione e PDF) e una
+  per il **marketing** (post, Etsy, agenda). Tenere ognuna sul suo tema e fare sempre `git pull` prima di lavorare.
 
 ## Struttura del repository
 
