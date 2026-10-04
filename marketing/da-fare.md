@@ -21,8 +21,8 @@
 ## In sospeso (risposte dell'allenatore)
 
 - [ ] Ok ai singoli 2-10 su Etsy a ~1,99 €?
-- [ ] Allenamenti 11-20: precampionato o campionato?
-- [ ] Idee per i pacchetti a tema
+- [x] Allenamenti 11-20: campionato
+- [x] Idee per i pacchetti a tema: partite a tema per il gioco di squadra
 
 ## Claude prepara
 

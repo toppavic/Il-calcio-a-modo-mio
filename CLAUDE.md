@@ -164,8 +164,10 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - **Struttura del negozio Etsy (proposta 4/10)**: tre ripiani. 1) singoli 2-20 a ~1,99 € (porte d'ingresso, rimandano
   ai pacchetti; l'1 resta il regalo di Instagram) · 2) pacchetti in ordine: 1-10 ✅, 11-20 (allenamenti già pronti
   sulla carta, da trascrivere in ALLENAMENTI), poi 1-20 completo · 3) pacchetti a tema dalle idee dell'allenatore
-  (Linea a 4 a fine ottobre, poi gli altri). Un'uscita nuova ogni ~2 settimane. Chiesto: idee dei pacchetti a tema
-  e se 11-20 sono ancora precampionato.
+  (Linea a 4 a fine ottobre, poi gli altri). Un'uscita nuova ogni ~2 settimane. Risposte (4/10): gli allenamenti 11-20 sono
+  di **campionato** (pacchetto "In campionato"); pacchetto a tema dell'allenatore: **partite a tema per migliorare
+  il gioco di squadra** (raccolta delle partite a tema degli allenamenti). Ordine Linea a 4 / Partite a tema da
+  decidere guardando i numeri dei post (post 2 = partita a tema). Singoli: l'allenatore chiede se servono.
 - **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
   **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
   la collana Gli Imbattibili cammina da sola; serviranno stagione, nome della serie e numeri del campionato.
