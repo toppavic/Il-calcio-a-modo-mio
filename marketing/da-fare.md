@@ -25,4 +25,4 @@
 ## Più avanti
 
 - Verso il 16/10: primo controllo delle statistiche Etsy (screenshot)
-- Fra qualche settimana: Volume "La linea a 4"
+- Fine ottobre: uscita Volume "La linea a 4" su Etsy (PDF da preparare nella conversazione ALLENAMENTI dopo il 16/10)

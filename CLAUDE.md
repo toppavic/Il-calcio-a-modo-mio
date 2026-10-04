@@ -158,7 +158,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   arriva da Instagram. **Controllo statistiche Etsy ogni settimana**; primo controllo insieme verso il 16/10/2026
   (screenshot di Statistiche: visite, provenienza, vendite). Il negozio aveva già 1 vendita con 5 stelle.
 - **Collana "Gli Imbattibili"** (un'uscita alla volta, mai tutto insieme; ogni uscita = una notizia su Instagram):
-  1. Il precampionato ✅ in vendita · 2. La linea a 4 (Vol. 1, fra qualche settimana) · 3. La difesa in
+  1. Il precampionato ✅ in vendita · 2. La linea a 4 (Vol. 1, proposta: uscita **fine ottobre**, dopo il lancio
+  dell'Allenamento 1 gratis del 10-11/10 e il controllo Etsy del 16/10; preparare il PDF nella conversazione ALLENAMENTI) · 3. La difesa in
   inferiorità (Vol. 2, più avanti) · 4. Costruire un modello di gioco · altri temi da aggiungere quando li dice.
 - **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
   **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
