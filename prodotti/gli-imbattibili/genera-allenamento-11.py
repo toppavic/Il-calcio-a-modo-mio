@@ -92,7 +92,7 @@ scheda = f'''<section class="page">
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">1 ora + suicidi</div></div>
+    <div><div class="l">Durata</div><div class="v">75' + suicidi</div></div>
     <div><div class="l">Giocatori</div><div class="v">16 per campo</div></div>
     <div><div class="l">Campo</div><div class="v">20 × 20 m</div></div>
     <div><div class="l">Focus</div><div class="v">Rapidità e gioco con le sponde</div></div>
@@ -102,19 +102,21 @@ scheda = f'''<section class="page">
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni, ognuna chiusa da 10 m di sprint · 8 volte per stazione</div></td><td class="min">20'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Partita 4 contro 4 con 4 sponde</div><div class="d">Campo 20 × 20 · 2 tocchi, sponde a 1 tocco · gol valido solo su passaggio della sponda · serie da 5'</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">Suicidi</div><div class="d">Per chi ha perso la partita</div></td><td class="min">–</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Partita 4 contro 4 con 4 sponde</div><div class="d">Campo 20 × 20 · 2 tocchi, sponde a 1 tocco · gol valido solo di prima su passaggio della sponda · 5 serie da 5'</div></td><td class="min">25'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">Partita libera</div><div class="d">2 tempi da 10'</div></td><td class="min">20'</td></tr>
+    <tr><td class="num">V</td><td><div class="t">Suicidi</div><div class="d">Per chi ha perso la partita a sponde</div></td><td class="min">–</td></tr>
   </table>
 
   <div class="timeline">
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:20;background:var(--oro);color:var(--verde)">Rapidità · 20'</div>
-    <div style="flex:30;background:var(--verde-2)">4 contro 4 + sponde · 30'</div>
+    <div style="flex:25;background:var(--verde-2)">4c4 + sponde · 25'</div>
+    <div style="flex:20;background:var(--verde)">Partita libera · 20'</div>
   </div>
 
   <div class="chiave" style="margin-top:9mm">
     <span class="kicker">Il filo della seduta</span>
-    Una seduta corta e intensa, di un'ora: prima la <b>rapidità</b>, poi una partita in spazi stretti dove si segna solo <b>passando dalla sponda</b>. Chi gioca deve cercare il compagno fuori dal campo e attaccare subito la porta.
+    Una seduta corta e intensa: prima la <b>rapidità</b>, poi una partita in spazi stretti dove si segna solo <b>di prima dopo il passaggio della sponda</b>. Chi gioca deve cercare il compagno fuori dal campo e attaccare subito la porta.
   </div>
   {footer()}
 </section>'''
@@ -183,9 +185,9 @@ partita = f'''<section class="page">
   <div class="kicker">Esercitazione III</div>
   <div class="ex-title"><h2>Partita 4 contro 4 con 4 sponde</h2></div>
   <div class="ex-sub">
-    <span class="chip">30 minuti · serie da 5'</span><span class="chip">4 contro 4 + 4 sponde per squadra</span><span class="chip">Campo 20 × 20 m</span>
+    <span class="chip">5 serie da 5'</span><span class="chip">4 contro 4 + 4 sponde per squadra</span><span class="chip">Campo 20 × 20 m</span>
   </div>
-  <p class="obj"><b>Obiettivo:</b> giocare in spazi stretti e veloci usando il compagno fuori dal campo. Il gol vale solo se l'ultimo passaggio arriva dalla sponda.</p>
+  <p class="obj"><b>Obiettivo:</b> giocare in spazi stretti e veloci usando il compagno fuori dal campo. Il gol vale solo se si segna di prima sul passaggio della sponda.</p>
   {campo_sponde()}
   <div class="three">
     <div class="box"><h4>Organizzazione</h4><ul class="clean">
@@ -195,17 +197,21 @@ partita = f'''<section class="page">
     </ul></div>
     <div class="box"><h4>Svolgimento</h4>
       <p>Si gioca a <b>2 tocchi</b>, le sponde a <b>1 tocco</b>.</p>
-      <p>Il gol è valido solo se arriva <b>su passaggio della sponda</b>.</p>
+      <p>Il gol è valido solo se si segna <b>di prima su passaggio della sponda</b>.</p>
     </div>
     <div class="box"><h4>Punti chiave</h4><ul class="clean">
       <li>Cercare subito la sponda libera</li>
-      <li>Attaccare la porta appena la palla torna dentro</li>
+      <li>Attaccare la porta per calciare di prima quando la palla torna dentro</li>
       <li>Chi difende chiude prima la linea verso la sponda</li>
     </ul></div>
   </div>
 
+  <div class="kicker" style="margin-top:6mm">Esercitazione IV</div>
+  <div class="ex-title"><h2 style="font-size:17pt">Partita libera · 2 tempi da 10'</h2></div>
+  <div class="box" style="margin-top:3mm">Partita senza vincoli di tocchi o di punteggio, prima dei suicidi.</div>
+
   <div class="chiave">
-    <span class="kicker">Esercitazione IV · suicidi a fine allenamento</span>
+    <span class="kicker">Esercitazione V · suicidi per chi ha perso la partita a sponde</span>
     Chi perde: <b>5 suicidi</b> · chi vince: <b>1 suicidio</b> · pareggio: <b>3 suicidi a testa</b>.
   </div>
   {footer()}
