@@ -161,6 +161,11 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   1. Il precampionato ✅ in vendita · 2. La linea a 4 (Vol. 1, proposta: uscita **fine ottobre**, dopo il lancio
   dell'Allenamento 1 gratis del 10-11/10 e il controllo Etsy del 16/10; preparare il PDF nella conversazione ALLENAMENTI) · 3. La difesa in
   inferiorità (Vol. 2, più avanti) · 4. Costruire un modello di gioco · altri temi da aggiungere quando li dice.
+- **Struttura del negozio Etsy (proposta 4/10)**: tre ripiani. 1) singoli 2-20 a ~1,99 € (porte d'ingresso, rimandano
+  ai pacchetti; l'1 resta il regalo di Instagram) · 2) pacchetti in ordine: 1-10 ✅, 11-20 (allenamenti già pronti
+  sulla carta, da trascrivere in ALLENAMENTI), poi 1-20 completo · 3) pacchetti a tema dalle idee dell'allenatore
+  (Linea a 4 a fine ottobre, poi gli altri). Un'uscita nuova ogni ~2 settimane. Chiesto: idee dei pacchetti a tema
+  e se 11-20 sono ancora precampionato.
 - **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
   **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
   la collana Gli Imbattibili cammina da sola; serviranno stagione, nome della serie e numeri del campionato.
