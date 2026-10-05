@@ -3,7 +3,7 @@
 Progetto per vendere PDF di allenamento (prima su Etsy). Il materiale viene dagli appunti di
 un allenatore che con la sua **Juniores provinciale ha vinto il campionato senza perdere una
 partita**. La serie si chiama **"Gli Imbattibili"**. Oggi (stagione 2026/27) allena il **Vaglia in Seconda
-Categoria** (Toscana).
+Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni niente pubblicazioni alle 21).
 
 ## Come lavorare con l'allenatore
 
@@ -138,6 +138,10 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Il secondo gruppo (Allenatori.. uno stile di vita) il 3/10 alle 19 NON è stato fatto: recuperarlo.
   4/10 ore 18:19: Reel cross anche su TikTok; il post foto TikTok è passato da 0 a 1 visualizzazione.
   4/10 ore 18:16: Reel cross pubblicato su Instagram (musica scelta da lui, prova e etichetta IA spente).
+  Reel 1 dopo ~12 ore (5/10): Instagram 656 visualizzazioni (414 account), **non follower 42%**, 2 like, 2 salvataggi,
+  8 visite al profilo, 1 follow, tempo medio 6 s. TikTok 890 visualizzazioni, 100% non follower (For You 99%,
+  account sbloccato), 3 nuovi follower, ma tempo medio 3,4 s e solo 1,65% fino in fondo. **Lezione: la copertina
+  ferma di 3 s fa scappare la gente. Prossimi Reel: campo in movimento dal primo secondo, titolo sopra, 12-15 s.**
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
@@ -167,7 +171,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   (Linea a 4 a fine ottobre, poi gli altri). Un'uscita nuova ogni ~2 settimane. Risposte (4/10): gli allenamenti 11-20 sono
   di **campionato** (pacchetto "In campionato"); pacchetto a tema dell'allenatore: **partite a tema per migliorare
   il gioco di squadra** (raccolta delle partite a tema degli allenamenti). Ordine Linea a 4 / Partite a tema da
-  decidere guardando i numeri dei post (post 2 = partita a tema). Singoli: l'allenatore chiede se servono.
+  decidere guardando i numeri dei post (post 2 = partita a tema). **Singoli: NO** (l'allenatore: "sporcano il negozio"). Il negozio cresce solo con pacchetti.
 - **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
   **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
   la collana Gli Imbattibili cammina da sola; serviranno stagione, nome della serie e numeri del campionato.
