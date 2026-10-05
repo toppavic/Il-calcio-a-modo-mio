@@ -114,7 +114,11 @@ La diagonale invertita sui cross: chi va dove 👇 #allenatore #calcio #esercizi
 
 ## Ponte 1 – Il primo allenamento (proposta per sab 10 / dom 11, insieme al lancio dell'Allenamento 1 gratis)
 
-Dal libro (pag. 7, parole dell'allenatore, non modificate):
+ATTENZIONE: "non vi allenate da pecora per giocare da leone" è una frase di **Guardiola** (lo ha detto l'allenatore):
+se si usa va attribuita. Alternativa tutta sua dal libro (pag. 7): «Stasera non vi chiedo di essere perfetti. Vi chiedo
+di essere presenti. Piedi, testa, cuore. Tutto qua.»
+
+Dal libro (pag. 7):
 «E ricordate: non vi allenate da pecora…»
 «…per giocare da leone,» finiscono loro in coro.
 
