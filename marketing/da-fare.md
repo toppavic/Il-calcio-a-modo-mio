@@ -3,7 +3,7 @@
 ## Questa settimana (sab 3 – dom 4 ottobre)
 
 - [x] **Sab 3, 14:07** – Facebook: post dei cross in ALLENATORI CALCIO
-- [ ] ~~Sab 3, 19:00~~ → **Lun 5** – Facebook: post dei cross in Allenatori.. uno stile di vita (rimandato)
+- [x] **Lun 5, 13:15** – Facebook: post dei cross in Allenatori.. uno stile di vita
 - [ ] **Sab–dom** – TikTok: usare l'account (guardare video di calcio, seguire profili uno alla volta)
 - [x] **Dom 4, 18:16** – Reel dei cross su Instagram
 - [x] **Dom 4, 18:19** – Reel dei cross su TikTok

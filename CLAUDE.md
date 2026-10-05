@@ -148,7 +148,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   3/10: accettato in ALLENATORI CALCIO, Allenatori di calcio, Allenatori di base settore giovanile.
   4/10: accettato anche in L'allenatore di Calcio, A.A.C.I. e nei due gruppi Calcio Dilettanti (Toscana).
   3/10 ore 14:07: post 1 (cross) pubblicato in ALLENATORI CALCIO. Alle 19: Allenatori.. uno stile di vita.
-  Il secondo gruppo (Allenatori.. uno stile di vita) il 3/10 alle 19 NON è stato fatto: recuperarlo.
+  5/10 ore 13:15: post 1 (cross) pubblicato in Allenatori.. uno stile di vita (recuperato).
   4/10 ore 18:19: Reel cross anche su TikTok; il post foto TikTok è passato da 0 a 1 visualizzazione.
   4/10 ore 18:16: Reel cross pubblicato su Instagram (musica scelta da lui, prova e etichetta IA spente).
   Reel 1 dopo ~12 ore (5/10): Instagram 656 visualizzazioni (414 account), **non follower 42%**, 2 like, 2 salvataggi,
