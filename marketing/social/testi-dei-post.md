@@ -114,29 +114,24 @@ La diagonale invertita sui cross: chi va dove 👇 #allenatore #calcio #esercizi
 
 ## Ponte 1 – Il primo allenamento (proposta per sab 10 / dom 11, insieme al lancio dell'Allenamento 1 gratis)
 
-ATTENZIONE: "non vi allenate da pecora per giocare da leone" è una frase di **Guardiola** (lo ha detto l'allenatore):
-se si usa va attribuita. Alternativa tutta sua dal libro (pag. 7): «Stasera non vi chiedo di essere perfetti. Vi chiedo
-di essere presenti. Piedi, testa, cuore. Tutto qua.»
+REGOLA: niente frasi dello spogliatoio (né "pecora/leone", né "piedi, testa, cuore"): le usa ancora con il Vaglia
+e restano della squadra. Gancio dal libro (pag. 1): «Un quinto posto sarebbe già buono».
 
-Dal libro (pag. 7):
-«E ricordate: non vi allenate da pecora…»
-«…per giocare da leone,» finiscono loro in coro.
-
-Carosello: 1) la frase della pecora e del leone · 2) il pezzo del libro sul primo allenamento ("Apro il quaderno.
-Riscaldamento. Poi giochi di posizione…") · 3) "Quella sera abbiamo fatto così": schemi di Scivolamenti e Gioco di
-posizione dall'Allenamento 1 · 4) chiusura: allenamento gratis + libro.
+Carosello: 1) "Ci chiesero il quinto posto." · 2) il primo allenamento raccontato nel libro (gioco di posizione,
+gruppo diviso: linea difensiva e smarcamento) · 3) "Quella sera abbiamo fatto così": schemi di Scivolamenti e Gioco
+di posizione dall'Allenamento 1 · 4) chiusura: allenamento gratis + libro.
 
 **Instagram (bozza)**
 
-«Non vi allenate da pecora…»
-«…per giocare da leone.»
-Il primo allenamento della stagione in cui non abbiamo mai perso. L'ho raccontato nel libro Gli Imbattibili e quella sera, sul quaderno, c'era questo: gioco di posizione e poi il gruppo diviso in due, la linea difensiva da una parte e lo smarcamento dall'altra.
-Volete l'allenamento completo con gli schemi? Scrivete PRECAMPIONATO nei commenti e ve lo mando. 👇
-La storia di quella stagione è nel libro, link in bio.
+"Un quinto posto sarebbe già buono."
+Così ci dissero ad agosto. Abbiamo finito il campionato senza perdere una partita.
+Tutto è cominciato da un primo allenamento: gioco di posizione e poi il gruppo diviso in due, la linea difensiva da una parte e lo smarcamento dall'altra.
+Volete quell'allenamento completo con gli schemi? Scrivete PRECAMPIONATO nei commenti e ve lo mando. 👇
+La storia di quella stagione è nel libro Gli Imbattibili, link in bio.
 
 ## Frasi del libro da usare più avanti
 
-- "Un quinto posto sarebbe già buono" → gancio per un Reel: ci chiesero il quinto posto, finimmo senza perdere una partita.
+- "Un quinto posto sarebbe già buono" → usato nel Ponte 1; buono anche per un Reel.
 - "Non arrenderti, rischieresti di farlo un'ora prima del miracolo" (proverbio arabo, prima pagina del blocco).
 - "Il mio calcio in due parole: intensità e responsabilità."
 - "Mister, io resto fino a mezzanotte, se serve." (Coralli)
