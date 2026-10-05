@@ -49,12 +49,14 @@ Chi perde fa 5 suicidi a fine allenamento, chi vince 1. Vi assicuro che nessuno 
 Il punto non vale il gol 🔄
 Partita a tema per allenare le marcature preventive. Le regole sono nel carosello.
 Dalla Juniores che ha vinto il campionato senza perdere una partita.
+Voi che partite a tema usate per le preventive? 👇
+Le sedute complete sono nel link in bio.
 
 #allenatoredicalcio #esercitazionicalcio #allenamentocalcio #calciodilettantistico #juniores #marcatura #mister #calcio
 
 **TikTok**
 
-Qui il gol non conta: conta girarsi 🔄 #allenatore #calcio #esercizicalcio #mister
+Qui il gol non conta: conta girarsi 🔄 Voi la fate una partita così? #allenatore #calcio #esercizicalcio #mister
 
 ---
 
