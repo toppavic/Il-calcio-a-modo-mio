@@ -146,6 +146,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Gruppi toscani (Calcio Dilettanti Toscana, Dilettanti e Giovanile Toscana) e "Il calcio in provincia": NON sono
   di allenatori (lo ha fatto notare lui) → solo per post sulla storia/libro. Non nel gruppo del Vaglia.
   3/10: accettato in ALLENATORI CALCIO, Allenatori di calcio, Allenatori di base settore giovanile.
+  4/10: accettato anche in L'allenatore di Calcio, A.A.C.I. e nei due gruppi Calcio Dilettanti (Toscana).
   3/10 ore 14:07: post 1 (cross) pubblicato in ALLENATORI CALCIO. Alle 19: Allenatori.. uno stile di vita.
   Il secondo gruppo (Allenatori.. uno stile di vita) il 3/10 alle 19 NON è stato fatto: recuperarlo.
   4/10 ore 18:19: Reel cross anche su TikTok; il post foto TikTok è passato da 0 a 1 visualizzazione.
