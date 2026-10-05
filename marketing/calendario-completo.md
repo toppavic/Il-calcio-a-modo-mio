@@ -2,6 +2,8 @@
 
 Allenamenti Vaglia: mercoledì e venerdì 18-21 → quei giorni si pubblica alle 13.
 I post del diario Facebook si preparano nella conversazione 📘 FACEBOOK diario (qui solo segnati).
+Ritmo del diario (deciso là): lun "Appunti 2.0" (vita) · mer libro · gio formazione · ven "Dai quaderni del mister" ·
+dom post-partita, di solito alle 18. Mer e ven è al campo: programmare il post prima.
 
 ## Settimana 5-11 ottobre
 
@@ -12,7 +14,10 @@ I post del diario Facebook si preparano nella conversazione 📘 FACEBOOK diario
 | Lun 5 | 21:00 | Post cross nel gruppo "Allenatori di base settore giovanile" | FB gruppi |
 | Mar 6 | 21:00 | Post 2: partita "il punto non vale il gol" | IG + TikTok |
 | Mer 7 | 13:00 | Post cross nel gruppo "A.A.C.I." | FB gruppi |
-| Mer 7 | da definire | Post Barberino (dal progetto Facebook) | FB diario |
+| Mer 7 | 18:00 (programmato) | Libro: la copertina | FB diario |
+| Gio 8 | 18:00 | Formazione Genoa | FB diario |
+| Ven 9 | 18:00 (programmato) | "Dai quaderni del mister" (rubrica del libro) | FB diario |
+| Dom 11 | 18:00 | Post-partita Genoa | FB diario |
 | Ven 9 | 13:00 | Post 3: gioco di posizione | IG + TikTok |
 | entro Sab 10 | – | Foto degli allenamenti 12-20 nella conversazione ALLENAMENTI | – |
 | **Dom 11** | 21:00 | **Ponte 1 + regalo**: "Un quinto posto sarebbe già buono" + Allenamento 1 gratis a chi commenta PRECAMPIONATO | IG + TikTok |
