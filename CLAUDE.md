@@ -96,7 +96,15 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 10 ✅ completo e confermato (85' + suicidi; corsia solo per il cross in entrambi i tempi).
 - Allenamento 11 ✅ completo e confermato (75' + suicidi; rapidità 4 stazioni × 8; 4c4 con 4 sponde 20×20, 5 serie
   da 5', gol valido solo di prima su passaggio della sponda; poi partita libera 2 × 10').
-- Prossimo: **Allenamento 12** (dal 5/10 in una conversazione nuova, "Allenamenti 2").
+- **Campionato** (dall'Allenamento 12): sedute il **lunedì e il giovedì**, foto in `materiale/campionato/`, piè di pagina
+  "In campionato · Allenamento N". Idea dell'allenatore: dopo la seduta del giovedì una pagina **"La partita"** con il risultato
+  e le statistiche del fine settimana (`partita-NN.jpg`). La squadra è lo **Spartaco Banti Barberino** (Juniores 2021/22).
+- Allenamento 12 📝 bozza inviata (27/9/2021, lunedì; ~100'; partita a meta 7c7 3 × 10', attacco contro difesa 7c7, CCVV 9').
+- Allenamento 13 📝 bozza inviata (30/9/2021, giovedì; ~92'; partita a meta con verticale, rapidità 3 stazioni × 7,
+  palle inattive offensive, 4c4 + 4 jolly 4 × 3') + pagina partita: Euro Calcio Firenze 2-4 Spartaco Banti Barberino.
+  Da chiarire: "se ripartenza 1 gol" nel 3° tempo della partita a meta; direzione di attacco nell'attacco contro difesa.
+- Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse
+  (ogni tempo = una tappa). L'allenatore controlla se torna negli allenamenti di campionato.
 - ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026: prezzo annuncio 8,11 € + IVA 22% aggiunta da Etsy = 9,89 € per chi compra dall'Italia (digitale, quantità 999,
   rinnovo automatico, dichiarato "con un generatore di IA", tag inseriti). Titolo con "i primi 10 allenamenti".
   Bio Instagram: link "Gli Imbattibili, gli allenamenti" (annuncio Etsy) sotto quello del libro, fatto il 2/10.

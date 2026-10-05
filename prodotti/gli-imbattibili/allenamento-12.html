@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Gli Imbattibili – In campionato, Allenamento 12</title>
+<style>
+  @font-face { font-family: Oswald; src: url(font/oswald.woff2) format("woff2"); font-weight: 200 700; }
+  @font-face { font-family: Inter; src: url(font/inter.woff2) format("woff2"); font-weight: 100 900; }
+  @page { size: A4; margin: 0; }
+  :root {
+    --verde: #0f3d2e;
+    --verde-2: #1d5c45;
+    --prato: #3f8f5a;
+    --prato-2: #46995f;
+    --oro: #d4a017;
+    --testo: #1d2421;
+    --tenue: #5d6b65;
+    --carta: #ffffff;
+    --fondo: #f3f5f2;
+    --rosso: #c8372d;
+    --blu: #2a5db0;
+    --giallo: #f2c230;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--carta); color: var(--testo); font-family: Inter, "Liberation Sans", sans-serif; font-size: 10.5pt; line-height: 1.5; }
+  .page { width: 210mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; padding: 18mm 18mm 20mm; }
+  .page:last-child { page-break-after: auto; }
+  h1, h2, h3, .oswald { font-family: Oswald, "DejaVu Sans Condensed", sans-serif; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
+  h2 { font-size: 22pt; color: var(--verde); line-height: 1.1; }
+  h3 { font-size: 13pt; color: var(--verde); margin: 0 0 2mm; }
+  p { margin: 0 0 3mm; }
+  .kicker { font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .18em; font-size: 9pt; color: var(--oro); }
+  .footer { position: absolute; left: 18mm; right: 18mm; bottom: 9mm; display: flex; justify-content: space-between; font-size: 8pt; color: var(--tenue); border-top: 1px solid #dfe5e1; padding-top: 2.5mm; }
+  .footer b { color: var(--verde); font-family: Oswald, sans-serif; letter-spacing: .08em; font-weight: 500; }
+
+  /* Copertina */
+  .cover { background: var(--verde); color: #fff; padding: 0; }
+  .cover svg.bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .cover .inner { position: absolute; left: 20mm; right: 20mm; top: 34mm; }
+  .cover .brand { font-family: Oswald, sans-serif; letter-spacing: .3em; text-transform: uppercase; font-size: 10pt; color: var(--oro); }
+  .cover h1 { font-size: 64pt; line-height: .95; margin: 8mm 0 6mm; color: #fff; }
+  .cover h1 span { color: var(--oro); display: block; }
+  .cover .sub { font-size: 14pt; max-width: 135mm; color: #dce8e2; line-height: 1.4; }
+  .cover .badge { position: absolute; left: 20mm; bottom: 26mm; right: 20mm; display: flex; gap: 6mm; }
+  .cover .badge > div { border: 1px solid rgba(255,255,255,.35); border-radius: 3mm; padding: 4mm 5mm; flex: 1; }
+  .cover .badge .n { font-family: Oswald, sans-serif; font-size: 22pt; color: var(--oro); line-height: 1; }
+  .cover .badge .l { font-size: 8.5pt; text-transform: uppercase; letter-spacing: .1em; color: #cfe0d8; margin-top: 1.5mm; }
+  .cover .prova { position: absolute; top: 14mm; right: 20mm; font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .15em; font-size: 8.5pt; background: var(--oro); color: var(--verde); padding: 1.5mm 3.5mm; border-radius: 1mm; }
+
+  /* Scheda */
+  .head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid var(--verde); padding-bottom: 4mm; margin-bottom: 7mm; }
+  .meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-bottom: 8mm; }
+  .meta > div { background: var(--fondo); border-radius: 2mm; padding: 3.5mm 4mm; }
+  .meta .l { font-size: 7.5pt; text-transform: uppercase; letter-spacing: .1em; color: var(--tenue); }
+  .meta .v { font-family: Oswald, sans-serif; font-size: 15pt; color: var(--verde); line-height: 1.2; }
+  table { width: 100%; border-collapse: collapse; }
+  .programma td { padding: 3.5mm 2mm; border-bottom: 1px solid #e3e8e5; vertical-align: top; }
+  .programma td.num { font-family: Oswald, sans-serif; color: var(--oro); font-size: 16pt; width: 12mm; line-height: 1; }
+  .programma td.min { font-family: Oswald, sans-serif; color: var(--verde); font-size: 12pt; text-align: right; width: 22mm; white-space: nowrap; }
+  .programma .t { font-weight: 600; }
+  .programma .d { color: var(--tenue); font-size: 9.5pt; }
+  .timeline { display: flex; height: 7mm; border-radius: 1.5mm; overflow: hidden; margin: 6mm 0 2mm; }
+  .timeline div { color: #fff; font-size: 7.5pt; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+  .legenda { margin-top: 9mm; background: var(--fondo); border-radius: 2mm; padding: 5mm 6mm; }
+  .legenda .items { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm; margin-top: 2mm; }
+  .legenda .it { display: flex; align-items: center; gap: 3mm; font-size: 9.5pt; }
+
+  /* Esercitazioni */
+  .ex-title { display: flex; align-items: baseline; gap: 4mm; margin-bottom: 1mm; }
+  .ex-title .num { font-family: Oswald, sans-serif; font-size: 30pt; color: var(--oro); line-height: 1; }
+  .ex-sub { display: flex; gap: 2mm; flex-wrap: wrap; margin: 2mm 0 5mm; }
+  .chip { font-size: 8pt; background: var(--fondo); color: var(--verde); border-radius: 10mm; padding: 1mm 3mm; font-weight: 600; }
+  .diagram { width: 100%; display: block; border-radius: 2mm; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; margin-top: 5mm; }
+  .box { border: 1px solid #dfe5e1; border-radius: 2mm; padding: 4mm 5mm; }
+  .box h4 { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 11pt; letter-spacing: .04em; margin-bottom: 1.5mm; }
+  ul.clean { list-style: none; }
+  ul.clean li { padding-left: 5mm; position: relative; margin-bottom: 1.2mm; }
+  ul.clean li::before { content: ""; position: absolute; left: 0; top: 2mm; width: 2mm; height: 2mm; background: var(--oro); border-radius: 50%; }
+  .chiave { margin-top: 5mm; border-left: 4px solid var(--oro); background: #fbf6e6; padding: 3.5mm 5mm; border-radius: 0 2mm 2mm 0; }
+  .chiave .kicker { color: #9a7410; display: block; margin-bottom: 1mm; }
+  .stazioni td { padding: 3mm 3mm; border-bottom: 1px solid #e3e8e5; vertical-align: middle; }
+  .stazioni th { text-align: left; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .1em; color: var(--tenue); padding: 0 3mm 2mm; font-weight: 600; border-bottom: 2px solid var(--verde); }
+  .stazioni .s { font-family: Oswald, sans-serif; font-size: 15pt; color: var(--oro); width: 12mm; }
+  .stazioni .vol { font-family: Oswald, sans-serif; color: var(--verde); white-space: nowrap; font-size: 11pt; }
+  .prog { display: grid; grid-template-columns: 100mm 1fr; gap: 6mm; align-items: start; margin-bottom: 6mm; }
+  .prog .step { font-family: Oswald, sans-serif; font-size: 9pt; letter-spacing: .14em; text-transform: uppercase; color: var(--oro); }
+  .prog h3 { font-size: 12.5pt; }
+  .prog p { font-size: 9.8pt; }
+.c5 { background: #0c120f; padding: 0 !important; }
+.c5 .bgimg { position: absolute; inset: -10mm; width: calc(100% + 20mm); height: calc(100% + 20mm); object-fit: cover; transform: rotate(-4deg) scale(1.08); filter: grayscale(1) contrast(1.1); opacity: .55; }
+.c5 .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,18,15,.97) 0%, rgba(12,18,15,.9) 38%, rgba(12,18,15,.55) 55%, rgba(12,18,15,.8) 68%, rgba(12,18,15,.98) 82%); }
+.c5 .logo { position: absolute; top: 12mm; left: 50%; transform: translateX(-50%); width: 158mm; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }
+.c5 .txt { position: absolute; left: 20mm; right: 20mm; bottom: 24mm; color: #fff; }
+.c5 .kick { font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .25em; text-transform: uppercase; font-size: 10.5pt; color: #84b94a; }
+.c5 h1 { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppercase; line-height: .92; font-size: 64pt; margin: 4mm 0 5mm; color: #fff; }
+.c5 h1 span { color: #84b94a; display: block; }
+.c5 .sub { font-size: 13.5pt; color: #dfe6e1; max-width: 160mm; line-height: 1.45; }
+.c5 .sub b { color: #fff; }
+.c5 .bozza { top: 9mm; right: 12mm; background: #84b94a; color: #0c120f; border: 0; }
+.three { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; margin-top: 5mm; }
+.three .box { font-size: 9.4pt; line-height: 1.45; }
+.three .box p { margin-bottom: 2mm; }
+.obj { color: var(--tenue); margin: 0 0 4mm; }
+.obj b { color: var(--verde); }
+.stazioni .cue { color: var(--tenue); font-size: 9pt; display: block; margin-top: .5mm; }
+.fasi { display: grid; gap: 3mm; }
+.fase { display: grid; grid-template-columns: 64mm 1fr; gap: 6mm; align-items: center; }
+.fase svg { width: 100%; display: block; border-radius: 1.5mm; }
+.fase-t { font-size: 10pt; line-height: 1.5; color: var(--testo); }
+.fase-t .n { display: inline-flex; width: 8mm; height: 8mm; border-radius: 50%; background: var(--oro); color: var(--verde); font-family: Oswald, sans-serif; font-weight: 700; align-items: center; justify-content: center; font-size: 13pt; margin-bottom: 2mm; }
+.fase-t h4 { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 12.5pt; letter-spacing: .03em; margin-bottom: 1mm; }
+</style>
+</head>
+<body>
+
+<!-- SVG riutilizzabili -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <marker id="freccia" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ffffff"/>
+    </marker>
+    <marker id="freccia-oro" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2c230"/>
+    </marker>
+    <marker id="freccia-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d2421"/>
+    </marker>
+    <pattern id="strisce" width="60" height="400" patternUnits="userSpaceOnUse">
+      <rect width="30" height="400" fill="#3f8f5a"/><rect x="30" width="30" height="400" fill="#46995f"/>
+    </pattern>
+    <pattern id="strisce-h" width="500" height="60" patternUnits="userSpaceOnUse">
+      <rect width="500" height="30" fill="#3f8f5a"/><rect y="30" width="500" height="30" fill="#46995f"/>
+    </pattern>
+    <g id="pA"><circle r="11" fill="#c8372d" stroke="#fff" stroke-width="2"/></g>
+    <g id="pB"><circle r="11" fill="#2a5db0" stroke="#fff" stroke-width="2"/></g>
+    <g id="pP"><circle r="11" fill="#f2c230" stroke="#1d2421" stroke-width="2"/></g>
+    <g id="pJ"><circle r="11" fill="#ffffff" stroke="#1d2421" stroke-width="2"/></g>
+    <g id="palla"><circle r="5" fill="#fff" stroke="#1d2421" stroke-width="1.5"/></g>
+  </defs>
+</svg>
+
+<!-- 1. COPERTINA -->
+<section class="page c5">
+  <img class="bgimg" src="../../materiale/campionato/allenamento-12.jpg">
+  <div class="veil"></div>
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <div class="kick">In campionato · Allenamento 12</div>
+    <h1>Gli<span>Imbattibili</span></h1>
+    <p class="sub"><b>Dai quaderni dell'allenatore</b>, la prima seduta di campionato della Juniores che ha vinto il campionato provinciale senza perdere una partita.</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="head">
+    <div>
+      <div class="kicker">In campionato · Seduta del lunedì</div>
+      <h2>Allenamento 12</h2>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div><div class="l">Durata</div><div class="v">circa 100'</div></div>
+    <div><div class="l">Giocatori</div><div class="v">7 contro 7</div></div>
+    <div><div class="l">Campo</div><div class="v">35 m + 2 mete da 5 m</div></div>
+    <div><div class="l">Focus</div><div class="v">Arrivare in meta e attacco contro difesa</div></div>
+  </div>
+
+  <h3>Programma della seduta</h3>
+  <table class="programma">
+    <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
+    <tr><td class="num">II</td><td><div class="t">Partita a meta</div><div class="d">7 contro 7 · 3 tempi da 10' · entrati in meta si segna in una delle 3 porticine · tocchi che scendono da 3 a 2</div></td><td class="min">35'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Attacco contro difesa</div><div class="d">7 contro 7 · 2 tempi da 15' · tocco libero</div></td><td class="min">35'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">Corsa con variazioni di velocità</div><div class="d">Sulla metà campo: lato corto di recupero, diagonale in allungo</div></td><td class="min">9'</td></tr>
+    <tr><td class="num">V</td><td><div class="t">Stretching</div><div class="d">Defaticamento finale</div></td><td class="min">10'</td></tr>
+  </table>
+
+  <div class="timeline">
+    <div style="flex:10;background:#7aa995">10'</div>
+    <div style="flex:35;background:var(--verde-2)">Partita a meta · 35'</div>
+    <div style="flex:35;background:var(--verde)">Attacco-difesa · 35'</div>
+    <div style="flex:9;background:var(--oro);color:var(--verde)">9'</div>
+    <div style="flex:10;background:#7aa995">10'</div>
+  </div>
+
+  <div class="chiave" style="margin-top:9mm">
+    <span class="kicker">Il filo della seduta</span>
+    Comincia il campionato e cambia il ritmo della settimana: si lavora il <b>lunedì</b> e il <b>giovedì</b>.
+    Il lunedì si riparte dal pallone: una partita dove bisogna <b>portare la palla in meta</b> e poi
+    l'<b>attacco contro difesa</b>, con un lavoro di corsa corto prima dello stretching.
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>2</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">Esercitazione II</div>
+  <div class="ex-title"><h2>Partita a meta</h2></div>
+  <div class="ex-sub">
+    <span class="chip">35 minuti · 3 tempi da 10'</span><span class="chip">7 contro 7</span><span class="chip">35 m + 2 mete da 5 m</span><span class="chip">3 porticine per lato</span>
+  </div>
+  <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> attaccare lo spazio e arrivare in meta palla al piede, poi rifinire subito l'azione scegliendo la porticina libera. Tempo dopo tempo i tocchi calano e il gioco si fa più veloce.</p>
+  <div style="display:flex;gap:6mm;align-items:center">
+    <div style="flex:1"><svg class="diagram" viewBox="0 0 500 422" style="width:100%;margin:0 auto">
+    <rect width="500" height="422" fill="url(#strisce)"/>
+    <rect x="130" y="22" width="240" height="42" fill="#ffffff" fill-opacity=".14"/>
+    <rect x="130" y="356" width="240" height="42" fill="#ffffff" fill-opacity=".14"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5">
+      <rect x="130" y="22" width="240" height="376"/>
+      <line x1="130" y1="64" x2="370" y2="64"/><line x1="130" y1="356" x2="370" y2="356"/>
+    </g>
+    <rect x="154" y="14" width="32" height="8" fill="#fff"/><rect x="154" y="398" width="32" height="8" fill="#fff"/><text x="170" y="11" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">1</text><text x="170" y="418" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">1</text><rect x="234" y="14" width="32" height="8" fill="#fff"/><rect x="234" y="398" width="32" height="8" fill="#fff"/><text x="250" y="11" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">2</text><text x="250" y="418" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">2</text><rect x="314" y="14" width="32" height="8" fill="#fff"/><rect x="314" y="398" width="32" height="8" fill="#fff"/><text x="330" y="11" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">3</text><text x="330" y="418" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+    <g font-family="Oswald" font-size="14" fill="#fff" letter-spacing="3" text-anchor="middle">
+      <text x="250" y="48">META</text><text x="250" y="382">META</text>
+    </g>
+    <g font-family="Oswald" font-size="11" fill="#fff" letter-spacing="1">
+      <text x="380" y="47">5 M</text><text x="380" y="381">5 M</text>
+      <text x="380" y="214">35 M</text>
+    </g>
+    <use href="#pB" x="160" y="90"/><use href="#pB" x="238" y="90"/><use href="#pB" x="340" y="90"/><use href="#pB" x="160" y="160"/><use href="#pB" x="250" y="158"/><use href="#pB" x="340" y="160"/><use href="#pB" x="250" y="240"/><use href="#pA" x="262" y="96"/><use href="#pA" x="168" y="190"/><use href="#pA" x="255" y="192"/><use href="#pA" x="335" y="190"/><use href="#pA" x="160" y="290"/><use href="#pA" x="262" y="268"/><use href="#pA" x="340" y="290"/>
+    <path d="M335,178 L310,46" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M306,40 L322,24" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <use href="#palla" x="347" y="182"/>
+  </svg></div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:3mm">
+      <div class="box"><h4>1° tempo · 10'</h4><ul class="clean"><li>Massimo <b>3 tocchi</b></li></ul></div>
+      <div class="box"><h4>2° tempo · 10'</h4><ul class="clean"><li>Massimo <b>2 tocchi</b></li></ul></div>
+      <div class="box"><h4>3° tempo · 10'</h4><ul class="clean"><li>Massimo <b>2 tocchi</b></li><li>Gol su <b>ripartenza</b>: 1 gol</li></ul></div>
+    </div>
+  </div>
+  <div class="three">
+    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+      <li>Campo di gioco lungo 35 m con una meta di 5 m per lato</li>
+      <li>3 porticine (1, 2, 3) dietro ogni meta</li>
+      <li>Due squadre da 7</li>
+    </ul></div>
+    <div class="box"><h4>Svolgimento</h4>
+      <p>Ogni squadra attacca una meta. <b>Una volta entrati in meta</b> si fa gol in una delle tre porticine.</p>
+      <p>Nei tre tempi cambiano i tocchi (vedi riquadri sopra).</p>
+    </div>
+    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+      <li>Attaccare la meta appena c'è spazio</li>
+      <li>Entrati in meta, testa alta per scegliere la porticina libera</li>
+      <li>Chi difende protegge la meta prima delle porticine</li>
+    </ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>3</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">Esercitazione III</div>
+  <div class="ex-title"><h2>Attacco contro difesa</h2></div>
+  <div class="ex-sub">
+    <span class="chip">35 minuti · 2 tempi da 15'</span><span class="chip">7 contro 7</span><span class="chip">Tocco libero</span>
+  </div>
+  <p class="obj"><b>Obiettivo:</b> sette contro sette su un campo con due porte, a tocco libero: chi attacca (rossi) cerca il gol, chi difende (blu) lavora di reparto e, se recupera, riparte verso l'altra porta.</p>
+  <svg class="diagram" viewBox="0 0 500 380" style="width:104mm;margin:0 auto">
+    <rect width="500" height="380" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5">
+      <rect x="40" y="22" width="420" height="336"/>
+      <rect x="205" y="10" width="90" height="12"/><rect x="205" y="358" width="90" height="12"/>
+    </g>
+    <use href="#pP" x="250" y="38"/><use href="#pP" x="250" y="342"/>
+    <use href="#pB" x="148" y="90"/><use href="#pB" x="281" y="96"/><use href="#pB" x="375" y="90"/>
+    <use href="#pB" x="95" y="200"/><use href="#pB" x="269" y="196"/><use href="#pB" x="408" y="200"/><use href="#pB" x="267" y="250"/>
+    <use href="#pA" x="254" y="106"/><use href="#pA" x="224" y="212"/><use href="#pA" x="316" y="212"/>
+    <use href="#pA" x="113" y="290"/><use href="#pA" x="219" y="280"/><use href="#pA" x="320" y="280"/><use href="#pA" x="401" y="290"/>
+    <use href="#palla" x="233" y="292"/>
+    <path d="M219,266 L228,224" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+  </svg>
+
+  <div class="kicker" style="margin-top:6mm">Esercitazione IV</div>
+  <div class="ex-title"><h2 style="font-size:17pt">Corsa con variazioni di velocità · 9'</h2></div>
+  <div style="display:flex;gap:6mm;align-items:center;margin-top:3mm">
+    <div style="flex:1.1"><svg class="diagram" viewBox="0 0 500 250" style="width:78mm;margin:0 auto">
+    <rect width="500" height="250" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5" stroke-opacity=".6">
+      <rect x="40" y="25" width="420" height="200"/>
+    </g>
+    <path d="M58,207 L440,43" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+    <path d="M444,46 L444,198" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <path d="M440,207 L60,43" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+    <path d="M56,46 L56,196" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <g font-family="Oswald" font-size="13" fill="#fff" letter-spacing="1">
+      <text x="160" y="105" fill="#f2c230">ALLUNGO</text>
+      <text x="290" y="175" fill="#f2c230">ALLUNGO</text>
+      <text x="410" y="244">RECUPERO</text><text x="20" y="244">RECUPERO</text>
+    </g>
+  </svg></div>
+    <div class="box" style="flex:1">Si corre sulla <b>metà campo</b> per 9 minuti senza fermarsi:
+      <b>lato corto</b> di corsa lenta per recuperare, <b>diagonale</b> in allungo.</div>
+  </div>
+
+  <div class="chiave">
+    <span class="kicker">Esercitazione V · stretching · 10'</span>
+    Allungamento dei principali gruppi muscolari a fine seduta.
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>4</span></div>
+</section>
+
+</body>
+</html>
