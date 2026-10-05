@@ -165,6 +165,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   8 visite al profilo, 1 follow, tempo medio 6 s. TikTok 890 visualizzazioni, 100% non follower (For You 99%,
   account sbloccato), 3 nuovi follower, ma tempo medio 3,4 s e solo 1,65% fino in fondo. **Lezione: la copertina
   ferma di 3 s fa scappare la gente. Prossimi Reel: campo in movimento dal primo secondo, titolo sopra, 12-15 s.**
+  5/10 sera: carosello 1 IG 2480 visualizzazioni (980 account), 23 like, 19 salvataggi, 27 visite, **6 follower**,
+  2 tocchi link; si sfogliano tutte e 4 le slide (6-6-6-5). Reel 1 IG 818 (530 account), 45% non follower, 7 s, 2 follow.
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
