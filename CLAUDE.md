@@ -149,8 +149,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Gruppi toscani (Calcio Dilettanti Toscana, Dilettanti e Giovanile Toscana) e "Il calcio in provincia": NON sono
   di allenatori (lo ha fatto notare lui) → solo per post sulla storia/libro. Non nel gruppo del Vaglia.
   3/10: accettato in ALLENATORI CALCIO, Allenatori di calcio, Allenatori di base settore giovanile.
-  Post 1 in ALLENATORI CALCIO dopo 1 giorno: 1 like, 0 commenti → nei gruppi grandi il carosello da Instagram rende
-  poco. Da provare: una sola immagine (lo schema), testo più personale e domanda diretta; misurare gruppo per gruppo.
+  Post 1 in ALLENATORI CALCIO dopo 1 giorno: 1 like, 0 commenti ma **389 visualizzazioni** (5/10 sera; Allenatori.. uno stile
+  di vita 72 in 6 ore). Lo vedono ma non reagiscono. Da provare: una sola immagine (lo schema), testo più personale e domanda diretta; misurare gruppo per gruppo.
   4/10: accettato anche in L'allenatore di Calcio, A.A.C.I. e nei due gruppi Calcio Dilettanti (Toscana).
   3/10 ore 14:07: post 1 (cross) pubblicato in ALLENATORI CALCIO. Alle 19: Allenatori.. uno stile di vita.
   5/10 ore 13:15: post 1 (cross) pubblicato in Allenatori.. uno stile di vita (recuperato).
