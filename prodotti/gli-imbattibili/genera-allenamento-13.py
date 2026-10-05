@@ -264,7 +264,7 @@ partita = pagina_esercizio(
     '<span class="chip">12 minuti · 4 tempi da 3\'</span><span class="chip">4 contro 4 + 4 jolly per squadra</span><span class="chip">2 tocchi · sponde 1 tocco</span>')
 
 # ---------- 6. La partita del fine settimana
-STAT = [("Tiri in porta", 3, 17), ("Tiri fuori porta", 2, 10), ("Possesso (%)", 50, 50),
+STAT = [("Tiri in porta", 3, 17), ("Tiri fuori porta", 2, 10),
         ("Calci d'angolo", 2, 13), ("Fuorigioco", 2, 1), ("Falli", 7, 6),
         ("Cartellini gialli", 2, 0), ("Cartellini rossi", 0, 0), ("Calci di rinvio", 11, 2)]
 righe = ""
