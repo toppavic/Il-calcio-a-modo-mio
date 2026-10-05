@@ -151,6 +151,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   3/10: accettato in ALLENATORI CALCIO, Allenatori di calcio, Allenatori di base settore giovanile.
   Post 1 in ALLENATORI CALCIO dopo 1 giorno: 1 like, 0 commenti ma **389 visualizzazioni** (5/10 sera; Allenatori.. uno stile
   di vita 72 in 6 ore). Lo vedono ma non reagiscono. Da provare: una sola immagine (lo schema), testo più personale e domanda diretta; misurare gruppo per gruppo.
+  5/10 21:08: diario "Appunti 2.0" (cresima, foto squadra) **653** visualizzazioni in 3 ore; vecchi post del diario 514-1109.
+  Su Facebook il diario personale rende più dei post tecnici nei gruppi (389 e 74): il racconto è la forza su FB.
   4/10: accettato anche in L'allenatore di Calcio, A.A.C.I. e nei due gruppi Calcio Dilettanti (Toscana).
   3/10 ore 14:07: post 1 (cross) pubblicato in ALLENATORI CALCIO. Alle 19: Allenatori.. uno stile di vita.
   5/10 ore 13:15: post 1 (cross) pubblicato in Allenatori.. uno stile di vita (recuperato).
