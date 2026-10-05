@@ -203,6 +203,10 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - **Ruota dei contenuti** (5/10, in `marketing/calendario-completo.md`): esercizio → Etsy · racconto → libro ·
   vita da mister → nessun rimando · 1 "ponte" a settimana (momento della stagione + esercizio). Promemoria del giorno
   alle 6:57 (trigger trig_01EnLswhUW52pAVP4izAtWpa) che legge anche la conversazione FACEBOOK diario.
+- **Metodo contenuti (5/10, dai prompt mandati dall'allenatore)**: per ogni Reel proporre **10 ganci** (max 12 parole,
+  un solo leva ciascuno: sorpresa, ego, paura di restare indietro, desiderio) e lui sceglie; **niente toni polarizzanti**
+  (vuole restare umile). Didascalie: attrae · filtra (allenatori) · posiziona (la Juniores che non ha mai perso) ·
+  una sola call to action. Niente ricerca su Reddit: il pubblico è nei gruppi FB e su IG.
 - **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
   **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
   la collana Gli Imbattibili cammina da sola; serviranno stagione, nome della serie e numeri del campionato.
