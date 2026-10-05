@@ -39,3 +39,16 @@ I post del diario Facebook si preparano nella conversazione 📘 FACEBOOK diario
 | Gio 21/1 | Percorso tematico 05 | 6,90 € | Dom 24/1 |
 
 Ogni settimana in più: 2-3 post di valore (caroselli e Reel) su IG e TikTok, e lo stesso carosello nei gruppi Facebook di allenatori.
+
+## La ruota dei contenuti (proposta 5/10)
+
+Tre tipi di contenuto, ognuno con il suo rimando. Mai più di un rimando per post.
+
+1. **Esercizio** (Instagram, TikTok, gruppi Facebook) → rimanda ai PDF su Etsy ("link in bio"), un post ogni 2-3.
+2. **Racconto** (diario Facebook, Reel narrativi su Instagram) → rimanda al libro "Gli Imbattibili" su Amazon.
+3. **Vita da mister oggi** (storie del Vaglia) → nessun rimando: serve a dire che sei un allenatore vero e in attività.
+
+Una volta a settimana il **ponte**: un momento della stagione imbattuta raccontato (libro) + l'esercizio di quella
+settimana (PDF). È il punto dove libro e allenamenti si vendono a vicenda.
+
+Settimana tipo: 2 esercizi · 1 racconto · 1 ponte · storie del Vaglia quando capita.

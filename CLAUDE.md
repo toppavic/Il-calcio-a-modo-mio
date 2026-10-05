@@ -182,6 +182,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   decidere guardando i numeri dei post (post 2 = partita a tema). **Singoli: NO** (l'allenatore: "sporcano il negozio"). Il negozio cresce solo con pacchetti.
 - **Calendario uscite Etsy dell'allenatore (5/10)**: vedi `marketing/calendario-uscite-etsy.md` (11-20 il 15/10,
   percorsi da 5 sedute a 6,90 € ogni 2 settimane, 1-20 a 16,90 € a dicembre). Sostituisce le date proposte prima.
+- **Ruota dei contenuti** (5/10, in `marketing/calendario-completo.md`): esercizio → Etsy · racconto → libro ·
+  vita da mister → nessun rimando · 1 "ponte" a settimana (momento della stagione + esercizio). Promemoria del giorno
+  alle 6:57 (trigger trig_01EnLswhUW52pAVP4izAtWpa) che legge anche la conversazione FACEBOOK diario.
 - **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
   **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
   la collana Gli Imbattibili cammina da sola; serviranno stagione, nome della serie e numeri del campionato.
