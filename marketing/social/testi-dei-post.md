@@ -109,3 +109,30 @@ Mandalo al tuo vice 👇
 **TikTok (video)**
 
 La diagonale invertita sui cross: chi va dove 👇 #allenatore #calcio #esercizicalcio #mister
+
+---
+
+## Ponte 1 – Il primo allenamento (proposta per sab 10 / dom 11, insieme al lancio dell'Allenamento 1 gratis)
+
+Dal libro (pag. 7, parole dell'allenatore, non modificate):
+«E ricordate: non vi allenate da pecora…»
+«…per giocare da leone,» finiscono loro in coro.
+
+Carosello: 1) la frase della pecora e del leone · 2) il pezzo del libro sul primo allenamento ("Apro il quaderno.
+Riscaldamento. Poi giochi di posizione…") · 3) "Quella sera abbiamo fatto così": schemi di Scivolamenti e Gioco di
+posizione dall'Allenamento 1 · 4) chiusura: allenamento gratis + libro.
+
+**Instagram (bozza)**
+
+«Non vi allenate da pecora…»
+«…per giocare da leone.»
+Il primo allenamento della stagione in cui non abbiamo mai perso. L'ho raccontato nel libro Gli Imbattibili e quella sera, sul quaderno, c'era questo: gioco di posizione e poi il gruppo diviso in due, la linea difensiva da una parte e lo smarcamento dall'altra.
+Volete l'allenamento completo con gli schemi? Scrivete PRECAMPIONATO nei commenti e ve lo mando. 👇
+La storia di quella stagione è nel libro, link in bio.
+
+## Frasi del libro da usare più avanti
+
+- "Un quinto posto sarebbe già buono" → gancio per un Reel: ci chiesero il quinto posto, finimmo senza perdere una partita.
+- "Non arrenderti, rischieresti di farlo un'ora prima del miracolo" (proverbio arabo, prima pagina del blocco).
+- "Il mio calcio in due parole: intensità e responsabilità."
+- "Mister, io resto fino a mezzanotte, se serve." (Coralli)
