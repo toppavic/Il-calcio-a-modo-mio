@@ -281,9 +281,9 @@ risultato = f'''<section class="page">
   <p class="obj">Dopo le sedute del lunedì e del giovedì, il risultato della partita.</p>
   <div class="tabellone">
     <div class="sq">
-      <div class="nome">Avversari</div>
+      <div class="nome">Euro Calcio Firenze</div>
       <div class="ris">2 – 4</div>
-      <div class="nome noi">Gli Imbattibili</div>
+      <div class="nome noi">Spartaco Banti Barberino</div>
     </div>
     <div class="tempi">PRIMO TEMPO 1 – 4 · SECONDO TEMPO 1 – 0</div>
   </div>
