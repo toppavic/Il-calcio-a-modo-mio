@@ -180,6 +180,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   di **campionato** (pacchetto "In campionato"); pacchetto a tema dell'allenatore: **partite a tema per migliorare
   il gioco di squadra** (raccolta delle partite a tema degli allenamenti). Ordine Linea a 4 / Partite a tema da
   decidere guardando i numeri dei post (post 2 = partita a tema). **Singoli: NO** (l'allenatore: "sporcano il negozio"). Il negozio cresce solo con pacchetti.
+- **Calendario uscite Etsy dell'allenatore (5/10)**: vedi `marketing/calendario-uscite-etsy.md` (11-20 il 15/10,
+  percorsi da 5 sedute a 6,90 € ogni 2 settimane, 1-20 a 16,90 € a dicembre). Sostituisce le date proposte prima.
 - **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
   **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
   la collana Gli Imbattibili cammina da sola; serviranno stagione, nome della serie e numeri del campionato.
