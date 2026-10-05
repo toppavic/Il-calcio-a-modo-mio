@@ -16,7 +16,7 @@
 - [ ] **Mar 6, 21:00** – Post 2 su Instagram e TikTok (partita "il punto non vale il gol"), con la riga "le sedute complete sono nel link in bio"
 - [ ] **Mer 7, 13:00** – Facebook: ultimo gruppo (A.A.C.I.) – la sera è al campo
 - [ ] **Ven 9, 13:00** – Post 3 su Instagram e TikTok (gioco di posizione)
-- [ ] **Weekend 10–11** – Lancio: Allenamento 1 gratis ("commenta PRECAMPIONATO") – da preparare insieme
+- [ ] **Dom 11, 21:00** – Ponte 1 + Allenamento 1 gratis ("commenta PRECAMPIONATO") – confermato
 
 ## In sospeso (risposte dell'allenatore)
 

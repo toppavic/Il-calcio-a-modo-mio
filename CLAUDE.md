@@ -155,7 +155,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
 - Prodotto in vendita: pacchetto "Gli Imbattibili · Il Precampionato" (primi 10 allenamenti in un unico PDF
   con copertina, indice e prefazione). L'allenatore vuole un prezzo basso: proposta 9,90 €.
-  Allenamento 1 gratis come assaggio ("commenta PRECAMPIONATO" su Instagram).
+  Allenamento 1 gratis come assaggio ("commenta PRECAMPIONATO" su Instagram): **confermato dall'allenatore il 5/10**,
+  esce domenica 11/10 alle 21 insieme al Ponte 1 (gancio "Un quinto posto sarebbe già buono").
 - Idea dell'allenatore (2/10): pacchetto **"difesa di ferro"** con le sole esercitazioni difensive degli
   Allenamenti 1-10 in progressione (scivolamenti, spaccare la linea, sul lancio, lancio in esterna, Ti lascio alle
   spalle, 6c4, cross in diagonale invertita, 6c4 di verifica, uscite sul centrocampo, attacco-difesa, emergenza).

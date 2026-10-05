@@ -15,14 +15,14 @@ I post del diario Facebook si preparano nella conversazione 📘 FACEBOOK diario
 | Mer 7 | da definire | Post Barberino (dal progetto Facebook) | FB diario |
 | Ven 9 | 13:00 | Post 3: gioco di posizione | IG + TikTok |
 | entro Sab 10 | – | Foto degli allenamenti 12-20 nella conversazione ALLENAMENTI | – |
-| Sab 10 o Dom 11 | 21:00 | Reel 2 (nuovo formato, campo in movimento da subito) | IG + TikTok |
+| **Dom 11** | 21:00 | **Ponte 1 + regalo**: "Un quinto posto sarebbe già buono" + Allenamento 1 gratis a chi commenta PRECAMPIONATO | IG + TikTok |
 
 ## Settimana 12-18 ottobre
 
 | Giorno | Ora | Cosa | Dove |
 |---|---|---|---|
 | Lun 12 | 21:00 | Post 2 nei gruppi Facebook (uno al giorno) | FB gruppi |
-| Mar 13 | 21:00 | Carosello di valore | IG + TikTok |
+| Mar 13 | 21:00 | Reel 2 (nuovo formato, campo in movimento da subito) | IG + TikTok |
 | **Gio 15** | – | **Uscita Etsy: Gli Imbattibili · Allenamenti 11-20 (9,90 €)** | Etsy |
 | Ven 16 | – | Controllo statistiche Etsy (screenshot) | Etsy |
 | Dom 18 | 21:00 | Contenuto di lancio: esercitazione completa dagli 11-20 | IG + TikTok |
