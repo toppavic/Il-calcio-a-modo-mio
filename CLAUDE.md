@@ -229,7 +229,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   l'anno prima 3° posto, playoff persi, finale di coppa. Prima ancora, a Barberino di Mugello: 2 anni con gli Esordienti
   (2° anno) con lavoro mirato al passaggio di categoria → l'anno dopo nei Giovanissimi B **152 gol**.
   Carriera (6/10, per il "Chi sono"): allena da **20 anni**, gavetta in tutte le categorie (scuola calcio, settore giovanile
-  provinciale e regionale). **8 anni di prime squadre**: Firenzuola (Seconda, metà classifica) · Sant'Agata (Seconda, salvezza
+  provinciale e regionale). **8 stagioni di prime squadre** (non consecutive: la prima nel 2012-13, in mezzo Juniores, Esordienti e Giovanissimi): Firenzuola (Seconda, metà classifica) · Sant'Agata (Seconda, salvezza
   storica, prima volta nella sua storia) · Gallianese 3 anni (vinta la Seconda → Prima, poi 2 anni in Prima, dimissioni a 7
   giornate dalla fine a metà classifica per incomprensioni con il ds: NON raccontarlo) · Vaglia 3° anno (3° posto, playoff,
   finale di coppa → Terza vinta → ora Seconda).
