@@ -13,7 +13,8 @@ dom post-partita, di solito alle 18. Mer e ven è al campo: programmare il post 
 | Lun 5 | 18:00 | "Appunti da un tempo che non aveva istruzioni 2.0" (cresima e 6-1) | FB diario |
 | Lun 5 | 21:00 | Post cross nel gruppo "Allenatori di base settore giovanile" | FB gruppi |
 | Mar 6 | 18:00 | Post 2: Preventiva 1 | IG + TikTok |
-| Mer 7 | 13:00 | Post cross nel gruppo "A.A.C.I." | FB gruppi |
+| Mer 7 | mattina | Link libro + Etsy nella presentazione del profilo FB (spiegare i passaggi) | FB profilo |
+| Mer 7 | 13:00 | Preventiva 1 nel gruppo "A.A.C.I." | FB gruppi |
 | Mer 7 | 18:00 (programmato) | Libro: la copertina | FB diario |
 | Gio 8 | 18:00 | Formazione Genoa | FB diario |
 | Ven 9 | 18:00 (programmato) | "Dai quaderni del mister" (rubrica del libro) | FB diario |
