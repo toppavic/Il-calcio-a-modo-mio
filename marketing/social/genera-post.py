@@ -68,7 +68,7 @@ schema_partita = f'''<svg class="schema" viewBox="0 0 500 300">
     {rossi}{blu}
     {freccia("M82,190 L284,154", tratteggio=True)}
     <path d="M300,150 q14,-4 18,10 q2,10 -6,14" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
-    {g(296, 150, "pB")}{freccia("M320,160 L452,152", tratteggio=True)}
+    {g(296, 150, "pB")}{freccia("M316,148 L364,141", tratteggio=True)}
     <text x="300" y="128" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">SI GIRA</text>
     <use href="#palla" x="88" y="200"/>
   </svg>'''
@@ -104,11 +104,11 @@ POST = [
         gancio="Preventiva<span>1</span>",
         schema=schema_partita,
         titolo2="Partita “lavoro preventivo”",
-        testo2="10 contro 10 su 50 m. <b>1 punto</b> a chi riceve <b>spalle alla porta e riesce a girarsi</b>. Chi difende deve stargli addosso <b>prima</b> che arrivi la palla.",
+        testo2="10 contro 10 su 50 m. Fa punto chi riceve <b>spalle alla porta</b>, si gira e <b>serve un compagno</b>. Chi difende deve stargli addosso <b>prima</b> che arrivi la palla.",
         titolo3="Le regole",
         punti=["Massimo <b>3 tocchi</b>",
                "Vietato passare al compagno di reparto (<b>gli attaccanti sì</b>)",
-               "Nel 2° tempo: chi si gira e fa un passaggio <b>laterale o verticale</b> senza essere attaccato prende <b>2 punti</b>"],
+               "Punto a chi riceve spalle alla porta, si gira e fa un passaggio <b>laterale o verticale</b> senza essere attaccato"],
     ),
     dict(
         n=3, foto="allenamento-03.jpg",
