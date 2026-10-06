@@ -77,6 +77,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   guardando lo schema con la porta in alto) e 11, trequartista 10, punta 9. Negli schemi con squadre
   intere disporre i giocatori così; se sono 9 si toglie il trequartista (4 + 2 mediani + 2 esterni + punta).
   Vale dall'Allenamento 6 in poi: gli schemi degli Allenamenti 1-5 restano come sono (deciso dall'allenatore).
+  In generale (6/10): "dipende dagli uomini"; ha usato 4-3-3, rombo, 4-3-2-1 ad albero di Natale e la difesa a 3 (che non gli piace).
 - Linea difensiva sempre **2-5-6-3** da sinistra a destra guardando lo schema (porta in alto).
 - Nei fogli: X = attaccanti, O = difensori, P = portiere. "Lo faccio io" = esercizio condotto
   dall'allenatore.
