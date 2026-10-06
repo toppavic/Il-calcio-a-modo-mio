@@ -52,12 +52,13 @@ schema_cross = mezzo_campo(
     + g(140, 60, "pB", 2) + g(200, 74, "pB", 5) + g(262, 88, "pB", 6) + g(324, 102, "pB", 3)
     + g(172, 108, "pB", 4) + g(232, 122, "pB", 8))
 
-blu = (g(70, 70, "pB") + g(70, 130, "pB") + g(70, 190, "pB") + g(70, 245, "pB")
-       + g(160, 60, "pB") + g(170, 150, "pB") + g(160, 240, "pB")
-       + g(285, 85, "pB") + g(300, 205, "pB") + g(380, 140, "pB"))
-rossi = (g(430, 70, "pA") + g(430, 135, "pA") + g(430, 200, "pA") + g(420, 255, "pA")
-         + g(340, 60, "pA") + g(345, 255, "pA") + g(225, 75, "pA")
-         + g(205, 215, "pA") + g(120, 100, "pA") + g(120, 205, "pA"))
+# 4-2-3-1 (attacca verso destra: il 2 e il 7 sul lato destro, cioè in basso). Il 10 è quello che si gira.
+blu = (g(80, 65, "pB", "3") + g(75, 125, "pB", "6") + g(75, 180, "pB", "5") + g(80, 240, "pB", "2")
+       + g(160, 105, "pB", "8") + g(160, 205, "pB", "4")
+       + g(275, 60, "pB", "11") + g(275, 245, "pB", "7") + g(395, 150, "pB", "9"))
+rossi = (g(425, 70, "pA") + g(420, 125, "pA") + g(420, 185, "pA") + g(425, 235, "pA")
+         + g(345, 95, "pA") + g(340, 200, "pA")
+         + g(215, 60, "pA") + g(230, 120, "pA") + g(215, 245, "pA") + g(125, 150, "pA"))
 schema_partita = f'''<svg class="schema" viewBox="0 0 500 300">
     <rect width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
@@ -66,11 +67,11 @@ schema_partita = f'''<svg class="schema" viewBox="0 0 500 300">
     <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle">50 m</text>
     {g(30, 150, "pP", "P", "#1d2421")}{g(470, 150, "pP", "P", "#1d2421")}
     {rossi}{blu}
-    {freccia("M82,190 L284,154", tratteggio=True)}
+    {freccia("M87,178 L284,154", tratteggio=True)}
     <path d="M300,150 q14,-4 18,10 q2,10 -6,14" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
-    {g(296, 150, "pB")}{freccia("M316,148 L364,141", tratteggio=True)}
+    {g(296, 150, "pB", "10")}{freccia("M316,149 L381,150", tratteggio=True)}
     <text x="300" y="128" font-family="Oswald" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">SI GIRA</text>
-    <use href="#palla" x="88" y="200"/>
+    <use href="#palla" x="88" y="190"/>
   </svg>'''
 
 schema_gioco = f'''<svg class="schema" viewBox="60 0 380 340">
