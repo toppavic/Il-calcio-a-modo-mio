@@ -219,6 +219,10 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - **Seconda serie (futura)**: l'allenatore ha tutti gli allenamenti della passata stagione, campionato di
   **Terza Categoria vinto** con la prima squadra. Pubblico diverso (allenatori dilettanti). Da aprire solo dopo che
   la collana Gli Imbattibili cammina da sola; serviranno stagione, nome della serie e numeri del campionato.
+  Numeri (6/10): Terza Categoria vinta con **21 vittorie, 8 pareggi, 1 sconfitta**, miglior attacco e miglior difesa;
+  l'anno prima 3° posto, playoff persi, finale di coppa. Prima ancora, a Barberino di Mugello: 2 anni con gli Esordienti
+  (2° anno) con lavoro mirato al passaggio di categoria → l'anno dopo nei Giovanissimi B **152 gol**.
+  Nei commenti dei gruppi FB NON usarli per difendersi (sembra vantarsi): vanno nel racconto, sul suo profilo e nel "Chi sono".
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
