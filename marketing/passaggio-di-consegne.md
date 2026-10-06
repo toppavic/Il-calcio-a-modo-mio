@@ -21,3 +21,8 @@
 - Domenica sera: chiedergli gli screenshot settimanali (IG, TikTok, FB). 16/10: statistiche Etsy.
 - PDF Allenamento 4: "laterale e verticale" → "laterale o verticale" (conversazione ALLENAMENTI).
 - Foto allenamenti 12-20 entro sab 10 per l'uscita Etsy di gio 15 (11-20).
+
+## Regola schemi dei post (6/10)
+Anche negli schemi dei post social le squadre intere vanno in **4-2-3-1** numerato (difesa 2-5-6-3, mediani 4 e 8,
+esterni 7 e 11, 10, 9): 10 giocatori di movimento + portiere. Corretto lo schema della Preventiva 1 (post 2):
+il 5 serve il 10, il 10 si gira e serve il 9. Vale anche per il post 3.
