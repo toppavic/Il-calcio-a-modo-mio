@@ -178,6 +178,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   2 tocchi link; si sfogliano tutte e 4 le slide (6-6-6-5). Reel 1 IG 818 (530 account), 45% non follower, 7 s, 2 follow.
   6/10 mattina: post 1 in Allenatori di base (1 immagine + testo personale + domanda) → **2273 visualizzazioni, 122 interazioni**,
   1 follower: il miglior risultato su FB finora. Ricavi 0 (i post nei gruppi non sono monetizzati da Facebook).
+  Alle 11:47: **3490 visualizzazioni, 210 interazioni** = il contenuto più visto del suo FB negli ultimi 28 giorni. Il profilo
+  FB è già monetizzato (9,97 $ in 28 giorni, 238k visualizzazioni) ma solo con i post sul profilo. Commenti critici
+  (Gino, Fabio, Dam Bolz): gli pesano perché toccano l'ego → una risposta per thread, umile, poi basta.
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
