@@ -41,8 +41,7 @@ Come difendevamo sui cross con la Juniores che non ha mai perso 👇 #allenatore
 
 In questa partita il gol non conta.
 Il punto lo fa chi riceve spalle alla porta e riesce a girarsi. Così chi difende impara a stare addosso all'avversario prima che arrivi la palla.
-Massimo 3 tocchi e vietato passare al compagno di reparto (agli attaccanti sì). Nel secondo tempo chi si gira e fa passaggio laterale e verticale senza essere attaccato prende 2 punti.
-Chi perde fa 5 suicidi a fine allenamento, chi vince 1. Vi assicuro che nessuno ci sta a perdere.
+Massimo 3 tocchi e vietato passare al compagno di reparto (agli attaccanti sì). Nel secondo tempo chi si gira e fa un passaggio laterale o verticale senza essere attaccato prende 2 punti.
 
 **Instagram**
 

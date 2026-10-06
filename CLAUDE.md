@@ -94,7 +94,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Allenamento 1 ✅ completo e confermato.
 - Allenamento 2 ✅ completo; in attesa di conferma sulla nuova versione di "Ti lascio alle spalle".
 - Allenamento 3 ✅ completo e confermato (125'; gioco di posizione 30 × 30 m, 15 passaggi = 1 punto).
-- Allenamento 4 ✅ completo (95' + suicidi; marcature preventive; 3' di recupero tra i blocchi atletici). Cross in diagonale invertita confermato.
+- Allenamento 4 ✅ completo (95' + suicidi; marcature preventive; **2° tempo: passaggio laterale O verticale** (6/10, nel PDF c'è "e": da correggere in ALLENAMENTI); 3' di recupero tra i blocchi atletici). Cross in diagonale invertita confermato.
 - Allenamento 5 ✅ completo e confermato (113'; uscite della difesa sul centrocampo a partita, 4 serie da 4' tutte a punti con 2' di recupero).
 - Allenamento 6 ✅ completo e confermato (100'; pressione a squadra corta, gol normale 1 punto; nell'attacco contro difesa X difende e O attacca).
 - Allenamento 7 ✅ completo e confermato (100'; vincolo di reparto solo nel 1° tempo, scaletta 8 volte). Punizioni difensive: l'allenatore non spiega il suo metodo, ognuno le gestisce come crede.

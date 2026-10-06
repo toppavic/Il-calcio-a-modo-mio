@@ -108,8 +108,7 @@ POST = [
         titolo3="Le regole",
         punti=["Massimo <b>3 tocchi</b>",
                "Vietato passare al compagno di reparto (<b>gli attaccanti sì</b>)",
-               "Nel 2° tempo: chi si gira e fa <b>laterale + verticale</b> senza essere attaccato prende <b>2 punti</b>",
-               "Chi perde fa <b>5 suicidi</b>, chi vince 1, pareggio 4 per tutti"],
+               "Nel 2° tempo: chi si gira e fa un passaggio <b>laterale o verticale</b> senza essere attaccato prende <b>2 punti</b>"],
     ),
     dict(
         n=3, foto="allenamento-03.jpg",
