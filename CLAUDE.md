@@ -116,7 +116,13 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   palle inattive offensive, 4c4 + 4 jolly 4 × 3') + pagina partita: Euro Calcio Firenze 2-4 Spartaco Banti Barberino (1T 1-4).
   Partita a meta: "se ripartenza 1 gol" = dopo un recupero basta entrare in meta, senza porticina. Attacco contro
   difesa: attaccano le X, le O se recuperano ripartono verso l'altra porta.
-- Prossimo: **Allenamento 14**.
+- Allenamento 14 📝 bozza inviata (lunedì, foglio senza intestazione; ~100'; partita a meta 7c7 + jolly con portieri
+  dietro le mete 3 × 12'; attacco contro difesa 7c8 2 × 15' con 10 flessioni; CCVV 2 × 6').
+  Da chiarire: come si segna nella partita a meta con i portieri; cosa sono le "VS"; chi fa le flessioni.
+- Allenamento 15 📝 bozza inviata (giovedì; ~80' + suicidi; partita a pressione con preventive 3/4 campo, rapidità
+  4 stazioni × 5, 2c2 chi vince resta, partita libera 15') + pagina partita: Spartaco Banti Barberino 1-0 Fiesole.
+  Durate stimate da noi: rapidità 15', 2c2 10'. Pagina partita: funzione `pagina_partita(..., noi="sx"|"dx")`.
+- Prossimo: **Allenamento 16**.
 - Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse
   (ogni tempo = una tappa). L'allenatore controlla se torna negli allenamenti di campionato.
 - ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026: prezzo annuncio 8,11 € + IVA 22% aggiunta da Etsy = 9,89 € per chi compra dall'Italia (digitale, quantità 999,
