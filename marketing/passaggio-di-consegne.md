@@ -32,3 +32,7 @@ il 5 serve il 10, il 10 si gira e serve il 9. Vale anche per il post 3.
 passaggio verticale o diagonale (NON orizzontale) a un compagno = 2 punti. Tolto "vietato passare al compagno di reparto"
 (era una progressione, fuori contesto non si capisce). Tolto "il gol non conta". Il post IG programmato è stato eliminato
 da Business Suite e va riprogrammato con le immagini nuove.
+
+## Idea post (6/10): "Come ho convinto i ragazzi a difendere così"
+Domanda di misterottati sotto il Reel cross. Risposta dell'allenatore: ripetizione ("facendolo, facendolo e facendolo"),
+esercitazioni che li mettevano in costante lavoro sui cross, e la fortuna dei risultati che li ha convinti.
