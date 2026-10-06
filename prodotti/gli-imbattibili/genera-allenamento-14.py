@@ -150,7 +150,7 @@ scheda = f'''<section class="page">
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Partita a meta</div><div class="d">7 contro 7 + jolly · 3 tempi da 12' · 2 tocchi solo verticale, poi 3 tocchi senza compagno di reparto, poi 2 tocchi</div></td><td class="min">40'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Attacco contro difesa</div><div class="d">7 contro 8 · 2 tempi da 15' · tocco libero · chi perde fa 10 flessioni</div></td><td class="min">35'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Attacco contro difesa</div><div class="d">7 contro 8 · 2 tempi da 15' · tocco libero · l'attacco vince con 3 gol, la difesa trovando il portiere o le porticine</div></td><td class="min">35'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">Corsa con variazioni di velocità</div><div class="d">2 serie da 6' sulla metà campo: lato corto di recupero, diagonale in allungo</div></td><td class="min">12'</td></tr>
   </table>
 
@@ -165,7 +165,7 @@ scheda = f'''<section class="page">
     <span class="kicker">Il filo della seduta</span>
     Il lunedì riparte dalla <b>partita a meta</b>, questa volta con un jolly e con i <b>portieri</b> dietro le mete.
     Poi un <b>attacco contro difesa</b> con la difesa in superiorità numerica (8 contro 7) e una posta in palio:
-    chi perde fa le flessioni. Si chiude con la corsa sulla metà campo.
+    le flessioni. Si chiude con la corsa sulla metà campo.
   </div>
   {footer()}
 </section>'''
@@ -187,14 +187,14 @@ meta = f'''<section class="page">
   <div class="three">
     <div class="box"><h4>Organizzazione</h4><ul class="clean">
       <li>Due squadre da 7 e un jolly (J) che gioca con chi ha palla</li>
-      <li>Una meta per lato e un portiere dietro ogni meta</li>
+      <li>Una meta per lato e un portiere dietro ogni meta</li><li>Chi difende non può entrare in meta</li>
     </ul></div>
     <div class="box"><h4>Svolgimento</h4>
-      <p>Ogni squadra attacca una meta e, una volta entrata, cerca il gol nella porta difesa dal portiere.</p>
+      <p>Ogni squadra attacca una meta. <b>In meta entra solo la squadra che attacca</b> e ha <b>3 secondi</b> per andare alla conclusione contro il portiere.</p>
     </div>
     <div class="box"><h4>Punti chiave</h4><ul class="clean">
       <li>Usare il jolly per creare la superiorità</li>
-      <li>Senza compagno di reparto: cercare il giocatore della linea davanti o dietro</li>
+      <li>Entrati in meta, concludere subito: ci sono solo 3 secondi</li>
     </ul></div>
   </div>
   {footer()}
@@ -216,8 +216,8 @@ attacco_svg = f'''<svg class="diagram" viewBox="0 0 500 380" style="width:104mm;
       <rect x="205" y="10" width="90" height="12"/><rect x="205" y="358" width="90" height="12"/>
     </g>
     <rect x="40" y="12" width="56" height="10" fill="#f2c230"/><rect x="404" y="12" width="56" height="10" fill="#f2c230"/>
-    <g font-family="Oswald" font-size="12" font-weight="700" fill="#f2c230" text-anchor="middle">
-      <text x="68" y="38">VS</text><text x="432" y="38">VS</text>
+    <g font-family="Oswald" font-size="10" font-weight="700" fill="#f2c230" text-anchor="middle">
+      <text x="68" y="38">PORTICINA</text><text x="432" y="38">PORTICINA</text>
     </g>
     {g(250, 38, "pP")}{g(250, 342, "pP")}
     {blu}{rossi}
@@ -230,13 +230,14 @@ attacco = f'''<section class="page">
   <div class="ex-sub">
     <span class="chip">35 minuti · 2 tempi da 15'</span><span class="chip">7 attaccanti contro 8 difensori</span><span class="chip">Tocco libero</span><span class="chip">10 flessioni</span>
   </div>
-  <p class="obj"><b>Obiettivo:</b> la difesa lavora in superiorità numerica e, quando recupera, deve uscire con la palla. L'attacco deve trovare il gol contro una difesa in più.</p>
+  <p class="obj"><b>Obiettivo:</b> la difesa lavora in superiorità numerica e, quando recupera, deve uscire con la palla. Per fare punto la difesa deve trovare il portiere o attraversare le porticine.</p>
   <div style="display:flex;gap:5mm;align-items:center">
     <div style="flex:1.15">{attacco_svg}</div>
     <div class="box" style="flex:1"><h4>Regole · 15' per tempo</h4><ul class="clean">
       <li>Tocco libero</li>
-      <li>Se l'<b>attacco segna 3 o più gol</b>: la difesa fa <b>10 flessioni</b></li>
-      <li>Se la <b>difesa fa gol</b> o <b>porta palla dentro VS</b>: l'attacco fa <b>10 flessioni</b></li>
+      <li>L'<b>attacco</b> vince se segna <b>3 o più gol</b></li>
+      <li>La <b>difesa</b> fa punto se <b>trova il portiere</b> o <b>attraversa una delle due porticine</b></li>
+      <li><b>10 flessioni</b> per chi vince</li>
     </ul></div>
   </div>
 

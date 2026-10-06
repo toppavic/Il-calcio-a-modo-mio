@@ -93,7 +93,7 @@ scheda = f'''<section class="page">
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">circa 80' + suicidi</div></div>
+    <div><div class="l">Durata</div><div class="v">circa 76' + suicidi</div></div>
     <div><div class="l">Giocatori</div><div class="v">Due squadre · 2 contro 2</div></div>
     <div><div class="l">Campo</div><div class="v">3/4 di campo · campo ridotto</div></div>
     <div><div class="l">Focus</div><div class="v">Pressione, preventive e rapidità</div></div>
@@ -104,7 +104,7 @@ scheda = f'''<section class="page">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione generale</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Partita a pressione con preventive</div><div class="d">3/4 di campo · 2 tempi da 15' con le stesse regole · 2 tocchi · gol doppio con regole diverse per le due squadre</div></td><td class="min">30'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni · 5 volte per stazione · l'ultima a coppie</div></td><td class="min">15'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Chi vince resta · 2 tempi da 3' · chi perde fa i suicidi a fine allenamento</div></td><td class="min">10'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Chi vince resta · 4 serie da 1'30" · chi perde fa i suicidi a fine allenamento</div></td><td class="min">6'</td></tr>
     <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Poi i suicidi per chi ha perso il 2 contro 2</div></td><td class="min">15'</td></tr>
   </table>
 
@@ -112,7 +112,7 @@ scheda = f'''<section class="page">
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:30;background:var(--verde-2)">Pressione · 30'</div>
     <div style="flex:15;background:var(--oro);color:var(--verde)">Rapidità · 15'</div>
-    <div style="flex:10;background:var(--verde)">2c2</div>
+    <div style="flex:6;background:var(--verde)">2c2</div>
     <div style="flex:15;background:var(--verde-2)">Partita · 15'</div>
   </div>
 
@@ -238,10 +238,10 @@ duecontrodue = pagina_esercizio(
     "duelli continui a tocco libero: chi segna resta in campo, chi subisce gol lascia il posto a un'altra coppia.",
     duecontrodue_svg,
     "<li>Campo ridotto con due porte e i portieri</li><li>Le coppie di ogni squadra aspettano il loro turno dietro la propria porta</li>",
-    "<p>Tocco libero, <b>2 tempi da 3'</b>.</p><p><b>Chi segna resta in campo</b> e si fa dare la palla dal proprio portiere. "
+    "<p>Tocco libero, <b>4 serie da 1'30\"</b>.</p><p><b>Chi segna resta in campo</b> e si fa dare la palla dal proprio portiere. "
     "<b>Chi subisce gol esce</b> ed entrano altri 2.</p>",
     "<li>Attaccare subito la porta</li><li>In due: uno attacca la palla, l'altro copre</li>",
-    '<span class="chip">2 tempi da 3\'</span><span class="chip">2 contro 2 + portieri</span><span class="chip">Tocco libero</span>')
+    '<span class="chip">4 serie da 1\'30"</span><span class="chip">2 contro 2 + portieri</span><span class="chip">Tocco libero</span>')
 duecontrodue = duecontrodue.replace("  <div class=\"footer\">", '''  <div class="chiave">
     <span class="kicker">Suicidi a fine allenamento · Esercitazione V · partita libera 15'</span>
     Chi perde il 2 contro 2: <b>5 suicidi</b> · in caso di parità: <b>3 suicidi</b>. Prima dei suicidi, <b>15' di partita libera</b>.
