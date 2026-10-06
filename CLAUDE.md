@@ -174,6 +174,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   ferma di 3 s fa scappare la gente. Prossimi Reel: campo in movimento dal primo secondo, titolo sopra, 12-15 s.**
   5/10 sera: carosello 1 IG 2480 visualizzazioni (980 account), 23 like, 19 salvataggi, 27 visite, **6 follower**,
   2 tocchi link; si sfogliano tutte e 4 le slide (6-6-6-5). Reel 1 IG 818 (530 account), 45% non follower, 7 s, 2 follow.
+  6/10 mattina: post 1 in Allenatori di base (1 immagine + testo personale + domanda) → **2273 visualizzazioni, 122 interazioni**,
+  1 follower: il miglior risultato su FB finora. Ricavi 0 (i post nei gruppi non sono monetizzati da Facebook).
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
