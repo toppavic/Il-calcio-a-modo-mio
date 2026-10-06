@@ -36,3 +36,7 @@ da Business Suite e va riprogrammato con le immagini nuove.
 ## Idea post (6/10): "Come ho convinto i ragazzi a difendere così"
 Domanda di misterottati sotto il Reel cross. Risposta dell'allenatore: ripetizione ("facendolo, facendolo e facendolo"),
 esercitazioni che li mettevano in costante lavoro sui cross, e la fortuna dei risultati che li ha convinti.
+
+## Copertine dei caroselli (6/10)
+L'allenatore nota che le copertine sembrano tutte uguali. Proposta: stessa struttura (logo, Gli Imbattibili, titolo grande)
+ma con un pezzo di campo/schema dell'esercizio sulla copertina, così ognuna è diversa. Da provare dal post 3 (ven 9).
