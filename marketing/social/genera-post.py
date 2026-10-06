@@ -101,7 +101,7 @@ POST = [
     ),
     dict(
         n=2, foto="allenamento-04-b.jpg",
-        gancio="Qui il gol<span>non conta</span>",
+        gancio="Preventiva<span>1</span>",
         schema=schema_partita,
         titolo2="Partita “lavoro preventivo”",
         testo2="10 contro 10 su 50 m. <b>1 punto</b> a chi riceve <b>spalle alla porta e riesce a girarsi</b>. Chi difende deve stargli addosso <b>prima</b> che arrivi la palla.",

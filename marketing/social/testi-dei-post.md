@@ -46,8 +46,8 @@ Chi perde fa 5 suicidi a fine allenamento, chi vince 1. Vi assicuro che nessuno 
 
 **Instagram**
 
-Qui il gol non conta 🔄
-Partita a tema per allenare le marcature preventive. Le regole sono nel carosello.
+Preventiva 1 🔄
+Un lavoro sulla marcatura preventiva: qui il gol non conta, conta girarsi. Le regole sono nel carosello.
 Dalla Juniores che ha vinto il campionato senza perdere una partita.
 Voi che partite a tema usate per le preventive? 👇
 Le sedute complete sono nel link in bio.
