@@ -88,6 +88,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Diagonale invertita, dettagli (6/10): è il **terzino lato palla** che dà l'altezza della linea; nella realtà la
   diagonale è più schiacciata della grafica e copre più campo. Cross basso dietro la linea = zona del portiere, giocata codificata. Cross alto = c'è il
   tempo per andare a prendere la palla. La usa Sarri; l'allenatore la usa da 7-8 anni. Ci sono esercizi per la sincronia.
+  Evoluzione (6/10): così nel 2021/22; negli ultimi due campionati stessa linea ma con **marcatura sull'uomo all'arrivo della
+  giocata** (non solo la palla, "sentire l'uomo"), per non perdere chi attacca alle spalle (cut back, secondo palo).
 - Gioco di posizione: 4 contro 4 + 2 jolly (9 e 10), 15 passaggi consecutivi = 1 punto.
 
 ## Stato
