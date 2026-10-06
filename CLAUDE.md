@@ -159,6 +159,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   5/10 ore 21: post 1 in Allenatori di base settore giovanile, **prova con una sola immagine (schema) e testo
   personale**. Dubbio dell'allenatore: è un gruppo di attività di base (bambini) → dopo questo post non usarlo più per
   gli esercizi della Juniores. Prossimi gruppi: L'allenatore di Calcio, A.A.C.I.
+  Risultato dopo 7 ore: **6 like e 2 commenti** (meglio di tutti gli altri gruppi) → **nei gruppi FB: una sola immagine
+  + testo personale + domanda**. I commenti contestano la tattica ("chi copre il secondo palo?", "salendo di categoria
+  prendi gol sul lato opposto"): rispondere con umiltà, il contenuto tecnico lo decide l'allenatore.
   4/10 ore 18:19: Reel cross anche su TikTok; il post foto TikTok è passato da 0 a 1 visualizzazione.
   4/10 ore 18:16: Reel cross pubblicato su Instagram (musica scelta da lui, prova e etichetta IA spente).
   Reel 1 dopo ~12 ore (5/10): Instagram 656 visualizzazioni (414 account), **non follower 42%**, 2 like, 2 salvataggi,
