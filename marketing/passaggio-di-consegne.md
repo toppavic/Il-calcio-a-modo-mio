@@ -26,3 +26,9 @@
 Anche negli schemi dei post social le squadre intere vanno in **4-2-3-1** numerato (difesa 2-5-6-3, mediani 4 e 8,
 esterni 7 e 11, 10, 9): 10 giocatori di movimento + portiere. Corretto lo schema della Preventiva 1 (post 2):
 il 5 serve il 10, il 10 si gira e serve il 9. Vale anche per il post 3.
+
+## Preventiva 1, regole definitive (6/10 mattina, dall'allenatore)
+2 tempi da 15', massimo 3 tocchi, gol = 1 punto, chi riceve nella metà campo offensiva, ha il tempo di girarsi e fa un
+passaggio verticale o diagonale (NON orizzontale) a un compagno = 2 punti. Tolto "vietato passare al compagno di reparto"
+(era una progressione, fuori contesto non si capisce). Tolto "il gol non conta". Il post IG programmato è stato eliminato
+da Business Suite e va riprogrammato con le immagini nuove.

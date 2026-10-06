@@ -39,14 +39,14 @@ Come difendevamo sui cross con la Juniores che non ha mai perso 👇 #allenatore
 
 **Facebook (gruppi e pagina)**
 
-In questa partita il gol non conta.
-Il punto lo fa chi riceve spalle alla porta e riesce a girarsi. Così chi difende impara a stare addosso all'avversario prima che arrivi la palla.
-Massimo 3 tocchi e vietato passare al compagno di reparto (agli attaccanti sì). Il punto lo fa chi riceve spalle alla porta, si gira e fa un passaggio laterale o verticale senza essere attaccato.
+In questa partita il gol vale 1 punto, ma girarsi vale di più.
+Chi riceve nella metà campo offensiva, ha il tempo di girarsi e fa un passaggio verticale o diagonale a un compagno prende 2 punti. Così chi difende impara a stare addosso all'avversario prima che arrivi la palla.
+2 tempi da 15', massimo 3 tocchi.
 
 **Instagram**
 
 Preventiva 1 🔄
-Un lavoro sulla marcatura preventiva: qui il gol non conta, conta girarsi e servire un compagno. Le regole sono nel carosello.
+Un lavoro sulla marcatura preventiva: il gol vale 1 punto, girarsi e servire un compagno ne vale 2. Le regole sono nel carosello.
 Dalla Juniores che ha vinto il campionato senza perdere una partita.
 Voi che partite a tema usate per le preventive? 👇
 Le sedute complete sono nel link in bio.
@@ -55,7 +55,7 @@ Le sedute complete sono nel link in bio.
 
 **TikTok**
 
-Qui il gol non conta: conta girarsi 🔄 Voi la fate una partita così? #allenatore #calcio #esercizicalcio #mister
+Girarsi vale più di un gol 🔄 Voi la fate una partita così? #allenatore #calcio #esercizicalcio #mister
 
 ---
 
