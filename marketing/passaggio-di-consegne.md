@@ -10,7 +10,7 @@
   Testi IG e TikTok in `marketing/social/testi-dei-post.md`. Lui lo programma su IG per **oggi 6/10 alle 21**.
 
 ## Da fare (prossimi giorni)
-- Mar 6, 21:00: verificare Preventiva 1 uscito su IG e TikTok (TikTok forse a mano).
+- Mar 6, 18:00 (scelto dall'allenatore): verificare Preventiva 1 uscito su IG e TikTok (TikTok forse a mano).
 - Mer 7, 13:00: gruppo FB A.A.C.I. con **una sola immagine** (schema cross) e testo personale + domanda.
   Diario FB: post sul libro alle 18 (programmato prima del campo).
 - Ven 9, 13:00: post 3 (gioco di posizione) IG e TikTok. Rivedere anche lì regole e titolo con lui prima.
