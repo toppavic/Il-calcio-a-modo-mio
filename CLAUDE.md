@@ -233,6 +233,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   storica, prima volta nella sua storia) · Gallianese 3 anni (vinta la Seconda → Prima, poi 2 anni in Prima, dimissioni a 7
   giornate dalla fine a metà classifica per incomprensioni con il ds: NON raccontarlo) · Vaglia 3° anno (3° posto, playoff,
   finale di coppa → Terza vinta → ora Seconda).
+  Patentino **UEFA B**. Vaglia: società ripartita da zero dopo un fallimento 9 anni fa, provava a salire da 5 anni; squadra
+  giovanissima (a inizio ottobre il più vecchio era un 2001). Principio difensivo: per quanto possibile sempre superiorità numerica;
+  terzini senza obblighi fissi, ci si adatta all'avversario.
   Nei commenti dei gruppi FB NON usarli per difendersi (sembra vantarsi): vanno nel racconto, sul suo profilo e nel "Chi sono".
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
