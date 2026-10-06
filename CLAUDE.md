@@ -228,6 +228,11 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Numeri (6/10): Terza Categoria vinta con **21 vittorie, 8 pareggi, 1 sconfitta**, miglior attacco e miglior difesa;
   l'anno prima 3° posto, playoff persi, finale di coppa. Prima ancora, a Barberino di Mugello: 2 anni con gli Esordienti
   (2° anno) con lavoro mirato al passaggio di categoria → l'anno dopo nei Giovanissimi B **152 gol**.
+  Carriera (6/10, per il "Chi sono"): allena da **20 anni**, gavetta in tutte le categorie (scuola calcio, settore giovanile
+  provinciale e regionale). **8 anni di prime squadre**: Firenzuola (Seconda, metà classifica) · Sant'Agata (Seconda, salvezza
+  storica, prima volta nella sua storia) · Gallianese 3 anni (vinta la Seconda → Prima, poi 2 anni in Prima, dimissioni a 7
+  giornate dalla fine a metà classifica per incomprensioni con il ds: NON raccontarlo) · Vaglia 3° anno (3° posto, playoff,
+  finale di coppa → Terza vinta → ora Seconda).
   Nei commenti dei gruppi FB NON usarli per difendersi (sembra vantarsi): vanno nel racconto, sul suo profilo e nel "Chi sono".
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
