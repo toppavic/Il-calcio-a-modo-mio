@@ -191,6 +191,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Alle 11:47: **3490 visualizzazioni, 210 interazioni** = il contenuto più visto del suo FB negli ultimi 28 giorni. Il profilo
   FB è già monetizzato (9,97 $ in 28 giorni, 238k visualizzazioni) ma solo con i post sul profilo. Commenti critici
   (Gino, Fabio, Dam Bolz): gli pesano perché toccano l'ego → una risposta per thread, umile, poi basta.
+  Alle 20:21: **5036 visualizzazioni, 284 interazioni, 1 follower**. Dubbio dell'allenatore: "a cosa serve?" → le visualizzazioni
+  nei gruppi non si trasformano da sole: serve il link Etsy/libro nella presentazione del profilo FB (proposto, da fare).
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
