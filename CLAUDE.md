@@ -84,8 +84,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - "Solo verticale": passaggi in avanti, all'indietro o in diagonale, mai orizzontali.
 - Difesa sul cross: "diagonale invertita" (il terzino lato palla è il più vicino alla linea di fondo, gli altri salgono man mano). Terzino lato palla leggermente sotto la linea della palla, centrali e terzino
   opposto in leggera diagonale, centrocampisti a cerniera (il più vicino tra terzino e centrale, l'altro tra i centrali).
-- Diagonale invertita, dettagli (6/10): il terzino opposto parte dall'altezza di inizio linea (la grafica è esagerata
-  per far capire la diagonale). Cross basso dietro la linea = zona del portiere, giocata codificata. Cross alto = c'è il
+- Diagonale invertita, dettagli (6/10): è il **terzino lato palla** che dà l'altezza della linea; nella realtà la
+  diagonale è più schiacciata della grafica e copre più campo. Cross basso dietro la linea = zona del portiere, giocata codificata. Cross alto = c'è il
   tempo per andare a prendere la palla. La usa Sarri; l'allenatore la usa da 7-8 anni. Ci sono esercizi per la sincronia.
 - Gioco di posizione: 4 contro 4 + 2 jolly (9 e 10), 15 passaggi consecutivi = 1 punto.
 
