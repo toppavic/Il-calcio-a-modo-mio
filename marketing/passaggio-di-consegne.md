@@ -40,3 +40,7 @@ esercitazioni che li mettevano in costante lavoro sui cross, e la fortuna dei ri
 ## Copertine dei caroselli (6/10)
 L'allenatore nota che le copertine sembrano tutte uguali. Proposta: stessa struttura (logo, Gli Imbattibili, titolo grande)
 ma con un pezzo di campo/schema dell'esercizio sulla copertina, così ognuna è diversa. Da provare dal post 3 (ven 9).
+
+## Fatto 6/10
+- Preventiva 1 pubblicato su TikTok a mano verso le 14:30. Su Instagram programmato per le 18:00 (riprogrammato con le immagini nuove).
+- Mer 7, 13:00: Preventiva 1 nel gruppo A.A.C.I. (slide 2 con lo schema + testo personale, testo dato in chat).
