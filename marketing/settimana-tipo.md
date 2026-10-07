@@ -21,8 +21,8 @@ Claude prepara immagini, Reel e testi; l'allenatore controlla, pubblica e rispon
 | | ⚽ Allenamento Vaglia | 18-21 | – |
 | | Etsy: screenshot statistiche (dal 16/10, ogni venerdì) | – | 5' |
 | **Sab** | Foto dei fogli degli allenamenti → conversazione ALLENAMENTI | quando vuoi | 15' |
-| | Storie del Vaglia se capita | – | 5' |
-| **Dom** | ⚽ Partita Vaglia | pomeriggio | – |
+| **Dom** | ⚽ Partita Vaglia | 15:30 | – |
+| | Storia IG del risultato del Vaglia (come il 6-1 del 4/10) | dopo la partita | 2' |
 | | Diario: post-partita | 18:00 | 10' |
 | | Ponte su IG + TikTok (racconto + esercizio) | 21:00 | 10' |
 | | Screenshot settimanali (IG, TikTok, FB) a Claude | sera | 5' |
