@@ -9,6 +9,7 @@ Claude prepara immagini, Reel e testi; l'allenatore controlla, pubblica e rispon
 | | Gruppo FB: esercizio della settimana prima (1 gruppo) | 21:00 | 5' |
 | | Commenti (IG, TikTok, FB) | sera | 10' |
 | **Mar** | Carosello esercizio su IG + TikTok | 18:00 | 10' |
+| | Storia IG con adesivo Link all'annuncio Etsy (schema del carosello + "tocca il link") | 21:00 | 2' |
 | | Commenti | sera | 10' |
 | **Mer** | Gruppo FB: esercizio (1 gruppo) | 13:00 | 5' |
 | | Diario: libro (programmare prima del campo) | 18:00 | 15' |
