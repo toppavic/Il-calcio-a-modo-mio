@@ -63,6 +63,7 @@ schema_partita = f'''<svg class="schema" viewBox="0 0 500 300">
     <rect width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
       <rect x="30" y="20" width="440" height="260"/><line x1="250" y1="20" x2="250" y2="280"/>
+      <rect x="14" y="128" width="16" height="44"/><rect x="470" y="128" width="16" height="44"/>
     </g>
     <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle">50 m</text>
     {g(30, 150, "pP", "P", "#1d2421")}{g(470, 150, "pP", "P", "#1d2421")}
