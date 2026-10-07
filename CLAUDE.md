@@ -124,11 +124,12 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   4 stazioni × 5 (15'), 2c2 chi vince resta, partita libera 15') + pagina partita: Spartaco Banti Barberino 1-0 Fiesole.
   Pagina partita: funzione `pagina_partita(..., noi="sx"|"dx")` in `genera-allenamento-15.py`.
 - **2 contro 2 a partita: sempre 4 serie da 1'30"** (anche se sul foglio c'è scritto altro).
-- Allenamento 16 📝 bozza inviata (lunedì; ~85'; ricerca del portiere su pressione 7c7 + jolly 2 × 15', 3 tocchi, no lancio,
-  gol dopo recupero alto = 5 punti; attacco contro difesa con porticine 1-2; navette 5'+5'+5'). Da chiarire: navette "16 m".
-- Allenamento 17 📝 bozza inviata (giovedì, foglio senza intestazione; ~80'; ricerca del portiere su pressione 7c7 a
-  2 tocchi con 1/2/3 punti; rapidità 4 × 5; 2c2 20 × 20; partita libera) + partita: Sagginale 1-5 Spartaco Banti Barberino.
-  Da chiarire: partenza della 4ª stazione (parola in verticale sul foglio); 2c2 scritto "4 serie da 2'" ma messo 1'30".
+- Allenamento 16 ✅ completo e confermato (lunedì; ~85'; ricerca del portiere su pressione 7c7 + jolly 2 × 15', 3 tocchi, no lancio,
+  gol dopo recupero alto = 5 punti; attacco contro difesa con porticine 1-2; navette 5'+5'+5', le ultime sui 16 m = dal fondo
+  campo al limite dell'area).
+- Allenamento 17 ✅ completo e confermato (giovedì, foglio senza intestazione; ~80'; ricerca del portiere su pressione 7c7 a
+  2 tocchi con 1/2/3 punti; rapidità 4 × 5, la 4ª a coppie da seduti; 2c2 20 × 20 in 4 × 1'30"; partita libera)
+  + partita: Sagginale 1-5 Spartaco Banti Barberino.
   Funzione comune `campo_ricerca()` negli script 16 e 17.
 - Prossimo: **Allenamento 18**.
 - Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse

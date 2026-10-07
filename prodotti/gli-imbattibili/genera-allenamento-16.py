@@ -222,7 +222,7 @@ attacco = f'''<section class="page">
   <table class="intervalli" style="width:100%;border-collapse:collapse;margin-top:2mm">
     <tr><td style="font-family:Oswald;font-size:15pt;color:var(--verde);width:14mm;padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">5'</td><td style="padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">20" di corsa e 20" di recupero · navette sui <b>100 m</b></td></tr>
     <tr><td style="font-family:Oswald;font-size:15pt;color:var(--verde);padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">5'</td><td style="padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">15" di corsa e 15" di recupero · navette sugli <b>80 m</b></td></tr>
-    <tr><td style="font-family:Oswald;font-size:15pt;color:var(--verde);padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">5'</td><td style="padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">10" di corsa e 10" di recupero · navette sui <b>16 m</b></td></tr>
+    <tr><td style="font-family:Oswald;font-size:15pt;color:var(--verde);padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">5'</td><td style="padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">10" di corsa e 10" di recupero · navette sui <b>16 m</b> (dal fondo campo al limite dell'area)</td></tr>
   </table>
   {footer()}
 </section>'''

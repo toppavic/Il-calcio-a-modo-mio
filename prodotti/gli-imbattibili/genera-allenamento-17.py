@@ -155,7 +155,7 @@ scheda = f'''<section class="page">
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Ricerca del portiere · lavoro sulla pressione</div><div class="d">7 contro 7 · 2 tempi · 2 tocchi, niente lancio · 1, 2 o 3 punti · nel 2° tempo senza compagno di reparto</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni · 5 volte per stazione · l'ultima a coppie</div></td><td class="min">15'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni · 5 volte per stazione · l'ultima a coppie, partenza da seduti</div></td><td class="min">15'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Campo 20 × 20 m · si parte sempre dal portiere · chi fa gol resta · 4 serie da 1'30"</div></td><td class="min">6'</td></tr>
     <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Per chiudere la seduta</div></td><td class="min">–</td></tr>
   </table>
@@ -215,7 +215,7 @@ stazioni = [
     ("Scaletta + scatto", "scaletta, poi 10 m di scatto", "5 volte"),
     ("Skip + scatto", "5 m di skip avanti e indietro, poi scatto", "5 volte"),
     ("Scatto con stop", "5 m di scatto, stop al cono, poi 10 m di scatto", "5 volte"),
-    ("Sfida a coppie", "8 m fino ai conetti, poi 5 m: chi passa per primo si ferma", "5 volte"),
+    ("Sfida a coppie", "partenza da seduti, 8 m fino ai conetti, poi 5 m: chi passa per primo si ferma", "5 volte"),
 ]
 st_html = "".join(
     f'<div class="stazione"><div class="n">{i}</div><div><div class="t">{t}</div>'
