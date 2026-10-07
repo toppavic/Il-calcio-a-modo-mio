@@ -16,11 +16,11 @@ Gli Imbattibili · Il Precampionato: i primi 10 allenamenti di calcio in PDF con
 
 **I primi 10 allenamenti del precampionato della Juniores provinciale che ha vinto il campionato senza perdere una partita.**
 
-Non sono esercizi presi da internet. Sono le sedute fatte davvero in campo, trascritte dai quaderni dell'allenatore e impaginate una per una: dalla prima seduta di attivazione fino alle partite a tema della terza settimana.
+Non sono esercizi presi da internet. Sono i 10 allenamenti del precampionato fatti davvero in campo, trascritti dai quaderni dell'allenatore e impaginati uno per uno: dall'attivazione iniziale alle partite a tema, con tutte le esercitazioni di ogni seduta.
 
 **COSA TROVI NEL PDF (64 pagine)**
 
-- 10 sedute complete, ognuna con la scheda della seduta: durata, programma e barra dei tempi
+- 10 allenamenti completi, ognuno con la scheda della seduta: durata, programma e barra dei tempi
 - Una pagina per ogni esercitazione con obiettivo, schema a colori, organizzazione, svolgimento e punti chiave
 - Le partite a tema con le regole tempo per tempo: tocchi, vincoli e punteggi
 - Il lavoro sulla linea difensiva: uscite, coperture, diagonale invertita sui cross, difesa sul lancio
@@ -41,7 +41,7 @@ Non sono esercizi presi da internet. Sono le sedute fatte davvero in campo, tras
 
 **PER CHI È**
 
-Per chi allena una Juniores, una prima squadra di categoria o un settore giovanile e vuole un precampionato già pronto, con un'idea di gioco chiara (4-2-3-1) e sedute che si possono portare in campo così come sono.
+Per chi allena una Juniores, una prima squadra di categoria o un settore giovanile e vuole un precampionato già pronto, con un'idea di gioco chiara (4-2-3-1) e allenamenti che si possono portare in campo così come sono.
 
 **IL LIBRO**
 
