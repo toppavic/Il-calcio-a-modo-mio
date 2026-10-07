@@ -31,6 +31,7 @@ TikTok: 4 post a settimana (mar, gio, ven, dom), gli stessi di Instagram, nessun
 | Mer 7 | 13:00 | Preventiva 1 nel gruppo "A.A.C.I." | FB gruppi |
 | Mer 7 | 18:00 (programmato) | Libro: la copertina | FB diario |
 | Gio 8 | 18:00 | Formazione Genoa | FB diario |
+| Gio 8 | 21:00 | Reel 2 (campo in movimento da subito, 12-15 s) | IG + TikTok |
 | Ven 9 | 18:00 (programmato) | "Dai quaderni del mister" (rubrica del libro) | FB diario |
 | Dom 11 | 18:00 | Post-partita Genoa | FB diario |
 | Ven 9 | 13:00 | Post 3: gioco di posizione | IG + TikTok |
