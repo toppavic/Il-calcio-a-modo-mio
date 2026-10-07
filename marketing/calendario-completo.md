@@ -5,6 +5,20 @@ I post del diario Facebook si preparano nella conversazione 📘 FACEBOOK diario
 Ritmo del diario (deciso là): lun "Appunti 2.0" (vita) · mer libro · gio formazione · ven "Dai quaderni del mister" ·
 dom post-partita, di solito alle 18. Mer e ven è al campo: programmare il post prima.
 
+## Settimana tipo (proposta 7/10, da confermare)
+
+| Giorno | Calcio (IG + TikTok) | Gruppi FB | Diario FB |
+|---|---|---|---|
+| Lun | – | 21:00 esercizio della settimana prima (1 gruppo) | 18:00 Appunti 2.0 |
+| Mar | 18:00 carosello esercizio | – | – |
+| Mer (campo) | – | 13:00 esercizio (1 gruppo) | 18:00 libro (programmato) |
+| Gio | 21:00 Reel | – | 18:00 formazione |
+| Ven (campo) | 13:00 carosello esercizio (programmato) | – | 18:00 Dai quaderni del mister (programmato) |
+| Sab | storie del Vaglia se capita | – | – |
+| Dom (partita) | 21:00 ponte (racconto + esercizio) | – | 18:00 post-partita |
+
+TikTok: 4 post a settimana (mar, gio, ven, dom), gli stessi di Instagram, nessun lavoro in più.
+
 ## Settimana 5-11 ottobre
 
 | Giorno | Ora | Cosa | Dove |
