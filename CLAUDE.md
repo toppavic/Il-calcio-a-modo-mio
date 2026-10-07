@@ -124,10 +124,17 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   4 stazioni × 5 (15'), 2c2 chi vince resta, partita libera 15') + pagina partita: Spartaco Banti Barberino 1-0 Fiesole.
   Pagina partita: funzione `pagina_partita(..., noi="sx"|"dx")` in `genera-allenamento-15.py`.
 - **2 contro 2 a partita: sempre 4 serie da 1'30"** (anche se sul foglio c'è scritto altro).
-- Prossimo: **Allenamento 16**.
+- Allenamento 16 📝 bozza inviata (lunedì; ~85'; ricerca del portiere su pressione 7c7 + jolly 2 × 15', 3 tocchi, no lancio,
+  gol dopo recupero alto = 5 punti; attacco contro difesa con porticine 1-2; navette 5'+5'+5'). Da chiarire: navette "16 m".
+- Allenamento 17 📝 bozza inviata (giovedì, foglio senza intestazione; ~80'; ricerca del portiere su pressione 7c7 a
+  2 tocchi con 1/2/3 punti; rapidità 4 × 5; 2c2 20 × 20; partita libera) + partita: Sagginale 1-5 Spartaco Banti Barberino.
+  Da chiarire: partenza della 4ª stazione (parola in verticale sul foglio); 2c2 scritto "4 serie da 2'" ma messo 1'30".
+  Funzione comune `campo_ricerca()` negli script 16 e 17.
+- Prossimo: **Allenamento 18**.
 - Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse
   (ogni tempo = una tappa). L'allenatore controlla se torna negli allenamenti di campionato. Nell'Allenamento 14
-  (attacco contro difesa 7c8) la difesa fa punto trovando il portiere: possibile tappa in più.
+  (attacco contro difesa 7c8) la difesa fa punto trovando il portiere: possibile tappa in più. **Allenamenti 16 e 17:
+  ricerca del portiere come lavoro sulla pressione** (no lancio, punti per il recupero alto): altre 4 tappe per il pacchetto.
 - ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026: prezzo annuncio 8,11 € + IVA 22% aggiunta da Etsy = 9,89 € per chi compra dall'Italia (digitale, quantità 999,
   rinnovo automatico, dichiarato "con un generatore di IA", tag inseriti). Titolo con "i primi 10 allenamenti".
   Link: annuncio Etsy https://ilcalcioamodomio.etsy.com/listing/4587084049 · libro Amazon amzn.eu/d/0686nVKd.
