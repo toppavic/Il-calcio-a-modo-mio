@@ -5,7 +5,7 @@ I post del diario Facebook si preparano nella conversazione 📘 FACEBOOK diario
 Ritmo del diario (deciso là): lun "Appunti 2.0" (vita) · mer libro · gio formazione · ven "Dai quaderni del mister" ·
 dom post-partita, di solito alle 18. Mer e ven è al campo: programmare il post prima.
 
-## Settimana tipo (proposta 7/10, da confermare)
+## Settimana tipo (proposta 7/10, da confermare) — versione completa in settimana-tipo.md
 
 | Giorno | Calcio (IG + TikTok) | Gruppi FB | Diario FB |
 |---|---|---|---|
