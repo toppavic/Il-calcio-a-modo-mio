@@ -196,7 +196,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   7/10 mattina (~13 ore): **Preventiva 1 IG** 889 visualizzazioni (337 account), 10 like, 1 commento, **13 salvataggi**, 11 visite,
   **2 follower**, ma 97,9% follower (il carosello non arriva agli sconosciuti); età 35-44 40%, 45-54 33%.
   **TikTok** (7 follower): Preventiva 1 **668**, Reel cross 1017, carosello cross 20 → ora anche i caroselli girano su TikTok.
-  Post FB nel gruppo Allenatori di base: 5517 visualizzazioni, 317 interazioni, 13 commenti. **Etsy 6/10: 0 visite.**
+  Post FB nel gruppo Allenatori di base: 5517 visualizzazioni, 317 interazioni, 13 commenti. **Etsy 6/10: 0 visite.** Libro Amazon (KDP) ottobre al 7/10: 0 ordini, 0 pagine KENP.
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
