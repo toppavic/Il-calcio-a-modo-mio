@@ -72,10 +72,10 @@ const prog = (t, a, b) => ease((t - a) / (b - a));
 const lerp = (p, q, k) => [p[0] + (q[0] - p[0]) * k, p[1] + (q[1] - p[1]) * k];
 
 // Blu = squadra che attacca e perde palla (verso destra). Rossi = chi recupera (verso sinistra).
-const BLU = {2: [120,240], 5: [110,185], 6: [110,115], 3: [120,60], 8: [255,100], 7: [335,58], 11: [330,242], 9: [365,122]};
+const BLU = {2: [120,240], 5: [110,190], 4: [232,208], 3: [120,60], 8: [255,100], 7: [335,58], 11: [330,242], 9: [365,122]};
 const ROSSI = [[300,90],[292,212],[385,100],[388,205],[255,60],[255,240],[415,150]];
 const B10 = [232,150], B10_FIN = [318,150];
-const M0 = [232,208], M_ANT = [206,152], M_RIT = [200,152];
+const M0 = [135,116], M_ANT = [203,151], M_RIT = [197,151];
 const R_REC = [344,150], R10 = [182,148], R7 = [128,152];
 const T = { cambio: 5.5, fine: 11.0 };
 
@@ -102,9 +102,9 @@ function draw(t) {
   s += red(R_REC, 20) + red(R10, 21) + red(R7, 22);
 
   const marker = rep2 ? lerp(M0, M_RIT, prog(u, 3.5, 4.5)) : lerp(M0, M_ANT, prog(u, 1.5, 2.9));
-  s += player(marker[0], marker[1], '#2a5db0', '#fff', 4, '#fff', !rep2 && u > 1.6 && u < 4.6);
+  s += player(marker[0], marker[1], '#2a5db0', '#fff', 6, '#fff', !rep2 && u > 1.6 && u < 4.6);
   let n = 0;
-  for (const k of [2, 5, 6, 3, 8, 7, 11, 9]) { const d = dr(n++, .8); s += player(BLU[k][0] + d[0], BLU[k][1] + d[1], '#2a5db0', '#fff', k, '#fff', false); }
+  for (const k of [2, 5, 4, 3, 8, 7, 11, 9]) { const d = dr(n++, .8); s += player(BLU[k][0] + d[0], BLU[k][1] + d[1], '#2a5db0', '#fff', k, '#fff', false); }
   const b10 = lerp(B10, B10_FIN, prog(u, 0, 1.4));
   s += player(b10[0], b10[1], '#2a5db0', '#fff', 10, '#fff', false);
   el('giocatori').innerHTML = s;
