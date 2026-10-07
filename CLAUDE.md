@@ -130,6 +130,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   (attacco contro difesa 7c8) la difesa fa punto trovando il portiere: possibile tappa in più.
 - ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026: prezzo annuncio 8,11 € + IVA 22% aggiunta da Etsy = 9,89 € per chi compra dall'Italia (digitale, quantità 999,
   rinnovo automatico, dichiarato "con un generatore di IA", tag inseriti). Titolo con "i primi 10 allenamenti".
+  Link: annuncio Etsy https://ilcalcioamodomio.etsy.com/listing/4587084049 · libro Amazon amzn.eu/d/0686nVKd.
+  7/10: entrambi aggiunti ai link del profilo Facebook (visibili a tutti).
   Bio Instagram: link "Gli Imbattibili, gli allenamenti" (annuncio Etsy) sotto quello del libro, fatto il 2/10.
   Niente post di vendita subito (proposta, l'allenatore era d'accordo a non postare subito). Poi una riga
   "le sedute complete sono nel link in bio" nelle didascalie dei prossimi post, lancio vero dopo 2-3 post di valore
