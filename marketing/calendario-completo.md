@@ -43,6 +43,7 @@ TikTok: 4 post a settimana (mar, gio, ven, dom), gli stessi di Instagram, nessun
 |---|---|---|---|
 | Lun 12 | 21:00 | Post 2 nei gruppi Facebook (uno al giorno) | FB gruppi |
 | Mar 13 | 21:00 | Reel 2 (nuovo formato, campo in movimento da subito) | IG + TikTok |
+| Mar 13 | 21:00 | Prima storia IG con adesivo Link all'annuncio Etsy | IG storie |
 | **Gio 15** | – | **Uscita Etsy: Gli Imbattibili · Allenamenti 11-20 (9,90 €)** | Etsy |
 | Ven 16 | – | Controllo statistiche Etsy (screenshot) | Etsy |
 | Dom 18 | 21:00 | Contenuto di lancio: esercitazione completa dagli 11-20 | IG + TikTok |
