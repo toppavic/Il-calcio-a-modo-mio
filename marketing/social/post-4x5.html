@@ -9,6 +9,9 @@ h1, h2 { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppe
 .cop .bgimg { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; transform: rotate(-4deg) scale(1.08); filter: grayscale(1) contrast(1.1); opacity: .55; }
 .cop .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,18,15,.97) 0%, rgba(12,18,15,.9) 36%, rgba(12,18,15,.5) 52%, rgba(12,18,15,.85) 66%, rgba(12,18,15,.98) 80%); }
 .cop .logo { position: absolute; top: 40px; left: 50%; transform: translateX(-50%); width: 520px; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }
+.copschema { position: absolute; left: 50%; transform: translateX(-50%); top: 480px; width: 560px; height: 260px; border-radius: 18px; overflow: hidden; border: 3px solid rgba(132,185,74,.6); }
+.cop.cs .txt {  }
+.copschema svg { width: 100%; height: 100%; display: block; }
 .cop .txt { position: absolute; left: 80px; right: 80px; bottom: 80px; }
 .kick { font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-size: 28px; color: #84b94a; }
 .cop h1, .fine h1 { font-size: 130px; line-height: .92; margin: 20px 0 28px; }
@@ -62,6 +65,7 @@ h1, h2 { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppe
   <img class="bgimg" src="../../materiale/precampionato/allenamento-04.jpg">
   <div class="veil"></div>
   <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  
   <div class="txt">
     <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
     <h1>Come difendevamo<span>sui cross</span></h1>
@@ -104,6 +108,7 @@ h1, h2 { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppe
   <img class="bgimg" src="../../materiale/precampionato/allenamento-04-b.jpg">
   <div class="veil"></div>
   <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  
   <div class="txt">
     <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
     <h1>Preventiva<span>1</span></h1>
@@ -146,10 +151,21 @@ h1, h2 { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppe
   <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b>. Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.</p>
   <div class="azioni"><div>Salva il post</div><div>Seguici per il prossimo</div></div>
 </section>
-<section class="slide cop">
+<section class="slide cop cs">
   <img class="bgimg" src="../../materiale/precampionato/allenamento-03.jpg">
   <div class="veil"></div>
   <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="copschema"><svg preserveAspectRatio="xMidYMid slice" viewBox="60 0 380 340">
+    <rect x="60" width="380" height="340" fill="url(#strisce)"/>
+    <rect x="110" y="30" width="280" height="280" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <text x="250" y="332" font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">30 m</text>
+    <text x="415" y="175" font-family="Oswald" font-size="12" fill="#fff" text-anchor="middle">30 m</text>
+    <path d="M180,188 L240,117" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M261,110 L361,214" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <use href="#palla" x="190" y="214"/>
+    <use href="#pJ" x="250" y="30"/><text x="250" y="34.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">9</text><use href="#pJ" x="250" y="105"/><text x="250" y="109.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">10</text>
+    <use href="#pB" x="140" y="120"/><text x="140" y="124.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">11</text><use href="#pB" x="185" y="200"/><text x="185" y="204.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">4</text><use href="#pB" x="370" y="225"/><text x="370" y="229.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="235" y="280"/><text x="235" y="284.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text>
+    <use href="#pA" x="360" y="110"/><text x="360" y="114.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">7</text><use href="#pA" x="235" y="190"/><text x="235" y="194.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">8</text><use href="#pA" x="140" y="275"/><text x="140" y="279.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><use href="#pA" x="305" y="270"/><text x="305" y="274.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text>
+  </svg></div>
   <div class="txt">
     <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
     <h1>15 passaggi<span>= 1 punto</span></h1>

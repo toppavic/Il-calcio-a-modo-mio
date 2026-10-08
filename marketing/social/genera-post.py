@@ -114,7 +114,7 @@ POST = [
                "Chi riceve nella <b>metà campo offensiva</b>, ha il tempo di girarsi e fa un passaggio <b>verticale o diagonale</b> a un compagno:&nbsp;<b>2&nbsp;punti</b>"],
     ),
     dict(
-        n=3, foto="allenamento-03.jpg",
+        n=3, foto="allenamento-03.jpg", cop_schema=True,
         gancio="15 passaggi<span>= 1 punto</span>",
         schema=schema_gioco,
         titolo2="Gioco di posizione",
@@ -134,10 +134,11 @@ def slides(p, tot=4):
     marchio = '<div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>'
     punti = "".join(f"<li>{x}</li>" for x in p["punti"])
     return f'''
-<section class="slide cop">
+<section class="slide cop{' cs' if p.get('cop_schema') else ''}">
   <img class="bgimg" src="{MAT}/precampionato/{p["foto"]}">
   <div class="veil"></div>
   <img class="logo" src="{MAT}/brand/logo-cerchio.png">
+  {('<div class="copschema">' + p["schema"].replace('class="schema"', 'preserveAspectRatio="xMidYMid slice"') + '</div>') if p.get("cop_schema") else ''}
   <div class="txt">
     <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
     <h1>{p["gancio"]}</h1>
@@ -180,7 +181,10 @@ h1, h2 {{ font-family: Oswald, sans-serif; font-weight: 700; text-transform: upp
 .cop, .fine {{ background: #0c120f; color: #fff; }}
 .cop .bgimg {{ position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; transform: rotate(-4deg) scale(1.08); filter: grayscale(1) contrast(1.1); opacity: .55; }}
 .cop .veil {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,18,15,.97) 0%, rgba(12,18,15,.9) 36%, rgba(12,18,15,.5) 52%, rgba(12,18,15,.85) 66%, rgba(12,18,15,.98) 80%); }}
-.cop .logo {{ position: absolute; top: {200 if alto else 40}px; left: 50%; transform: translateX(-50%); width: {620 if alto else 520}px; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }}
+.cop .logo {{ position: absolute; top: {170 if alto else 40}px; left: 50%; transform: translateX(-50%); width: {440 if alto else 520}px; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }}
+.copschema {{ position: absolute; left: 50%; transform: translateX(-50%); top: {650 if alto else 480}px; width: {700 if alto else 560}px; height: {340 if alto else 260}px; border-radius: 18px; overflow: hidden; border: 3px solid rgba(132,185,74,.6); }}
+.cop.cs .txt {{ {'top: 1040px' if alto else ''} }}
+.copschema svg {{ width: 100%; height: 100%; display: block; }}
 .cop .txt {{ position: absolute; left: 80px; right: 80px; {'top: 860px' if alto else 'bottom: 80px'}; }}
 .kick {{ font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-size: 28px; color: #84b94a; }}
 .cop h1, .fine h1 {{ font-size: {150 if alto else 130}px; line-height: .92; margin: 20px 0 28px; }}
