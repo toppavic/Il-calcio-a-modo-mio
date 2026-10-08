@@ -47,9 +47,9 @@ h1 span { color: #84b94a; display: block; }
     <text id="giraTxt" x="182" y="122" font-family="Oswald" font-size="15" font-weight="700" letter-spacing="1" text-anchor="middle" fill="#fff" opacity="0">SI GIRA</text>
   </svg>
   <div id="wipe"></div>
-  <div class="cap" id="c0">I difensori <b>agganciano</b> gli avversari davanti alla palla</div>
+  <div class="cap" id="c0">I difensori <b>marcano da dietro</b> gli avversari davanti alla palla</div>
   <div class="cap" id="c1">Palla persa: la giocata in verticale…</div>
-  <div class="cap" id="c2">…trova il difensore già lì: <b>anticipata</b></div>
+  <div class="cap" id="c2">…chi marca da dietro <b>anticipa</b> o <b>contrasta</b></div>
   <div class="cap" id="c3">Senza preventiva chi riceve ha il tempo di girarsi…</div>
   <div class="cap" id="c4">…e passa il pallone: <b>2 punti</b> a chi ha recuperato</div>
 </div>
@@ -77,7 +77,7 @@ const ROSSI = [[300,90],[292,212],[385,100],[388,205],[255,60],[255,240],[415,15
 const R10 = [182,148], R7 = [128,152], R3 = [160,92], R_REC = [345,150];
 const B10 = [232,150], B10_FIN = [318,150];
 // difensori blu: posizione libera → posizione di marcatura sull'avversario davanti alla palla
-const D = { 6: {a: [135,116], b: [216,140], r: R10}, 5: {a: [110,190], b: [160,172], r: R7}, 3: {a: [120,60], b: [190,112], r: R3} };
+const D = { 6: {a: [135,116], b: [158,150], r: R10}, 5: {a: [110,190], b: [104,162], r: R7}, 3: {a: [120,60], b: [134,88], r: R3} };
 const T = { cambio: 5.5, fine: 11.0 };
 
 function player(x, y, fill, stroke, n, col) {
@@ -101,7 +101,8 @@ function draw(t) {
   const pos = {};
   for (const k of [6, 5, 3]) pos[k] = rep2 ? D[k].a : lerp(D[k].a, D[k].b, prog(u, .2 + (k === 6 ? 0 : .15), 1.2 + (k === 6 ? 0 : .15)));
   // il 6 anticipa la verticale (solo nella prima scena)
-  if (!rep2) pos[6] = lerp(pos[6], [224,151], prog(u, 2.6, 3.1));
+  if (!rep2 && u > 2.45) { const k = prog(u, 2.45, 3.1), a = D[6].b, c = [182,120], e = [206,146];
+    pos[6] = [(1-k)*(1-k)*a[0] + 2*(1-k)*k*c[0] + k*k*e[0], (1-k)*(1-k)*a[1] + 2*(1-k)*k*c[1] + k*k*e[1]]; }
 
   let s = '';
   if (!rep2 && u > 1.2) {
