@@ -91,7 +91,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   tempo per andare a prendere la palla. La usa Sarri; l'allenatore la usa da 7-8 anni. Ci sono esercizi per la sincronia.
   Evoluzione (6/10): così nel 2021/22; negli ultimi due campionati stessa linea ma con **marcatura sull'uomo all'arrivo della
   giocata** (non solo la palla, "sentire l'uomo"), per non perdere chi attacca alle spalle (cut back, secondo palo).
-- Preventiva 1 (7/10): è il **primo gradino di una progressione** sulla marcatura preventiva: essere pronti ad accorciare appena la palla cambia di mano. Nei post va detto che fa parte di un percorso. Un utente TikTok (Alessandro) ha commentato "concetto di preventiva strano": lui risponde con calma chiedendo di spiegare, senza difendersi.
+- **Marcatura preventiva (8/10, spiegata da lui)**: mentre la squadra in possesso muove la palla, i suoi difensori **agganciano e marcano gli avversari che stanno davanti alla linea della palla**. Se si perde palla la giocata in verticale sul compagno di chi recupera è subito anticipata e contrastata, senza che ripartano. NON è una riaggressione dopo la perdita: il marcatore è già lì quando si perde palla. Nel Reel la marcatura sul compagno che riceve la dà il **6**.
+- Preventiva 1 (7/10): è il **primo gradino di una progressione** sulla marcatura preventiva. Nei post va detto che fa parte di un percorso. Un utente TikTok (Alessandro) ha commentato "concetto di preventiva strano": lui risponde con calma chiedendo di spiegare, senza difendersi.
 - Gioco di posizione: 4 contro 4 + 2 jolly (9 e 10), 15 passaggi consecutivi = 1 punto.
 
 ## Stato
