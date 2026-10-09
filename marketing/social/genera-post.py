@@ -115,10 +115,10 @@ POST = [
     ),
     dict(
         n=3, foto="allenamento-03.jpg", cop_schema=True,
-        gancio="15 passaggi<span>= 1 punto</span>",
+        gancio="8 passaggi<span>= 1 punto</span>",
         schema=schema_gioco,
         titolo2="Gioco di posizione",
-        testo2="<b>4 contro 4 + 2 jolly</b> (il 9 e il 10) in un quadrato di <b>30 × 30 m</b>. <b>15 passaggi</b> consecutivi = <b>1 punto</b>.",
+        testo2="<b>4 contro 4 + 2 jolly</b> (il 9 e il 10) in un quadrato di <b>30 × 30 m</b>. <b>8 passaggi</b> consecutivi = <b>1 punto</b>.",
         titolo3="Per renderlo difficile",
         punti=["Si gioca a <b>2 tocchi</b>",
                "I jolly hanno <b>1 solo tocco</b>",
