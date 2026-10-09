@@ -264,7 +264,7 @@ gioco = f'''<section class="page">
       <li>3 serie da 4 minuti</li>
     </ul></div>
     <div class="box"><h4>Svolgimento</h4>
-      <p>La squadra in possesso, aiutata dai due jolly, cerca di tenere palla. Ogni <b>15 passaggi consecutivi</b> vale <b>1 gol</b>.</p>
+      <p>La squadra in possesso, aiutata dai due jolly, cerca di tenere palla. Ogni <b>8 passaggi consecutivi</b> vale <b>1 gol</b>.</p>
       <p>Al termine delle serie <b>si invertono i gruppi</b> con la linea difensiva.</p>
     </div>
     <div class="box"><h4>Punti chiave</h4><ul class="clean">

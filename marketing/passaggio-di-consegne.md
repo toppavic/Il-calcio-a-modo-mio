@@ -19,7 +19,8 @@
 - Reel 2 su Preventiva 1: preparare **10 ganci** (metodo in CLAUDE.md), campo in movimento dal primo secondo, 12-15 s.
 - Idea contenuto: "Diagonale invertita: pro e contro" con le obiezioni dei commenti e le sue risposte.
 - Domenica sera: chiedergli gli screenshot settimanali (IG, TikTok, FB). 16/10: statistiche Etsy.
-- PDF Allenamento 4: "laterale e verticale" → "laterale o verticale" (conversazione ALLENAMENTI).
+- ✅ 9/10 fatto: PDF Allenamento 4 "laterale o verticale", gioco di posizione a 8 passaggi negli Allenamenti 1-3,
+  pacchetto 1-10 rigenerato: l'allenatore deve sostituire il file su Etsy.
 - Foto allenamenti 12-20 entro sab 10 per l'uscita Etsy di gio 15 (11-20).
 
 ## Regola schemi dei post (6/10)

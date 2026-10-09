@@ -201,7 +201,7 @@ gioco = f'''<section class="page">
       <li>2 jolly: il 9 e il 10</li>
     </ul></div>
     <div class="box"><h4>Svolgimento</h4>
-      <p>Stesse regole dell'Allenamento 2: ogni <b>15 passaggi consecutivi</b> vale <b>1 punto</b>.</p>
+      <p>Stesse regole dell'Allenamento 2: ogni <b>8 passaggi consecutivi</b> vale <b>1 punto</b>.</p>
       <p>Si gioca a <b>2 tocchi</b>, mentre i jolly hanno <b>1 solo tocco</b>.</p>
     </div>
     <div class="box"><h4>Punti chiave</h4><ul class="clean">
