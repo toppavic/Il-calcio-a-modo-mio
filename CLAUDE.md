@@ -134,7 +134,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   + partita: Sagginale 1-5 Spartaco Banti Barberino.
   Funzione comune `campo_ricerca()` negli script 16 e 17.
 - 9/10: gioco di posizione corretto a **8 passaggi** negli Allenamenti 1, 2, 3 e "laterale o verticale" nel 4;
-  pacchetto 1-10 rigenerato (64 pagine, 4,4 MB) → da sostituire su Etsy (fatto dall'allenatore).
+  pacchetto 1-10 rigenerato (64 pagine, 4,4 MB) → **sostituito su Etsy dall'allenatore il 9/10**.
 - Prossimo: **Allenamento 18**.
 - Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse
   (ogni tempo = una tappa). L'allenatore controlla se torna negli allenamenti di campionato. Nell'Allenamento 14
