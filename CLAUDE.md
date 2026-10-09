@@ -93,7 +93,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   giocata** (non solo la palla, "sentire l'uomo"), per non perdere chi attacca alle spalle (cut back, secondo palo).
 - **Marcatura preventiva (8/10, spiegata da lui)**: mentre la squadra in possesso muove la palla, i suoi difensori **agganciano e marcano gli avversari che stanno davanti alla linea della palla**. Se si perde palla la giocata in verticale sul compagno di chi recupera è subito anticipata e contrastata, senza che ripartano. NON è una riaggressione dopo la perdita: il marcatore è già lì quando si perde palla. La marcatura si fa **da dietro** (lato porta, non davanti all'avversario): quando arriva la palla o **contrasti o anticipi**. Se il marcatore sta davanti e loro giocano la palla dietro, è tagliato fuori. Nel Reel la marcatura sul compagno che riceve la dà il **6**.
 - Preventiva 1 (7/10): è il **primo gradino di una progressione** sulla marcatura preventiva. Nei post va detto che fa parte di un percorso. Un utente TikTok (Alessandro) ha commentato "concetto di preventiva strano": lui risponde con calma chiedendo di spiegare, senza difendersi.
-- Gioco di posizione: 4 contro 4 + 2 jolly (9 e 10), 15 passaggi consecutivi = 1 punto.
+- Gioco di posizione (9/10, deciso da lui): 4 contro 4 + 2 jolly (9 e 10), **8 passaggi consecutivi = 1 punto** (non 15). Gioco ripreso dalla cantera del Barcellona; lo usa nel precampionato quando divide la squadra in due: 10 lavorano sulla fase difensiva e 10 su passaggio, smarcamento e tempi di giocata. **Da correggere nei PDF** Allenamento 2 e 3 (ora c'è scritto 15) nella conversazione ALLENAMENTI, poi rigenerare il pacchetto e sostituire il file su Etsy.
 
 ## Stato
 
