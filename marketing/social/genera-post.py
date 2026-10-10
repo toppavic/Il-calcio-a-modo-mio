@@ -124,6 +124,19 @@ POST = [
                "I jolly hanno <b>1 solo tocco</b>",
                "Con meno tocchi bisogna <b>smarcarsi prima</b> e più in fretta"],
     ),
+    dict(
+        n=4, foto="allenamento-01.jpg", ponte=True,
+        gancio="Ci chiesero<span>il quinto posto</span>",
+        schema=schema_gioco,
+        titolo2="La prima seduta",
+        testo2="Un gruppo con il mister sulla <b>linea difensiva</b>. L'altro nel <b>gioco di posizione</b>: <b>4 contro 4 + 2 jolly</b> in un quadrato di 30 × 30 m. Poi si invertono.",
+        titolo3="Quella sera abbiamo fatto così",
+        punti=["<b>Scivolamenti</b>: la linea a 4 con il mister",
+               "<b>Gioco di posizione</b>: 8 passaggi = 1 punto",
+               "Il gruppo diviso in due, poi <b>si invertono</b>"],
+        fine_sub="Vuoi l'allenamento completo con gli schemi? Scrivi <b>PRECAMPIONATO</b> nei commenti. La storia di quella stagione è nel libro.",
+        azioni=["Scrivi PRECAMPIONATO", "Il libro è nel link in bio"],
+    ),
 ]
 
 FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>"
@@ -164,8 +177,8 @@ def slides(p, tot=4):
 <section class="slide fine">
   <img class="logo2" src="{MAT}/brand/logo-cerchio.png">
   <h1>Gli<span>Imbattibili</span></h1>
-  <p class="sub">{FIRMA}. Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.</p>
-  <div class="azioni"><div>Salva il post</div><div>Seguici per il prossimo</div></div>
+  <p class="sub">{p.get("fine_sub") or (FIRMA + ". Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.")}</p>
+  <div class="azioni">{"".join("<div>" + a + "</div>" for a in (p.get("azioni") or ["Salva il post", "Seguici per il prossimo"]))}</div>
 </section>'''
 
 
