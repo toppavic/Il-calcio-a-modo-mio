@@ -126,6 +126,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   4 stazioni × 5 (15'), 2c2 chi vince resta, partita libera 15') + pagina partita: Spartaco Banti Barberino 1-0 Fiesole.
   Pagina partita: funzione `pagina_partita(..., noi="sx"|"dx")` in `genera-allenamento-15.py`.
 - **2 contro 2 a partita: sempre 4 serie da 1'30"** (anche se sul foglio c'è scritto altro).
+- **CCVV (corsa con variazioni di velocità): sempre con lo schema** sulla metà campo: lato corto di recupero, diagonale in
+  allungo (`ccvv_svg` negli script 12, 14, 18), anche se sul foglio c'è solo "CCVV".
 - Allenamento 16 ✅ completo e confermato (lunedì; ~85'; ricerca del portiere su pressione 7c7 + jolly 2 × 15', 3 tocchi, no lancio,
   gol dopo recupero alto = 5 punti; attacco contro difesa con porticine 1-2; navette 5'+5'+5', le ultime sui 16 m = dal fondo
   campo al limite dell'area).

@@ -109,7 +109,7 @@ scheda = f'''<section class="page">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Partita a meta con ricerca della punta</div><div class="d">2 tempi da 15' · 2 tocchi · la squadra B cerca la punta in meta, scarico e filtrante attraverso le porte A, B, C · la squadra A deve fare gol</div></td><td class="min">35'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Attacco contro difesa</div><div class="d">2 tempi da 15' · chi attacca cerca il gol, chi difende esce dalle porticine A, B, C · chi perde fa 10 flessioni</div></td><td class="min">35'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">Corsa con variazioni di velocità</div><div class="d">2 ripetute da 8'</div></td><td class="min">20'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">Corsa con variazioni di velocità</div><div class="d">2 ripetute da 8' sulla metà campo: lato corto di recupero, diagonale in allungo</div></td><td class="min">20'</td></tr>
   </table>
 
   <div class="timeline">
@@ -186,6 +186,23 @@ meta = f'''<section class="page">
 </section>'''
 
 # ---------- 4. Attacco contro difesa + CCVV
+# Corsa sulla metà campo: diagonali in allungo (oro), lati corti di recupero (bianco)
+ccvv_svg = f'''<svg class="diagram" viewBox="0 0 500 250" style="width:78mm;margin:0 auto">
+    <rect width="500" height="250" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5" stroke-opacity=".6">
+      <rect x="40" y="25" width="420" height="200"/>
+    </g>
+    {freccia("M58,207 L440,43", oro=True)}
+    {freccia("M444,46 L444,198", tratteggio=True)}
+    {freccia("M440,207 L60,43", oro=True)}
+    {freccia("M56,46 L56,196", tratteggio=True)}
+    <g font-family="Oswald" font-size="13" fill="#fff" letter-spacing="1">
+      <text x="160" y="105" fill="#f2c230">ALLUNGO</text>
+      <text x="290" y="175" fill="#f2c230">ALLUNGO</text>
+      <text x="410" y="244">RECUPERO</text><text x="20" y="244">RECUPERO</text>
+    </g>
+  </svg>'''
+
 attacco_svg = f'''<svg class="diagram" viewBox="0 0 500 300" style="width:118mm;margin:0 auto">
     <rect width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="20" width="420" height="260"/></g>
@@ -218,7 +235,11 @@ attacco = f'''<section class="page">
 
   <div class="kicker" style="margin-top:7mm">Esercitazione IV</div>
   <div class="ex-title"><h2 style="font-size:17pt">Corsa con variazioni di velocità · 2 ripetute da 8'</h2></div>
-  <div class="box" style="margin-top:3mm">Due ripetute da 8 minuti di corsa con variazioni di velocità (20' in tutto con il recupero).</div>
+  <div style="display:flex;gap:6mm;align-items:center;margin-top:3mm">
+    <div style="flex:1.1">{ccvv_svg}</div>
+    <div class="box" style="flex:1">Come negli Allenamenti 12 e 14, sulla <b>metà campo</b>: <b>lato corto</b> di corsa lenta
+      per recuperare, <b>diagonale</b> in allungo. <b>2 ripetute da 8'</b> (20' in tutto con il recupero).</div>
+  </div>
   {footer()}
 </section>'''
 
