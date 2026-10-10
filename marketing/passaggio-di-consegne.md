@@ -45,3 +45,11 @@ ma con un pezzo di campo/schema dell'esercizio sulla copertina, così ognuna è 
 ## Fatto 6/10
 - Preventiva 1 pubblicato su TikTok a mano verso le 14:30. Su Instagram programmato per le 18:00 (riprogrammato con le immagini nuove).
 - Mer 7, 13:00: Preventiva 1 nel gruppo A.A.C.I. (slide 2 con lo schema + testo personale, testo dato in chat).
+
+## 10/10 – Regalo Allenamento 1 (per dom 11)
+- Ponte 1 pronto: `ig-fb-post4-*.png` e `tiktok-post4-*.png` (cover "Ci chiesero il quinto posto", programma prima seduta,
+  ricerca del portiere, chiusura PRECAMPIONATO). Approvato dall'allenatore.
+- Il PDF `allenamento-01.pdf` è su un **Google Drive nuovo** (account creato apposta, non quello del lavoro), link con
+  "Chiunque abbia il link, solo visualizzazione". Il link e il messaggio da incollare nei DM sono nelle **Note del suo telefono**.
+- Su Instagram i DM non accettano PDF: si manda il link. Chi non lo segue lo riceve nelle richieste di messaggi:
+  rispondere anche al commento ("Te l'ho mandato in privato, controlla le richieste").
