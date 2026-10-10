@@ -53,3 +53,7 @@ ma con un pezzo di campo/schema dell'esercizio sulla copertina, così ognuna è 
   "Chiunque abbia il link, solo visualizzazione". Il link e il messaggio da incollare nei DM sono nelle **Note del suo telefono**.
 - Su Instagram i DM non accettano PDF: si manda il link. Chi non lo segue lo riceve nelle richieste di messaggi:
   rispondere anche al commento ("Te l'ho mandato in privato, controlla le richieste").
+
+- ✅ 10/10 (ALLENAMENTI): pacchetto **"In campionato" Allenamenti 11-19** pronto (`prodotti/gli-imbattibili/campionato-allenamenti-11-19.pdf`,
+  46 pagine, 3,9 MB). Chiude con il giovedì 19 e la partita (deciso dall'allenatore), quindi non è più 11-20: aggiornare
+  calendario uscite e annuncio Etsy.
