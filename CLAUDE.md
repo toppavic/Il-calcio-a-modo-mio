@@ -135,7 +135,14 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Funzione comune `campo_ricerca()` negli script 16 e 17.
 - 9/10: gioco di posizione corretto a **8 passaggi** negli Allenamenti 1, 2, 3 e "laterale o verticale" nel 4;
   pacchetto 1-10 rigenerato (64 pagine, 4,4 MB) → **sostituito su Etsy dall'allenatore il 9/10**.
-- Prossimo: **Allenamento 18**.
+- Allenamento 18 📝 bozza inviata (lunedì 18/10/21; ~100'; partita a meta con ricerca della punta 3/4 campo 2 × 15',
+  2 tocchi, porte A-B-C; attacco contro difesa con porticine A-B-C, chi perde 10 flessioni +1 per ogni gol oltre il 3°; CCVV 2 × 8').
+- Allenamento 19 📝 bozza inviata (21/10/21 giovedì; ~80'; rapidità 3 sfide a coppie × 5; partita attacco alla meta + jolly
+  2 × 15'; 2c2 con 2 sponde, gol con sponda doppio, 4 × 1'30"; partita libera 15') + partita: Spartaco Banti Barberino 1-0 Florence.
+  Da chiarire: come si segna nell'attacco alla meta (come nel 14?).
+- **Pacchetto "In campionato" = Allenamenti 11-19** (10/10, deciso dall'allenatore: chiudere con il giovedì e la partita,
+  non spezzare allenamenti e partite). Da preparare dopo la conferma di 18 e 19 (modello `genera-precampionato.py`).
+- Prossimo: **Allenamento 20**.
 - Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse
   (ogni tempo = una tappa). L'allenatore controlla se torna negli allenamenti di campionato. Nell'Allenamento 14
   (attacco contro difesa 7c8) la difesa fa punto trovando il portiere: possibile tappa in più. **Allenamenti 16 e 17:
