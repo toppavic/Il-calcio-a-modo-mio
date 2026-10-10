@@ -127,13 +127,17 @@ POST = [
     dict(
         n=4, foto="allenamento-01.jpg", ponte=True,
         gancio="Ci chiesero<span>il quinto posto</span>",
-        schema=schema_gioco,
+        kicker2="Allenamento 1",
         titolo2="La prima seduta",
-        testo2="Un gruppo con il mister sulla <b>linea difensiva</b>. L'altro nel <b>gioco di posizione</b>: <b>4 contro 4 + 2 jolly</b> in un quadrato di 30 × 30 m. Poi si invertono.",
-        titolo3="Quella sera abbiamo fatto così",
-        punti=["<b>Scivolamenti</b>: la linea a 4 con il mister",
-               "<b>Gioco di posizione</b>: 8 passaggi = 1 punto",
-               "Il gruppo diviso in due, poi <b>si invertono</b>"],
+        lista2=["<b>10'</b> Riscaldamento",
+                "<b>30'</b> Partita “ricerca del portiere”",
+                "<b>20'</b> Circuito atletico",
+                "<b>2 × 15-20'</b> Lavoro a gruppi: linea difensiva e gioco di posizione",
+                "<b>5'</b> Defaticamento"],
+        titolo3="Ricerca del portiere",
+        punti=["Due squadre da 10 e <b>un portiere per lato</b> che fa da bersaglio",
+               "<b>1° tempo</b>: massimo 3 tocchi, portiere trovato = 1 punto",
+               "<b>2° tempo</b>: massimo 2 tocchi, lancio dalla metà difensiva = 2 punti"],
         fine_sub="Vuoi l'allenamento completo con gli schemi? Scrivi <b>PRECAMPIONATO</b> nei commenti. La storia di quella stagione è nel libro.",
         azioni=["Scrivi PRECAMPIONATO", "Il libro è nel link in bio"],
     ),
@@ -146,6 +150,24 @@ def slides(p, tot=4):
     num = lambda i: f'<div class="num">{i}/{tot}</div>'
     marchio = '<div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>'
     punti = "".join(f"<li>{x}</li>" for x in p["punti"])
+    if p.get("lista2"):
+        lista2 = "".join(f"<li>{x}</li>" for x in p["lista2"])
+        slide2 = f'''<section class="slide int">
+  {num(2)}
+  <div class="kicker">{p["kicker2"]}</div>
+  <h2>{p["titolo2"]}</h2>
+  <ul class="punti">{lista2}</ul>
+  {marchio}
+</section>'''
+    else:
+        slide2 = f'''<section class="slide int">
+  {num(2)}
+  <div class="kicker">Esercitazione</div>
+  <h2>{p["titolo2"]}</h2>
+  <div class="riq">{p["schema"]}</div>
+  <p class="desc">{p["testo2"]}</p>
+  {marchio}
+</section>'''
     return f'''
 <section class="slide cop{' cs' if p.get('cop_schema') else ''}">
   <img class="bgimg" src="{MAT}/precampionato/{p["foto"]}">
@@ -159,14 +181,7 @@ def slides(p, tot=4):
     <div class="scorri">Scorri →</div>
   </div>
 </section>
-<section class="slide int">
-  {num(2)}
-  <div class="kicker">Esercitazione</div>
-  <h2>{p["titolo2"]}</h2>
-  <div class="riq">{p["schema"]}</div>
-  <p class="desc">{p["testo2"]}</p>
-  {marchio}
-</section>
+{slide2}
 <section class="slide int">
   {num(3)}
   <div class="kicker">{p["titolo2"]}</div>
