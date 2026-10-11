@@ -224,6 +224,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   Post FB nel gruppo Allenatori di base: 5517 visualizzazioni, 317 interazioni, 13 commenti. **Etsy 6/10: 0 visite.** Libro Amazon (KDP) ottobre al 7/10: 0 ordini, 0 pagine KENP.
   7/10 ore 15: TikTok **16 follower** (da 7), Preventiva 1 **1289**, Reel cross 1178 · IG Preventiva 1 1126, 4013 follower ·
   FB: Preventiva 1 in A.A.C.I. (13:00) 42, cross in Allenatori di base 5811, Appunti 2.0 3135.
+  11/10 ore 20:34: **TikTok 53 follower** (16 il 7/10), 75 like: carosello Preventiva 1 **2199**, Reel cross 1540, post 3 gioco di posizione 869,
+  Reel Preventiva 736, carosello cross 67 · **IG** 8426 visualizzazioni in 30 giorni (4013+ follower): carosello cross 2610, Preventiva 1 1458,
+  post 3 955, Reel cross 956, Reel Preventiva 524, Ponte 1 appena uscito (20:30). **Su TikTok i caroselli vanno meglio dei Reel.**
   Non pubblicare lo stesso post in tutti i gruppi insieme (filtro spam): 2–3 gruppi al giorno.
   Agenda (marketing/agenda-ottobre.ics, ore 21): sab 3 FB 2 gruppi · dom 4 Reel · lun 5 FB 2 gruppi ·
   mar 6 post 2 · mer 7 FB ultimo gruppo · ven 9 post 3.
