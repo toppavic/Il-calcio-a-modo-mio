@@ -3,6 +3,7 @@
 Crea post-4x5.html (Instagram e Facebook, 1080 × 1350) e post-9x16.html (TikTok, 1080 × 1920).
 Le immagini PNG si ottengono con strumenti/render-post.js.
 """
+import os
 import pathlib
 import re
 
@@ -169,7 +170,7 @@ def slides(p, tot=4):
   {marchio}
 </section>'''
     return f'''
-<section class="slide cop{' cs' if p.get('cop_schema') else ''}">
+<section class="slide cop{' cs' if p.get('cop_schema') else ''} t-{p.get('tema') or os.environ.get('TEMA') or 'scuro'}">
   <img class="bgimg" src="{MAT}/precampionato/{p["foto"]}">
   <div class="veil"></div>
   <img class="logo" src="{MAT}/brand/logo-cerchio.png">
@@ -220,6 +221,17 @@ h1, h2 {{ font-family: Oswald, sans-serif; font-weight: 700; text-transform: upp
 .sub {{ font-size: 36px; line-height: 1.4; color: #dfe6e1; }}
 .sub b {{ color: #fff; }}
 .scorri {{ margin-top: 40px; font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .15em; font-size: 30px; color: #84b94a; }}
+.cop.t-verde {{ background: #0f3d2e; }}
+.cop.t-verde .veil {{ background: linear-gradient(180deg, rgba(15,61,46,.97) 0%, rgba(15,61,46,.9) 36%, rgba(15,61,46,.5) 52%, rgba(15,61,46,.88) 66%, rgba(15,61,46,.98) 80%); }}
+.cop.t-verde .kick, .cop.t-verde h1 span, .cop.t-verde .scorri {{ color: #d4a017; }}
+.cop.t-oro .kick, .cop.t-oro h1 span, .cop.t-oro .scorri {{ color: #d4a017; }}
+.cop.t-chiaro {{ background: #f3efe4; color: #0f3d2e; }}
+.cop.t-chiaro .bgimg {{ opacity: .22; }}
+.cop.t-chiaro .veil {{ background: linear-gradient(180deg, rgba(243,239,228,.97) 0%, rgba(243,239,228,.85) 36%, rgba(243,239,228,.4) 52%, rgba(243,239,228,.8) 66%, rgba(243,239,228,.97) 80%); }}
+.cop.t-chiaro h1 {{ color: #0f3d2e; }}
+.cop.t-chiaro .kick, .cop.t-chiaro h1 span, .cop.t-chiaro .scorri {{ color: #b8860b; }}
+.cop.t-chiaro .sub {{ color: #26352d; }}
+.cop.t-chiaro .sub b {{ color: #0f3d2e; }}
 .int {{ background: #fff; padding: {'0 80px 260px' if alto else '90px 80px 0'}; color: #1d2421; {'display: flex; flex-direction: column; justify-content: center;' if alto else ''} }}
 .int .num {{ position: absolute; top: {90 if alto else 40}px; right: 60px; font-family: Oswald, sans-serif; font-size: 28px; color: #9aa59f; }}
 .kicker {{ font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .2em; font-size: 28px; color: #d4a017; }}
