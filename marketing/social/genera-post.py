@@ -88,6 +88,21 @@ schema_gioco = f'''<svg class="schema" viewBox="60 0 380 340">
     {g(360, 110, "pA", 7)}{g(235, 190, "pA", 8)}{g(140, 275, "pA", 3)}{g(305, 270, "pA", 6)}
   </svg>'''
 
+def schema_ricerca_portiere():
+    rossi = [(95, 70), (95, 150), (95, 230), (175, 110), (175, 190), (300, 150), (390, 100)]
+    blu = [(405, 70), (405, 150), (405, 230), (325, 110), (325, 190), (200, 150), (110, 110)]
+    gioc = "".join(g(x, y, "pA") for x, y in rossi) + "".join(g(x, y, "pB") for x, y in blu) + g(250, 230, "pJ", "J", "#1d2421")
+    return f'''<svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="20" width="420" height="260"/><line x1="250" y1="20" x2="250" y2="280"/></g>
+    <rect x="30" y="118" width="10" height="64" fill="#fff"/><rect x="460" y="118" width="10" height="64" fill="#fff"/>
+    {g(22, 150, "pP")}{g(478, 150, "pP")}
+    {gioc}
+    <use href="#palla" x="314" y="158"/>
+    {freccia("M312,146 L462,150", tratteggio=True)}
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -142,6 +157,19 @@ POST = [
         fine_sub="Vuoi l'allenamento completo con gli schemi? Scrivi <b>PRECAMPIONATO</b> nei commenti. La storia di quella stagione è nel libro.",
         azioni=["Scrivi PRECAMPIONATO", "Il libro è nel link in bio"],
     ),
+    dict(
+        n=5, foto="allenamento-16.jpg", cartella="campionato", tema="chiaro",
+        gancio="Recupero alto<span>= 5 punti</span>",
+        schema=schema_ricerca_portiere(),
+        titolo2="Ricerca del portiere",
+        testo2="<b>7 contro 7 + jolly</b> in due metà campo, con un <b>portiere bersaglio</b> per lato. Senza lanci si arriva al portiere <b>palla a terra</b>.",
+        titolo3="Le regole",
+        punti=["<b>2 tempi da 15'</b>",
+               "Massimo <b>3 tocchi</b>, niente lancio",
+               "Recuperi palla nella <b>metà offensiva</b> e fai gol: <b>5 punti</b>",
+               "Nel 2° tempo <b>solo gioco verticale</b>"],
+        fine_sub="La Juniores che ha vinto il campionato <b>senza perdere una partita</b>. Gli allenamenti in campionato, scritti a mano dal mister e messi in pagina.",
+    ),
 ]
 
 FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>"
@@ -171,7 +199,7 @@ def slides(p, tot=4):
 </section>'''
     return f'''
 <section class="slide cop{' cs' if p.get('cop_schema') else ''} t-{p.get('tema') or os.environ.get('TEMA') or 'scuro'}">
-  <img class="bgimg" src="{MAT}/precampionato/{p["foto"]}">
+  <img class="bgimg" src="{MAT}/{p.get("cartella", "precampionato")}/{p["foto"]}">
   <div class="veil"></div>
   <img class="logo" src="{MAT}/brand/logo-cerchio.png">
   {('<div class="copschema">' + p["schema"].replace('class="schema"', 'preserveAspectRatio="xMidYMid slice"') + '</div>') if p.get("cop_schema") else ''}
