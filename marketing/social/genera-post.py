@@ -159,14 +159,15 @@ POST = [
     ),
     dict(
         n=5, foto="allenamento-16.jpg", cartella="campionato", tema="chiaro",
-        gancio="Recupero alto<span>= 5 punti</span>",
+        gancio="Recupero alto<span>= 2 punti</span>",
         schema=schema_ricerca_portiere(),
         titolo2="Ricerca del portiere",
-        testo2="<b>7 contro 7 + jolly</b> in due metà campo, con un <b>portiere bersaglio</b> per lato. Senza lanci si arriva al portiere <b>palla a terra</b>.",
+        testo2="<b>7 contro 7 + jolly</b> in due metà campo, con un <b>portiere bersaglio</b> per lato. Si può fare dal <b>7 contro 7</b> all'<b>11 contro 11</b> cambiando le dimensioni del campo.",
+        obiettivo="<b>Obiettivo</b>: pressare alto per recuperare palla vicino alla porta avversaria e trovare il portiere palla a terra.",
         titolo3="Le regole",
         punti=["<b>2 tempi da 15'</b>",
                "Massimo <b>3 tocchi</b>, niente lancio",
-               "Recuperi palla nella <b>metà offensiva</b> e fai gol: <b>5 punti</b>",
+               "Recuperi palla nella <b>metà offensiva</b> e fai gol: <b>2 punti</b>",
                "Nel 2° tempo <b>solo gioco verticale</b>"],
         fine_sub="La Juniores che ha vinto il campionato <b>senza perdere una partita</b>. Gli allenamenti in campionato, scritti a mano dal mister e messi in pagina.",
     ),
@@ -195,6 +196,7 @@ def slides(p, tot=4):
   <h2>{p["titolo2"]}</h2>
   <div class="riq">{p["schema"]}</div>
   <p class="desc">{p["testo2"]}</p>
+  {('<p class="desc ob">' + p["obiettivo"] + '</p>') if p.get("obiettivo") else ''}
   {marchio}
 </section>'''
     return f'''
@@ -267,6 +269,7 @@ h1, h2 {{ font-family: Oswald, sans-serif; font-weight: 700; text-transform: upp
 .riq {{ display: flex; justify-content: center; }}
 .riq .schema {{ width: 100%; max-height: {900 if alto else 700}px; display: block; border-radius: 16px; }}
 .desc {{ font-size: 36px; line-height: 1.45; margin-top: 40px; }}
+.desc.ob {{ margin-top: 24px; font-size: 34px; }}
 .desc b, .punti b {{ color: #0f3d2e; }}
 .punti {{ list-style: none; margin-top: 20px; }}
 .punti li {{ font-size: 42px; line-height: 1.35; padding: 34px 0 34px 70px; position: relative; border-bottom: 2px solid #e3e8e5; }}
