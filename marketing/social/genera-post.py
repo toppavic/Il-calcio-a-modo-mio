@@ -163,7 +163,7 @@ POST = [
         schema=schema_ricerca_portiere(),
         titolo2="Ricerca del portiere",
         testo2="<b>7 contro 7 + jolly</b> in due metà campo, con un <b>portiere bersaglio</b> per lato. Si può fare dal <b>7 contro 7</b> all'<b>11 contro 11</b> cambiando le dimensioni del campo.",
-        obiettivo="<b>Obiettivo</b>: pressare alto per recuperare palla vicino alla porta avversaria e trovare il portiere palla a terra.",
+        obiettivo="<span>Obiettivo primario</span>Pressione di squadra in metà offensiva",
         titolo3="Le regole",
         punti=["<b>2 tempi da 15'</b>",
                "Massimo <b>3 tocchi</b>, niente lancio",
@@ -196,7 +196,6 @@ def slides(p, tot=4):
   <h2>{p["titolo2"]}</h2>
   <div class="riq">{p["schema"]}</div>
   <p class="desc">{p["testo2"]}</p>
-  {('<p class="desc ob">' + p["obiettivo"] + '</p>') if p.get("obiettivo") else ''}
   {marchio}
 </section>'''
     return f'''
@@ -218,6 +217,7 @@ def slides(p, tot=4):
   <div class="kicker">{p["titolo2"]}</div>
   <h2>{p["titolo3"]}</h2>
   <ul class="punti">{punti}</ul>
+  {('<div class="obiettivo">' + p["obiettivo"] + '</div>') if p.get("obiettivo") else ''}
   {marchio}
 </section>
 <section class="slide fine">
@@ -269,7 +269,8 @@ h1, h2 {{ font-family: Oswald, sans-serif; font-weight: 700; text-transform: upp
 .riq {{ display: flex; justify-content: center; }}
 .riq .schema {{ width: 100%; max-height: {900 if alto else 700}px; display: block; border-radius: 16px; }}
 .desc {{ font-size: 36px; line-height: 1.45; margin-top: 40px; }}
-.desc.ob {{ margin-top: 24px; font-size: 34px; }}
+.obiettivo {{ margin-top: 44px; padding: 28px 34px; border-radius: 16px; background: #0f3d2e; color: #fff; font-family: Oswald, sans-serif; text-transform: uppercase; font-size: 46px; line-height: 1.1; font-weight: 600; }}
+.obiettivo span {{ display: block; color: #d4a017; font-size: 26px; letter-spacing: .18em; font-weight: 500; margin-bottom: 10px; }}
 .desc b, .punti b {{ color: #0f3d2e; }}
 .punti {{ list-style: none; margin-top: 20px; }}
 .punti li {{ font-size: 42px; line-height: 1.35; padding: 34px 0 34px 70px; position: relative; border-bottom: 2px solid #e3e8e5; }}
