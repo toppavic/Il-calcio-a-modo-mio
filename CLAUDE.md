@@ -16,6 +16,7 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 - **Mai inventare contenuti tecnici presentandoli come suoi.** Obiettivi e punti chiave scritti
   da noi vanno bene, ma va sempre detto all'allenatore cosa è stato aggiunto perché lo controlli.
 - Salvare ogni foto ricevuta in `materiale/` e fare commit e push dopo ogni passo.
+- **Numeri 13/10 mattina**: IG settimana scorsa **6815 visualizzazioni (+57%)**, 12% non follower, 1 reel + 3 post + 1 notizia; più visti: Preventiva 1 **1489**, 8 passaggi **994**, Ponte 1 (quinto posto) **782**; 12 set-11 ott: 9830 visualizzazioni, 25 nuovi follower. Instagram consiglia 2 reel + 2 post a settimana. Facebook ricavi stimati 2026: **21,33 $** (lug 0,37 · ago 3,63 · set 15,46 · ott 1,72 al 13/10).
 - **Messaggi del giorno (13/10, regola dell'allenatore)**: nel promemoria del mattino e nelle risposte mettere o preparare **solo le cose del giorno**, mai quelle dei giorni successivi (niente Etsy di giovedì il martedì).
 - **Regola della sessione piena**: quando il contesto della conversazione supera circa l'80% (get_session →
   context_usage) o si notano dimenticanze, dirlo all'allenatore e proporre una nuova sessione MARKETING. Prima di
