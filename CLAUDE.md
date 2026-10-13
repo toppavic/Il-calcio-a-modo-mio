@@ -16,6 +16,7 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 - **Mai inventare contenuti tecnici presentandoli come suoi.** Obiettivi e punti chiave scritti
   da noi vanno bene, ma va sempre detto all'allenatore cosa è stato aggiunto perché lo controlli.
 - Salvare ogni foto ricevuta in `materiale/` e fare commit e push dopo ogni passo.
+- **Messaggi del giorno (13/10, regola dell'allenatore)**: nel promemoria del mattino e nelle risposte mettere o preparare **solo le cose del giorno**, mai quelle dei giorni successivi (niente Etsy di giovedì il martedì).
 - **Regola della sessione piena**: quando il contesto della conversazione supera circa l'80% (get_session →
   context_usage) o si notano dimenticanze, dirlo all'allenatore e proporre una nuova sessione MARKETING. Prima di
   chiuderla: aggiornare CLAUDE.md e i file in `marketing/`, poi spostare sulla nuova sessione il promemoria delle 7
