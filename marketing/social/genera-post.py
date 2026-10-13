@@ -163,12 +163,13 @@ POST = [
         schema=schema_ricerca_portiere(),
         titolo2="Ricerca del portiere",
         testo2="<b>7 contro 7 + jolly</b> in due metà campo, con un <b>portiere bersaglio</b> per lato. Si può fare dal <b>7 contro 7</b> all'<b>11 contro 11</b> cambiando le dimensioni del campo.",
-        obiettivo="<span>Obiettivo primario</span>Pressione di squadra in metà offensiva",
+        obiettivo="<span>Obiettivo primario</span>Pressione di squadra in metà offensiva<span class='sec'>Obiettivo secondario</span><i>La linea di difesa, persa palla, toglie le filtranti</i>",
         titolo3="Le regole",
         punti=["<b>2 tempi da 15'</b>",
                "Massimo <b>3 tocchi</b>, niente lancio",
                "Recuperi palla nella <b>metà offensiva</b> e fai gol: <b>2 punti</b>",
-               "Nel 2° tempo <b>solo gioco verticale</b>"],
+               "Nel 2° tempo <b>solo gioco verticale</b>",
+               "Il portiere riceve la palla <b>solo dentro la porta</b>: si migliora anche la qualità del passaggio"],
         fine_sub="La Juniores che ha vinto il campionato <b>senza perdere una partita</b>. Gli allenamenti in campionato, scritti a mano dal mister e messi in pagina.",
     ),
 ]
@@ -176,7 +177,8 @@ POST = [
 FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>"
 
 
-def slides(p, tot=4):
+def slides(p, tot=None):
+    tot = tot or (5 if p.get("obiettivo") else 4)
     num = lambda i: f'<div class="num">{i}/{tot}</div>'
     marchio = '<div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>'
     punti = "".join(f"<li>{x}</li>" for x in p["punti"])
@@ -217,9 +219,9 @@ def slides(p, tot=4):
   <div class="kicker">{p["titolo2"]}</div>
   <h2>{p["titolo3"]}</h2>
   <ul class="punti">{punti}</ul>
-  {('<div class="obiettivo">' + p["obiettivo"] + '</div>') if p.get("obiettivo") else ''}
   {marchio}
 </section>
+{('<section class="slide int">' + num(4) + '<div class="kicker">' + p["titolo2"] + '</div><h2>Gli obiettivi</h2><div class="obiettivo">' + p["obiettivo"] + '</div>' + marchio + '</section>') if p.get("obiettivo") else ''}
 <section class="slide fine">
   <img class="logo2" src="{MAT}/brand/logo-cerchio.png">
   <h1>Gli<span>Imbattibili</span></h1>
@@ -269,8 +271,10 @@ h1, h2 {{ font-family: Oswald, sans-serif; font-weight: 700; text-transform: upp
 .riq {{ display: flex; justify-content: center; }}
 .riq .schema {{ width: 100%; max-height: {900 if alto else 700}px; display: block; border-radius: 16px; }}
 .desc {{ font-size: 36px; line-height: 1.45; margin-top: 40px; }}
-.obiettivo {{ margin-top: 44px; padding: 28px 34px; border-radius: 16px; background: #0f3d2e; color: #fff; font-family: Oswald, sans-serif; text-transform: uppercase; font-size: 46px; line-height: 1.1; font-weight: 600; }}
-.obiettivo span {{ display: block; color: #d4a017; font-size: 26px; letter-spacing: .18em; font-weight: 500; margin-bottom: 10px; }}
+.obiettivo {{ margin-top: 50px; padding: 50px 44px; border-radius: 18px; background: #0f3d2e; color: #fff; font-family: Oswald, sans-serif; text-transform: uppercase; font-size: 76px; line-height: 1.1; font-weight: 600; }}
+.obiettivo i {{ display: block; font-style: normal; font-size: 64px; }}
+.obiettivo span.sec {{ margin-top: 56px; }}
+.obiettivo span {{ display: block; color: #d4a017; font-size: 32px; letter-spacing: .18em; font-weight: 500; margin-bottom: 14px; }}
 .desc b, .punti b {{ color: #0f3d2e; }}
 .punti {{ list-style: none; margin-top: 20px; }}
 .punti li {{ font-size: 42px; line-height: 1.35; padding: 34px 0 34px 70px; position: relative; border-bottom: 2px solid #e3e8e5; }}
