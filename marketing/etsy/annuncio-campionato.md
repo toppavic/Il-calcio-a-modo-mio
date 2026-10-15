@@ -5,7 +5,7 @@ Bozza di Claude del 12/10/2026, da far controllare all'allenatore. Il testo vien
 ## Da caricare
 
 - **File digitale**: `prodotti/gli-imbattibili/campionato-allenamenti-11-19.pdf` (46 pagine, 3,9 MB: sotto il limite di 20 MB di Etsy)
-- **Foto**: da preparare (4 immagini 2000 × 1500, come per il Precampionato): copertina, una pagina scheda della seduta, uno schema, una pagina partita
+- **Foto**: pronte il 15/10 in `marketing/etsy/immagini/campionato-1..4.png` (2000 × 1500): copertina, cosa c'è dentro, pagine di esempio, schemi e regole
 - **Tipo**: download digitale · fatto da me · prodotto finito
 - **Prezzo**: 8,11 € (Etsy aggiunge l'IVA al 22% per i compratori italiani: 9,89 €)
 - **Categoria**: la stessa del Precampionato
