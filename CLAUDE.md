@@ -22,6 +22,7 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 - **Pubblico IG 14/10**: 4018 follower (+0,3% in 30 giorni). Contenuti per nuovi follow: carosello cross **7**, carosello Preventiva **4**, Reel cross 2, Reel Preventiva 1. Follower più attivi: **domenica 18-21**, **lunedì 12-15**, **martedì 12-15** Mer-gio-ven: picco **12-15**, poi 18-21 quasi uguale. Sabato: picco **18-21**, 12-15 subito dietro. Di notte (24-6) quasi nessuno. Orari attuali (13:00 nei giorni di campo, 18:00 e 20-21 la sera) già buoni.
 - **Etsy, colori (15/10, allenatore)**: ogni pacchetto ha la foto di copertina di un colore diverso per non avere un negozio tutto uguale. Precampionato = verde scuro; **In campionato = avorio** (`marketing/etsy/immagini-annuncio-campionato.html`). Idea nuova (15/10): **prime 4 settimane programmate di allenamenti della stagione** (da definire con lui).
 - ✅ **In campionato pubblicato su Etsy il 15/10/2026** (colori avorio, titolo con "le prime 4 settimane"): https://ilcalcioamodomio.etsy.com/listing/4595776688 · nome file per Etsy senza spazi (`Gli-Imbattibili_In-campionato_11-19.pdf`). Annuncio sui social alle 13:00 del 15/10 (carosello + storia con adesivo Link).
+- **Bio Instagram (15/10)**: tre link nell'ordine libro (amzn.eu/d/0hNQmChw, verificato) · Gli Imbattibili, precampionato · Gli Imbattibili, in campionato. Funzionano tutti.
 - **Messaggi del giorno (13/10, regola dell'allenatore)**: nel promemoria del mattino e nelle risposte mettere o preparare **solo le cose del giorno**, mai quelle dei giorni successivi (niente Etsy di giovedì il martedì).
 - **Regola della sessione piena**: quando il contesto della conversazione supera circa l'80% (get_session →
   context_usage) o si notano dimenticanze, dirlo all'allenatore e proporre una nuova sessione MARKETING. Prima di
@@ -163,7 +164,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   ricerca del portiere come lavoro sulla pressione** (no lancio, punti per il recupero alto): altre 4 tappe per il pacchetto.
 - ✅ Pacchetto "Il Precampionato" (Allenamenti 1-10) **pubblicato su Etsy** il 2/10/2026: prezzo annuncio 8,11 € + IVA 22% aggiunta da Etsy = 9,89 € per chi compra dall'Italia (digitale, quantità 999,
   rinnovo automatico, dichiarato "con un generatore di IA", tag inseriti). Titolo con "i primi 10 allenamenti".
-  Link: annuncio Etsy https://ilcalcioamodomio.etsy.com/listing/4587084049 · libro Amazon amzn.eu/d/0686nVKd.
+  Link: annuncio Etsy https://ilcalcioamodomio.etsy.com/listing/4587084049 · libro Amazon amzn.eu/d/0hNQmChw.
   7/10: entrambi aggiunti ai link del profilo Facebook (visibili a tutti).
   Bio Instagram: link "Gli Imbattibili, gli allenamenti" (annuncio Etsy) sotto quello del libro, fatto il 2/10.
   Niente post di vendita subito (proposta, l'allenatore era d'accordo a non postare subito). Poi una riga
