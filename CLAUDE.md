@@ -28,7 +28,7 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
   context_usage) o si notano dimenticanze, dirlo all'allenatore e proporre una nuova sessione MARKETING. Prima di
   chiuderla: aggiornare CLAUDE.md e i file in `marketing/`, poi spostare sulla nuova sessione il promemoria delle 7
   (trigger trig_01EnLswhUW52pAVP4izAtWpa, campo persistent_session_id) e rifare i promemoria send_later ancora futuri.
-- **6/10**: la sessione marketing è passata a **📣 MARKETING ATTIVO**; leggere `marketing/passaggio-di-consegne.md`.
+- **6/10**: la sessione marketing è passata a **📣 MARKETING ATTIVO**; leggere `marketing/passaggio-di-consegne.md`. **15/10**: nuova sessione marketing (la vecchia aveva fatto errori): leggere la sezione "15/10 – Passaggio alla nuova sessione" in fondo al passaggio di consegne.
 - L'allenatore usa **due conversazioni separate**: una per gli **allenamenti** (trascrizione e PDF) e una
   per il **marketing** (post, Etsy, agenda). Tenere ognuna sul suo tema e fare sempre `git pull` prima di lavorare.
 

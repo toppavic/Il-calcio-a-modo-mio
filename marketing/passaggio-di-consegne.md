@@ -57,3 +57,32 @@ ma con un pezzo di campo/schema dell'esercizio sulla copertina, così ognuna è 
 - ✅ 10/10 (ALLENAMENTI): pacchetto **"In campionato" Allenamenti 11-19** pronto (`prodotti/gli-imbattibili/campionato-allenamenti-11-19.pdf`,
   46 pagine, 3,9 MB). Chiude con il giovedì 19 e la partita (deciso dall'allenatore), quindi non è più 11-20: aggiornare
   calendario uscite e annuncio Etsy.
+
+## 15/10 – Passaggio alla nuova sessione MARKETING
+
+Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti: l'allenatore ha chiesto di ripartire pulito.
+**Errori da non ripetere:**
+- mettere nei messaggi del giorno cose dei giorni successivi (lui vuole **solo le cose di oggi**);
+- dare per buoni testi e numeri senza verificarli (es. 5 punti vs 2 punti nel carosello della Ricerca del portiere; link del libro vecchio negli appunti);
+- confondere "allenamento" (seduta) ed "esercitazione" (singolo esercizio).
+
+**Fatto il 15/10 (giovedì):**
+- Pacchetto **In campionato** (Allenamenti 11-19, 46 pagine) **pubblicato su Etsy**: https://ilcalcioamodomio.etsy.com/listing/4595776688
+  (foto avorio con scritta "Dopo la preparazione: le prime 4 settimane", titolo con "le prime 4 settimane"; prezzo 8,11 € + IVA = 9,89 €).
+  La richiesta dell'allenatore "prime 4 settimane programmate" era questo: è il titolo evidente del pacchetto, non un prodotto a parte.
+- Bio Instagram con 3 link: libro (amzn.eu/d/0hNQmChw) · Precampionato · In campionato. Tutti verificati.
+- Pronti per le **13:00 del 15/10** (carosello IG + TikTok e storia IG con adesivo Link): `marketing/social/immagini/ig-fb-annuncio-campionato-1..4.png`,
+  `tiktok-annuncio-campionato-1..4.png`, `storia-campionato.png` (script `genera-annuncio-campionato.py`). Didascalie date in chat.
+- Carosello **Ricerca del portiere** (martedì 13/10): 5 pagine, gol dopo recupero nella metà offensiva = 2 punti, obiettivo primario pressione di squadra in metà offensiva, secondario linea di difesa che toglie le filtranti.
+  Numeri 14/10: IG 733 visualizzazioni, 3 tocchi sul link in bio; TikTok 1019 e 21 salvataggi. Gruppo FB: pagina 2 con testo personale da pubblicare in "L'allenatore di Calcio" (non so se fatto).
+- Storia regalo Allenamento 1 (13/10): 98 account, 3 clic sul link. Un solo messaggio PRECAMPIONATO ricevuto.
+- Orari follower IG: picco 12-15 (mer-gio-ven-lun-mar), 18-21 (dom-sab). I tuoi orari fissi vanno bene.
+
+**Da fare dopo, un giorno alla volta (non anticipare):**
+1. **Oggi 15/10**: all'ora delle 13 l'allenatore pubblica carosello e storia; poi chiedere gli screenshot (storia: clic sul link; carosello: salvataggi e tocchi sul link in bio; Etsy: visite e provenienza).
+2. Gio 18:00 formazione (diario, altra chat). Ven 16: campo 18-21, carosello alle 13, statistiche Etsy settimanali (screenshot), diario 18:00.
+3. Dom: partita 15:30, storia del risultato 20:00, Ponte alle 20 (provare, picco 18-21), diario 18:00.
+4. Prossime uscite Etsy (vedi `calendario-uscite-etsy.md`): "5 Sedute · Principi di gioco Vol. 1" giovedì 29/10 a 6,90 €. Per ogni pacchetto **colore di copertina diverso** (Precampionato verde, In campionato avorio; prossimo: oro o scuro).
+5. Idea da provare: obiettivo primario già sulla pagina dello schema (nelle pagine 3-4 dei caroselli la gente sembra fermarsi).
+
+**Routine del mattino**: il promemoria 6:57 (Europe/Rome) è spostato sulla nuova sessione. ID e dettagli qui sotto se cambiano.
