@@ -61,7 +61,7 @@ h2 {{ font-size: 86px; line-height: 1; margin-top: 18px; }}
     s4 = f'''<section class="slide fine"><img class="logo2" src="{LOGO}">
 <h1>Gli<span>Imbattibili</span></h1>
 <p class="sub"><b>In campionato</b>: le prime 4 settimane. PDF · 46 pagine · schemi, regole e partite.</p>
-<div class="azioni"><div>Link in bio</div><div>Salva il post</div></div></section>'''
+<div class="azioni"><div>{"Cercaci su Etsy" if alto else "Link in bio"}</div><div>Salva il post</div></div></section>'''
     return f'<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Annuncio In campionato</title><style>{css}</style></head><body>{s1}{s2}{s3}{s4}</body></html>'
 
 
