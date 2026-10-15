@@ -12,11 +12,11 @@ Bozza di Claude del 12/10/2026, da far controllare all'allenatore. Il testo vien
 
 ## Titolo
 
-Gli Imbattibili · In campionato: 9 allenamenti di calcio in PDF con schemi e partite | Juniores imbattuta | Esercizi settimanali
+Gli Imbattibili · In campionato: le prime 4 settimane | 9 allenamenti di calcio in PDF con schemi e partite | Juniores imbattuta
 
 ## Descrizione
 
-Gli allenamenti 11-19 della Juniores provinciale che ha vinto il campionato senza perdere una partita: dall'ultimo allenamento del precampionato alla quarta settimana di campionato.
+Dopo la preparazione, le prime 4 settimane di campionato. Gli allenamenti 11-19 della Juniores provinciale che ha vinto il campionato senza perdere una partita: dall'ultimo allenamento del precampionato alla quarta settimana di campionato.
 
 Non sono esercizi presi da internet. Sono gli allenamenti fatti davvero in campo, trascritti dai quaderni dell'allenatore e impaginati uno per uno, con tutte le esercitazioni di ogni seduta.
 
