@@ -86,3 +86,5 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 5. Idea da provare: obiettivo primario già sulla pagina dello schema (nelle pagine 3-4 dei caroselli la gente sembra fermarsi).
 
 **Routine del mattino**: il promemoria 6:57 (Europe/Rome) è spostato sulla nuova sessione. ID e dettagli qui sotto se cambiano.
+
+**Sessione nuova**: session_01Y6imChDnJpMKHUHGGzDa7m. **Promemoria 6:57**: trig_011irDtADw1XLuGq86kWMhMq (il vecchio trig_017L2hD3xsWUiND6xr2aTd3v è spento, non cancellarlo).

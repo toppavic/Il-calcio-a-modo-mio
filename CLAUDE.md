@@ -27,7 +27,7 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 - **Regola della sessione piena**: quando il contesto della conversazione supera circa l'80% (get_session →
   context_usage) o si notano dimenticanze, dirlo all'allenatore e proporre una nuova sessione MARKETING. Prima di
   chiuderla: aggiornare CLAUDE.md e i file in `marketing/`, poi spostare sulla nuova sessione il promemoria delle 7
-  (trigger trig_01EnLswhUW52pAVP4izAtWpa, campo persistent_session_id) e rifare i promemoria send_later ancora futuri.
+  (trigger "Promemoria del giorno (calcio)": dal 15/10 è trig_011irDtADw1XLuGq86kWMhMq, legato a session_01Y6imChDnJpMKHUHGGzDa7m; il vecchio trig_017L2hD3xsWUiND6xr2aTd3v è spento e non va riacceso; update_trigger non cambia persistent_session_id: va creato un trigger nuovo e spento il vecchio, senza cancellarlo perché cancella anche la sessione legata) e rifare i promemoria send_later ancora futuri.
 - **6/10**: la sessione marketing è passata a **📣 MARKETING ATTIVO**; leggere `marketing/passaggio-di-consegne.md`. **15/10**: nuova sessione marketing (la vecchia aveva fatto errori): leggere la sezione "15/10 – Passaggio alla nuova sessione" in fondo al passaggio di consegne.
 - L'allenatore usa **due conversazioni separate**: una per gli **allenamenti** (trascrizione e PDF) e una
   per il **marketing** (post, Etsy, agenda). Tenere ognuna sul suo tema e fare sempre `git pull` prima di lavorare.
@@ -273,7 +273,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   percorsi da 5 sedute a 6,90 € ogni 2 settimane, 1-20 a 16,90 € a dicembre). Sostituisce le date proposte prima.
 - **Ruota dei contenuti** (5/10, in `marketing/calendario-completo.md`): esercizio → Etsy · racconto → libro ·
   vita da mister → nessun rimando · 1 "ponte" a settimana (momento della stagione + esercizio). Promemoria del giorno
-  alle 6:57 (trigger trig_01EnLswhUW52pAVP4izAtWpa) che legge anche la conversazione FACEBOOK diario.
+  alle 6:57 (trigger trig_011irDtADw1XLuGq86kWMhMq) che legge anche la conversazione FACEBOOK diario.
 - **Metodo contenuti (5/10, dai prompt mandati dall'allenatore)**: per ogni Reel proporre **10 ganci** (max 12 parole,
   un solo leva ciascuno: sorpresa, ego, paura di restare indietro, desiderio) e lui sceglie; **niente toni polarizzanti**
   (vuole restare umile). Didascalie: attrae · filtra (allenatori) · posiziona (la Juniores che non ha mai perso) ·
