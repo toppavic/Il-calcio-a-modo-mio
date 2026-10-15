@@ -88,3 +88,9 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 **Routine del mattino**: il promemoria 6:57 (Europe/Rome) è spostato sulla nuova sessione. ID e dettagli qui sotto se cambiano.
 
 **Sessione nuova**: session_01Y6imChDnJpMKHUHGGzDa7m. **Promemoria 6:57**: trig_011irDtADw1XLuGq86kWMhMq (il vecchio trig_017L2hD3xsWUiND6xr2aTd3v è spento, non cancellarlo).
+
+## 15/10 sera – cosa è successo (sessione marketing nuova)
+- **TikTok**: l'ultima pagina del carosello diceva "Link in bio" ma su TikTok il link non c'è → ora **"ETSY: ILCALCIOAMODOMIO"** (`tiktok-annuncio-campionato-4.png`). Nei commenti TikTok il link non si apre con un tocco: si copia. Brando Giorgini chiedeva "come si fa a trovare il libro": risposta con **distinzione libro (stagione, niente esercitazioni, amzn.eu/d/0hNQmChw) e allenamenti (PDF su Etsy)**; lui cercava schede di allenamento.
+- **Numeri ore 16:10**: IG carosello annuncio (3 h) **407 visualizzazioni da 150 account**, 6 like, 1 salvataggio, **10 visite al profilo, 2 tocchi sul link**, 0 follower, 98,8% follower (35-44 anni 38,5%, 45-54 anni 27,4%). TikTok **244 visualizzazioni** in 3 h, 2 like, 2 salvataggi. Etsy oggi 9 visualizzazioni, 1 visita, 0 ordini; ultimi 30 giorni 29 visualizzazioni, 18 visite, 0 ordini. **Etsy aggiorna le visite con un paio d'ore di ritardo** (lo sa l'allenatore).
+- Storia IG con adesivo Link all'annuncio pubblicata la sera del 15/10 (alle 19:30).
+- Da fare domani mattina: screenshot Etsy (visite, provenienza, ordini) + storia (clic sul link).
