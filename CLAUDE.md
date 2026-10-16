@@ -10,6 +10,7 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 - Scrive in italiano, spesso dal telefono, a volte con messaggi vocali trascritti. Rispondere
   in italiano, con calma, un passo alla volta e senza elenchi lunghi di opzioni.
 - **Non mettere la virgola prima di "e"**, salvo incisi o ripetizioni enfatiche.
+- **Appunti → scrittura professionale (16/10)**: l'allenatore detta o scrive le cose come appunti (anche con errori da dettatura); Claude le riscrive in forma chiara e professionale nei post e nei PDF, tenendo il senso e segnalando cosa è stato aggiunto.
 - Manda **foto dei fogli scritti a mano** (o note dal telefono) di un allenamento alla volta.
 - Flusso: trascrivere → impaginare il PDF → inviarlo → fare **poche domande precise** solo
   sui punti illeggibili o ambigui → correggere.
