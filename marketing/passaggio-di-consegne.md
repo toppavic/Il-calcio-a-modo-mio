@@ -94,3 +94,10 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - **Numeri ore 16:10**: IG carosello annuncio (3 h) **407 visualizzazioni da 150 account**, 6 like, 1 salvataggio, **10 visite al profilo, 2 tocchi sul link**, 0 follower, 98,8% follower (35-44 anni 38,5%, 45-54 anni 27,4%). TikTok **244 visualizzazioni** in 3 h, 2 like, 2 salvataggi. Etsy oggi 9 visualizzazioni, 1 visita, 0 ordini; ultimi 30 giorni 29 visualizzazioni, 18 visite, 0 ordini. **Etsy aggiorna le visite con un paio d'ore di ritardo** (lo sa l'allenatore).
 - Storia IG con adesivo Link all'annuncio pubblicata la sera del 15/10 (alle 19:30).
 - Da fare domani mattina: screenshot Etsy (visite, provenienza, ordini) + storia (clic sul link).
+
+## 16/10 mattina (08:10) – numeri dell'annuncio "In campionato" (dopo ~19 h)
+- **Etsy ieri (15/10)**: 14 visualizzazioni, **9 visite**, 0 ordini, 0 €, 0 preferiti. Provenienza: social 7, marketing/SEO 1, ricerche Etsy 0, diretto 0. Annuncio In campionato 11 visualizzazioni, Precampionato 2. (14/10: 8 visite.)
+- **IG carosello annuncio (19 h)**: 508 visualizzazioni da 180 account (a 3 h erano 407/150: la crescita si è fermata), 6 like, 0 commenti, 1 salvataggio, **11 visite al profilo, 3 tocchi sul link**, 0 follower, 98% follower. Per confronto Recupero alto a 19 h: 733, 5 salvataggi, 6 visite, 3 tocchi.
+- **TikTok carosello annuncio (19 h)**: 315 visualizzazioni, 3 like, 5 commenti (Brando), 4 salvataggi. Recupero alto: 1019 e 21 salvataggi → **gli annunci rendono meno degli esercizi**.
+- **Storia IG con adesivo Link**: 157 visualizzazioni, 138 account, **2 clic sul link**, 0 interazioni; avanti 106, uscite 15.
+- Brando Giorgini (TikTok) cercava schede di allenamento: risposta data con link Etsy. Preventiva 2 (partita a specchio) programmata per le 13 del 16/10.
