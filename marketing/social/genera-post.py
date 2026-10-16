@@ -103,6 +103,27 @@ def schema_ricerca_portiere():
   </svg>'''
 
 
+def schema_specchio():
+    dif_blu = [(95, 55), (95, 115), (95, 185), (95, 245)]
+    att_rossi = [(165, 45), (165, 105), (165, 195), (165, 255), (215, 80), (215, 220)]
+    dif_rossi = [(405, 55), (405, 115), (405, 185), (405, 245)]
+    att_blu = [(335, 45), (335, 105), (335, 195), (335, 255), (285, 80), (285, 220)]
+    gioc = ("".join(g(x, y, "pB") for x, y in dif_blu) + "".join(g(x, y, "pA") for x, y in att_rossi)
+            + "".join(g(x, y, "pA") for x, y in dif_rossi) + "".join(g(x, y, "pB") for x, y in att_blu))
+    return f'''<svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="20" width="420" height="260"/><line x1="250" y1="20" x2="250" y2="280" stroke-dasharray="3 6"/></g>
+    <rect x="30" y="118" width="10" height="64" fill="#fff"/><rect x="460" y="118" width="10" height="64" fill="#fff"/>
+    {g(22, 150, "pP")}{g(478, 150, "pP")}
+    {gioc}
+    {freccia("M150,105 L112,113", True)}{freccia("M150,195 L112,187", True)}
+    {freccia("M350,105 L388,113", True)}{freccia("M350,195 L388,187", True)}
+    <use href="#palla" x="108" y="130"/>
+    {freccia("M118,140 L322,112", tratteggio=True)}
+    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">NESSUNO CAMBIA METÀ · LA PALLA SÌ</text>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -172,12 +193,28 @@ POST = [
                "Il portiere riceve la palla <b>solo dentro la porta</b>: si migliora anche la qualità del passaggio"],
         fine_sub="La Juniores che ha vinto il campionato <b>senza perdere una partita</b>. Gli allenamenti in campionato, scritti a mano dal mister e messi in pagina.",
     ),
+    dict(
+        n=6, senza_foto=True, cop_schema=True, tema="verde",
+        gancio="Preventiva<span>2</span>",
+        schema=schema_specchio(),
+        titolo2="Partita a specchio",
+        testo2="<b>10 contro 10</b> con i portieri. Campo in due metà: in ognuna <b>6 attaccanti</b> di una squadra contro i <b>4 difensori</b> dell'altra. La palla circola libera tra le metà ma nessun giocatore può cambiare metà: i difensori giocano sempre in <b>inferiorità</b>.",
+        obiettivo="<span>Obiettivo primario</span>Pressione sui 4 difensori<i>L'uscita deve essere forzata e non pulita</i><span class='sec'>Obiettivo secondario</span><i>Le marcature preventive</i>",
+        titolo3="Le regole",
+        punti=["<b>2 tempi da 15'</b>",
+               "Attaccanti a <b>3 tocchi</b>, difensori <b>liberi</b>",
+               "<b>Gol = 1 punto</b>",
+               "Nessuno passa nell'altra metà campo: <b>solo la palla</b>",
+               "Da <b>8 contro 8</b> a <b>11 contro 11</b>. Se i numeri sono dispari c'è un <b>jolly</b> libero di muoversi",
+               "Se la palla esce pulita la difesa deve <b>scappare</b> verso il limite dell'area"],
+        fine_sub="Secondo gradino del percorso sulla <b>marcatura preventiva</b>. La Juniores che ha vinto il campionato <b>senza perdere una partita</b>.",
+    ),
 ]
 
 FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>"
 
 
-def slides(p, tot=None):
+def slides(p, tot=None, h=1350):
     tot = tot or (5 if p.get("obiettivo") else 4)
     num = lambda i: f'<div class="num">{i}/{tot}</div>'
     marchio = '<div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>'
@@ -202,10 +239,10 @@ def slides(p, tot=None):
 </section>'''
     return f'''
 <section class="slide cop{' cs' if p.get('cop_schema') else ''} t-{p.get('tema') or os.environ.get('TEMA') or 'scuro'}">
-  <img class="bgimg" src="{MAT}/{p.get("cartella", "precampionato")}/{p["foto"]}">
+  {'' if p.get("senza_foto") else '<img class="bgimg" src="' + MAT + '/' + p.get("cartella", "precampionato") + '/' + p["foto"] + '">'}
   <div class="veil"></div>
   <img class="logo" src="{MAT}/brand/logo-cerchio.png">
-  {('<div class="copschema">' + p["schema"].replace('class="schema"', 'preserveAspectRatio="xMidYMid slice"') + '</div>') if p.get("cop_schema") else ''}
+  {('<div class="copschema"' + (' style="width:' + str(567 if h > 1500 else 433) + 'px"' if p.get("senza_foto") else '') + '>' + p["schema"].replace('class="schema"', 'preserveAspectRatio="xMidYMid ' + ('meet' if p.get("senza_foto") else 'slice') + '"') + '</div>') if p.get("cop_schema") else ''}
   <div class="txt">
     <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
     <h1>{p["gancio"]}</h1>
@@ -287,10 +324,11 @@ h1, h2 {{ font-family: Oswald, sans-serif; font-weight: 700; text-transform: upp
 .azioni div {{ flex: 1; text-align: center; font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: 32px; padding: 26px 10px; border-radius: 14px; background: #84b94a; color: #0c120f; }}
 .azioni div + div {{ background: transparent; color: #fff; border: 2px solid #84b94a; }}
 '''
-    corpo = "".join(slides(p) for p in POST)
+    corpo = "".join(slides(p, h=h) for p in POST if not os.environ.get("SOLO") or str(p["n"]) in os.environ["SOLO"].split(","))
     return f'<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Post social</title><style>{css}</style></head><body>{defs}{corpo}</body></html>'
 
 
-(QUI / "post-4x5.html").write_text(pagina(1080, 1350))
-(QUI / "post-9x16.html").write_text(pagina(1080, 1920))
+SUF = ("-solo" + os.environ["SOLO"].replace(",", "")) if os.environ.get("SOLO") else ""
+(QUI / f"post{SUF}-4x5.html").write_text(pagina(1080, 1350))
+(QUI / f"post{SUF}-9x16.html").write_text(pagina(1080, 1920))
 print("ok")

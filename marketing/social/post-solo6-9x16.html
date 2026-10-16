@@ -1,0 +1,134 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Post social</title><style>
+@font-face { font-family: Oswald; src: url(../../prodotti/gli-imbattibili/font/oswald.woff2) format("woff2"); font-weight: 200 700; }
+@font-face { font-family: Inter; src: url(../../prodotti/gli-imbattibili/font/inter.woff2) format("woff2"); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #888; font-family: Inter, sans-serif; }
+.slide { width: 1080px; height: 1920px; position: relative; overflow: hidden; margin: 0 0 20px; }
+h1, h2 { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppercase; }
+.cop, .fine { background: #0c120f; color: #fff; }
+.cop .bgimg { position: absolute; inset: -40px; width: calc(100% + 80px); height: calc(100% + 80px); object-fit: cover; transform: rotate(-4deg) scale(1.08); filter: grayscale(1) contrast(1.1); opacity: .55; }
+.cop .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,18,15,.97) 0%, rgba(12,18,15,.9) 36%, rgba(12,18,15,.5) 52%, rgba(12,18,15,.85) 66%, rgba(12,18,15,.98) 80%); }
+.cop .logo { position: absolute; top: 170px; left: 50%; transform: translateX(-50%); width: 440px; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }
+.copschema { position: absolute; left: 50%; transform: translateX(-50%); top: 650px; width: 700px; height: 340px; border-radius: 18px; overflow: hidden; border: 3px solid rgba(132,185,74,.6); }
+.cop.cs .txt { top: 1040px }
+.copschema svg { width: 100%; height: 100%; display: block; }
+.cop .txt { position: absolute; left: 80px; right: 80px; top: 860px; }
+.kick { font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-size: 28px; color: #84b94a; }
+.cop h1, .fine h1 { font-size: 150px; line-height: .92; margin: 20px 0 28px; }
+.cop h1 span, .fine h1 span { color: #84b94a; display: block; }
+.sub { font-size: 36px; line-height: 1.4; color: #dfe6e1; }
+.sub b { color: #fff; }
+.scorri { margin-top: 40px; font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .15em; font-size: 30px; color: #84b94a; }
+.cop.t-verde { background: #0f3d2e; }
+.cop.t-verde .veil { background: linear-gradient(180deg, rgba(15,61,46,.97) 0%, rgba(15,61,46,.9) 36%, rgba(15,61,46,.5) 52%, rgba(15,61,46,.88) 66%, rgba(15,61,46,.98) 80%); }
+.cop.t-verde .kick, .cop.t-verde h1 span, .cop.t-verde .scorri { color: #d4a017; }
+.cop.t-oro .kick, .cop.t-oro h1 span, .cop.t-oro .scorri { color: #d4a017; }
+.cop.t-chiaro { background: #f3efe4; color: #0f3d2e; }
+.cop.t-chiaro .bgimg { opacity: .22; }
+.cop.t-chiaro .veil { background: linear-gradient(180deg, rgba(243,239,228,.97) 0%, rgba(243,239,228,.85) 36%, rgba(243,239,228,.4) 52%, rgba(243,239,228,.8) 66%, rgba(243,239,228,.97) 80%); }
+.cop.t-chiaro h1 { color: #0f3d2e; }
+.cop.t-chiaro .kick, .cop.t-chiaro h1 span, .cop.t-chiaro .scorri { color: #b8860b; }
+.cop.t-chiaro .sub { color: #26352d; }
+.cop.t-chiaro .sub b { color: #0f3d2e; }
+.int { background: #fff; padding: 0 80px 260px; color: #1d2421; display: flex; flex-direction: column; justify-content: center; }
+.int .num { position: absolute; top: 90px; right: 60px; font-family: Oswald, sans-serif; font-size: 28px; color: #9aa59f; }
+.kicker { font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .2em; font-size: 28px; color: #d4a017; }
+.int h2 { font-size: 78px; line-height: 1.02; color: #0f3d2e; margin: 10px 0 40px; }
+.riq { display: flex; justify-content: center; }
+.riq .schema { width: 100%; max-height: 900px; display: block; border-radius: 16px; }
+.desc { font-size: 36px; line-height: 1.45; margin-top: 40px; }
+.obiettivo { margin-top: 50px; padding: 50px 44px; border-radius: 18px; background: #0f3d2e; color: #fff; font-family: Oswald, sans-serif; text-transform: uppercase; font-size: 76px; line-height: 1.1; font-weight: 600; }
+.obiettivo i { display: block; font-style: normal; font-size: 64px; }
+.obiettivo span.sec { margin-top: 56px; }
+.obiettivo span { display: block; color: #d4a017; font-size: 32px; letter-spacing: .18em; font-weight: 500; margin-bottom: 14px; }
+.desc b, .punti b { color: #0f3d2e; }
+.punti { list-style: none; margin-top: 20px; }
+.punti li { font-size: 42px; line-height: 1.35; padding: 34px 0 34px 70px; position: relative; border-bottom: 2px solid #e3e8e5; }
+.punti li::before { content: ""; position: absolute; left: 0; top: 50px; width: 30px; height: 30px; background: #d4a017; border-radius: 50%; }
+.marchio { position: absolute; left: 80px; right: 80px; bottom: 150px; display: flex; justify-content: space-between; align-items: center; border-top: 3px solid #0f3d2e; padding-top: 22px; font-size: 26px; color: #5d6b65; }
+.marchio b { font-family: Oswald, sans-serif; color: #0f3d2e; letter-spacing: .12em; font-weight: 600; font-size: 30px; }
+.fine { display: flex; flex-direction: column; justify-content: center; padding: 0 80px; }
+.fine .logo2 { width: 340px; margin: 0 0 30px -20px; -webkit-mask-image: linear-gradient(180deg, #000 75%, transparent 100%); }
+.azioni { display: flex; gap: 24px; margin-top: 60px; }
+.azioni div { flex: 1; text-align: center; font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: 32px; padding: 26px 10px; border-radius: 14px; background: #84b94a; color: #0c120f; }
+.azioni div + div { background: transparent; color: #fff; border: 2px solid #84b94a; }
+</style></head><body><svg width="0" height="0" style="position:absolute">
+  <defs>
+    <marker id="freccia" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ffffff"/>
+    </marker>
+    <marker id="freccia-oro" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2c230"/>
+    </marker>
+    <marker id="freccia-scura" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d2421"/>
+    </marker>
+    <pattern id="strisce" width="60" height="400" patternUnits="userSpaceOnUse">
+      <rect width="30" height="400" fill="#3f8f5a"/><rect x="30" width="30" height="400" fill="#46995f"/>
+    </pattern>
+    <pattern id="strisce-h" width="500" height="60" patternUnits="userSpaceOnUse">
+      <rect width="500" height="30" fill="#3f8f5a"/><rect y="30" width="500" height="30" fill="#46995f"/>
+    </pattern>
+    <g id="pA"><circle r="11" fill="#c8372d" stroke="#fff" stroke-width="2"/></g>
+    <g id="pB"><circle r="11" fill="#2a5db0" stroke="#fff" stroke-width="2"/></g>
+    <g id="pP"><circle r="11" fill="#f2c230" stroke="#1d2421" stroke-width="2"/></g>
+    <g id="pJ"><circle r="11" fill="#ffffff" stroke="#1d2421" stroke-width="2"/></g>
+    <g id="palla"><circle r="5" fill="#fff" stroke="#1d2421" stroke-width="1.5"/></g>
+  </defs>
+</svg>
+<section class="slide cop cs t-verde">
+  
+  <div class="veil"></div>
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="copschema" style="width:567px"><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="20" width="420" height="260"/><line x1="250" y1="20" x2="250" y2="280" stroke-dasharray="3 6"/></g>
+    <rect x="30" y="118" width="10" height="64" fill="#fff"/><rect x="460" y="118" width="10" height="64" fill="#fff"/>
+    <use href="#pP" x="22" y="150"/><use href="#pP" x="478" y="150"/>
+    <use href="#pB" x="95" y="55"/><use href="#pB" x="95" y="115"/><use href="#pB" x="95" y="185"/><use href="#pB" x="95" y="245"/><use href="#pA" x="165" y="45"/><use href="#pA" x="165" y="105"/><use href="#pA" x="165" y="195"/><use href="#pA" x="165" y="255"/><use href="#pA" x="215" y="80"/><use href="#pA" x="215" y="220"/><use href="#pA" x="405" y="55"/><use href="#pA" x="405" y="115"/><use href="#pA" x="405" y="185"/><use href="#pA" x="405" y="245"/><use href="#pB" x="335" y="45"/><use href="#pB" x="335" y="105"/><use href="#pB" x="335" y="195"/><use href="#pB" x="335" y="255"/><use href="#pB" x="285" y="80"/><use href="#pB" x="285" y="220"/>
+    <path d="M150,105 L112,113" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M150,195 L112,187" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+    <path d="M350,105 L388,113" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M350,195 L388,187" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+    <use href="#palla" x="108" y="130"/>
+    <path d="M118,140 L322,112" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">NESSUNO CAMBIA METÀ · LA PALLA SÌ</text>
+  </svg></div>
+  <div class="txt">
+    <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
+    <h1>Preventiva<span>2</span></h1>
+    <p class="sub">La Juniores che ha vinto il campionato <b>senza perdere una partita</b></p>
+    <div class="scorri">Scorri →</div>
+  </div>
+</section>
+<section class="slide int">
+  <div class="num">2/5</div>
+  <div class="kicker">Esercitazione</div>
+  <h2>Partita a specchio</h2>
+  <div class="riq"><svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="20" width="420" height="260"/><line x1="250" y1="20" x2="250" y2="280" stroke-dasharray="3 6"/></g>
+    <rect x="30" y="118" width="10" height="64" fill="#fff"/><rect x="460" y="118" width="10" height="64" fill="#fff"/>
+    <use href="#pP" x="22" y="150"/><use href="#pP" x="478" y="150"/>
+    <use href="#pB" x="95" y="55"/><use href="#pB" x="95" y="115"/><use href="#pB" x="95" y="185"/><use href="#pB" x="95" y="245"/><use href="#pA" x="165" y="45"/><use href="#pA" x="165" y="105"/><use href="#pA" x="165" y="195"/><use href="#pA" x="165" y="255"/><use href="#pA" x="215" y="80"/><use href="#pA" x="215" y="220"/><use href="#pA" x="405" y="55"/><use href="#pA" x="405" y="115"/><use href="#pA" x="405" y="185"/><use href="#pA" x="405" y="245"/><use href="#pB" x="335" y="45"/><use href="#pB" x="335" y="105"/><use href="#pB" x="335" y="195"/><use href="#pB" x="335" y="255"/><use href="#pB" x="285" y="80"/><use href="#pB" x="285" y="220"/>
+    <path d="M150,105 L112,113" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M150,195 L112,187" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+    <path d="M350,105 L388,113" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M350,195 L388,187" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/>
+    <use href="#palla" x="108" y="130"/>
+    <path d="M118,140 L322,112" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/>
+    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">NESSUNO CAMBIA METÀ · LA PALLA SÌ</text>
+  </svg></div>
+  <p class="desc"><b>10 contro 10</b> con i portieri. Campo in due metà: in ognuna <b>6 attaccanti</b> di una squadra contro i <b>4 difensori</b> dell'altra. La palla circola libera tra le metà ma nessun giocatore può cambiare metà: i difensori giocano sempre in <b>inferiorità</b>.</p>
+  <div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>
+</section>
+<section class="slide int">
+  <div class="num">3/5</div>
+  <div class="kicker">Partita a specchio</div>
+  <h2>Le regole</h2>
+  <ul class="punti"><li><b>2 tempi da 15'</b></li><li>Attaccanti a <b>3 tocchi</b>, difensori <b>liberi</b></li><li><b>Gol = 1 punto</b></li><li>Nessuno passa nell'altra metà campo: <b>solo la palla</b></li><li>Da <b>8 contro 8</b> a <b>11 contro 11</b>. Se i numeri sono dispari c'è un <b>jolly</b> libero di muoversi</li><li>Se la palla esce pulita la difesa deve <b>scappare</b> verso il limite dell'area</li></ul>
+  <div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>
+</section>
+<section class="slide int"><div class="num">4/5</div><div class="kicker">Partita a specchio</div><h2>Gli obiettivi</h2><div class="obiettivo"><span>Obiettivo primario</span>Pressione sui 4 difensori<i>L'uscita deve essere forzata e non pulita</i><span class='sec'>Obiettivo secondario</span><i>Le marcature preventive</i></div><div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div></section>
+<section class="slide fine">
+  <img class="logo2" src="../../materiale/brand/logo-cerchio.png">
+  <h1>Gli<span>Imbattibili</span></h1>
+  <p class="sub">Secondo gradino del percorso sulla <b>marcatura preventiva</b>. La Juniores che ha vinto il campionato <b>senza perdere una partita</b>.</p>
+  <div class="azioni"><div>Salva il post</div><div>Seguici per il prossimo</div></div>
+</section></body></html>
