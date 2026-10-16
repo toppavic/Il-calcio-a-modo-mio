@@ -205,8 +205,8 @@ POST = [
                "Attaccanti a <b>3 tocchi</b>, difensori <b>liberi</b>",
                "<b>Gol = 1 punto</b>",
                "Nessuno passa nell'altra metà campo: <b>solo la palla</b>",
-               "Da <b>8 contro 8</b> a <b>11 contro 11</b>. Se i numeri sono dispari c'è un <b>jolly</b> libero di muoversi",
-               "Se la palla esce pulita la difesa deve <b>scappare</b> verso il limite dell'area"],
+               "Si gioca su <b>mezzo campo</b> diviso in due: almeno <b>50 m</b>",
+               "Da <b>8 contro 8</b> a <b>11 contro 11</b>. Se i numeri sono dispari c'è un <b>jolly</b> libero di muoversi"],
         fine_sub="Secondo gradino del percorso sulla <b>marcatura preventiva</b>. La Juniores che ha vinto il campionato <b>senza perdere una partita</b>.",
     ),
 ]
