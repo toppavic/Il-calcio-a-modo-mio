@@ -105,6 +105,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Etsy 11/10: 2 visite; 12/10: 4 visite in 7 giorni. Il Precampionato "attira meno" a ottobre inoltrato (lui): dopo l'uscita spingere **In campionato**.
 - **Marcatura preventiva (8/10, spiegata da lui)**: mentre la squadra in possesso muove la palla, i suoi difensori **agganciano e marcano gli avversari che stanno davanti alla linea della palla**. Se si perde palla la giocata in verticale sul compagno di chi recupera è subito anticipata e contrastata, senza che ripartano. NON è una riaggressione dopo la perdita: il marcatore è già lì quando si perde palla. La marcatura si fa **da dietro** (lato porta, non davanti all'avversario): quando arriva la palla o **contrasti o anticipi**. Se il marcatore sta davanti e loro giocano la palla dietro, è tagliato fuori. Nel Reel la marcatura sul compagno che riceve la dà il **6**.
 - Preventiva 1 (7/10): è il **primo gradino di una progressione** sulla marcatura preventiva. Nei post va detto che fa parte di un percorso. Un utente TikTok (Alessandro) ha commentato "concetto di preventiva strano": lui risponde con calma chiedendo di spiegare, senza difendersi.
+- **Palla coperta / scoperta** (17/10): riguarda la linea difensiva. Palla scoperta (portatore libero) → la linea scappa e toglie
+  profondità; palla coperta (portatore pressato) → accorcia in avanti. La ricerca del portiere allena anche la linea a stare
+  compatta e togliere le filtranti.
 - Gioco di posizione (9/10, deciso da lui): 4 contro 4 + 2 jolly (9 e 10), **8 passaggi consecutivi = 1 punto** (non 15). Gioco ripreso dalla cantera del Barcellona; lo usa nel precampionato quando divide la squadra in due: 10 lavorano sulla fase difensiva e 10 su passaggio, smarcamento e tempi di giocata. **Da correggere nei PDF** Allenamento 2 e 3 (ora c'è scritto 15) nella conversazione ALLENAMENTI, poi rigenerare il pacchetto e sostituire il file su Etsy.
 
 ## Stato
@@ -158,6 +161,8 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   (46 pagine, 3,9 MB) da `genera-campionato.py`: copertina (foto Allenamento 16), "Prima di cominciare" (4 partite, 4 vittorie,
   11 gol fatti e 3 subiti), indice con lunedì/giovedì e risultati. Copertine come immagini in `copertine-campionato/`
   (se cambiano: rigenerare HTML senza la cartella, `render-copertine.js`, PNG → JPG, rigenerare). Annuncio Etsy: conversazione MARKETING.
+- Percorso "Ricerca del portiere" (6 tappe): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
+  **non impaginare finché l'allenatore non approva il pacchetto**.
 - Prossimo: **Allenamento 20**.
 - Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse
   (ogni tempo = una tappa). L'allenatore controlla se torna negli allenamenti di campionato. Nell'Allenamento 14

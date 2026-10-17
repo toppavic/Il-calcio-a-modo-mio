@@ -19,12 +19,13 @@ Il principio è semplice: il gol non c'è. Per fare punto bisogna far arrivare l
 da bersaglio. Ogni passaggio deve avere uno scopo: avvicinare la palla al bersaglio.
 
 Tappa dopo tappa cambiano solo le regole (tocchi, vincoli, punteggi) e con le regole cambiano i comportamenti:
-prima si impara a smarcarsi e a giocare in avanti, poi a leggere quando si può lanciare, poi a verticalizzare,
-infine a pressare alto per riconquistare la palla vicino alla porta avversaria.
+chi attacca impara a smarcarsi, a verticalizzare e a pressare alto; chi difende impara a leggere la palla:
+scappare quando è scoperta, accorciare quando è coperta, restare corto e compatto per togliere le filtranti.
 
 **Obiettivi del percorso**
 - Circolazione di palla finalizzata: ogni passaggio serve ad avanzare, non a tenere palla.
-- Lettura di palla coperta e palla scoperta: capire quando c'è il tempo per la giocata lunga e quando no.
+- Lettura di palla coperta e palla scoperta per la linea difensiva: con palla scoperta scappare e togliere profondità,
+  con palla coperta accorciare in avanti. Linea compatta che toglie le filtranti.
 - Verticalizzazione rapida e di qualità: pochi tocchi, passaggi in avanti, smarcamenti tra le linee.
 - Pressione alta e riconquista: chi perde palla aggredisce subito, il recupero alto vale di più.
 
@@ -47,5 +48,5 @@ Rimaste fuori: All. 5 2° tempo (solo verticale con punteggio della tappa 4) →
 
 ## Da controllare con l'allenatore
 - Ordine delle tappe e se 6 vanno bene (o 5, togliendo la 3 o la 4).
-- "Palla coperta / scoperta": nelle regole non c'è scritto, è la lettura che le regole allenano (lancio sì / lancio no). Va bene presentarlo così?
+- ✅ Palla coperta / scoperta (17/10, allenatore): è per la LINEA DIFENSIVA. Scoperta → scappare e togliere profondità; coperta → accorciare in avanti. L'esercitazione allena anche la linea a stare compatta e togliere le filtranti.
 - Parola per la circolazione: "finalizzata" (proposta) oppure "funzionale", "propositiva", "orientata alla verticalizzazione".
