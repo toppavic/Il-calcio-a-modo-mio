@@ -101,3 +101,8 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - **TikTok carosello annuncio (19 h)**: 315 visualizzazioni, 3 like, 5 commenti (Brando), 4 salvataggi. Recupero alto: 1019 e 21 salvataggi → **gli annunci rendono meno degli esercizi**.
 - **Storia IG con adesivo Link**: 157 visualizzazioni, 138 account, **2 clic sul link**, 0 interazioni; avanti 106, uscite 15.
 - Brando Giorgini (TikTok) cercava schede di allenamento: risposta data con link Etsy. Preventiva 2 (partita a specchio) programmata per le 13 del 16/10.
+
+## 17/10 mattina (07:00) – numeri Preventiva 2 (partita a specchio, dopo ~17-18 h)
+- **IG**: 541 visualizzazioni da 190 account, 4 like, 0 commenti, **11 salvataggi**, 6 visite al profilo, **1 follower**, 98,5% follower (35-44 37%, 45-54 33,1%). Sotto il "post abituale" (curva ferma a ~540). Per confronto Preventiva 1 a 13 h: 889 visualizzazioni, 13 salvataggi, 2 follower.
+- **TikTok**: **740 visualizzazioni, 17 like, 26 salvataggi** (il rapporto salvataggi/visualizzazioni più alto), 0 commenti. Account **81 follower** (61 il 13/10), 129 like. Griglia: Recupero alto 1448, 8 passaggi 1143, Preventiva 1 reel 817, annuncio In campionato 368, Ponte 544.
+- Conclusione: gli esercizi si salvano molto più degli annunci; su IG il carosello resta quasi solo ai follower (serve un Reel per gli sconosciuti).
