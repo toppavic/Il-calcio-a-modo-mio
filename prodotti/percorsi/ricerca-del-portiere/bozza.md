@@ -45,6 +45,8 @@ chiave. Esercitazioni tratte da Gli Imbattibili (Allenamenti 1, 2, 5, 16 e 17), 
 | 6 · Il punteggio completo | All. 17 | 7c7 metà campo larga quanto l'area, 2 tocchi, no lancio; portiere 1 punto, dalla metà difensiva 2, recupero alto e gol 3; 2° tempo senza compagno di reparto | Costruire da dietro, verticalizzare e pressare nella stessa partita |
 | 7 · La partita completa | Nuova (17/10, dettata dall'allenatore) | **3 tocchi**, da 7c7 a 11c11 (campo secondo la tabella sotto); ricerca del portiere 1 punto; lancio dalla metà difensiva **3 punti**; recupero nella metà offensiva → si può fare gol, **2 punti** | Sintesi finale: lancio, costruzione e pressione insieme |
 
+✅ 17/10: l'allenatore tiene **tutte e 7 le tappe**.
+
 Rimaste fuori: All. 5 2° tempo (solo verticale con punteggio della tappa 4) → si può aggiungere come variante della tappa 4.
 
 ## Campo in base al numero di giocatori (tappa 7, valido anche per le altre)
@@ -61,7 +63,7 @@ Rimaste fuori: All. 5 2° tempo (solo verticale con punteggio della tappa 4) →
 la superiorità numerica, in non possesso a gestire l'inferiorità.
 
 ## Da controllare con l'allenatore
-- Ordine delle tappe e se 6 vanno bene (o 5, togliendo la 3 o la 4).
+- ✅ 7 tappe in quest'ordine (17/10).
 - ✅ Palla coperta / scoperta (17/10, allenatore): è per la LINEA DIFENSIVA. Scoperta → scappare e togliere profondità; coperta → accorciare in avanti. L'esercitazione allena anche la linea a stare compatta e togliere le filtranti.
 - ✅ Parola: **"funzionale"** (17/10).
 - ✅ Tappa 5: gol dopo recupero alto = 3 punti, non 5 (17/10).

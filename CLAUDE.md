@@ -161,7 +161,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   (46 pagine, 3,9 MB) da `genera-campionato.py`: copertina (foto Allenamento 16), "Prima di cominciare" (4 partite, 4 vittorie,
   11 gol fatti e 3 subiti), indice con lunedì/giovedì e risultati. Copertine come immagini in `copertine-campionato/`
   (se cambiano: rigenerare HTML senza la cartella, `render-copertine.js`, PNG → JPG, rigenerare). Annuncio Etsy: conversazione MARKETING.
-- Percorso "Ricerca del portiere" (6 tappe): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
+- Percorso "Ricerca del portiere" (**7 tappe**, confermate il 17/10): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
   **non impaginare finché l'allenatore non approva il pacchetto**.
 - Prossimo: **Allenamento 20**.
 - Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse
