@@ -43,9 +43,22 @@ chiave. Esercitazioni tratte da Gli Imbattibili (Allenamenti 1, 2, 5, 16 e 17), 
 | 4 · Cambiare reparto e recuperare alto | All. 5, 1° tempo | 2 tocchi, vietato il compagno di reparto (attaccanti liberi); lancio 2 punti, recupero nella metà offensiva 1 punto | Giocare tra le linee; prima spinta alla pressione |
 | 5 · Pressione senza lancio | All. 16 | 7c7 + jolly, 3 tocchi, no lancio; recupero nella metà offensiva = si può fare gol, vale **3 punti** (nell'Allenamento 16 erano 5: deciso 17/10); 2° tempo solo verticale | Palla coperta: niente lancio, si arriva al portiere palla a terra; pressione alta |
 | 6 · Il punteggio completo | All. 17 | 7c7 metà campo larga quanto l'area, 2 tocchi, no lancio; portiere 1 punto, dalla metà difensiva 2, recupero alto e gol 3; 2° tempo senza compagno di reparto | Costruire da dietro, verticalizzare e pressare nella stessa partita |
-| 7 · La partita completa | Nuova (17/10, dettata dall'allenatore) | Ricerca del portiere 1 punto; lancio dalla metà difensiva **3 punti**; recupero nella metà offensiva → si può fare gol, **2 punti**. Da chiedere: tocchi, giocatori, campo | Sintesi finale: lancio, costruzione e pressione insieme |
+| 7 · La partita completa | Nuova (17/10, dettata dall'allenatore) | **3 tocchi**, da 7c7 a 11c11 (campo secondo la tabella sotto); ricerca del portiere 1 punto; lancio dalla metà difensiva **3 punti**; recupero nella metà offensiva → si può fare gol, **2 punti** | Sintesi finale: lancio, costruzione e pressione insieme |
 
 Rimaste fuori: All. 5 2° tempo (solo verticale con punteggio della tappa 4) → si può aggiungere come variante della tappa 4.
+
+## Campo in base al numero di giocatori (tappa 7, valido anche per le altre)
+
+| Giocatori | Campo | Da chi |
+|---|---|---|
+| 7c7 e 8c8 | 50 m di lunghezza × 40 m di larghezza | allenatore |
+| 9c9 | metà campo regolamentare (circa 50-55 × 65 m) | allenatore (misure da noi) |
+| 10c10 | circa 60 × 65 m (lunghezza × tutta la larghezza) | proposta di Claude |
+| 11c11 | 3/4 di campo, circa 70-75 × 65 m | proposta di Claude |
+
+## Regola per tutte le tappe
+**Numero dispari → un jolly che gioca sempre con chi ha la palla** (allenatore, 17/10): in possesso si impara a sfruttare
+la superiorità numerica, in non possesso a gestire l'inferiorità.
 
 ## Da controllare con l'allenatore
 - Ordine delle tappe e se 6 vanno bene (o 5, togliendo la 3 o la 4).
