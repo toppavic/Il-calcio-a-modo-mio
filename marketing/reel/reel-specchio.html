@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><title>Reel Preventiva 2</title>
+<style>
+@font-face { font-family: Oswald; src: url(../../prodotti/gli-imbattibili/font/oswald.woff2) format("woff2"); font-weight: 200 700; }
+@font-face { font-family: Inter; src: url(../../prodotti/gli-imbattibili/font/inter.woff2) format("woff2"); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 1080px; height: 1920px; overflow: hidden; background: #0c120f; font-family: Inter, sans-serif; color: #fff; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+.layer { position: absolute; inset: 0; }
+.kick { font-family: Oswald; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-size: 30px; color: #84b94a; }
+#campo .head { position: absolute; left: 60px; right: 60px; top: 180px; }
+#campo h2 { font-family: Oswald; font-weight: 700; text-transform: uppercase; font-size: 104px; line-height: .98; margin-top: 14px; }
+#campo h2 span { color: #84b94a; display: block; font-size: 66px; line-height: 1.08; margin-top: 12px; }
+#campo svg { position: absolute; left: 40px; top: 660px; width: 1000px; height: 600px; border-radius: 20px; }
+#wipe { position: absolute; left: 40px; top: 660px; width: 1000px; height: 600px; border-radius: 20px; background: #0c120f; opacity: 0; }
+.bdg { position: absolute; top: 1284px; font-family: Oswald; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 38px; border-radius: 12px; padding: 10px 24px; opacity: 0; }
+.cap { position: absolute; left: 60px; right: 60px; top: 1380px; font-size: 56px; line-height: 1.3; font-weight: 500; opacity: 0; }
+.cap b { color: #f2c230; font-weight: 700; }
+.logo { position: absolute; left: 50%; transform: translateX(-50%); -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }
+#fine .logo { top: 330px; width: 520px; }
+#fine .txt { position: absolute; left: 80px; right: 80px; top: 760px; }
+h1 { font-family: Oswald; font-weight: 700; text-transform: uppercase; font-size: 130px; line-height: .92; margin: 20px 0 30px; }
+h1 span { color: #84b94a; display: block; }
+.sub { font-size: 40px; line-height: 1.4; color: #dfe6e1; }
+.azione { margin-top: 60px; font-family: Oswald; text-transform: uppercase; letter-spacing: .06em; font-size: 46px; color: #0c120f; background: #84b94a; border-radius: 18px; padding: 28px 30px; text-align: center; }
+.azione2 { margin-top: 24px; font-family: Oswald; text-transform: uppercase; letter-spacing: .06em; font-size: 40px; border: 3px solid #84b94a; border-radius: 18px; padding: 24px 30px; text-align: center; }
+</style></head>
+<body><div id="stage">
+
+<div class="layer" id="campo">
+  <div class="head"><div class="kick">Gli Imbattibili · dai quaderni del mister</div><h2>Preventiva 2<span>Pressione e preventiva in una sola esercitazione</span></h2></div>
+  <svg viewBox="0 0 500 300">
+    <defs>
+      <pattern id="strisce" width="60" height="400" patternUnits="userSpaceOnUse"><rect width="30" height="400" fill="#3f8f5a"/><rect x="30" width="30" height="400" fill="#46995f"/></pattern>
+    </defs>
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="20" width="420" height="260"/><line x1="250" y1="20" x2="250" y2="280" stroke-dasharray="3 6"/></g>
+    <rect x="30" y="118" width="10" height="64" fill="#fff"/><rect x="460" y="118" width="10" height="64" fill="#fff"/>
+    <path id="sciaPalla" d="" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" opacity=".9"/>
+    <g id="giocatori"></g>
+    <circle id="palla" r="6" fill="#fff" stroke="#1d2421" stroke-width="1.8"/>
+    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">NESSUNO CAMBIA METÀ · LA PALLA SÌ</text>
+  </svg>
+  <div class="bdg" id="bK1" style="left:60px;background:#c8372d;color:#fff">Uscita forzata</div>
+  <div class="bdg" id="bK2" style="right:60px;background:#84b94a;color:#0c120f">Marcatura preventiva</div>
+  <div class="cap" id="c0">Gli attaccanti <b>pressano</b> i 4 difensori</div>
+  <div class="cap" id="c1">L'uscita è <b>forzata</b>, mai pulita</div>
+  <div class="cap" id="c2">I difensori hanno già marcato: <b>anticipano</b> o <b>contrastano</b></div>
+  <div class="cap" id="c3">Nell'altra metà succede lo stesso: è la <b>partita a specchio</b></div>
+</div>
+
+<div class="layer" id="fine" style="background:#0c120f; opacity:0">
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <h1>Gli<span>Imbattibili</span></h1>
+    <p class="sub">Preventiva 2 è il secondo gradino del percorso. Il post completo è sul profilo</p>
+    <div class="azione">Salvalo per il prossimo allenamento</div>
+    <div class="azione2">Mandalo al tuo vice</div>
+  </div>
+</div>
+
+</div>
+<script>
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = x => { x = clamp(x); return x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2; };
+const prog = (t, a, b) => ease((t - a) / (b - a));
+const lerp = (p, q, k) => [p[0] + (q[0] - p[0]) * k, p[1] + (q[1] - p[1]) * k];
+
+// Metà sinistra: 4 difensori blu contro 6 attaccanti rossi. Metà destra: 4 difensori rossi contro 6 attaccanti blu.
+const BD = [[95,55],[95,115],[95,185],[95,245]];
+const RA = [[165,45],[165,105],[165,195],[165,255],[215,80],[215,220]];
+const RA_P = [[130,75],[122,110],[122,150],[130,215],[170,95],[170,175]];
+const RD = [[405,55],[405,115],[405,185],[405,245]];
+const RD_M = [[374,52],[374,108],[374,188],[374,242]];
+const BA = [[335,45],[335,105],[335,195],[335,255],[285,80],[285,220]];
+const BD_M = [[142,50],[140,100],[136,192],[142,250]];
+const T = { fine: 9.4 };
+
+function player(x, y, fill, stroke, n, col) {
+  let s = `<circle cx="${x}" cy="${y}" r="11" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`;
+  if (n !== '') s += `<text x="${x}" y="${y + 4.5}" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="${col}">${n}</text>`;
+  return s;
+}
+const seg = (id, a, z) => document.getElementById(id).style.opacity = t_ < a ? 0 : clamp((t_ - a) / .3) * (1 - clamp((t_ - (z - .3)) / .3));
+let t_ = 0;
+
+function draw(t) {
+  t_ = t;
+  const el = id => document.getElementById(id);
+  const op = (id, v) => el(id).style.opacity = v;
+  op('fine', clamp((t - T.fine) / .5));
+  const wob = (i, a) => [Math.sin(t * 1.7 + i) * 1.6 * a, Math.cos(t * 1.3 + i * 2) * 1.6 * a];
+
+  // posizioni
+  const ra = RA.map((p, i) => lerp(p, RA_P[i], prog(t, .1, 1.5)));
+  const rd = RD.map((p, i) => lerp(p, RD_M[i], prog(t, .8, 1.9)));
+  // dopo il recupero i blu a sinistra vanno in marcatura
+  const bd = BD.map((p, i) => lerp(p, BD_M[i], prog(t, 5.0, 6.2)));
+  // dopo il lancio, gli attaccanti rossi tornano larghi
+  const ra2 = ra.map((p, i) => lerp(p, i === 2 ? [150,150] : RA[i], prog(t, 5.2, 6.4)));
+  const ba = BA.map(p => p);
+
+  let s = '';
+  // linee di marcatura (destra: dall'inizio, sinistra: nella seconda parte)
+  const aL = clamp((t - 1.3) / .3) * (1 - clamp((t - 4.9) / .3));
+  for (let i = 0; i < 4; i++) s += `<line x1="${rd[i][0]}" y1="${rd[i][1]}" x2="${ba[i][0]}" y2="${ba[i][1]}" stroke="#f2c230" stroke-width="5" stroke-linecap="round" opacity="${aL}"/>`;
+  const aR = clamp((t - 6.0) / .3);
+  const marks = [[0,0],[1,1],[2,2],[3,3]];
+  for (const [d, a] of marks) s += `<line x1="${bd[d][0]}" y1="${bd[d][1]}" x2="${ra2[a][0]}" y2="${ra2[a][1]}" stroke="#f2c230" stroke-width="5" stroke-linecap="round" opacity="${aR}"/>`;
+  s += player(22, 150, '#f2c230', '#1d2421', '', '#1d2421') + player(478, 150, '#f2c230', '#1d2421', '', '#1d2421');
+  // difensore rosso 2 che anticipa
+  const rd2 = lerp(rd[2], [352,168], prog(t, 3.6, 4.4));
+  rd.forEach((p, i) => { const q = i === 2 ? rd2 : p, w = wob(i, .5); s += player(q[0] + w[0], q[1] + w[1], '#c8372d', '#fff', '', '#fff'); });
+  ba.forEach((p, i) => { const w = wob(i + 7, .8); s += player(p[0] + w[0], p[1] + w[1], '#2a5db0', '#fff', '', '#fff'); });
+  bd.forEach((p, i) => { const w = wob(i + 3, .4); s += player(p[0] + w[0], p[1] + w[1], '#2a5db0', '#fff', '', '#fff'); });
+  ra2.forEach((p, i) => { const w = wob(i + 11, 1); s += player(p[0] + w[0], p[1] + w[1], '#c8372d', '#fff', '', '#fff'); });
+  el('giocatori').innerHTML = s;
+
+  // palla
+  const c0 = [BD[1][0] + 13, BD[1][1] + 2], pass0 = [BA[1][0] - 12, BA[1][1]];
+  let b, scia = '';
+  if (t < 2.0) b = c0;
+  else if (t < 3.0) { b = lerp(c0, pass0, prog(t, 2.0, 3.0)); scia = `M${c0[0]},${c0[1]} L${b[0]},${b[1]}`; }
+  else if (t < 3.6) b = pass0;
+  else if (t < 4.4) { const to = [rd2[0] - 12, rd2[1] - 2]; const from = pass0; b = lerp(from, to, prog(t, 3.6, 4.4)); scia = `M${from[0]},${from[1]} L${b[0]},${b[1]}`; }
+  else if (t < 5.4) b = [rd2[0] - 12, rd2[1] - 2];
+  else if (t < 6.6) { const from = [rd2[0] - 12, rd2[1] - 2], to = [ra2[2][0] + 13, ra2[2][1]]; b = lerp(from, to, prog(t, 5.4, 6.6)); scia = `M${from[0]},${from[1]} L${b[0]},${b[1]}`; }
+  else b = [ra2[2][0] + 13, ra2[2][1]];
+  el('palla').setAttribute('cx', b[0]); el('palla').setAttribute('cy', b[1]);
+  el('sciaPalla').setAttribute('d', scia);
+
+  op('bK1', clamp((t - 2.0) / .3) * (1 - clamp((t - 3.8) / .3)));
+  op('bK2', clamp((t - 1.5) / .3) * (1 - clamp((t - 4.9) / .3)));
+  seg('c0', .2, 2.2); seg('c1', 2.2, 3.8); seg('c2', 3.8, 5.9); seg('c3', 5.9, 9.2);
+}
+draw(0);
+</script></body></html>
