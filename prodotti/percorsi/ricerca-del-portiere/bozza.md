@@ -1,0 +1,51 @@
+# Percorso "Ricerca del portiere" – bozza dei contenuti (17/10)
+
+Prima si costruisce il pacchetto, poi si impagina (deciso dall'allenatore).
+
+## Titolo (proposta)
+**La ricerca del portiere · 6 tappe per pressare alto e verticalizzare**
+Gli Imbattibili · Percorso 1
+
+## Descrizione
+
+**Vuoi costruire una squadra che pressi alto?**
+**Che sappia leggere palla coperta e palla scoperta?**
+**Che impari a verticalizzare velocemente e con qualità?**
+**Che faccia circolare la palla in modo finalizzato, non fine a se stesso?**
+
+La ricerca del portiere è la partita a tema con cui la Juniores che ha vinto il campionato senza perdere una partita
+ha costruito il suo modo di stare in campo, dal primo giorno di precampionato fino al campionato.
+Il principio è semplice: il gol non c'è. Per fare punto bisogna far arrivare la palla al portiere avversario, che fa
+da bersaglio. Ogni passaggio deve avere uno scopo: avvicinare la palla al bersaglio.
+
+Tappa dopo tappa cambiano solo le regole (tocchi, vincoli, punteggi) e con le regole cambiano i comportamenti:
+prima si impara a smarcarsi e a giocare in avanti, poi a leggere quando si può lanciare, poi a verticalizzare,
+infine a pressare alto per riconquistare la palla vicino alla porta avversaria.
+
+**Obiettivi del percorso**
+- Circolazione di palla finalizzata: ogni passaggio serve ad avanzare, non a tenere palla.
+- Lettura di palla coperta e palla scoperta: capire quando c'è il tempo per la giocata lunga e quando no.
+- Verticalizzazione rapida e di qualità: pochi tocchi, passaggi in avanti, smarcamenti tra le linee.
+- Pressione alta e riconquista: chi perde palla aggredisce subito, il recupero alto vale di più.
+
+**Cosa trovi nel PDF**
+6 tappe in progressione, ognuna con obiettivo, schema, regole tempo per tempo, organizzazione, svolgimento e punti
+chiave. Esercitazioni tratte da Gli Imbattibili (Allenamenti 1, 2, 5, 16 e 17), riordinate in progressione.
+
+## Le 6 tappe
+
+| Tappa | Da dove viene | Regole | A cosa serve |
+|---|---|---|---|
+| 1 · Trovare il portiere | All. 1, 1° tempo | 10c10, 3 tocchi, portiere trovato = 1 punto | Smarcarsi, testa alta, circolazione finalizzata |
+| 2 · Leggere la profondità | All. 1 2° tempo (= All. 2 1° tempo) | 2 tocchi; 1 punto dalla metà offensiva, 2 punti con lancio dalla metà difensiva | Palla scoperta: riconoscere quando c'è il tempo per il lancio |
+| 3 · Solo verticale | All. 2, 2° tempo | 3 tocchi, solo verticale, stesso punteggio | Verticalizzare, eliminare il passaggio orizzontale |
+| 4 · Cambiare reparto e recuperare alto | All. 5, 1° tempo | 2 tocchi, vietato il compagno di reparto (attaccanti liberi); lancio 2 punti, recupero nella metà offensiva 1 punto | Giocare tra le linee; prima spinta alla pressione |
+| 5 · Pressione senza lancio | All. 16 | 7c7 + jolly, 3 tocchi, no lancio; recupero nella metà offensiva = si può fare gol, vale 5 punti; 2° tempo solo verticale | Palla coperta: niente lancio, si arriva al portiere palla a terra; pressione alta |
+| 6 · Il punteggio completo | All. 17 | 7c7 metà campo larga quanto l'area, 2 tocchi, no lancio; portiere 1 punto, dalla metà difensiva 2, recupero alto e gol 3; 2° tempo senza compagno di reparto | Sintesi: costruire da dietro, verticalizzare e pressare nella stessa partita |
+
+Rimaste fuori: All. 5 2° tempo (solo verticale con punteggio della tappa 4) → si può aggiungere come variante della tappa 4.
+
+## Da controllare con l'allenatore
+- Ordine delle tappe e se 6 vanno bene (o 5, togliendo la 3 o la 4).
+- "Palla coperta / scoperta": nelle regole non c'è scritto, è la lettura che le regole allenano (lancio sì / lancio no). Va bene presentarlo così?
+- Parola per la circolazione: "finalizzata" (proposta) oppure "funzionale", "propositiva", "orientata alla verticalizzazione".
