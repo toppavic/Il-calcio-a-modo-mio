@@ -106,3 +106,10 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - **IG**: 541 visualizzazioni da 190 account, 4 like, 0 commenti, **11 salvataggi**, 6 visite al profilo, **1 follower**, 98,5% follower (35-44 37%, 45-54 33,1%). Sotto il "post abituale" (curva ferma a ~540). Per confronto Preventiva 1 a 13 h: 889 visualizzazioni, 13 salvataggi, 2 follower.
 - **TikTok**: **740 visualizzazioni, 17 like, 26 salvataggi** (il rapporto salvataggi/visualizzazioni più alto), 0 commenti. Account **81 follower** (61 il 13/10), 129 like. Griglia: Recupero alto 1448, 8 passaggi 1143, Preventiva 1 reel 817, annuncio In campionato 368, Ponte 544.
 - Conclusione: gli esercizi si salvano molto più degli annunci; su IG il carosello resta quasi solo ai follower (serve un Reel per gli sconosciuti).
+
+## 19/10 mattina (07:00) – numeri settimanali
+- **IG**: 4017 follower (4018 il 14/10, fermo) · 13.221 visualizzazioni in 30 giorni (8426 all'11/10). Preventiva 2 carosello (3 giorni): 649 visualizzazioni da 228 account, 4 like, **13 salvataggi**, 6 visite al profilo, 1 follower, 98,5% follower (35-44 36%, 45-54 34%, 55-64 11%). Annuncio In campionato: 581 da 197 account, 6 like, 1 salvataggio, 11 visite al profilo, 3 tocchi sul link, 0 follower. Preventiva 1 1551 · 8 passaggi 1091 · cross (reel) 983 · Recupero alto 907 · Ponte 902.
+- **TikTok**: **91 follower** (61 il 13/10, 81 il 17/10), 141 like. Preventiva 2 carosello **1305 visualizzazioni, 24 like, 45 salvataggi**; Recupero alto 1546; 8 passaggi 1225; annuncio 434 (7 salvataggi); Preventiva 1 reel 849; Ponte 563.
+- **Etsy 7 giorni**: 24 visualizzazioni, 19 visite, 0 ordini, 0 €.
+- **Facebook (28 giorni)**: 138.482 visualizzazioni (-67%), ricavi stimati 4,17 $ (-76%), interazioni 9428, 23 follower nuovi. Il calo è rispetto a un periodo con post virali (Fiorentina 52k e 25k). Storia/risultato Vaglia 0-0 San Giusto: 69 visualizzazioni nel diario.
+- **Reel Preventiva 2 non ancora pubblicato** (non è in griglia IG né TikTok). Orari follower IG: lunedì e martedì picco 12-15.
