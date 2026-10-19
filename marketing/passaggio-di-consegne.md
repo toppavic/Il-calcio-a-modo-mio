@@ -113,3 +113,6 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - **Etsy 7 giorni**: 24 visualizzazioni, 19 visite, 0 ordini, 0 €.
 - **Facebook (28 giorni)**: 138.482 visualizzazioni (-67%), ricavi stimati 4,17 $ (-76%), interazioni 9428, 23 follower nuovi. Il calo è rispetto a un periodo con post virali (Fiorentina 52k e 25k). Storia/risultato Vaglia 0-0 San Giusto: 69 visualizzazioni nel diario.
 - **Reel Preventiva 2 non ancora pubblicato** (non è in griglia IG né TikTok). Orari follower IG: lunedì e martedì picco 12-15.
+
+## 19/10 12:50 – Libro Amazon (KDP, mese corrente)
+- **2 ordini elaborati, royalty stimate 7,78 €** (al 7/10 erano 0 ordini). Pubblicati Reel e TikTok del giorno (allenatore: "Tutto pubblicato").
