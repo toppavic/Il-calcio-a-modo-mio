@@ -230,8 +230,9 @@ POST = [
     ),
     dict(
         n=7, senza_foto=True, tema="oro",
-        gancio="Si corre insieme<span>o si scappa</span>",
-        sub="Un giocatore che pressa da solo <b>non serve</b>.",
+        gancio="Se corri solo tu<span style=\"margin-top:16px\">hai già perso</span>", h1style="font-size:118px;line-height:1.05",
+        sub="Si corre insieme <b>o si scappa</b>.",
+        kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER", fine_h1="Dai quaderni<span>del mister</span>",
         kicker2="La ricerca del portiere",
         titolo2="Vuoi una squadra che&hellip;",
         lista2=["metta <b>pressione</b> prima che l'avversario abbia il tempo di lanciare?",
@@ -275,7 +276,7 @@ FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>
 def slides(p, tot=None, h=1350):
     tot = tot or (5 if p.get("obiettivo") else 4)
     num = lambda i: f'<div class="num">{i}/{tot}</div>'
-    marchio = '<div class="marchio"><b>GLI IMBATTIBILI</b><span>Il calcio a modo mio</span></div>'
+    marchio = '<div class="marchio"><b>' + (p.get("marchio") or "GLI IMBATTIBILI") + '</b><span>Il calcio a modo mio</span></div>'
     punti = "".join(f"<li>{x}</li>" for x in p["punti"])
     if p.get("lista2"):
         lista2 = "".join(f"<li>{x}</li>" for x in p["lista2"])
@@ -302,8 +303,8 @@ def slides(p, tot=None, h=1350):
   <img class="logo" src="{MAT}/brand/logo-cerchio.png">
   {('<div class="copschema"' + (' style="width:' + str(567 if h > 1500 else 433) + 'px"' if p.get("senza_foto") else '') + '>' + p["schema"].replace('class="schema"', 'preserveAspectRatio="xMidYMid ' + ('meet' if p.get("senza_foto") else 'slice') + '"') + '</div>') if p.get("cop_schema") else ''}
   <div class="txt">
-    <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
-    <h1>{p["gancio"]}</h1>
+    <div class="kick">{p.get("kick") or "Gli Imbattibili · dai quaderni del mister"}</div>
+    <h1 style="{p.get("h1style") or ""}">{p["gancio"]}</h1>
     <p class="sub">{p.get("sub") or FIRMA}</p>
     <div class="scorri">Scorri →</div>
   </div>
@@ -319,7 +320,7 @@ def slides(p, tot=None, h=1350):
 {('<section class="slide int">' + num(4) + '<div class="kicker">' + (p.get("kicker3") or p["titolo2"]) + '</div><h2>' + p.get("titolo_ob", "Gli obiettivi") + '</h2><div class="obiettivo">' + p["obiettivo"] + '</div>' + marchio + '</section>') if p.get("obiettivo") else ''}
 <section class="slide fine">
   <img class="logo2" src="{MAT}/brand/logo-cerchio.png">
-  <h1>Gli<span>Imbattibili</span></h1>
+  <h1>{p.get("fine_h1") or "Gli<span>Imbattibili</span>"}</h1>
   <p class="sub">{(p.get("fine_sub_tt") if h > 1500 and p.get("fine_sub_tt") else p.get("fine_sub")) or (FIRMA + ". Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.")}</p>
   <div class="azioni">{"".join("<div>" + a + "</div>" for a in (p.get("azioni") or ["Salva il post", "Seguici per il prossimo"]))}</div>
 </section>'''
