@@ -229,7 +229,26 @@ POST = [
         fine_sub="Secondo gradino del percorso sulla <b>marcatura preventiva</b>. La Juniores che ha vinto il campionato <b>senza perdere una partita</b>.",
     ),
     dict(
-        n=7, senza_foto=True, cop_schema=True, tema="oro",
+        n=7, senza_foto=True, tema="oro",
+        gancio="Si corre insieme<span>o si scappa</span>",
+        sub="Un giocatore che pressa da solo <b>non serve</b>.",
+        kicker2="La ricerca del portiere",
+        titolo2="Vuoi una squadra che&hellip;",
+        lista2=["<b>pressi alto</b>?",
+                "sappia leggere <b>palla coperta</b> e <b>palla scoperta</b>?",
+                "<b>verticalizzi</b> in fretta e con qualità?",
+                "faccia circolare la palla in modo <b>funzionale</b>, non fine a se stesso?"],
+        titolo3="Una progressione",
+        punti=["<b>7 tappe</b>",
+               "Dalla <b>più facile</b> alla <b>più difficile</b>",
+               "Tappa dopo tappa cambiano <b>solo le regole</b>",
+               "Con le regole cambia <b>il modo di stare in campo</b>"],
+        fine_sub="Il percorso completo sulla <b>ricerca del portiere</b> arriva presto su Etsy. Il link è nella bio.",
+        fine_sub_tt="Il percorso completo sulla <b>ricerca del portiere</b> arriva presto su Etsy. Cercaci: <b>ilcalcioamodomio</b>.",
+        azioni=["Salva il post", "Seguici per l'uscita"],
+    ),
+    dict(
+        n=8, senza_foto=True, cop_schema=True, tema="oro",
         gancio="Trova<span>il portiere</span>",
         sub="Il gol non esiste · <b>Tappa 1 di 7</b>",
         schema=schema_tappa1(),
@@ -298,7 +317,7 @@ def slides(p, tot=None, h=1350):
 <section class="slide fine">
   <img class="logo2" src="{MAT}/brand/logo-cerchio.png">
   <h1>Gli<span>Imbattibili</span></h1>
-  <p class="sub">{p.get("fine_sub") or (FIRMA + ". Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.")}</p>
+  <p class="sub">{(p.get("fine_sub_tt") if h > 1500 and p.get("fine_sub_tt") else p.get("fine_sub")) or (FIRMA + ". Gli allenamenti del precampionato, scritti a mano dal mister e messi in pagina.")}</p>
   <div class="azioni">{"".join("<div>" + a + "</div>" for a in (p.get("azioni") or ["Salva il post", "Seguici per il prossimo"]))}</div>
 </section>'''
 

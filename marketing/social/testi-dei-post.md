@@ -135,21 +135,22 @@ La storia di quella stagione è nel libro Gli Imbattibili, link in bio.
 - "Il mio calcio in due parole: intensità e responsabilità."
 - "Mister, io resto fino a mezzanotte, se serve." (Coralli)
 
-## Post 7 – Ricerca del portiere, tappa 1 (martedì 20/10, ore 18:00)
+## Post 7 – Teaser del percorso "Ricerca del portiere" (martedì 20/10, ore 18:00)
 
-Tema: oro. Regole dall'Allenamento 1 (1° tempo). Obiettivo "circolazione di palla funzionale" dal percorso (bozza 17/10).
-Niente Juniores né 8 gol (decisione dell'allenatore 20/10). Gancio del pacchetto (suo): «Un giocatore che pressa da solo non serve. Si corre insieme o si scappa.» → da usare dalla tappa 2.
+Regola dell'allenatore (20/10): **nessuna esercitazione regalata**. Nei post solo le domande e la progressione; regole e schemi restano nel pacchetto.
+Gancio suo: «Un giocatore che pressa da solo non serve. Si corre insieme o si scappa.» Niente Juniores né 8 gol. Una sola uscita su Etsy, senza data.
+Il carosello con la tappa 1 completa (regole e schema) è pronto come **post 8** (`ig-fb-post8-N`): **non pubblicarlo** (resta per chi compra).
 
 **Instagram e Facebook**
 
-In questa partita il gol non esiste. 👇
-Per fare punto bisogna far arrivare la palla al portiere avversario.
-10 contro 10, massimo 3 tocchi, 1 punto ogni volta che lo trovi.
-È la tappa 1 di un percorso in 7 tappe per imparare a pressare insieme.
-Salva il post: la prossima tappa cambia le regole.
+Un giocatore che pressa da solo non serve.
+Si corre insieme o si scappa. 👇
+Vuoi una squadra che pressi alto? Che sappia leggere palla coperta e palla scoperta? Che verticalizzi in fretta e con qualità?
+Ho messo in ordine 7 tappe, dalla più facile alla più difficile. Tappa dopo tappa cambiano solo le regole.
+Arriva presto. Il link è nella bio.
 
-#allenatoredicalcio #esercitazionicalcio #allenamentocalcio #calcio #mister #pressing
+#allenatoredicalcio #pressing #calcio #mister #allenamentocalcio
 
-**TikTok**
+**TikTok** (nell'ultima immagine c'è scritto «Cercaci: ilcalcioamodomio»)
 
-Il gol non esiste: trova il portiere 👇 Tappa 1 di 7 #allenatore #calcio #esercizicalcio #mister
+Si corre insieme o si scappa. Percorso in 7 tappe per far pressare alto la squadra, in arrivo su Etsy. #allenatore #calcio #pressing #mister
