@@ -291,7 +291,7 @@ t2 = pagina_tappa(2, "Leggere la profondità", 3, [],
 t3 = pagina_tappa(3, "Solo verticale", 3, ["Solo verticale: mai passaggi orizzontali"],
     "Sparisce il passaggio orizzontale.",
     "verticalizzare: passaggi in avanti, all'indietro o in diagonale.",
-    campo(freccia("M85,86 L198,96", tratteggio=True) + no(140, 90)
+    campo(freccia("M214,108 L214,192", tratteggio=True) + no(214, 168)
           + freccia("M92,84 L142,140", tratteggio=True) + freccia("M158,148 L292,86", tratteggio=True)
           + freccia("M306,84 L372,146", tratteggio=True) + '<use href="#palla" x="97" y="96"/>'), [1, 3],
     "<li>Smarcarsi in diagonale, mai in linea con il portatore</li><li>Lo scarico all'indietro prepara la verticalizzazione</li>")
