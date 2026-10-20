@@ -116,3 +116,8 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 
 ## 19/10 12:50 – Libro Amazon (KDP, mese corrente)
 - **2 ordini elaborati, royalty stimate 7,78 €** (al 7/10 erano 0 ordini). Pubblicati Reel e TikTok del giorno (allenatore: "Tutto pubblicato").
+
+## 20/10 – Post 7 pubblicato (12:30, IG + TikTok)
+- Carosello teaser del percorso "Ricerca del portiere" (7 tappe), nome "Dai quaderni del mister", gancio "Se corri solo tu, hai già perso." Nessuna esercitazione regalata (regola dell'allenatore). Il carosello con la tappa 1 completa resta in `post8` (non pubblicare).
+- Numeri da guardare domani mattina: salvataggi e visite al profilo su IG e TikTok, confronto con Preventiva 2 (IG 13 salvataggi, TikTok 45).
+- Libro nuovo: dati dell'autore ricevuti (nel file inviato a lui, non nel repository); invio a E/O fissato per il **26/10** (promemoria send_later trig_014RDquu5Yr74fgRSxZ9rRPL).
