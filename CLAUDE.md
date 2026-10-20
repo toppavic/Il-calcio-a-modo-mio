@@ -14,6 +14,8 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 - Manda **foto dei fogli scritti a mano** (o note dal telefono) di un allenamento alla volta.
 - Flusso: trascrivere → impaginare il PDF → inviarlo → fare **poche domande precise** solo
   sui punti illeggibili o ambigui → correggere.
+- **Niente partenze in tromba (20/10, allenatore)**: prima una bozza breve dell'impostazione (regole, struttura) da far
+  approvare con un sì/no, poi si produce il PDF. Non creare materiale completo senza accordo: gli fa perdere tempo e token.
 - **Mai inventare contenuti tecnici presentandoli come suoi.** Obiettivi e punti chiave scritti
   da noi vanno bene, ma va sempre detto all'allenatore cosa è stato aggiunto perché lo controlli.
 - Salvare ogni foto ricevuta in `materiale/` e fare commit e push dopo ogni passo.
