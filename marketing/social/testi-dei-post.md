@@ -134,3 +134,22 @@ La storia di quella stagione è nel libro Gli Imbattibili, link in bio.
 - "Non arrenderti, rischieresti di farlo un'ora prima del miracolo" (proverbio arabo, prima pagina del blocco).
 - "Il mio calcio in due parole: intensità e responsabilità."
 - "Mister, io resto fino a mezzanotte, se serve." (Coralli)
+
+## Post 7 – Ricerca del portiere, tappa 1 (martedì 20/10, ore 18:00)
+
+Tema: oro. Regole dall'Allenamento 1 (1° tempo). Obiettivo "circolazione di palla funzionale" dal percorso (bozza 17/10).
+Niente Juniores né 8 gol (decisione dell'allenatore 20/10). Gancio del pacchetto (suo): «Un giocatore che pressa da solo non serve. Si corre insieme o si scappa.» → da usare dalla tappa 2.
+
+**Instagram e Facebook**
+
+In questa partita il gol non esiste. 👇
+Per fare punto bisogna far arrivare la palla al portiere avversario.
+10 contro 10, massimo 3 tocchi, 1 punto ogni volta che lo trovi.
+È la tappa 1 di un percorso in 7 tappe per imparare a pressare insieme.
+Salva il post: la prossima tappa cambia le regole.
+
+#allenatoredicalcio #esercitazionicalcio #allenamentocalcio #calcio #mister #pressing
+
+**TikTok**
+
+Il gol non esiste: trova il portiere 👇 Tappa 1 di 7 #allenatore #calcio #esercizicalcio #mister

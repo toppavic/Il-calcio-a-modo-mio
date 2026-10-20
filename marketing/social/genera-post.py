@@ -124,6 +124,25 @@ def schema_specchio():
   </svg>'''
 
 
+def schema_tappa1():
+    rossi = [(95, 50), (95, 110), (95, 190), (95, 250), (165, 105), (165, 195),
+             (225, 50), (225, 150), (225, 250), (320, 150)]
+    blu = [(405, 50), (405, 110), (405, 190), (405, 250), (335, 105), (335, 195),
+           (275, 50), (275, 100), (275, 200), (180, 150)]
+    gioc = "".join(g(x, y, "pA") for x, y in rossi) + "".join(g(x, y, "pB") for x, y in blu)
+    return f'''<svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="20" width="420" height="260"/><line x1="250" y1="20" x2="250" y2="280" stroke-dasharray="3 6"/></g>
+    <rect x="30" y="118" width="10" height="64" fill="#fff"/><rect x="460" y="118" width="10" height="64" fill="#fff"/>
+    {g(22, 150, "pP")}{g(478, 150, "pP")}
+    {gioc}
+    <use href="#palla" x="150" y="118"/>
+    {freccia("M175,112 L225,128", tratteggio=True)}{freccia("M245,140 L305,150", tratteggio=True)}{freccia("M335,148 L458,150", tratteggio=True)}
+    {freccia("M320,175 L355,165", True)}
+    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">LA PALLA DEVE ARRIVARE AL PORTIERE</text>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -209,6 +228,23 @@ POST = [
                "Da <b>8 contro 8</b> a <b>11 contro 11</b>. Con numeri dispari entra un <b>jolly</b> libero di muoversi"],
         fine_sub="Secondo gradino del percorso sulla <b>marcatura preventiva</b>. La Juniores che ha vinto il campionato <b>senza perdere una partita</b>.",
     ),
+    dict(
+        n=7, senza_foto=True, cop_schema=True, tema="oro",
+        gancio="Trova<span>il portiere</span>",
+        sub="Il gol non esiste · <b>Tappa 1 di 7</b>",
+        schema=schema_tappa1(),
+        titolo2="Ricerca del portiere",
+        testo2="<b>10 contro 10</b> in due metà campo, con un <b>portiere bersaglio</b> per lato corto. Non ci sono porte: ogni volta che la palla arriva al portiere avversario la squadra fa <b>1 punto</b>.",
+        obiettivo="<span>Obiettivo primario</span>Circolazione di palla funzionale<i>Ogni passaggio avvicina la palla al portiere</i><span class='sec'>Obiettivo secondario</span><i>Smarcarsi e testa alta</i>",
+        titolo3="Le regole",
+        punti=["<b>15 minuti</b>",
+               "Massimo <b>3 tocchi</b>",
+               "Portiere trovato = <b>1 punto</b>",
+               "Campo: <b>50 m</b> di lunghezza per tutta la larghezza, diviso in <b>due metà</b>",
+               "Chi difende resta <b>corto</b> e attento alle spalle"],
+        fine_sub="Prima tappa di un percorso in <b>7 tappe</b> per imparare a pressare insieme. Salva il post: la prossima tappa cambia le regole.",
+        azioni=["Salva il post", "Seguici per la tappa 2"],
+    ),
 ]
 
 FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>"
@@ -246,7 +282,7 @@ def slides(p, tot=None, h=1350):
   <div class="txt">
     <div class="kick">Gli Imbattibili · dai quaderni del mister</div>
     <h1>{p["gancio"]}</h1>
-    <p class="sub">{FIRMA}</p>
+    <p class="sub">{p.get("sub") or FIRMA}</p>
     <div class="scorri">Scorri →</div>
   </div>
 </section>
