@@ -1,11 +1,9 @@
-# "Chi apre perde" – materiale di invio (bozza del 19/10/2026)
+# Chi apre perde – materiale di invio (versione del 20/10/2026)
 
-Il testo del romanzo **non è qui**. Qui ci sono solo i testi di presentazione. Tutto va controllato dall'autore prima dell'invio.
-Segno con **[AGGIUNTO]** ciò che ho scritto io e che non viene da una sua frase; con **[DA COMPILARE]** ciò che solo lui sa.
+Il testo del romanzo non è qui. Sono i testi di presentazione, da controllare prima dell'invio.
+Aggiunti da Claude (da controllare): in lettera «amicizia maschile e ciò che non ci si chiede, con ironia e dolore»; in bio «primo romanzo» e «racconto di una stagione di calcio giovanile».
 
 ## 1. Sinossi (1658 caratteri, limite 2.000)
-Ricavata dal testo. Ho controllato i dettagli sul manoscritto (trattore, semaforo, 112, «Perché ci sei», gatto, Afterhours).
-**[AGGIUNTO]** le frasi di sintesi finali: «non spiega né assolve» e «quanto valga farla comunque». Da confermare se rispecchiano il suo intento.
 
 «Mi sto ammazzando, Matteo.» Matteo sta infilandosi la giacca per uscire dal lavoro quando Daniele, il suo migliore amico da quarant'anni, gli dice questa frase al telefono. Non trova le parole giuste e ne prende una sbagliata ma viva: «Accendi la televisione». Poi parte in macchina. Quaranta minuti per arrivare a casa di Daniele nel Mugello, con la sola promessa di essere lì.
 
@@ -15,20 +13,28 @@ Rileggendo mesi di messaggi, Matteo scopre di aver rimandato ogni invito. Quando
 
 Quando l'ambulanza parte, Matteo dà da mangiare al gatto e lascia accesa la televisione. Risale in macchina e fa partire gli Afterhours. Il navigatore resta spento. Il romanzo alterna ironia e dolore e non spiega né assolve: racconta quanto può costare una domanda fatta troppo tardi e quanto valga farla comunque.
 
-## 2. Lettera di presentazione (5-6 righe)
+## 2. Lettera di presentazione
+
 Gentile redazione,
-vi propongo il romanzo inedito «Chi apre perde» (circa 21.400 parole), una storia in prima persona che si svolge in quaranta minuti di strada: un uomo corre da un amico che gli ha telefonato per dirgli che sta per togliersi la vita. **[AGGIUNTO]** Il libro parla di amicizia maschile e di ciò che non ci si chiede, con un tono che tiene insieme ironia e dolore. Allego sinossi, nota biografica e le prime trenta pagine; il testo completo è disponibile su richiesta. **[DA COMPILARE]** Nome, cognome, telefono, email.
+
+vi propongo il romanzo inedito «Chi apre perde» (circa 21.400 parole), una storia in prima persona che si svolge in quaranta minuti di strada: un uomo corre da un amico che gli ha telefonato per dirgli che sta per togliersi la vita. Il libro parla di amicizia maschile e di ciò che non ci si chiede, con un tono che tiene insieme ironia e dolore.
+
+Allego sinossi, nota biografica e le prime trenta pagine. Il testo completo è disponibile su richiesta.
+
 Grazie dell'attenzione.
 
+Matteo Falleri
+[telefono e email: nel file inviato a Matteo]
+
 ## 3. Nota biografica
-**[DA COMPILARE]** Nome e cognome, anno e luogo di nascita, residenza.
-Matteo Falleri vive in Toscana e allena squadre di calcio da vent'anni. Ha pubblicato «Gli Imbattibili», il racconto della stagione di una Juniores provinciale che ha vinto il campionato senza perdere una partita. «Chi apre perde» è il suo primo romanzo. **[AGGIUNTO]** «primo romanzo» e «vive in Toscana»: da confermare. Se «Gli Imbattibili» è un libro in vendita su Amazon, dirlo: è meglio non nasconderlo.
+
+Matteo Falleri (Firenze, 1976) vive a Barberino di Mugello. Allena squadre di calcio da vent'anni e ha pubblicato «Gli Imbattibili», il racconto di una stagione di calcio giovanile. «Chi apre perde» è il suo primo romanzo.
 
 ## 4. Estratto da allegare (circa 30 pagine)
-Proposta: **Prologo + capitolo 1 + capitolo 2** (circa 39.900 caratteri, 26,6 cartelle) più l'inizio del capitolo 3 fino a un punto di pausa naturale (circa 4.500 caratteri). Il capitolo 2 contiene il gioco che dà il titolo al libro.
-Prima dell'invio: dalle pagine togliere copyright 2012 e ISBN vuoto; controllare i paragrafi del capitolo 3 con i dialoghi senza a capo.
+Prologo + capitolo 1 + capitolo 2 (circa 39.900 caratteri) più l'inizio del capitolo 3 fino a una pausa naturale (circa 4.500 caratteri).
+Prima dell'invio: togliere copyright 2012 e ISBN vuoto dal file e controllare i dialoghi senza a capo del capitolo 3.
 
 ## 5. Prima dell'invio a E/O (scade a mezzanotte del 31/10)
-1. Aprire la pagina contatti del sito E/O e leggere le regole del modulo **quel giorno**.
+1. Aprire la pagina contatti del sito E/O e leggere le regole del modulo il giorno dell'invio.
 2. Inviare una sola volta. Registrare data e conferma nel piano `libro-nuovo-piano-di-invio.md`.
 3. Non scrivere a E/O per sapere l'esito prima di 4 mesi.
