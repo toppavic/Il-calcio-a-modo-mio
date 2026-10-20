@@ -235,14 +235,16 @@ org1 = f'''<section class="page">
   <div class="ex-title"><h2>Le regole che non cambiano</h2></div>
   <h3 style="margin-top:4mm">Disposizione</h3>
   <div class="elenco">{lista([
-      "Due squadre di movimento, un portiere bersaglio per ciascuna estremità del campo. Le squadre attaccano in direzioni opposte.",
+      "Due squadre di movimento, un portiere bersaglio per ciascuna estremità del campo. Le squadre attaccano in direzioni opposte. Nel 7 contro 7 sono 7 giocatori di movimento per squadra più i 2 portieri.",
       "Per realizzare 1 o 3 punti una squadra deve trovare il portiere collocato all'estremità avversaria, che riceve e controlla la giocata dentro la porta. Per realizzare 2 punti serve invece un gol vero dopo un recupero nella metà campo offensiva.",
       "Nella ricerca ordinaria del bersaglio il portiere è un riferimento di ricezione: il punto da 1 o da 3 richiede un passaggio controllabile, non un tiro respinto o una deviazione fortuita. Nel caso del recupero alto, invece, la squadra cerca un gol reale: il portiere si comporta da portiere, difende la porta e prova a parare.",
+      "Il portiere bersaglio sta dentro la porta e può controllare il passaggio da 1 o da 3 punti con le mani o con i piedi.",
+      "Dopo un punto il gioco riparte dal portiere che ha ricevuto.",
       "Se la palla esce, rimessa dal punto di uscita secondo la modalità concordata con il gruppo (consigliata la rimessa con i piedi, per la continuità).",
       "In caso di fallo si interrompe e si riprende con un calcio libero. Evitare contatti con il portiere bersaglio e con le strutture della porta."])}</div>
   <h3 style="margin-top:5mm">Il punteggio</h3>
   <div class="punto"><div class="v">1</div><div><h4>Ricerca riuscita</h4>Il portiere bersaglio viene servito con un passaggio valido nel normale sviluppo del possesso.</div></div>
-  <div class="punto"><div class="v">2</div><div><h4>Riconquista alta e gol</h4>Una squadra riconquista il pallone nella metà campo offensiva: da quel momento può tirare nella porta avversaria. Se supera il portiere, che difende normalmente la porta, e segna un gol vero nell'azione nata dalla riconquista, ottiene 2 punti. La sola riconquista non vale punti. Se invece trova il portiere con un passaggio, vale 1 punto.</div></div>
+  <div class="punto"><div class="v">2</div><div><h4>Riconquista alta e gol</h4>Una squadra riconquista il pallone nella metà campo offensiva: da quel momento può tirare nella porta avversaria. Se supera il portiere, che difende normalmente la porta, e segna un gol vero nell'azione nata dalla riconquista, ottiene 2 punti. L'azione resta valida finché la squadra che ha riconquistato mantiene il possesso. La sola riconquista non vale punti. Se invece trova il portiere con un passaggio, vale 1 punto.</div></div>
   <div class="punto"><div class="v">3</div><div><h4>Passaggio diretto da lontano</h4>Un unico passaggio calciato dalla propria metà difensiva arriva direttamente al portiere bersaglio, che lo controlla regolarmente. Non basta indirizzare genericamente la palla verso la porta.</div></div>
   <p class="nota">I punti non si sommano: per ogni azione si assegna soltanto il valore più alto. In ogni tappa sono indicati i punteggi attivi; gli altri non valgono.</p>
   {footer()}
