@@ -171,7 +171,12 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   (se cambiano: rigenerare HTML senza la cartella, `render-copertine.js`, PNG → JPG, rigenerare). Annuncio Etsy: conversazione MARKETING.
 - **Regola dei percorsi tematici (17/10, allenatore)**: pacchetti **professionali** in scrittura, grafica e impaginazione;
   progressione **sempre dal facile al difficile**. Prima si costruisce il contenuto con lui, poi si impagina.
-- Percorso "Ricerca del portiere" (**7 tappe**, confermate il 17/10): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
+- **Percorso 1 "La ricerca del portiere" (20/10 sera, dal pacchetto editoriale dell'allenatore)**: brand **"Il calcio a modo mio · Dai quaderni del mister · Percorso 1"**,
+  PDF 14 pagine da `genera-percorso-ricerca-portiere.py` (copertina verde scura, guida, organizzazione, quadro sinottico, 7 tappe, scheda di osservazione).
+  Regole: punti non cumulabili (1 portiere trovato · 2 **gol vero** dopo riconquista nella metà offensiva, il portiere para · 3 passaggio diretto
+  dalla propria metà difensiva controllato dal portiere); tocchi = massimo; orizzontale non vietato; jolly facoltativo; campi 40×30, 44×32, 48×36,
+  54×40, 60×46; ogni tappa **8' + 8'**. Punti aperti in `prodotti/percorsi/ricerca-del-portiere/punti-aperti.md`.
+- (storico) Percorso "Ricerca del portiere" (**7 tappe**, confermate il 17/10): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
   **non impaginare finché l'allenatore non approva il pacchetto**.
   **20/10 sera, rifatto (l'allenatore: la prima versione era confusa)**. Regole per tutti i percorsi:
   **staccati da Gli Imbattibili** (niente Juniores, niente "Allenamento N, tempo M", niente rimandi ai pacchetti: sono due cose
