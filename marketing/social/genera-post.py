@@ -234,17 +234,20 @@ POST = [
         sub="Un giocatore che pressa da solo <b>non serve</b>.",
         kicker2="La ricerca del portiere",
         titolo2="Vuoi una squadra che&hellip;",
-        lista2=["<b>pressi alto</b>?",
-                "sappia leggere <b>palla coperta</b> e <b>palla scoperta</b>?",
-                "<b>verticalizzi</b> in fretta e con qualità?",
-                "faccia circolare la palla in modo <b>funzionale</b>, non fine a se stesso?"],
-        titolo3="Una progressione",
-        punti=["<b>7 tappe</b>",
-               "Dalla <b>più facile</b> alla <b>più difficile</b>",
-               "Tappa dopo tappa cambiano <b>solo le regole</b>",
-               "Con le regole cambia <b>il modo di stare in campo</b>"],
-        fine_sub="Il percorso completo sulla <b>ricerca del portiere</b> arriva presto su Etsy. Il link è nella bio.",
-        fine_sub_tt="Il percorso completo sulla <b>ricerca del portiere</b> arriva presto su Etsy. Cercaci: <b>ilcalcioamodomio</b>.",
+        lista2=["metta <b>pressione</b> prima che l'avversario abbia il tempo di lanciare?",
+                "sappia <b>accorciare</b> senza regalare spazio alle proprie spalle?",
+                "riconosca il momento in cui deve <b>scappare</b> e proteggere la profondità?",
+                "sappia <b>verticalizzare</b> con precisione, invece di buttare avanti il pallone?"],
+        kicker3="La ricerca del portiere",
+        titolo3="E se per allenare tutto questo non dovessi segnare un gol?",
+        punti=["Il bersaglio è il <b>portiere avversario</b>",
+               "Chi attacca deve <b>trovarlo con precisione</b>",
+               "Chi difende deve <b>impedire che venga trovato</b>",
+               "Due squadre. Due problemi. <b>Decisioni continue</b>"],
+        titolo_ob="Una progressione",
+        obiettivo="<span>7 tappe</span>Non servono 7 esercizi diversi<i>Serve una progressione che abbia un senso</i>",
+        fine_sub="Difficoltà crescente. Regole che cambiano per allenare decisioni sempre più complesse. La progressione completa <b>ricerca del portiere</b> arriva presto su Etsy. Link in bio.",
+        fine_sub_tt="Difficoltà crescente. Regole che cambiano per allenare decisioni sempre più complesse. La progressione completa <b>ricerca del portiere</b> arriva presto su Etsy. Cercaci: <b>ilcalcioamodomio</b>.",
         azioni=["Salva il post", "Seguici per l'uscita"],
     ),
     dict(
@@ -308,12 +311,12 @@ def slides(p, tot=None, h=1350):
 {slide2}
 <section class="slide int">
   {num(3)}
-  <div class="kicker">{p["titolo2"]}</div>
+  <div class="kicker">{p.get("kicker3") or p["titolo2"]}</div>
   <h2>{p["titolo3"]}</h2>
   <ul class="punti">{punti}</ul>
   {marchio}
 </section>
-{('<section class="slide int">' + num(4) + '<div class="kicker">' + p["titolo2"] + '</div><h2>Gli obiettivi</h2><div class="obiettivo">' + p["obiettivo"] + '</div>' + marchio + '</section>') if p.get("obiettivo") else ''}
+{('<section class="slide int">' + num(4) + '<div class="kicker">' + (p.get("kicker3") or p["titolo2"]) + '</div><h2>' + p.get("titolo_ob", "Gli obiettivi") + '</h2><div class="obiettivo">' + p["obiettivo"] + '</div>' + marchio + '</section>') if p.get("obiettivo") else ''}
 <section class="slide fine">
   <img class="logo2" src="{MAT}/brand/logo-cerchio.png">
   <h1>Gli<span>Imbattibili</span></h1>
