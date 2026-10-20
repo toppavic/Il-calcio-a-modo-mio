@@ -1,5 +1,9 @@
 """Genera percorso-ricerca-del-portiere.html: Percorso 1 · La ricerca del portiere (7 tappe).
 
+Il percorso è un prodotto a sé, staccato da Gli Imbattibili (20/10): niente riferimenti agli allenamenti
+o alla Juniores. Regole fisse per tutte le tappe: giocatori e campo dalla tabella, 2 tempi da 15',
+jolly solo se dispari, punti sempre uguali (portiere 1, recupero alto e gol 2, lancio dalla metà difensiva 3).
+
 Contenuti decisi con l'allenatore il 17/10 (vedi prodotti/percorsi/ricerca-del-portiere/bozza.md):
 progressione sempre dal facile al difficile, scrittura e grafica professionali.
 Uso: python3 genera-percorso-ricerca-portiere.py  poi  render.js sul file .html
@@ -12,7 +16,7 @@ TITOLO_PIEDE = "Percorso 1 · La ricerca del portiere"
 
 testa = a2[: a2.index("<!-- 1. COPERTINA -->")]
 testa = testa.replace("<title>Gli Imbattibili – Precampionato, Allenamento 2</title>",
-                      "<title>Gli Imbattibili – La ricerca del portiere</title>")
+                      "<title>Il calcio a modo mio – La ricerca del portiere</title>")
 testa = testa.replace("</style>\n</head>", """
 .cop { background: #0d1c2e; color: #fff; padding: 0 !important; }
 .cop .campo { position: absolute; left: 15mm; top: 84mm; width: 180mm; opacity: .9; }
@@ -47,6 +51,13 @@ testa = testa.replace("</style>\n</head>", """
 .punti { display: flex; gap: 2mm; flex-wrap: wrap; margin-top: 1.5mm; }
 .punti span { background: var(--verde); color: #fff; border-radius: 1.5mm; padding: 1mm 2.5mm; font-size: 8.8pt; }
 .punti span b { color: var(--oro); font-family: Oswald, sans-serif; font-size: 10.5pt; margin-right: 1mm; }
+.scala { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin-top: 2mm; }
+.scala div { border-radius: 2mm; padding: 2.5mm 3mm; background: var(--verde); color: #fff; font-size: 9pt; line-height: 1.3; display: flex; gap: 2.5mm; align-items: center; }
+.scala div b { font-family: Oswald, sans-serif; font-size: 20pt; color: var(--oro); line-height: 1; }
+.scala div.off { background: #eef1ee; color: #9aa7a1; text-decoration: line-through; }
+.scala div.off b { color: #c3ccc7; }
+.vincoli { display: flex; gap: 2mm; flex-wrap: wrap; }
+.vincoli span { background: #fbf6e6; border: 1px solid #ecd9a0; color: #7a5c0c; border-radius: 1.5mm; padding: 1.2mm 3mm; font-size: 9.5pt; font-weight: 600; }
 .fonte { position: absolute; left: 18mm; right: 18mm; bottom: 16mm; font-size: 8pt; color: var(--tenue); font-style: italic; }
 .campi { width: 100%; border-collapse: collapse; margin-top: 2mm; }
 .campi td { padding: 2.6mm 2mm; border-bottom: 1px solid #e3e8e5; font-size: 10pt; }
@@ -61,7 +72,7 @@ PAG = [0]
 
 def footer():
     PAG[0] += 1
-    return (f'<div class="footer"><b>GLI IMBATTIBILI</b><span>{TITOLO_PIEDE}</span>'
+    return (f'<div class="footer"><b>IL CALCIO A MODO MIO</b><span>{TITOLO_PIEDE}</span>'
             f'<span>{PAG[0]}</span></div>')
 
 
@@ -111,35 +122,31 @@ def campo(contenuto, rossi=ROSSI, blu=BLU, larghezza="150mm", jolly=None):
   </svg>'''
 
 
-def pagina_tappa(n, titolo, fonte, chips, cambia, obiettivo, schema, regole_html, org, svol, chiave):
-    chips_html = "".join(f'<span class="chip">{c}</span>' for c in chips)
+
+PUNTI = [(1, "Portiere trovato"), (2, "Recupero nella metà offensiva e gol"), (3, "Lancio dalla metà difensiva al portiere")]
+
+
+def scala(validi):
+    return '<div class="scala">' + "".join(
+        f'<div class="{"" if p in validi else "off"}"><b>{p}</b><span>{t}</span></div>' for p, t in PUNTI) + "</div>"
+
+
+def pagina_tappa(n, titolo, tocchi, vincoli, cambia, obiettivo, schema, validi, chiave):
+    vinc = "".join(f"<span>{v}</span>" for v in [f"Massimo {tocchi} tocchi"] + vincoli)
     return f'''<section class="page">
   <div class="kicker">Tappa {n} di 7</div>
   <div class="ex-title"><h2>{titolo}</h2></div>
-  <div class="ex-sub">{chips_html}</div>
+  <div class="ex-sub"><span class="chip">2 tempi da 15'</span><span class="chip">Da 7 contro 7 a 11 contro 11</span><span class="chip">Campo secondo la tabella</span></div>
   <div class="cambia"><b class="k">Cosa cambia</b><span>{cambia}</span></div>
   <p class="obj"><b>Obiettivo:</b> {obiettivo}</p>
   {schema}
-  <div class="regole">{regole_html}</div>
-  <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">{org}</ul></div>
-    <div class="box"><h4>Svolgimento</h4>{svol}</div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">{chiave}</ul></div>
-  </div>
-  <div class="fonte">Dagli Imbattibili: {fonte}</div>
+  <h3 style="margin-top:5mm">Regole</h3>
+  <div class="vincoli">{vinc}</div>
+  <h3 style="margin-top:4mm">Punti</h3>
+  {scala(validi)}
+  <div class="box" style="margin-top:5mm"><h4>Punti chiave</h4><ul class="clean">{chiave}</ul></div>
   {footer()}
 </section>'''
-
-
-def regola(titolo, righe, punti=()):
-    pts = "".join(f'<span><b>{p}</b>{t}</span>' for p, t in punti)
-    pts_html = f'<div class="punti">{pts}</div>' if punti else ""
-    li = "".join(f"<li>{r}</li>" for r in righe)
-    return f'<div class="box"><h4>{titolo}</h4><ul class="clean">{li}</ul>{pts_html}</div>'
-
-
-def due_regole(a, b):
-    return f'<div style="display:grid;grid-template-columns:1fr 1fr;gap:3mm">{a}{b}</div>'
 
 
 # ======================================================================
@@ -158,9 +165,9 @@ copertina = f'''<section class="page cop">
   <img class="logo" src="../../materiale/brand/logo-cerchio.png">
   {campo_cop}
   <div class="txt">
-    <div class="kick">Gli Imbattibili · Percorso 1</div>
+    <div class="kick">Il calcio a modo mio · Percorso 1</div>
     <h1>La ricerca<span>del portiere</span></h1>
-    <p class="sub"><b>7 tappe in progressione</b> per costruire una squadra che pressa alto, verticalizza con qualità e fa circolare la palla in modo funzionale. Dai quaderni dell'allenatore della Juniores che ha vinto il campionato senza perdere una partita.</p>
+    <p class="sub"><b>7 tappe in progressione, dalla più facile alla più difficile,</b> per costruire una squadra che pressa alto, legge la palla, verticalizza con qualità e fa circolare la palla in modo funzionale.</p>
   </div>
 </section>'''
 
@@ -176,27 +183,26 @@ presentazione = f'''<section class="page">
     <p>Che faccia circolare la palla in modo funzionale, non fine a se stesso?</p>
   </div>
   <div class="testo">
-    <p>La <b>ricerca del portiere</b> è la partita a tema con cui la Juniores che ha vinto il campionato provinciale senza perdere una partita ha costruito il suo modo di stare in campo, dal primo giorno di precampionato fino al campionato.</p>
-    <p>Il principio è semplice: per fare punto bisogna far arrivare la palla al <b>portiere avversario</b>, che fa da bersaglio dentro la sua porta. Ogni passaggio deve avere uno scopo: avvicinare la palla al bersaglio.</p>
-    <p>Tappa dopo tappa cambiano solo le regole (tocchi, vincoli e punteggi) e con le regole cambiano i comportamenti. Chi attacca impara a smarcarsi, a verticalizzare e a pressare alto. Chi difende impara a leggere la palla: scappare quando è scoperta, accorciare quando è coperta, restare corto e compatto per togliere le filtranti.</p>
+    <p>La <b>ricerca del portiere</b> è una partita a tema: per fare punto bisogna far arrivare la palla al <b>portiere avversario</b>, che fa da bersaglio dentro la sua porta. Ogni passaggio deve avere uno scopo: avvicinare la palla al bersaglio.</p>
+    <p>Il pressing è questione di corsa e <b>si impara a correre insieme, come squadra</b>. Tappa dopo tappa cambiano solo le regole e con le regole cambiano i comportamenti: chi attacca impara a smarcarsi, a verticalizzare e a pressare alto; chi difende impara a leggere la palla e a restare corto e compatto.</p>
   </div>
   <h3 style="margin-top:4mm">Obiettivi</h3>
   <div class="obiettivi">
     <div class="box"><h4>Con la palla</h4><ul class="clean">
-      <li><b>Circolazione di palla funzionale</b>: ogni passaggio serve ad avanzare verso il bersaglio, non a tenere palla.</li>
+      <li><b>Circolazione di palla funzionale</b>: ogni passaggio serve ad avanzare verso il bersaglio.</li>
       <li><b>Verticalizzazione rapida e di qualità</b>: pochi tocchi, passaggi in avanti, smarcamenti tra le linee.</li>
     </ul></div>
     <div class="box"><h4>Senza palla</h4><ul class="clean">
-      <li><b>Pressione alta</b>: chi perde palla aggredisce subito e il recupero vicino alla porta avversaria vale di più.</li>
+      <li><b>Pressione alta</b>: persa palla si aggredisce subito.</li>
       <li><b>Palla coperta e palla scoperta</b>: con palla scoperta la linea difensiva scappa e toglie profondità, con palla coperta accorcia in avanti.</li>
-      <li><b>Linea compatta</b>: reparti corti e vicini per togliere le filtranti.</li>
+      <li><b>Linea compatta</b>: reparti corti per togliere le filtranti.</li>
     </ul></div>
   </div>
   {footer()}
 </section>'''
 
 # ======================================================================
-# 3. REGOLE DI BASE, CAMPI, LEGENDA
+# 3. REGOLE FISSE
 def pallino(colore, bordo="#fff"):
     return f'<svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="{colore}" stroke="{bordo}" stroke-width="2"/></svg>'
 
@@ -206,28 +212,25 @@ passaggio = '<svg width="40" height="14"><path d="M2,7 L30,7" stroke="#5d6b65" s
 
 base = f'''<section class="page">
   <div class="kicker">Prima di cominciare</div>
-  <div class="ex-title"><h2>Le regole di base</h2></div>
-  <div class="regole" style="margin-top:4mm">
-    <div class="box"><h4>Il bersaglio</h4>Ogni squadra attacca verso il portiere avversario. Il punto è valido solo quando il portiere riceve la palla <b>stando dentro la porta</b>: così il passaggio deve essere preciso e pulito.</div>
-    <div class="box"><h4>Il jolly</h4>Se i giocatori sono in numero dispari si gioca con un <b>jolly che sta sempre con la squadra in possesso</b>. Con la palla si impara a sfruttare la superiorità numerica, senza palla a gestire l'inferiorità.</div>
-    <div class="box"><h4>La progressione</h4>Le tappe vanno <b>dalla più facile alla più difficile</b>. Ognuna aggiunge una regola alla precedente: si passa alla tappa successiva quando la squadra ha fatto suoi i comportamenti di quella prima.</div>
+  <div class="ex-title"><h2>Le regole fisse</h2></div>
+  <p class="obj">Valgono in tutte e 7 le tappe. Le tappe cambiano solo i tocchi, i vincoli e quali punti valgono.</p>
+  <div class="regole">
+    <div class="box"><h4>Il bersaglio</h4>Ogni squadra attacca verso il portiere avversario. Il punto vale solo se il portiere riceve la palla <b>stando dentro la porta</b>.</div>
+    <div class="box"><h4>I punti</h4>Sono sempre gli stessi. In ogni tappa trovi quali valgono.{scala([1, 2, 3])}</div>
+    <div class="box"><h4>Durata e jolly</h4><b>2 tempi da 15'</b>. Con un numero dispari di giocatori si aggiunge un <b>jolly sempre con la squadra in possesso</b>.</div>
   </div>
-
-  <h3 style="margin-top:7mm">Il campo in base ai giocatori</h3>
+  <h3 style="margin-top:6mm">Giocatori e campo</h3>
   <table class="campi">
     <tr><td>7 c 7 · 8 c 8</td><td>50 m di lunghezza × 40 m di larghezza</td></tr>
     <tr><td>9 c 9</td><td>Metà campo regolamentare (circa 50-55 × 65 m)</td></tr>
     <tr><td>10 c 10</td><td>Circa 60 m di lunghezza × tutta la larghezza del campo</td></tr>
     <tr><td>11 c 11</td><td>Tre quarti di campo (circa 70-75 × 65 m)</td></tr>
   </table>
-  <p class="obj" style="margin-top:2mm;font-size:9pt">In ogni tappa trovi il numero di giocatori con cui è stata fatta. Per giocare con un numero diverso usa questa tabella.</p>
-
   <h3 style="margin-top:6mm">Come leggere gli schemi</h3>
   <div class="legenda">
-    <div>{pallino("#c8372d")} Squadra rossa: attacca verso destra</div>
-    <div>{pallino("#2a5db0")} Squadra blu: attacca verso sinistra</div>
-    <div>{pallino("#f2c230", "#1d2421")} Portiere bersaglio, dentro la porta</div>
-    <div>{pallino("#ffffff", "#1d2421")} Jolly con chi ha la palla</div>
+    <div>{pallino("#c8372d")} Rossi: attaccano verso destra</div>
+    <div>{pallino("#2a5db0")} Blu: attaccano verso sinistra</div>
+    <div>{pallino("#f2c230", "#1d2421")} Portiere bersaglio</div>
     <div>{freccia_oro} Movimento o pressione</div>
     <div>{passaggio} Passaggio o lancio</div>
   </div>
@@ -235,28 +238,27 @@ base = f'''<section class="page">
 </section>'''
 
 # ======================================================================
-# 4. MAPPA DELLA PROGRESSIONE
+# 4. MAPPA
 MAPPA = [
-    ("Trovare il portiere", "3 tocchi", "Portiere trovato: 1 punto", "Smarcarsi, testa alta, circolazione funzionale"),
-    ("Leggere la profondità", "2 tocchi", "Il lancio dalla metà difensiva vale 2 punti", "Palla scoperta: lanciare o scappare"),
-    ("Solo verticale", "3 tocchi · solo verticale", "Niente passaggi orizzontali", "Verticalizzare"),
-    ("Cambiare reparto e recuperare alto", "2 tocchi · no compagno di reparto", "Conta anche il recupero nella metà offensiva", "Giocare tra le linee, prima pressione"),
-    ("Pressione senza lancio", "3 tocchi · no lancio", "Recupero alto e gol: 3 punti", "Pressione alta, palla coperta"),
-    ("Costruire e pressare", "2 tocchi · no lancio", "1, 2 o 3 punti", "Costruzione da dietro e riconquista alta"),
-    ("La partita completa", "3 tocchi · da 7c7 a 11c11", "1, 2 o 3 punti con il lancio", "Tutto insieme, a squadre intere"),
+    ("Trovare il portiere", "3 tocchi", "1"),
+    ("Leggere la profondità", "3 tocchi", "1 · 3"),
+    ("Solo verticale", "3 tocchi · solo verticale", "1 · 3"),
+    ("Cambiare reparto", "2 tocchi · no compagno di reparto", "1 · 2 · 3"),
+    ("Pressione senza lancio", "2 tocchi · no lancio", "1 · 2"),
+    ("Pressione e verticalità", "2 tocchi · no lancio · solo verticale", "1 · 2"),
+    ("La partita completa", "3 tocchi · tutto libero", "1 · 2 · 3"),
 ]
 righe = "".join(
-    f'<tr><td class="n">{i}</td><td><div class="t">{t}</div><div class="f">{v}</div></td><td>{c}</td><td>{f}</td></tr>'
-    for i, (t, v, c, f) in enumerate(MAPPA, 1))
+    f'<tr><td class="n">{i}</td><td class="t">{t}</td><td>{v}</td><td style="font-family:Oswald;color:var(--oro);font-size:12pt">{p}</td></tr>'
+    for i, (t, v, p) in enumerate(MAPPA, 1))
 salita = "".join(f'<div style="height:{30 + i * 10}%">{i + 1}</div>' for i in range(7))
 
 mappa = f'''<section class="page">
   <div class="kicker">La progressione</div>
   <div class="ex-title"><h2>Le 7 tappe dal facile al difficile</h2></div>
   <div class="salita">{salita}</div>
-  <p class="obj" style="font-size:9pt">Ogni tappa aggiunge una sola regola: tocchi, vincoli o punteggi. La difficoltà cresce un passo alla volta.</p>
   <table class="mappa">
-    <tr><th></th><th>Tappa e vincoli</th><th>Cosa si aggiunge</th><th>Cosa allena</th></tr>
+    <tr><th></th><th>Tappa</th><th>Regole</th><th>Punti validi</th></tr>
     {righe}
   </table>
   {footer()}
@@ -264,143 +266,75 @@ mappa = f'''<section class="page">
 
 # ======================================================================
 # 5-11. LE TAPPE
-CHIP_10 = ["10 contro 10 + 2 portieri", "Campo 50 m × tutta la larghezza"]
+base_passaggi = (freccia("M150,146 L200,100", tratteggio=True) + freccia("M210,96 L295,84", tratteggio=True)
+                 + freccia("M305,84 L372,144", tratteggio=True) + freccia("M388,150 L455,150", tratteggio=True)
+                 + '<use href="#palla" x="160" y="160"/>')
+lancio = (freccia("M85,214 Q270,40 455,146", tratteggio=True) + '<use href="#palla" x="96" y="230"/>'
+          + etichetta(255, 42, "LANCIO DALLA METÀ DIFENSIVA · 3", "#f2c230", 11))
+pressione = (freccia("M300,210 L340,165", oro=True) + freccia("M380,164 L358,158", oro=True)
+             + freccia("M300,90 L338,138", oro=True)
+             + freccia("M356,150 L455,150", tratteggio=True) + etichetta(330, 262, "RECUPERO ALTO E GOL · 2", "#f2c230", 11))
 
-t1 = pagina_tappa(
-    1, "Trovare il portiere", "Allenamento 1, primo tempo",
-    ["15 minuti"] + CHIP_10 + ["3 tocchi"],
+t1 = pagina_tappa(1, "Trovare il portiere", 3, [],
     "È il punto di partenza: si impara il gioco e il suo bersaglio.",
-    "circolazione di palla funzionale. Smarcarsi, giocare a testa alta e far arrivare la palla al portiere avversario.",
-    campo(freccia("M150,146 L200,100", tratteggio=True) + freccia("M210,96 L295,84", tratteggio=True)
-          + freccia("M305,84 L372,144", tratteggio=True) + freccia("M388,150 L455,150", tratteggio=True)
-          + '<use href="#palla" x="160" y="160"/>' + etichetta(430, 135, "1 PUNTO", "#f2c230", 12)),
-    regola("Regole", ["Massimo <b>3 tocchi</b>"], [("1", "punto ogni volta che il portiere riceve la palla")]),
-    "<li>Campo diviso in due metà</li><li>Due squadre, un portiere bersaglio per lato</li>",
-    "<p>Le squadre si contendono la palla. Chi è in possesso deve farla arrivare al portiere del lato che attacca.</p>",
-    "<li>Smarcarsi sempre per offrire una linea di passaggio</li><li>Guardare il portiere prima di ricevere</li><li>Chi difende resta corto</li>")
+    "smarcarsi, giocare a testa alta e far arrivare la palla al portiere.",
+    campo(base_passaggi + etichetta(430, 135, "1", "#f2c230", 14)), [1],
+    "<li>Smarcarsi sempre per offrire una linea di passaggio</li><li>Guardare il portiere prima di ricevere</li>")
 
-t2 = pagina_tappa(
-    2, "Leggere la profondità", "Allenamento 1, secondo tempo (e Allenamento 2, primo tempo)",
-    ["15 minuti"] + CHIP_10 + ["2 tocchi"],
-    "I tocchi scendono a 2 e il lancio dalla metà difensiva vale doppio.",
-    "riconoscere la palla scoperta. Chi attacca capisce quando c'è il tempo per il lancio; la linea che difende capisce quando deve scappare.",
-    campo(freccia("M85,214 Q270,40 455,146", tratteggio=True) + '<use href="#palla" x="96" y="230"/>'
-          + etichetta(255, 42, "LANCIO · 2 PUNTI", "#f2c230", 12)
-          + freccia("M415,92 L440,70", oro=True) + freccia("M415,208 L440,230", oro=True)
-          + freccia("M350,140 L395,118", oro=True)
-          + etichetta(395, 265, "LA LINEA SCAPPA", "#ffffff", 10)),
-    regola("Regole", ["Massimo <b>2 tocchi</b>"],
-           [("1", "portiere trovato dalla metà offensiva"), ("2", "portiere trovato con un lancio dalla metà difensiva")]),
-    "<li>Come la tappa 1</li><li>Metà difensiva e metà offensiva ben segnate</li>",
-    "<p>Si gioca a 2 tocchi. Il lancio dalla propria metà campo è premiato: chi difende deve leggere quando il portatore è libero.</p>",
-    "<li>Lanciare solo con palla scoperta</li><li>Con palla scoperta la linea scappa e toglie profondità</li><li>Chi è vicino al portatore lo pressa per coprire la palla</li>")
+t2 = pagina_tappa(2, "Leggere la profondità", 3, [],
+    "Vale anche il lancio dalla metà difensiva, 3 punti.",
+    "riconoscere la palla scoperta: chi attacca lancia, la linea che difende scappa e toglie profondità.",
+    campo(lancio + freccia("M415,92 L440,70", oro=True) + freccia("M415,208 L440,230", oro=True)
+          + etichetta(395, 265, "LA LINEA SCAPPA", "#ffffff", 10)), [1, 3],
+    "<li>Lanciare solo con palla scoperta</li><li>Con palla scoperta la linea scappa</li><li>Chi è vicino al portatore lo pressa per coprire la palla</li>")
 
-t3 = pagina_tappa(
-    3, "Solo verticale", "Allenamento 2, secondo tempo",
-    ["15 minuti"] + CHIP_10 + ["3 tocchi", "Solo verticale"],
-    "Sparisce il passaggio orizzontale: si gioca solo in avanti, all'indietro o in diagonale.",
-    "verticalizzare. La squadra deve cercare sempre la linea davanti e smarcarsi in diagonale rispetto alla palla.",
+t3 = pagina_tappa(3, "Solo verticale", 3, ["Solo verticale: mai passaggi orizzontali"],
+    "Sparisce il passaggio orizzontale.",
+    "verticalizzare: passaggi in avanti, all'indietro o in diagonale.",
     campo(freccia("M85,86 L198,96", tratteggio=True) + no(140, 90)
           + freccia("M92,84 L142,140", tratteggio=True) + freccia("M158,148 L292,86", tratteggio=True)
-          + freccia("M306,84 L372,146", tratteggio=True) + '<use href="#palla" x="97" y="96"/>'),
-    regola("Regole", ["Massimo <b>3 tocchi</b>", "<b>Solo gioco verticale</b>: passaggi in avanti, all'indietro o in diagonale, mai orizzontali"],
-           [("1", "portiere trovato dalla metà offensiva"), ("2", "portiere trovato con un lancio dalla metà difensiva")]),
-    "<li>Come le tappe precedenti</li>",
-    "<p>Stesso punteggio della tappa 2. Il passaggio orizzontale è vietato: se c'è, la palla passa agli avversari.</p>",
-    "<li>Smarcarsi in diagonale, mai in linea con il portatore</li><li>Lo scarico all'indietro prepara la verticalizzazione</li><li>Chi difende chiude le linee centrali</li>")
+          + freccia("M306,84 L372,146", tratteggio=True) + '<use href="#palla" x="97" y="96"/>'), [1, 3],
+    "<li>Smarcarsi in diagonale, mai in linea con il portatore</li><li>Lo scarico all'indietro prepara la verticalizzazione</li>")
 
-t4 = pagina_tappa(
-    4, "Cambiare reparto e recuperare alto", "Allenamento 5, primo tempo",
-    ["15 minuti"] + CHIP_10 + ["2 tocchi", "No compagno di reparto"],
-    "Vietato passare al compagno del proprio reparto. Per la prima volta conta anche il recupero nella metà offensiva.",
-    "giocare tra le linee coinvolgendo tutti i reparti e dare la prima spinta alla pressione alta.",
+t4 = pagina_tappa(4, "Cambiare reparto", 2, ["Vietato passare al compagno di reparto (gli attaccanti a chi vogliono)"],
+    "Si scende a 2 tocchi, niente passaggi al compagno di reparto e vale anche il recupero alto con gol.",
+    "giocare tra le linee coinvolgendo tutti i reparti e cominciare a pressare alto.",
     campo(freccia("M85,214 L85,92", tratteggio=True) + no(85, 150)
-          + freccia("M92,214 L198,104", tratteggio=True) + '<use href="#palla" x="97" y="230"/>'
-          + freccia("M300,210 L340,165", oro=True) + freccia("M380,164 L355,160", oro=True)
-          + etichetta(330, 255, "RECUPERO ALTO", "#f2c230", 11)),
-    regola("Regole", ["Massimo <b>2 tocchi</b>", "Vietato passare al <b>compagno di reparto</b> (gli attaccanti possono passarla a chi vogliono)"],
-           [("2", "portiere trovato con un lancio dalla metà difensiva"), ("1", "portiere trovato dopo un recupero nella metà offensiva")]),
-    "<li>Come le tappe precedenti</li><li>Reparti chiari: difesa, centrocampo, attacco</li>",
-    "<p>Il punto vale solo se il portiere viene trovato con un lancio dalla metà difensiva o dopo un recupero nella metà offensiva.</p>",
-    "<li>Cercare il compagno della linea davanti o dietro</li><li>Persa palla, aggredire subito</li><li>La linea difensiva legge la palla e scappa se è scoperta</li>")
+          + freccia("M92,214 L198,104", tratteggio=True) + '<use href="#palla" x="97" y="230"/>' + pressione), [1, 2, 3],
+    "<li>Cercare il compagno della linea davanti o dietro</li><li>Persa palla, aggredire subito</li>")
 
-ROSSI7 = [(110, 95), (110, 205), (190, 150), (280, 90), (280, 210), (345, 150), (400, 110)]
-BLU7 = [(425, 175), (390, 220), (320, 115), (240, 150), (200, 80), (170, 220), (95, 150)]
+t5 = pagina_tappa(5, "Pressione senza lancio", 2, ["No lancio"],
+    "Il lancio è vietato: al portiere si arriva solo palla a terra.",
+    "pressione alta. Senza lancio la palla è spesso coperta: la squadra accorcia in avanti e la linea sale.",
+    campo(pressione), [1, 2],
+    "<li>Si pressa tutti insieme, correndo come squadra</li><li>Con palla coperta la linea accorcia in avanti</li><li>Dopo il recupero attaccare subito la porta</li>")
 
-t5 = pagina_tappa(
-    5, "Pressione senza lancio", "Allenamento 16",
-    ["30 minuti · 2 tempi da 15'", "7 contro 7 + jolly", "Campo 50 × 40 m", "3 tocchi", "No lancio"],
-    "Il lancio è vietato: al portiere si arriva solo palla a terra. Il recupero nella metà offensiva diventa il premio più grande.",
-    "pressione alta. Senza lancio la palla è spesso coperta: la squadra senza palla può accorciare in avanti e la linea difensiva salire.",
-    campo(freccia("M345,162 L378,206", oro=True) + freccia("M400,122 L392,198", oro=True)
-          + freccia("M280,198 L372,212", oro=True) + '<use href="#palla" x="398" y="226"/>'
-          + freccia("M370,214 L455,160", tratteggio=True) + etichetta(300, 262, "RECUPERO ALTO E GOL · 3 PUNTI", "#f2c230", 11),
-          rossi=ROSSI7, blu=BLU7, jolly=(250, 60), larghezza="136mm"),
-    due_regole(regola("1° tempo · 15'", ["Massimo <b>3 tocchi</b>", "<b>No lancio</b>"],
-                      [("1", "portiere trovato"), ("3", "gol dopo un recupero nella metà offensiva")]),
-               regola("2° tempo · 15'", ["Stesse regole", "In più <b>solo gioco verticale</b>"])),
-    "<li>Due squadre da 7 e un jolly con chi ha palla</li><li>Un portiere per lato</li>",
-    "<p>Dopo un recupero nella metà offensiva si può tirare in porta: il gol vale 3 punti. Nel 2° tempo si aggiunge il gioco verticale.</p>",
-    "<li>Pressione immediata quando si perde palla</li><li>Dopo il recupero attaccare subito la porta</li><li>Con palla coperta la linea accorcia in avanti</li>")
+t6 = pagina_tappa(6, "Pressione e verticalità", 2, ["No lancio", "Solo verticale"],
+    "Alla pressione senza lancio si aggiunge il gioco solo verticale.",
+    "pressare alto e, dopo il recupero, verticalizzare subito senza passaggi orizzontali.",
+    campo(pressione + freccia("M150,146 L200,100", tratteggio=True) + freccia("M210,96 L295,84", tratteggio=True)
+          + '<use href="#palla" x="160" y="160"/>'), [1, 2],
+    "<li>Recupero e prima giocata in avanti</li><li>Reparti corti per togliere le filtranti</li>")
 
-t6 = pagina_tappa(
-    6, "Costruire e pressare", "Allenamento 17",
-    ["30 minuti · 2 tempi da 15'", "7 contro 7", "Metà campo larga quanto l'area", "2 tocchi", "No lancio"],
-    "Tre modi diversi di fare punto: il punteggio premia sia la costruzione da dietro sia la riconquista alta.",
-    "costruire da dietro e pressare alto nella stessa partita. Chi trova il portiere partendo dalla metà difensiva vale il doppio.",
-    campo(freccia("M110,103 L182,146", tratteggio=True) + freccia("M196,146 L272,94", tratteggio=True)
-          + freccia("M288,90 L455,146", tratteggio=True) + '<use href="#palla" x="122" y="112"/>'
-          + etichetta(360, 42, "DA DIETRO · 2 PUNTI", "#f2c230", 11)
-          + freccia("M345,162 L385,212", oro=True) + etichetta(330, 262, "RECUPERO ALTO E GOL · 3 PUNTI", "#f2c230", 11),
-          rossi=ROSSI7, blu=BLU7, larghezza="122mm"),
-    due_regole(regola("1° tempo · 15'", ["Massimo <b>2 tocchi</b> · <b>no lancio</b>"],
-                      [("1", "passaggio al portiere"), ("2", "passaggio al portiere partendo dalla metà difensiva"),
-                       ("3", "recupero nella metà offensiva: si deve cercare il gol")]),
-               regola("2° tempo · 15'", ["Stesse regole", "In più vietato passare al <b>compagno di reparto</b> (gli attaccanti con chi vogliono)"])),
-    "<li>Metà campo larga quanto l'area di rigore, divisa in due</li><li>Un portiere bersaglio per lato</li>",
-    "<p>Dopo un recupero nella metà offensiva non si cerca il portiere ma il gol.</p>",
-    "<li>Costruire da dietro per i 2 punti</li><li>Pressione alta per i 3 punti</li><li>Reparti corti per togliere le filtranti</li>")
-
-t7 = pagina_tappa(
-    7, "La partita completa", "regole decise dall'allenatore per chiudere il percorso",
-    ["2 tempi da 15'", "Da 7 contro 7 a 11 contro 11", "Campo secondo la tabella", "3 tocchi", "Jolly se dispari"],
-    "Torna il lancio e si gioca fino a squadre intere: la squadra sceglie ogni volta la soluzione migliore.",
-    "mettere insieme tutto il percorso. Costruire, lanciare quando la palla è scoperta, pressare per riconquistare in alto. La linea difensiva legge la palla e toglie le filtranti.",
-    campo(freccia("M85,214 Q270,30 455,146", tratteggio=True) + '<use href="#palla" x="96" y="230"/>'
-          + etichetta(255, 40, "LANCIO DALLA METÀ DIFENSIVA · 3 PUNTI", "#f2c230", 11)
-          + freccia("M300,210 L340,165", oro=True) + freccia("M380,164 L355,160", oro=True)
-          + freccia("M352,152 L455,152", tratteggio=True)
-          + etichetta(340, 262, "RECUPERO ALTO E GOL · 2 PUNTI", "#f2c230", 11), larghezza="126mm"),
-    regola("Regole", ["Massimo <b>3 tocchi</b>", "Campo in base al numero di giocatori (vedi la tabella delle regole di base)",
-                      "Con un numero dispari, <b>jolly</b> sempre con chi ha la palla"],
-           [("1", "portiere trovato"), ("3", "portiere trovato con un lancio dalla metà difensiva"),
-            ("2", "gol dopo un recupero nella metà offensiva")]),
-    "<li>Da 7c7 fino a 11c11</li><li>Un portiere bersaglio per lato</li>",
-    "<p>Tutte le soluzioni sono valide: la squadra deve capire quale scegliere in base alla situazione della palla.</p>",
+t7 = pagina_tappa(7, "La partita completa", 3, ["Tutte le soluzioni sono libere"],
+    "Torna il lancio e valgono tutti i punti: la squadra sceglie ogni volta la soluzione migliore.",
+    "mettere insieme tutto il percorso: costruire, lanciare con palla scoperta, pressare per riconquistare in alto.",
+    campo(lancio + pressione), [1, 2, 3],
     "<li>Palla scoperta: lancio per chi attacca, linea che scappa per chi difende</li><li>Palla coperta: costruire corto, linea che accorcia</li><li>Persa palla, pressione immediata</li>")
 
 # ======================================================================
 # 12. CHIUSURA
 chiusura = f'''<section class="page">
-  <div class="kicker">Gli Imbattibili</div>
-  <div class="ex-title"><h2>Da dove viene questo percorso</h2></div>
-  <div class="testo" style="margin-top:5mm">
-    <p>Le tappe di questo percorso sono tratte dagli allenamenti veri della <b>Juniores provinciale che ha vinto il campionato senza perdere una partita</b>, con soli 8 gol subiti in tutta la stagione. Sono state riordinate dall'allenatore in progressione, dalla più facile alla più difficile, e completate con l'ultima tappa che riassume tutto il lavoro.</p>
-    <p>Gli allenamenti completi della stagione, seduta per seduta, sono raccolti nei pacchetti della serie <b>Gli Imbattibili</b>:</p>
-  </div>
-  <div class="regole">
-    <div class="box"><h4>Il precampionato · Allenamenti 1-10</h4>Le prime dieci sedute, dal primo giorno di preparazione.</div>
-    <div class="box"><h4>In campionato · Allenamenti 11-19</h4>Le prime quattro settimane di campionato, con le partite del fine settimana.</div>
-    <div class="box"><h4>Il libro · Gli Imbattibili</h4>La storia della stagione, su Amazon. Il libro racconta cosa è successo, gli allenamenti mostrano come ci siamo arrivati.</div>
-  </div>
-  <div class="chiave" style="margin-top:8mm">
+  <div class="kicker">Il calcio a modo mio</div>
+  <div class="ex-title"><h2>Gli altri percorsi</h2></div>
+  <div class="chiave" style="margin-top:6mm">
     <span class="kicker">Il calcio a modo mio</span>
-    Trovi tutti i pacchetti nel negozio Etsy <b>ilcalcioamodomio</b> e gli esercizi della settimana su Instagram <b>@ilcalcio.amodomio</b>.
+    Gli altri percorsi sono nel negozio Etsy <b>ilcalcioamodomio</b>. Gli esercizi della settimana sono su Instagram <b>@ilcalcio.amodomio</b>.
   </div>
   {footer()}
 </section>'''
 
-pagine = [copertina, presentazione, base, mappa, t1, t2, t3, t4, t5, t6, t7, chiusura]
+pagine = [copertina, presentazione, base, mappa, t1, t2, t3, t4, t5, t6, t7]
 html = testa + "\n\n".join(pagine) + "\n\n</body>\n</html>\n"
 (QUI / "percorso-ricerca-del-portiere.html").write_text(html)
 print("pagine:", len(pagine))

@@ -168,7 +168,14 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   progressione **sempre dal facile al difficile**. Prima si costruisce il contenuto con lui, poi si impagina.
 - Percorso "Ricerca del portiere" (**7 tappe**, confermate il 17/10): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
   **non impaginare finché l'allenatore non approva il pacchetto**.
-  20/10: l'allenatore lo vuole subito per la pubblicità → **bozza impaginata** `prodotti/gli-imbattibili/percorso-ricerca-del-portiere.pdf`
+  **20/10 sera, rifatto (l'allenatore: la prima versione era confusa)**. Regole per tutti i percorsi:
+  **staccati da Gli Imbattibili** (niente Juniores, niente "Allenamento N, tempo M", niente rimandi ai pacchetti: sono due cose
+  diverse); **regole fisse uguali per tutte le tappe** (giocatori da 7c7 a 11c11 con la tabella dei campi, 2 tempi da 15',
+  jolly solo se dispari, punti sempre uguali: portiere 1 · recupero alto e gol 2 · lancio dalla metà difensiva 3); ogni tappa
+  dice solo tocchi, vincoli e quali punti valgono; **testi corti**. Tappe: 1 trovare il portiere (3t) · 2 profondità (3t, +lancio) ·
+  3 solo verticale (3t) · 4 cambiare reparto (2t, +recupero) · 5 pressione senza lancio (2t) · 6 pressione e verticalità (2t) ·
+  7 partita completa (3t, tutto). Footer "IL CALCIO A MODO MIO". **Non scrivere "hai ragione"**: fare le cose bene prima.
+  Versione precedente (20/10 mattina): **bozza impaginata** `prodotti/gli-imbattibili/percorso-ricerca-del-portiere.pdf`
   (12 pagine, da `genera-percorso-ricerca-portiere.py`): copertina blu notte e oro, presentazione con le 4 domande e gli obiettivi,
   regole di base (portiere riceve dentro la porta, jolly se dispari, progressione), campi, mappa delle 7 tappe, 7 tappe, chiusura.
 - Prossimo: **Allenamento 20**.
