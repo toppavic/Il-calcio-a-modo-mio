@@ -168,7 +168,9 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   progressione **sempre dal facile al difficile**. Prima si costruisce il contenuto con lui, poi si impagina.
 - Percorso "Ricerca del portiere" (**7 tappe**, confermate il 17/10): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
   **non impaginare finché l'allenatore non approva il pacchetto**.
-  Prossimo passo (in settimana): schede complete tappa per tappa da controllare con lui, partendo dalla tappa 1.
+  20/10: l'allenatore lo vuole subito per la pubblicità → **bozza impaginata** `prodotti/gli-imbattibili/percorso-ricerca-del-portiere.pdf`
+  (12 pagine, da `genera-percorso-ricerca-portiere.py`): copertina blu notte e oro, presentazione con le 4 domande e gli obiettivi,
+  regole di base (portiere riceve dentro la porta, jolly se dispari, progressione), campi, mappa delle 7 tappe, 7 tappe, chiusura.
 - Prossimo: **Allenamento 20**.
 - Idea pacchetto (5/10): **"Ricerca del portiere"** in progressione. Negli Allenamenti 1, 2, 5 ci sono 5 tappe diverse
   (ogni tempo = una tappa). L'allenatore controlla se torna negli allenamenti di campionato. Nell'Allenamento 14
