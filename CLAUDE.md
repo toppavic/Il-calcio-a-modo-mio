@@ -175,7 +175,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   PDF 14 pagine da `genera-percorso-ricerca-portiere.py` (copertina verde scura, guida, organizzazione, quadro sinottico, 7 tappe, scheda di osservazione).
   Regole: punti non cumulabili (1 portiere trovato · 2 **gol vero** dopo riconquista nella metà offensiva, il portiere para · 3 passaggio diretto
   dalla propria metà difensiva controllato dal portiere); tocchi = massimo; orizzontale non vietato; jolly facoltativo; campi 40×30, 44×32, 48×36,
-  54×40, 60×46; ogni tappa **8' + 8'**. Punti aperti chiusi il 20/10 (`prodotti/percorsi/ricerca-del-portiere/punti-aperti.md`): portiere controlla con mani o piedi, gol da 2 finché si tiene palla, si riparte dal portiere che ha ricevuto.
+  54×40, 60×46; ogni tappa **8' + 8'**. **21/10**: il gol da 2 entra nella **tappa 4** (non 3); campi per obiettivo: base 40×30 (tappe 1, 6, 7), lungo +5 m per la profondità (2, 3), stretto −4 m per la pressione (4, 5); ogni tappa ha "Obiettivo raggiunto: si passa alla tappa successiva quando"; tappa 7 con tre schemi separati (1, 2, 3 punti). Punti aperti chiusi il 20/10 (`prodotti/percorsi/ricerca-del-portiere/punti-aperti.md`): portiere controlla con mani o piedi, gol da 2 finché si tiene palla, si riparte dal portiere che ha ricevuto.
 - (storico) Percorso "Ricerca del portiere" (**7 tappe**, confermate il 17/10): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
   **non impaginare finché l'allenatore non approva il pacchetto**.
   **20/10 sera, rifatto (l'allenatore: la prima versione era confusa)**. Regole per tutti i percorsi:

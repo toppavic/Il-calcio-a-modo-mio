@@ -7,6 +7,7 @@ offensiva (il portiere para), 3 passaggio diretto dalla propria metà difensiva 
 Uso: python3 genera-percorso-ricerca-portiere.py  poi  render.js sul file .html
 """
 import pathlib
+import re
 
 QUI = pathlib.Path(__file__).parent
 a2 = (QUI / "allenamento-02.html").read_text()
@@ -56,9 +57,17 @@ testa = testa.replace("</style>\n</head>", """
 .tre .box { padding: 3mm 3.5mm; font-size: 8.6pt; line-height: 1.4; }
 .tre .box h4 { font-size: 9.8pt; }
 .tre .box li { margin-bottom: 1mm; }
-.vignette { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.vignette { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; max-width: 140mm; margin: 0 auto; }
 .vignette .cap { font-family: Oswald, sans-serif; text-transform: uppercase; font-size: 8.5pt; color: var(--verde); letter-spacing: .05em; text-align: center; margin-top: 1mm; }
 .osserva { margin-top: 3mm; font-size: 8.8pt; color: var(--testo); background: #fbf6e6; border-left: 4px solid var(--oro); padding: 2mm 3.5mm; border-radius: 0 1.5mm 1.5mm 0; }
+.passa { margin-top: 3mm; font-size: 8.7pt; background: #edf4ef; border-left: 4px solid var(--verde); padding: 2.2mm 3.5mm; border-radius: 0 1.5mm 1.5mm 0; line-height: 1.4; }
+.passa h4 { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-weight: 500; letter-spacing: .05em; font-size: 9.5pt; margin-bottom: 1mm; }
+.passa li { margin-bottom: .8mm; }
+.passa .conta { margin-top: 1.2mm; color: var(--tenue); font-size: 8.4pt; }
+.campochip { display: inline-block; background: var(--verde); color: #fff; font-family: Oswald, sans-serif; font-size: 8.6pt; letter-spacing: .05em; text-transform: uppercase; padding: .8mm 2.5mm; border-radius: 1mm; margin: 0 0 2mm; }
+.campochip b { color: var(--oro); font-weight: 500; }
+.vignette.v3 { grid-template-columns: 1fr 1fr 1fr; max-width: none; }
+.compatta td { padding: 1.3mm 2mm; }
 .osserva b { font-family: Oswald, sans-serif; text-transform: uppercase; color: #9a7410; font-weight: 500; letter-spacing: .06em; }
 .scheda td { height: 12mm; }
 .riga { border-bottom: 1px solid #9aa7a1; display: inline-block; min-width: 40mm; }
@@ -94,9 +103,9 @@ def testo(x, y, t, col="#f2c230", size=12, anchor="middle"):
             f'text-anchor="{anchor}" letter-spacing="1">{t}</text>')
 
 
-def badge(x, y, t):
-    return (f'<circle cx="{x}" cy="{y}" r="13" fill="#0f3d2e" stroke="#f2c230" stroke-width="2"/>'
-            + testo(x, y + 6, t, size=16))
+def badge(x, y, t, r=13):
+    return (f'<circle cx="{x}" cy="{y}" r="{r}" fill="#0f3d2e" stroke="#f2c230" stroke-width="2"/>'
+            + testo(x, y + r * .45, t, size=r * 1.25))
 
 
 def no(x, y):
@@ -104,27 +113,50 @@ def no(x, y):
             f'<line x1="{x-8}" y1="{y-8}" x2="{x+8}" y2="{y+8}"/><line x1="{x+8}" y1="{y-8}" x2="{x-8}" y2="{y+8}"/></g>')
 
 
-# Campo 7 contro 7 (40 × 30 m) disegnato in orizzontale: i rossi attaccano verso destra.
+# Tipi di campo (7 contro 7): base 40 × 30 m; profondità = base allungato di 5 m (larghezza uguale);
+# pressione = base stretto di 4 m (lunghezza uguale). Regole di regolazione scritte nella pagina dei campi.
+CAMPI = {"base": (40, 30, "Campo base"), "profondita": (45, 30, "Campo lungo · profondità"),
+         "pressione": (40, 26, "Campo stretto · pressione")}
+SCALA_MM = 96 / 500
+
+
+def mappa(s, L, W):
+    """Riporta le coordinate disegnate sul campo base 40 × 30 (11 unità al metro) sul campo L × W."""
+    fx, fy = L / 40, W / 30
+    X = lambda v: f"{30 + (float(v) - 30) * fx:.0f}"
+    Y = lambda v: f"{25 + (float(v) - 25) * fy:.0f}"
+    s = re.sub(r'd="([^"]*)"', lambda m: 'd="' + re.sub(r'(-?[\d.]+),(-?[\d.]+)',
+               lambda q: X(q[1]) + "," + Y(q[2]), m[1]) + '"', s)
+    s = re.sub(r'\b(x|cx|x1|x2)="(-?[\d.]+)"', lambda m: f'{m[1]}="{X(m[2])}"', s)
+    s = re.sub(r'\b(y|cy|y1|y2)="(-?[\d.]+)"', lambda m: f'{m[1]}="{Y(m[2])}"', s)
+    return s
+
+
+# Campo 7 contro 7 disegnato in orizzontale: i rossi attaccano verso destra.
 # 7 giocatori di movimento per squadra + 2 portieri bersaglio.
 ROSSI = [(95, 105), (95, 275), (165, 190), (235, 110), (235, 270), (330, 150), (370, 245)]
 BLU = [(425, 120), (425, 260), (360, 190), (285, 115), (285, 265), (205, 190), (130, 190)]
 
 
-def campo(contenuto, rossi=ROSSI, blu=BLU, larghezza="118mm", etichette=True):
+def campo(contenuto, rossi=ROSSI, blu=BLU, larghezza=None, etichette=True, tipo="base"):
+    L, W, _ = CAMPI[tipo]
+    fl, fw = 11 * L, 11 * W
+    vw, vh = fl + 60, fw + 50
     gioc = "".join(g(x, y, "pA") for x, y in rossi) + "".join(g(x, y, "pB") for x, y in blu)
-    et = (testo(145, 372, "METÀ DIFENSIVA DEI ROSSI", "#ffffff", 10)
-          + testo(355, 372, "METÀ OFFENSIVA DEI ROSSI", "#ffffff", 10)) if etichette else ""
-    return f'''<svg class="diagram" viewBox="0 0 500 380" style="width:{larghezza};margin:0 auto">
-    <rect width="500" height="380" fill="url(#strisce)"/>
+    et = (testo(30 + fl / 4, vh - 8, "METÀ DIFENSIVA DEI ROSSI", "#ffffff", 10)
+          + testo(30 + 3 * fl / 4, vh - 8, "METÀ OFFENSIVA DEI ROSSI", "#ffffff", 10)) if etichette else ""
+    larghezza = larghezza or f"{vw * SCALA_MM:.0f}mm"
+    cy = 25 + fw / 2
+    return f'''<svg class="diagram" viewBox="0 0 {vw} {vh}" style="width:{larghezza};margin:0 auto">
+    <rect width="{vw}" height="{vh}" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
-      <rect x="30" y="25" width="440" height="330"/>
-      <line x1="250" y1="25" x2="250" y2="355"/><circle cx="250" cy="190" r="32"/>
+      <rect x="30" y="25" width="{fl}" height="{fw}"/>
+      <line x1="{30 + fl / 2}" y1="25" x2="{30 + fl / 2}" y2="{25 + fw}"/><circle cx="{30 + fl / 2}" cy="{cy}" r="32"/>
     </g>
-    <g fill="none" stroke="#fff" stroke-width="3"><rect x="12" y="160" width="18" height="60"/><rect x="470" y="160" width="18" height="60"/></g>
-    {g(21, 190, "pP")}{g(479, 190, "pP")}
+    <g fill="none" stroke="#fff" stroke-width="3"><rect x="12" y="{cy - 30}" width="18" height="60"/><rect x="{30 + fl}" y="{cy - 30}" width="18" height="60"/></g>
+    <use href="#pP" x="21" y="{cy}"/><use href="#pP" x="{39 + fl}" y="{cy}"/>
     {et}
-    {gioc}
-    {contenuto}
+    {mappa(gioc + contenuto, L, W)}
   </svg>'''
 
 
@@ -137,13 +169,16 @@ def lista(voci):
     return "<ul class=\"clean\">" + "".join(f"<li>{v}</li>" for v in voci) + "</ul>"
 
 
-def tappa(n, titolo, obiettivo, fasi, schema, t1, p1, t2, p2, attenzione, errori, osservare):
+def tappa(n, titolo, obiettivo, fasi, tipo, schema, t1, p1, t2, p2, attenzione, errori, passa, osservare):
+    L, W, nome = CAMPI[tipo]
+    dopo = f"si passa alla tappa {n + 1} quando" if n < 7 else "il percorso è completato quando"
     fasi_html = "".join(f"<div><b>{k}</b>{v}</div>" for k, v in fasi)
     cols = "1fr 1fr" if len(fasi) == 2 else "1fr"
     return f'''<section class="page">
   <div class="kicker">Tappa {n} di 7</div>
   <div class="ex-title"><h2 style="font-size:20pt">{titolo}</h2></div>
   <p class="ob" style="margin-top:2mm"><b>Obiettivo principale:</b> {obiettivo}</p>
+  <div class="campochip">{nome} · <b>7 contro 7: {L} × {W} m</b></div>
   <div class="fase-chip" style="grid-template-columns:{cols}">{fasi_html}</div>
   {schema}
   <div class="tempi">
@@ -154,7 +189,7 @@ def tappa(n, titolo, obiettivo, fasi, schema, t1, p1, t2, p2, attenzione, errori
     <div class="box"><h4>Punti di attenzione del mister</h4>{lista(attenzione)}</div>
     <div class="box"><h4>Errori da evitare</h4>{lista(errori)}</div>
   </div>
-  <div class="osserva"><b>Osservare</b> · {osservare}</div>
+  <div class="passa"><h4>Obiettivo raggiunto: {dopo}</h4>{lista(passa)}<div class="conta"><b>Da contare:</b> {osservare}</div></div>
   {footer()}
 </section>'''
 
@@ -259,54 +294,56 @@ org2 = f'''<section class="page">
       "Nessun obbligo costante di giocare solo in avanti e nessun divieto generale del passaggio orizzontale: un passaggio laterale o uno scarico possono preparare la verticalizzazione.",
       "Il jolly per il numero dispari è un adattamento facoltativo, non la condizione di riferimento: la superiorità in possesso cambia tempi e difficoltà del pressing. Se possibile, usare le rotazioni per giocare in parità numerica.",
       "Dal 9 contro 9 in su si può usare il fuorigioco, se ci sono spazio e controllo arbitrale, spiegandolo prima ai giocatori."])}</div>
-  <h3 style="margin-top:5mm">Misure consigliate dei campi</h3>
-  <table class="tab">
-    <tr><th>Giocatori di movimento</th><th>Lunghezza × larghezza</th><th>Spazio per giocatore</th></tr>
-    <tr><td class="m">7 contro 7</td><td><b>40 × 30 m</b></td><td>circa 86 m²</td></tr>
-    <tr><td class="m">8 contro 8</td><td><b>44 × 32 m</b></td><td>circa 88 m²</td></tr>
-    <tr><td class="m">9 contro 9</td><td><b>48 × 36 m</b></td><td>circa 96 m²</td></tr>
-    <tr><td class="m">10 contro 10</td><td><b>54 × 40 m</b></td><td>circa 108 m²</td></tr>
-    <tr><td class="m">11 contro 11</td><td><b>60 × 46 m</b></td><td>circa 125 m²</td></tr>
+  <h3 style="margin-top:5mm">Misure dei campi in base all'obiettivo</h3>
+  <table class="tab compatta">
+    <tr><th>Giocatori di movimento</th><th>Campo base<br>tappe 1, 6, 7</th><th>Campo lungo · profondità<br>tappe 2, 3</th><th>Campo stretto · pressione<br>tappe 4, 5</th></tr>
+    <tr><td class="m">7 contro 7</td><td><b>40 × 30 m</b><br><span style="color:var(--tenue);font-size:8pt">circa 86 m² a testa</span></td><td><b>45 × 30 m</b></td><td><b>40 × 26 m</b></td></tr><tr><td class="m">8 contro 8</td><td><b>44 × 32 m</b><br><span style="color:var(--tenue);font-size:8pt">circa 88 m² a testa</span></td><td><b>49 × 32 m</b></td><td><b>44 × 28 m</b></td></tr><tr><td class="m">9 contro 9</td><td><b>48 × 36 m</b><br><span style="color:var(--tenue);font-size:8pt">circa 96 m² a testa</span></td><td><b>53 × 36 m</b></td><td><b>48 × 32 m</b></td></tr><tr><td class="m">10 contro 10</td><td><b>54 × 40 m</b><br><span style="color:var(--tenue);font-size:8pt">circa 108 m² a testa</span></td><td><b>59 × 40 m</b></td><td><b>54 × 36 m</b></td></tr><tr><td class="m">11 contro 11</td><td><b>60 × 46 m</b><br><span style="color:var(--tenue);font-size:8pt">circa 125 m² a testa</span></td><td><b>65 × 46 m</b></td><td><b>60 × 42 m</b></td></tr>
   </table>
-  <p class="nota">Sono un punto di partenza da provare in campo, non misure obbligatorie. La lunghezza deve restare sufficiente perché esista una vera profondità da proteggere e il passaggio da 3 punti resti praticabile. Se il bersaglio viene trovato da lontano troppo facilmente, allungare il campo di 5 m lasciando invariata la larghezza; se non ci sono possibilità credibili di pressing, stringerlo di 3-5 m; se tutto si risolve in mischie e non si distingue la palla scoperta, allargarlo leggermente. Adattare a età, categoria, livello tecnico, numero di giocatori e dimensione delle porte.</p>
+  <p class="nota">Il campo base è il punto di partenza. Gli altri due nascono dalle regole di regolazione, non da misure nuove: per allenare la <b>difesa della profondità</b> il campo si allunga di 5 m a parità di larghezza, così il passaggio da 3 punti diventa una minaccia reale e la linea ha spazio alle spalle da proteggere; per allenare la <b>pressione collettiva</b> si stringe di 4 m a parità di lunghezza (regola: 3-5 m), così la pressione può chiudere davvero le linee di passaggio. Se tutto si risolve in mischie e non si distingue la palla scoperta, allargare leggermente. Adattare a età, categoria, livello tecnico e dimensione delle porte.</p>
   <h3 style="margin-top:5mm">Tempi del percorso</h3>
   <div class="elenco">{lista([
       "Ogni tappa: <b>1° tempo di 8' e 2° tempo di 8'</b>, con 1-2 minuti di confronto tra i tempi, rotazione dei ruoli o cambio campo quando serve.",
       "Le sette tappe non sono un'unica seduta: servono almeno 112 minuti di gioco effettivo, da distribuire in più allenamenti. Esempio: seduta A tappe 1-2, seduta B tappe 3-5, seduta C tappe 6-7.",
-      "Nelle tappe 2 e 7 alcuni vincoli restano uguali tra i due tempi: la progressione consiste nell'aumentare l'autonomia delle decisioni, non nel moltiplicare le regole."])}</div>
+      "Nelle tappe 2, 3, 6 e 7 i vincoli restano uguali tra i due tempi: la progressione consiste nell'aumentare l'autonomia delle decisioni, non nel moltiplicare le regole.",
+      "Si passa alla tappa successiva quando i comportamenti indicati in fondo a ogni tappa compaiono con regolarità nel 2° tempo senza richiamarli dalla panchina. Se non compaiono, si ripete la tappa in un altro allenamento."])}</div>
   {footer()}
 </section>'''
 
 # ======================================================================
 # QUADRO SINOTTICO
+CAMPO_TAPPA = ["Base", "Lungo", "Lungo", "Stretto", "Stretto", "Base", "Base"]
 SINOTTICO = [
     ("Vedere e trovare il bersaglio", "4 tocchi", "3 tocchi", "1"),
     ("Difendere la minaccia della profondità", "3 tocchi", "Stesse regole, meno indicazioni", "1 · 3"),
-    ("Coordinare pressione e linea", "3 tocchi", "Riconquista alta: tiro in porta consentito, gol = 2", "1 · 3 → 1 · 2 · 3"),
-    ("Pressare come squadra", "3 tocchi", "2 tocchi nella metà offensiva", "1 · 2 · 3"),
+    ("Coordinare pressione e linea", "3 tocchi", "Stesse regole, la linea decide da sola", "1 · 3"),
+    ("Pressare come squadra", "3 tocchi · si aggiunge il gol dopo riconquista alta = 2", "2 tocchi nella metà offensiva", "1 · 2 · 3"),
     ("Creare una via corta quando quella diretta è tolta", "Niente diretto dalla metà difensiva al bersaglio, 3 tocchi", "Uguale + 2 tocchi nella metà offensiva", "1 · 2"),
     ("Scegliere tra diretto e costruzione sotto pressione", "3 tocchi, tornano tutte le soluzioni", "Stesse regole, scelta autonoma", "1 · 2 · 3"),
     ("Trasferire i principi in partita", "Tocchi liberi", "Tocchi liberi, gara", "1 · 2 · 3"),
 ]
-righe = "".join(f'<tr><td class="n">{i}</td><td><b>{a}</b></td><td>{b}</td><td>{c}</td><td style="font-family:Oswald;color:var(--verde);white-space:nowrap">{d}</td></tr>'
+righe = "".join(f'<tr><td class="n">{i}</td><td><b>{a}</b></td><td>{b}</td><td>{c}</td><td>{CAMPO_TAPPA[i-1]}</td><td style="font-family:Oswald;color:var(--verde);white-space:nowrap">{d}</td></tr>'
                 for i, (a, b, c, d) in enumerate(SINOTTICO, 1))
 sinottico = f'''<section class="page">
   <div class="kicker">La progressione</div>
   <div class="ex-title"><h2>Il quadro delle 7 tappe</h2></div>
   <table class="tab" style="margin-top:5mm">
-    <tr><th></th><th>Problema di gioco</th><th>1° tempo</th><th>2° tempo</th><th>Punti</th></tr>
+    <tr><th></th><th>Problema di gioco</th><th>1° tempo</th><th>2° tempo</th><th>Campo</th><th>Punti</th></tr>
     {righe}
   </table>
-  <div class="principio" style="margin-top:6mm"><b>Lettura della progressione</b>La tappa 1 sviluppa orientamento e precisione; la 2 introduce il rischio della profondità; la 3 collega pressione e linea; la 4 coordina il pressing e le transizioni; la 5 isola per un breve periodo la costruzione corta, riducendo dichiaratamente il rischio profondo; la 6 riunisce tutte le alternative; la 7 verifica il comportamento senza istruzioni continue. La difficoltà cresce nelle decisioni e nel lavoro collettivo, non nella somma dei divieti.</div>
+  <div class="principio" style="margin-top:6mm"><b>Lettura della progressione</b>La tappa 1 sviluppa orientamento e precisione; la 2 introduce il rischio della profondità; la 3 collega pressione e linea, ancora senza premi per la riconquista; la 4 coordina il pressing di squadra e introduce il gol da 2 punti dopo la riconquista alta; la 5 isola per un breve periodo la costruzione corta, riducendo dichiaratamente il rischio profondo; la 6 riunisce tutte le alternative; la 7 verifica il comportamento senza istruzioni continue. La difficoltà cresce nelle decisioni e nel lavoro collettivo, non nella somma dei divieti. Il campo segue l'obiettivo: lungo quando si allena la profondità, stretto quando si allena la pressione.</div>
   {footer()}
 </section>'''
 
 # ======================================================================
 # LE 7 TAPPE
+def mini(contenuto, didascalia, tipo="base"):
+    return f'<div>{campo(contenuto, larghezza="100%", etichette=False, tipo=tipo)}<div class="cap">{didascalia}</div></div>'
+
 t1 = tappa(1, "Il bersaglio non è la porta",
     "vedere il portiere bersaglio e preparare una ricezione e un passaggio che consentano di trovarlo con precisione.",
     [("In possesso", "Scansione prima del controllo, postura aperta, sostegno vicino e soluzione in avanti, scelta dell'ultimo passaggio."),
      ("In non possesso", "Riconoscere e chiudere la linea di passaggio più immediata, senza inseguire sempre il pallone.")],
+    "base",
     campo(freccia("M165,178 L228,120") + freccia("M240,118 L322,146") + freccia("M342,154 L466,188")
           + freccia("M170,200 L274,258") + no(232, 234)
           + '<use href="#palla" x="176" y="198"/>' + testo(420, 170, "1 PUNTO")),
@@ -314,60 +351,73 @@ t1 = tappa(1, "Il bersaglio non è la porta",
     ["Massimo <b>3 tocchi</b>", "Punteggio invariato", "Non chiedere di verticalizzare sempre: cercare prima il momento corretto"], [1],
     ["Il ricevente ha guardato portiere e avversari prima di ricevere?", "La squadra crea almeno due linee di passaggio utili al portatore?", "Il passaggio finale è calibrato sul bersaglio e non semplicemente calciato forte?"],
     ["Scambiare ogni tocco in avanti per una scelta giusta", "Chiedere di forzare il passaggio quando la linea è chiusa", "Correggere tutto insieme: qui conta capire bersaglio e appoggi"],
+    ["Con 3 tocchi la maggior parte dei possessi che arrivano vicino al bersaglio si chiude con un passaggio controllato dal portiere.",
+     "Chi riceve guarda prima di ricevere e si gira già orientato verso il bersaglio o verso il compagno libero.",
+     "Quando la linea verso il portiere è chiusa la squadra scarica e riparte, invece di forzare il passaggio."],
     "passaggi validi al portiere sul numero di tentativi; ricezioni orientate verso una soluzione utile.")
 
 t2 = tappa(2, "Quando la profondità diventa una minaccia",
     "riconoscere quando il portatore può calciare lungo e adeguare in tempo la posizione della linea difensiva.",
     [("In possesso", "Vedere il passaggio diretto dalla propria metà campo solo quando ci sono spazio e qualità di esecuzione."),
      ("In non possesso", "Riconoscere la palla scoperta, attaccare il portatore per togliergli tempo, proteggere lo spazio alle spalle senza abbassarsi a ogni tocco.")],
+    "profondita",
     campo(freccia("M108,268 Q290,60 466,184") + '<use href="#palla" x="106" y="288"/>' + testo(290, 68, "DIRETTO DALLA METÀ DIFENSIVA · 3 PUNTI", size=11)
-          + freccia("M205,205 L120,256", "movimento") + testo(165, 335, "PRESSIONE IN RITARDO", "#ffffff", 10)
-          + freccia("M425,132 L452,150", "movimento") + freccia("M425,248 L452,226", "movimento") + freccia("M360,198 L392,210", "movimento")),
+          + freccia("M138,204 L108,252", "movimento") + testo(165, 335, "PRESSIONE IN RITARDO: PALLA SCOPERTA", "#ffffff", 10)
+          + freccia("M425,132 L452,150", "movimento") + freccia("M425,248 L452,226", "movimento") + freccia("M360,198 L392,210", "movimento")
+          + testo(420, 300, "LA LINEA PROTEGGE LO SPAZIO", "#ffffff", 10)),
     ["Massimo <b>3 tocchi</b>", "Valgono la ricerca normale e il passaggio diretto dalla metà difensiva al bersaglio"], [1, 3],
     ["Stesse regole e stessi punti", "Meno indicazioni dalla panchina: il portatore riconosce da sé l'occasione, la difesa riconosce la minaccia"], [1, 3],
     ["Pressione effettiva sul portatore prima che prepari il calcio lungo", "Prima risposta della linea alla postura e al tempo del portatore, non solo alla traiettoria", "Coperture sul passaggio e posizione dei difendenti lontani dalla palla"],
     ["Dire «palla scoperta = scappa» senza guardare chi attacca lo spazio e quale copertura c'è", "Premiare ogni lancio tentato: i 3 punti chiedono un passaggio riuscito", "Confondere il passaggio al portiere con un rinvio senza destinatario"],
-    "quante minacce di lancio vengono contrastate prima della partenza; quanti passaggi da 3 punti riescono.")
-
-def mini(contenuto, didascalia):
-    return f'<div>{campo(contenuto, larghezza="100%", etichette=False)}<div class="cap">{didascalia}</div></div>'
+    ["La linea si abbassa mentre il portatore libero prepara il calcio, non a palla già in volo.",
+     "Il difendente più vicino attacca il portatore prima che possa calciare lungo.",
+     "Chi ha palla tenta il diretto solo quando è libero: i lanci tentati sono pochi e in buona parte riusciti."],
+    "lanci contrastati prima della partenza; passaggi da 3 punti riusciti.")
 
 PRESSATO = freccia("M205,205 L180,260", "movimento") + freccia("M130,200 L118,255", "movimento")
 t3 = tappa(3, "Coprire la palla, guidare la linea",
     "collegare il comportamento del primo difendente alla decisione del reparto arretrato di accorciare o proteggere la profondità.",
     [("In non possesso", "Il primo difendente chiude tempo e angolo della giocata lunga; chi è dietro legge l'efficacia della pressione e aggiorna le distanze."),
-     ("In transizione positiva", "Sfruttare la riconquista alta per tirare e segnare, riconoscendo tempi e soluzioni di conclusione.")],
+     ("In possesso", "Riconoscere se la propria palla è coperta o scoperta: se è scoperta si può cercare il diretto, se è coperta serve uno scarico.")],
+    "profondita",
     '<div class="vignette">' + mini(PRESSATO + '<use href="#palla" x="106" y="288"/>'
                                     + freccia("M425,132 L392,132", "movimento") + freccia("M425,248 L392,248", "movimento") + freccia("M360,198 L330,198", "movimento"),
-                                    "Portatore pressato · la linea accorcia")
+                                    "Portatore pressato · la linea accorcia", "profondita")
     + mini('<use href="#palla" x="106" y="288"/>' + freccia("M425,132 L455,148", "movimento") + freccia("M425,248 L455,232", "movimento") + freccia("M360,198 L395,198", "movimento"),
-           "Portatore libero · la linea protegge la profondità") + '</div>',
+           "Portatore libero · la linea protegge la profondità", "profondita") + '</div>',
     ["Massimo <b>3 tocchi</b>", "Punti attivi come nella tappa 2", "Focus: tempi di pressione, copertura e linea, senza nuovi premi"], [1, 3],
-    ["Massimo <b>3 tocchi</b>", "Si aggiunge il 2: dopo una riconquista nella metà offensiva si può tirare in porta; 2 punti solo se è gol"], [1, 2, 3],
-    ["Il primo difendente orienta l'avversario verso una soluzione meno pericolosa?", "Il reparto arretrato distingue un pressing reale da una corsa verso la palla che non limita il passaggio?", "Dopo la riconquista alta, chi prepara il tiro e chi offre un sostegno utile senza rallentare?"],
+    ["Stesse regole e stessi punti", "La panchina non chiama più «scappa» o «accorcia»: è la linea che legge da sola se la palla è coperta o scoperta"], [1, 3],
+    ["Il primo difendente orienta l'avversario verso una soluzione meno pericolosa?", "Il reparto arretrato distingue un pressing reale da una corsa verso la palla che non limita il passaggio?", "I difensori si muovono insieme o uno resta indietro e tiene tutti in gioco?"],
     ["Accorciare mentre il portatore è libero di calciare", "Abbassarsi automaticamente anche se il portatore è stato coperto", "Pressare da soli senza coperture"],
-    "prima reazione coordinata tra difendente vicino e linea; recuperi alti, conclusioni nate da questi recuperi e gol segnati.")
+    ["Con il portatore pressato la linea accorcia tutta insieme, senza un difensore che resta indietro.",
+     "Con il portatore libero la linea protegge lo spazio alle spalle prima del lancio.",
+     "Il primo difendente chiude l'angolo del lancio invece di correre soltanto verso il pallone."],
+    "volte in cui la linea accorcia o protegge con il tempo giusto; passaggi da 3 punti concessi.")
 
-TIRO = (freccia("M300,232 L346,200", "movimento") + '<use href="#palla" x="372" y="232"/>'
-        + freccia("M380,236 L466,200", "tiro") + testo(400, 290, "RICONQUISTA E TIRO · GOL = 2"))
 t4 = tappa(4, "Pressare insieme, non uno alla volta",
     "coordinare la pressione del reparto avanzato, le coperture del centrocampo e la posizione della linea difensiva per produrre riconquiste utili.",
     [("In non possesso", "Angoli e tempi della pressione, chiusura della via centrale verso il bersaglio, squadra corta quando il contesto lo permette."),
-     ("In transizione", "Riconquista nella metà offensiva, attacco immediato della porta, scelta tra tiro e passaggio che prepara il tiro.")],
-    '<div class="vignette">' + mini(freccia("M330,162 L368,232", "movimento") + freccia("M370,258 L380,240", "movimento")
-                                    + freccia("M235,250 L265,252", "movimento") + freccia("M130,190 L165,192", "movimento")
-                                    + '<use href="#palla" x="425" y="268"/>', "Prima pressione, copertura e linea corta")
-    + mini(freccia("M330,162 L368,232", "movimento") + '<use href="#palla" x="380" y="250"/>' + freccia("M382,244 L466,198", "tiro"),
-           "Riconquista nella metà offensiva e tiro in porta") + '</div>',
-    ["Massimo <b>3 tocchi</b>", "Pressare senza separare i reparti, mantenendo la minaccia del lancio diretto"], [1, 2, 3],
+     ("In transizione", "Novità della tappa: dopo una riconquista nella metà offensiva si può tirare in porta. Attacco immediato della porta, scelta tra tiro e passaggio che prepara il tiro.")],
+    "pressione",
+    '<div class="vignette">' + mini(freccia("M330,162 L368,232", "movimento") + freccia("M378,250 L405,258", "movimento")
+                                    + freccia("M235,250 L265,252", "movimento") + freccia("M165,190 L200,192", "movimento")
+                                    + '<use href="#palla" x="425" y="268"/>', "Prima pressione, copertura e linea corta", "pressione")
+    + mini(freccia("M330,162 L368,232", "movimento") + '<use href="#palla" x="392" y="262"/>' + freccia("M400,256 L466,200", "tiro")
+           + testo(440, 300, "IL PORTIERE PARA", "#ffffff", 13),
+           "Riconquista nella metà offensiva e tiro · gol = 2", "pressione") + '</div>',
+    ["Massimo <b>3 tocchi</b>", "<b>Si aggiunge il 2</b>: dopo una riconquista nella metà offensiva si può tirare in porta; 2 punti solo se è gol"], [1, 2, 3],
     ["Massimo <b>3 tocchi</b> nella propria metà, <b>2 tocchi</b> nella metà offensiva", "Si allenano velocità degli appoggi e ultimo passaggio, senza vietare scarichi o passaggi laterali"], [1, 2, 3],
-    ["La prima pressione chiude una possibilità e indirizza il gioco o è una corsa senza obiettivo?", "Il centrocampo sostiene la pressione togliendo le linee di passaggio intermedie?", "La linea difensiva segue la squadra senza regalare profondità?"],
+    ["La prima pressione chiude una possibilità e indirizza il gioco o è una corsa senza obiettivo?", "Il centrocampo sostiene la pressione togliendo le linee di passaggio intermedie?", "Dopo la riconquista alta, chi prepara il tiro e chi offre un sostegno senza rallentare?"],
     ["Correre tutti sul portatore dimenticando gli avversari liberi", "Ridurre i tocchi anche dove si vuole osservare un lancio ponderato", "Valutare solo la riconquista e non l'azione successiva"],
-    "recuperi nella metà offensiva, quanti generano tiri e quanti diventano gol da 2 punti; pressioni con i reparti collegati.")
+    ["La pressione parte insieme: chi aggredisce il portatore ha almeno un compagno che chiude la linea di passaggio vicina.",
+     "Le riconquiste nella metà offensiva diventano tiri in porta, senza perdere tempo in passaggi inutili.",
+     "Quando la pressione non riesce la squadra si ricompatta senza lasciare spazio tra i reparti."],
+    "recuperi nella metà offensiva, quanti diventano tiri e quanti gol da 2 punti.")
 
 t5 = tappa(5, "Costruire quando la via diretta è chiusa",
     "non trasformare la verticalizzazione in un obbligo: usare appoggi, sostegni, cambi d'angolo e passaggi tra le linee per creare una nuova via verso il bersaglio.",
     [("Scelta didattica", "Per una sola tappa si toglie il passaggio diretto dalla propria metà difensiva al portiere bersaglio. Non si vietano tutti i lanci: si elimina solo la scorciatoia da 3 punti, per osservare lo sviluppo del possesso e la pressione su giocate più ravvicinate.")],
+    "pressione",
     campo(freccia("M108,268 Q290,90 466,184") + no(290, 140) + '<use href="#palla" x="106" y="288"/>'
           + freccia("M100,262 L102,122") + freccia("M108,110 L226,112") + freccia("M240,120 L322,148") + freccia("M342,156 L466,188")
           + testo(300, 64, "DIRETTO DALLA METÀ DIFENSIVA NON CONSENTITO", "#ffffff", 10)),
@@ -375,12 +425,16 @@ t5 = tappa(5, "Costruire quando la via diretta è chiusa",
     ["Stesso divieto del passaggio diretto", "Massimo <b>3 tocchi</b> nella propria metà, <b>2 tocchi</b> nella metà offensiva"], [1, 2],
     ["Il passaggio indietro o laterale prepara una soluzione nuova o rinvia solo il problema?", "Il compagno tra le linee si offre con un angolo di ricezione utilizzabile?", "Dopo una perdita, il difendente vicino e quelli in copertura reagiscono insieme?"],
     ["Vietare tutti i lanci senza definire il vincolo", "Vietare i passaggi orizzontali: toglierebbe soluzioni da allenare", "Credere che la linea sappia difendere il lancio solo perché qui accorcia facilmente"],
-    "quante azioni arrivano al bersaglio dopo aver creato una nuova linea di passaggio; recuperi alti con pressione collettiva.")
+    ["La squadra arriva al portiere anche senza il diretto, con scarichi e cambi d'angolo che aprono una nuova linea.",
+     "Il compagno tra le linee si smarca già orientato e riceve senza dover tornare indietro.",
+     "Dopo la perdita il difendente vicino aggredisce e i compagni chiudono le linee corte, senza lasciarlo solo."],
+    "azioni che arrivano al bersaglio dopo aver creato una nuova linea di passaggio; recuperi alti.")
 
 t6 = tappa(6, "Leggere e scegliere sotto pressione",
     "riportare tutte le soluzioni e allenare la scelta tra gioco diretto, consolidamento e conclusione dopo una riconquista alta, con pressione e coperture attive.",
     [("In possesso", "Valutare se c'è tempo per il diretto, se conviene creare un nuovo angolo di passaggio o se una riconquista alta permette di tirare."),
      ("In non possesso", "Reagire ai continui cambi da palla coperta a scoperta e viceversa.")],
+    "base",
     '<div class="vignette">' + mini('<use href="#palla" x="106" y="288"/>' + freccia("M108,268 Q290,90 466,184")
                                     + freccia("M425,132 L455,148", "movimento") + freccia("M425,248 L455,232", "movimento"),
                                     "Portatore libero · diretto e linea che protegge")
@@ -391,20 +445,33 @@ t6 = tappa(6, "Leggere e scegliere sotto pressione",
     ["Stesse regole e stessi punti", "Il mister non indica la soluzione: osserva se le squadre decidono da sole quando aggredire, proteggere, scaricare o giocare lungo"], [1, 2, 3],
     ["Che cosa ha visto il portatore prima della scelta?", "La squadra senza palla cambia altezza in base alla pressione effettiva?", "I compagni lontani dalla palla preparano appoggio, copertura o difesa della profondità?"],
     ["Premiare il 3 anche quando nasce da una scelta forzata", "Scambiare la velocità di esecuzione per una scelta migliore", "Suggerire ogni comportamento dalla panchina"],
-    "qualità delle scelte senza correzione immediata; rapporto tra passaggi diretti tentati e riusciti.")
+    ["Senza indicazioni dalla panchina il portatore libero cerca il diretto e il portatore pressato scarica.",
+     "La linea cambia altezza in tempo quando la palla passa da coperta a scoperta.",
+     "I lanci forzati sono rari: quasi ogni passaggio da 3 punti tentato nasce da una palla scoperta."],
+    "rapporto tra passaggi diretti tentati e riusciti; scelte corrette senza correzione immediata.")
 
 t7 = tappa(7, "La partita: senza la risposta del mister",
     "verificare se i comportamenti emergono in una partita senza indicazioni costanti e senza vincoli di tocchi.",
     [("Il mister", "Osserva senza chiamare continuamente «scappa» o «accorcia». Alla fine, breve confronto: su quali segnali ciascuna squadra ha basato le proprie decisioni?")],
-    campo(freccia("M165,178 L228,120") + freccia("M240,118 L322,146") + freccia("M342,154 L466,186") + badge(405, 200, "1")
-          + freccia("M108,268 Q300,40 466,180") + badge(290, 52, "3")
-          + freccia("M300,232 L346,250", "movimento") + freccia("M375,262 L466,204", "tiro") + '<use href="#palla" x="368" y="264"/>' + badge(440, 270, "2") + testo(440, 305, "TIRO, IL PORTIERE PARA", "#ffffff", 9)
-          + '<use href="#palla" x="176" y="198"/>'),
+    "base",
+    '<div class="vignette v3">'
+    + mini(freccia("M165,178 L228,120") + freccia("M240,118 L322,146") + freccia("M342,154 L466,188")
+           + '<use href="#palla" x="176" y="198"/>' + badge(405, 215, "1", 22),
+           "1 punto · costruzione e passaggio al portiere")
+    + mini(freccia("M378,250 L402,258", "movimento") + '<use href="#palla" x="410" y="262"/>' + freccia("M414,252 L466,204", "tiro")
+           + badge(330, 300, "2", 22),
+           "2 punti · riconquista alta e gol, il portiere para")
+    + mini(freccia("M108,268 Q300,40 466,180") + '<use href="#palla" x="106" y="288"/>' + badge(290, 75, "3", 22),
+           "3 punti · diretto dalla metà difensiva")
+    + '</div>',
     ["<b>Tocchi liberi</b>", "Tutte le soluzioni consentite"], [1, 2, 3],
     ["Stesse regole, punteggi e libertà", "Cambio campo e gara a punteggio"], [1, 2, 3],
     ["La prima pressione cambia davvero la possibilità di lancio dell'avversario?", "La linea riconosce da sola quando proteggere le spalle e quando avanzare?", "Il passaggio diretto si usa con precisione quando c'è, senza cercarlo a ogni possesso?", "La squadra pressa alta senza disunirsi se non riconquista?"],
     ["Tornare a un numero fisso di tocchi", "Usare il punteggio come unico criterio di successo", "Correggere ogni decisione dall'esterno"],
-    "esempi spontanei di pressione efficace, risposta della linea e scelta del passaggio; confronto con le tappe 1 e 2.")
+    ["Tutti e tre i modi di fare punto compaiono, ognuno nella situazione giusta, senza chiamate dalla panchina.",
+     "La linea e la prima pressione si muovono insieme anche senza vincoli di tocchi.",
+     "Se uno dei comportamenti manca, si torna alla tappa che lo allena: 1 per il passaggio al portiere, 2-3 per la profondità, 4 per la pressione."],
+    "punti fatti con ciascuna delle tre modalità; confronto con le tappe 1 e 2.")
 
 # ======================================================================
 # SCHEDA DI OSSERVAZIONE
