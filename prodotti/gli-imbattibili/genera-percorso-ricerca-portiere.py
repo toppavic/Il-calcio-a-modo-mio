@@ -274,7 +274,7 @@ org1 = f'''<section class="page">
       "Per realizzare 1 o 3 punti una squadra deve trovare il portiere collocato all'estremità avversaria, che riceve e controlla la giocata dentro la porta. Per realizzare 2 punti serve invece un gol vero dopo un recupero nella metà campo offensiva.",
       "Nella ricerca ordinaria del bersaglio il portiere è un riferimento di ricezione: il punto da 1 o da 3 richiede un passaggio controllabile, non un tiro respinto o una deviazione fortuita. Nel caso del recupero alto, invece, la squadra cerca un gol reale: il portiere si comporta da portiere, difende la porta e prova a parare.",
       "Il portiere bersaglio sta dentro la porta e può controllare il passaggio da 1 o da 3 punti con le mani o con i piedi.",
-      "Dopo un punto il gioco riparte dal portiere che ha ricevuto.",
+      "Dopo ogni punto o gol il gioco riprende dal portiere della squadra che lo ha subito.",
       "Se la palla esce, rimessa dal punto di uscita secondo la modalità concordata con il gruppo (consigliata la rimessa con i piedi, per la continuità).",
       "In caso di fallo si interrompe e si riprende con un calcio libero. Evitare contatti con il portiere bersaglio e con le strutture della porta."])}</div>
   <h3 style="margin-top:5mm">Il punteggio</h3>
@@ -387,9 +387,9 @@ t3 = tappa(3, "Coprire la palla, guidare la linea",
            "Portatore libero · la linea protegge la profondità", "profondita") + '</div>',
     ["Massimo <b>3 tocchi</b>", "Punti attivi come nella tappa 2", "Focus: tempi di pressione, copertura e linea, senza nuovi premi"], [1, 3],
     ["Stesse regole e stessi punti", "La panchina non chiama più «scappa» o «accorcia»: è la linea che legge da sola se la palla è coperta o scoperta"], [1, 3],
-    ["Il primo difendente orienta l'avversario verso una soluzione meno pericolosa?", "Il reparto arretrato distingue un pressing reale da una corsa verso la palla che non limita il passaggio?", "I difensori si muovono insieme o uno resta indietro e tiene tutti in gioco?"],
+    ["Il primo difendente orienta l'avversario verso una soluzione meno pericolosa?", "Il reparto arretrato distingue un pressing reale da una corsa verso la palla che non limita il passaggio?", "I difensori si muovono insieme o uno resta disallineato e concede profondità?"],
     ["Accorciare mentre il portatore è libero di calciare", "Abbassarsi automaticamente anche se il portatore è stato coperto", "Pressare da soli senza coperture"],
-    ["Con il portatore pressato la linea accorcia tutta insieme, senza un difensore che resta indietro.",
+    ["Con il portatore pressato la linea accorcia tutta insieme, senza un difensore disallineato che concede profondità.",
      "Con il portatore libero la linea protegge lo spazio alle spalle prima del lancio.",
      "Il primo difendente chiude l'angolo del lancio invece di correre soltanto verso il pallone."],
     "volte in cui la linea accorcia o protegge con il tempo giusto; passaggi da 3 punti concessi.")
@@ -403,9 +403,9 @@ t4 = tappa(4, "Pressare insieme, non uno alla volta",
                                     + freccia("M235,250 L265,252", "movimento") + freccia("M165,190 L200,192", "movimento")
                                     + '<use href="#palla" x="425" y="268"/>', "Prima pressione, copertura e linea corta", "pressione")
     + mini(freccia("M330,162 L368,232", "movimento") + '<use href="#palla" x="392" y="262"/>' + freccia("M400,256 L466,200", "tiro")
-           + testo(440, 300, "IL PORTIERE PARA", "#ffffff", 13),
+           + testo(360, 318, "IL PORTIERE TENTA LA PARATA", "#ffffff", 12),
            "Riconquista nella metà offensiva e tiro · gol = 2", "pressione") + '</div>',
-    ["Massimo <b>3 tocchi</b>", "<b>Si aggiunge il 2</b>: dopo una riconquista nella metà offensiva si può tirare in porta; 2 punti solo se è gol"], [1, 2, 3],
+    ["Massimo <b>3 tocchi</b>", "<b>Si aggiunge il 2</b>: dopo una riconquista nella metà offensiva si può tirare in porta; 2 punti solo se il pallone entra in porta"], [1, 2, 3],
     ["Massimo <b>3 tocchi</b> nella propria metà, <b>2 tocchi</b> nella metà offensiva", "Si allenano velocità degli appoggi e ultimo passaggio, senza vietare scarichi o passaggi laterali"], [1, 2, 3],
     ["La prima pressione chiude una possibilità e indirizza il gioco o è una corsa senza obiettivo?", "Il centrocampo sostiene la pressione togliendo le linee di passaggio intermedie?", "Dopo la riconquista alta, chi prepara il tiro e chi offre un sostegno senza rallentare?"],
     ["Correre tutti sul portatore dimenticando gli avversari liberi", "Ridurre i tocchi anche dove si vuole osservare un lancio ponderato", "Valutare solo la riconquista e non l'azione successiva"],
@@ -432,7 +432,7 @@ t5 = tappa(5, "Costruire quando la via diretta è chiusa",
 
 t6 = tappa(6, "Leggere e scegliere sotto pressione",
     "riportare tutte le soluzioni e allenare la scelta tra gioco diretto, consolidamento e conclusione dopo una riconquista alta, con pressione e coperture attive.",
-    [("In possesso", "Valutare se c'è tempo per il diretto, se conviene creare un nuovo angolo di passaggio o se una riconquista alta permette di tirare."),
+    [("In possesso", "Valutare se c'è tempo e una linea di passaggio praticabile per il diretto, se conviene creare un nuovo angolo di passaggio o se una riconquista alta permette di tirare."),
      ("In non possesso", "Reagire ai continui cambi da palla coperta a scoperta e viceversa.")],
     "base",
     '<div class="vignette">' + mini('<use href="#palla" x="106" y="288"/>' + freccia("M108,268 Q290,90 466,184")
@@ -445,7 +445,7 @@ t6 = tappa(6, "Leggere e scegliere sotto pressione",
     ["Stesse regole e stessi punti", "Il mister non indica la soluzione: osserva se le squadre decidono da sole quando aggredire, proteggere, scaricare o giocare lungo"], [1, 2, 3],
     ["Che cosa ha visto il portatore prima della scelta?", "La squadra senza palla cambia altezza in base alla pressione effettiva?", "I compagni lontani dalla palla preparano appoggio, copertura o difesa della profondità?"],
     ["Premiare il 3 anche quando nasce da una scelta forzata", "Scambiare la velocità di esecuzione per una scelta migliore", "Suggerire ogni comportamento dalla panchina"],
-    ["Senza indicazioni dalla panchina il portatore libero cerca il diretto e il portatore pressato scarica.",
+    ["Il lancio parte solo se il portatore è libero dalla pressione e la linea di passaggio verso il portiere è davvero praticabile; se manca una delle due la squadra sceglie la soluzione migliore, senza scaricare in automatico.",
      "La linea cambia altezza in tempo quando la palla passa da coperta a scoperta.",
      "I lanci forzati sono rari: quasi ogni passaggio da 3 punti tentato nasce da una palla scoperta."],
     "rapporto tra passaggi diretti tentati e riusciti; scelte corrette senza correzione immediata.")
@@ -460,7 +460,7 @@ t7 = tappa(7, "La partita: senza la risposta del mister",
            "1 punto · costruzione e passaggio al portiere")
     + mini(freccia("M378,250 L402,258", "movimento") + '<use href="#palla" x="410" y="262"/>' + freccia("M414,252 L466,204", "tiro")
            + badge(330, 300, "2", 22),
-           "2 punti · riconquista alta e gol, il portiere para")
+           "2 punti · riconquista alta, il portiere tenta la parata")
     + mini(freccia("M108,268 Q300,40 466,180") + '<use href="#palla" x="106" y="288"/>' + badge(290, 75, "3", 22),
            "3 punti · diretto dalla metà difensiva")
     + '</div>',
@@ -468,10 +468,10 @@ t7 = tappa(7, "La partita: senza la risposta del mister",
     ["Stesse regole, punteggi e libertà", "Cambio campo e gara a punteggio"], [1, 2, 3],
     ["La prima pressione cambia davvero la possibilità di lancio dell'avversario?", "La linea riconosce da sola quando proteggere le spalle e quando avanzare?", "Il passaggio diretto si usa con precisione quando c'è, senza cercarlo a ogni possesso?", "La squadra pressa alta senza disunirsi se non riconquista?"],
     ["Tornare a un numero fisso di tocchi", "Usare il punteggio come unico criterio di successo", "Correggere ogni decisione dall'esterno"],
-    ["Tutti e tre i modi di fare punto compaiono, ognuno nella situazione giusta, senza chiamate dalla panchina.",
+    ["Le squadre riconoscono le situazioni e scelgono correttamente tra costruzione, lancio e tiro senza chiamate dalla panchina, anche se non tutti i punteggi vengono realizzati.",
      "La linea e la prima pressione si muovono insieme anche senza vincoli di tocchi.",
      "Se uno dei comportamenti manca, si torna alla tappa che lo allena: 1 per il passaggio al portiere, 2-3 per la profondità, 4 per la pressione."],
-    "punti fatti con ciascuna delle tre modalità; confronto con le tappe 1 e 2.")
+    "scelte corrette nelle tre situazioni; confronto con le tappe 1 e 2.")
 
 # ======================================================================
 # SCHEDA DI OSSERVAZIONE
