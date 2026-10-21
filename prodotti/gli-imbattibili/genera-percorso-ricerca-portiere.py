@@ -182,8 +182,8 @@ def tappa(n, titolo, obiettivo, fasi, tipo, schema, t1, p1, t2, p2, attenzione, 
   <div class="fase-chip" style="grid-template-columns:{cols}">{fasi_html}</div>
   {schema}
   <div class="tempi">
-    <div class="box"><h4>1° tempo · 8'</h4>{lista(t1)}{attivi(p1)}</div>
-    <div class="box"><h4>2° tempo · 8'</h4>{lista(t2)}{attivi(p2)}</div>
+    <div class="box"><h4>1° tempo · 15' <span style="font-size:8pt;color:var(--tenue);font-family:Inter">(minimo 10')</span></h4>{lista(t1)}{attivi(p1)}</div>
+    <div class="box"><h4>2° tempo · 15' <span style="font-size:8pt;color:var(--tenue);font-family:Inter">(minimo 10')</span></h4>{lista(t2)}{attivi(p2)}</div>
   </div>
   <div class="tre" style="grid-template-columns:1.25fr 1fr">
     <div class="box"><h4>Punti di attenzione del mister</h4>{lista(attenzione)}</div>
@@ -213,6 +213,7 @@ copertina = f'''<section class="page cop">
     <div class="kick">Il calcio a modo mio · Dai quaderni del mister · Percorso 1</div>
     <h1>La ricerca<span>del portiere</span></h1>
     <div class="claim">Un bersaglio insolito. Decisioni sempre più vicine alla partita.</div>
+    <p class="sub" style="color:#84b94a;font-family:Oswald;letter-spacing:.06em;text-transform:uppercase">Per Allievi, Juniores e Prime Squadre</p>
     <p class="sub"><b>7 tappe progressive</b> per allenare qualità dell'ultimo passaggio, pressione sul portatore, compattezza e lettura della profondità.</p>
     <p class="sub">Normalmente non si cerca il gol: si cerca il portiere avversario. Ma una riconquista nella metà offensiva autorizza a concludere a rete. La squadra deve capire quando costruire, quando lanciare e quando pressare per guadagnarsi la possibilità di segnare.</p>
   </div>
@@ -229,7 +230,9 @@ guida1 = f'''<section class="page">
     <p>Il valore non sta nel "correre di più", ma nel saper prendere <b>decisioni collettive</b> prima che l'azione sia già conclusa. Per chi ha palla il problema è creare e scegliere una linea di passaggio utile, con l'ultimo gesto eseguito con precisione. Per chi non ce l'ha è capire se il portatore ha tempo e postura per giocare in avanti, pressarlo per ridurne le possibilità e coordinare il movimento della linea difensiva.</p>
   </div>
   <div class="principio"><b>Principio da ripetere nelle correzioni</b>La palla coperta e la palla scoperta non sono etichette fisse, ma condizioni che possono cambiare in un istante. La linea difensiva reagisce anche alla posizione degli attaccanti e alla copertura dei compagni, non soltanto al pallone.</div>
-  <h3 style="margin-top:6mm">Come leggere gli schemi</h3>
+  <p class="ob" style="margin-top:4mm"><b>A chi è rivolto:</b> il percorso è adatto alle categorie <b>Allievi, Juniores e Prime Squadre</b>.</p>
+  <div class="principio" style="background:#fbf6e6;color:var(--testo);border-left:4px solid var(--oro)"><b style="color:#9a7410">Indicazione del mister</b>Il percorso non deve essere affrontato con la fretta di completare tutte e sette le tappe. Ogni esercitazione deve essere assimilata prima di passare alla successiva. Quando i giocatori dimostrano di riconoscere le situazioni di gioco e di eseguire correttamente i comportamenti richiesti, senza continue indicazioni dell'allenatore, si può procedere con la tappa seguente. Se questo non avviene, è preferibile riproporre la stessa esercitazione nelle sedute successive.</div>
+  <h3 style="margin-top:5mm">Come leggere gli schemi</h3>
   <div class="legenda">
     <div><svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="#c8372d" stroke="#fff" stroke-width="2"/></svg> Rossi: attaccano verso destra</div>
     <div><svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="#2a5db0" stroke="#fff" stroke-width="2"/></svg> Blu: attaccano verso sinistra</div>
@@ -302,8 +305,9 @@ org2 = f'''<section class="page">
   <p class="nota">Il campo base è il punto di partenza. Gli altri due nascono dalle regole di regolazione, non da misure nuove: per allenare la <b>difesa della profondità</b> il campo si allunga di 5 m a parità di larghezza, così il passaggio da 3 punti diventa una minaccia reale e la linea ha spazio alle spalle da proteggere; per allenare la <b>pressione collettiva</b> si stringe di 4 m a parità di lunghezza (regola: 3-5 m), così la pressione può chiudere davvero le linee di passaggio. Se tutto si risolve in mischie e non si distingue la palla scoperta, allargare leggermente. Adattare a età, categoria, livello tecnico e dimensione delle porte.</p>
   <h3 style="margin-top:5mm">Tempi del percorso</h3>
   <div class="elenco">{lista([
-      "Ogni tappa: <b>1° tempo di 8' e 2° tempo di 8'</b>, con 1-2 minuti di confronto tra i tempi, rotazione dei ruoli o cambio campo quando serve.",
-      "Le sette tappe non sono un'unica seduta: servono almeno 112 minuti di gioco effettivo, da distribuire in più allenamenti. Esempio: seduta A tappe 1-2, seduta B tappe 3-5, seduta C tappe 6-7.",
+      "Durata consigliata di ogni tappa: <b>1° tempo 15 minuti, 2° tempo 15 minuti</b>.",
+      "Durata minima: <b>1° tempo 10 minuti, 2° tempo 10 minuti</b>. Ogni esercitazione prevede quindi almeno 20 minuti complessivi di gioco.",
+      "Tra i due tempi 1-2 minuti di confronto, rotazione dei ruoli o cambio campo quando serve. Ogni allenatore organizza liberamente le proprie sedute.",
       "Nelle tappe 2, 3, 6 e 7 i vincoli restano uguali tra i due tempi: la progressione consiste nell'aumentare l'autonomia delle decisioni, non nel moltiplicare le regole.",
       "Si passa alla tappa successiva quando i comportamenti indicati in fondo a ogni tappa compaiono con regolarità nel 2° tempo senza richiamarli dalla panchina. Se non compaiono, si ripete la tappa in un altro allenamento."])}</div>
   {footer()}
