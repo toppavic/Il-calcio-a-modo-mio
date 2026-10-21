@@ -9,8 +9,8 @@ Bozza di Claude del 21/10/2026, da far controllare all'allenatore (approvata nel
 - **Prezzo**: 5,66 € (Etsy aggiunge l'IVA al 22%: 6,90 € per chi compra dall'Italia)
 - **Categoria**: la stessa degli altri pacchetti · quantità 999 · rinnovo automatico
 
-## Titolo (91 caratteri)
-La ricerca del portiere · 7 tappe per pressare alto · PDF allenamento calcio per allenatori
+## Titolo (97 caratteri, cambiato il 21/10 perché "La ricerca del portiere" sembrava un allenamento per portieri)
+Pressare alto: 7 tappe per allenare la squadra · La ricerca del portiere · PDF allenamento calcio
 
 ## Tag (13, massimo 20 caratteri ciascuno)
 allenamento calcio, pressing calcio, esercitazioni calcio, schede allenamento, pdf allenatore, allenatore calcio, calcio giovanile, partita a tema, gioco di squadra, juniores calcio, allenamento pressing, tattica calcio, pressare alto

@@ -121,3 +121,8 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - Carosello teaser del percorso "Ricerca del portiere" (7 tappe), nome "Dai quaderni del mister", gancio "Se corri solo tu, hai già perso." Nessuna esercitazione regalata (regola dell'allenatore). Il carosello con la tappa 1 completa resta in `post8` (non pubblicare).
 - Numeri da guardare domani mattina: salvataggi e visite al profilo su IG e TikTok, confronto con Preventiva 2 (IG 13 salvataggi, TikTok 45).
 - Libro nuovo: dati dell'autore ricevuti (nel file inviato a lui, non nel repository); invio a E/O fissato per il **26/10** (promemoria send_later trig_014RDquu5Yr74fgRSxZ9rRPL).
+
+## 21/10 – Percorso 1 pubblicato su Etsy (12:31)
+- **"Dai quaderni del mister · Percorso 1: La ricerca del portiere"** online: 5,66 € (6,90 € con IVA), 999 in stock, 5 foto blu notte e oro, 14 pagine. Titolo corretto alle 12:40: "Pressare alto: 7 tappe per allenare la squadra · La ricerca del portiere · PDF allenamento calcio" (prima sembrava per portieri).
+- Numeri carosello teaser (post 7, ~19 h): IG 444 visualizzazioni, 5 salvataggi, 4 tocchi sul link; TikTok 328, 5 salvataggi, 104 follower totali.
+- Da fare: controllo visite Etsy dopo 2 settimane (ricerche), attenzione ai nuovi follower TikTok.
