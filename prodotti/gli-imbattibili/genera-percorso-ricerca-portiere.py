@@ -382,7 +382,7 @@ PRESSATO = freccia("M205,205 L180,260", "movimento") + freccia("M130,200 L118,25
 t3 = tappa(3, "Coprire la palla, guidare la linea",
     "collegare il comportamento del primo difendente alla decisione del reparto arretrato di accorciare o proteggere la profondità.",
     [("In non possesso", "Il primo difendente chiude tempo e angolo della giocata lunga; chi è dietro legge l'efficacia della pressione e aggiorna le distanze."),
-     ("In possesso", "Riconoscere se la propria palla è coperta o scoperta: se è scoperta si può cercare il diretto, se è coperta serve uno scarico.")],
+     ("In possesso", "Riconoscere se la propria palla è coperta o scoperta: se è scoperta si può cercare il diretto, se la palla è coperta, ricercare un sostegno o una soluzione alternativa alla giocata diretta.")],
     "profondita",
     '<div class="vignette">' + mini(PRESSATO + '<use href="#palla" x="106" y="288"/>'
                                     + freccia("M425,132 L392,132", "movimento") + freccia("M425,248 L392,248", "movimento") + freccia("M360,198 L330,198", "movimento"),
