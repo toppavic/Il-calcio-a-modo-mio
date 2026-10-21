@@ -126,3 +126,4 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - **"Dai quaderni del mister · Percorso 1: La ricerca del portiere"** online: 5,66 € (6,90 € con IVA), 999 in stock, 5 foto blu notte e oro, 14 pagine. Titolo corretto alle 12:40: "Pressare alto: 7 tappe per allenare la squadra · La ricerca del portiere · PDF allenamento calcio" (prima sembrava per portieri).
 - Numeri carosello teaser (post 7, ~19 h): IG 444 visualizzazioni, 5 salvataggi, 4 tocchi sul link; TikTok 328, 5 salvataggi, 104 follower totali.
 - Da fare: controllo visite Etsy dopo 2 settimane (ricerche), attenzione ai nuovi follower TikTok.
+- Link annuncio Percorso 1: https://ilcalcioamodomio.etsy.com/listing/4600091281 · storia con adesivo Link pronta: `marketing/social/immagini/storia-percorso1.png`

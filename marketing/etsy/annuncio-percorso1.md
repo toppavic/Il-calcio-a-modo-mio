@@ -3,6 +3,7 @@
 Bozza di Claude del 21/10/2026, da far controllare all'allenatore (approvata nell'impostazione: titolo, prezzo, 5 foto).
 
 ## Da caricare
+- **Link annuncio (online dal 21/10)**: https://ilcalcioamodomio.etsy.com/listing/4600091281
 - **File digitale**: `prodotti/gli-imbattibili/Dai-quaderni-del-mister_Percorso-1_La-ricerca-del-portiere.pdf` (14 pagine, 1,2 MB)
 - **Foto** (5, 2000 × 1500, blu notte e oro): `marketing/etsy/immagini-percorso1/etsy-1..5.png` (copertina · le domande · le 7 tappe · una tappa con regole sfocate · cosa trovi nel PDF)
 - **Tipo**: download digitale · fatto da me · prodotto finito · dichiarare l'uso di un generatore di IA
