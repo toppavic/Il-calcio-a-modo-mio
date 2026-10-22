@@ -127,3 +127,8 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - Numeri carosello teaser (post 7, ~19 h): IG 444 visualizzazioni, 5 salvataggi, 4 tocchi sul link; TikTok 328, 5 salvataggi, 104 follower totali.
 - Da fare: controllo visite Etsy dopo 2 settimane (ricerche), attenzione ai nuovi follower TikTok.
 - Link annuncio Percorso 1: https://ilcalcioamodomio.etsy.com/listing/4600091281 · storia con adesivo Link pronta: `marketing/social/immagini/storia-percorso1.png`
+
+## 22/10 – Reel pubblicato (21:00, IG + TikTok)
+- Reel "Se corri solo tu, hai già perso" (13 s, 11 contro 11 con 4-2-3-1 numerato, blocco che sale mantenendo le distanze). La prima versione (tutti addosso alla palla) è stata scartata dall'allenatore: "armata Brancaleone". **Lezione: negli schemi dinamici mantenere sempre la struttura (linee, distanze, equilibrio) e usare i numeri veri.**
+- Storia IG e post TikTok dell'annuncio Percorso 1 pubblicati il 21/10. Annuncio Etsy online dal 21/10 (https://ilcalcioamodomio.etsy.com/listing/4600091281).
+- Umore dell'allenatore il 22/10: sconforto per i numeri fermi (follower FB/IG, Etsy, libro). Risposto con i dati veri (TikTok 18→104 follower) e con calma; non dargli aspettative false.
