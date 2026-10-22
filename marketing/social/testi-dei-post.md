@@ -158,7 +158,7 @@ Si corre insieme o si scappa. Percorso in 7 tappe per far pressare alto la squad
 ## Reel – "Se corri solo tu, hai già perso" (giovedì 22/10, ore 21:00, IG + TikTok)
 
 File: `marketing/reel/reel-pressing.mp4` (13 s, 1080×1920, sorgente `reel-pressing.html`). Nessuna esercitazione, solo il principio.
-Scena 1: uno solo pressa e la squadra avversaria lo salta · Scena 2: tutta la squadra si muove insieme e recupera palla · Chiusura: Dai quaderni del mister, Percorso 1, "Su Etsy: ilcalcioamodomio".
+Scena 1: 11 contro 11, uno solo pressa e lascia spazio libero tra i reparti · Scena 2: tutta la squadra sale insieme mantenendo le distanze e recupera palla · Chiusura: Dai quaderni del mister, Percorso 1, "Su Etsy: ilcalcioamodomio".
 
 **Instagram**
 

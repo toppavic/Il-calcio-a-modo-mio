@@ -36,8 +36,9 @@ h1 span { color: #d4a017; display: block; }
     <rect width="400" height="560" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="20" y="20" width="360" height="520"/><line x1="20" y1="280" x2="380" y2="280" stroke-dasharray="3 6"/></g>
     <rect x="160" y="12" width="80" height="8" fill="#fff"/><rect x="160" y="540" width="80" height="8" fill="#fff"/>
-    <text id="lab1" x="32" y="52" fill="#fff" font-family="Oswald" font-size="17" letter-spacing="2" font-weight="600">UNO SOLO PRESSA</text>
-    <text id="lab2" x="32" y="52" fill="#f2c230" font-family="Oswald" font-size="17" letter-spacing="2" font-weight="600">TUTTI INSIEME</text>
+    <text id="lab1" x="32" y="64" fill="#fff" font-family="Oswald" font-size="17" letter-spacing="2" font-weight="600">UNO SOLO PRESSA</text>
+    <g id="spazio" opacity="0"><rect x="50" y="300" width="300" height="115" fill="#f2c230" fill-opacity=".16" stroke="#f2c230" stroke-width="2.5" stroke-dasharray="6 5" rx="8"/><text x="200" y="326" fill="#f2c230" font-family="Oswald" font-size="24" letter-spacing="3" font-weight="700" text-anchor="middle">SPAZIO LIBERO</text></g>
+    <text id="lab2" x="32" y="64" fill="#f2c230" font-family="Oswald" font-size="17" letter-spacing="2" font-weight="600">TUTTI INSIEME</text>
     <path id="sciaPalla" d="" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" opacity=".9"/>
     <g id="giocatori"></g>
     <circle id="palla" r="6.5" fill="#fff" stroke="#1d2421" stroke-width="1.8"/>
@@ -72,43 +73,38 @@ function kf(keys, t) {
   const l = keys[keys.length-1]; return [l[1], l[2]];
 }
 const T_END = 10.9, T_WIPE = 5.75;
-// Blu: squadra che costruisce dal basso (portiere in basso). Rossi: squadra che pressa.
-const B = {
-  1: [[0,95,470],[T_END,95,470]],
-  2: [[0,165,455],[T_END,165,455]],
-  3: [[0,235,455],[T_END,235,455]],
-  4: [[0,305,470],[T_END,305,470]],
-  5: [[0,140,395],[3.0,140,395],[3.8,160,208],[4.4,160,208],[5.3,190,128],[T_WIPE,140,395],[T_END,140,395]],
-  6: [[0,260,395],[T_END,260,395]],
-};
-const R = {
-  1: [[0,200,330],[1.0,200,330],[2.2,232,426],[2.9,232,426],[3.8,262,392],[5.3,268,380],[T_WIPE,200,330],[6.6,200,330],[7.6,230,428],[T_END,230,428]],
-  2: [[0,110,300],[5.3,110,300],[T_WIPE,110,300],[6.6,110,300],[7.6,150,392],[T_END,150,392]],
-  3: [[0,290,300],[5.3,290,300],[T_WIPE,290,300],[6.6,290,300],[7.6,272,372],[8.3,272,372],[8.9,256,404],[T_END,256,404]],
-  4: [[0,150,240],[5.3,150,240],[T_WIPE,150,240],[6.6,150,240],[7.6,190,350],[T_END,190,350]],
-  5: [[0,250,240],[5.3,250,240],[T_WIPE,250,240],[6.6,250,240],[7.6,250,342],[T_END,250,342]],
-  6: [[0,90,150],[5.3,90,150],[T_WIPE,90,150],[6.6,90,150],[7.6,100,440],[T_END,100,440]],
-  7: [[0,310,150],[5.3,310,150],[T_WIPE,310,150],[6.6,310,150],[7.6,308,440],[T_END,308,440]],
-};
+// Rossi: squadra che pressa, 4-2-3-1 (difensori 2-5-6-3, mediani 4 e 8, esterni 7 e 11, trequartista 10, punta 9). Attaccano verso il basso.
+const NUM = ['', '2', '5', '6', '3', '4', '8', '7', '10', '11', '9'];
+const RBASE = [[200,34],[85,175],[155,170],[245,170],[315,175],[160,240],[240,240],[80,285],[200,290],[320,285],[200,335]];
+const RPRESS = [[200,110],[85,292],[155,288],[245,288],[315,292],[160,335],[240,335],[80,392],[200,385],[320,392],[200,435]];
+// Blu: squadra che costruisce dal basso, 4-3-3.
+const BBASE = [[200,526],[85,455],[155,465],[245,465],[315,455],[130,415],[200,408],[270,415],[95,355],[200,365],[305,355]];
+const R = RBASE.map((p, i) => [[0, p[0], p[1]], [T_WIPE, p[0], p[1]], [6.6, p[0], p[1]], [7.6, RPRESS[i][0], RPRESS[i][1]], [T_END, RPRESS[i][0], RPRESS[i][1]]]);
+R[10] = [[0,200,335],[1.0,200,335],[2.2,236,447],[2.9,236,447],[3.9,258,428],[4.4,218,424],[5.3,214,420],[T_WIPE,200,335],[6.6,200,335],[7.6,200,435],[T_END,200,435]];
+R[6]  = [[0,240,240],[T_WIPE,240,240],[6.6,240,240],[7.6,240,335],[8.0,240,335],[8.7,266,392],[T_END,266,392]];
+const B = BBASE.map(p => [[0, p[0], p[1]], [T_END, p[0], p[1]]]);
+B[9] = [[0,200,365],[3.2,200,365],[4.4,200,205],[5.3,200,125],[T_WIPE,200,365],[T_END,200,365]];
 const GRP = { B, R };
 const ref = (g, i, dx = 0, dy = 0) => ({ g, i, dx, dy });
 const at = (r, t) => { const p = kf(GRP[r.g][r.i], t); return [p[0] + r.dx, p[1] + r.dy]; };
-// eventi palla: hold = segue un giocatore; pass = da un giocatore a un altro
 const EV = [
-  { a: 0,   z: 2.1,  hold: ref('B',3, 0,-14) },
-  { a: 2.1, z: 2.9,  from: ref('B',3, 0,-14), to: ref('B',6, -13,0) },
-  { a: 2.9, z: 3.5,  hold: ref('B',6, -13,0) },
-  { a: 3.5, z: 4.4,  from: ref('B',6, -13,0), to: ref('B',5, 13,6) },
-  { a: 4.4, z: 5.75, hold: ref('B',5, 13,6) },
-  { a: 5.75,z: 8.3,  hold: ref('B',3, 0,-14) },
-  { a: 8.3, z: 8.9,  from: ref('B',3, 0,-14), to: ref('R',3, 0,10) },
-  { a: 8.9, z: 9.5,  hold: ref('R',3, 0,10) },
-  { a: 9.5, z: 10.0, from: ref('R',3, 0,10), to: ref('R',5, -13,0) },
-  { a: 10.0,z: 10.5, from: ref('R',5, -13,0), to: ref('R',4, 13,0) },
-  { a: 10.5,z: 99,   hold: ref('R',4, 13,0) },
+  { a: 0,    z: 2.1,   hold: ref('B',3, 0,-12) },
+  { a: 2.1,  z: 2.8,   from: ref('B',3, 0,-12), to: ref('B',7, -12,0) },
+  { a: 2.8,  z: 3.3,   hold: ref('B',7, -12,0) },
+  { a: 3.3,  z: 3.95,  from: ref('B',7, -12,0), to: ref('B',6, 12,0) },
+  { a: 3.95, z: 4.9,   from: ref('B',6, 12,0), to: ref('B',9, 0,12) },
+  { a: 4.9,  z: 5.75,  hold: ref('B',9, 0,12) },
+  { a: 5.75, z: 8.0,   hold: ref('B',3, 0,-12) },
+  { a: 8.0,  z: 8.7,   from: ref('B',3, 0,-12), to: ref('R',6, 0,10) },
+  { a: 8.7,  z: 9.2,   hold: ref('R',6, 0,10) },
+  { a: 9.2,  z: 9.7,   from: ref('R',6, 0,10), to: ref('R',8, 11,0) },
+  { a: 9.7,  z: 10.3,  from: ref('R',8, 11,0), to: ref('R',10, -11,0) },
+  { a: 10.3, z: 99,    hold: ref('R',10, -11,0) },
 ];
-function player(x, y, fill, stroke) { return `<circle cx="${x}" cy="${y}" r="11" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`; }
-const line = (p, q, o, w = 3.5, c = '#f2c230') => o > 0.01 ? `<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="${c}" stroke-width="${w}" stroke-linecap="round" opacity="${o}"/>` : '';
+function player(x, y, fill, stroke, n = '') {
+  return `<circle cx="${x}" cy="${y}" r="10" fill="${fill}" stroke="${stroke}" stroke-width="2"/>` + (n ? `<text x="${x}" y="${y + 4.3}" font-family="Oswald" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">${n}</text>` : '');
+}
+const line = (p, q, o, w = 3.5, c = '#f2c230', d = '') => o > 0.01 ? `<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="${c}" stroke-width="${w}" stroke-linecap="round" opacity="${o}" ${d ? 'stroke-dasharray="' + d + '"' : ''}/>` : '';
 const win = (t, a, z, f = .25) => clamp((t - a) / f) * (1 - clamp((t - (z - f)) / f));
 const seg = (id, t, a, z) => document.getElementById(id).style.opacity = win(t, a, z, .3);
 
@@ -116,32 +112,31 @@ function draw(t) {
   const el = id => document.getElementById(id);
   el('fine').style.opacity = clamp((t - T_END) / .5);
   el('wipe').style.opacity = win(t, 5.35, 6.2, .35);
-  const w = (i, a) => [Math.sin(t * 2.1 + i) * 1.4 * a, Math.cos(t * 1.7 + i * 2) * 1.4 * a];
-  const b = [1,2,3,4,5,6].map(i => kf(B[i], t));
-  const r = [1,2,3,4,5,6,7].map(i => kf(R[i], t));
+  const w = (i, a) => [Math.sin(t * 2.1 + i) * 1.3 * a, Math.cos(t * 1.7 + i * 2) * 1.3 * a];
+  const b = B.map(k => kf(k, t));
+  const r = R.map(k => kf(k, t));
   let s = '';
-  // scena A: il solo presser
-  s += line(r[0], b[2], win(t, 1.2, 2.5), 4);
-  s += line(r[0], b[5], win(t, 3.0, 3.9), 4);
-  // scena B: marcature e blocco
+  // scena A: il solo presser e lo spazio lasciato
+  s += line(r[10], b[3], win(t, 1.2, 2.5), 4);
+  s += line(r[10], b[7], win(t, 3.0, 3.9), 4);
+  el('spazio').style.opacity = win(t, 2.9, 4.9, .4);
+  // scena B: marcature e linee compatte
   const m = win(t, 7.2, 9.3, .35);
-  s += line(r[0], b[2], m); s += line(r[1], b[4], m); s += line(r[2], b[5], m);
-  s += line(r[5], b[0], m); s += line(r[6], b[3], m);
-  s += line(r[3], r[4], m * .8, 3, '#ffffff');
-  s += line(r[0], r[1], m * .6, 3, '#ffffff'); s += line(r[0], r[2], m * .6, 3, '#ffffff');
-  s += player(200, 34, '#f2c230', '#1d2421') + player(200, 526, '#f2c230', '#1d2421');
-  b.forEach((p, i) => { const q = w(i + 3, .5); s += player(p[0]+q[0], p[1]+q[1], '#2a5db0', '#fff'); });
-  r.forEach((p, i) => { const q = w(i + 11, .7); s += player(p[0]+q[0], p[1]+q[1], '#c8372d', '#fff'); });
+  s += line(r[10], b[3], m); s += line(r[8], b[6], m); s += line(r[7], b[1], m); s += line(r[9], b[4], m);
+  const k = win(t, 7.8, 10.4, .4) * .85;
+  const chain = (ids) => { for (let i = 1; i < ids.length; i++) s += line(r[ids[i-1]], r[ids[i]], k, 2.5, '#ffffff', '2 6'); };
+  chain([1,2,3,4]); chain([5,6]); chain([7,8,9]);
+  s += player(b[0][0], b[0][1], '#f2c230', '#1d2421') + player(r[0][0], r[0][1], '#f2c230', '#1d2421');
+  b.slice(1).forEach((p, i) => { const q = w(i + 3, .5); s += player(p[0]+q[0], p[1]+q[1], '#2a5db0', '#fff'); });
+  r.slice(1).forEach((p, i) => { const q = w(i + 11, .6); s += player(p[0]+q[0], p[1]+q[1], '#c8372d', '#fff', NUM[i + 1]); });
   el('giocatori').innerHTML = s;
-  // etichette scena
   el('lab1').style.opacity = win(t, .2, 5.4, .4);
   el('lab2').style.opacity = win(t, 6.2, 10.7, .4);
-  // palla
   let pos = at(EV[0].hold, 0), scia = '';
   for (const e of EV) {
     if (t >= e.a && t < e.z) {
       if (e.hold) pos = at(e.hold, t);
-      else { const k = ease((t - e.a) / (e.z - e.a)), p = at(e.from, t), q = at(e.to, t); pos = [p[0] + (q[0]-p[0])*k, p[1] + (q[1]-p[1])*k]; scia = `M${p[0]},${p[1]} L${pos[0]},${pos[1]}`; }
+      else { const kk = ease((t - e.a) / (e.z - e.a)), p = at(e.from, t), q = at(e.to, t); pos = [p[0] + (q[0]-p[0])*kk, p[1] + (q[1]-p[1])*kk]; scia = `M${p[0]},${p[1]} L${pos[0]},${pos[1]}`; }
       break;
     }
   }
