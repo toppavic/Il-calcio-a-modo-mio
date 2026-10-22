@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><title>Reel Se corri solo tu</title>
+<style>
+@font-face { font-family: Oswald; src: url(../../prodotti/gli-imbattibili/font/oswald.woff2) format("woff2"); font-weight: 200 700; }
+@font-face { font-family: Inter; src: url(../../prodotti/gli-imbattibili/font/inter.woff2) format("woff2"); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 1080px; height: 1920px; overflow: hidden; background: #08162a; font-family: Inter, sans-serif; color: #fff; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: radial-gradient(ellipse at 30% 25%, #173556 0%, #0e2440 45%, #08162a 100%); }
+.layer { position: absolute; inset: 0; }
+.kick { font-family: Oswald; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-size: 30px; color: #d4a017; }
+#campo .head { position: absolute; left: 60px; right: 60px; top: 180px; }
+#campo h2 { font-family: Oswald; font-weight: 700; text-transform: uppercase; font-size: 112px; line-height: .98; margin-top: 14px; }
+#campo h2 span { color: #d4a017; display: block; font-size: 112px; line-height: 1.02; }
+#campo svg { position: absolute; left: 197px; top: 540px; width: 686px; height: 960px; border-radius: 20px; }
+#wipe { position: absolute; left: 197px; top: 540px; width: 686px; height: 960px; border-radius: 20px; background: #0e2440; opacity: 0; }
+.cap { position: absolute; left: 60px; right: 60px; top: 1545px; font-size: 66px; line-height: 1.28; font-weight: 600; opacity: 0; }
+.cap b { color: #d4a017; font-weight: 800; }
+.logo { position: absolute; left: 50%; transform: translateX(-50%); -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }
+#fine .logo { top: 300px; width: 520px; }
+#fine .txt { position: absolute; left: 80px; right: 80px; top: 730px; }
+h1 { font-family: Oswald; font-weight: 700; text-transform: uppercase; font-size: 140px; line-height: .94; margin: 20px 0 34px; }
+h1 span { color: #d4a017; display: block; }
+.sub { font-size: 42px; line-height: 1.4; color: #dbe4ee; }
+.sub b { color: #fff; }
+.azione { margin-top: 60px; font-family: Oswald; text-transform: uppercase; letter-spacing: .06em; font-size: 48px; color: #08162a; background: #d4a017; border-radius: 18px; padding: 28px 30px; text-align: center; font-weight: 700; }
+.azione2 { margin-top: 24px; font-family: Oswald; text-transform: uppercase; letter-spacing: .06em; font-size: 40px; border: 3px solid #d4a017; border-radius: 18px; padding: 24px 30px; text-align: center; }
+</style></head>
+<body><div id="stage">
+
+<div class="layer" id="campo">
+  <div class="head"><div class="kick">Dai quaderni del mister · Percorso 1</div><h2>Se corri solo tu<span>hai già perso</span></h2></div>
+  <svg viewBox="0 0 400 560">
+    <defs>
+      <pattern id="strisce" width="400" height="60" patternUnits="userSpaceOnUse"><rect width="400" height="30" fill="#3f8f5a"/><rect y="30" width="400" height="30" fill="#46995f"/></pattern>
+    </defs>
+    <rect width="400" height="560" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="20" y="20" width="360" height="520"/><line x1="20" y1="280" x2="380" y2="280" stroke-dasharray="3 6"/></g>
+    <rect x="160" y="12" width="80" height="8" fill="#fff"/><rect x="160" y="540" width="80" height="8" fill="#fff"/>
+    <text id="lab1" x="32" y="52" fill="#fff" font-family="Oswald" font-size="17" letter-spacing="2" font-weight="600">UNO SOLO PRESSA</text>
+    <text id="lab2" x="32" y="52" fill="#f2c230" font-family="Oswald" font-size="17" letter-spacing="2" font-weight="600">TUTTI INSIEME</text>
+    <path id="sciaPalla" d="" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" opacity=".9"/>
+    <g id="giocatori"></g>
+    <circle id="palla" r="6.5" fill="#fff" stroke="#1d2421" stroke-width="1.8"/>
+  </svg>
+  <div id="wipe"></div>
+  <div class="cap" id="c0">Uno <b>corre</b>.</div>
+  <div class="cap" id="c1">Gli altri <b>guardano</b>.</div>
+  <div class="cap" id="c2">Se corri solo tu, <b>hai già perso</b>.</div>
+  <div class="cap" id="c3">Tutti <b>insieme</b>.</div>
+  <div class="cap" id="c4"><b>Si corre insieme</b><br>o si scappa.</div>
+</div>
+
+<div class="layer" id="fine" style="background:#08162a; opacity:0">
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <h1>Dai quaderni<span>del mister</span></h1>
+    <p class="sub"><b>Percorso 1 · La ricerca del portiere.</b> 7 tappe per imparare a pressare insieme.</p>
+    <div class="azione">Su Etsy: ilcalcioamodomio</div>
+    <div class="azione2">Salvalo · Mandalo al tuo vice</div>
+  </div>
+</div>
+
+</div>
+<script>
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = x => { x = clamp(x); return x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2; };
+function kf(keys, t) {
+  if (t <= keys[0][0]) return [keys[0][1], keys[0][2]];
+  for (let i = 1; i < keys.length; i++) {
+    if (t <= keys[i][0]) { const a = keys[i-1], b = keys[i], k = ease((t - a[0]) / (b[0] - a[0])); return [a[1] + (b[1]-a[1])*k, a[2] + (b[2]-a[2])*k]; }
+  }
+  const l = keys[keys.length-1]; return [l[1], l[2]];
+}
+const T_END = 10.9, T_WIPE = 5.75;
+// Blu: squadra che costruisce dal basso (portiere in basso). Rossi: squadra che pressa.
+const B = {
+  1: [[0,95,470],[T_END,95,470]],
+  2: [[0,165,455],[T_END,165,455]],
+  3: [[0,235,455],[T_END,235,455]],
+  4: [[0,305,470],[T_END,305,470]],
+  5: [[0,140,395],[3.0,140,395],[3.8,160,208],[4.4,160,208],[5.3,190,128],[T_WIPE,140,395],[T_END,140,395]],
+  6: [[0,260,395],[T_END,260,395]],
+};
+const R = {
+  1: [[0,200,330],[1.0,200,330],[2.2,232,426],[2.9,232,426],[3.8,262,392],[5.3,268,380],[T_WIPE,200,330],[6.6,200,330],[7.6,230,428],[T_END,230,428]],
+  2: [[0,110,300],[5.3,110,300],[T_WIPE,110,300],[6.6,110,300],[7.6,150,392],[T_END,150,392]],
+  3: [[0,290,300],[5.3,290,300],[T_WIPE,290,300],[6.6,290,300],[7.6,272,372],[8.3,272,372],[8.9,256,404],[T_END,256,404]],
+  4: [[0,150,240],[5.3,150,240],[T_WIPE,150,240],[6.6,150,240],[7.6,190,350],[T_END,190,350]],
+  5: [[0,250,240],[5.3,250,240],[T_WIPE,250,240],[6.6,250,240],[7.6,250,342],[T_END,250,342]],
+  6: [[0,90,150],[5.3,90,150],[T_WIPE,90,150],[6.6,90,150],[7.6,100,440],[T_END,100,440]],
+  7: [[0,310,150],[5.3,310,150],[T_WIPE,310,150],[6.6,310,150],[7.6,308,440],[T_END,308,440]],
+};
+const GRP = { B, R };
+const ref = (g, i, dx = 0, dy = 0) => ({ g, i, dx, dy });
+const at = (r, t) => { const p = kf(GRP[r.g][r.i], t); return [p[0] + r.dx, p[1] + r.dy]; };
+// eventi palla: hold = segue un giocatore; pass = da un giocatore a un altro
+const EV = [
+  { a: 0,   z: 2.1,  hold: ref('B',3, 0,-14) },
+  { a: 2.1, z: 2.9,  from: ref('B',3, 0,-14), to: ref('B',6, -13,0) },
+  { a: 2.9, z: 3.5,  hold: ref('B',6, -13,0) },
+  { a: 3.5, z: 4.4,  from: ref('B',6, -13,0), to: ref('B',5, 13,6) },
+  { a: 4.4, z: 5.75, hold: ref('B',5, 13,6) },
+  { a: 5.75,z: 8.3,  hold: ref('B',3, 0,-14) },
+  { a: 8.3, z: 8.9,  from: ref('B',3, 0,-14), to: ref('R',3, 0,10) },
+  { a: 8.9, z: 9.5,  hold: ref('R',3, 0,10) },
+  { a: 9.5, z: 10.0, from: ref('R',3, 0,10), to: ref('R',5, -13,0) },
+  { a: 10.0,z: 10.5, from: ref('R',5, -13,0), to: ref('R',4, 13,0) },
+  { a: 10.5,z: 99,   hold: ref('R',4, 13,0) },
+];
+function player(x, y, fill, stroke) { return `<circle cx="${x}" cy="${y}" r="11" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`; }
+const line = (p, q, o, w = 3.5, c = '#f2c230') => o > 0.01 ? `<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="${c}" stroke-width="${w}" stroke-linecap="round" opacity="${o}"/>` : '';
+const win = (t, a, z, f = .25) => clamp((t - a) / f) * (1 - clamp((t - (z - f)) / f));
+const seg = (id, t, a, z) => document.getElementById(id).style.opacity = win(t, a, z, .3);
+
+function draw(t) {
+  const el = id => document.getElementById(id);
+  el('fine').style.opacity = clamp((t - T_END) / .5);
+  el('wipe').style.opacity = win(t, 5.35, 6.2, .35);
+  const w = (i, a) => [Math.sin(t * 2.1 + i) * 1.4 * a, Math.cos(t * 1.7 + i * 2) * 1.4 * a];
+  const b = [1,2,3,4,5,6].map(i => kf(B[i], t));
+  const r = [1,2,3,4,5,6,7].map(i => kf(R[i], t));
+  let s = '';
+  // scena A: il solo presser
+  s += line(r[0], b[2], win(t, 1.2, 2.5), 4);
+  s += line(r[0], b[5], win(t, 3.0, 3.9), 4);
+  // scena B: marcature e blocco
+  const m = win(t, 7.2, 9.3, .35);
+  s += line(r[0], b[2], m); s += line(r[1], b[4], m); s += line(r[2], b[5], m);
+  s += line(r[5], b[0], m); s += line(r[6], b[3], m);
+  s += line(r[3], r[4], m * .8, 3, '#ffffff');
+  s += line(r[0], r[1], m * .6, 3, '#ffffff'); s += line(r[0], r[2], m * .6, 3, '#ffffff');
+  s += player(200, 34, '#f2c230', '#1d2421') + player(200, 526, '#f2c230', '#1d2421');
+  b.forEach((p, i) => { const q = w(i + 3, .5); s += player(p[0]+q[0], p[1]+q[1], '#2a5db0', '#fff'); });
+  r.forEach((p, i) => { const q = w(i + 11, .7); s += player(p[0]+q[0], p[1]+q[1], '#c8372d', '#fff'); });
+  el('giocatori').innerHTML = s;
+  // etichette scena
+  el('lab1').style.opacity = win(t, .2, 5.4, .4);
+  el('lab2').style.opacity = win(t, 6.2, 10.7, .4);
+  // palla
+  let pos = at(EV[0].hold, 0), scia = '';
+  for (const e of EV) {
+    if (t >= e.a && t < e.z) {
+      if (e.hold) pos = at(e.hold, t);
+      else { const k = ease((t - e.a) / (e.z - e.a)), p = at(e.from, t), q = at(e.to, t); pos = [p[0] + (q[0]-p[0])*k, p[1] + (q[1]-p[1])*k]; scia = `M${p[0]},${p[1]} L${pos[0]},${pos[1]}`; }
+      break;
+    }
+  }
+  el('palla').setAttribute('cx', pos[0]); el('palla').setAttribute('cy', pos[1]);
+  el('sciaPalla').setAttribute('d', t > 5.3 && t < 6.2 ? '' : scia);
+  seg('c0', t, .3, 2.5); seg('c1', t, 2.5, 4.0); seg('c2', t, 4.0, 5.6);
+  seg('c3', t, 6.4, 8.5); seg('c4', t, 8.5, 10.8);
+}
+draw(0);
+</script></body></html>

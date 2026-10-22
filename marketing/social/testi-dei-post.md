@@ -154,3 +154,21 @@ Arriva presto. Il link è nella bio.
 **TikTok** (nell'ultima immagine c'è scritto «Cercaci: ilcalcioamodomio»)
 
 Si corre insieme o si scappa. Percorso in 7 tappe per far pressare alto la squadra, in arrivo su Etsy. #allenatore #calcio #pressing #mister
+
+## Reel – "Se corri solo tu, hai già perso" (giovedì 22/10, ore 21:00, IG + TikTok)
+
+File: `marketing/reel/reel-pressing.mp4` (13 s, 1080×1920, sorgente `reel-pressing.html`). Nessuna esercitazione, solo il principio.
+Scena 1: uno solo pressa e la squadra avversaria lo salta · Scena 2: tutta la squadra si muove insieme e recupera palla · Chiusura: Dai quaderni del mister, Percorso 1, "Su Etsy: ilcalcioamodomio".
+
+**Instagram**
+
+Se corri solo tu, hai già perso.
+Si corre insieme o si scappa. 👇
+7 tappe per imparare a pressare insieme: Percorso 1, La ricerca del portiere. Il link è nella bio.
+Mandalo al tuo vice.
+
+#allenatoredicalcio #pressing #calcio #mister #allenamentocalcio
+
+**TikTok**
+
+Se corri solo tu, hai già perso. Si corre insieme o si scappa. Percorso in 7 tappe su Etsy. #allenatore #calcio #pressing #mister
