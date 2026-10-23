@@ -132,3 +132,9 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - Reel "Se corri solo tu, hai già perso" (13 s, 11 contro 11 con 4-2-3-1 numerato, blocco che sale mantenendo le distanze). La prima versione (tutti addosso alla palla) è stata scartata dall'allenatore: "armata Brancaleone". **Lezione: negli schemi dinamici mantenere sempre la struttura (linee, distanze, equilibrio) e usare i numeri veri.**
 - Storia IG e post TikTok dell'annuncio Percorso 1 pubblicati il 21/10. Annuncio Etsy online dal 21/10 (https://ilcalcioamodomio.etsy.com/listing/4600091281).
 - Umore dell'allenatore il 22/10: sconforto per i numeri fermi (follower FB/IG, Etsy, libro). Risposto con i dati veri (TikTok 18→104 follower) e con calma; non dargli aspettative false.
+
+## 23/10 mattina – numeri della settimana e link in bio
+- **TikTok**: 113 follower (104 il 22/10, 91 il 19/10), 181 like. Reel "Se corri solo tu" (11c11): 860 visualizzazioni, 8 like, 2 condivisioni, 2 salvataggi, 0 follower, tempo medio 5,1 s, 6,6% fino in fondo. Foto di annuncio Percorso 1: 821. Carosello teaser: 372. Preventiva 2 carosello 2141.
+- **IG**: Reel 514 visualizzazioni (326 account), **40% non follower**, salti 52,9% (meno del solito), 3 like, 1 salvataggio, 2 clic sul link in bio, 0 follower. 4017 follower, 15.451 visualizzazioni in 30 giorni (13.221 il 19/10).
+- **Etsy 7 giorni**: 9 visualizzazioni, 6 visite, 0 ordini (settimana prima 24 e 19). Annuncio Percorso 1 online dal 21/10.
+- **Errore trovato**: nella bio IG il link del Percorso 1 non c'era (primo link = libro Amazon, "e altri 2"). **Aggiunto il 23/10 dall'allenatore, in prima posizione** (titolo "Percorso sul pressing"). **Regola: ogni nuovo annuncio Etsy va aggiunto subito ai link della bio IG** (e controllare l'ordine) prima di dire "link in bio" nei post.
