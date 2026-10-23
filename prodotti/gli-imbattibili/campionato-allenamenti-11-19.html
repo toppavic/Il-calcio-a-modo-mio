@@ -135,16 +135,46 @@
 .intervalli tr.rec td { background: #f3f5f2; color: #5d6b65; padding: 1.5mm 2mm; }
 .intervalli tr.rec .min, .intervalli tr.rec .rit { font-size: 11pt; color: #7aa995; }
 .intervalli .rit { font-family: Oswald, sans-serif; font-size: 13pt; color: #9a7410; width: 26mm; }
+
 .indice { width: 100%; border-collapse: collapse; margin-top: 4mm; }
-.indice td { padding: 3.2mm 2mm; border-bottom: 1px solid #e3e8e5; font-size: 10.5pt; vertical-align: middle; }
+.indice td { padding: 3mm 2mm; border-bottom: 1px solid #e3e8e5; font-size: 10.5pt; vertical-align: middle; }
 .indice .n { font-family: Oswald, sans-serif; font-size: 20pt; color: var(--oro); width: 14mm; }
 .indice .t { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 13pt; letter-spacing: .02em; }
-.indice .d { color: #5d6b65; font-size: 9.5pt; }
+.indice .d { color: #5d6b65; font-size: 9.8pt; }
 .indice .p { font-family: Oswald, sans-serif; color: var(--verde); font-size: 13pt; text-align: right; width: 16mm; }
 .legenda { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm 6mm; margin-top: 3mm; font-size: 10pt; }
 .legenda div { display: flex; align-items: center; gap: 3mm; }
 .legenda svg { flex: none; }
 .testo p { font-size: 11pt; line-height: 1.6; margin-bottom: 3mm; }
+/* leggibilità su smartphone: riquadri su una riga ciascuno, testo più grande */
+.three { grid-template-columns: 1fr !important; gap: 2mm !important; margin-top: 4mm !important; }
+.three .box { display: grid; grid-template-columns: 33mm 1fr; gap: 4mm; font-size: 10pt !important; padding: 2.6mm 4mm; }
+.three .box h4 { margin: 0; font-size: 10.5pt; }
+.three .box p { margin-bottom: 1mm !important; }
+.three .box p:last-child { margin-bottom: 0 !important; }
+.three .box ul.clean li { margin-bottom: .6mm; }
+.chip { font-size: 8.8pt !important; }
+.obj { font-size: 10.5pt; }
+/* livelli delle fonti */
+.liv { display: inline-block; font-family: Oswald, sans-serif; font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; padding: .6mm 2.4mm; border-radius: 1mm; margin-right: 2mm; vertical-align: 1px; }
+.liv.q { background: var(--verde); color: #fff; }
+.liv.a { background: var(--oro); color: var(--verde); }
+.liv.c { background: #e6efe9; color: var(--verde); border: 1px solid #b9cdc2; }
+.foglio { display: block; margin: 3mm auto 0; max-height: 150mm; max-width: 100%; border: 1px solid #dfe5e1; border-radius: 1.5mm; box-shadow: 0 1mm 3mm rgba(0,0,0,.08); }
+.fonti { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 4mm; }
+.fonti .box { font-size: 9.8pt; line-height: 1.45; padding: 3mm 4mm; }
+.fonti .box li { margin-bottom: 1mm; }
+.nota-f { margin-top: 3mm; font-size: 9.6pt; background: #fbf6e6; border-left: 4px solid var(--oro); padding: 2.2mm 3.5mm; border-radius: 0 1.5mm 1.5mm 0; }
+.tec h3 { font-size: 11pt; margin: 4mm 0 1.5mm; }
+.tec .riga { display: grid; grid-template-columns: 30mm 1fr; gap: 4mm; padding: 2.2mm 0; border-bottom: 1px solid #e3e8e5; font-size: 10.2pt; }
+.tec .riga .l { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 10pt; letter-spacing: .04em; }
+.tec .ob { font-size: 11pt; line-height: 1.55; margin: 3mm 0 2mm; }
+.tec .liste { display: grid; grid-template-columns: 1fr; gap: 3mm; margin-top: 3mm; }
+.tec .liste .box { font-size: 10.2pt; line-height: 1.45; padding: 3mm 4.5mm; }
+.tec .liste .box li { margin-bottom: 1mm; }
+.osserva { margin-top: 4mm; font-size: 9.8pt; background: #edf4ef; border-left: 4px solid var(--verde); padding: 2.5mm 4mm; border-radius: 0 1.5mm 1.5mm 0; }
+.osserva h4 { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 10.5pt; letter-spacing: .04em; margin-bottom: 1mm; }
+.osserva .nb { color: var(--tenue); font-size: 8.8pt; margin-top: 1mm; }
 </style>
 </head>
 <body>
@@ -175,20 +205,30 @@
   </defs>
 </svg>
 
-<!-- COPERTINA DEL PACCHETTO -->
 <section class="page" style="padding:0"><img src="copertine-campionato/copertina-00.jpg" style="width:100%;height:100%;display:block"></section>
 
 <section class="page">
   <div class="kicker">In campionato</div>
   <div class="ex-title"><h2>Prima di cominciare</h2></div>
   <div class="testo" style="margin-top:5mm">
-    <p>Questi sono gli allenamenti veri della <b>Juniores provinciale che ha vinto il campionato senza perdere una partita</b>, trascritti dai quaderni dell'allenatore seduta per seduta. Si parte dall'ultima seduta del precampionato (Allenamento 11) e si arriva alla quarta settimana di campionato.</p>
-    <p>In campionato la settimana cambia: si lavora il <b>lunedì</b> e il <b>giovedì</b>. Dopo ogni giovedì trovi <b>la partita</b> del fine settimana, con il risultato e le statistiche: così si vede cosa è successo in campo dopo il lavoro della settimana. Quattro partite, <b>quattro vittorie</b>, 11 gol fatti e 3 subiti.</p>
-    <p>Per ogni allenamento c'è la <b>scheda della seduta</b> (durata, programma e barra dei tempi) e una pagina per ogni esercitazione con <b>obiettivo, schema, organizzazione, svolgimento e punti chiave</b>. Le partite a tema hanno le regole tempo per tempo.</p>
+    <p>Questi sono gli allenamenti veri della <b>Juniores provinciale che ha vinto il campionato senza perdere una partita</b>, trascritti dai quaderni dell'allenatore seduta per seduta e nell'ordine in cui sono stati svolti. Si parte dall'ultima seduta del precampionato (Allenamento 11) e si arriva alla quarta settimana di campionato.</p>
+    <p>In campionato si lavora il <b>lunedì</b> e il <b>giovedì</b>. Dopo ogni giovedì trovi <b>la partita</b> del fine settimana con il risultato e le statistiche originali. Quattro partite, <b>quattro vittorie</b>, 11 gol fatti e 3 subiti.</p>
+    <p>Ogni allenamento comincia con la <b>foto del foglio originale</b>. Poi la scheda della seduta (durata, programma e barra dei tempi), una pagina per ogni esercitazione e, dopo ogni esercitazione principale, una pagina di <b>indicazioni tecniche</b>.</p>
   </div>
+  <h3 style="margin-top:5mm">Tre livelli di informazione</h3>
+  <div class="box" style="font-size:10.2pt;line-height:1.5">
+    <p style="margin-bottom:2mm"><span class="liv q">Dal quaderno</span>Esercitazioni, regole, punteggi, tempi e misure scritti sul foglio. Le pagine degli allenamenti li riportano così come sono.</p>
+    <p style="margin-bottom:2mm"><span class="liv a">Precisato dall'autore</span>Chiarimenti dati dall'allenatore nel 2026, dove il foglio era incompleto o ambiguo.</p>
+    <p><span class="liv c">Consigliato</span>Misure in metri dove il foglio non le riporta, obiettivi, punti di attenzione, errori da evitare e comportamenti da osservare. Sono indicazioni editoriali, non annotazioni storiche.</p>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico.</b> Rapidità, corsa con variazioni di velocità, navette, flessioni e suicidi sono riportati come sono stati svolti con questa squadra, senza aggiungere carichi o recuperi. Non sono una prescrizione valida per ogni gruppo: vanno adattati all'età, al livello e alla condizione dei propri giocatori. I <b>suicidi</b> sono navette dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m per navetta.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamenti 11-19</span><span>2</span></div>
+</section>
 
-  <h3 style="margin-top:6mm">Come leggere gli schemi</h3>
-  <div class="legenda">
+<section class="page">
+  <div class="kicker">In campionato</div>
+  <div class="ex-title"><h2>Come leggere gli schemi</h2></div>
+  <div class="legenda" style="margin-top:5mm">
     <div><svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="#2a5db0" stroke="#fff" stroke-width="2"/><text x="13" y="17.5" font-family="Oswald" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">5</text></svg> Difensori e squadra di riferimento</div>
     <div><svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="#c8372d" stroke="#fff" stroke-width="2"/></svg> Attaccanti e avversari</div>
     <div><svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="#f2c230" stroke="#1d2421" stroke-width="2"/></svg> Portiere</div>
@@ -196,24 +236,36 @@
     <div><svg width="40" height="14"><path d="M2,7 L30,7" stroke="#d4a017" stroke-width="3"/><path d="M28,2 L38,7 L28,12 Z" fill="#d4a017"/></svg> Movimento del giocatore</div>
     <div><svg width="40" height="14"><path d="M2,7 L30,7" stroke="#5d6b65" stroke-width="2.5" stroke-dasharray="6 4"/><path d="M28,2 L38,7 L28,12 Z" fill="#5d6b65"/></svg> Passaggio, lancio o cross</div>
   </div>
-
-  <div class="chiave" style="margin-top:9mm">
+  <h3 style="margin-top:7mm">Tempi e misure</h3>
+  <div class="testo">
+    <p>Nei programmi delle sedute il tempo di ogni blocco è quello del quaderno. Nelle indicazioni tecniche trovi anche il <b>gioco effettivo</b>: quando il blocco dura più dei tempi di gioco (per esempio 35' per 2 tempi da 15'), la differenza è indicata come <b>non documentata</b>, senza inventare pause o recuperi.</p>
+    <p>Le misure scritte dall'allenatore («metà campo», «3/4 di campo», «larga quanto l'area») restano come sono. Accanto trovi la misura in metri su un campo regolamentare da 105 × 68 m e, dove il foglio non dice nulla, una <b>misura consigliata</b>, sempre segnalata come tale.</p>
+  </div>
+  <div class="chiave" style="margin-top:7mm">
     <span class="kicker">Il libro</span>
     La stagione di questa squadra è raccontata nel libro <b>“Gli Imbattibili”</b>, su Amazon. Il libro racconta cosa è successo. Questi allenamenti mostrano come ci siamo arrivati.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamenti 11-19</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamenti 11-19</span><span>3</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">In campionato</div>
   <div class="ex-title"><h2>Indice</h2></div>
-  <table class="indice"><tr><td class="n">11</td><td><div class="t">Allenamento 11</div><div class="d">Rapidità e gioco con le sponde · 75' + suicidi</div></td><td class="p">p. 4</td></tr><tr><td class="n">12</td><td><div class="t">Allenamento 12 · lunedì</div><div class="d">Arrivare in meta e attacco contro difesa · circa 100'</div></td><td class="p">p. 8</td></tr><tr><td class="n">13</td><td><div class="t">Allenamento 13 · giovedì</div><div class="d">Gioco verticale, rapidità e palle inattive · circa 92'</div><div class="d" style="color:var(--oro)">+ la partita: Euro Calcio Firenze 2-4 Spartaco Banti Barberino</div></td><td class="p">p. 12</td></tr><tr><td class="n">14</td><td><div class="t">Allenamento 14 · lunedì</div><div class="d">Gioco verticale e difesa in superiorità · circa 100'</div></td><td class="p">p. 18</td></tr><tr><td class="n">15</td><td><div class="t">Allenamento 15 · giovedì</div><div class="d">Pressione, preventive e rapidità · circa 76' + suicidi</div><div class="d" style="color:var(--oro)">+ la partita: Spartaco Banti Barberino 1-0 Fiesole</div></td><td class="p">p. 22</td></tr><tr><td class="n">16</td><td><div class="t">Allenamento 16 · lunedì</div><div class="d">Ricerca del portiere e pressione · circa 85'</div></td><td class="p">p. 28</td></tr><tr><td class="n">17</td><td><div class="t">Allenamento 17 · giovedì</div><div class="d">Ricerca del portiere, pressione e rapidità · circa 80'</div><div class="d" style="color:var(--oro)">+ la partita: Sagginale 1-5 Spartaco Banti Barberino</div></td><td class="p">p. 32</td></tr><tr><td class="n">18</td><td><div class="t">Allenamento 18 · lunedì</div><div class="d">Gioco sulla punta e uscita dalla difesa · circa 100'</div></td><td class="p">p. 37</td></tr><tr><td class="n">19</td><td><div class="t">Allenamento 19 · giovedì</div><div class="d">Rapidità e attacco alla meta · circa 80'</div><div class="d" style="color:var(--oro)">+ la partita: Spartaco Banti Barberino 1-0 Florence</div></td><td class="p">p. 41</td></tr></table>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamenti 11-19</span><span>3</span></div>
+  <table class="indice"><tr><td class="n">11</td><td><div class="t">Allenamento 11 · ultima del precampionato</div><div class="d">Rapidità e gioco con le sponde · 75' + suicidi</div></td><td class="p">p. 5</td></tr><tr><td class="n">12</td><td><div class="t">Allenamento 12 · lunedì</div><div class="d">Arrivare in meta e attacco contro difesa · circa 100'</div></td><td class="p">p. 10</td></tr><tr><td class="n">13</td><td><div class="t">Allenamento 13 · giovedì</div><div class="d">Gioco verticale, rapidità e palle inattive · circa 92'</div><div class="d" style="color:var(--oro)">+ la partita: Euro Calcio Firenze 2-4 Spartaco Banti Barberino</div></td><td class="p">p. 16</td></tr><tr><td class="n">14</td><td><div class="t">Allenamento 14 · lunedì</div><div class="d">Gioco verticale e difesa in superiorità · circa 100'</div></td><td class="p">p. 24</td></tr><tr><td class="n">15</td><td><div class="t">Allenamento 15 · giovedì</div><div class="d">Pressione, preventive e rapidità · circa 78' + suicidi</div><div class="d" style="color:var(--oro)">+ la partita: Spartaco Banti Barberino 1-0 Fiesole</div></td><td class="p">p. 30</td></tr><tr><td class="n">16</td><td><div class="t">Allenamento 16 · lunedì</div><div class="d">Ricerca del portiere e pressione · circa 85'</div></td><td class="p">p. 38</td></tr><tr><td class="n">17</td><td><div class="t">Allenamento 17 · giovedì</div><div class="d">Ricerca del portiere, pressione e rapidità · circa 78'</div><div class="d" style="color:var(--oro)">+ la partita: Sagginale 1-5 Spartaco Banti Barberino</div></td><td class="p">p. 44</td></tr><tr><td class="n">18</td><td><div class="t">Allenamento 18 · lunedì</div><div class="d">Gioco sulla punta e uscita dalla difesa · circa 100'</div></td><td class="p">p. 51</td></tr><tr><td class="n">19</td><td><div class="t">Allenamento 19 · giovedì</div><div class="d">Rapidità e attacco alla meta · circa 83'</div><div class="d" style="color:var(--oro)">+ la partita: Spartaco Banti Barberino 1-0 Florence</div></td><td class="p">p. 57</td></tr></table>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamenti 11-19</span><span>4</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 11 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-01.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">Precampionato · ultima seduta · 22/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 11 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/precampionato/allenamento-11.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Durata: 75' più le navette finali (sul foglio «1 ora»), con la partita libera finale di 2 tempi da 10'.</li><li>Partita a sponde: il gol vale solo se segnato di prima intenzione su passaggio della sponda.</li><li>Suicidi: navette dalla linea dell'area piccola alla linea dell'area di rigore e ritorno, 11 + 11 m.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita libera: misure non documentate, consigliata metà campo regolamentare (52,5 × 68 m).</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 11</span><span>5</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -234,9 +286,9 @@
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni, ognuna chiusa da 10 m di sprint · 8 volte per stazione</div></td><td class="min">20'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Partita 4 contro 4 con 4 sponde</div><div class="d">Campo 20 × 20 · 2 tocchi, sponde a 1 tocco · gol valido solo di prima su passaggio della sponda · 5 serie da 5'</div></td><td class="min">25'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Partita 4 contro 4 con 8 sponde (4 per squadra)</div><div class="d">Campo 20 × 20 · 2 tocchi, sponde a 1 tocco · gol valido solo di prima su passaggio della sponda · 5 serie da 5'</div></td><td class="min">25'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">Partita libera</div><div class="d">2 tempi da 10'</div></td><td class="min">20'</td></tr>
-    <tr><td class="num">V</td><td><div class="t">Suicidi</div><div class="d">Per chi ha perso la partita a sponde</div></td><td class="min">–</td></tr>
+    <tr><td class="num">V</td><td><div class="t">Suicidi</div><div class="d">Navette dall'area piccola al limite dell'area e ritorno (11 + 11 m) per chi ha perso la partita a sponde</div></td><td class="min">–</td></tr>
   </table>
 
   <div class="timeline">
@@ -250,7 +302,7 @@
     <span class="kicker">Il filo della seduta</span>
     Una seduta corta e intensa: prima la <b>rapidità</b>, poi una partita in spazi stretti dove si segna solo <b>di prima dopo il passaggio della sponda</b>. Chi gioca deve cercare il compagno fuori dal campo e attaccare subito la porta.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 11</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 11</span><span>6</span></div>
 </section>
 
 <section class="page">
@@ -262,30 +314,30 @@
   <p class="obj"><b>Obiettivo:</b> rapidità e reattività. Come negli Allenamenti 7 e 9 ogni stazione finisce con uno sprint di 10 metri, ma le ripetizioni salgono a 8.</p>
   <div class="stazioni" style="grid-template-columns:1fr 1fr"><div class="stazione"><div class="n">1</div><div><div class="t">Skip + sprint</div><div class="d">5 m di skip, poi 10 m di sprint</div></div><div class="q">8 volte</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Scaletta + sprint</div><div class="d">scaletta, poi 10 m di sprint</div></div><div class="q">8 volte</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Slalom + sprint</div><div class="d">slalom tra 4 paletti, poi 10 m di sprint</div></div><div class="q">8 volte</div></div><div class="stazione"><div class="n">4</div><div><div class="t">Salto + sprint</div><div class="d">salto sul posto da mezzo squat, poi 10 m di sprint</div></div><div class="q">8 volte</div></div></div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>4 stazioni in sequenza</li>
       <li>4 paletti, una scaletta, 10 m segnati dopo ogni stazione</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Si fanno le 8 ripetizioni di una stazione e si passa alla successiva, dalla 1 alla 4.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Massima velocità in ogni sprint</li>
       <li>Dal mezzo squat spingere forte e ripartire subito</li>
       <li>Recuperare completamente prima della ripetizione successiva</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 11</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 11</span><span>7</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione III</div>
-  <div class="ex-title"><h2>Partita 4 contro 4 con 4 sponde</h2></div>
+  <div class="ex-title"><h2>Partita 4 contro 4 con 8 sponde</h2></div>
   <div class="ex-sub">
-    <span class="chip">5 serie da 5'</span><span class="chip">4 contro 4 + 4 sponde per squadra</span><span class="chip">Campo 20 × 20 m</span>
+    <span class="chip">5 serie da 5'</span><span class="chip">4 contro 4 + 8 sponde (4 per squadra)</span><span class="chip">Campo 20 × 20 m</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> giocare in spazi stretti e veloci usando il compagno fuori dal campo. Il gol vale solo se si segna di prima sul passaggio della sponda.</p>
-  <svg class="diagram" viewBox="0 0 500 380" style="width:112mm;margin:0 auto">
+  <svg class="diagram" viewBox="0 0 500 380" style="width:84mm;margin:0 auto">
     <rect width="500" height="380" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
       <rect x="100" y="40" width="300" height="300"/>
@@ -301,20 +353,20 @@
     </g>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Quadrato di 20 × 20 m con due porte piccole</li>
       <li>4 contro 4 dentro il campo</li>
       <li>Ogni squadra ha 4 sponde fuori: due ai lati della porta che attacca e due sulle linee laterali</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Si gioca a <b>2 tocchi</b>, le sponde a <b>1 tocco</b>.</p>
       <p>Il gol è valido solo se si segna <b>di prima su passaggio della sponda</b>.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Cercare subito la sponda libera</li>
       <li>Attaccare la porta per calciare di prima quando la palla torna dentro</li>
       <li>Chi difende chiude prima la linea verso la sponda</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="kicker" style="margin-top:6mm">Esercitazione IV</div>
@@ -323,14 +375,36 @@
 
   <div class="chiave">
     <span class="kicker">Esercitazione V · suicidi per chi ha perso la partita a sponde</span>
-    Chi perde: <b>5 suicidi</b> · chi vince: <b>1 suicidio</b> · pareggio: <b>3 suicidi a testa</b>.
+    Chi perde: <b>5 suicidi</b> · chi vince: <b>1 suicidio</b> · pareggio: <b>3 suicidi a testa</b>. Un suicidio è una navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m in tutto.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 11</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 11</span><span>8</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 12 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-02.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page tec">
+  <div class="kicker">Allenamento 11 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita 4 contro 4 con 8 sponde</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Giocare in uno spazio ridotto sotto pressione continua, usando le sponde esterne per uscire dalla pressione e preparare la conclusione di prima intenzione. Chi difende impara a chiudere la linea verso la sponda prima di andare sul pallone.</p>
+  <div class="riga"><div class="l">Tempi</div><div>5 serie da 5' = 25' di gioco effettivo su 25' di programma. Le pause tra le serie non sono documentate.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 20 × 20 m. Nessun adattamento necessario.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Chi è senza palla offre una linea pulita verso la sponda, non si nasconde dietro l'avversario.</li><li>Chi riceve dalla sponda è già orientato verso la porta prima che la palla torni dentro.</li><li>La sponda gioca a un tocco: il passaggio che riceve deve essere teso e giocabile.</li><li>In difesa il primo uomo chiude la linea verso la sponda, il compagno protegge la porta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Giocare solo dentro il quadrato dimenticando le sponde.</li><li>Calciare dopo un controllo: il gol non vale.</li><li>Difendere guardando solo il pallone e lasciare libero l'inserimento verso la porta.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Gol di prima su passaggio della sponda, serie per serie.</li><li>Uscite dalla pressione con la sponda entro due tocchi.</li><li>Linee verso la sponda chiuse da chi difende.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 11</span><span>9</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">In campionato · Seduta del lunedì · 27/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 12 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/campionato/allenamento-12.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Attacco contro difesa: chi difende, se recupera palla, riparte verso l'altra porta.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita a meta: larghezza non documentata, consigliati 40 m (35 × 40 m più 2 mete da 5 × 40 m).</li><li>Attacco contro difesa: misure non documentate, consigliati 50 × 40 m per il 7 contro 7.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>10</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -370,7 +444,7 @@
     Il lunedì si riparte dal pallone: una partita dove bisogna <b>portare la palla in meta</b> e poi
     l'<b>attacco contro difesa</b>, con un lavoro di corsa corto prima dello stretching.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>11</span></div>
 </section>
 
 <section class="page">
@@ -408,22 +482,36 @@
     </div>
   </div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo di gioco lungo 35 m con una meta di 5 m per lato</li>
       <li>3 porticine (1, 2, 3) dietro ogni meta</li>
       <li>Due squadre da 7</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Ogni squadra attacca una meta. <b>Una volta entrati in meta</b> si fa gol in una delle tre porticine.</p>
       <p>Nei tre tempi cambiano i tocchi (vedi riquadri sopra).</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Attaccare la meta appena c'è spazio</li>
       <li>Entrati in meta, testa alta per scegliere la porticina libera</li>
       <li>Chi difende protegge la meta prima delle porticine</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>12</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 12 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita a meta</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Attaccare lo spazio fino alla meta con la palla controllata e rifinire subito l'azione scegliendo la porticina libera. I tocchi che scendono da 3 a 2 obbligano a pensare prima di ricevere; nel 3° tempo la ripartenza dopo il recupero viene premiata con il gol entrando in meta.</p>
+  <div class="riga"><div class="l">Tempi</div><div>3 tempi da 10' = 30' di gioco effettivo su 35' di blocco. I 5' di differenza (cambi, spiegazioni o pause) non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 35 m di lunghezza e 2 mete da 5 m; larghezza non documentata. Consigliato: 35 × 40 m più 2 mete da 5 × 40 m per il 7 contro 7.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Chi porta palla alza la testa prima di entrare in meta per vedere la porticina libera.</li><li>I compagni attaccano la meta in ampiezza per aprire più porticine.</li><li>Con 2 tocchi il sostegno è vicino e pronto prima del passaggio.</li><li>Nel 3° tempo, dopo il recupero, la prima scelta è attaccare subito la meta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Entrare in meta senza sapere dove giocare.</li><li>Rallentare dopo il recupero palla nel 3° tempo.</li><li>Difendere le porticine invece della meta e concedere l'ingresso.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Ingressi in meta per tempo e quanti diventano gol.</li><li>Gol su ripartenza nel 3° tempo.</li><li>Palloni persi per troppi tocchi quando il limite scende a 2.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>13</span></div>
 </section>
 
 <section class="page">
@@ -474,12 +562,34 @@
     <span class="kicker">Esercitazione V · stretching · 10'</span>
     Allungamento dei principali gruppi muscolari a fine seduta.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>14</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 13 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-03.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page tec">
+  <div class="kicker">Allenamento 12 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Attacco contro difesa</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Sette contro sette su due porte a tocco libero: chi attacca cerca la superiorità vicino alla palla per arrivare al tiro; chi difende lavora di reparto e, recuperata palla, riparte verso l'altra porta.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 35' di blocco. I 5' di differenza non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: due porte con i portieri, misure non documentate. Consigliato: 50 × 40 m per il 7 contro 7.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>In attacco ampiezza e profondità occupate prima di cercare la porta.</li><li>In difesa la linea si muove insieme: accorcia con la palla coperta, protegge la profondità con la palla scoperta.</li><li>Dopo il recupero il primo passaggio va in avanti se l'avversario è sbilanciato.</li><li>Chi attacca, persa palla, reagisce subito per non subire la ripartenza.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Difendere a uno contro uno lasciando spazi tra i difensori.</li><li>Ripartire con un passaggio orizzontale lento che lascia riorganizzare l'attacco.</li><li>Attaccare tutti in avanti senza nessuno a protezione della ripartenza.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Tiri creati dall'attacco per tempo.</li><li>Recuperi della difesa che diventano ripartenze verso l'altra porta.</li><li>Distanze tra i difensori al momento del passaggio avversario.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 12</span><span>15</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">In campionato · Seduta del giovedì · 30/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 13 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/campionato/allenamento-13.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Partita a meta, «se ripartenza 1 gol»: dopo un recupero basta entrare in meta, senza tirare nella porticina.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita a meta: come nell'Allenamento 12, 35 × 40 m più 2 mete da 5 × 40 m.</li><li>4 contro 4 + 8 jolly: misure non documentate, consigliati 20 × 20 m come nell'Allenamento 11.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>16</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -502,7 +612,7 @@
     <tr><td class="num">II</td><td><div class="t">Partita a meta</div><div class="d">3 tempi da 10' · 3 tocchi, poi 2 tocchi e solo gioco verticale, poi 3 tocchi e su ripartenza basta entrare in meta</div></td><td class="min">30'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">3 stazioni · 7 volte per stazione · l'ultima a coppie, partenza da seduti</div></td><td class="min">15'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">Calci d'angolo e punizioni offensive</div><div class="d">Lavoro sulle palle inattive a favore</div></td><td class="min">25'</td></tr>
-    <tr><td class="num">V</td><td><div class="t">Partita 4 contro 4 + 4 jolly</div><div class="d">4 tempi da 3' · 2 tocchi, sponde a 1 tocco · gol valido solo su sponda e di prima intenzione</div></td><td class="min">12'</td></tr>
+    <tr><td class="num">V</td><td><div class="t">Partita 4 contro 4 + 8 jolly (4 per squadra)</div><div class="d">4 tempi da 3' · 2 tocchi, sponde a 1 tocco · gol valido solo su sponda e di prima intenzione</div></td><td class="min">12'</td></tr>
   </table>
 
   <div class="timeline">
@@ -519,7 +629,7 @@
     si gioca <b>solo in verticale</b>. Poi rapidità, <b>palle inattive offensive</b> in vista della partita
     e per chiudere un 4 contro 4 veloce dove si segna solo di prima sul passaggio della sponda.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>17</span></div>
 </section>
 
 <section class="page">
@@ -557,19 +667,33 @@
     </div>
   </div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Come nell'Allenamento 12: campo di 35 m con una meta di 5 m per lato</li>
       <li>3 porticine dietro ogni meta</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Ogni squadra attacca una meta. <b>Una volta entrati in meta</b> si fa gol in una delle tre porticine.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Nel gioco verticale smarcarsi in avanti o in diagonale, mai in linea con chi ha palla</li>
       <li>Dopo il recupero attaccare subito la meta</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>18</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 13 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita a meta con gioco verticale</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> La partita del lunedì con una difficoltà in più: nel 2° tempo il solo gioco verticale (passaggi in avanti, all'indietro o in diagonale, mai orizzontali) obbliga a smarcarsi su linee diverse da quella del portatore.</p>
+  <div class="riga"><div class="l">Tempi</div><div>3 tempi da 10' = 30' di gioco effettivo su 30' di programma. Cambi e spiegazioni non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: come nell'Allenamento 12 (35 m e 2 mete da 5 m), larghezza non documentata. Consigliato: 35 × 40 m più 2 mete da 5 × 40 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Nel 2° tempo nessuno si mette in linea orizzontale con chi ha palla: ci si smarca avanti o in diagonale.</li><li>Il passaggio all'indietro resta una soluzione valida per cambiare il lato del gioco.</li><li>Con 2 tocchi la ricezione va orientata verso la meta.</li><li>Nel 3° tempo, dopo il recupero, entrare subito in meta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Leggere il vincolo verticale come obbligo di andare sempre avanti.</li><li>Ricevere da fermi, in linea con il portatore.</li><li>Dopo il recupero cercare la porticina quando basta entrare in meta.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Passaggi orizzontali commessi nel 2° tempo.</li><li>Ingressi in meta per tempo.</li><li>Gol su ripartenza nel 3° tempo.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>19</span></div>
 </section>
 
 <section class="page">
@@ -581,29 +705,29 @@
   <p class="obj"><b>Obiettivo:</b> rapidità e reattività. L'ultima stazione diventa una sfida a coppie: si parte da seduti e vince chi arriva per primo.</p>
   <div class="stazioni"><div class="stazione"><div class="n">1</div><div><div class="t">Scaletta + sprint</div><div class="d">scaletta, poi 10 m di sprint</div></div><div class="q">7 volte</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Ostacoli + sprint</div><div class="d">5 m, 3 ostacoli, poi 10 m di sprint</div></div><div class="q">7 volte</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Sfida a coppie</div><div class="d">partenza da seduti: vince chi entra per primo nella porticina</div></div><div class="q">7 volte</div></div></div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Una scaletta, 3 ostacoli, una porticina di coni</li>
       <li>10 m di sprint dopo le prime due stazioni</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Si fanno le 7 ripetizioni di una stazione e si passa alla successiva.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Massima velocità in ogni sprint</li>
       <li>Da seduti rialzarsi e partire nello stesso movimento</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="kicker" style="margin-top:7mm">Esercitazione IV</div>
   <div class="ex-title"><h2 style="font-size:17pt">Calci d'angolo e punizioni offensive · 25'</h2></div>
   <div class="box" style="margin-top:3mm">Lavoro sulle palle inattive a favore in vista della partita. Schemi e posizioni in area: ogni allenatore le organizza come preferisce.</div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>20</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione V</div>
-  <div class="ex-title"><h2>Partita 4 contro 4 + 4 jolly</h2></div>
-  <div class="ex-sub"><span class="chip">12 minuti · 4 tempi da 3'</span><span class="chip">4 contro 4 + 4 jolly per squadra</span><span class="chip">2 tocchi · sponde 1 tocco</span></div>
+  <div class="ex-title"><h2>Partita 4 contro 4 + 8 jolly</h2></div>
+  <div class="ex-sub"><span class="chip">12 minuti · 4 tempi da 3'</span><span class="chip">4 contro 4 + 8 jolly (4 per squadra)</span><span class="chip">2 tocchi · sponde 1 tocco</span></div>
   <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> come nell'Allenamento 11, giocare veloce in spazi stretti usando il compagno fuori dal campo: si segna solo di prima intenzione sul passaggio della sponda.</p>
   <svg class="diagram" viewBox="0 0 500 380" style="width:112mm;margin:0 auto">
     <rect width="500" height="380" fill="url(#strisce)"/>
@@ -620,11 +744,25 @@
     </g>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>4 contro 4 dentro il campo, con due porte piccole</li><li>Ogni squadra ha 4 jolly fuori: due ai lati della porta che attacca e due sulle linee laterali</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p><b>4 tempi da 3 minuti</b>. Si gioca a <b>2 tocchi</b>, le sponde a <b>1 tocco</b>.</p><p>Il gol è valido <b>solo su passaggio della sponda e di prima intenzione</b>.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Cercare subito la sponda libera</li><li>Attaccare la porta per calciare di prima quando la palla torna dentro</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>4 contro 4 dentro il campo, con due porte piccole</li><li>Ogni squadra ha 4 jolly fuori: due ai lati della porta che attacca e due sulle linee laterali</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p><b>4 tempi da 3 minuti</b>. Si gioca a <b>2 tocchi</b>, le sponde a <b>1 tocco</b>.</p><p>Il gol è valido <b>solo su passaggio della sponda e di prima intenzione</b>.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Cercare subito la sponda libera</li><li>Attaccare la porta per calciare di prima quando la palla torna dentro</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>21</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 13 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita 4 contro 4 + 8 jolly</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Come nell'Allenamento 11: gioco rapido in spazio ridotto, con le sponde esterne usate per uscire dalla pressione e concludere di prima intenzione, in tempi brevi ad alta intensità.</p>
+  <div class="riga"><div class="l">Tempi</div><div>4 tempi da 3' = 12' di gioco effettivo su 12' di programma. I recuperi tra i tempi non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: misure non documentate. Consigliato: 20 × 20 m, come nell'Allenamento 11.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Tempi da 3': intensità massima dal primo secondo.</li><li>La sponda gioca a un tocco: chi la serve le dà una palla giocabile.</li><li>Chi attacca la porta si muove quando la sponda riceve, non dopo.</li><li>Chi difende sta tra palla e porta, non solo tra palla e sponda.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Servire la sponda con palloni lenti o alti.</li><li>Concludere dopo un controllo.</li><li>Fermarsi a guardare dopo il passaggio alla sponda.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Conclusioni di prima per tempo.</li><li>Passaggi alla sponda giocabili al primo tocco.</li><li>Gol subiti su inserimenti non seguiti.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>22</span></div>
 </section>
 
 <section class="page">
@@ -641,12 +779,21 @@
   </div>
   <h3>Statistiche</h3>
   <table class="stat"><tr><td class="v">3</td><td><div class="lab">Tiri in porta</div><div class="barra"><div style="flex:0.150;background:#c9d3ce"></div><div style="flex:0.850;background:var(--oro)"></div></div></td><td class="v dx">17</td></tr><tr><td class="v">2</td><td><div class="lab">Tiri fuori porta</div><div class="barra"><div style="flex:0.167;background:#c9d3ce"></div><div style="flex:0.833;background:var(--oro)"></div></div></td><td class="v dx">10</td></tr><tr><td class="v">2</td><td><div class="lab">Calci d'angolo</div><div class="barra"><div style="flex:0.133;background:#c9d3ce"></div><div style="flex:0.867;background:var(--oro)"></div></div></td><td class="v dx">13</td></tr><tr><td class="v">2</td><td><div class="lab">Fuorigioco</div><div class="barra"><div style="flex:0.667;background:#c9d3ce"></div><div style="flex:0.333;background:var(--oro)"></div></div></td><td class="v dx">1</td></tr><tr><td class="v">7</td><td><div class="lab">Falli</div><div class="barra"><div style="flex:0.538;background:#c9d3ce"></div><div style="flex:0.462;background:var(--oro)"></div></div></td><td class="v dx">6</td></tr><tr><td class="v">2</td><td><div class="lab">Cartellini gialli</div><div class="barra"><div style="flex:1.000;background:#c9d3ce"></div><div style="flex:0.000;background:var(--oro)"></div></div></td><td class="v dx">0</td></tr><tr><td class="v">0</td><td><div class="lab">Cartellini rossi</div><div class="barra"><div style="flex:0.000;background:#c9d3ce"></div><div style="flex:0.000;background:var(--oro)"></div></div></td><td class="v dx">0</td></tr><tr><td class="v">11</td><td><div class="lab">Calci di rinvio</div><div class="barra"><div style="flex:0.846;background:#c9d3ce"></div><div style="flex:0.154;background:var(--oro)"></div></div></td><td class="v dx">2</td></tr></table>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>6</span></div>
+<div class="osserva"><h4>Cosa osservare in partita</h4><ul class="clean"><li>Attacchi che arrivano in area palla al piede, come nella partita a meta.</li><li>Smarcamenti in avanti o in diagonale rispetto al portatore (gioco verticale del giovedì).</li><li>Calci d'angolo e punizioni a favore: nella settimana c'erano 25' di palle inattive offensive.</li></ul><div class="nb"><span class="liv c">Consigliato</span>Osservazioni editoriali sui principi allenati in settimana: indicano cosa guardare, non dimostrano che il risultato dipenda dagli allenamenti. Risultato e statistiche sono quelli originali.</div></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 13</span><span>23</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 14 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-04.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">In campionato · Seduta del lunedì · data non indicata sul foglio</div>
+  <div class="ex-title"><h2>Allenamento 14 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/campionato/allenamento-14.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Attacco contro difesa: le 10 flessioni le fa chi perde, mai chi vince.</li><li>Attacco contro difesa su metà campo; «VS» sul foglio indica le porticine: la difesa fa punto trovando il portiere o attraversando una porticina.</li><li>Partita a meta: in meta entra solo chi attacca e ha 3 secondi per concludere.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita a meta: misure non documentate, consigliati 35 × 40 m più 2 mete da 5 × 40 m.</li><li>Attacco contro difesa: 52,5 × 68 m, metà di un campo regolamentare da 105 × 68 m.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>24</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -684,7 +831,7 @@
     Poi un <b>attacco contro difesa</b> con la difesa in superiorità numerica (8 contro 7) e una posta in palio:
     le flessioni. Si chiude con la corsa sulla metà campo.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>25</span></div>
 </section>
 
 <section class="page">
@@ -715,26 +862,40 @@
     <div class="box"><h4>3° tempo · 12'</h4><ul class="clean"><li>Massimo <b>2 tocchi</b></li></ul></div>
   </div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Due squadre da 7 e un jolly (J) che gioca con chi ha palla</li>
       <li>Una meta per lato e un portiere dietro ogni meta</li><li>Chi difende non può entrare in meta</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Ogni squadra attacca una meta. <b>In meta entra solo la squadra che attacca</b> e ha <b>3 secondi</b> per andare alla conclusione contro il portiere.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Usare il jolly per creare la superiorità</li>
       <li>Entrati in meta, concludere subito: ci sono solo 3 secondi</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>26</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 14 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita a meta con jolly e portieri</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Partita a meta con la superiorità data dal jolly e la conclusione contro il portiere: in meta entra solo chi attacca e ha 3 secondi per concludere. I vincoli cambiano ogni tempo: gioco verticale, poi divieto di passare al compagno di reparto, poi 2 tocchi.</p>
+  <div class="riga"><div class="l">Tempi</div><div>3 tempi da 12' = 36' di gioco effettivo su 40' di blocco. I 4' di differenza non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: una meta per lato con un portiere dietro, misure non documentate. Consigliato: 35 × 40 m più 2 mete da 5 × 40 m, come negli Allenamenti 12 e 13.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Il jolly si offre sempre dal lato della palla per creare la superiorità.</li><li>Nel 2° tempo cercare la linea davanti o dietro: il compagno di reparto non è una soluzione.</li><li>La decisione si prende prima di entrare in meta: ci sono solo 3 secondi.</li><li>Chi difende non entra in meta e deve fermare l'azione prima.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Usare il jolly solo per passaggi di sicurezza all'indietro.</li><li>Entrare in meta e poi cercare la soluzione.</li><li>Difendere troppo bassi, aspettando l'avversario sulla linea della meta.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Conclusioni entro i 3 secondi.</li><li>Passaggi al compagno di reparto nel 2° tempo.</li><li>Azioni arrivate in meta grazie al jolly.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>27</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione III</div>
   <div class="ex-title"><h2>Attacco contro difesa · 7 contro 8</h2></div>
   <div class="ex-sub">
-    <span class="chip">35 minuti · 2 tempi da 15'</span><span class="chip">7 attaccanti contro 8 difensori</span><span class="chip">Tocco libero</span><span class="chip">10 flessioni</span>
+    <span class="chip">35 minuti · 2 tempi da 15'</span><span class="chip">7 attaccanti contro 8 difensori</span><span class="chip">Tocco libero</span><span class="chip">10 flessioni per chi perde</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> la difesa lavora in superiorità numerica e, quando recupera, deve uscire con la palla. Per fare punto la difesa deve trovare il portiere o attraversare le porticine.</p>
   <div style="display:flex;gap:5mm;align-items:center">
@@ -756,7 +917,7 @@
       <li>Tocco libero</li>
       <li>L'<b>attacco</b> vince se segna <b>3 o più gol</b></li>
       <li>La <b>difesa</b> fa punto se <b>trova il portiere</b> o <b>attraversa una delle due porticine</b></li>
-      <li><b>10 flessioni</b> per chi vince</li>
+      <li><b>10 flessioni</b> per chi perde</li>
     </ul></div>
   </div>
 
@@ -781,12 +942,34 @@
     <div class="box" style="flex:1">Come nell'Allenamento 12 ma in <b>2 serie da 6'</b> sulla <b>metà campo</b>:
       <b>lato corto</b> di corsa lenta per recuperare, <b>diagonale</b> in allungo.</div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>28</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 15 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-05.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page tec">
+  <div class="kicker">Allenamento 14 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Attacco contro difesa · 7 contro 8</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> La difesa lavora in superiorità numerica e deve fare due cose: recuperare palla e uscire trovando il portiere o attraversando una delle due porticine. L'attacco vince se segna 3 o più gol; chi perde fa 10 flessioni.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 35' di blocco. I 5' di differenza non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Precisato dall'autore: metà campo. Consigliato: 52,5 × 68 m, metà di un campo regolamentare da 105 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>L'uomo in più serve a raddoppiare sul portatore e a coprire lo spazio alle spalle, non a stare tutti in linea.</li><li>Recuperata palla, il primo passaggio cerca il portiere o la porticina libera prima che l'attacco si riorganizzi.</li><li>L'attacco occupa l'ampiezza per allargare la difesa e creare un uno contro uno.</li><li>Con un uomo in più la linea non ha bisogno di abbassarsi.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Difendere in 8 senza nessun uomo libero di coprire.</li><li>Recuperare e perdere subito palla con un passaggio forzato.</li><li>Attaccare sempre dallo stesso lato senza cambiare gioco.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Gol dell'attacco per tempo (traguardo: 3).</li><li>Recuperi della difesa che diventano punto.</li><li>Raddoppi riusciti sul portatore.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 14</span><span>29</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">In campionato · Seduta del giovedì · data non indicata sul foglio</div>
+  <div class="ex-title"><h2>Allenamento 15 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/campionato/allenamento-15.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>2 contro 2: versione perfezionata in seguito, 4 serie da 1'30" con 30" di recupero, 7'30" in tutto (sul foglio «2 tempi da 3'»).</li><li>Rapidità a stazioni: 15' (durata non scritta sul foglio).</li><li>Suicidi: navette dall'area piccola al limite dell'area e ritorno, 11 + 11 m.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita a pressione: 3/4 di un campo regolamentare, circa 79 × 68 m.</li><li>2 contro 2: campo ridotto non misurato, consigliati 20 × 20 m come nell'Allenamento 17.</li><li>Partita libera: consigliata metà campo regolamentare (52,5 × 68 m).</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>30</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -797,7 +980,7 @@
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">circa 76' + suicidi</div></div>
+    <div><div class="l">Durata</div><div class="v">circa 78' + suicidi</div></div>
     <div><div class="l">Giocatori</div><div class="v">Due squadre · 2 contro 2</div></div>
     <div><div class="l">Campo</div><div class="v">3/4 di campo · campo ridotto</div></div>
     <div><div class="l">Focus</div><div class="v">Pressione, preventive e rapidità</div></div>
@@ -808,7 +991,7 @@
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione generale</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Partita a pressione con preventive</div><div class="d">3/4 di campo · 2 tempi da 15' con le stesse regole · 2 tocchi · gol doppio con regole diverse per le due squadre</div></td><td class="min">30'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni · 5 volte per stazione · l'ultima a coppie</div></td><td class="min">15'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Chi vince resta · 4 serie da 1'30" · chi perde fa i suicidi a fine allenamento</div></td><td class="min">6'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Chi vince resta · 4 serie da 1'30" · 30" di recupero tra le serie (versione perfezionata dall'allenatore) · chi perde fa i suicidi a fine allenamento</div></td><td class="min">7'30"</td></tr>
     <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Poi i suicidi per chi ha perso il 2 contro 2</div></td><td class="min">15'</td></tr>
   </table>
 
@@ -816,7 +999,7 @@
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:30;background:var(--verde-2)">Pressione · 30'</div>
     <div style="flex:15;background:var(--oro);color:var(--verde)">Rapidità · 15'</div>
-    <div style="flex:6;background:var(--verde)">2c2</div>
+    <div style="flex:7.5;background:var(--verde)">2c2</div>
     <div style="flex:15;background:var(--verde-2)">Partita · 15'</div>
   </div>
 
@@ -826,7 +1009,7 @@
     l'altra se recupera palla nella metà campo avversaria. Chi non pressa resta scoperto, per questo servono le
     <b>preventive</b>. Poi rapidità, un 2 contro 2 dove chi perde paga e la partita libera.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>31</span></div>
 </section>
 
 <section class="page">
@@ -865,20 +1048,34 @@
     </div>
   </div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>3/4 di campo con due porte e i portieri</li>
       <li>Due porticine laterali ai lati della porta che attacca la squadra A</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Due tempi da 15' con le stesse regole: la squadra A cerca di attaccare in pochi passaggi, la squadra B di riconquistare palla nella metà campo avversaria.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Chi attacca lascia sempre qualcuno in marcatura preventiva</li>
       <li>Dopo il recupero, verticalizzare subito</li>
       <li>Chi perde palla aggredisce subito</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>32</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 15 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita a pressione con preventive</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Due squadre con premi diversi: A raddoppia il gol se arriva alla porta o alle porticine con massimo 4 passaggi dal recupero o dalla ripartenza del portiere; B raddoppia il gol se recupera palla nella metà offensiva e segna. Chi attacca deve tenere le marcature preventive per non subire.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma, stesse regole nei due tempi.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 3/4 di campo. Consigliato in metri: circa 79 × 68 m su un campo regolamentare.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Mentre la squadra attacca, i difensori marcano già gli avversari che stanno davanti alla linea della palla: è la marcatura preventiva.</li><li>La marcatura preventiva si prende da dietro, lato porta: quando arriva la palla si contrasta o si anticipa.</li><li>Squadra A: dopo il recupero si cerca la verticalità entro 4 passaggi.</li><li>Squadra B: la pressione nella metà offensiva parte insieme, non un giocatore alla volta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Attaccare con tutti e lasciare liberi gli avversari davanti alla palla.</li><li>Marcare davanti all'avversario: se la palla va alle spalle, il marcatore è tagliato fuori.</li><li>Per la squadra A, girare palla dopo il recupero e perdere il gol doppio.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Gol doppi della squadra A, entro 4 passaggi.</li><li>Recuperi della squadra B nella metà offensiva.</li><li>Ripartenze avversarie fermate subito dalla marcatura preventiva.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>33</span></div>
 </section>
 
 <section class="page">
@@ -890,24 +1087,24 @@
   <p class="obj"><b>Obiettivo:</b> rapidità, cambi di ritmo e arresti. Ogni stazione finisce con uno scatto, l'ultima è una sfida a coppie.</p>
   <div class="stazioni"><div class="stazione"><div class="n">1</div><div><div class="t">Skip + scatto</div><div class="d">5 m di skip (alto, dietro, basso, destro e sinistro), poi 10 m di scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Scaletta + scatto</div><div class="d">scaletta, poi 10 m di scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Scatto con arresto</div><div class="d">7 m di scatto, arresto al cono, altri 7 m di scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">4</div><div><div class="t">Sfida a coppie</div><div class="d">10 m di scatto fino ai conetti, poi 5 m: chi passa per secondo tra i conetti continua lo scatto. Il via lo dà la coppia dietro</div></div><div class="q">5 volte</div></div></div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Una scaletta, coni per l'arresto, conetti per la sfida a coppie</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Si fanno le 5 ripetizioni di una stazione e si passa alla successiva.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Nell'arresto abbassare il baricentro e ripartire subito</li>
       <li>Massima velocità in ogni scatto</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>34</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione IV</div>
   <div class="ex-title"><h2>2 contro 2 a partita · chi vince resta</h2></div>
-  <div class="ex-sub"><span class="chip">4 serie da 1'30"</span><span class="chip">2 contro 2 + portieri</span><span class="chip">Tocco libero</span></div>
+  <div class="ex-sub"><span class="chip">4 serie da 1'30" · recupero 30"</span><span class="chip">2 contro 2 + portieri</span><span class="chip">Tocco libero</span></div>
   <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> duelli continui a tocco libero: chi segna resta in campo, chi subisce gol lascia il posto a un'altra coppia.</p>
   <svg class="diagram" viewBox="0 0 500 380" style="width:88mm;margin:0 auto">
     <rect width="500" height="380" fill="url(#strisce)"/>
@@ -926,15 +1123,29 @@
     </g>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Campo ridotto con due porte e i portieri</li><li>Le coppie di ogni squadra aspettano il loro turno dietro la propria porta</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Tocco libero, <b>4 serie da 1'30"</b>.</p><p><b>Chi segna resta in campo</b> e si fa dare la palla dal proprio portiere. <b>Chi subisce gol esce</b> ed entrano altri 2.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Attaccare subito la porta</li><li>In due: uno attacca la palla, l'altro copre</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Campo ridotto con due porte e i portieri</li><li>Le coppie di ogni squadra aspettano il loro turno dietro la propria porta</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Tocco libero, <b>4 serie da 1'30"</b> con <b>30" di recupero</b>: 6' di gioco, 7'30" in tutto. È la versione perfezionata in seguito dall'allenatore.</p><p><b>Chi segna resta in campo</b> e si fa dare la palla dal proprio portiere. <b>Chi subisce gol esce</b> ed entrano altri 2.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Attaccare subito la porta</li><li>In due: uno attacca la palla, l'altro copre</li></ul></div></div>
   </div>
   <div class="chiave">
     <span class="kicker">Suicidi a fine allenamento · Esercitazione V · partita libera 15'</span>
-    Chi perde il 2 contro 2: <b>5 suicidi</b> · in caso di parità: <b>3 suicidi</b>. Prima dei suicidi, <b>15' di partita libera</b>.
+    Chi perde il 2 contro 2: <b>5 suicidi</b> · in caso di parità: <b>3 suicidi</b> (navette dall'area piccola al limite dell'area e ritorno, 11 + 11 m). Prima dei suicidi, <b>15' di partita libera</b>.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>35</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 15 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>2 contro 2 a partita · chi vince resta</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Duelli continui in spazio ridotto: chi segna resta, chi subisce gol esce. Si allenano la decisione rapida, l'uno contro uno e la collaborazione tra i due compagni in attacco e in difesa.</p>
+  <div class="riga"><div class="l">Tempi</div><div>4 serie da 1'30" con 30" di recupero: 6' di gioco effettivo, 7'30" in tutto (versione perfezionata dall'allenatore).</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: campo ridotto, misure non documentate. Consigliato: 20 × 20 m, come nell'Allenamento 17.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>In difesa i ruoli si decidono subito: uno attacca la palla, l'altro copre.</li><li>In attacco cercare l'uno contro uno o il passaggio alle spalle del difensore.</li><li>Concludere appena si apre lo specchio della porta.</li><li>La coppia che entra è già pronta e attenta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Pressare in due sul portatore senza copertura.</li><li>Passaggi orizzontali davanti ai difensori.</li><li>Ritardare la conclusione cercando il gol perfetto.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Coppie che restano in campo per più turni.</li><li>Gol nati da un uno contro uno vinto.</li><li>Coperture corrette del secondo difensore.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>36</span></div>
 </section>
 
 <section class="page">
@@ -951,12 +1162,21 @@
   </div>
   <h3>Statistiche</h3>
   <table class="stat"><tr><td class="v">3</td><td><div class="lab">Tiri in porta</div><div class="barra"><div style="flex:0.600;background:var(--oro)"></div><div style="flex:0.400;background:#c9d3ce"></div></div></td><td class="v dx">2</td></tr><tr><td class="v">3</td><td><div class="lab">Tiri fuori porta</div><div class="barra"><div style="flex:0.300;background:var(--oro)"></div><div style="flex:0.700;background:#c9d3ce"></div></div></td><td class="v dx">7</td></tr><tr><td class="v">1</td><td><div class="lab">Calci d'angolo</div><div class="barra"><div style="flex:0.167;background:var(--oro)"></div><div style="flex:0.833;background:#c9d3ce"></div></div></td><td class="v dx">5</td></tr><tr><td class="v">2</td><td><div class="lab">Fuorigioco</div><div class="barra"><div style="flex:0.400;background:var(--oro)"></div><div style="flex:0.600;background:#c9d3ce"></div></div></td><td class="v dx">3</td></tr><tr><td class="v">22</td><td><div class="lab">Falli</div><div class="barra"><div style="flex:0.478;background:var(--oro)"></div><div style="flex:0.522;background:#c9d3ce"></div></div></td><td class="v dx">24</td></tr><tr><td class="v">5</td><td><div class="lab">Cartellini gialli</div><div class="barra"><div style="flex:0.556;background:var(--oro)"></div><div style="flex:0.444;background:#c9d3ce"></div></div></td><td class="v dx">4</td></tr><tr><td class="v">0</td><td><div class="lab">Cartellini rossi</div><div class="barra"><div style="flex:0.000;background:var(--oro)"></div><div style="flex:0.000;background:#c9d3ce"></div></div></td><td class="v dx">0</td></tr><tr><td class="v">8</td><td><div class="lab">Calci di rinvio</div><div class="barra"><div style="flex:0.615;background:var(--oro)"></div><div style="flex:0.385;background:#c9d3ce"></div></div></td><td class="v dx">5</td></tr></table>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>6</span></div>
+<div class="osserva"><h4>Cosa osservare in partita</h4><ul class="clean"><li>Marcature preventive sugli avversari davanti alla linea della palla mentre la squadra attacca.</li><li>Uscita dalla difesa con la palla dopo il recupero (attacco contro difesa del lunedì).</li><li>Pressione di squadra nella metà campo avversaria.</li></ul><div class="nb"><span class="liv c">Consigliato</span>Osservazioni editoriali sui principi allenati in settimana: indicano cosa guardare, non dimostrano che il risultato dipenda dagli allenamenti. Risultato e statistiche sono quelli originali.</div></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 15</span><span>37</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 16 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-06.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">In campionato · Seduta del lunedì · data non indicata sul foglio</div>
+  <div class="ex-title"><h2>Allenamento 16 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/campionato/allenamento-16.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Attacco contro difesa: 30' in 2 tempi da 15'.</li><li>Navette: le ultime sui 16 m, dalla linea di fondo al limite dell'area.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Ricerca del portiere: misure non documentate, consigliati 52,5 × 40 m come nell'Allenamento 17.</li><li>Attacco contro difesa: misure non documentate, consigliati 52,5 × 68 m (metà campo regolamentare).</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>38</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -977,7 +1197,7 @@
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Ricerca del portiere · lavoro sulla pressione</div><div class="d">7 contro 7 + jolly · 2 tempi da 15' · 3 tocchi, niente lancio · gol dopo il recupero nella metà offensiva = 5 punti · nel 2° tempo solo verticale</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Attacco contro difesa</div><div class="d">2 tempi · tocco libero · la squadra A difende e riparte verso le porticine o la porta</div></td><td class="min">30'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Attacco contro difesa</div><div class="d">2 tempi da 15' · tocco libero · la squadra A difende e riparte verso le porticine o la porta</div></td><td class="min">30'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">Navette</div><div class="d">5' di 20"-20" sui 100 m · 5' di 15"-15" sugli 80 m · 5' di 10"-10" sui 16 m</div></td><td class="min">15'</td></tr>
   </table>
 
@@ -994,7 +1214,7 @@
     niente lanci e un premio grosso (5 punti) per chi recupera palla nella metà offensiva e segna.
     Poi un <b>attacco contro difesa</b> dove chi difende deve anche ripartire e per finire le navette.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>39</span></div>
 </section>
 
 <section class="page">
@@ -1024,26 +1244,40 @@
       <li>Se si <b>recupera palla nella metà offensiva</b> si può fare gol: vale <b>5 punti</b></li></ul></div>
   </div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo diviso in due metà, un portiere bersaglio per lato</li>
       <li>Due squadre da 7 e un jolly (J) con chi ha palla</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Ogni squadra cerca di far arrivare la palla al portiere del lato che attacca. Il gol si può fare solo dopo un recupero nella metà offensiva.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Pressione immediata quando si perde palla</li>
       <li>Dopo il recupero alto attaccare subito la porta</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>40</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 16 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Ricerca del portiere · lavoro sulla pressione</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> La ricerca del portiere diventa un lavoro sulla pressione: senza lanci si deve arrivare al portiere palla a terra e il recupero nella metà offensiva, se seguito dal gol, vale 5 punti. Nel 2° tempo si aggiunge il solo gioco verticale.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: campo diviso in due metà con un portiere bersaglio per lato, misure non documentate. Consigliato: 52,5 × 40 m, come nell'Allenamento 17.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Persa palla, il più vicino aggredisce subito e i compagni chiudono le linee corte.</li><li>Il jolly gioca con chi ha palla: il sostegno è sempre vicino.</li><li>Dopo il recupero alto si attacca subito la porta, senza tornare indietro.</li><li>Nel 2° tempo ci si smarca avanti o in diagonale rispetto al portatore.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Pressare da soli, lasciando libero il passaggio corto.</li><li>Cercare comunque il lancio: l'azione si spezza.</li><li>Recuperare alto e poi girare palla perdendo l'occasione.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Recuperi nella metà offensiva per tempo.</li><li>Recuperi alti che diventano gol da 5 punti.</li><li>Passaggi validi al portiere palla a terra.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>41</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione III</div>
   <div class="ex-title"><h2>Attacco contro difesa</h2></div>
   <div class="ex-sub">
-    <span class="chip">30 minuti · 2 tempi</span><span class="chip">Tocco libero</span><span class="chip">Stesse regole nei due tempi</span>
+    <span class="chip">30 minuti · 2 tempi da 15'</span><span class="chip">Tocco libero</span><span class="chip">Stesse regole nei due tempi</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> come nell'Allenamento 14, chi difende non deve solo recuperare palla ma anche uscire bene: verso le porticine laterali o verso la porta.</p>
   <div style="display:flex;gap:5mm;align-items:center">
@@ -1082,12 +1316,34 @@
     <tr><td style="font-family:Oswald;font-size:15pt;color:var(--verde);padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">5'</td><td style="padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">15" di corsa e 15" di recupero · navette sugli <b>80 m</b></td></tr>
     <tr><td style="font-family:Oswald;font-size:15pt;color:var(--verde);padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">5'</td><td style="padding:2.5mm 2mm;border-bottom:1px solid #e3e8e5">10" di corsa e 10" di recupero · navette sui <b>16 m</b> (dal fondo campo al limite dell'area)</td></tr>
   </table>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>42</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 17 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-07.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page tec">
+  <div class="kicker">Allenamento 16 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Attacco contro difesa</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Chi difende (squadra A) non deve solo recuperare ma anche uscire bene: porticina 1 o 2 (1 punto) oppure gol (1 punto). La squadra B attacca e deve fare gol.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo (precisato dall'autore).</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: misure non documentate. Consigliato: 52,5 × 68 m (metà campo regolamentare), come nell'Allenamento 14.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Recuperata palla, la squadra A sceglie subito tra porticina e porta in base allo spazio libero.</li><li>Chi ha appena perso palla nella squadra B difende subito le porticine.</li><li>Prima del recupero la linea della squadra A resta compatta.</li><li>In attacco la squadra B occupa l'ampiezza per allargare la difesa.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Uscire dalla zona difensiva con dribbling rischiosi.</li><li>Dimenticare le porticine dopo aver perso palla.</li><li>Attaccare in tanti al centro senza ampiezza.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Uscite riuscite dalle porticine 1 e 2.</li><li>Gol della squadra B per tempo.</li><li>Tempo tra il recupero e l'uscita.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 16</span><span>43</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">In campionato · Seduta del giovedì · data non indicata sul foglio</div>
+  <div class="ex-title"><h2>Allenamento 17 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/campionato/allenamento-17.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>«No lancio» vieta i lanci alti: i passaggi lunghi rasoterra sono consentiti. Il passaggio rasoterra dalla propria metà difensiva al portiere vale 2 punti.</li><li>2 contro 2: versione perfezionata in seguito, 4 serie da 1'30" con 30" di recupero (sul foglio «4 serie da 2'»).</li><li>Rapidità: circa 15', stima. Partita libera: 15', durata indicativa (sul foglio non c'è).</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Ricerca del portiere: «metà campo larga quanto l'area» corrisponde a circa 52,5 × 40 m su un campo regolamentare.</li><li>Partita libera: consigliata metà campo regolamentare (52,5 × 68 m).</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>44</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -1098,7 +1354,7 @@
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">circa 80'</div></div>
+    <div><div class="l">Durata</div><div class="v">circa 78'</div></div>
     <div><div class="l">Giocatori</div><div class="v">7 contro 7 · 2 contro 2</div></div>
     <div><div class="l">Campo</div><div class="v">Metà campo larga quanto l'area</div></div>
     <div><div class="l">Focus</div><div class="v">Ricerca del portiere, pressione e rapidità</div></div>
@@ -1107,18 +1363,18 @@
   <h3>Programma della seduta</h3>
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
-    <tr><td class="num">II</td><td><div class="t">Ricerca del portiere · lavoro sulla pressione</div><div class="d">7 contro 7 · 2 tempi · 2 tocchi, niente lancio · 1, 2 o 3 punti · nel 2° tempo senza compagno di reparto</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni · 5 volte per stazione · l'ultima a coppie, partenza da seduti</div></td><td class="min">15'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Campo 20 × 20 m · si parte sempre dal portiere · chi fa gol resta · 4 serie da 1'30"</div></td><td class="min">6'</td></tr>
-    <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Per chiudere la seduta</div></td><td class="min">–</td></tr>
+    <tr><td class="num">II</td><td><div class="t">Ricerca del portiere · lavoro sulla pressione</div><div class="d">7 contro 7 · 2 tempi · 2 tocchi, niente lancio alto · 1, 2 o 3 punti · nel 2° tempo senza compagno di reparto</div></td><td class="min">30'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni · 5 volte per stazione · l'ultima a coppie, partenza da seduti · durata stimata</div></td><td class="min">~15'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Campo 20 × 20 m · si parte sempre dal portiere · chi fa gol resta · 4 serie da 1'30" · 30" di recupero tra le serie (versione perfezionata dall'allenatore)</div></td><td class="min">7'30"</td></tr>
+    <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Per chiudere la seduta · durata indicativa, non scritta sul foglio</div></td><td class="min">~15'</td></tr>
   </table>
 
   <div class="timeline">
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:30;background:var(--verde-2)">Ricerca del portiere · 30'</div>
     <div style="flex:15;background:var(--oro);color:var(--verde)">Rapidità · 15'</div>
-    <div style="flex:6;background:var(--verde)">2c2</div>
-    <div style="flex:15;background:var(--verde-2)">Partita libera</div>
+    <div style="flex:7.5;background:var(--verde)">2c2</div>
+    <div style="flex:15;background:var(--verde-2)">Partita · ~15'</div>
   </div>
 
   <div class="chiave" style="margin-top:9mm">
@@ -1127,14 +1383,14 @@
     punteggi diversi, dal passaggio al portiere fino al gol dopo il recupero alto. Nel secondo tempo si aggiunge il
     divieto di passare al compagno di reparto. Poi rapidità, 2 contro 2 e partita libera.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>45</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione II</div>
   <div class="ex-title"><h2>Ricerca del portiere · lavoro sulla pressione</h2></div>
   <div class="ex-sub">
-    <span class="chip">30 minuti · 2 tempi da 15'</span><span class="chip">7 contro 7</span><span class="chip">Metà campo larga quanto l'area</span><span class="chip">2 tocchi · no lancio</span>
+    <span class="chip">30 minuti · 2 tempi da 15'</span><span class="chip">7 contro 7</span><span class="chip">Metà campo larga quanto l'area</span><span class="chip">2 tocchi · no lancio alto</span>
   </div>
   <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> rispetto al lunedì i tocchi scendono a 2 e i punti premiano tre cose diverse: trovare il portiere, trovarlo partendo da dietro e segnare dopo il recupero alto.</p>
   <svg class="diagram" viewBox="0 0 500 300" style="width:118mm;margin:0 auto">
@@ -1151,27 +1407,41 @@
     <text x="250" y="292" font-family="Oswald" font-size="11" fill="#fff" text-anchor="middle" letter-spacing="1">METÀ CAMPO · LARGHEZZA DELL'AREA</text>
   </svg>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:5mm">
-    <div class="box"><h4>1° tempo · 15'</h4><ul class="clean"><li>Massimo <b>2 tocchi</b> · <b>no lancio</b></li>
+    <div class="box"><h4>1° tempo · 15'</h4><ul class="clean"><li>Massimo <b>2 tocchi</b> · <b>no lancio alto</b>: i passaggi lunghi rasoterra sono consentiti</li>
       <li>Passaggio al portiere: <b>1 punto</b></li>
-      <li>Passaggio al portiere <b>dalla metà difensiva</b>: <b>2 punti</b></li>
+      <li>Passaggio <b>rasoterra</b> al portiere <b>dalla propria metà difensiva</b>: <b>2 punti</b></li>
       <li>Palla recuperata nella <b>metà offensiva</b>: si deve cercare il gol, <b>3 punti</b></li></ul></div>
     <div class="box"><h4>2° tempo · 15'</h4><ul class="clean"><li><b>Stesse regole</b> del 1° tempo</li>
       <li>Vietato passare al <b>compagno di reparto</b> (gli attaccanti possono passarla a chi vogliono)</li></ul></div>
   </div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Metà campo larga quanto l'area di rigore, divisa in due</li>
       <li>Un portiere bersaglio per lato</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Ogni squadra cerca il portiere del lato che attacca. Dopo un recupero nella metà offensiva non si cerca il portiere ma il gol.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Costruire da dietro per i 2 punti</li>
       <li>Pressione alta per i 3 punti</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>46</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 17 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Ricerca del portiere · lavoro sulla pressione</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Rispetto al lunedì i tocchi scendono a 2 e il punteggio premia tre comportamenti: trovare il portiere (1 punto), trovarlo con un passaggio rasoterra dalla propria metà difensiva (2 punti), segnare dopo un recupero nella metà offensiva (3 punti). Il divieto riguarda solo i lanci alti.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo larga quanto l'area di rigore. In metri, su un campo regolamentare: circa 52,5 × 40 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Il passaggio da 2 punti è rasoterra e teso: va preparato da un compagno che apre la linea.</li><li>A 2 tocchi la ricezione deve già orientare il gioco.</li><li>Nel 2° tempo il divieto di passare al compagno di reparto obbliga a cercare la linea davanti o dietro; gli attaccanti possono passarla a chi vogliono.</li><li>Recuperata palla nella metà offensiva si cerca solo il gol.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Alzare la palla per cercare il portiere: il lancio alto non è consentito.</li><li>Forzare il passaggio lungo quando la linea è chiusa.</li><li>Dopo il recupero alto, cercare il portiere invece del gol.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Passaggi da 2 punti riusciti e tentati.</li><li>Recuperi alti che diventano gol da 3 punti.</li><li>Passaggi al compagno di reparto nel 2° tempo.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>47</span></div>
 </section>
 
 <section class="page">
@@ -1183,7 +1453,7 @@
   <div class="stazioni" style="grid-template-columns:1fr 1fr"><div class="stazione"><div class="n">1</div><div><div class="t">Scaletta + scatto</div><div class="d">scaletta, poi 10 m di scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Skip + scatto</div><div class="d">5 m di skip avanti e indietro, poi scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Scatto con stop</div><div class="d">5 m di scatto, stop al cono, poi 10 m di scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">4</div><div><div class="t">Sfida a coppie</div><div class="d">partenza da seduti, 8 m fino ai conetti, poi 5 m: chi passa per primo si ferma</div></div><div class="q">5 volte</div></div></div>
 
   <div class="kicker" style="margin-top:6mm">Esercitazione IV</div>
-  <div class="ex-title"><h2 style="font-size:17pt">2 contro 2 a partita · 4 serie da 1'30"</h2></div>
+  <div class="ex-title"><h2 style="font-size:17pt">2 contro 2 a partita · 4 serie da 1'30" + 30" di recupero</h2></div>
   <div style="display:flex;gap:6mm;align-items:center;margin-top:3mm">
     <div style="flex:1"><svg class="diagram" viewBox="0 0 500 380" style="width:80mm;margin:0 auto">
     <rect width="500" height="380" fill="url(#strisce)"/>
@@ -1204,14 +1474,29 @@
       <li>Si parte <b>sempre dal portiere</b></li>
       <li><b>Chi fa gol resta</b></li>
       <li>Se la palla esce <b>si cambiano tutti e 4</b> i giocatori</li>
+      <li>30" di recupero tra le serie: 6' di gioco, 7'30" in tutto (versione perfezionata dall'allenatore)</li>
     </ul></div>
   </div>
 
   <div class="chiave">
     <span class="kicker">Esercitazione V · partita libera</span>
-    Partita senza vincoli per chiudere la seduta.
+    Partita senza vincoli per chiudere la seduta. Durata indicativa <b>15'</b>: è la durata abituale indicata dall'allenatore, non è scritta sul foglio.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>48</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 17 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>2 contro 2 a partita</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Duelli 2 contro 2 ripartendo sempre dal portiere: chi fa gol resta, se la palla esce si cambiano tutti e 4 i giocatori. Si allenano l'uscita dal portiere, la divisione dei compiti e la conclusione rapida.</p>
+  <div class="riga"><div class="l">Tempi</div><div>4 serie da 1'30" con 30" di recupero: 6' di gioco effettivo, 7'30" in tutto (versione perfezionata dall'allenatore).</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 20 × 20 m. Nessun adattamento necessario.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Quando il portiere rimette, ci si smarca in direzioni diverse.</li><li>In difesa uno attacca la palla, l'altro copre.</li><li>Tenere la palla in campo: se esce cambia tutta la coppia.</li><li>Concludere appena c'è lo specchio.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Andare in due verso il portiere quando rimette.</li><li>Giocate rischiose vicino alle linee.</li><li>Perdere il duello per mancanza di copertura.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Gol per serie.</li><li>Palloni usciti dal campo.</li><li>Coperture corrette del secondo difensore.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>49</span></div>
 </section>
 
 <section class="page">
@@ -1228,12 +1513,21 @@
   </div>
   <h3>Statistiche</h3>
   <table class="stat"><tr><td class="v">2</td><td><div class="lab">Tiri in porta</div><div class="barra"><div style="flex:0.133;background:#c9d3ce"></div><div style="flex:0.867;background:var(--oro)"></div></div></td><td class="v dx">13</td></tr><tr><td class="v">3</td><td><div class="lab">Tiri fuori porta</div><div class="barra"><div style="flex:0.375;background:#c9d3ce"></div><div style="flex:0.625;background:var(--oro)"></div></div></td><td class="v dx">5</td></tr><tr><td class="v">2</td><td><div class="lab">Calci d'angolo</div><div class="barra"><div style="flex:0.286;background:#c9d3ce"></div><div style="flex:0.714;background:var(--oro)"></div></div></td><td class="v dx">5</td></tr><tr><td class="v">1</td><td><div class="lab">Fuorigioco</div><div class="barra"><div style="flex:0.200;background:#c9d3ce"></div><div style="flex:0.800;background:var(--oro)"></div></div></td><td class="v dx">4</td></tr><tr><td class="v">18</td><td><div class="lab">Falli</div><div class="barra"><div style="flex:0.643;background:#c9d3ce"></div><div style="flex:0.357;background:var(--oro)"></div></div></td><td class="v dx">10</td></tr><tr><td class="v">1</td><td><div class="lab">Cartellini gialli</div><div class="barra"><div style="flex:0.333;background:#c9d3ce"></div><div style="flex:0.667;background:var(--oro)"></div></div></td><td class="v dx">2</td></tr><tr><td class="v">2</td><td><div class="lab">Cartellini rossi</div><div class="barra"><div style="flex:1.000;background:#c9d3ce"></div><div style="flex:0.000;background:var(--oro)"></div></div></td><td class="v dx">0</td></tr><tr><td class="v">7</td><td><div class="lab">Calci di rinvio</div><div class="barra"><div style="flex:0.778;background:#c9d3ce"></div><div style="flex:0.222;background:var(--oro)"></div></div></td><td class="v dx">2</td></tr></table>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>5</span></div>
+<div class="osserva"><h4>Cosa osservare in partita</h4><ul class="clean"><li>Riconquiste nella metà offensiva e conclusioni che ne nascono.</li><li>Passaggi rasoterra dalla difesa per superare la prima pressione.</li><li>Pressione che parte insieme subito dopo la perdita del pallone.</li></ul><div class="nb"><span class="liv c">Consigliato</span>Osservazioni editoriali sui principi allenati in settimana: indicano cosa guardare, non dimostrano che il risultato dipenda dagli allenamenti. Risultato e statistiche sono quelli originali.</div></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 17</span><span>50</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 18 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-08.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">In campionato · Seduta del lunedì · 18/10/2021</div>
+  <div class="ex-title"><h2>Allenamento 18 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/campionato/allenamento-18.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><p>Nessuna precisazione: la seduta è trascritta così come è sul foglio.</p></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita a meta con ricerca della punta: 3/4 di campo, tutta la larghezza, circa 79 × 68 m su un campo regolamentare.</li><li>Attacco contro difesa: misure non documentate, consigliati 52,5 × 68 m (metà campo regolamentare).</li><li>Corsa con variazioni di velocità: 2 ripetute da 8' in 20'; il recupero tra le ripetute non è scritto.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>51</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -1271,7 +1565,7 @@
     il compagno in profondità con la filtrante. Poi l'<b>attacco contro difesa</b>, dove chi difende deve anche
     uscire palla al piede dalle porticine, e la corsa con variazioni di velocità.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>52</span></div>
 </section>
 
 <section class="page">
@@ -1313,19 +1607,33 @@
       <li>Se recupera palla nella <b>metà offensiva</b>, il gol vale <b>doppio</b></li></ul></div>
   </div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>3/4 di campo, tutta la larghezza</li>
       <li>Da un lato una porta con il portiere, dall'altro la zona meta con le porte A, B, C</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Si gioca a <b>2 tocchi</b>. Le due squadre hanno obiettivi diversi (vedi riquadri sopra).</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>La punta riceve e scarica subito</li>
       <li>Chi riceve lo scarico ha già visto il compagno che attacca la profondità</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>53</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 18 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita a meta con ricerca della punta</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Due squadre con compiti diversi: B trova la punta in zona meta e, sul suo scarico, serve con una filtrante un compagno che attraversa una delle porte A, B, C; A deve fare gol nella porta con il portiere, con il gol doppio se nasce da un recupero nella metà offensiva.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 35' di blocco. I 5' di differenza non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 3/4 di campo, tutta la larghezza. In metri, su un campo regolamentare: circa 79 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>La punta riceve spalle alla porta e scarica subito.</li><li>Chi riceve lo scarico ha già visto il compagno che attacca la profondità.</li><li>La filtrante parte nel momento del movimento, non dopo.</li><li>La squadra A pressa alta per cercare il gol doppio.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Punta che prova sempre a girarsi invece di scaricare.</li><li>Inserimento che parte quando la filtrante è già stata giocata.</li><li>Filtrante troppo lunga per il compagno.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Scarichi della punta che diventano filtranti.</li><li>Attraversamenti delle porte A, B, C.</li><li>Gol doppi della squadra A.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>54</span></div>
 </section>
 
 <section class="page">
@@ -1377,12 +1685,34 @@
     <div class="box" style="flex:1">Come negli Allenamenti 12 e 14, sulla <b>metà campo</b>: <b>lato corto</b> di corsa lenta
       per recuperare, <b>diagonale</b> in allungo. <b>2 ripetute da 8'</b> (20' in tutto con il recupero).</div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>55</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 19 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-campionato/copertina-09.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page tec">
+  <div class="kicker">Allenamento 18 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Attacco contro difesa · porticine A, B, C</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Come negli Allenamenti 14 e 16, chi difende la porta, dopo il recupero, deve uscire con la palla attraverso le porticine A, B o C. Chi attacca deve fare gol e difendere le porticine. L'attacco vince se segna 3 o più gol; chi perde fa 10 flessioni, più una per ogni gol oltre il terzo.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 35' di blocco. I 5' di differenza non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: misure non documentate. Consigliato: 52,5 × 68 m (metà campo regolamentare).</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Recuperata palla, uscire dalla porticina lontana dalla pressione.</li><li>Chi attacca, persa palla, chiude subito la porticina più vicina.</li><li>La difesa accorcia insieme quando la palla è coperta.</li><li>In attacco almeno due giocatori attaccano l'area.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Uscire sempre dalla stessa porticina.</li><li>Attaccare senza pensare a cosa succede se si perde palla.</li><li>Difendere lontano dalla porta e concedere tiri facili.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Uscite riuscite per porticina (A, B, C).</li><li>Gol dell'attacco per tempo.</li><li>Recuperi trasformati in uscita in pochi secondi.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 18</span><span>56</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">In campionato · Seduta del giovedì · 21/10/2021</div>
+  <div class="ex-title"><h2>Allenamento 19 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/campionato/allenamento-19.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>2 contro 2 con sponde: versione perfezionata in seguito, 4 serie da 1'30" con 30" di recupero (sul foglio «4 da 2 minuti»).</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Attacco alla meta: misure non documentate, consigliati 40 × 45 m più 2 mete da 5 m, da adattare al numero di giocatori.</li><li>2 contro 2 con sponde: consigliati 20 × 20 m come nell'Allenamento 17.</li><li>Partita libera: consigliata metà campo regolamentare (52,5 × 68 m).</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (rapidità, corsa, navette, suicidi, flessioni): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>57</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -1393,7 +1723,7 @@
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">circa 80'</div></div>
+    <div><div class="l">Durata</div><div class="v">circa 83'</div></div>
     <div><div class="l">Giocatori</div><div class="v">Due squadre + jolly · 2 contro 2</div></div>
     <div><div class="l">Campo</div><div class="v">Mete con le porte · campo ridotto</div></div>
     <div><div class="l">Focus</div><div class="v">Rapidità e attacco alla meta</div></div>
@@ -1402,9 +1732,9 @@
   <h3>Programma della seduta</h3>
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
-    <tr><td class="num">II</td><td><div class="t">Rapidità a stazioni</div><div class="d">3 sfide a coppie · 5 volte per stazione · chi arriva dopo fa altri 5 m</div></td><td class="min">20'</td></tr>
+    <tr><td class="num">II</td><td><div class="t">Rapidità a stazioni</div><div class="d">3 sfide a coppie · 5 volte per stazione · nelle stazioni 1 e 2 chi arriva dopo fa altri 5 m</div></td><td class="min">20'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Partita attacco alla meta</div><div class="d">2 tempi da 15' · 2 tocchi · nel 2° tempo senza compagno di reparto</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">2 contro 2 con sponde</div><div class="d">Tocco libero · 4 serie da 1'30" · gol con la sponda doppio</div></td><td class="min">6'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">2 contro 2 con sponde</div><div class="d">Tocco libero · 4 serie da 1'30" · 30" di recupero tra le serie (versione perfezionata dall'allenatore) · gol con la sponda doppio</div></td><td class="min">7'30"</td></tr>
     <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Per chiudere la seduta</div></td><td class="min">15'</td></tr>
   </table>
 
@@ -1412,7 +1742,7 @@
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:20;background:var(--oro);color:var(--verde)">Rapidità · 20'</div>
     <div style="flex:30;background:var(--verde-2)">Attacco alla meta · 30'</div>
-    <div style="flex:6;background:var(--verde)">2c2</div>
+    <div style="flex:7.5;background:var(--verde)">2c2</div>
     <div style="flex:15;background:var(--verde-2)">Partita · 15'</div>
   </div>
 
@@ -1422,7 +1752,7 @@
     con il jolly, che nel secondo tempo diventa più difficile perché non si può passare al compagno di reparto.
     Si chiude con un 2 contro 2 che premia il gioco con le sponde e la partita libera.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>58</span></div>
 </section>
 
 <section class="page">
@@ -1431,16 +1761,16 @@
   <div class="ex-sub">
     <span class="chip">20 minuti</span><span class="chip">3 stazioni</span><span class="chip">5 volte per stazione</span>
   </div>
-  <p class="obj"><b>Obiettivo:</b> rapidità e reazione con tre partenze diverse. La sfida a coppie tiene alta l'intensità: chi perde paga con altri 5 metri.</p>
+  <p class="obj"><b>Obiettivo:</b> rapidità e reazione con tre partenze diverse. La sfida a coppie tiene alta l'intensità: nelle stazioni 1 e 2 chi perde paga con altri 5 metri.</p>
   <div class="stazioni"><div class="stazione"><div class="n">1</div><div><div class="t">Partenza da seduti</div><div class="d">a coppie: 10 m fino ai conetti, poi 5 m · chi arriva dopo fa altri 5 m</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Partenza guardando dietro</div><div class="d">a coppie: 10 m fino ai conetti, poi 5 m · chi arriva dopo fa altri 5 m</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Partenza con skip alto</div><div class="d">a coppie: 10 m fino ai conetti, poi 5 m</div></div><div class="q">5 volte</div></div></div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
-      <li>Giocatori a coppie</li><li>Conetti a 10 m e poi a 5 m</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Si fanno le 5 ripetizioni di una stazione e si passa alla successiva.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
-      <li>Partenza esplosiva qualunque sia la posizione</li><li>Guardando dietro: girarsi e partire in un solo movimento</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
+      <li>Giocatori a coppie</li><li>Conetti a 10 m e poi a 5 m</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Si fanno le 5 ripetizioni di una stazione e si passa alla successiva.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
+      <li>Partenza esplosiva qualunque sia la posizione</li><li>Guardando dietro: girarsi e partire in un solo movimento</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>59</span></div>
 </section>
 
 <section class="page">
@@ -1466,18 +1796,32 @@
     <use href="#pJ" x="250" y="155"/><text x="250" y="159.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">J</text>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Una meta per lato con la porta e il portiere dietro</li><li>Due squadre e un jolly (J) con chi ha palla</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p><b>1° tempo · 15'</b>: massimo <b>2 tocchi</b>.</p><p><b>2° tempo · 15'</b>: massimo <b>2 tocchi</b>, vietato passare al <b>compagno di reparto</b> (gli attaccanti con chi vogliono).</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Usare il jolly per creare la superiorità</li><li>Attaccare la meta appena si apre lo spazio</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Una meta per lato con la porta e il portiere dietro</li><li>Due squadre e un jolly (J) con chi ha palla</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p><b>1° tempo · 15'</b>: massimo <b>2 tocchi</b>.</p><p><b>2° tempo · 15'</b>: massimo <b>2 tocchi</b>, vietato passare al <b>compagno di reparto</b> (gli attaccanti con chi vogliono).</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Usare il jolly per creare la superiorità</li><li>Attaccare la meta appena si apre lo spazio</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>60</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 19 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita attacco alla meta</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Attaccare la meta con un jolly sempre con chi ha palla; dietro ogni meta ci sono la porta e il portiere. Nel 2° tempo il divieto di passare al compagno di reparto obbliga a cercare la linea davanti o dietro; gli attaccanti possono passarla a chi vogliono.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: una meta per lato con la porta, misure non documentate. Consigliato: 40 × 45 m più 2 mete da 5 m, da adattare al numero di giocatori.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Il jolly si offre vicino alla palla per creare la superiorità.</li><li>Si attacca la meta appena si apre lo spazio.</li><li>Nel 2° tempo smarcarsi su una linea diversa da quella del portatore.</li><li>A 2 tocchi la giocata si prepara prima di ricevere.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Passare al compagno di reparto nel 2° tempo.</li><li>Usare il jolly solo all'indietro.</li><li>Arrivare in meta senza sostegno.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Ingressi in meta per tempo.</li><li>Azioni nate da un passaggio al jolly.</li><li>Errori di reparto nel 2° tempo.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>61</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione IV</div>
   <div class="ex-title"><h2>2 contro 2 con sponde</h2></div>
   <div class="ex-sub">
-    <span class="chip">4 serie da 1'30"</span><span class="chip">2 contro 2 + 2 sponde</span><span class="chip">Tocco libero</span>
+    <span class="chip">4 serie da 1'30" · recupero 30"</span><span class="chip">2 contro 2 + 2 sponde</span><span class="chip">Tocco libero</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> duelli a tocco libero usando le due sponde (J) fuori dal campo: il gol dopo la sponda vale doppio.</p>
   <div style="display:flex;gap:6mm;align-items:center">
@@ -1494,6 +1838,7 @@
       <li>Due porte con i portieri, due sponde (J) sui lati lunghi</li>
       <li>Tocco libero</li>
       <li><b>Gol dopo la sponda: doppio</b></li>
+      <li>30" di recupero tra le serie: 6' di gioco, 7'30" in tutto (versione perfezionata dall'allenatore)</li>
     </ul></div>
   </div>
 
@@ -1501,7 +1846,21 @@
     <span class="kicker">Esercitazione V · partita libera · 15'</span>
     Partita senza vincoli per chiudere la seduta.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>62</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 19 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>2 contro 2 con sponde</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Duelli 2 contro 2 a tocco libero con due sponde sui lati lunghi: il gol dopo la sponda vale doppio, quindi si impara a usare il compagno esterno per superare la difesa.</p>
+  <div class="riga"><div class="l">Tempi</div><div>4 serie da 1'30" con 30" di recupero: 6' di gioco effettivo, 7'30" in tutto (versione perfezionata dall'allenatore).</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: misure non documentate. Consigliato: 20 × 20 m, come nell'Allenamento 17.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>La sponda serve a creare il 3 contro 2.</li><li>Dopo il passaggio alla sponda si attacca subito lo spazio.</li><li>Chi difende chiude la linea verso la sponda senza scoprire la porta.</li><li>Si conclude al primo spiraglio.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Ignorare la sponda e cercare sempre il dribbling.</li><li>Fermarsi dopo il passaggio.</li><li>Difendere solo sul portatore.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Gol dopo la sponda per serie.</li><li>Uscite dalla pressione con la sponda.</li><li>Linee verso la sponda chiuse dalla difesa.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>63</span></div>
 </section>
 
 <section class="page">
@@ -1518,7 +1877,8 @@
   </div>
   <h3>Statistiche</h3>
   <table class="stat"><tr><td class="v">5</td><td><div class="lab">Tiri in porta</div><div class="barra"><div style="flex:0.625;background:var(--oro)"></div><div style="flex:0.375;background:#c9d3ce"></div></div></td><td class="v dx">3</td></tr><tr><td class="v">4</td><td><div class="lab">Tiri fuori porta</div><div class="barra"><div style="flex:0.333;background:var(--oro)"></div><div style="flex:0.667;background:#c9d3ce"></div></div></td><td class="v dx">8</td></tr><tr><td class="v">3</td><td><div class="lab">Calci d'angolo</div><div class="barra"><div style="flex:0.273;background:var(--oro)"></div><div style="flex:0.727;background:#c9d3ce"></div></div></td><td class="v dx">8</td></tr><tr><td class="v">3</td><td><div class="lab">Fuorigioco</div><div class="barra"><div style="flex:0.750;background:var(--oro)"></div><div style="flex:0.250;background:#c9d3ce"></div></div></td><td class="v dx">1</td></tr><tr><td class="v">15</td><td><div class="lab">Falli</div><div class="barra"><div style="flex:0.429;background:var(--oro)"></div><div style="flex:0.571;background:#c9d3ce"></div></div></td><td class="v dx">20</td></tr><tr><td class="v">4</td><td><div class="lab">Cartellini gialli</div><div class="barra"><div style="flex:0.571;background:var(--oro)"></div><div style="flex:0.429;background:#c9d3ce"></div></div></td><td class="v dx">3</td></tr><tr><td class="v">1</td><td><div class="lab">Cartellini rossi</div><div class="barra"><div style="flex:1.000;background:var(--oro)"></div><div style="flex:0.000;background:#c9d3ce"></div></div></td><td class="v dx">0</td></tr><tr><td class="v">11</td><td><div class="lab">Calci di rinvio</div><div class="barra"><div style="flex:0.688;background:var(--oro)"></div><div style="flex:0.312;background:#c9d3ce"></div></div></td><td class="v dx">5</td></tr></table>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>6</span></div>
+<div class="osserva"><h4>Cosa osservare in partita</h4><ul class="clean"><li>Scarichi della punta e inserimenti in profondità dei compagni (lunedì).</li><li>Uscita dalla pressione dopo il recupero.</li><li>Attacco dello spazio verso l'area appena si apre.</li></ul><div class="nb"><span class="liv c">Consigliato</span>Osservazioni editoriali sui principi allenati in settimana: indicano cosa guardare, non dimostrano che il risultato dipenda dagli allenamenti. Risultato e statistiche sono quelli originali.</div></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>In campionato · Allenamento 19</span><span>64</span></div>
 </section>
 
 </body>

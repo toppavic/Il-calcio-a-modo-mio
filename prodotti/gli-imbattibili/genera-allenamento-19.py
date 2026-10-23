@@ -121,7 +121,7 @@ scheda = f'''<section class="page">
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">circa 80'</div></div>
+    <div><div class="l">Durata</div><div class="v">circa 83'</div></div>
     <div><div class="l">Giocatori</div><div class="v">Due squadre + jolly · 2 contro 2</div></div>
     <div><div class="l">Campo</div><div class="v">Mete con le porte · campo ridotto</div></div>
     <div><div class="l">Focus</div><div class="v">Rapidità e attacco alla meta</div></div>
@@ -130,9 +130,9 @@ scheda = f'''<section class="page">
   <h3>Programma della seduta</h3>
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
-    <tr><td class="num">II</td><td><div class="t">Rapidità a stazioni</div><div class="d">3 sfide a coppie · 5 volte per stazione · chi arriva dopo fa altri 5 m</div></td><td class="min">20'</td></tr>
+    <tr><td class="num">II</td><td><div class="t">Rapidità a stazioni</div><div class="d">3 sfide a coppie · 5 volte per stazione · nelle stazioni 1 e 2 chi arriva dopo fa altri 5 m</div></td><td class="min">20'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Partita attacco alla meta</div><div class="d">2 tempi da 15' · 2 tocchi · nel 2° tempo senza compagno di reparto</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">2 contro 2 con sponde</div><div class="d">Tocco libero · 4 serie da 1'30" · gol con la sponda doppio</div></td><td class="min">6'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">2 contro 2 con sponde</div><div class="d">Tocco libero · 4 serie da 1'30" · 30" di recupero tra le serie (versione perfezionata dall'allenatore) · gol con la sponda doppio</div></td><td class="min">7'30"</td></tr>
     <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Per chiudere la seduta</div></td><td class="min">15'</td></tr>
   </table>
 
@@ -140,7 +140,7 @@ scheda = f'''<section class="page">
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:20;background:var(--oro);color:var(--verde)">Rapidità · 20'</div>
     <div style="flex:30;background:var(--verde-2)">Attacco alla meta · 30'</div>
-    <div style="flex:6;background:var(--verde)">2c2</div>
+    <div style="flex:7.5;background:var(--verde)">2c2</div>
     <div style="flex:15;background:var(--verde-2)">Partita · 15'</div>
   </div>
 
@@ -170,7 +170,7 @@ rapidita = f'''<section class="page">
   <div class="ex-sub">
     <span class="chip">20 minuti</span><span class="chip">3 stazioni</span><span class="chip">5 volte per stazione</span>
   </div>
-  <p class="obj"><b>Obiettivo:</b> rapidità e reazione con tre partenze diverse. La sfida a coppie tiene alta l'intensità: chi perde paga con altri 5 metri.</p>
+  <p class="obj"><b>Obiettivo:</b> rapidità e reazione con tre partenze diverse. La sfida a coppie tiene alta l'intensità: nelle stazioni 1 e 2 chi perde paga con altri 5 metri.</p>
   <div class="stazioni">{st_html}</div>
   <div class="three">
     <div class="box"><h4>Organizzazione</h4><ul class="clean">
@@ -225,7 +225,7 @@ duec2 = f'''<section class="page">
   <div class="kicker">Esercitazione IV</div>
   <div class="ex-title"><h2>2 contro 2 con sponde</h2></div>
   <div class="ex-sub">
-    <span class="chip">4 serie da 1'30"</span><span class="chip">2 contro 2 + 2 sponde</span><span class="chip">Tocco libero</span>
+    <span class="chip">4 serie da 1'30" · recupero 30"</span><span class="chip">2 contro 2 + 2 sponde</span><span class="chip">Tocco libero</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> duelli a tocco libero usando le due sponde (J) fuori dal campo: il gol dopo la sponda vale doppio.</p>
   <div style="display:flex;gap:6mm;align-items:center">
@@ -234,6 +234,7 @@ duec2 = f'''<section class="page">
       <li>Due porte con i portieri, due sponde (J) sui lati lunghi</li>
       <li>Tocco libero</li>
       <li><b>Gol dopo la sponda: doppio</b></li>
+      <li>30" di recupero tra le serie: 6' di gioco, 7'30" in tutto (versione perfezionata dall'allenatore)</li>
     </ul></div>
   </div>
 

@@ -145,7 +145,7 @@ scheda = f'''<section class="page">
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">circa 80'</div></div>
+    <div><div class="l">Durata</div><div class="v">circa 78'</div></div>
     <div><div class="l">Giocatori</div><div class="v">7 contro 7 · 2 contro 2</div></div>
     <div><div class="l">Campo</div><div class="v">Metà campo larga quanto l'area</div></div>
     <div><div class="l">Focus</div><div class="v">Ricerca del portiere, pressione e rapidità</div></div>
@@ -154,18 +154,18 @@ scheda = f'''<section class="page">
   <h3>Programma della seduta</h3>
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
-    <tr><td class="num">II</td><td><div class="t">Ricerca del portiere · lavoro sulla pressione</div><div class="d">7 contro 7 · 2 tempi · 2 tocchi, niente lancio · 1, 2 o 3 punti · nel 2° tempo senza compagno di reparto</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni · 5 volte per stazione · l'ultima a coppie, partenza da seduti</div></td><td class="min">15'</td></tr>
-    <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Campo 20 × 20 m · si parte sempre dal portiere · chi fa gol resta · 4 serie da 1'30"</div></td><td class="min">6'</td></tr>
-    <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Per chiudere la seduta</div></td><td class="min">–</td></tr>
+    <tr><td class="num">II</td><td><div class="t">Ricerca del portiere · lavoro sulla pressione</div><div class="d">7 contro 7 · 2 tempi · 2 tocchi, niente lancio alto · 1, 2 o 3 punti · nel 2° tempo senza compagno di reparto</div></td><td class="min">30'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">4 stazioni · 5 volte per stazione · l'ultima a coppie, partenza da seduti · durata stimata</div></td><td class="min">~15'</td></tr>
+    <tr><td class="num">IV</td><td><div class="t">2 contro 2 a partita</div><div class="d">Campo 20 × 20 m · si parte sempre dal portiere · chi fa gol resta · 4 serie da 1'30" · 30" di recupero tra le serie (versione perfezionata dall'allenatore)</div></td><td class="min">7'30"</td></tr>
+    <tr><td class="num">V</td><td><div class="t">Partita libera</div><div class="d">Per chiudere la seduta · durata indicativa, non scritta sul foglio</div></td><td class="min">~15'</td></tr>
   </table>
 
   <div class="timeline">
     <div style="flex:10;background:#7aa995">10'</div>
     <div style="flex:30;background:var(--verde-2)">Ricerca del portiere · 30'</div>
     <div style="flex:15;background:var(--oro);color:var(--verde)">Rapidità · 15'</div>
-    <div style="flex:6;background:var(--verde)">2c2</div>
-    <div style="flex:15;background:var(--verde-2)">Partita libera</div>
+    <div style="flex:7.5;background:var(--verde)">2c2</div>
+    <div style="flex:15;background:var(--verde-2)">Partita · ~15'</div>
   </div>
 
   <div class="chiave" style="margin-top:9mm">
@@ -182,14 +182,14 @@ ricerca = f'''<section class="page">
   <div class="kicker">Esercitazione II</div>
   <div class="ex-title"><h2>Ricerca del portiere · lavoro sulla pressione</h2></div>
   <div class="ex-sub">
-    <span class="chip">30 minuti · 2 tempi da 15'</span><span class="chip">7 contro 7</span><span class="chip">Metà campo larga quanto l'area</span><span class="chip">2 tocchi · no lancio</span>
+    <span class="chip">30 minuti · 2 tempi da 15'</span><span class="chip">7 contro 7</span><span class="chip">Metà campo larga quanto l'area</span><span class="chip">2 tocchi · no lancio alto</span>
   </div>
   <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> rispetto al lunedì i tocchi scendono a 2 e i punti premiano tre cose diverse: trovare il portiere, trovarlo partendo da dietro e segnare dopo il recupero alto.</p>
   {campo_ricerca(larghezza="118mm", etichetta="METÀ CAMPO · LARGHEZZA DELL'AREA")}
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:5mm">
-    <div class="box"><h4>1° tempo · 15'</h4><ul class="clean"><li>Massimo <b>2 tocchi</b> · <b>no lancio</b></li>
+    <div class="box"><h4>1° tempo · 15'</h4><ul class="clean"><li>Massimo <b>2 tocchi</b> · <b>no lancio alto</b>: i passaggi lunghi rasoterra sono consentiti</li>
       <li>Passaggio al portiere: <b>1 punto</b></li>
-      <li>Passaggio al portiere <b>dalla metà difensiva</b>: <b>2 punti</b></li>
+      <li>Passaggio <b>rasoterra</b> al portiere <b>dalla propria metà difensiva</b>: <b>2 punti</b></li>
       <li>Palla recuperata nella <b>metà offensiva</b>: si deve cercare il gol, <b>3 punti</b></li></ul></div>
     <div class="box"><h4>2° tempo · 15'</h4><ul class="clean"><li><b>Stesse regole</b> del 1° tempo</li>
       <li>Vietato passare al <b>compagno di reparto</b> (gli attaccanti possono passarla a chi vogliono)</li></ul></div>
@@ -246,7 +246,7 @@ rapidita = f'''<section class="page">
   <div class="stazioni" style="grid-template-columns:1fr 1fr">{st_html}</div>
 
   <div class="kicker" style="margin-top:6mm">Esercitazione IV</div>
-  <div class="ex-title"><h2 style="font-size:17pt">2 contro 2 a partita · 4 serie da 1'30"</h2></div>
+  <div class="ex-title"><h2 style="font-size:17pt">2 contro 2 a partita · 4 serie da 1'30" + 30" di recupero</h2></div>
   <div style="display:flex;gap:6mm;align-items:center;margin-top:3mm">
     <div style="flex:1">{duecontrodue_svg}</div>
     <div class="box" style="flex:1"><ul class="clean">
@@ -254,12 +254,13 @@ rapidita = f'''<section class="page">
       <li>Si parte <b>sempre dal portiere</b></li>
       <li><b>Chi fa gol resta</b></li>
       <li>Se la palla esce <b>si cambiano tutti e 4</b> i giocatori</li>
+      <li>30" di recupero tra le serie: 6' di gioco, 7'30" in tutto (versione perfezionata dall'allenatore)</li>
     </ul></div>
   </div>
 
   <div class="chiave">
     <span class="kicker">Esercitazione V · partita libera</span>
-    Partita senza vincoli per chiudere la seduta.
+    Partita senza vincoli per chiudere la seduta. Durata indicativa <b>15'</b>: è la durata abituale indicata dall'allenatore, non è scritta sul foglio.
   </div>
   {footer()}
 </section>'''

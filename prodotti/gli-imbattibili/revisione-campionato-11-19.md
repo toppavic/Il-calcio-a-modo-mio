@@ -38,3 +38,8 @@ Nessuna modifica fatta finché l'autore non risponde.
 Documentate: A11 20 × 20 · A12 35 m + mete da 5 m (larghezza no) · A13 come A12 · A15 3/4 di campo ·
 A17 metà campo larga quanto l'area, 2c2 20 × 20 · A18 3/4, tutta la larghezza · CCVV metà campo.
 Non documentate: A12 attacco-difesa, A13 4c4, A14 tutto, A15 2c2, A16 tutto, A19 tutto.
+
+## 23/10/2026 – Risposte dell'autore e PDF rifatto
+
+Tutti gli 8 dubbi risolti dall'autore e applicati (vedi CLAUDE.md, sezione "Revisione In campionato").
+Approvati i 7 miglioramenti. Nuovo PDF: 64 pagine, numerazione continua, indice verificato, statistiche identiche all'originale.

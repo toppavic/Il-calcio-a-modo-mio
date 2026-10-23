@@ -140,7 +140,7 @@ scheda = f'''<section class="page">
     <tr><td class="num">II</td><td><div class="t">Partita a meta</div><div class="d">3 tempi da 10' · 3 tocchi, poi 2 tocchi e solo gioco verticale, poi 3 tocchi e su ripartenza basta entrare in meta</div></td><td class="min">30'</td></tr>
     <tr><td class="num">III</td><td><div class="t">Rapidità a stazioni</div><div class="d">3 stazioni · 7 volte per stazione · l'ultima a coppie, partenza da seduti</div></td><td class="min">15'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">Calci d'angolo e punizioni offensive</div><div class="d">Lavoro sulle palle inattive a favore</div></td><td class="min">25'</td></tr>
-    <tr><td class="num">V</td><td><div class="t">Partita 4 contro 4 + 4 jolly</div><div class="d">4 tempi da 3' · 2 tocchi, sponde a 1 tocco · gol valido solo su sponda e di prima intenzione</div></td><td class="min">12'</td></tr>
+    <tr><td class="num">V</td><td><div class="t">Partita 4 contro 4 + 8 jolly (4 per squadra)</div><div class="d">4 tempi da 3' · 2 tocchi, sponde a 1 tocco · gol valido solo su sponda e di prima intenzione</div></td><td class="min">12'</td></tr>
   </table>
 
   <div class="timeline">
@@ -254,14 +254,14 @@ def campo_sponde():
 
 
 partita = pagina_esercizio(
-    "Esercitazione V", "Partita 4 contro 4 + 4 jolly",
+    "Esercitazione V", "Partita 4 contro 4 + 8 jolly",
     "come nell'Allenamento 11, giocare veloce in spazi stretti usando il compagno fuori dal campo: si segna solo di prima intenzione sul passaggio della sponda.",
     campo_sponde(),
     "<li>4 contro 4 dentro il campo, con due porte piccole</li><li>Ogni squadra ha 4 jolly fuori: due ai lati della porta che attacca e due sulle linee laterali</li>",
     "<p><b>4 tempi da 3 minuti</b>. Si gioca a <b>2 tocchi</b>, le sponde a <b>1 tocco</b>.</p>"
     "<p>Il gol è valido <b>solo su passaggio della sponda e di prima intenzione</b>.</p>",
     "<li>Cercare subito la sponda libera</li><li>Attaccare la porta per calciare di prima quando la palla torna dentro</li>",
-    '<span class="chip">12 minuti · 4 tempi da 3\'</span><span class="chip">4 contro 4 + 4 jolly per squadra</span><span class="chip">2 tocchi · sponde 1 tocco</span>')
+    '<span class="chip">12 minuti · 4 tempi da 3\'</span><span class="chip">4 contro 4 + 8 jolly (4 per squadra)</span><span class="chip">2 tocchi · sponde 1 tocco</span>')
 
 # ---------- 6. La partita del fine settimana
 STAT = [("Tiri in porta", 3, 17), ("Tiri fuori porta", 2, 10),

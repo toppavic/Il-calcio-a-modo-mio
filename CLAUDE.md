@@ -169,6 +169,16 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   (46 pagine, 3,9 MB) da `genera-campionato.py`: copertina (foto Allenamento 16), "Prima di cominciare" (4 partite, 4 vittorie,
   11 gol fatti e 3 subiti), indice con lunedì/giovedì e risultati. Copertine come immagini in `copertine-campionato/`
   (se cambiano: rigenerare HTML senza la cartella, `render-copertine.js`, PNG → JPG, rigenerare). Annuncio Etsy: conversazione MARKETING.
+- **Revisione "In campionato" 11-19 (23/10/2026, approvata dall'allenatore)**: pacchetto ora **64 pagine** (3,5 MB) da `genera-campionato.py` +
+  `campionato_editoriale.py` (fonti, indicazioni tecniche, cosa osservare in partita). Una sola copertina; ogni allenamento si apre con
+  **la foto del foglio originale** e i riquadri "Precisato dall'autore" / "Consigliato"; dopo ogni esercitazione principale una pagina
+  di **indicazioni tecniche** (obiettivo, tempi effettivi, campo storico/consigliato, attenzione, errori, comportamenti osservabili);
+  riquadri Organizzazione/Svolgimento/Punti chiave su una riga ciascuno (smartphone); numerazione continua. Risposte dell'autore:
+  A14 flessioni a **chi perde**; A17 vietati solo i **lanci alti**, 2 punti = passaggio **rasoterra** dalla propria metà difensiva,
+  rapidità ~15' stimata, partita libera 15' indicativa; **2c2 = 4 × 1'30" + 30" di recupero (7'30")** in A15, A17, A19; A11 75' + navette,
+  partita libera 2 × 10', gol solo di prima; A16 attacco-difesa 2 × 15'; A14 attacco su metà campo (52,5 × 68); **suicidi = navette area
+  piccola → limite area e ritorno, 11 + 11 m**; misure consigliate in metri dove il foglio non le ha, sempre segnalate. Tre livelli sempre
+  distinti: dal quaderno · precisato dall'autore · consigliato. Va **sostituito il file su Etsy** (conversazione MARKETING).
 - **Regola dei percorsi tematici (17/10, allenatore)**: pacchetti **professionali** in scrittura, grafica e impaginazione;
   progressione **sempre dal facile al difficile**. Prima si costruisce il contenuto con lui, poi si impagina.
 - **Percorso 1 "La ricerca del portiere" (20/10 sera, dal pacchetto editoriale dell'allenatore)**: brand **"Il calcio a modo mio · Dai quaderni del mister · Percorso 1"**,
