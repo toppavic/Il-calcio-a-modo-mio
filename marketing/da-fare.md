@@ -11,6 +11,7 @@ Regola dell'allenatore (25/10): questo file si aggiorna **ogni domenica** con la
 | Mar 27 | 13:00 | **Carosello "Palla scoperta: scappa"** (concetto 17/10 dell'allenatore: portatore libero → la linea toglie profondità), nome "Dai quaderni del mister" | IG + TikTok, programmato |
 | Mer 28 | 13:00 | Diario libro (programmato prima del campo) · campo 18-21 | FB diario |
 | Gio 29 | 18:00 | Diario formazione | FB diario |
+| Gio 29 | mattina | **Sostituire su Etsy il file di "In campionato"** con la revisione da 64 pagine approvata il 23/10 (`prodotti/gli-imbattibili/campionato-allenamenti-11-19.pdf`, 3,5 MB; nome Etsy `Gli-Imbattibili_In-campionato_11-19.pdf`) + aggiornare descrizione e prima foto (ora dicono 46 pagine) | Etsy |
 | Ven 30 | 13:00 | **Carosello "Palla coperta: accorcia"** + chiusura "commenta PRESSING e ti mando il link del percorso" (risposta in messaggio manuale; niente sedute regalate) · controllo statistiche Etsy (prima settimana intera di misura) · campo 18-21 | IG + TikTok, programmato |
 | Sab 31 | – | Foto dei fogli all'altra chat (se ha tempo) | – |
 | Dom 1/11 | 19:00 | **Reel "La linea decide"** (palla scoperta e coperta insieme, 11c11 con struttura vera), programmato | IG + TikTok |
@@ -20,6 +21,7 @@ Regola dell'allenatore (25/10): questo file si aggiorna **ogni domenica** con la
 ## Claude prepara
 - [ ] Carosello Palla scoperta (post 9) e Palla coperta (post 10): contenuto solo dai concetti dell'allenatore, segnando ciò che aggiunge Claude
 - [ ] Reel "La linea decide" (stessa grafica 11c11 del Reel pressing, struttura vera)
+- [ ] Annuncio "In campionato": nuova descrizione (64 pagine, foto del foglio originale, indicazioni tecniche) e foto 1 aggiornata — pronta per giovedì 29/10
 - [ ] Aggiornare questo file ogni domenica sera
 
 ## Decisioni di marketing prese da Claude il 25/10 (risposta alle proposte)
