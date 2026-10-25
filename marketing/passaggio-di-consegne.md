@@ -138,3 +138,9 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - **IG**: Reel 514 visualizzazioni (326 account), **40% non follower**, salti 52,9% (meno del solito), 3 like, 1 salvataggio, 2 clic sul link in bio, 0 follower. 4017 follower, 15.451 visualizzazioni in 30 giorni (13.221 il 19/10).
 - **Etsy 7 giorni**: 9 visualizzazioni, 6 visite, 0 ordini (settimana prima 24 e 19). Annuncio Percorso 1 online dal 21/10.
 - **Errore trovato**: nella bio IG il link del Percorso 1 non c'era (primo link = libro Amazon, "e altri 2"). **Aggiunto il 23/10 dall'allenatore, in prima posizione** (titolo "Percorso sul pressing"). **Regola: ogni nuovo annuncio Etsy va aggiunto subito ai link della bio IG** (e controllare l'ordine) prima di dire "link in bio" nei post.
+
+## 25/10 sera (17:51) – numeri della settimana 18-25/10
+- **TikTok**: **117 follower** (113 il 23/10, 104 il 22/10, 91 il 19/10: +26 in 6 giorni, in linea con l'obiettivo 300 entro il 31/12), 188 like. Reel "Se corri solo tu" 956 visualizzazioni; foto annuncio Percorso 1 834; carosello teaser 379.
+- **IG (7 giorni)**: **4014 follower (netti -2)**, 3.063 visualizzazioni, 77,1% follower / 22,9% non follower, 40 interazioni. Per tipo: Reel 1,4K · Post 946 · Storie 671. Contenuti: Preventiva 2 Reel 780 · carosello teaser 601 · Reel pressing 598 · storia Percorso 1 219 · storia risultato 51. **Nei giorni senza post (24-25/10) le visualizzazioni sono quasi zero**. Pubblico: **93,7% uomini**, 35-44 32,2% · 45-54 32,4% · 55-64 15,7%, **Italia 87,2%**, italiano 88,2%.
+- **Etsy (7 giorni al 25/10, misura dal 23/10)**: 8 visualizzazioni, **5 visite, 0 ordini**. Negozio: 1 vendita totale, 5 stelle.
+- Lettura: TikTok cresce (+4/giorno), IG fermo, Etsy ancora senza segnali; i Reel arrivano di più ai non follower. Serve costanza (post ogni 2-3 giorni anche solo storie) e il traffico verso Etsy va misurato dal 30/10 (prima settimana intera con il link primo in bio).
