@@ -1,36 +1,30 @@
-# Cose da fare – marketing
+# Cose da fare – marketing (per Claude: aggiornare ogni domenica sera con la settimana dopo)
 
-## Questa settimana (sab 3 – dom 4 ottobre)
+Regola dell'allenatore (25/10): questo file si aggiorna **ogni domenica** con la settimana che comincia il lunedì. All'allenatore si dice solo la cosa del giorno, la mattina. Le decisioni di marketing le prende Claude.
 
-- [x] **Sab 3, 14:07** – Facebook: post dei cross in ALLENATORI CALCIO
-- [x] **Lun 5, 13:15** – Facebook: post dei cross in Allenatori.. uno stile di vita
-- [ ] **Sab–dom** – TikTok: usare l'account (guardare video di calcio, seguire profili uno alla volta)
-- [x] **Dom 4, 18:16** – Reel dei cross su Instagram
-- [x] **Dom 4, 18:19** – Reel dei cross su TikTok
+## Settimana 26 ottobre – 1 novembre
 
-- [x] **Dom 4, 18:45** – Storia Instagram del 6-1 del Vaglia ("Bravi ragazzi", società menzionata)
-
-## Prossima settimana (lun 5 – dom 11 ottobre)
-
-- [ ] **Lun 5, 21:00** – Facebook: post dei cross in altri 2 gruppi (L'allenatore di Calcio + Allenatori di base settore giovanile) · controllo TikTok: se ancora 0, piano B
-- [ ] **Mar 6, 21:00** – Post 2 su Instagram e TikTok (partita "il punto non vale il gol"), con la riga "le sedute complete sono nel link in bio"
-- [ ] **Mer 7, 13:00** – Facebook: ultimo gruppo (A.A.C.I.) – la sera è al campo
-- [ ] **Ven 9, 13:00** – Post 3 su Instagram e TikTok (gioco di posizione)
-- [ ] **Dom 11, 21:00** – Ponte 1 + Allenamento 1 gratis ("commenta PRECAMPIONATO") – confermato
-
-## In sospeso (risposte dell'allenatore)
-
-- [x] Singoli su Etsy: NO
-- [x] Allenamenti 11-20: campionato
-- [x] Idee per i pacchetti a tema: partite a tema per il gioco di squadra
+| Giorno | Ora | Cosa | Dove |
+|---|---|---|---|
+| Lun 26 | mattina | **Invio romanzo a E/O** (controllo screenshot del modulo, file, invio una sola volta; ultimo giorno sicuro 29/10, scadenza 31/10) | E/O |
+| Lun 26 | 18:00 | Diario "Appunti 2.0" | FB diario (altra chat) |
+| Mar 27 | 13:00 | **Carosello "Palla scoperta: scappa"** (concetto 17/10 dell'allenatore: portatore libero → la linea toglie profondità), nome "Dai quaderni del mister" | IG + TikTok, programmato |
+| Mer 28 | 13:00 | Diario libro (programmato prima del campo) · campo 18-21 | FB diario |
+| Gio 29 | 18:00 | Diario formazione | FB diario |
+| Ven 30 | 13:00 | **Carosello "Palla coperta: accorcia"** + chiusura "commenta PRESSING e ti mando il link del percorso" (risposta in messaggio manuale; niente sedute regalate) · controllo statistiche Etsy (prima settimana intera di misura) · campo 18-21 | IG + TikTok, programmato |
+| Sab 31 | – | Foto dei fogli all'altra chat (se ha tempo) | – |
+| Dom 1/11 | 19:00 | **Reel "La linea decide"** (palla scoperta e coperta insieme, 11c11 con struttura vera), programmato | IG + TikTok |
+| Dom 1/11 | 20:00 | Storia del risultato · screenshot settimanali a Claude | – |
+| Lun 2/11 | – | Controllo "Ricerche di Etsy" (misura dal 23/10, quando il link del Percorso 1 è diventato primo in bio) | Etsy |
 
 ## Claude prepara
+- [ ] Carosello Palla scoperta (post 9) e Palla coperta (post 10): contenuto solo dai concetti dell'allenatore, segnando ciò che aggiunge Claude
+- [ ] Reel "La linea decide" (stessa grafica 11c11 del Reel pressing, struttura vera)
+- [ ] Aggiornare questo file ogni domenica sera
 
-- [ ] Testi del post 2 con la riga "link in bio"
-- [ ] Reel 2 (partita "il punto non vale il gol")
-- [ ] Materiale per il lancio dell'Allenamento 1 gratis (post, messaggio automatico, PDF)
-
-## Più avanti
-
-- Verso il 16/10: primo controllo delle statistiche Etsy (screenshot)
-- Fine ottobre: uscita Volume "La linea a 4" su Etsy (PDF da preparare nella conversazione ALLENAMENTI dopo il 16/10)
+## Decisioni di marketing prese da Claude il 25/10 (risposta alle proposte)
+- Programmare i post: **sì** per IG e Facebook (Meta Business Suite/app); su TikTok verificare se c'è la programmazione. L'allenatore li programma la mattina del giorno stesso.
+- Carosello del martedì alle **13:00**: sì (i follower sono attivi 12-15 lunedì e martedì).
+- Un solo Reel a settimana, spostato alla **domenica 19:00** (non un secondo Reel: la capacità di produzione è limitata e su TikTok i caroselli rendono più dei Reel). Si rivede dopo 2 settimane di numeri.
+- "Commenta [parola]" una volta a settimana nel carosello del venerdì, **con il link del percorso** e non con la seduta (l'allenatore non vuole regalare esercitazioni). Risposta manuale per ora; automazione solo se i commenti superano circa 20 a settimana.
+- Club Instagram a 1 € al mese: **non nel piano**, non si fa.

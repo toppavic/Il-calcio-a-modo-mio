@@ -22,3 +22,6 @@ Prezzi bassi finché non ci sono vendite e recensioni.
   da Gli Imbattibili, riordinate in progressione") per non deludere chi ha già i pacchetti.
 - Oltre al contenuto di lancio servono comunque 2-3 post di valore a settimana (caroselli + Reel) per crescere.
 - 1-20 conviene anticiparlo a gio 3/12 per i regali di Natale.
+
+## Aggiornamento 25/10
+- **Percorso 1 "La ricerca del portiere" (7 tappe, 6,90 €) è uscito il 21/10**, in anticipo sul 29/10. Prossima uscita: 12/11 (contenuto da decidere con l'allenatore). Il misurare le visite parte dal 23/10 (link primo in bio).
