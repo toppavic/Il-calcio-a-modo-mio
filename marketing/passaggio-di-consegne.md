@@ -163,3 +163,5 @@ La sessione precedente (session_01Y6imChDnJpMKHUHGGzDa7m) era al 75% del contest
 **Numeri** (25/10): TikTok 117 follower (91 il 19/10; obiettivo 300 al 31/12), IG 4014 (fermo), Etsy 5 visite/7 giorni, FB profilo ~1245.
 **Piano della settimana 26/10-1/11**: in `marketing/da-fare.md` (caroselli martedì e venerdì 13:00, Reel domenica 19:00, post programmati la mattina stesso, sostituzioni file Etsy martedì sera e venerdì mattina, invio E/O giovedì). Il lunedì mancava un contenuto: l'allenatore l'ha notato; riempire con materiale vero suo.
 **Promemoria**: trigger giornaliero 6:57 (Europe/Rome) e promemoria del 29/10 ora legati alla nuova sessione; i vecchi (trig_011irDtADw1XLuGq86kWMhMq, trig_01C1niaVtRHdJp7VeWoVTB29) sono spenti e non vanno riaccesi né cancellati.
+
+- **Nuova sessione**: session_01SKxmbbNKCopJuCUrYoDZaV · promemoria 6:57 = trig_01LHDV9FostX4piRn9841U2y · invio E/O 29/10 = trig_01G92JHiCu1sS7Bnjz1GU75H (05:58 UTC). Vecchi trigger spenti (non riaccendere, non cancellare).
