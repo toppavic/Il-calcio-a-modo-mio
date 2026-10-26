@@ -56,7 +56,7 @@ scheda = f'''<section class="page">
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">125'</div></div>
+    <div><div class="l">Durata</div><div class="v">125' + suicidi</div></div>
     <div><div class="l">Giocatori</div><div class="v">22</div></div>
     <div><div class="l">Campo</div><div class="v">50 m × largh.</div></div>
     <div><div class="l">Focus</div><div class="v">Gioco tra i reparti</div></div>
@@ -159,7 +159,7 @@ partita = f'''<section class="page">
 
   <div class="chiave">
     <span class="kicker">La posta in gioco · suicidi a fine allenamento</span>
-    Chi perde: <b>5 suicidi</b> · chi vince: <b>2 suicidi</b> · pareggio: <b>3 suicidi per tutti</b>. Il suicidio è una navetta dal limite dell'area piccola al limite dell'area grande.
+    Chi perde: <b>5 suicidi</b> · chi vince: <b>2 suicidi</b> · pareggio: <b>3 suicidi per tutti</b>. Il suicidio è una navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m in tutto.
   </div>
   {footer()}
 </section>'''

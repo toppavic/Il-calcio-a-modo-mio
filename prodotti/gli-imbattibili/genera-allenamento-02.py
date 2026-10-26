@@ -213,7 +213,7 @@ ld2 = f'''<section class="page">
   <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> rendere automatici i movimenti della linea. Gli attaccanti ripetono sempre la stessa sequenza in tre tempi.</p>
   {sequenza}
   <div class="two" style="margin-top:5mm">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che ripetono sempre la stessa sequenza</li><li>Metà campo con area di rigore</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che ripetono sempre la stessa sequenza, sia a destra sia a sinistra</li><li>Metà campo con area di rigore</li></ul></div>
     <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Uscita decisa del 2, copertura immediata</li><li>Sullo scarico salire tutti insieme</li><li>Sul lancio scappare subito</li><li>Ripetere finché diventa automatico</li></ul></div>
   </div>
   {footer()}

@@ -180,6 +180,12 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   partita libera 2 × 10', gol solo di prima; A16 attacco-difesa 2 × 15'; A14 attacco su metà campo (52,5 × 68); **suicidi = navette area
   piccola → limite area e ritorno, 11 + 11 m**; misure consigliate in metri dove il foglio non le ha, sempre segnalate. Tre livelli sempre
   distinti: dal quaderno · precisato dall'autore · consigliato. Va **sostituito il file su Etsy** (conversazione MARKETING).
+- **Revisione "Il precampionato" 1-10 (26/10/2026, approvata dall'allenatore)**: pacchetto ora **92 pagine** (4,5 MB) da `genera-precampionato.py` +
+  `precampionato_editoriale.py`, stesso standard del volume 11-19 (foto dei fogli, fonti a tre livelli, 27 pagine di indicazioni tecniche,
+  numerazione continua). Risposte dell'autore: A1 gioco di posizione 4 × 4' + 1'30" (20'30", circa 20'); A3 atletico ~30' (2 × 12' + 5'),
+  seduta 125' + suicidi; A5 lavoro a gruppi 40' = 20' per gruppo (difesa 10' + 10' come sul foglio, niente recuperi inventati);
+  A5 e A8 navette con 3' di recupero; A10 le 4 partite per i suicidi = cross + 3 atletiche; "Ti lascio alle spalle" in 3 fasi a destra e a sinistra;
+  A4 obiettivo riscritto come coperture preventive (regole invariate). Va **sostituito il file su Etsy**.
 - **Regola dei percorsi tematici (17/10, allenatore)**: pacchetti **professionali** in scrittura, grafica e impaginazione;
   progressione **sempre dal facile al difficile**. Prima si costruisce il contenuto con lui, poi si impagina.
 - **Percorso 1 "La ricerca del portiere" (20/10 sera, dal pacchetto editoriale dell'allenatore)**: brand **"Il calcio a modo mio · Dai quaderni del mister · Percorso 1"**,

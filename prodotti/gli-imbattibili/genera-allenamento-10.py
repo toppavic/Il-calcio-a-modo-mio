@@ -231,7 +231,7 @@ atletica = f'''<section class="page">
 
   <div class="chiave">
     <span class="kicker">Esercitazione IV · suicidi per chi ha perso le partite</span>
-    Per ogni partita: sconfitta <b>5 suicidi</b> · pareggio <b>3</b> · vittoria <b>1</b>. Se una squadra perde tutte e 4 le partite fa <b>20 suicidi</b>.
+    Per ogni partita: sconfitta <b>5 suicidi</b> · pareggio <b>3</b> · vittoria <b>1</b>. Le 4 partite sono la partita «cross» e le 3 partite della parte atletica (la terza in tre tempi da 5'). Se una squadra le perde tutte e 4 fa <b>20 suicidi</b>. Il suicidio è una navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m in tutto.
   </div>
   {footer()}
 </section>'''

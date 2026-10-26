@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<title>Gli Imbattibili – Il Precampionato, Allenamenti 1-10</title>
+<title>Gli Imbattibili – Il precampionato, Allenamenti 1-10</title>
 <style>
   @font-face { font-family: Oswald; src: url(font/oswald.woff2) format("woff2"); font-weight: 200 700; }
   @font-face { font-family: Inter; src: url(font/inter.woff2) format("woff2"); font-weight: 100 900; }
@@ -122,16 +122,55 @@
 .intervalli tr.rec td { background: #f3f5f2; color: #5d6b65; padding: 1.5mm 2mm; }
 .intervalli tr.rec .min, .intervalli tr.rec .rit { font-size: 11pt; color: #7aa995; }
 .intervalli .rit { font-family: Oswald, sans-serif; font-size: 13pt; color: #9a7410; width: 26mm; }
+
 .indice { width: 100%; border-collapse: collapse; margin-top: 4mm; }
-.indice td { padding: 3.2mm 2mm; border-bottom: 1px solid #e3e8e5; font-size: 10.5pt; vertical-align: middle; }
+.indice td { padding: 3mm 2mm; border-bottom: 1px solid #e3e8e5; font-size: 10.5pt; vertical-align: middle; }
 .indice .n { font-family: Oswald, sans-serif; font-size: 20pt; color: var(--oro); width: 14mm; }
 .indice .t { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 13pt; letter-spacing: .02em; }
-.indice .d { color: #5d6b65; font-size: 9.5pt; }
+.indice .d { color: #5d6b65; font-size: 9.8pt; }
 .indice .p { font-family: Oswald, sans-serif; color: var(--verde); font-size: 13pt; text-align: right; width: 16mm; }
 .legenda { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm 6mm; margin-top: 3mm; font-size: 10pt; }
 .legenda div { display: flex; align-items: center; gap: 3mm; }
 .legenda svg { flex: none; }
 .testo p { font-size: 11pt; line-height: 1.6; margin-bottom: 3mm; }
+/* leggibilità su smartphone: riquadri su una riga ciascuno, testo più grande */
+.three { grid-template-columns: 1fr !important; gap: 2mm !important; margin-top: 4mm !important; }
+.three .box { display: grid; grid-template-columns: 33mm 1fr; gap: 4mm; font-size: 10pt !important; padding: 2.6mm 4mm; }
+.three .box h4 { margin: 0; font-size: 10.5pt; }
+.three .box p { margin-bottom: 1mm !important; }
+.three .box p:last-child { margin-bottom: 0 !important; }
+.three .box ul.clean li { margin-bottom: .6mm; }
+.chip { font-size: 8.8pt !important; }
+.obj { font-size: 10.5pt; }
+/* livelli delle fonti */
+.liv { display: inline-block; font-family: Oswald, sans-serif; font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; padding: .6mm 2.4mm; border-radius: 1mm; margin-right: 2mm; vertical-align: 1px; }
+.liv.q { background: var(--verde); color: #fff; }
+.liv.a { background: var(--oro); color: var(--verde); }
+.liv.c { background: #e6efe9; color: var(--verde); border: 1px solid #b9cdc2; }
+.foglio { display: block; margin: 3mm auto 0; max-height: 150mm; max-width: 100%; border: 1px solid #dfe5e1; border-radius: 1.5mm; box-shadow: 0 1mm 3mm rgba(0,0,0,.08); }
+.fonti { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 4mm; }
+.fonti .box { font-size: 9.8pt; line-height: 1.45; padding: 3mm 4mm; }
+.fonti .box li { margin-bottom: 1mm; }
+.nota-f { margin-top: 3mm; font-size: 9.6pt; background: #fbf6e6; border-left: 4px solid var(--oro); padding: 2.2mm 3.5mm; border-radius: 0 1.5mm 1.5mm 0; }
+.tec h3 { font-size: 11pt; margin: 4mm 0 1.5mm; }
+.tec .riga { display: grid; grid-template-columns: 30mm 1fr; gap: 4mm; padding: 2.2mm 0; border-bottom: 1px solid #e3e8e5; font-size: 10.2pt; }
+.tec .riga .l { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 10pt; letter-spacing: .04em; }
+.tec .ob { font-size: 11pt; line-height: 1.55; margin: 3mm 0 2mm; }
+.tec .liste { display: grid; grid-template-columns: 1fr; gap: 3mm; margin-top: 3mm; }
+.tec .liste .box { font-size: 10.2pt; line-height: 1.45; padding: 3mm 4.5mm; }
+.tec .liste .box li { margin-bottom: 1mm; }
+.osserva { margin-top: 4mm; font-size: 9.8pt; background: #edf4ef; border-left: 4px solid var(--verde); padding: 2.5mm 4mm; border-radius: 0 1.5mm 1.5mm 0; }
+.osserva h4 { font-family: Oswald, sans-serif; text-transform: uppercase; color: var(--verde); font-size: 10.5pt; letter-spacing: .04em; margin-bottom: 1mm; }
+.osserva .nb { color: var(--tenue); font-size: 8.8pt; margin-top: 1mm; }
+
+.stazioni-t { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 10pt; }
+.stazioni-t td { padding: 2.2mm 3mm; border-bottom: 1px solid #e3e8e5; vertical-align: middle; }
+.stazioni-t th { text-align: left; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .1em; color: var(--tenue); padding: 0 3mm 2mm; font-weight: 600; border-bottom: 2px solid var(--verde); }
+.stazioni-t .s { font-family: Oswald, sans-serif; font-size: 15pt; color: var(--oro); width: 12mm; }
+.stazioni-t .vol { font-family: Oswald, sans-serif; color: var(--verde); white-space: nowrap; font-size: 11pt; }
+.stazioni-t .cue { color: var(--tenue); font-size: 9pt; display: block; margin-top: .5mm; }
+.fogli { display: flex; gap: 4mm; justify-content: center; align-items: flex-start; margin-top: 3mm; }
+.fogli .foglio { margin: 0; max-height: 140mm; max-width: 49%; }
 </style>
 </head>
 <body>
@@ -162,20 +201,30 @@
   </defs>
 </svg>
 
-<!-- COPERTINA DEL PACCHETTO -->
 <section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-00.jpg" style="width:100%;height:100%;display:block"></section>
 
 <section class="page">
   <div class="kicker">Il precampionato</div>
   <div class="ex-title"><h2>Prima di cominciare</h2></div>
   <div class="testo" style="margin-top:5mm">
-    <p>Questi sono gli allenamenti veri del precampionato della <b>Juniores provinciale che ha poi vinto il campionato senza perdere una partita</b>. Sono trascritti dai quaderni dell'allenatore, seduta per seduta, così come sono stati fatti in campo.</p>
-    <p>Per ogni allenamento trovi la <b>scheda della seduta</b> (durata, programma e barra dei tempi) e una pagina per ogni esercitazione con <b>obiettivo, schema, organizzazione, svolgimento e punti chiave</b>. Le partite a tema hanno le regole tempo per tempo: tocchi, vincoli e punteggi.</p>
-    <p>La squadra gioca con il <b>4-2-3-1</b>. La linea difensiva, guardando lo schema con la porta in alto, è sempre <b>2-5-6-3</b> da sinistra a destra.</p>
+    <p>Questi sono gli allenamenti veri del precampionato della <b>Juniores provinciale che ha poi vinto il campionato senza perdere una partita</b>, trascritti dai quaderni dell'allenatore seduta per seduta e nell'ordine in cui sono stati svolti, dal 30 agosto al 20 settembre 2021.</p>
+    <p>La squadra gioca con il <b>4-2-3-1</b>. La linea difensiva, guardando lo schema con la porta in alto, è sempre <b>2-5-6-3</b> da sinistra a destra. Il lavoro sulla linea segue una progressione: scivolamenti, spaccare la linea, difesa sul lancio, «Ti lascio alle spalle», 6 contro 4, cross in diagonale invertita.</p>
+    <p>Ogni allenamento comincia con la <b>foto del foglio originale</b>. Poi la scheda della seduta, una pagina per ogni esercitazione e, dopo ogni esercitazione principale, una pagina di <b>indicazioni tecniche</b>.</p>
   </div>
+  <h3 style="margin-top:5mm">Tre livelli di informazione</h3>
+  <div class="box" style="font-size:10.2pt;line-height:1.5">
+    <p style="margin-bottom:2mm"><span class="liv q">Dal quaderno</span>Esercitazioni, regole, punteggi, tempi e misure scritti sul foglio. Le pagine degli allenamenti li riportano così come sono.</p>
+    <p style="margin-bottom:2mm"><span class="liv a">Precisato dall'autore</span>Chiarimenti dati dall'allenatore nel 2026, dove il foglio era incompleto o ambiguo.</p>
+    <p><span class="liv c">Consigliato</span>Misure in metri dove il foglio non le riporta, obiettivi, punti di attenzione, errori da evitare e comportamenti da osservare. Sono indicazioni editoriali, non annotazioni storiche.</p>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico.</b> Circuiti, corsa con variazioni di velocità, intermittenti, navette, rapidità e suicidi sono riportati come sono stati svolti con questa squadra, senza aggiungere carichi o recuperi. Non sono una prescrizione valida per ogni gruppo: vanno adattati all'età, al livello e alla condizione dei propri giocatori. I <b>suicidi</b> sono navette dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m per navetta.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Il precampionato · Allenamenti 1-10</span><span>2</span></div>
+</section>
 
-  <h3 style="margin-top:6mm">Come leggere gli schemi</h3>
-  <div class="legenda">
+<section class="page">
+  <div class="kicker">Il precampionato</div>
+  <div class="ex-title"><h2>Come leggere gli schemi</h2></div>
+  <div class="legenda" style="margin-top:5mm">
     <div><svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="#2a5db0" stroke="#fff" stroke-width="2"/><text x="13" y="17.5" font-family="Oswald" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">5</text></svg> Difensori e squadra di riferimento (numerati)</div>
     <div><svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="#c8372d" stroke="#fff" stroke-width="2"/></svg> Attaccanti e avversari</div>
     <div><svg width="26" height="26"><circle cx="13" cy="13" r="10" fill="#f2c230" stroke="#1d2421" stroke-width="2"/></svg> Portiere</div>
@@ -183,26 +232,37 @@
     <div><svg width="40" height="14"><path d="M2,7 L30,7" stroke="#d4a017" stroke-width="3"/><path d="M28,2 L38,7 L28,12 Z" fill="#d4a017"/></svg> Movimento del giocatore</div>
     <div><svg width="40" height="14"><path d="M2,7 L30,7" stroke="#5d6b65" stroke-width="2.5" stroke-dasharray="6 4"/><path d="M28,2 L38,7 L28,12 Z" fill="#5d6b65"/></svg> Passaggio, lancio o cross</div>
   </div>
-
-  <div class="chiave" style="margin-top:9mm">
+  <h3 style="margin-top:7mm">Tempi e misure</h3>
+  <div class="testo">
+    <p>Nei programmi delle sedute il tempo di ogni blocco è quello del quaderno. Nelle indicazioni tecniche trovi anche il <b>gioco effettivo</b> e i recuperi: dove un dato non è scritto sul foglio è indicato come <b>non documentato</b>, senza inventare pause o recuperi.</p>
+    <p>Le misure scritte dall'allenatore («50 m × larghezza del campo», «3/4 di campo», «metà campo con area») restano come sono. Accanto trovi la misura in metri su un campo regolamentare da 105 × 68 m e, dove il foglio non dice nulla, una <b>misura consigliata</b>, sempre segnalata come tale.</p>
+  </div>
+  <div class="chiave" style="margin-top:7mm">
     <span class="kicker">Il libro</span>
     La stagione di questa squadra è raccontata nel libro <b>“Gli Imbattibili”</b>, su Amazon. Il libro racconta cosa è successo. Questi allenamenti mostrano come ci siamo arrivati.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Il precampionato · Allenamenti 1-10</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Il precampionato · Allenamenti 1-10</span><span>3</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Il precampionato</div>
   <div class="ex-title"><h2>Indice</h2></div>
-  <table class="indice"><tr><td class="n">1</td><td><div class="t">Allenamento 1</div><div class="d">Difesa e possesso · 95–105'</div></td><td class="p">p. 4</td></tr><tr><td class="n">2</td><td><div class="t">Allenamento 2</div><div class="d">Difesa sul lancio · 105'</div></td><td class="p">p. 12</td></tr><tr><td class="n">3</td><td><div class="t">Allenamento 3</div><div class="d">Gioco tra i reparti · 125'</div></td><td class="p">p. 20</td></tr><tr><td class="n">4</td><td><div class="t">Allenamento 4</div><div class="d">Marcature preventive · 95' + suicidi</div></td><td class="p">p. 28</td></tr><tr><td class="n">5</td><td><div class="t">Allenamento 5</div><div class="d">Uscite e coperture · 113'</div></td><td class="p">p. 35</td></tr><tr><td class="n">6</td><td><div class="t">Allenamento 6</div><div class="d">Pressione e squadra corta · 100'</div></td><td class="p">p. 41</td></tr><tr><td class="n">7</td><td><div class="t">Allenamento 7</div><div class="d">Cambio di ritmo e rapidità · 100'</div></td><td class="p">p. 46</td></tr><tr><td class="n">8</td><td><div class="t">Allenamento 8</div><div class="d">Preventive e ripartenze · circa 110'</div></td><td class="p">p. 51</td></tr><tr><td class="n">9</td><td><div class="t">Allenamento 9</div><div class="d">Pressione e rapidità · 90-95'</div></td><td class="p">p. 56</td></tr><tr><td class="n">10</td><td><div class="t">Allenamento 10</div><div class="d">Cross e partite a tema · 85' + suicidi</div></td><td class="p">p. 61</td></tr></table>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Il precampionato · Allenamenti 1-10</span><span>3</span></div>
+  <table class="indice"><tr><td class="n">1</td><td><div class="t">Allenamento 1 · settimana 1</div><div class="d">Difesa e possesso · 95–105'</div></td><td class="p">p. 5</td></tr><tr><td class="n">2</td><td><div class="t">Allenamento 2 · settimana 1</div><div class="d">Difesa sul lancio · 105'</div></td><td class="p">p. 18</td></tr><tr><td class="n">3</td><td><div class="t">Allenamento 3 · settimana 1</div><div class="d">Gioco tra i reparti · 125' + suicidi</div></td><td class="p">p. 31</td></tr><tr><td class="n">4</td><td><div class="t">Allenamento 4 · settimana 1</div><div class="d">Marcature preventive · 95' + suicidi</div></td><td class="p">p. 41</td></tr><tr><td class="n">5</td><td><div class="t">Allenamento 5 · settimana 2</div><div class="d">Uscite e coperture · 113'</div></td><td class="p">p. 51</td></tr><tr><td class="n">6</td><td><div class="t">Allenamento 6 · settimana 2</div><div class="d">Pressione e squadra corta · 100'</div></td><td class="p">p. 60</td></tr><tr><td class="n">7</td><td><div class="t">Allenamento 7 · settimana 2</div><div class="d">Cambio di ritmo e rapidità · 100'</div></td><td class="p">p. 67</td></tr><tr><td class="n">8</td><td><div class="t">Allenamento 8 · settimana 2</div><div class="d">Preventive e ripartenze · circa 110'</div></td><td class="p">p. 74</td></tr><tr><td class="n">9</td><td><div class="t">Allenamento 9 · settimana 3</div><div class="d">Pressione e rapidità · 90-95'</div></td><td class="p">p. 81</td></tr><tr><td class="n">10</td><td><div class="t">Allenamento 10 · settimana 3</div><div class="d">Cross e partite a tema · 85' + suicidi</div></td><td class="p">p. 87</td></tr></table>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Il precampionato · Allenamenti 1-10</span><span>4</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 1 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-01.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 1 · 30/08/2021</div>
+  <div class="ex-title"><h2>Allenamento 1 · il foglio originale</h2></div>
+  <div class="fogli"><img class="foglio" src="../../materiale/precampionato/allenamento-01.jpg"><img class="foglio" src="../../materiale/precampionato/allenamento-01-b.jpg"></div>
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Gioco di posizione: 8 passaggi consecutivi = 1 punto (sul foglio «15»).</li><li>Gioco di posizione: 4 serie da 4' con 1'30" di recupero tra le serie, 20'30" in tutto (circa 20').</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partite: «50 m × larghezza del campo» corrisponde a 50 × 68 m su un campo regolamentare.</li><li>Lavoro della linea su «metà campo con area»: 52,5 × 68 m su un campo regolamentare.</li><li>Gioco di posizione: misure non documentate, consigliati 30 × 30 m come nell'Allenamento 2.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>5</span></div>
+</section>
 
-<!-- 2. SCHEDA SEDUTA -->
 <section class="page">
   <div class="head">
     <div>
@@ -249,10 +309,9 @@
     </div>
   </div>
 
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>6</span></div>
 </section>
 
-<!-- 3. PARTITA RICERCA DEL PORTIERE -->
 <section class="page">
   <div class="kicker">Esercitazione II</div>
   <div class="ex-title"><h2>Partita “ricerca del portiere”</h2></div>
@@ -261,7 +320,7 @@
   </div>
   <p class="obj"><b>Obiettivo:</b> possesso palla orientato alla profondità. Smarcarsi, giocare a pochi tocchi e servire il compagno più avanzato appena possibile.</p>
 
-  <svg class="diagram" viewBox="0 0 500 300" style="width:135mm;margin:0 auto">
+  <svg class="diagram" viewBox="0 0 500 300" style="width:114mm;margin:0 auto">
     <rect x="0" y="0" width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
       <rect x="30" y="20" width="440" height="260"/>
@@ -306,28 +365,41 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo lungo 50 m e largo quanto il campo regolamentare, diviso in due metà</li>
       <li>Due squadre da 10 giocatori</li>
       <li>Un portiere per ogni lato corto, che fa da bersaglio</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Le due squadre si contendono il pallone. Chi è in possesso deve far arrivare la palla al portiere del lato che attacca.</p>
       <p>Ogni volta che il portiere riceve la palla la squadra conquista il punto. Nel secondo tempo cambiano tocchi e punteggio (vedi riquadri sopra).</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Smarcarsi sempre per offrire una linea di passaggio</li>
       <li>Testa alta: guardare il portiere prima di ricevere</li>
       <li>Nel 2° tempo cercare la profondità appena c'è spazio</li>
       <li>Chi difende resta corto e attento alle spalle</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
 
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>7</span></div>
 </section>
 
-<!-- 4. ATLETICA -->
+<section class="page tec">
+  <div class="kicker">Allenamento 1 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita «ricerca del portiere»</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Possesso orientato alla profondità: smarcarsi, giocare a pochi tocchi e servire il portiere bersaglio appena possibile. Nel 2° tempo il lancio dalla metà difensiva vale il doppio e obbliga chi difende a proteggere lo spazio alle spalle.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: lungo 50 m e largo quanto il campo. In metri, su un campo regolamentare: 50 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Chi riceve guarda il portiere bersaglio prima del controllo.</li><li>I compagni offrono linee di passaggio a distanze diverse, non tutti sulla stessa linea.</li><li>Nel 2° tempo il lancio parte solo quando il portatore è libero e la linea è praticabile.</li><li>Chi difende resta corto e regola l'altezza in base alla pressione sul portatore.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Giocare sempre in orizzontale senza mai cercare la profondità.</li><li>Lanciare anche quando il portatore è pressato.</li><li>Difendere tutti sulla palla lasciando libero lo spazio alle spalle.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Portieri trovati per tempo.</li><li>Lanci da 2 punti tentati e riusciti.</li><li>Recuperi palla nati da una squadra corta.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>8</span></div>
+</section>
+
 <section class="page">
   <div class="kicker">Esercitazione III</div>
   <div class="ex-title"><h2>Circuito atletico</h2></div>
@@ -336,7 +408,7 @@
   </div>
   <p class="obj"><b>Obiettivo:</b> forza generale ed esplosività degli arti inferiori, rapidità sui primi metri.</p>
 
-  <svg class="diagram" viewBox="0 0 500 225" style="width:150mm;margin:0 auto 5mm">
+  <svg class="diagram" viewBox="0 0 500 225" style="width:105mm;margin:0 auto 5mm">
     <rect width="500" height="225" fill="url(#strisce)"/>
     <g font-family="Oswald" text-anchor="middle">
       <path d="M95,60 L250,35 L405,60 L360,165 L140,165 Z" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="7 6" opacity=".8"/>
@@ -352,7 +424,7 @@
     </g>
   </svg>
 
-  <table class="stazioni">
+  <table class="stazioni-t">
     <tr><th></th><th>Esercizio</th><th>Volume</th></tr>
     <tr><td class="s">1</td><td><b>Addominali</b><span class="cue">Movimento controllato, senza strappi</span></td><td class="vol">2 × 10</td></tr>
     <tr><td class="s">2</td><td><b>Balzi a piedi uniti con rimbalzo</b><span class="cue">Partenza da mezzo squat. Spinta esplosiva verso l'alto, atterraggio morbido e subito nuovo balzo</span></td><td class="vol">3 serie × 4</td></tr>
@@ -367,10 +439,9 @@
     <br><br><b>Attenzione:</b> la qualità del gesto viene prima della quantità. Se l'esecuzione peggiora è meglio ridurre le ripetizioni.
   </div>
 
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>9</span></div>
 </section>
 
-<!-- 5. LINEA DIFENSIVA -->
 <section class="page">
     <div class="kicker">Esercitazione IV · Gruppo A · Progressione 1 di 3</div>
   <div class="ex-title"><h2>Scivolamenti</h2></div>
@@ -401,11 +472,25 @@
       </g>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li><li>15–20 minuti, guidati dall'allenatore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla. I difensori si spostano curando la <b>posizione del corpo</b> e la <b>distanza tra i compagni</b>, sempre con l'attenzione rivolta alla palla.</p><p>Quando la palla arriva sull'esterno la linea si spacca e forma <b>due linee</b>: il difensore più vicino esce sulla palla e gli altri restano dietro.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Posizione del corpo</li><li>Distanza tra i compagni</li><li>Occhi sempre sulla palla</li><li><b>Dare sempre copertura al compagno che attacca la palla</b></li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li><li>15–20 minuti, guidati dall'allenatore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Gli attaccanti muovono la palla. I difensori si spostano curando la <b>posizione del corpo</b> e la <b>distanza tra i compagni</b>, sempre con l'attenzione rivolta alla palla.</p><p>Quando la palla arriva sull'esterno la linea si spacca e forma <b>due linee</b>: il difensore più vicino esce sulla palla e gli altri restano dietro.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Posizione del corpo</li><li>Distanza tra i compagni</li><li>Occhi sempre sulla palla</li><li><b>Dare sempre copertura al compagno che attacca la palla</b></li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>10</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 1 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Scivolamenti · progressione 1 di 3</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> La linea a 4 si muove insieme in base alla posizione della palla, curando posizione del corpo e distanze. Quando la palla arriva sull'esterno la linea si spacca: il difensore più vicino esce, gli altri danno copertura.</p>
+  <div class="riga"><div class="l">Tempi</div><div>Il gruppo A lavora 15-20' con l'allenatore sulle tre progressioni; la durata di ogni progressione non è documentata.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo con area di rigore. In metri: 52,5 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Il riferimento è la palla: la linea scivola insieme quando la palla si sposta.</li><li>Distanze costanti tra i quattro, senza buchi tra centrale e terzino.</li><li>Sull'esterno esce un solo difensore; il compagno vicino copre subito.</li><li>Corpo orientato per vedere palla e porta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Scivolare uno alla volta, in ritardo rispetto alla palla.</li><li>Uscire in due sullo stesso attaccante.</li><li>Restare piatti senza copertura dietro chi esce.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Linea che resta compatta durante gli spostamenti.</li><li>Uscita sull'esterno con copertura immediata.</li><li>Distanze tra i difensori regolari.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>11</span></div>
 </section>
 
 <section class="page">
@@ -437,11 +522,25 @@
       <g opacity=".45"><circle cx="140" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="215" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="300" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="380" cy="185" r="9" fill="none" stroke="#fff" stroke-dasharray="3 3" stroke-width="1.5"/></g>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla e i difensori si muovono come nella progressione 1.</p><p>Quando un attaccante <b>punta la linea</b> palla al piede, la linea <b>scappa fino al limite dell'area</b>. Poi si spacca: un difensore esce ad attaccare la palla, gli altri restano in linea.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Scappare insieme, senza lasciare buchi</li><li>Fermarsi al limite dell'area</li><li>Un solo difensore esce sulla palla</li><li>Gli altri restano in linea e coprono</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Gli attaccanti muovono la palla e i difensori si muovono come nella progressione 1.</p><p>Quando un attaccante <b>punta la linea</b> palla al piede, la linea <b>scappa fino al limite dell'area</b>. Poi si spacca: un difensore esce ad attaccare la palla, gli altri restano in linea.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Scappare insieme, senza lasciare buchi</li><li>Fermarsi al limite dell'area</li><li>Un solo difensore esce sulla palla</li><li>Gli altri restano in linea e coprono</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>6</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>12</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 1 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Spaccare la linea · progressione 2 di 3</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Gestire l'attaccante che punta la linea palla al piede: la linea scappa insieme fino al limite dell'area, poi si spacca e un solo difensore esce ad attaccare la palla mentre gli altri coprono.</p>
+  <div class="riga"><div class="l">Tempi</div><div>Dentro i 15-20' del gruppo A; durata della singola progressione non documentata.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo con area di rigore. In metri: 52,5 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>La linea scappa tutta insieme, senza lasciare un difensore più alto degli altri.</li><li>Il limite dell'area è il punto in cui fermarsi.</li><li>Esce il difensore più vicino al portatore, gli altri restano in linea e coprono.</li><li>Chi esce attacca la palla con decisione, non la aspetta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Fermarsi troppo presto e farsi superare.</li><li>Scappare oltre il limite dell'area.</li><li>Uscire in due e lasciare libero il passaggio.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Linea che arretra compatta.</li><li>Uscita di un solo difensore con copertura.</li><li>Palloni recuperati o deviati prima dell'area.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>13</span></div>
 </section>
 
 <section class="page">
@@ -473,23 +572,36 @@
       </g>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla e i difensori si muovono come sopra.</p><p>Sul <b>lancio</b> la difesa si spacca: il difensore <b>più vicino alla palla</b> la attacca e la respinge, gli altri gli danno copertura.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Leggere il lancio in anticipo</li><li>Attacca la palla il più vicino</li><li>Respingere senza esitare</li><li>Gli altri coprono il compagno</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 (2-5-6-3) + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Gli attaccanti muovono la palla e i difensori si muovono come sopra.</p><p>Sul <b>lancio</b> la difesa si spacca: il difensore <b>più vicino alla palla</b> la attacca e la respinge, gli altri gli danno copertura.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Leggere il lancio in anticipo</li><li>Attacca la palla il più vicino</li><li>Respingere senza esitare</li><li>Gli altri coprono il compagno</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>7</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>14</span></div>
 </section>
 
-<!-- 7. GIOCO DI POSIZIONE -->
+<section class="page tec">
+  <div class="kicker">Allenamento 1 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Spaccare la linea sul lancio · progressione 3 di 3</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Difendere sul pallone lungo, davanti o alle spalle della linea: il difensore più vicino attacca e respinge, gli altri gli danno copertura.</p>
+  <div class="riga"><div class="l">Tempi</div><div>Dentro i 15-20' del gruppo A; durata della singola progressione non documentata.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo con area di rigore. In metri: 52,5 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Leggere il lancio prima che parta, guardando la postura di chi calcia.</li><li>Attacca la palla il più vicino, senza esitare.</li><li>Gli altri si stringono dietro di lui a protezione della profondità.</li><li>Respinta lontana dalla porta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Aspettare la palla invece di attaccarla.</li><li>Andare in due sulla stessa palla.</li><li>Restare fermi mentre il compagno salta.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Lanci letti in anticipo.</li><li>Respinte del primo difensore.</li><li>Coperture pronte sulla seconda palla.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>15</span></div>
+</section>
+
 <section class="page">
   <div class="kicker">Esercitazione IV · Gruppo B</div>
   <div class="ex-title"><h2>Gioco di posizione</h2></div>
   <div class="ex-sub">
-    <span class="chip">15–20 minuti</span><span class="chip">4 contro 4 + 2 jolly</span><span class="chip">4 serie da 4'</span><span class="chip">Recupero 1'30"</span>
+    <span class="chip">circa 20 minuti</span><span class="chip">4 contro 4 + 2 jolly</span><span class="chip">4 serie da 4'</span><span class="chip">Recupero 1'30"</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> mantenere il possesso palla occupando bene gli spazi, con passaggi rapidi e precisi.</p>
 
-  <svg class="diagram" viewBox="0 0 500 340" style="width:150mm;margin:0 auto">
+  <svg class="diagram" viewBox="0 0 500 340" style="width:132mm;margin:0 auto">
     <rect width="500" height="340" fill="url(#strisce)"/>
     <rect x="100" y="40" width="300" height="265" fill="none" stroke="#fff" stroke-width="2.5"/>
     <path d="M186,176 L240,121" stroke="#fff" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#freccia)"/>
@@ -499,21 +611,21 @@
   </svg>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Due squadre da 4 giocatori in un quadrato</li>
       <li>2 jolly: il 9 e il 10</li>
-      <li>4 serie da 4 minuti, recupero 1'30"</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+      <li>4 serie da 4 minuti con 1'30" di recupero tra le serie: 16' di gioco, 20'30" in tutto</li>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>La squadra in possesso, aiutata dai due jolly, cerca di tenere palla il più a lungo possibile. Ogni <b>8 passaggi consecutivi</b> vale 1 punto.</p>
       <p>Al termine delle serie <b>si invertono i gruppi</b> con la linea difensiva.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Smarcarsi sempre per dare una linea di passaggio</li>
       <li>Usare i jolly per uscire dalla pressione</li>
       <li>Pochi tocchi e palla che viaggia veloce</li>
       <li>Chi difende pressa insieme per spezzare la sequenza</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="kicker" style="margin-top:7mm">Esercitazione V</div>
@@ -523,12 +635,34 @@
     <div class="box"><h4>1 giro di campo</h4>Per chiudere l'allenamento.</div>
   </div>
 
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>8</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>16</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 2 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-02.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page tec">
+  <div class="kicker">Allenamento 1 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Gioco di posizione</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Mantenere il possesso occupando bene gli spazi, con passaggi rapidi e precisi; i due jolly (9 e 10) aiutano la squadra in possesso. Ogni 8 passaggi consecutivi vale 1 punto.</p>
+  <div class="riga"><div class="l">Tempi</div><div>4 serie da 4' con 1'30" di recupero tra le serie: 16' di gioco effettivo, 20'30" in tutto (circa 20').</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: quadrato, misure non indicate. Consigliato: 30 × 30 m come nell'Allenamento 2.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Smarcarsi prima che il compagno riceva.</li><li>Usare i jolly per uscire dalla pressione.</li><li>Pochi tocchi e palla che viaggia veloce.</li><li>Chi difende pressa insieme per spezzare la sequenza.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Smarcarsi tutti vicino alla palla.</li><li>Usare i jolly solo come scarico all'indietro.</li><li>Pressare da soli lasciando aperte le linee.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Sequenze da 8 passaggi per serie.</li><li>Uscite dalla pressione con il jolly.</li><li>Palloni recuperati da una pressione a due.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 1</span><span>17</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 1 · 31/08/2021</div>
+  <div class="ex-title"><h2>Allenamento 2 · il foglio originale</h2></div>
+  <div class="fogli"><img class="foglio" src="../../materiale/precampionato/allenamento-02.jpg"><img class="foglio" src="../../materiale/precampionato/allenamento-02-b.jpg"></div>
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Gioco di posizione: 8 passaggi consecutivi = 1 punto (sul foglio «15»).</li><li>«Ti lascio alle spalle»: sequenza in tre fasi (uscita del terzino sull'esterno, scarico dell'avversario, lancio alle spalle della difesa), ripetuta sia a destra sia a sinistra.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partite: «50 m × larghezza del campo» corrisponde a 50 × 68 m su un campo regolamentare.</li><li>Lavoro della linea su «metà campo con area»: 52,5 × 68 m su un campo regolamentare.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>18</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -566,7 +700,7 @@
     <span class="kicker">Il filo della seduta</span>
     Il tema del giorno è il <b>lancio</b>: in partita chi attacca è premiato quando cerca la profondità, mentre nel lavoro a gruppi la linea difensiva impara a leggerlo e a respingerlo.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>19</span></div>
 </section>
 
 <section class="page">
@@ -577,7 +711,7 @@
   </div>
   <p class="obj"><b>Obiettivo:</b> possesso palla orientato alla profondità. Rispetto all'Allenamento 1 la squadra è spinta ancora di più a giocare in verticale e a cercare il lancio.</p>
 
-  <svg class="diagram" viewBox="0 0 500 300" style="width:135mm;margin:0 auto">
+  <svg class="diagram" viewBox="0 0 500 300" style="width:110mm;margin:0 auto">
     <rect x="0" y="0" width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
       <rect x="30" y="20" width="440" height="260"/>
@@ -623,25 +757,39 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo lungo 50 m e largo quanto il campo regolamentare, diviso in due metà</li>
       <li>Due squadre da 10 giocatori</li>
       <li>Un portiere per ogni lato corto, che fa da bersaglio</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Le due squadre si contendono il pallone. Chi è in possesso deve far arrivare la palla al portiere del lato che attacca.</p>
       <p>Ogni volta che il portiere riceve la palla la squadra conquista il punto. Rispetto all'Allenamento 1 il lancio dalla metà difensiva vale 2 punti fin dal primo tempo.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Smarcarsi sempre per offrire una linea di passaggio</li>
       <li>Testa alta: guardare il portiere prima di ricevere</li>
       <li>Cercare la profondità appena c'è spazio</li>
       <li>Chi difende resta corto e attento alle spalle</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
 
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>20</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 2 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita «ricerca del portiere» · seconda versione</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Rispetto all'Allenamento 1 la squadra è spinta a giocare in verticale e a cercare il lancio fin dal 1° tempo; nel 2° tempo vietati i passaggi orizzontali.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: lungo 50 m e largo quanto il campo. In metri, su un campo regolamentare: 50 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Nel 2° tempo smarcarsi in avanti o in diagonale rispetto al portatore.</li><li>Il passaggio all'indietro resta una soluzione per cambiare gioco.</li><li>Il lancio parte solo con il portatore libero.</li><li>Chi difende protegge lo spazio alle spalle quando il portatore è libero.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Smarcarsi in linea con il portatore nel 2° tempo.</li><li>Lanciare senza guardare il portiere.</li><li>Accorciare mentre il portatore può calciare lungo.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Passaggi orizzontali commessi nel 2° tempo.</li><li>Lanci da 2 punti riusciti.</li><li>Distanza della linea che difende al momento del lancio.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>21</span></div>
 </section>
 
 <section class="page">
@@ -661,11 +809,25 @@
       <path d="M140,152 L172,152" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M220,152 L252,152" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M300,152 L332,152" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M388,150 L420,178" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M160,322 Q300,250 430,196" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><use href="#pA" x="50" y="230"/><use href="#pA" x="150" y="330"/><use href="#pA" x="260" y="338"/><use href="#pA" x="370" y="330"/><use href="#pA" x="445" y="200"/><use href="#palla" x="165" y="338"/><use href="#pB" x="130" y="152"/><text x="130" y="156.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="210" y="152"/><text x="210" y="156.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pB" x="290" y="152"/><text x="290" y="156.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pB" x="380" y="146"/><text x="380" y="150.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><text x="300" y="268" font-family="Oswald" font-size="12" fill="#fff" letter-spacing="2" transform="rotate(-22 300 268)">LANCIO</text>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla da destra a sinistra e viceversa. La linea difensiva <b>scivola</b> posizionandosi in funzione della palla.</p><p>A turno un attaccante fa un <b>lancio in esterna</b>: la linea deve leggerlo e <b>respingere la palla</b>.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Scivolare insieme seguendo la palla</li><li>Leggere il lancio prima che parta</li><li>Il difensore più vicino attacca la palla</li><li>Gli altri coprono il compagno</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Gli attaccanti muovono la palla da destra a sinistra e viceversa. La linea difensiva <b>scivola</b> posizionandosi in funzione della palla.</p><p>A turno un attaccante fa un <b>lancio in esterna</b>: la linea deve leggerlo e <b>respingere la palla</b>.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Scivolare insieme seguendo la palla</li><li>Leggere il lancio prima che parta</li><li>Il difensore più vicino attacca la palla</li><li>Gli altri coprono il compagno</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>22</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 2 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Attenti al lancio in esterna · progressione 1 di 3</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> La linea scivola in funzione della palla e legge in anticipo il lancio verso la fascia per respingerlo.</p>
+  <div class="riga"><div class="l">Tempi</div><div>Il gruppo A lavora 15' con l'allenatore sulle tre progressioni; durata della singola progressione non documentata.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo con area di rigore. In metri: 52,5 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Scivolare insieme seguendo la palla da destra a sinistra.</li><li>Il terzino lato lancio legge la postura di chi calcia.</li><li>Il difensore più vicino attacca la palla, gli altri coprono.</li><li>Respinta verso l'esterno, lontano dalla porta.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Terzino troppo stretto che concede la fascia.</li><li>Lettura in ritardo del lancio.</li><li>Compagni fermi durante la respinta.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Lanci in esterna respinti.</li><li>Tempi di scivolamento della linea.</li><li>Coperture sulla seconda palla.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>23</span></div>
 </section>
 
 <section class="page">
@@ -707,10 +869,24 @@
       <div class="fase-t"><span class="n">3</span><h4>Lancio dietro la linea</h4>Chi riceve lancia alle spalle della difesa. La linea <b>scappa</b> per togliere spazio e profondità.</div>
     </div></div>
   <div class="two" style="margin-top:5mm">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che ripetono sempre la stessa sequenza</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Uscita decisa del 2, copertura immediata</li><li>Sullo scarico salire tutti insieme</li><li>Sul lancio scappare subito</li><li>Ripetere finché diventa automatico</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che ripetono sempre la stessa sequenza, sia a destra sia a sinistra</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Uscita decisa del 2, copertura immediata</li><li>Sullo scarico salire tutti insieme</li><li>Sul lancio scappare subito</li><li>Ripetere finché diventa automatico</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>24</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 2 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Ti lascio alle spalle · progressione 2 di 3</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Rendere automatici i movimenti della linea con una sequenza fissa in tre fasi, ripetuta sia a destra sia a sinistra: uscita del terzino sull'esterno con copertura, salita sullo scarico, protezione della profondità sul lancio.</p>
+  <div class="riga"><div class="l">Tempi</div><div>Dentro i 15' del gruppo A; durata della singola progressione non documentata.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo con area di rigore. In metri: 52,5 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Uscita decisa del terzino sull'esterno e copertura immediata dei compagni.</li><li>Sullo scarico la linea sale tutta insieme.</li><li>Sul lancio la linea scappa subito per togliere profondità.</li><li>Ripetere a destra e a sinistra fino a renderlo automatico.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Uscita del terzino senza copertura.</li><li>Salire in ritardo sullo scarico.</li><li>Restare alti quando parte il lancio.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Coperture alle spalle del terzino che esce.</li><li>Salita compatta sullo scarico.</li><li>Reazione della linea al lancio.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>25</span></div>
 </section>
 
 <section class="page">
@@ -730,11 +906,25 @@
       <path d="M245,322 Q230,240 262,178" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M292,150 L272,168" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><use href="#pA" x="40" y="205"/><use href="#pA" x="460" y="205"/><use href="#pA" x="100" y="320"/><use href="#pA" x="245" y="335"/><use href="#pA" x="400" y="320"/><use href="#pA" x="245" y="158"/><use href="#palla" x="260" y="342"/><use href="#pB" x="120" y="150"/><text x="120" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="195" y="150"/><text x="195" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pB" x="300" y="150"/><text x="300" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pB" x="375" y="150"/><text x="375" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>6 attaccanti: uno in mezzo alla linea, due larghi, tre dietro</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla da destra a sinistra. A un certo punto un attaccante fa un <b>lancio verso la linea</b>.</p><p>La linea <b>respinge</b> e da quel momento l'azione continua come una partita <b>6 contro 4</b>.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Respingere lontano dalla porta</li><li>Dopo la respinta la linea esce insieme</li><li>In inferiorità: restare compatti e proteggere la porta</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 + portiere</li><li>6 attaccanti: uno in mezzo alla linea, due larghi, tre dietro</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Gli attaccanti muovono la palla da destra a sinistra. A un certo punto un attaccante fa un <b>lancio verso la linea</b>.</p><p>La linea <b>respinge</b> e da quel momento l'azione continua come una partita <b>6 contro 4</b>.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Respingere lontano dalla porta</li><li>Dopo la respinta la linea esce insieme</li><li>In inferiorità: restare compatti e proteggere la porta</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>6</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>26</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 2 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>6 contro 4 · progressione 3 di 3</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Respingere il lancio e difendere subito in inferiorità numerica, restando compatti a protezione della porta.</p>
+  <div class="riga"><div class="l">Tempi</div><div>Dentro i 15' del gruppo A; durata della singola progressione non documentata.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo con area di rigore. In metri: 52,5 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Respinta lontana dalla porta.</li><li>Dopo la respinta la linea esce insieme.</li><li>In inferiorità restare compatti e proteggere il centro.</li><li>Scegliere chi attaccare in base alla posizione della palla.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Andare tutti sulla palla e lasciare liberi gli attaccanti larghi.</li><li>Uscire in ordine sparso dopo la respinta.</li><li>Concedere tiri centrali.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Respinte riuscite.</li><li>Compattezza dopo la respinta.</li><li>Gol subiti dal centro.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>27</span></div>
 </section>
 
 <section class="page">
@@ -754,24 +944,38 @@
     <use href="#pJ" x="250" y="30"/><text x="250" y="34.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">9</text><use href="#pJ" x="250" y="105"/><text x="250" y="109.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">10</text><use href="#pB" x="110" y="140"/><text x="110" y="144.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">11</text><use href="#pB" x="390" y="150"/><text x="390" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">7</text><use href="#pB" x="185" y="180"/><text x="185" y="184.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">4</text><use href="#pB" x="275" y="310"/><text x="275" y="314.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pA" x="110" y="250"/><text x="110" y="254.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><use href="#pA" x="390" y="240"/><text x="390" y="244.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pA" x="225" y="268"/><text x="225" y="272.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pA" x="305" y="170"/><text x="305" y="174.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">8</text>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Quadrato di 30 × 30 metri</li>
       <li>Due squadre da 4 giocatori</li>
       <li>2 jolly: il 9 e il 10</li>
       <li>3 serie da 4 minuti</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>La squadra in possesso, aiutata dai due jolly, cerca di tenere palla. Ogni <b>8 passaggi consecutivi</b> vale <b>1 gol</b>.</p>
       <p>Al termine delle serie <b>si invertono i gruppi</b> con la linea difensiva.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Smarcarsi prima che il compagno riceva</li>
       <li>Muoversi negli spazi liberi, lontano dall'avversario</li>
       <li>Usare i jolly per uscire dalla pressione</li>
       <li>Pochi tocchi e palla che viaggia veloce</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>7</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>28</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 2 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Gioco di posizione</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Consolidare lo smarcamento: ogni giocatore si muove per offrire sempre una soluzione di passaggio. Ogni 8 passaggi consecutivi vale 1 punto.</p>
+  <div class="riga"><div class="l">Tempi</div><div>3 serie da 4' = 12' di gioco effettivo su 15' per gruppo; i recuperi tra le serie non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 30 × 30 m. Nessun adattamento necessario.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Smarcarsi prima che il compagno riceva.</li><li>Muoversi negli spazi liberi, lontano dall'avversario.</li><li>Usare i jolly per uscire dalla pressione.</li><li>Palla che viaggia veloce.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Restare fermi aspettando la palla.</li><li>Smarcarsi dietro l'avversario.</li><li>Troppi tocchi prima del passaggio.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Sequenze da 8 passaggi.</li><li>Giocatori sempre disponibili per il passaggio.</li><li>Palloni persi per smarcamenti in ritardo.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>29</span></div>
 </section>
 
 <section class="page">
@@ -796,19 +1000,19 @@
     </g>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>2 blocchi da 10 minuti</li>
       <li>5 minuti di recupero attivo tra i blocchi</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>In ogni blocco si alterna <b>1 minuto di corsa lenta</b> e <b>30 secondi di corsa veloce</b>, senza fermarsi.</p>
       <p>Nel recupero attivo si continua a muoversi con corsa leggera o camminata.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Il tratto veloce è sostenuto, non uno sprint massimale</li>
       <li>Il tratto lento serve a recuperare: non fermarsi</li>
       <li>Mantenere lo stesso ritmo dal primo all'ultimo veloce</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="kicker" style="margin-top:7mm">Esercitazione V</div>
@@ -817,12 +1021,20 @@
     <div class="box"><h4>Stretching</h4>Allungamento dei principali gruppi muscolari a fine seduta.</div>
     <div class="box"><h4>Scarico della colonna</h4>Esercizi di scarico della colonna vertebrale dopo il lavoro di corsa.</div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>8</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 2</span><span>30</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 3 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-03.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 1 · 01/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 3 · il foglio originale</h2></div>
+  <div class="fogli"><img class="foglio" src="../../materiale/precampionato/allenamento-03.jpg"><img class="foglio" src="../../materiale/precampionato/allenamento-03-b.jpg"></div>
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Gioco di posizione: 8 passaggi consecutivi = 1 punto (sul foglio «15»).</li><li>«Ti lascio alle spalle»: sequenza in tre fasi (uscita del terzino sull'esterno, scarico dell'avversario, lancio alle spalle della difesa), ripetuta sia a destra sia a sinistra.</li><li>Lavoro atletico di circa 30' (sul foglio «35'»): 2 blocchi da 12' con 5' di recupero. Durata della seduta 125' più i suicidi finali.</li><li>Suicidi: navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno, 11 + 11 m (22 m).</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partite: «50 m × larghezza del campo» corrisponde a 50 × 68 m su un campo regolamentare.</li><li>Lavoro della linea su «metà campo con area»: 52,5 × 68 m su un campo regolamentare.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>31</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -833,7 +1045,7 @@
   </div>
 
   <div class="meta">
-    <div><div class="l">Durata</div><div class="v">125'</div></div>
+    <div><div class="l">Durata</div><div class="v">125' + suicidi</div></div>
     <div><div class="l">Giocatori</div><div class="v">22</div></div>
     <div><div class="l">Campo</div><div class="v">50 m × largh.</div></div>
     <div><div class="l">Focus</div><div class="v">Gioco tra i reparti</div></div>
@@ -860,7 +1072,7 @@
     <span class="kicker">Il filo della seduta</span>
     La palla deve <b>passare da un reparto all'altro</b>: in partita è vietato appoggiarsi al compagno vicino, nel gioco di posizione i tocchi si riducono. Intanto la linea difensiva ripete il lavoro del giorno prima per renderlo automatico.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>32</span></div>
 </section>
 
 <section class="page">
@@ -870,7 +1082,7 @@
     <span class="chip">30 minuti</span><span class="chip">10 contro 10 + portieri</span><span class="chip">Campo 50 m × tutta la larghezza</span><span class="chip">Diviso in 2 metà</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> far viaggiare la palla tra i reparti. Senza l'appoggio al compagno vicino ogni giocatore deve cercare una linea di passaggio più avanti o più indietro.</p>
-  <svg class="diagram" viewBox="0 0 500 300" style="width:118mm;margin:0 auto">
+  <svg class="diagram" viewBox="0 0 500 300" style="width:88mm;margin:0 auto">
     <rect x="0" y="0" width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
       <rect x="30" y="20" width="440" height="260"/>
@@ -904,26 +1116,40 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo lungo 50 m e largo quanto il campo regolamentare, diviso in due metà</li>
       <li>Due squadre da 10 giocatori più i portieri</li>
       <li>Una porta per ogni lato corto</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Partita normale con una regola: la palla non può andare a un compagno dello <b>stesso reparto</b> (difensore a difensore, centrocampista a centrocampista, attaccante ad attaccante).</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Smarcarsi tra le linee per dare il passaggio al reparto vicino</li>
       <li>Testa alta prima di ricevere</li>
       <li>Nel 2° tempo pressare alto: il recupero avanti vale doppio</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="chiave">
     <span class="kicker">La posta in gioco · suicidi a fine allenamento</span>
-    Chi perde: <b>5 suicidi</b> · chi vince: <b>2 suicidi</b> · pareggio: <b>3 suicidi per tutti</b>. Il suicidio è una navetta dal limite dell'area piccola al limite dell'area grande.
+    Chi perde: <b>5 suicidi</b> · chi vince: <b>2 suicidi</b> · pareggio: <b>3 suicidi per tutti</b>. Il suicidio è una navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m in tutto.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>33</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 3 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita «no compagno di reparto»</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Far viaggiare la palla tra i reparti: senza l'appoggio al compagno vicino ogni giocatore deve cercare una linea più avanti o più indietro. Nel 2° tempo il gol dopo un recupero nella metà offensiva vale 2.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: lungo 50 m e largo quanto il campo. In metri, su un campo regolamentare: 50 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Smarcarsi tra le linee per dare il passaggio al reparto vicino.</li><li>Testa alta prima di ricevere.</li><li>Nel 2° tempo la pressione nella metà offensiva parte insieme.</li><li>Chi è senza palla si muove su una linea diversa dal portatore.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Passare al compagno di reparto per abitudine.</li><li>Smarcarsi tutti alla stessa altezza.</li><li>Pressare da soli nel 2° tempo.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Errori di reparto per tempo.</li><li>Passaggi tra le linee riusciti.</li><li>Gol da 2 punti nel 2° tempo.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>34</span></div>
 </section>
 
 <section class="page">
@@ -943,11 +1169,11 @@
       <path d="M140,152 L172,152" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M220,152 L252,152" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M300,152 L332,152" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M388,150 L420,178" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M160,322 Q300,250 430,196" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><use href="#pA" x="50" y="230"/><use href="#pA" x="150" y="330"/><use href="#pA" x="260" y="338"/><use href="#pA" x="370" y="330"/><use href="#pA" x="445" y="200"/><use href="#palla" x="165" y="338"/><use href="#pB" x="130" y="152"/><text x="130" y="156.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="210" y="152"/><text x="210" y="156.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pB" x="290" y="152"/><text x="290" y="156.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pB" x="380" y="146"/><text x="380" y="150.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><text x="300" y="268" font-family="Oswald" font-size="12" fill="#fff" letter-spacing="2" transform="rotate(-22 300 268)">LANCIO</text>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla da destra a sinistra e viceversa. La linea difensiva <b>scivola</b> posizionandosi in funzione della palla.</p><p>A turno un attaccante fa un <b>lancio in esterna</b>: la linea deve leggerlo e <b>respingere la palla</b>.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Scivolare insieme seguendo la palla</li><li>Leggere il lancio prima che parta</li><li>Il difensore più vicino attacca la palla</li><li>Gli altri coprono il compagno</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che muovono la palla davanti alla linea</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Gli attaccanti muovono la palla da destra a sinistra e viceversa. La linea difensiva <b>scivola</b> posizionandosi in funzione della palla.</p><p>A turno un attaccante fa un <b>lancio in esterna</b>: la linea deve leggerlo e <b>respingere la palla</b>.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Scivolare insieme seguendo la palla</li><li>Leggere il lancio prima che parta</li><li>Il difensore più vicino attacca la palla</li><li>Gli altri coprono il compagno</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>35</span></div>
 </section>
 
 <section class="page">
@@ -989,10 +1215,10 @@
       <div class="fase-t"><span class="n">3</span><h4>Lancio dietro la linea</h4>Chi riceve lancia alle spalle della difesa. La linea <b>scappa</b> per togliere spazio e profondità.</div>
     </div></div>
   <div class="two" style="margin-top:5mm">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che ripetono sempre la stessa sequenza</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Uscita decisa del 2, copertura immediata</li><li>Sullo scarico salire tutti insieme</li><li>Sul lancio scappare subito</li><li>Ripetere finché diventa automatico</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 + portiere</li><li>Attaccanti che ripetono sempre la stessa sequenza, sia a destra sia a sinistra</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Uscita decisa del 2, copertura immediata</li><li>Sullo scarico salire tutti insieme</li><li>Sul lancio scappare subito</li><li>Ripetere finché diventa automatico</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>36</span></div>
 </section>
 
 <section class="page">
@@ -1012,11 +1238,11 @@
       <path d="M245,322 Q230,240 262,178" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M292,150 L272,168" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><use href="#pA" x="40" y="205"/><use href="#pA" x="460" y="205"/><use href="#pA" x="100" y="320"/><use href="#pA" x="245" y="335"/><use href="#pA" x="400" y="320"/><use href="#pA" x="245" y="158"/><use href="#palla" x="260" y="342"/><use href="#pB" x="120" y="150"/><text x="120" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="195" y="150"/><text x="195" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pB" x="300" y="150"/><text x="300" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pB" x="375" y="150"/><text x="375" y="154.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>6 attaccanti: uno in mezzo alla linea, due larghi, tre dietro</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Gli attaccanti muovono la palla da destra a sinistra. A un certo punto un attaccante fa un <b>lancio verso la linea</b>.</p><p>La linea <b>respinge</b> e da quel momento l'azione continua come una partita <b>6 contro 4</b>.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Respingere lontano dalla porta</li><li>Dopo la respinta la linea esce insieme</li><li>In inferiorità: restare compatti e proteggere la porta</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 + portiere</li><li>6 attaccanti: uno in mezzo alla linea, due larghi, tre dietro</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Gli attaccanti muovono la palla da destra a sinistra. A un certo punto un attaccante fa un <b>lancio verso la linea</b>.</p><p>La linea <b>respinge</b> e da quel momento l'azione continua come una partita <b>6 contro 4</b>.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Respingere lontano dalla porta</li><li>Dopo la respinta la linea esce insieme</li><li>In inferiorità: restare compatti e proteggere la porta</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>6</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>37</span></div>
 </section>
 
 <section class="page">
@@ -1036,22 +1262,36 @@
     <use href="#pJ" x="250" y="30"/><text x="250" y="34.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">9</text><use href="#pJ" x="250" y="105"/><text x="250" y="109.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">10</text><use href="#pB" x="140" y="120"/><text x="140" y="124.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">11</text><use href="#pB" x="185" y="200"/><text x="185" y="204.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">4</text><use href="#pB" x="370" y="225"/><text x="370" y="229.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="235" y="280"/><text x="235" y="284.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pA" x="360" y="110"/><text x="360" y="114.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">7</text><use href="#pA" x="235" y="190"/><text x="235" y="194.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">8</text><use href="#pA" x="140" y="275"/><text x="140" y="279.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><use href="#pA" x="305" y="270"/><text x="305" y="274.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Quadrato di 30 × 30 metri</li>
       <li>Due squadre da 4 giocatori</li>
       <li>2 jolly: il 9 e il 10</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Stesse regole dell'Allenamento 2: ogni <b>8 passaggi consecutivi</b> vale <b>1 punto</b>.</p>
       <p>Si gioca a <b>2 tocchi</b>, mentre i jolly hanno <b>1 solo tocco</b>.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Sapere già a chi passare prima di ricevere</li>
       <li>Il jolly va servito quando ha già una soluzione pronta</li>
       <li>Smarcarsi subito dopo aver passato</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>7</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>38</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 3 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Gioco di posizione a tocchi limitati</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Il gioco di posizione dell'Allenamento 2 reso più difficile: a 2 tocchi, con i jolly a 1 tocco, bisogna smarcarsi prima e più velocemente. Ogni 8 passaggi consecutivi vale 1 punto.</p>
+  <div class="riga"><div class="l">Tempi</div><div>20' per gruppo; serie e recuperi non sono documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 30 × 30 m, come nell'Allenamento 2.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Sapere già a chi passare prima di ricevere.</li><li>Servire il jolly quando ha già una soluzione.</li><li>Smarcarsi subito dopo aver passato.</li><li>Ricezione orientata verso il compagno libero.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Ricevere senza aver guardato.</li><li>Dare al jolly palloni senza soluzioni.</li><li>Fermarsi dopo il passaggio.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Sequenze da 8 passaggi a 2 tocchi.</li><li>Palloni persi al primo controllo.</li><li>Uso corretto del jolly a 1 tocco.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>39</span></div>
 </section>
 
 <section class="page">
@@ -1076,18 +1316,18 @@
     </g>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>2 blocchi da 12 minuti</li>
       <li>5 minuti di recupero tra i blocchi</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>In ogni blocco si alterna <b>1 minuto di corsa lenta</b> e <b>30 secondi di corsa veloce</b>, senza fermarsi.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Il tratto veloce è sostenuto, non uno sprint massimale</li>
       <li>Il tratto lento serve a recuperare: non fermarsi</li>
       <li>Mantenere lo stesso ritmo dal primo all'ultimo veloce</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="kicker" style="margin-top:7mm">Esercitazione V</div>
@@ -1096,12 +1336,20 @@
     <div class="box"><h4>Stretching</h4>Allungamento dei principali gruppi muscolari a fine seduta.</div>
     <div class="box"><h4>Prima di andare</h4>Chi ha perso la partita paga i suoi <b>suicidi</b> (vedi Esercitazione II).</div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>8</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 3</span><span>40</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 4 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-04.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 1 · 02/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 4 · il foglio originale</h2></div>
+  <div class="fogli"><img class="foglio" src="../../materiale/precampionato/allenamento-04.jpg"><img class="foglio" src="../../materiale/precampionato/allenamento-04-b.jpg"></div>
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Partita «lavoro preventivo», 2° tempo: passaggio laterale o verticale senza essere attaccati.</li><li>Parte atletica: 3' di recupero tra i blocchi (non scritto sul foglio).</li><li>Suicidi: navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno, 11 + 11 m (22 m).</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partite: «50 m × larghezza del campo» corrisponde a 50 × 68 m su un campo regolamentare.</li><li>Lavoro della linea su «metà campo con area»: 52,5 × 68 m su un campo regolamentare.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>41</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -1138,7 +1386,7 @@
     <span class="kicker">Il filo della seduta</span>
     In partita si premia chi riceve <b>spalle alla porta e si gira</b>: chi difende impara a marcare <b>prima</b> che l'avversario riceva. Nel lavoro a gruppi la linea difende sui cross e poi mette alla prova nel 6 contro 4 quello che ha imparato nei giorni precedenti.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>42</span></div>
 </section>
 
 <section class="page">
@@ -1147,8 +1395,8 @@
   <div class="ex-sub">
     <span class="chip">30 minuti</span><span class="chip">10 contro 10 + 2 portieri</span><span class="chip">Campo 50 m × tutta la larghezza</span><span class="chip">Diviso in 2 metà</span>
   </div>
-  <p class="obj"><b>Obiettivo:</b> marcature preventive. Chi attacca è premiato quando riceve spalle alla porta e riesce a girarsi, quindi chi difende deve stare addosso all'avversario <b>prima</b> che arrivi la palla.</p>
-  <svg class="diagram" viewBox="0 0 500 300" style="width:118mm;margin:0 auto">
+  <p class="obj"><b>Obiettivo:</b> coperture preventive. Chi attacca è premiato quando riceve spalle alla porta e riesce a girarsi: chi difende legge la palla e si posiziona <b>prima</b> che arrivi, coprendo gli spazi e gli avversari che possono riceverla.</p>
+  <svg class="diagram" viewBox="0 0 500 300" style="width:77mm;margin:0 auto">
     <rect x="0" y="0" width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
       <rect x="30" y="20" width="440" height="260"/>
@@ -1181,26 +1429,40 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo lungo 50 m e largo quanto il campo regolamentare, diviso in due metà</li>
       <li>Due squadre da 10 giocatori</li>
       <li>Un portiere per ogni lato corto</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Le due squadre si contendono il pallone a tocchi limitati. Il punto non arriva dal gol ma dalla <b>giocata spalle alla porta</b> descritta nei riquadri sopra.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Chi difende accorcia mentre la palla viaggia</li>
       <li>Non lasciare girare l'avversario</li>
       <li>Chi riceve controlla già orientato</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="chiave">
     <span class="kicker">La posta in gioco · suicidi a fine allenamento</span>
-    Chi perde: <b>5 suicidi</b> · chi vince: <b>1 suicidio</b> · pareggio: <b>4 suicidi per tutti</b>.
+    Chi perde: <b>5 suicidi</b> · chi vince: <b>1 suicidio</b> · pareggio: <b>4 suicidi per tutti</b>. Il suicidio è una navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m in tutto.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>43</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 4 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita «lavoro preventivo»</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Coperture preventive: chi attacca è premiato quando riceve spalle alla porta e si gira (1° tempo) o gioca un passaggio laterale o verticale senza essere attaccato (2° tempo). Chi difende legge la palla e si posiziona prima che arrivi, coprendo gli spazi e gli avversari che possono riceverla.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi; 30' nel programma della seduta.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: lungo 50 m e largo quanto il campo. In metri, su un campo regolamentare: 50 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Mentre la palla viaggia, chi difende si posiziona in relazione alla palla e allo spazio da proteggere.</li><li>Quando la palla arriva all'avversario spalle alla porta, il difendente vicino è già in posizione per impedirgli di girarsi.</li><li>I compagni coprono le linee di passaggio laterali e verticali.</li><li>Chi attacca riceve con un controllo già orientato.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Aspettare che l'avversario riceva per iniziare a difendere.</li><li>Andare tutti sulla palla lasciando liberi gli spazi.</li><li>Ricevere spalle alla porta senza aver guardato.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Giocatori che si girano spalle alla porta (dovrebbero calare).</li><li>Passaggi da 2 punti concessi nel 2° tempo.</li><li>Linee di passaggio chiuse prima della ricezione.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>44</span></div>
 </section>
 
 <section class="page">
@@ -1220,16 +1482,30 @@
       <path d="M236,350 L72,346" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M62,334 L58,104" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><path d="M40,250 L40,62" stroke="#f2c230" stroke-width="2.5" fill="none" marker-end="url(#freccia-oro)"/><path d="M62,44 Q170,6 262,62" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#freccia)"/><use href="#pA" x="40" y="46"/><text x="40" y="50.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pA" x="60" y="346"/><text x="60" y="350.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><use href="#pA" x="440" y="92"/><use href="#pA" x="450" y="330"/><use href="#pJ" x="250" y="350"/><text x="250" y="354.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#1d2421">M</text><use href="#palla" x="56" y="54"/><use href="#pB" x="140" y="60"/><text x="140" y="64.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="200" y="74"/><text x="200" y="78.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pB" x="262" y="88"/><text x="262" y="92.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pB" x="324" y="102"/><text x="324" y="106.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><use href="#pB" x="172" y="108"/><text x="172" y="112.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">4</text><use href="#pB" x="232" y="122"/><text x="232" y="126.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">8</text><text x="250" y="374" font-family="Oswald" font-size="11" fill="#fff" text-anchor="middle" letter-spacing="1">MISTER</text>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere, con il 4 e l'8 davanti</li><li>Attaccanti: X1, X2 e due in attesa del cross</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Il mister dà la palla a <b>X1</b>, che la passa a <b>X2</b>. X2 <b>si abbassa fino al fondo</b> e crossa.</p><p>La linea si dispone in <b>diagonale invertita</b> per affrontare e <b>respingere</b> la palla.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Terzino lato palla leggermente sotto la linea della palla</li><li>Centrali e terzino opposto in leggera diagonale rispetto al cross</li><li>Centrocampisti a cerniera, anche loro in leggera diagonale</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 + portiere, con il 4 e l'8 davanti</li><li>Attaccanti: X1, X2 e due in attesa del cross</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Il mister dà la palla a <b>X1</b>, che la passa a <b>X2</b>. X2 <b>si abbassa fino al fondo</b> e crossa.</p><p>La linea si dispone in <b>diagonale invertita</b> per affrontare e <b>respingere</b> la palla.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Terzino lato palla leggermente sotto la linea della palla</li><li>Centrali e terzino opposto in leggera diagonale rispetto al cross</li><li>Centrocampisti a cerniera, anche loro in leggera diagonale</li></ul></div></div>
   </div>
   <div class="chiave">
     <span class="kicker">La diagonale invertita</span>
     Il <b>terzino lato palla</b> (2) si mette leggermente sotto la linea della palla. I <b>due centrali</b> (5 e 6) e il <b>terzino opposto</b> (3) formano una leggera diagonale rispetto al cross.
     Il <b>centrocampista più vicino alla palla</b> (4) si mette a cerniera tra il terzino e il centrale, l'<b>altro centrocampista</b> (8) tra i due centrali.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>45</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 4 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Difendere sui cross</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Posizionarsi in area nel modo giusto per affrontare e respingere il cross, con la linea in diagonale invertita e i centrocampisti a cerniera.</p>
+  <div class="riga"><div class="l">Tempi</div><div>Il gruppo A lavora 15' con l'allenatore su cross e 6 contro 4; durata della singola esercitazione non documentata.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo con area di rigore. In metri: 52,5 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Il terzino lato palla, leggermente sotto la linea della palla, dà l'altezza della linea.</li><li>Centrali e terzino opposto in leggera diagonale.</li><li>Centrocampisti a cerniera: il più vicino tra terzino e centrale, l'altro tra i centrali.</li><li>Sul cross attaccare la palla, non aspettarla.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Linea piatta che concede il secondo palo.</li><li>Centrocampisti che restano fuori dall'area.</li><li>Guardare solo la palla e perdere l'attaccante alle spalle.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Cross respinti.</li><li>Posizione del terzino lato palla.</li><li>Palloni concessi sul secondo palo.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>46</span></div>
 </section>
 
 <section class="page">
@@ -1249,11 +1525,25 @@
       <use href="#pA" x="40" y="150"/><use href="#pA" x="460" y="150"/><use href="#pA" x="250" y="175"/><use href="#pA" x="60" y="320"/><use href="#pA" x="250" y="330"/><use href="#pA" x="440" y="320"/><use href="#palla" x="265" y="338"/><use href="#pB" x="140" y="140"/><text x="140" y="144.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><use href="#pB" x="210" y="140"/><text x="210" y="144.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">5</text><use href="#pB" x="290" y="140"/><text x="290" y="144.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">6</text><use href="#pB" x="360" y="140"/><text x="360" y="144.5" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text>
     </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>Linea a 4 + portiere</li><li>6 attaccanti: uno davanti alla linea, due larghi, tre dietro</li><li>Metà campo con area di rigore</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p>Partita <b>6 contro 4</b> verso la porta difesa dalla linea.</p><p>L'allenatore osserva se i movimenti provati negli allenamenti precedenti vengono fatti da soli e, <b>se serve, ferma e corregge</b>.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Scivolare insieme seguendo la palla</li><li>Uscita e copertura come in “Ti lascio alle spalle”</li><li>Leggere il lancio prima che parta</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>Linea a 4 + portiere</li><li>6 attaccanti: uno davanti alla linea, due larghi, tre dietro</li><li>Metà campo con area di rigore</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p>Partita <b>6 contro 4</b> verso la porta difesa dalla linea.</p><p>L'allenatore osserva se i movimenti provati negli allenamenti precedenti vengono fatti da soli e, <b>se serve, ferma e corregge</b>.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Scivolare insieme seguendo la palla</li><li>Uscita e copertura come in “Ti lascio alle spalle”</li><li>Leggere il lancio prima che parta</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>47</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 4 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>6 contro 4 di verifica</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Verificare se i movimenti provati nei giorni precedenti vengono eseguiti da soli; l'allenatore osserva e, se serve, ferma e corregge.</p>
+  <div class="riga"><div class="l">Tempi</div><div>Dentro i 15' del gruppo A; durata della singola esercitazione non documentata.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: metà campo con area di rigore. In metri: 52,5 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Scivolare insieme seguendo la palla.</li><li>Uscita e copertura come in «Ti lascio alle spalle».</li><li>Leggere il lancio prima che parta.</li><li>Fermare il gioco solo quando serve davvero.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Correggere ogni azione e togliere autonomia.</li><li>Uscite senza copertura.</li><li>Linea che non reagisce al lancio.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Movimenti eseguiti senza indicazioni.</li><li>Interventi dell'allenatore necessari.</li><li>Gol subiti per errori di copertura.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>48</span></div>
 </section>
 
 <section class="page">
@@ -1265,21 +1555,21 @@
   <p class="obj"><b>Obiettivo:</b> forza generale ed esplosiva, alternando lavoro a corpo libero e balzi.</p>
   <div class="stazioni"><div class="stazione"><div class="n">1</div><div><div class="t">Addominali</div></div><div class="q">2 × 15</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Balzi a piedi uniti</div><div class="d">partendo da mezzo squat</div></div><div class="q">4 × 3 serie</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Corsa calciata + scatto</div><div class="d">5 m di corsa calciata e 5 m di scatto</div></div><div class="q">6 rip.</div></div><div class="stazione"><div class="n">4</div><div><div class="t">Flessioni</div></div><div class="q">2 × 15</div></div><div class="stazione"><div class="n">5</div><div><div class="t">Balzi a piedi uniti in avanti</div></div><div class="q">4 × 3 serie</div></div></div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>5 stazioni in sequenza</li>
       <li>Il gruppo lavora mentre l'altro è con l'allenatore</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Si completano le serie di una stazione e si passa alla successiva, dalla 1 alla 5.</p>
       <p>Nei balzi “4 × 3 serie” sono <b>3 serie da 4 balzi</b>.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Nei balzi spingere forte e atterrare morbidi</li>
       <li>Schiena dritta nel mezzo squat</li>
       <li>Qualità del gesto prima della velocità</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>6</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>49</span></div>
 </section>
 
 <section class="page">
@@ -1291,33 +1581,41 @@
   <p class="obj"><b>Obiettivo:</b> resistenza alla velocità. Il lavoro si accorcia e il ritmo cresce da un blocco all'altro.</p>
   <table class="intervalli"><tr><td class="min">4'</td><td class="rit">45"-15"</td><td>15" di allungo sul lato lungo, 45" di recupero sulla diagonale</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">4'</td><td class="rit">20"-20"</td><td>20" di corsa su 100 m, 20" di recupero</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">4'</td><td class="rit">15"-15"</td><td>15" di corsa su 80 m, 15" di recupero</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">4'</td><td class="rit">10"-10"</td><td>10" di navetta su 16 m, 10" di recupero</td></tr></table>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo intero per gli allunghi</li>
       <li>Distanze segnate a 100, 80 e 16 m</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Ogni blocco dura 4 minuti: si alterna il tratto di corsa al recupero, con i tempi indicati in tabella.</p>
       <p>Tra un blocco e l'altro <b>3 minuti di recupero</b>.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Rispettare i tempi di partenza</li>
       <li>Nella navetta frenare e ripartire bassi</li>
       <li>Stessa intensità fino all'ultima ripetuta</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="kicker" style="margin-top:7mm">Esercitazione V</div>
   <div class="ex-title"><h2 style="font-size:17pt">Suicidi</h2></div>
   <div class="two" style="margin-top:3mm">
     <div class="box"><h4>Chi li fa</h4>Chi ha perso la partita iniziale: 5 suicidi. Chi ha vinto: 1. In caso di pareggio 4 per tutti.</div>
-    <div class="box"><h4>Il suicidio</h4>Navetta dal limite dell'area piccola al limite dell'area grande, come nell'Allenamento 3.</div>
+    <div class="box"><h4>Il suicidio</h4>Navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m in tutto.</div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>7</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 4</span><span>50</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 5 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-05.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 2 · data non indicata sul foglio</div>
+  <div class="ex-title"><h2>Allenamento 5 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/precampionato/allenamento-05.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Lavoro a gruppi: 40' in tutto, 20' per gruppo e poi lo scambio.</li><li>Navette: 3' di recupero tra i blocchi, come nell'Allenamento 4.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partite: «50 m × larghezza del campo» corrisponde a 50 × 68 m su un campo regolamentare.</li><li>Uscite sul centrocampo: rettangolo non misurato, consigliati 40 × 30 m.</li><li>Rondo: quadrato non misurato, consigliati 15 × 15 m.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>51</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -1338,7 +1636,7 @@
   <table class="programma">
     <tr><td class="num">I</td><td><div class="t">Riscaldamento</div><div class="d">Attivazione</div></td><td class="min">10'</td></tr>
     <tr><td class="num">II</td><td><div class="t">Partita “ricerca del portiere”</div><div class="d">2 tocchi · lancio dalla metà difensiva e recupero palla nella metà offensiva premiati · nel 2° tempo solo gioco verticale</div></td><td class="min">30'</td></tr>
-    <tr><td class="num">III</td><td><div class="t">Lavoro a gruppi con cambio</div><div class="d">Gruppo A: uscite della difesa sul centrocampo a partita, 4 serie da 4' · Gruppo B: rondo, 4 serie da 3'. Poi si invertono</div></td><td class="min">40'</td></tr>
+    <tr><td class="num">III</td><td><div class="t">Lavoro a gruppi con cambio</div><div class="d">20' per gruppo · Gruppo A: uscite della difesa sul centrocampo, 10' + 10' a punti · Gruppo B: rondo, 4 serie da 3'. Poi si invertono</div></td><td class="min">40'</td></tr>
     <tr><td class="num">IV</td><td><div class="t">Parte atletica · navette</div><div class="d">Intermittente a tempi decrescenti · 4 blocchi da 6' con 3' di recupero</div></td><td class="min">33'</td></tr>
   </table>
 
@@ -1353,7 +1651,7 @@
     <span class="kicker">Il filo della seduta</span>
     Il tema è l'<b>uscita</b>: in partita il recupero palla nella metà offensiva vale un punto, mentre nel lavoro a gruppi la difesa impara a uscire sul centrocampo restando coperta alle spalle con le <b>piramidi</b>.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>52</span></div>
 </section>
 
 <section class="page">
@@ -1400,28 +1698,42 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo lungo 50 m e largo quanto il campo regolamentare, diviso in due metà</li>
       <li>Due squadre da 10 giocatori</li>
       <li>Un portiere per ogni lato corto, che fa da bersaglio</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Ogni squadra deve far arrivare la palla al portiere del lato che attacca. Il punto vale solo se arriva con un lancio o dopo un recupero in avanti.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Testa alta: guardare la profondità prima di ricevere</li>
       <li>Appena persa palla, aggredire subito</li>
       <li>Con 2 tocchi il controllo deve già preparare il passaggio</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>53</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 5 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita «ricerca del portiere»</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Cercare la profondità con il lancio dalla metà difensiva (2 punti) e premiare il recupero nella metà offensiva (1 punto); si gioca a 2 tocchi per tutta la partita, nel 2° tempo solo in verticale.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi; 30' nel programma della seduta (durata non scritta sul foglio).</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: lungo 50 m e largo quanto il campo. In metri, su un campo regolamentare: 50 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Con 2 tocchi il controllo prepara già il passaggio.</li><li>Persa palla, la pressione parte subito e insieme.</li><li>Il lancio parte con il portatore libero.</li><li>Nel 2° tempo smarcarsi avanti o in diagonale.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Controllo che non prepara la giocata.</li><li>Pressare da soli dopo la perdita.</li><li>Lanciare sotto pressione.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Lanci da 2 punti riusciti.</li><li>Recuperi nella metà offensiva.</li><li>Passaggi orizzontali nel 2° tempo.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>54</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione III · Gruppo A</div>
   <div class="ex-title"><h2>Uscite della difesa sul centrocampo a partita</h2></div>
   <div class="ex-sub">
-    <span class="chip">4 serie da 4'</span><span class="chip">Recupero 2'</span><span class="chip">Poi cambio</span><span class="chip">Conduce l'allenatore</span>
+    <span class="chip">20 minuti, poi cambio</span><span class="chip">1ª parte 10' · 2ª parte 10'</span><span class="chip">Conduce l'allenatore</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> uscire sul centrocampista in possesso senza lasciare spazio alle spalle, curando le piramidi e le coperture d'uscita.</p>
   <svg class="diagram" viewBox="0 0 500 330" style="width:128mm;margin:0 auto">
@@ -1438,36 +1750,50 @@
   </svg>
   <div class="two">
     <div class="box">
-      <h4>Le uscite</h4>
+      <h4>1ª parte · 10'</h4>
       <p>Uscite della <b>difesa contro il centrocampo</b>. È importante curare le <b>piramidi</b> e le <b>coperture d'uscita</b>.</p>
     </div>
     <div class="box">
-      <h4>A partita · 4 serie da 4'</h4>
-      <p><b>Tutte le serie</b> si giocano a punti: <b>1 punto</b> ogni volta che i centrocampisti trovano <b>A</b> oppure i difensori trovano <b>C</b>. Tra una serie e l'altra <b>2 minuti di recupero</b>.</p>
+      <h4>2ª parte · 10' a punti</h4>
+      <p><b>1 punto</b> ogni volta che i centrocampisti trovano <b>A</b> oppure i difensori trovano <b>C</b>.</p>
     </div>
   </div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>4 difensori (D) e 4 centrocampisti (C) nel rettangolo</li>
       <li>A oltre la linea dei difensori</li>
       <li>C oltre la linea dei centrocampisti</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Quando un centrocampista riceve, il difensore di fronte <b>esce</b> su di lui e i compagni vicini si stringono alle sue spalle formando la piramide.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Uscire forte mentre la palla viaggia</li>
       <li>Chi è vicino copre subito l'uscita</li>
       <li>Non lasciare passare palla verso A</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>55</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 5 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Uscite della difesa sul centrocampo</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Uscire sul centrocampista in possesso senza lasciare spazio alle spalle, curando le piramidi e le coperture d'uscita. Nella seconda parte il lavoro diventa a punti.</p>
+  <div class="riga"><div class="l">Tempi</div><div>20' per gruppo: 1ª parte 10', 2ª parte 10' a punti (dal quaderno). Recuperi non documentati.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: rettangolo, misure non indicate. Consigliato: 40 × 30 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Il difensore esce mentre la palla viaggia verso il centrocampista.</li><li>I compagni vicini si stringono alle sue spalle e formano la piramide.</li><li>La linea si riallinea subito dopo l'uscita.</li><li>Nessun passaggio facile verso A.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Uscire quando il centrocampista ha già controllato.</li><li>Uscita senza piramide alle spalle.</li><li>Uscire in due sullo stesso giocatore.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Uscite con copertura immediata.</li><li>Punti concessi verso A.</li><li>Tempi di riallineamento della linea.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>56</span></div>
 </section>
 
 <section class="page">
   <div class="kicker">Esercitazione III · Gruppo B</div>
   <div class="ex-title"><h2>Rondo</h2></div>
-  <div class="ex-sub"><span class="chip">Poi cambio</span><span class="chip">4 serie da 3'</span><span class="chip">Recupero 2'</span></div>
+  <div class="ex-sub"><span class="chip">20 minuti, poi cambio</span><span class="chip">4 serie da 3'</span><span class="chip">Recupero 2'</span></div>
   <p class="obj" style="margin-top:1mm"><b>Obiettivo:</b> possesso palla a pochi tocchi e pressione coordinata dei due che stanno in mezzo.</p>
   <svg class="diagram" viewBox="0 0 500 300" style="width:110mm;margin:0 auto">
     <rect width="500" height="300" fill="url(#strisce)"/>
@@ -1479,11 +1805,25 @@
     <use href="#palla" x="132" y="160"/>
   </svg>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean"><li>4 giocatori sui lati del quadrato</li><li>2 giocatori dentro con la squadra in possesso</li><li>2 giocatori che pressano</li></ul></div>
-    <div class="box"><h4>Svolgimento</h4><p><b>4 serie da 3 minuti</b> con <b>2 minuti di recupero</b>.</p><p>La squadra in possesso fa girare palla. I due in mezzo provano a recuperarla.</p></div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean"><li>Smarcarsi dentro il quadrato per dare la linea interna</li><li>Passaggi forti e precisi</li><li>Chi pressa lo fa in coppia, chiudendo una linea di passaggio</li></ul></div>
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean"><li>4 giocatori sui lati del quadrato</li><li>2 giocatori dentro con la squadra in possesso</li><li>2 giocatori che pressano</li></ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div><p><b>4 serie da 3 minuti</b> con <b>2 minuti di recupero</b>.</p><p>La squadra in possesso fa girare palla. I due in mezzo provano a recuperarla.</p></div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean"><li>Smarcarsi dentro il quadrato per dare la linea interna</li><li>Passaggi forti e precisi</li><li>Chi pressa lo fa in coppia, chiudendo una linea di passaggio</li></ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>57</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 5 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Rondo</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Possesso palla a pochi tocchi e pressione coordinata dei due che stanno in mezzo.</p>
+  <div class="riga"><div class="l">Tempi</div><div>4 serie da 3' con 2' di recupero = 12' di gioco, 18' in tutto, dentro i 20' del gruppo.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: quadrato, misure non indicate. Consigliato: 15 × 15 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Smarcarsi dentro il quadrato per dare la linea interna.</li><li>Passaggi forti e precisi.</li><li>Chi pressa lo fa in coppia, chiudendo una linea di passaggio.</li><li>Ricezione orientata verso il lato libero.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Passaggi lenti che permettono di accorciare.</li><li>Pressare uno alla volta.</li><li>Giocare sempre sul lato più vicino.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Palloni recuperati dalla coppia in mezzo.</li><li>Passaggi interni riusciti.</li><li>Durata dei possessi.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>58</span></div>
 </section>
 
 <section class="page">
@@ -1495,26 +1835,34 @@
   <p class="obj"><b>Obiettivo:</b> resistenza alla velocità. Stessi blocchi dell'Allenamento 4 ma più lunghi: da 4 a 6 minuti ciascuno.</p>
   <table class="intervalli"><tr><td class="min">6'</td><td class="rit">45"-15"</td><td>15" di allungo sul lato lungo, 45" di recupero sulla diagonale</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">6'</td><td class="rit">20"-20"</td><td>20" di corsa su 100 m, 20" di recupero</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">6'</td><td class="rit">15"-15"</td><td>15" di corsa su 80 m, 15" di recupero</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">6'</td><td class="rit">10"-10"</td><td>10" di navetta su 16 m, 10" di recupero</td></tr></table>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo intero per gli allunghi</li>
       <li>Distanze segnate a 100, 80 e 16 m</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Ogni blocco dura 6 minuti: si alterna il tratto di corsa al recupero, con i tempi indicati in tabella.</p>
       <p>Tra un blocco e l'altro <b>3 minuti di recupero</b>.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Rispettare i tempi di partenza</li>
       <li>Nella navetta frenare e ripartire bassi</li>
       <li>Stessa intensità fino all'ultima ripetuta</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>6</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 5</span><span>59</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 6 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-06.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 2 · data non indicata sul foglio</div>
+  <div class="ex-title"><h2>Allenamento 6 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/precampionato/allenamento-06.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Partita a pressione: il gol normale vale 1 punto.</li><li>Attacco contro difesa: difendono le X, attaccano le O.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Il foglio non indica il campo della partita: le pagine riportano quello degli Allenamenti 1-5 (50 × 68 m).</li><li>Attacco contro difesa: misure non documentate, consigliata metà campo regolamentare (52,5 × 68 m).</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>60</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -1552,7 +1900,7 @@
     <span class="kicker">Il filo della seduta</span>
     Si lavora sulla <b>squadra corta</b>: in partita il gol conta solo se tutti sono saliti nella metà offensiva e il recupero palla in avanti vale triplo. Poi, nell'attacco contro difesa, si curano i movimenti difensivi senza fermare il gioco.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>61</span></div>
 </section>
 
 <section class="page">
@@ -1562,7 +1910,7 @@
     <span class="chip">30 minuti · 2 tempi da 15'</span><span class="chip">10 contro 10 + portieri</span><span class="chip">Campo 50 m × tutta la larghezza</span><span class="chip">Squadra corta</span>
   </div>
   <p class="obj"><b>Obiettivo:</b> pressare in avanti con la squadra corta. Per segnare tutta la squadra deve salire nella metà offensiva e il recupero palla alto è premiato.</p>
-  <svg class="diagram" viewBox="0 0 500 300" style="width:118mm;margin:0 auto">
+  <svg class="diagram" viewBox="0 0 500 300" style="width:112mm;margin:0 auto">
     <rect x="0" y="0" width="500" height="300" fill="url(#strisce)"/>
     <rect x="252" y="21" width="217" height="258" fill="#f2c230" opacity=".13"/>
     <g fill="none" stroke="#fff" stroke-width="2.5">
@@ -1602,21 +1950,35 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo lungo 50 m e largo quanto il campo regolamentare, diviso in due metà</li>
       <li>Due squadre da 10 giocatori</li>
       <li>Due porte con i portieri</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Partita con porte. Chi attacca deve accompagnare l'azione con tutta la squadra: se un giocatore è rimasto nella metà difensiva il gol non vale.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Salire tutti insieme, anche i difensori</li>
       <li>Persa palla, aggredire subito</li>
       <li>Squadra corta: poca distanza tra i reparti</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>62</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 6 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Pressione nella metà offensiva</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Pressare in avanti con la squadra corta: per segnare tutta la squadra deve essere nella metà offensiva e il gol dopo un recupero alto vale 3 punti.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Il foglio non indica il campo; le pagine riportano quello degli Allenamenti 1-5 (50 × 68 m).</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Salire tutti insieme, anche i difensori.</li><li>Persa palla, il più vicino aggredisce e i compagni chiudono le linee corte.</li><li>Squadra corta: poca distanza tra i reparti.</li><li>Linea che regola l'altezza in base alla pressione sul portatore.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Difensori che restano nella propria metà.</li><li>Pressione di un solo giocatore.</li><li>Linea alta con il portatore libero di lanciare.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Gol annullati perché qualcuno è rimasto indietro.</li><li>Gol da 3 punti.</li><li>Distanza tra i reparti.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>63</span></div>
 </section>
 
 <section class="page">
@@ -1628,21 +1990,21 @@
   <p class="obj"><b>Obiettivo:</b> forza generale ed esplosiva. Rispetto all'Allenamento 4 crescono le serie e arrivano i balzi su un piede.</p>
   <div class="stazioni"><div class="stazione"><div class="n">1</div><div><div class="t">Addominali</div></div><div class="q">3 × 10</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Balzi a piedi uniti con rimbalzo</div><div class="d">partendo dalla posizione di mezzo squat</div></div><div class="q">3 × 5</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Skip + scatto</div><div class="d">5 m di skip e 5 m di scatto</div></div><div class="q">8 rip.</div></div><div class="stazione"><div class="n">4</div><div><div class="t">Flessioni</div></div><div class="q">3 × 10</div></div><div class="stazione"><div class="n">5</div><div><div class="t">Balzi in avanti su un piede</div></div><div class="q">3 × 8 colpi</div></div></div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>5 stazioni in sequenza</li>
       <li>Tutto il gruppo lavora insieme</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Si completano le serie di una stazione e si passa alla successiva, dalla 1 alla 5.</p>
       <p>Nei balzi su un piede “3 × 8 colpi” sono <b>3 serie da 8 balzi</b>.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Nel rimbalzo restare reattivi, poco tempo a terra</li>
       <li>Schiena dritta nel mezzo squat</li>
       <li>Qualità del gesto prima della velocità</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>64</span></div>
 </section>
 
 <section class="page">
@@ -1671,12 +2033,34 @@
   <div class="kicker" style="margin-top:7mm">Esercitazione V</div>
   <div class="ex-title"><h2 style="font-size:17pt">Partita libera · 10'</h2></div>
   <div class="box" style="margin-top:3mm">Partita a fine seduta senza vincoli di tocchi o di punteggio.</div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>65</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 7 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-07.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page tec">
+  <div class="kicker">Allenamento 6 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Attacco contro difesa</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Rivedere in situazione di gioco i movimenti difensivi provati nei giorni precedenti; obiettivo secondario i movimenti offensivi, senza fermare il gioco.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 10-12' su 25' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: una porta con portiere, misure non indicate. Consigliato: metà campo regolamentare (52,5 × 68 m).</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Linea compatta che scivola con la palla.</li><li>Uscite con copertura immediata.</li><li>Protezione della profondità quando il portatore è libero.</li><li>Correzioni senza fermare il gioco.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Fermare il gioco a ogni errore.</li><li>Uscite senza copertura.</li><li>Linea che non legge il portatore libero.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Movimenti difensivi corretti senza indicazioni.</li><li>Tiri concessi dal centro.</li><li>Coperture sulle uscite.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 6</span><span>66</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 2 · 04/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 7 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/precampionato/allenamento-07.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Divieto di passare al compagno di reparto solo nel 1° tempo.</li><li>Rapidità, scaletta: 8 volte (sul foglio non c'è il numero).</li><li>Punizioni difensive: ogni allenatore le organizza come crede.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita: «lunghezza 3/4» corrisponde a circa 79 × 68 m su un campo regolamentare.</li><li>Attacco contro difesa: misure non documentate, consigliata metà campo regolamentare (52,5 × 68 m).</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>67</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -1714,7 +2098,7 @@
     <span class="kicker">Il filo della seduta</span>
     Il tema è il <b>cambio di ritmo</b>: in partita si gioca con più tocchi nella propria metà e con meno tocchi in quella avversaria, quindi la palla deve accelerare man mano che si avvicina alla porta. Poi il lavoro di rapidità allena le gambe a fare lo stesso.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>68</span></div>
 </section>
 
 <section class="page">
@@ -1763,21 +2147,35 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo lungo 3/4 del regolamentare e largo quanto il campo, diviso in due metà</li>
       <li>Due squadre da 10 con il 4-2-3-1</li>
       <li>Due porte con i portieri</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Partita con porte. Il numero di tocchi cambia a seconda della metà campo in cui si trova la palla.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Superata la metà, accelerare la giocata</li>
       <li>Smarcarsi prima per giocare di prima</li>
       <li>Salire tutti insieme per rendere valido il gol</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>69</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 7 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita «cambio di ritmo»</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Cambiare ritmo man mano che ci si avvicina alla porta: più tocchi nella propria metà, meno in quella avversaria (2 nel 1° tempo, 1 nel 2°). Gol valido solo se tutti sono nella metà offensiva.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: lunghezza 3/4. In metri: circa 79 × 68 m su un campo regolamentare.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Superata la metà, la giocata accelera.</li><li>Smarcarsi prima per poter giocare di prima.</li><li>Salire tutti insieme per rendere valido il gol.</li><li>Nel 1° tempo cercare il reparto vicino, non il compagno di reparto.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Portare palla nella metà offensiva.</li><li>Smarcarsi dopo che il compagno ha già ricevuto.</li><li>Lasciare un difensore indietro.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Azioni che arrivano al tiro dopo la metà campo.</li><li>Palloni persi per troppi tocchi.</li><li>Gol annullati per giocatori rimasti indietro.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>70</span></div>
 </section>
 
 <section class="page">
@@ -1789,21 +2187,21 @@
   <p class="obj"><b>Obiettivo:</b> rapidità e reattività. Ogni stazione finisce con uno scatto di 10 metri.</p>
   <div class="stazioni"><div class="stazione"><div class="n">1</div><div><div class="t">Slalom + scatto</div><div class="d">slalom tra 4 conetti o paletti, poi 10 m di scatto</div></div><div class="q">7 volte</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Skip + scatto</div><div class="d">5 m di skip alto, basso o calciato, poi 10 m di scatto</div></div><div class="q">9 volte</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Scaletta + scatto</div><div class="d">scaletta, poi 10 m di scatto</div></div><div class="q">8 volte</div></div><div class="stazione"><div class="n">4</div><div><div class="t">Partenze da seduti</div><div class="d">10 m di scatto partendo seduti: verso destra, sinistra, avanti, dietro</div></div><div class="q">8 volte</div></div></div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>4 stazioni in sequenza</li>
       <li>Conetti o paletti, una scaletta, 10 m segnati dopo ogni stazione</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Nella stazione 2 le 9 ripetizioni sono <b>3 per ogni tipo di skip</b>.</p>
       <p>Nella stazione 4 si parte seduti guardando ogni volta in una direzione diversa.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Massima velocità in ogni scatto</li>
       <li>Appoggi rapidi nello slalom e nella scaletta</li>
       <li>Recuperare completamente prima della ripetizione successiva</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>71</span></div>
 </section>
 
 <section class="page">
@@ -1831,12 +2229,34 @@
     <div class="box"><h4>Punizioni difensive</h4>Lavoro sulle punizioni a sfavore. Barriera, marcature e posizioni in area: ogni allenatore le organizza come preferisce.</div>
     <div class="box"><h4>Stretching finale</h4>Allungamento dei principali gruppi muscolari a fine seduta.</div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>72</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 8 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-08.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page tec">
+  <div class="kicker">Allenamento 7 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Attacco contro difesa</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Come nell'Allenamento 6: curare i movimenti difensivi in situazione di gioco e poi quelli offensivi, senza fermare il gioco.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 10' = 20' di gioco effettivo su 20' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: una porta con portiere, misure non indicate. Consigliato: metà campo regolamentare (52,5 × 68 m).</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Linea compatta che scivola con la palla.</li><li>Coperture sulle uscite.</li><li>Lettura della palla coperta o scoperta.</li><li>Correzioni rapide senza fermare il gioco.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Uscire senza copertura.</li><li>Linea troppo alta con il portatore libero.</li><li>Fermare il gioco troppe volte.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Movimenti corretti senza indicazioni.</li><li>Occasioni concesse in profondità.</li><li>Coperture riuscite.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 7</span><span>73</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 2 · 14/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 8 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/precampionato/allenamento-08.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>«30 m» sul foglio indica 30 minuti.</li><li>Emergenza: le O difendono, gli XL sono gli attaccanti avversari.</li><li>Navette: 3' di recupero tra i blocchi, come nell'Allenamento 4.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita «ultimo passaggio»: campo non indicato, consigliati 3/4 di campo (circa 79 × 68 m).</li><li>Emergenza: «3/4 di campo» corrisponde a circa 79 × 68 m.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>74</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -1872,7 +2292,7 @@
     <span class="kicker">Il filo della seduta</span>
     Si lavora su cosa succede <b>quando si perde palla</b>: in partita è premiato il recupero pulito, nell'attacco contro difesa la squadra deve difendersi in emergenza mentre chi era uscito <b>rientra di corsa</b>. Controllare le preventive e le ripartenze.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>75</span></div>
 </section>
 
 <section class="page">
@@ -1918,21 +2338,35 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo diviso a metà nel senso della lunghezza</li>
       <li>Due squadre da 10 con il 4-2-3-1</li>
       <li>Due porte con i portieri</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Partita con porte. Si attira l'avversario su un lato e poi si cambia metà con l'ultimo passaggio.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Attirare da una parte, colpire dall'altra</li>
       <li>Chi è sul lato debole si fa trovare pronto</li>
       <li>Dopo il recupero il primo passaggio deve essere pulito</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>76</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 8 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita «ultimo passaggio»</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Cercare l'ultimo passaggio che cambia lato: il gol vale doppio se arriva dopo un passaggio da una metà all'altra; nel 2° tempo vale 1 punto anche il primo passaggio pulito dopo il recupero.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: campo diviso in due parti in verticale, misure non indicate. Consigliato: 3/4 di campo (circa 79 × 68 m).</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Attirare l'avversario da una parte e colpire dall'altra.</li><li>Chi è sul lato debole si fa trovare pronto.</li><li>Dopo il recupero il primo passaggio deve essere pulito.</li><li>Chi difende scivola insieme sul cambio di lato.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Giocare sempre nella stessa metà.</li><li>Lato debole fermo.</li><li>Primo passaggio forzato dopo il recupero.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Gol doppi dopo il cambio di lato.</li><li>Passaggi puliti dopo il recupero.</li><li>Scivolamenti della squadra che difende.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>77</span></div>
 </section>
 
 <section class="page">
@@ -1955,22 +2389,36 @@
     </svg>
   <table class="intervalli" style="margin:3mm 0 3mm"><tr><td class="min">1</td><td>Escono i <b>2 laterali d'attacco</b>, il <b>trequartista</b>, la <b>punta</b> e <b>un terzino</b></td></tr><tr><td class="min">2</td><td>Escono i <b>2 laterali d'attacco</b>, il <b>trequartista</b>, la <b>punta</b> e <b>un centrocampista</b></td></tr><tr><td class="min">3</td><td>Escono <b>un terzino</b>, il <b>laterale opposto</b>, il <b>trequartista</b>, la <b>punta</b> e <b>un centrocampista</b></td></tr></table>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>3/4 di campo con i paletti sulla linea dei 3/4</li>
       <li>Due giocatori XL larghi in fondo al campo</li>
       <li>In oro nello schema: la sequenza 1</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Il laterale porta palla fino all'<b>XL</b> e tutta la squadra sale. L'XL scarica su un compagno e attacca: la squadra si difende in emergenza.</p>
       <p>I giocatori della sequenza girano intorno ai paletti e <b>rientrano velocemente</b> ad aiutare.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Chi resta dietro controlla le preventive</li>
       <li>Rallentare la ripartenza finché arrivano i compagni</li>
       <li>Rientrare alla massima velocità</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>78</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 8 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Attacco contro difesa in emergenza</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Controllare preventive e ripartenze: la squadra si difende in inferiorità mentre i giocatori della sequenza girano intorno ai paletti e rientrano di corsa.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15-20' = 30-40' (dal quaderno).</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 3/4 di campo con i paletti sulla linea dei 3/4. In metri: circa 79 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Chi resta dietro si posiziona in relazione alla palla e agli spazi da proteggere.</li><li>Rallentare la ripartenza finché arrivano i compagni.</li><li>Rientro alla massima velocità.</li><li>Proteggere prima il centro e la profondità.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Uscire in pressione in inferiorità numerica.</li><li>Rientrare camminando.</li><li>Concedere lo spazio alle spalle.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Ripartenze rallentate fino al rientro.</li><li>Gol subiti in inferiorità.</li><li>Tempi di rientro dei giocatori della sequenza.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>79</span></div>
 </section>
 
 <section class="page">
@@ -1982,26 +2430,34 @@
   <p class="obj"><b>Obiettivo:</b> resistenza alla velocità. Stessi blocchi degli Allenamenti 4 e 5, ancora più lunghi.</p>
   <table class="intervalli"><tr><td class="min">7'</td><td class="rit">45"-15"</td><td>15" di allungo sul lato lungo, 45" di recupero sulla diagonale</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">7'</td><td class="rit">20"-20"</td><td>20" di corsa su 100 m, 20" di recupero</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">7'</td><td class="rit">15"-15"</td><td>15" di corsa su 80 m, 15" di recupero</td></tr><tr class="rec"><td class="min">3'</td><td class="rit">Recupero</td><td>3 minuti di recupero prima del blocco successivo</td></tr><tr><td class="min">6'</td><td class="rit">10"-10"</td><td>10" di navetta su 16 m, 10" di recupero</td></tr></table>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo intero per gli allunghi</li>
       <li>Distanze segnate a 100, 80 e 16 m</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>In ogni blocco si alterna il tratto di corsa al recupero, con i tempi indicati in tabella.</p>
       <p>Tra un blocco e l'altro <b>3 minuti di recupero</b>.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Rispettare i tempi di partenza</li>
       <li>Nella navetta frenare e ripartire bassi</li>
       <li>Stessa intensità fino all'ultima ripetuta</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 8</span><span>80</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 9 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-09.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 3 · 16/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 9 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/precampionato/allenamento-09.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Partita a pressione: il gol normale vale 1 punto.</li><li>Angoli difensivi: ogni allenatore li organizza come crede.</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita a pressione: campo non indicato, consigliati 50 × 68 m come le partite degli Allenamenti 1-6.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>81</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -2039,7 +2495,7 @@
     <span class="kicker">Il filo della seduta</span>
     Si torna sulla <b>pressione con la squadra corta</b>: il recupero alto vale doppio e nel 2° tempo è premiato anche chi segna prima che l'avversario sia rientrato. Prima, la rapidità prepara le gambe agli scatti brevi.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>82</span></div>
 </section>
 
 <section class="page">
@@ -2051,20 +2507,20 @@
   <p class="obj"><b>Obiettivo:</b> rapidità e reattività. Come nell'Allenamento 7, ogni stazione finisce con uno scatto di 10 metri.</p>
   <div class="stazioni"><div class="stazione"><div class="n">1</div><div><div class="t">Slalom + scatto</div><div class="d">slalom su 5 paletti, poi 10 m di scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">2</div><div><div class="t">Scaletta + scatto</div><div class="d">scaletta, poi 10 m di scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">3</div><div><div class="t">Skip + scatto</div><div class="d">5 m di skip, poi 10 m di scatto</div></div><div class="q">5 volte</div></div><div class="stazione"><div class="n">4</div><div><div class="t">Salto + scatto</div><div class="d">salto sul posto, poi 10 m di scatto</div></div><div class="q">5 volte</div></div></div>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>4 stazioni in sequenza</li>
       <li>5 paletti, una scaletta, 10 m segnati dopo ogni stazione</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Si fanno le 5 ripetizioni di una stazione e si passa alla successiva, dalla 1 alla 4.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Massima velocità in ogni scatto</li>
       <li>Dopo il salto ripartire subito</li>
       <li>Recuperare completamente prima della ripetizione successiva</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>83</span></div>
 </section>
 
 <section class="page">
@@ -2115,21 +2571,35 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo diviso in due metà</li>
       <li>Due squadre da 10 con il 4-2-3-1</li>
       <li>Due porte con i portieri</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Partita con porte a 2 tocchi. Si segna solo con tutta la squadra nella metà offensiva.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Salire tutti insieme, anche i difensori</li>
       <li>Persa palla, rientrare subito nella propria metà</li>
       <li>Pressare forte per recuperare in avanti</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>84</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 9 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita a pressione</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Pressare con la squadra corta e recuperare palla nella metà avversaria (gol dopo recupero alto 2 punti); nel 2° tempo il gol vale doppio se gli avversari non sono tutti rientrati nella propria metà difensiva.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: campo diviso in due metà, misure non indicate. Consigliato: 50 × 68 m come le partite degli Allenamenti 1-6.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Salire tutti insieme, anche i difensori.</li><li>Persa palla, rientrare subito nella propria metà.</li><li>Pressione che parte insieme dopo la perdita.</li><li>Linea che regola l'altezza in base alla pressione sul portatore.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Restare nella metà offensiva dopo la perdita.</li><li>Pressare da soli.</li><li>Linea alta con il portatore libero.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Recuperi nella metà offensiva.</li><li>Gol doppi del 2° tempo.</li><li>Tempi di rientro dopo la perdita.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>85</span></div>
 </section>
 
 <section class="page">
@@ -2140,12 +2610,20 @@
   <div class="kicker" style="margin-top:9mm">Esercitazione V</div>
   <div class="ex-title"><h2>Partita libera · 10-15'</h2></div>
   <div class="box" style="margin-top:4mm">Partita a fine seduta senza vincoli di tocchi o di punteggio.</div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>5</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 9</span><span>86</span></div>
 </section>
 
-<!-- ===== ALLENAMENTO 10 ===== -->
-<!-- 1. COPERTINA -->
-<section class="page" style="padding:0"><img src="copertine-pacchetto/copertina-10.jpg" style="width:100%;height:100%;display:block"></section>
+<section class="page">
+  <div class="kicker">Precampionato · Settimana 3 · 20/09/2021</div>
+  <div class="ex-title"><h2>Allenamento 10 · il foglio originale</h2></div>
+  <img class="foglio" src="../../materiale/precampionato/allenamento-10.jpg">
+  <div class="fonti">
+    <div class="box"><h4><span class="liv a">Precisato dall'autore</span></h4><ul class="clean"><li>Partita «cross»: nella corsia si entra solo per crossare, in entrambi i tempi.</li><li>Suicidi: le 4 partite sono la partita «cross» e le 3 partite della parte atletica (la terza in tre tempi da 5'); con 4 sconfitte, 20 suicidi.</li><li>Suicidi: navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno, 11 + 11 m (22 m).</li></ul></div>
+    <div class="box"><h4><span class="liv c">Consigliato</span></h4><ul class="clean"><li>Partita «cross»: campo non indicato, consigliati 3/4 di campo (circa 79 × 68 m) con corsie laterali larghe circa 10 m.</li><li>Parte atletica a partite: «3/4 di campo» corrisponde a circa 79 × 68 m.</li></ul></div>
+  </div>
+  <div class="nota-f"><b>Lavoro fisico</b> (circuiti, corsa, intermittenti, navette, rapidità, suicidi): è la documentazione di quanto svolto con questa squadra, non una prescrizione. Chi lo riusa lo adatta al proprio gruppo.</div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>87</span></div>
+</section>
 
 <section class="page">
   <div class="head">
@@ -2180,7 +2658,7 @@
     <span class="kicker">Il filo della seduta</span>
     Una seduta tutta giocata: prima si allena il <b>cross</b>, poi la parte atletica si fa con <b>tre partite a tema</b>. Ogni partita conta, perché a fine allenamento chi ha perso paga con i suicidi.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>2</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>88</span></div>
 </section>
 
 <section class="page">
@@ -2231,21 +2709,35 @@
   </div>
 
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>Campo con due corsie laterali segnate</li>
       <li>Due squadre da 10 con il 4-2-3-1</li>
       <li>Due porte con i portieri</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Partita con porte. Si costruisce al centro e si cerca il compagno che entra in corsia e crossa.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Entrare in corsia nel momento giusto, non prima</li>
       <li>In area attaccare il primo e il secondo palo</li>
       <li>Chi difende si sistema in diagonale invertita</li>
-    </ul></div>
+    </ul></div></div>
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>3</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>89</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 10 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Partita «cross»</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> Cercare il compagno sulla fascia che entra in corsia per crossare: nella corsia si entra solo per andare al cross. Nel 2° tempo vale 1 punto anche chi, su ripartenza, stoppa e si gira libero.</p>
+  <div class="riga"><div class="l">Tempi</div><div>2 tempi da 15' = 30' di gioco effettivo su 30' di programma.</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: campo con corsie laterali, misure non indicate. Consigliato: 3/4 di campo (circa 79 × 68 m) con corsie larghe circa 10 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Entrare in corsia nel momento giusto, non prima.</li><li>In area attaccare primo e secondo palo.</li><li>Chi difende si sistema in diagonale invertita.</li><li>Il terzino lato palla dà l'altezza della linea.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Stare fermi in corsia.</li><li>Arrivare in area tutti sullo stesso palo.</li><li>Linea piatta sul cross.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Cross per tempo.</li><li>Gol di testa o su cross.</li><li>Respinte della linea in diagonale invertita.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>90</span></div>
 </section>
 
 <section class="page">
@@ -2257,25 +2749,39 @@
   <p class="obj"><b>Obiettivo:</b> fare la parte atletica giocando. L'intensità arriva dai pochi tocchi e dai punteggi che premiano la pressione e la verticalità.</p>
   <table class="intervalli"><tr><td class="min">15'</td><td class="rit">Partita 1</td><td><b>3 tocchi</b> · gol valido solo se tutti sono nella metà offensiva · gol con palla recuperata nella metà offensiva: <b>doppio</b></td></tr><tr><td class="min">15'</td><td class="rit">Partita 2</td><td><b>2 tocchi</b> · gol valido solo se tutti sono nella metà offensiva · <b>doppio</b> se un giocatore della squadra che difende è rimasto nella sua metà offensiva · gol con palla recuperata nella metà offensiva: <b>doppio</b></td></tr><tr><td class="min">5'</td><td class="rit">Partita 3 · a</td><td><b>3 tocchi</b> · gol valido solo se tutti sono nella metà offensiva</td></tr><tr><td class="min">5'</td><td class="rit">Partita 3 · b</td><td><b>2 tocchi</b> · gol valido solo se tutti sono nella metà offensiva · <b>doppio</b> se fatto in 4 passaggi dopo aver recuperato palla nella metà difensiva</td></tr><tr><td class="min">5'</td><td class="rit">Partita 3 · c</td><td><b>1 tocco</b> · gol <b>doppio</b> se si recupera palla e si segna in 4 passaggi</td></tr></table>
   <div class="three">
-    <div class="box"><h4>Organizzazione</h4><ul class="clean">
+    <div class="box"><h4>Organizzazione</h4><div><ul class="clean">
       <li>3/4 di campo diviso in due metà</li>
       <li>Due squadre con il 4-2-3-1</li>
-    </ul></div>
-    <div class="box"><h4>Svolgimento</h4>
+    </ul></div></div>
+    <div class="box"><h4>Svolgimento</h4><div>
       <p>Tre partite di fila. L'ultima è divisa in tre parti da 5', con i tocchi che scendono da 3 a 1.</p>
-    </div>
-    <div class="box"><h4>Punti chiave</h4><ul class="clean">
+    </div></div>
+    <div class="box"><h4>Punti chiave</h4><div><ul class="clean">
       <li>Salire tutti insieme</li>
       <li>Dopo il recupero, verticalizzare in pochi passaggi</li>
       <li>Ritmo alto fino all'ultimo minuto</li>
-    </ul></div>
+    </ul></div></div>
   </div>
 
   <div class="chiave">
     <span class="kicker">Esercitazione IV · suicidi per chi ha perso le partite</span>
-    Per ogni partita: sconfitta <b>5 suicidi</b> · pareggio <b>3</b> · vittoria <b>1</b>. Se una squadra perde tutte e 4 le partite fa <b>20 suicidi</b>.
+    Per ogni partita: sconfitta <b>5 suicidi</b> · pareggio <b>3</b> · vittoria <b>1</b>. Le 4 partite sono la partita «cross» e le 3 partite della parte atletica (la terza in tre tempi da 5'). Se una squadra le perde tutte e 4 fa <b>20 suicidi</b>. Il suicidio è una navetta dalla linea dell'area piccola alla linea dell'area di rigore e ritorno: 11 m + 11 m, 22 m in tutto.
   </div>
-  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>4</span></div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>91</span></div>
+</section>
+
+<section class="page tec">
+  <div class="kicker">Allenamento 10 · Indicazioni tecniche · <span style="color:var(--tenue)">aggiunta editoriale, non presente nel quaderno</span></div>
+  <div class="ex-title"><h2>Parte atletica a partite</h2></div>
+  <p class="ob"><span class="liv c">Consigliato</span><b>Obiettivo tecnico-tattico.</b> La parte atletica si fa giocando: tre partite con tocchi e punteggi diversi che premiano la pressione e la verticalità. Ogni partita conta per i suicidi finali.</p>
+  <div class="riga"><div class="l">Tempi</div><div>15' + 15' + 3 tempi da 5' = 45' (dal quaderno).</div></div>
+  <div class="riga"><div class="l">Campo</div><div>Dal quaderno: 3/4 di campo. In metri: circa 79 × 68 m.</div></div>
+  <div class="liste">
+    <div class="box"><h4>Punti di attenzione del mister</h4><ul class="clean"><li>Salire tutti insieme per rendere valido il gol.</li><li>Dopo il recupero verticalizzare in pochi passaggi.</li><li>Ritmo alto fino all'ultimo minuto.</li><li>Nella terza partita adattarsi ai tocchi che scendono da 3 a 1.</li></ul></div>
+    <div class="box"><h4>Errori da evitare</h4><ul class="clean"><li>Calare di intensità nella terza partita.</li><li>Girare palla dopo il recupero.</li><li>Lasciare giocatori nella metà difensiva.</li></ul></div>
+    <div class="box"><h4>Comportamenti osservabili</h4><ul class="clean"><li>Gol doppi dopo recupero.</li><li>Intensità nell'ultimo tempo da 5'.</li><li>Gol entro 4 passaggi dal recupero.</li></ul></div>
+  </div>
+  <div class="footer"><b>GLI IMBATTIBILI</b><span>Precampionato · Allenamento 10</span><span>92</span></div>
 </section>
 
 </body>

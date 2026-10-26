@@ -27,3 +27,6 @@ Nessuna modifica fatta finché l'autore non risponde.
 Date: A1 30/08, A2 31/08, A3 01/09, A4 02/09, A7 04/09, A8 14/09, A9 16/09, A10 20/09/2021 (A5, A6 senza data).
 Campi: partite su "50 m × larghezza del campo" (A1-A6), "3/4 di campo" (A7, A8, A10), A9 non indicato;
 gioco di posizione 30 × 30 (A2); lavoro della linea "metà campo con area".
+
+## 26/10/2026 – Risposte dell'autore e PDF rifatto
+Tutti i 7 dubbi risolti e applicati (vedi CLAUDE.md). Nuovo PDF: 92 pagine, numerazione continua, indice verificato, nessuno sforamento.
