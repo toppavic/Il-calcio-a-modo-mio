@@ -42,8 +42,8 @@
 | Quando | Cosa |
 |---|---|
 | 19-22/10 | sinossi, nota biografica e lettera di presentazione approvate dall'autore (fatto il 20/10, dati completati) |
-| fino al 25/10 | moglie e suocera leggono il libro: eventuali correzioni al testo |
-| **26/10** | **controllo del modulo E/O (screenshot dell'autore) e invio** · ultimo giorno sicuro 29/10 · promemoria send_later impostato |
+| fino al 28/10 | moglie e suocera leggono il libro: eventuali correzioni al testo |
+| **29/10** | **controllo del modulo E/O (screenshot dell'autore) e invio** (scelto dall'autore il 26/10: è a casa, giorno libero) · scadenza 31/10 · promemoria send_later impostato per il 29/10 |
 | entro 31/10 | **E/O inviato** (ultimo giorno) |
 | novembre | Giunti e Adelphi (un invio per volta) |
 | gennaio 2027 | Fazi (appena riapre il modulo) |
