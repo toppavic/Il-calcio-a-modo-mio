@@ -172,3 +172,11 @@ Mandalo al tuo vice.
 **TikTok**
 
 Se corri solo tu, hai già perso. Si corre insieme o si scappa. Percorso in 7 tappe su Etsy. #allenatore #calcio #pressing #mister
+
+## Gruppo Facebook – lunedì 26/10, ore 21:00 (ALLENATORI CALCIO, un solo gruppo)
+
+Immagine: `marketing/social/immagini/gruppo-fb-spazio-libero.png` (un fotogramma del Reel pressing, 4:5). Regola dei gruppi: una sola immagine + testo personale + domanda; rispondere con umiltà, una volta per thread. Nessun link, nessuna esercitazione.
+
+Per me il pressing è una questione di corsa. Ma si corre insieme.
+Quando uno solo va addosso al portatore e gli altri restano dove sono, tra lui e il resto della squadra si apre uno spazio libero. E gli avversari lo trovano subito.
+A voi capita? Nella vostra squadra chi decide quando si sale: il mister, il portiere o i giocatori?
