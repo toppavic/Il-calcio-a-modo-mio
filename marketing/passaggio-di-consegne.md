@@ -144,3 +144,5 @@ Contesto della vecchia sessione a circa 53% (530k su 1M) ma con errori ripetuti:
 - **IG (7 giorni)**: **4014 follower (netti -2)**, 3.063 visualizzazioni, 77,1% follower / 22,9% non follower, 40 interazioni. Per tipo: Reel 1,4K · Post 946 · Storie 671. Contenuti: Preventiva 2 Reel 780 · carosello teaser 601 · Reel pressing 598 · storia Percorso 1 219 · storia risultato 51. **Nei giorni senza post (24-25/10) le visualizzazioni sono quasi zero**. Pubblico: **93,7% uomini**, 35-44 32,2% · 45-54 32,4% · 55-64 15,7%, **Italia 87,2%**, italiano 88,2%.
 - **Etsy (7 giorni al 25/10, misura dal 23/10)**: 8 visualizzazioni, **5 visite, 0 ordini**. Negozio: 1 vendita totale, 5 stelle.
 - Lettura: TikTok cresce (+4/giorno), IG fermo, Etsy ancora senza segnali; i Reel arrivano di più ai non follower. Serve costanza (post ogni 2-3 giorni anche solo storie) e il traffico verso Etsy va misurato dal 30/10 (prima settimana intera con il link primo in bio).
+
+- 26/10: l'allenatore ha risistemato la collana Etsy "Gli Imbattibili" (contenuto e ordine da verificare con uno screenshot; il Percorso 1 si chiama "Dai quaderni del mister", non Gli Imbattibili).
