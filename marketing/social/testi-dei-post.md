@@ -180,3 +180,20 @@ Immagine: `marketing/social/immagini/gruppo-fb-spazio-libero.png` (un fotogramma
 Per me il pressing è una questione di corsa. Ma si corre insieme.
 Quando uno solo va addosso al portatore e gli altri restano dove sono, tra lui e il resto della squadra si apre uno spazio libero. E gli avversari lo trovano subito.
 A voi capita? Nella vostra squadra chi decide quando si sale: il mister, il portiere o i giocatori?
+
+## Post 9 – "Pressare è individuale" (martedì 27/10, ore 13:00, IG + TikTok)
+
+Immagini: `marketing/social/immagini/ig-fb-post9-1…4.png` (4:5) e `tiktok-post9-1…4.png` (9:16), tema avorio. Testo preso quasi alla lettera dal pensiero dell'allenatore (27/10): la pressione organizzata si può insegnare? come si insegna a muoversi insieme? il portiere avversario è il bersaglio attorno a cui si costruisce, organizza e codifica la pressione; pressare è individuale, farlo insieme si allena. Aggiunte nostre: solo titoli e impaginazione. Nessuna esercitazione, niente "scappa".
+
+**Instagram**
+
+Pressare è un'azione individuale.
+Farlo insieme è un comportamento che si allena.
+Non basta insegnare a un giocatore quando uscire sull'avversario. Bisogna insegnare agli altri cosa fare mentre lui ci va.
+Nel Percorso 1 il portiere avversario diventa il bersaglio attorno al quale si costruisce, si organizza e si codifica la pressione. Il link è nella bio.
+
+#allenatoredicalcio #pressing #calcio #mister #allenamentocalcio
+
+**TikTok** (nell'ultima immagine c'è scritto «Cercaci: ilcalcioamodomio»)
+
+Pressare è individuale. Farlo insieme è un comportamento che si allena. Percorso in 7 tappe su Etsy. #allenatore #calcio #pressing #mister

@@ -268,6 +268,24 @@ POST = [
         fine_sub="Prima tappa di un percorso in <b>7 tappe</b> per imparare a pressare insieme. Salva il post: la prossima tappa cambia le regole.",
         azioni=["Salva il post", "Seguici per la tappa 2"],
     ),
+    dict(
+        n=9, senza_foto=True, tema="chiaro",
+        gancio="Pressare è<span>individuale</span>", h1style="font-size:128px",
+        sub="Farlo insieme è un comportamento <b>che si allena</b>.",
+        kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER", fine_h1="Dai quaderni<span>del mister</span>",
+        kicker2="La pressione organizzata",
+        titolo2="Si può insegnare?",
+        lista2=["Non basta insegnare a un giocatore <b>quando uscire</b> sull'avversario.",
+                "Bisogna insegnare agli altri <b>cosa fare mentre lui ci va</b>.",
+                "Come si insegna a una squadra a <b>muoversi insieme</b>?"],
+        kicker3="La ricerca del portiere",
+        titolo3="Un bersaglio per muoversi insieme",
+        punti=["Il <b>portiere avversario</b> diventa il bersaglio",
+               "Attorno a lui si <b>costruisce</b>, si <b>organizza</b> e si <b>codifica</b> la pressione"],
+        fine_sub="Percorso 1, <b>La ricerca del portiere</b>: 7 tappe per allenare la pressione di squadra. Link in bio.",
+        fine_sub_tt="Percorso 1, <b>La ricerca del portiere</b>: 7 tappe per allenare la pressione di squadra. Cercaci: <b>ilcalcioamodomio</b>.",
+        azioni=["Salva il post", "Seguici"],
+    ),
 ]
 
 FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>"
