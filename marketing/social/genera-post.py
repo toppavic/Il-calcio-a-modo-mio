@@ -282,9 +282,9 @@ POST = [
         titolo3="Un bersaglio per muoversi insieme",
         punti=["Il <b>portiere avversario</b> diventa il bersaglio",
                "Attorno a lui si <b>costruisce</b>, si <b>organizza</b> e si <b>codifica</b> la pressione"],
-        fine_sub="Percorso 1, <b>La ricerca del portiere</b>: 7 tappe per allenare la pressione di squadra. Link in bio.",
-        fine_sub_tt="Percorso 1, <b>La ricerca del portiere</b>: 7 tappe per allenare la pressione di squadra. Cercaci: <b>ilcalcioamodomio</b>.",
-        azioni=["Salva il post", "Seguici"],
+        fine_sub="Percorso 1, <b>La ricerca del portiere</b>: 7 tappe per allenare la pressione di squadra. Disponibile su Etsy. <b>Link in bio.</b>",
+        fine_sub_tt="Percorso 1, <b>La ricerca del portiere</b>: 7 tappe per allenare la pressione di squadra. Disponibile su Etsy: <b>ilcalcioamodomio</b>.",
+        azioni=["Salva il post"],
     ),
 ]
 

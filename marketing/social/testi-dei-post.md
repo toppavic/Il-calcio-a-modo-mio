@@ -190,10 +190,10 @@ Immagini: `marketing/social/immagini/ig-fb-post9-1…4.png` (4:5) e `tiktok-post
 Pressare è un'azione individuale.
 Farlo insieme è un comportamento che si allena.
 Non basta insegnare a un giocatore quando uscire sull'avversario. Bisogna insegnare agli altri cosa fare mentre lui ci va.
-Nel Percorso 1 il portiere avversario diventa il bersaglio attorno al quale si costruisce, si organizza e si codifica la pressione. Il link è nella bio.
+Nel Percorso 1 il portiere avversario diventa il bersaglio attorno al quale si costruisce, si organizza e si codifica la pressione. Disponibile su Etsy. Il link è nella bio.
 
 #allenatoredicalcio #pressing #calcio #mister #allenamentocalcio
 
-**TikTok** (nell'ultima immagine c'è scritto «Cercaci: ilcalcioamodomio»)
+**TikTok** (nell'ultima immagine c'è scritto «Disponibile su Etsy: ilcalcioamodomio»)
 
-Pressare è individuale. Farlo insieme è un comportamento che si allena. Percorso in 7 tappe su Etsy. #allenatore #calcio #pressing #mister
+Pressare è individuale. Farlo insieme è un comportamento che si allena. Percorso in 7 tappe, disponibile su Etsy: ilcalcioamodomio. #allenatore #calcio #pressing #mister
