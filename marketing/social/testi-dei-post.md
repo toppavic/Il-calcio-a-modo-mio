@@ -200,14 +200,14 @@ Pressare è individuale. Farlo insieme è un comportamento che si allena. Percor
 
 ## Post 10 – "Uno va in pressione. E gli altri?" (28/10, partita a tema "Pressione organizzata", 7 slide)
 
-Testi dell'allenatore (messi nel prompt del 28/10, "le frasi sono mie"): slide 1 gancio, 2 regole (7c7-11c11, 60 × 50 m, 3 tocchi, vietati i lanci alti, lunghi rasoterra consentiti), 3 il primo giocatore, 4 il resto della squadra, 5 perché questi vincoli, 6 cosa osserva il mister, 7 chiusura. Nostro: solo gli schemi (posizioni e frecce illustrative) e l'impaginazione. Immagini: `ig-fb-post10-1…7.png` e `tiktok-post10-1…7.png`, tema verde. Esercitazione diversa dal Percorso 1: **destinata a un pacchetto Etsy ancora da definire** (nell'ultima slide c'è «In arrivo su Etsy», senza link).
+Testi dell'allenatore (messi nel prompt del 28/10, "le frasi sono mie"): slide 1 gancio, 2 regole (7c7-11c11, 60 × 50 m, 3 tocchi, vietati i lanci alti, lunghi rasoterra consentiti), 3 il primo giocatore, 4 il resto della squadra, 5 perché questi vincoli, 6 cosa osserva il mister, 7 chiusura. Nostro: solo gli schemi (posizioni e frecce illustrative) e l'impaginazione. Immagini: `ig-fb-post10-1…7.png` e `tiktok-post10-1…7.png`, tema verde. Esercitazione diversa dal Percorso 1: tutto si conclude con il gol (portieri e porte negli schemi, bullet nella slide 2). Nell'ultima slide rimanda al **Percorso 1 su Etsy** («Vuoi una squadra che impari a pressare nel modo giusto e a colpire dopo aver recuperato la palla?»), come detto dall'allenatore il 28/10.
 
 **Instagram**
 
 Uno va in pressione. E gli altri?
 La differenza tra correre verso il pallone e pressare come squadra.
 Pressare è un'azione individuale. Farlo insieme è un comportamento che si allena. 👇
-Salva il post.
+Vuoi una squadra che impari a pressare nel modo giusto e a colpire dopo aver recuperato la palla? Il Percorso 1, La ricerca del portiere, è su Etsy: link in bio.
 
 #allenatoredicalcio #pressing #calcio #mister #allenamentocalcio
 

@@ -151,6 +151,8 @@ def _campo_pressione(extra, titolo):
     return f'''<svg class="schema" viewBox="0 0 500 300">
     <rect width="500" height="300" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="60" y="25" width="380" height="250"/><line x1="250" y1="25" x2="250" y2="275" stroke-dasharray="3 6"/></g>
+    <rect x="50" y="118" width="10" height="64" fill="#fff"/><rect x="440" y="118" width="10" height="64" fill="#fff"/>
+    {g(40, 150, "pP")}{g(460, 150, "pP")}
     {gioc}
     <use href="#palla" x="153" y="85"/>
     {extra}
@@ -329,8 +331,9 @@ POST = [
                  punti=["Da <b>7 contro 7</b> a <b>11 contro 11</b>",
                         "Campo di riferimento <b>60 × 50 m</b>, adattabile ai giocatori",
                         "Massimo <b>3 tocchi</b>",
-                        "<b>Vietati i lanci alti</b>, consentiti i lunghi rasoterra"], compact=True,
-                 h2style="margin-bottom:20px", riqstyle="width:100%;max-width:760px;margin:0 auto"),
+                        "<b>Vietati i lanci alti</b>, consentiti i lunghi rasoterra",
+                        "Con i <b>portieri</b>: tutto si conclude con il <b>gol</b>"], compact=True,
+                 h2style="margin-bottom:20px", riqstyle="width:100%;max-width:680px;margin:0 auto"),
             dict(kicker="Il primo giocatore", titolo="Chi esce in pressione?", schema=schema_pressione_primo(),
                  testo="Il giocatore più vicino alla palla valuta <b>quando uscire</b>, con quale <b>traiettoria</b> e quale <b>linea di passaggio</b> chiudere. L'obiettivo non è raggiungere l'avversario ma <b>limitarne le possibilità di giocata</b>.",
                  h2style="margin-bottom:20px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
@@ -349,7 +352,8 @@ POST = [
                         "Come reagisce la squadra quando l'avversario <b>supera la prima pressione</b>"]),
         ],
         fine_h1="Farlo insieme<span>si allena</span>",
-        fine_sub="Pressare è un'azione individuale. Farlo insieme è un comportamento che si allena.<br><br>La pressione si organizza. Si allena. Si riconosce in campo.<br><br><b>In arrivo su Etsy.</b>",
+        fine_sub="Pressare è un'azione individuale. Farlo insieme è un comportamento che si allena.<br><br>La pressione si organizza. Si allena. Si riconosce in campo.<br><br>Vuoi una squadra che impari a <b>pressare nel modo giusto</b> e a <b>colpire dopo aver recuperato la palla</b>? Percorso 1, <b>La ricerca del portiere</b>. Link in bio.",
+        fine_sub_tt="Pressare è un'azione individuale. Farlo insieme è un comportamento che si allena.<br><br>La pressione si organizza. Si allena. Si riconosce in campo.<br><br>Vuoi una squadra che impari a <b>pressare nel modo giusto</b> e a <b>colpire dopo aver recuperato la palla</b>? Percorso 1, <b>La ricerca del portiere</b>, su Etsy: <b>ilcalcioamodomio</b>.",
         azioni=["Salva il post"],
     ),
 ]
