@@ -143,6 +143,39 @@ def schema_tappa1():
   </svg>'''
 
 
+
+def _campo_pressione(extra, titolo):
+    rossi = [(115, 150), (140, 85), (140, 215), (215, 118), (225, 210), (290, 65), (290, 235)]
+    blu = [(190, 95), (240, 135), (195, 172), (265, 195), (300, 90), (320, 170), (340, 235)]
+    gioc = "".join(g(x, y, "pA") for x, y in rossi) + "".join(g(x, y, "pB") for x, y in blu)
+    return f'''<svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="60" y="25" width="380" height="250"/><line x1="250" y1="25" x2="250" y2="275" stroke-dasharray="3 6"/></g>
+    {gioc}
+    <use href="#palla" x="153" y="85"/>
+    {extra}
+    <text x="250" y="16" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">{titolo}</text>
+  </svg>'''
+
+
+def schema_pressione_campo():
+    return _campo_pressione("", "CAMPO 60 × 50 M · DA 7 CONTRO 7 A 11 CONTRO 11")
+
+
+def schema_pressione_primo():
+    extra = (freccia("M238,62 C222,64 207,78 196,92", True)
+             + freccia("M165,88 L130,150", tratteggio=True)
+             + freccia("M165,87 L208,114", tratteggio=True))
+    return _campo_pressione(extra, "IL PRIMO GIOCATORE CHIUDE LA LINEA DI PASSAGGIO")
+
+
+def schema_pressione_squadra():
+    extra = (freccia("M190,95 L162,88", True) + freccia("M240,135 L214,126", True)
+             + freccia("M195,172 L176,150", True) + freccia("M265,195 L244,180", True)
+             + freccia("M300,90 L278,80", True) + freccia("M320,170 L288,158", True)
+             + freccia("M340,235 L306,218", True))
+    return _campo_pressione(extra, "LA SQUADRA SI MUOVE INSIEME")
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -286,6 +319,39 @@ POST = [
         fine_sub_tt="Percorso 1, <b>La ricerca del portiere</b>: 7 tappe per allenare la pressione di squadra. Disponibile su Etsy: <b>ilcalcioamodomio</b>.",
         azioni=["Salva il post"],
     ),
+    dict(
+        n=10, senza_foto=True, tema="verde",
+        gancio="Uno va in pressione<span>E gli altri?</span>", h1style="font-size:112px",
+        sub="La differenza tra correre verso il pallone e <b>pressare come squadra</b>.",
+        kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER",
+        custom=[
+            dict(kicker="Partita a tema", titolo="Pressione organizzata", schema=schema_pressione_campo(),
+                 punti=["Da <b>7 contro 7</b> a <b>11 contro 11</b>",
+                        "Campo di riferimento <b>60 × 50 m</b>, adattabile ai giocatori",
+                        "Massimo <b>3 tocchi</b>",
+                        "<b>Vietati i lanci alti</b>, consentiti i lunghi rasoterra"], compact=True,
+                 h2style="margin-bottom:20px", riqstyle="width:100%;max-width:760px;margin:0 auto"),
+            dict(kicker="Il primo giocatore", titolo="Chi esce in pressione?", schema=schema_pressione_primo(),
+                 testo="Il giocatore più vicino alla palla valuta <b>quando uscire</b>, con quale <b>traiettoria</b> e quale <b>linea di passaggio</b> chiudere. L'obiettivo non è raggiungere l'avversario ma <b>limitarne le possibilità di giocata</b>.",
+                 h2style="margin-bottom:20px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
+            dict(kicker="Il resto della squadra", titolo="La pressione non finisce sul portatore", schema=schema_pressione_squadra(),
+                 punti=["<b>Accorciare</b> le distanze",
+                        "<b>Chiudere</b> le linee di passaggio",
+                        "<b>Scivolare</b> in relazione alla palla",
+                        "<b>Proteggere</b> gli spazi alle spalle"], compact=True,
+                 h2style="font-size:62px;margin-bottom:20px", riqstyle="width:100%;max-width:760px;margin:0 auto"),
+            dict(kicker="Perché questi vincoli?", titolo="3 tocchi. Nessun lancio alto.",
+                 testo="Il limite dei tocchi <b>riduce il tempo</b> disponibile per decidere.<br><br>Il divieto di lancio alto favorisce situazioni in cui la squadra può <b>organizzare la pressione sulle linee di passaggio</b>.<br><br><span style='color:#5d6b65'>Sono vincoli che favoriscono determinate situazioni. Non garantiscono da soli una pressione efficace.</span>"),
+            dict(kicker="Cosa deve osservare il mister?", titolo="Non guardare soltanto chi pressa",
+                 punti=["Chi <b>accorcia</b> quando parte la pressione",
+                        "Chi copre la <b>linea di passaggio interna</b>",
+                        "Chi protegge la <b>profondità</b>",
+                        "Come reagisce la squadra quando l'avversario <b>supera la prima pressione</b>"]),
+        ],
+        fine_h1="Farlo insieme<span>si allena</span>",
+        fine_sub="Pressare è un'azione individuale. Farlo insieme è un comportamento che si allena.<br><br>La pressione si organizza. Si allena. Si riconosce in campo.<br><br><b>In arrivo su Etsy.</b>",
+        azioni=["Salva il post"],
+    ),
 ]
 
 FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>"
@@ -295,8 +361,10 @@ def slides(p, tot=None, h=1350):
     tot = tot or (5 if p.get("obiettivo") else 4)
     num = lambda i: f'<div class="num">{i}/{tot}</div>'
     marchio = '<div class="marchio"><b>' + (p.get("marchio") or "GLI IMBATTIBILI") + '</b><span>Il calcio a modo mio</span></div>'
-    punti = "".join(f"<li>{x}</li>" for x in p["punti"])
-    if p.get("lista2"):
+    punti = "".join(f"<li>{x}</li>" for x in p.get("punti", []))
+    if p.get("custom"):
+        slide2 = ""
+    elif p.get("lista2"):
         lista2 = "".join(f"<li>{x}</li>" for x in p["lista2"])
         slide2 = f'''<section class="slide int">
   {num(2)}
@@ -314,6 +382,32 @@ def slides(p, tot=None, h=1350):
   <p class="desc">{p["testo2"]}</p>
   {marchio}
 </section>'''
+    interni = None
+    if p.get("custom"):
+        tot = len(p["custom"]) + 2
+        pezzi = []
+        for i, c in enumerate(p["custom"], start=2):
+            sch = ('<div class="riq" style="' + c.get("riqstyle", "") + '">' + c["schema"] + '</div>') if c.get("schema") else ""
+            txt = f'<p class="desc">{c["testo"]}</p>' if c.get("testo") else ""
+            lst = ('<ul class="punti' + (' c' if c.get("compact") else '') + '">' + "".join(f"<li>{x}</li>" for x in c["punti"]) + '</ul>') if c.get("punti") else ""
+            pezzi.append(f'''<section class="slide int">
+  <div class="num">{i}/{tot}</div>
+  <div class="kicker">{c["kicker"]}</div>
+  <h2 style="{c.get("h2style", "")}">{c["titolo"]}</h2>
+  {sch}{txt}{lst}
+  {marchio}
+</section>''')
+        interni = "\n".join(pezzi)
+    if interni is None:
+        interni = slide2 + f'''
+<section class="slide int">
+  {num(3)}
+  <div class="kicker">{p.get("kicker3") or p["titolo2"]}</div>
+  <h2>{p["titolo3"]}</h2>
+  <ul class="punti">{punti}</ul>
+  {marchio}
+</section>
+{('<section class="slide int">' + num(4) + '<div class="kicker">' + (p.get("kicker3") or p["titolo2"]) + '</div><h2>' + p.get("titolo_ob", "Gli obiettivi") + '</h2><div class="obiettivo">' + p["obiettivo"] + '</div>' + marchio + '</section>') if p.get("obiettivo") else ''}'''
     return f'''
 <section class="slide cop{' cs' if p.get('cop_schema') else ''} t-{p.get('tema') or os.environ.get('TEMA') or 'scuro'}">
   {'' if p.get("senza_foto") else '<img class="bgimg" src="' + MAT + '/' + p.get("cartella", "precampionato") + '/' + p["foto"] + '">'}
@@ -327,15 +421,7 @@ def slides(p, tot=None, h=1350):
     <div class="scorri">Scorri →</div>
   </div>
 </section>
-{slide2}
-<section class="slide int">
-  {num(3)}
-  <div class="kicker">{p.get("kicker3") or p["titolo2"]}</div>
-  <h2>{p["titolo3"]}</h2>
-  <ul class="punti">{punti}</ul>
-  {marchio}
-</section>
-{('<section class="slide int">' + num(4) + '<div class="kicker">' + (p.get("kicker3") or p["titolo2"]) + '</div><h2>' + p.get("titolo_ob", "Gli obiettivi") + '</h2><div class="obiettivo">' + p["obiettivo"] + '</div>' + marchio + '</section>') if p.get("obiettivo") else ''}
+{interni}
 <section class="slide fine">
   <img class="logo2" src="{MAT}/brand/logo-cerchio.png">
   <h1>{p.get("fine_h1") or "Gli<span>Imbattibili</span>"}</h1>
@@ -382,7 +468,7 @@ h1, h2 {{ font-family: Oswald, sans-serif; font-weight: 700; text-transform: upp
 .int .num {{ position: absolute; top: {90 if alto else 40}px; right: 60px; font-family: Oswald, sans-serif; font-size: 28px; color: #9aa59f; }}
 .kicker {{ font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .2em; font-size: 28px; color: #d4a017; }}
 .int h2 {{ font-size: 78px; line-height: 1.02; color: #0f3d2e; margin: 10px 0 40px; }}
-.riq {{ display: flex; justify-content: center; }}
+.riq {{ display: flex; justify-content: center; width: 100%; }}
 .riq .schema {{ width: 100%; max-height: {900 if alto else 700}px; display: block; border-radius: 16px; }}
 .desc {{ font-size: 36px; line-height: 1.45; margin-top: 40px; }}
 .obiettivo {{ margin-top: 50px; padding: 50px 44px; border-radius: 18px; background: #0f3d2e; color: #fff; font-family: Oswald, sans-serif; text-transform: uppercase; font-size: 76px; line-height: 1.1; font-weight: 600; }}
@@ -393,6 +479,8 @@ h1, h2 {{ font-family: Oswald, sans-serif; font-weight: 700; text-transform: upp
 .punti {{ list-style: none; margin-top: 20px; }}
 .punti li {{ font-size: 42px; line-height: 1.35; padding: 34px 0 34px 70px; position: relative; border-bottom: 2px solid #e3e8e5; }}
 .punti li::before {{ content: ""; position: absolute; left: 0; top: 50px; width: 30px; height: 30px; background: #d4a017; border-radius: 50%; }}
+.punti.c li {{ font-size: 36px; padding: 20px 0 20px 60px; }}
+.punti.c li::before {{ top: 31px; width: 24px; height: 24px; }}
 .marchio {{ position: absolute; left: 80px; right: 80px; bottom: {150 if alto else 50}px; display: flex; justify-content: space-between; align-items: center; border-top: 3px solid #0f3d2e; padding-top: 22px; font-size: 26px; color: #5d6b65; }}
 .marchio b {{ font-family: Oswald, sans-serif; color: #0f3d2e; letter-spacing: .12em; font-weight: 600; font-size: 30px; }}
 .fine {{ display: flex; flex-direction: column; justify-content: center; padding: 0 80px; }}
