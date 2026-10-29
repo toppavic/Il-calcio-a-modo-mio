@@ -4,8 +4,8 @@ Bozza di Claude del 12/10/2026, da far controllare all'allenatore. Il testo vien
 
 ## Da caricare
 
-- **File digitale**: `prodotti/gli-imbattibili/campionato-allenamenti-11-19.pdf` (46 pagine, 3,9 MB: sotto il limite di 20 MB di Etsy)
-- **Foto**: pronte il 15/10 in `marketing/etsy/immagini/campionato-1..4.png` (2000 × 1500): copertina, cosa c'è dentro, pagine di esempio, schemi e regole
+- **File digitale**: `prodotti/gli-imbattibili/campionato-allenamenti-11-19.pdf` (64 pagine, 3,5 MB: sotto il limite di 20 MB di Etsy; revisione del 23/10, caricare con il nome `Gli-Imbattibili_In-campionato_11-19.pdf`)
+- **Foto**: aggiornate il 29/10 (64 pagine, pagine nuove) in `marketing/etsy/immagini/campionato-1..4.png` (2000 × 1500): copertina, cosa c'è dentro, pagine di esempio, schemi e regole
 - **Tipo**: download digitale · fatto da me · prodotto finito
 - **Prezzo**: 8,11 € (Etsy aggiunge l'IVA al 22% per i compratori italiani: 9,89 €)
 - **Categoria**: la stessa del Precampionato
@@ -22,12 +22,15 @@ Non sono esercizi presi da internet. Sono gli allenamenti fatti davvero in campo
 
 In campionato la settimana cambia: si lavora il lunedì e il giovedì. Dopo ogni giovedì trovi la partita del fine settimana, con il risultato e le statistiche, così si vede cosa è successo in campo dopo il lavoro della settimana. Quattro partite, quattro vittorie, 11 gol fatti e 3 subiti.
 
-COSA TROVI NEL PDF (46 pagine)
+COSA TROVI NEL PDF (64 pagine)
 
-- 9 allenamenti completi, ognuno con la scheda della seduta: durata, programma e barra dei tempi
+- 9 allenamenti completi, ognuno aperto dal foglio originale scritto a mano dal mister
+- La scheda della seduta: durata, programma e barra dei tempi
 - Una pagina per ogni esercitazione con obiettivo, schema a colori, organizzazione, svolgimento e punti chiave
+- Dopo ogni esercitazione principale, le indicazioni tecniche: obiettivo, tempi effettivi, errori da evitare e comportamenti da osservare
 - Le partite a tema con le regole tempo per tempo: tocchi, vincoli e punteggi
 - 4 pagine partita con risultato e statistiche del fine settimana
+- Tre livelli sempre distinti: dal quaderno, precisato dall'autore, consigliato
 - Rapidità, corsa con variazioni di velocità e lavoro atletico con tempi e ripetizioni
 
 GLI ALLENAMENTI
