@@ -35,5 +35,11 @@ Nasce dal messaggio dell'allenatore del 29/10: "sii un professionista, tieni tut
 ## Decisione del 29/10 sera: Percorso 2 = "Difendere in inferiorità" (scelta A)
 Scelto dall'allenatore. Idea sua del 2/10: lavora in inferiorità (4c6, 4c8, 4c11, 8c10); dentro ci sta la marcatura preventiva (Preventiva 1 e 2, Allenamento 4). Serve da lui: **foto dei fogli** (o a voce) degli allenamenti con le situazioni in inferiorità, anche una per volta, nessuna fretta immediata. Poi: bozza breve dell'impostazione (sì/no), progressione facile → difficile come nel Percorso 1, destinatari e regole fisse per tutte le tappe. Uscita Etsy solo con il contenuto pronto: ipotesi 26/11 se il materiale arriva entro l'8/11, altrimenti dicembre. Prima dell'uscita 2 settimane di post preparatori (niente esercitazioni regalate).
 
+## Canale WhatsApp nel programma (29/10, deciso da Claude)
+- **Un messaggio a settimana, la domenica sera dopo la storia del risultato (circa 20:30):** una cosa vista in campo o il tema della settimana + il rimando alla novità (Reel, percorso). Lo scrive Claude, l'allenatore lo incolla e invia.
+- **Rimandi al canale:** una storia IG con adesivo Link nella prima settimana · una riga nel carosello del venerdì ("entra nel canale") · link nel diario FB una volta a settimana alternato al libro · mai più di un rimando per post.
+- **Uscite Etsy:** annunciate prima nel canale (chi segue le sa per primo).
+- **Misura:** iscritti scritti ogni domenica insieme agli altri 4 numeri. Obiettivo 50 in 30 giorni.
+
 ## Canale WhatsApp (29/10)
 Creato dall'allenatore il 29/10 alle 13:52: "Il calcio a modo mio". Link: https://whatsapp.com/channel/0029Vb8tj95DOQIbqWqHwL1m — 0 iscritti. Descrizione: «Gli appunti di un allenatore di calcio dilettanti. Qui escono per primi i nuovi percorsi «Dai quaderni del mister» e le novità del negozio.» Prossimi passi: primo messaggio di benvenuto, poi il link nella bio e nei post (un solo rimando a settimana). Obiettivo 50 iscritti in 30 giorni.
