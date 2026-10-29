@@ -43,3 +43,6 @@ Dal 4c6 in poi: tutta la metà campo, 52,5 × 68 m (allenatore, 29/10).
 - Porticine esterne (29/10): sul lato esterno del campo, rientrando dalla linea laterale; larghe di solito 6 m; dentro c'è un giocatore
   di riferimento. La difesa che recupera non tira: trova il giocatore nella porticina (qualità del passaggio). Quando i giocatori
   sono tanti (es. 10c8) chi difende deve attraversare la porticina palla al piede, non tirare.
+- Tempi (29/10): 2c2 e 2c4 4 × 1'30" (rec. 30-40"). Dal 4c6 tempi da 5'; da 3' se nella seduta c'è già stato un lavoro fisico importante.
+  Numero dei tempi e recuperi dal 4c6: da chiedere.
+- Porticine: sempre all'altezza della porta mobile.
