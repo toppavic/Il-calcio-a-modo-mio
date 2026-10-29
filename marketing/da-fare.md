@@ -8,12 +8,12 @@ Regola dell'allenatore (25/10): questo file si aggiorna **ogni domenica** con la
 |---|---|---|---|
 | Lun 26 | – | (invio E/O spostato al giovedì 29/10 su richiesta dell'autore: moglie e suocera stanno ancora leggendo) | – |
 | Lun 26 | 18:00 | Diario "Appunti 2.0" | FB diario (altra chat) |
-| Sab 31 | mattina | **Sostituire su Etsy il file di "In campionato"** (spostato dal 27/10 per avere una sola cosa al giorno) con la revisione da 64 pagine (23/10; `campionato-allenamenti-11-19.pdf`, nome Etsy `Gli-Imbattibili_In-campionato_11-19.pdf`) + descrizione e prima foto (ora dicono 46 pagine) | Etsy |
+| ~~Sab 31~~ | già fatto | ✅ **File di "In campionato" sostituito su Etsy** (detto dall'allenatore il 29/10: tutto sistemato con i file nuovi) (spostato dal 27/10 per avere una sola cosa al giorno) con la revisione da 64 pagine (23/10; `campionato-allenamenti-11-19.pdf`, nome Etsy `Gli-Imbattibili_In-campionato_11-19.pdf`) + descrizione e prima foto (ora dicono 46 pagine) | Etsy |
 | Mar 27 | 13:00 | **Carosello "Palla scoperta: scappa"** (concetto 17/10 dell'allenatore: portatore libero → la linea toglie profondità), nome "Dai quaderni del mister" | IG + TikTok, programmato |
 | Mer 28 | 13:00 | Diario libro (programmato prima del campo) · campo 18-21 | FB diario |
 | Gio 29 | 18:00 | Diario formazione | FB diario |
 | Gio 29 | mattina | **Invio romanzo a E/O** (è a casa; passo 1 correzioni e screenshot del modulo, passo 2 file e invio; scadenza 31/10) | E/O |
-| Ven 30 | mattina | **Sostituire su Etsy il file di "Il Precampionato"** con la revisione da 92 pagine (26/10; `precampionato-allenamenti-1-10.pdf`, 4,5 MB) + descrizione e prima foto | Etsy |
+| ~~Ven 30~~ | già fatto | ✅ **File di "Il Precampionato" sostituito su Etsy** (29/10: tutto sistemato con i file nuovi) con la revisione da 92 pagine (26/10; `precampionato-allenamenti-1-10.pdf`, 4,5 MB) + descrizione e prima foto | Etsy |
 | Ven 30 | 13:00 | **Carosello "Palla coperta: accorcia"** + chiusura "commenta PRESSING e ti mando il link del percorso" (risposta in messaggio manuale; niente sedute regalate) · controllo statistiche Etsy (prima settimana intera di misura) · campo 18-21 | IG + TikTok, programmato |
 | Sab 31 | – | Foto dei fogli all'altra chat (se ha tempo, dopo Etsy) | – |
 | Dom 1/11 | 19:00 | **Reel "La linea decide"** (palla scoperta e coperta insieme, 11c11 con struttura vera), programmato | IG + TikTok |
