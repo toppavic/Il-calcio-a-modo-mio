@@ -37,3 +37,9 @@ Dal 4c6 in poi: tutta la metà campo, 52,5 × 68 m (allenatore, 29/10).
   con tutti (punte con esterni o terzini, centrocampisti con esterni o terzini, centrali con terzini o esterni). Serve a capire come
   si è messi in campo e per le rotazioni: l'esterno che ragiona da terzino, il centrocampista che lavora da attaccante.
   "Crea una squadra che va a mille." Idea possibile per un percorso futuro (non deciso).
+- Regole "a partita" del 2c2 valgono per tutti i formati (superiorità, inferiorità, 5c4, 6c4...) (allenatore, 29/10).
+  Centrocampo sempre a 4 (non gli piace a 3): formati quasi sempre pari. Il suo 5c5: un attaccante, un centrocampista, un difensore
+  e i due esterni oppure i due terzini (da spiegare più avanti).
+- Porticine esterne (29/10): sul lato esterno del campo, rientrando dalla linea laterale; larghe di solito 6 m; dentro c'è un giocatore
+  di riferimento. La difesa che recupera non tira: trova il giocatore nella porticina (qualità del passaggio). Quando i giocatori
+  sono tanti (es. 10c8) chi difende deve attraversare la porticina palla al piede, non tirare.
