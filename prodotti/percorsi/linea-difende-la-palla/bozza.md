@@ -30,3 +30,10 @@ Dal 4c6 in poi: tutta la metà campo, 52,5 × 68 m (allenatore, 29/10).
   coppia di punte, coppia di centrocampisti. Nei 4 che attaccano c'è sempre una coppia di esterni, insieme alle punte o ai centrocampisti,
   così punte e centrocampisti si abituano a lavorare con gli esterni. Ideale con almeno 20 giocatori; si adatta al numero (anche 16),
   senza spostare un centrocampista a fare l'esterno se ci sono 4 esterni. (Da confermare: composizione esatta dei gruppi.)
+- Confermati (29/10) i gruppi del 2c4: coppia di esterni + coppia di punte o di centrocampisti, a rotazione.
+- Metodo dell'allenatore, "coppie per ruolo" (29/10): il 2c2 nasce come ultima esercitazione del venerdì, squadre divise, tutti
+  in fase offensiva e difensiva. Nel 4c4 / 5c5 le coppie restano sempre insieme: terzini, esterni, punte, centrocampisti, centrali.
+  Due sezioni esterne (esterni, terzini) e tre centrali (punte, centrocampisti, centrali): a ogni cambio ruotano, così tutti giocano
+  con tutti (punte con esterni o terzini, centrocampisti con esterni o terzini, centrali con terzini o esterni). Serve a capire come
+  si è messi in campo e per le rotazioni: l'esterno che ragiona da terzino, il centrocampista che lavora da attaccante.
+  "Crea una squadra che va a mille." Idea possibile per un percorso futuro (non deciso).
