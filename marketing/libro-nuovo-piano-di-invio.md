@@ -52,4 +52,4 @@
 ## Registro degli invii
 | Data | A chi | Come | Risposta |
 |---|---|---|---|
-| | | | |
+| 29/10/2026 | Edizioni E/O | modulo online (sinossi, motivazione, ultimo libro E/O letto, estratto PDF Prologo + cap. 1-2 in 28 pagine, genere «Narrativa non di genere»); pagina «proposta ricevuta», nessun'altra conferma | nessuna: se non rispondono entro 6 mesi (fine aprile 2027) è un no; non scrivere a E/O |
