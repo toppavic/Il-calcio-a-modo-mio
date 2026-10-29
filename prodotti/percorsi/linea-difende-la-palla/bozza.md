@@ -46,3 +46,7 @@ Dal 4c6 in poi: tutta la metà campo, 52,5 × 68 m (allenatore, 29/10).
 - Tempi (29/10): 2c2 e 2c4 4 × 1'30" (rec. 30-40"). Dal 4c6 tempi da 5'; da 3' se nella seduta c'è già stato un lavoro fisico importante.
   Numero dei tempi e recuperi dal 4c6: da chiedere.
 - Porticine: sempre all'altezza della porta mobile.
+- Correzioni (29/10): nel 2c4 la difesa che recupera deve fare gol nella porta mobile (a 24 m), come nel 2c2. Dal 2c4 vale il fuorigioco.
+  Dal 4c6: 4 tempi da 5' con 1'30" di recupero (3' se c'è stato un lavoro fisico pesante).
+  Attaccanti: 4c6 = 2 punte + 2 esterni + 2 centrocampisti; 4c8 e 6c8 = + 2 terzini; 6c10 = + 2 difensori centrali.
+  Bozza approvata con queste modifiche → si impagina.
