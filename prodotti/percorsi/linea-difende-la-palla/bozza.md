@@ -26,3 +26,7 @@ NON impaginare finché l'allenatore non approva le regole fisse.
 Dal 4c6 in poi: tutta la metà campo, 52,5 × 68 m (allenatore, 29/10).
 - Confermato (29/10): il portiere si usa al massimo una volta nella stessa azione; se segna la coppia che ha recuperato, resta lei in campo ed escono gli attaccanti.
 - Tappa 1 (2c2) chiusa. Prossimo: 2c4 (come si fa, porticine esterne).
+- 2c4, attaccanti (allenatore, 29/10): sempre nel loro ruolo. Coppie mai miste (niente punta + centrocampista): coppia di esterni,
+  coppia di punte, coppia di centrocampisti. Nei 4 che attaccano c'è sempre una coppia di esterni, insieme alle punte o ai centrocampisti,
+  così punte e centrocampisti si abituano a lavorare con gli esterni. Ideale con almeno 20 giocatori; si adatta al numero (anche 16),
+  senza spostare un centrocampista a fare l'esterno se ci sono 4 esterni. (Da confermare: composizione esatta dei gruppi.)
