@@ -13,7 +13,13 @@ NON impaginare finché l'allenatore non approva le regole fisse.
 - Si parte sempre dal portiere della porta mobile; l'attacco deve sempre fare gol nella porta regolamentare.
 - Punto della difesa: nel 2c2, recuperata palla deve fare gol nella porta mobile. Dal 2c4 in poi trova il portiere della porta mobile
   oppure passa a uno dei due giocatori di riferimento nelle due porticine esterne.
-- Come fa il 2c2: lo spiega l'allenatore (in attesa).
+- Come fa il 2c2 (allenatore, 29/10): difensori in fila dietro la porta regolamentare, attaccanti alla porta mobile.
+  Si parte sempre dall'attacco con la palla. Chi fa gol resta in campo; se la palla esce si cambiano tutti e 4.
+  4 tempi da 1'30" con 30-40" di recupero. Tema: attacco e copertura. I difensori devono scattare e accorciare
+  sul portatore, altrimenti tira subito (parte fuori dal limite dell'area). Il più vicino attacca la palla, l'altro copre.
+  Quando la coppia che difende recupera palla, il proprio portiere si può usare una sola volta (per non perdere tempo):
+  devono far viaggiare la palla e creare il loro 2c2 verso la porta mobile. "Fatto a partita i giocatori diventano molto più aggressivi."
+- Detto dall'allenatore (29/10): paura che il metodo venga copiato; deciso di andare avanti (tutto nel PDF, nei post solo assaggi, nota © nel PDF).
 
 ## Proposte da approvare (misure)
 2c2 18 × 24 m (allenatore) · 2c4 30 × 24 (proposta)
