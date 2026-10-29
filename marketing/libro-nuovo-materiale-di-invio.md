@@ -1,17 +1,19 @@
-# Chi apre perde – materiale di invio (versione del 20/10/2026)
+# Chi apre perde – materiale di invio (aggiornato il 29/10/2026)
 
 Il testo del romanzo non è qui. Sono i testi di presentazione, da controllare prima dell'invio.
 Aggiunti da Claude (da controllare): in lettera «amicizia maschile e ciò che non ci si chiede, con ironia e dolore»; in bio «primo romanzo» e «racconto di una stagione di calcio giovanile».
 
+**29/10:** nella versione nuova del romanzo il narratore si chiama **Stefano** (prima Matteo) e la moglie **Laura** (prima Giulia); luoghi cambiati e Mugello tolto. Sinossi aggiornata di conseguenza. Per E/O serve anche un **breve testo di max 5 righe** sul perché E/O (da scrivere con le ragioni dell'autore). Estratto = Prologo + capitoli 1-2 + capitolo 3 fino a «È Daniele che non vedo» (52.268 caratteri, circa 29 cartelle).
+
 ## 1. Sinossi (1658 caratteri, limite 2.000)
 
-«Mi sto ammazzando, Matteo.» Matteo sta infilandosi la giacca per uscire dal lavoro quando Daniele, il suo migliore amico da quarant'anni, gli dice questa frase al telefono. Non trova le parole giuste e ne prende una sbagliata ma viva: «Accendi la televisione». Poi parte in macchina. Quaranta minuti per arrivare a casa di Daniele nel Mugello, con la sola promessa di essere lì.
+«Mi sto ammazzando, Stefano.» Stefano sta infilandosi la giacca per uscire dal lavoro quando Daniele, il suo migliore amico da quarant'anni, gli dice questa frase al telefono. Non trova le parole giuste e ne prende una sbagliata ma viva: «Accendi la televisione». Poi parte in macchina. Quaranta minuti per arrivare a casa di Daniele, con la sola promessa di essere lì.
 
-Il viaggio occupa quasi tutto il romanzo. Tra un trattore che rallenta la salita, un semaforo e la moglie Giulia che vorrebbe chiamare il 112, la memoria di Matteo riapre i ricordi: un'estate sulla Punto con il riscaldamento acceso per una gara a chi molla per primo («chi apre perde»), la notte nella nebbia per un concerto punk, la sera al pub in cui Daniele chiede se una cena «merita una parte della mia vita» e Matteo risponde con una battuta. Tra i due «come stai» è sempre stato un saluto e la risposta una battuta. Per tutto il resto hanno parlato di calcio.
+Il viaggio occupa quasi tutto il romanzo. Tra un trattore che rallenta la salita, un semaforo e la moglie Laura che vorrebbe chiamare il 112, la memoria di Stefano riapre i ricordi: un'estate sulla Punto con il riscaldamento acceso per una gara a chi molla per primo («chi apre perde»), la notte nella nebbia per un concerto punk, la sera al pub in cui Daniele chiede se una cena «merita una parte della mia vita» e Stefano risponde con una battuta. Tra i due «come stai» è sempre stato un saluto e la risposta una battuta. Per tutto il resto hanno parlato di calcio.
 
-Rileggendo mesi di messaggi, Matteo scopre di aver rimandato ogni invito. Quando arriva «Ho paura», capisce di aver ascoltato soltanto ciò che sapeva prendere al volo. Trova Daniele sul divano, a tratti lucido, accanto a un flacone di gocce e a due lattine di birra. Chiama i soccorsi e lo tiene sveglio parlando di niente, finché gli chiede perché abbia chiamato proprio lui. «Perché ci sei.»
+Rileggendo mesi di messaggi, Stefano scopre di aver rimandato ogni invito. Quando arriva «Ho paura», capisce di aver ascoltato soltanto ciò che sapeva prendere al volo. Trova Daniele sul divano, a tratti lucido, accanto a un flacone di gocce e a due lattine di birra. Chiama i soccorsi e lo tiene sveglio parlando di niente, finché gli chiede perché abbia chiamato proprio lui. «Perché ci sei.»
 
-Quando l'ambulanza parte, Matteo dà da mangiare al gatto e lascia accesa la televisione. Risale in macchina e fa partire gli Afterhours. Il navigatore resta spento. Il romanzo alterna ironia e dolore e non spiega né assolve: racconta quanto può costare una domanda fatta troppo tardi e quanto valga farla comunque.
+Quando l'ambulanza parte, Stefano dà da mangiare al gatto e lascia accesa la televisione. Risale in macchina e fa partire gli Afterhours. Il navigatore resta spento. Il romanzo alterna ironia e dolore e non spiega né assolve: racconta quanto può costare una domanda fatta troppo tardi e quanto valga farla comunque.
 
 ## 2. Lettera di presentazione
 
