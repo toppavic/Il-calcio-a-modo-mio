@@ -1,4 +1,4 @@
-# Piano 30 giorni (29/10 – 28/11/2026) – bozza di Claude, in attesa del sì dell'allenatore
+# Piano 30 giorni (29/10 – 28/11/2026) – APPROVATO dall'allenatore il 29/10 con le modifiche in fondo
 
 Nasce dal messaggio dell'allenatore del 29/10: "sii un professionista, tieni tutto sotto controllo, dimmi cosa ti serve, includi il tempo di scrittura per i libri". Sostituisce la settimana tipo di `strategia-fino-a-dicembre.md` solo dove è in contrasto.
 
@@ -25,3 +25,9 @@ Nasce dal messaggio dell'allenatore del 29/10: "sii un professionista, tieni tut
 ## Cosa serve da lui, e quando
 - Ogni settimana: i 20 minuti di input (sopra).
 - Per il Percorso 2: l'elenco delle esercitazioni di marcatura preventiva. Claude lo chiede il giorno in cui serve.
+
+## Modifiche dell'allenatore (29/10, dopo il sì)
+1. **Preavviso:** le cose che richiedono preparazione (materiale, screenshot, "vai a preparare di là") vanno dette **con anticipo** (almeno la sera prima o all'inizio della settimana), non la mattina per il pomeriggio. Il promemoria del mattino resta, ma **ripete** una cosa già annunciata. Questo corregge la regola del 19/10 (solo la mattina stessa), che vale ancora per le scadenze e le azioni senza preparazione. Ogni domenica `da-fare.md` ha una colonna **"Vai a preparare di là"** con l'argomento per la conversazione Facebook diario o Allenamenti.
+2. **Preventive:** non ha altro materiale oltre a quello già dato (Allenamento 4, Preventiva 1 e 2, spiegazione dell'8/10). Il Percorso 2 non si dà per deciso: Claude propone idee, lui le valuta ed elabora. Idee proposte il 29/10: (A) **Difendere in inferiorità** (4c6, 4c8, 4c11, 8c10, idea sua del 2/10 e dentro ci sta la marcatura preventiva) · (B) **Percorso sulla marcatura preventiva** costruito dalle esercitazioni che ha già, variando regole e numeri come nel Percorso 1 · (C) **Dopo il recupero: colpire** (transizione, completa il Percorso 1).
+3. **Facebook diario, 3 appuntamenti fissi:** lunedì "Appunti da un tempo che non aveva istruzioni 2.0" (vita normale) · mercoledì **La Fiorentina**: discussione su quello che è successo dal giovedì al martedì, non solo la formazione · terzo proposto da Claude: **domenica sera, "La domenica del mister"** (una scena della partita del Vaglia o una cosa vista in campo; alimenta anche i post tecnici). Si prepara nella conversazione FACEBOOK diario.
+4. **Instagram e TikTok:** da spingere. TikTok: con l'account personale il link in bio arriva a 1.000 follower; **da verificare nelle impostazioni se passando ad account Business il link si può mettere subito** (con musica limitata).
