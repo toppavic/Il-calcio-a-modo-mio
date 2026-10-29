@@ -16,4 +16,5 @@ NON impaginare finché l'allenatore non approva le regole fisse.
 - Come fa il 2c2: lo spiega l'allenatore (in attesa).
 
 ## Proposte da approvare (misure)
-2c2 18 × 24 m · 2c4 30 × 24 · 4c6 40 × 30 · 4c8 50 × 35 · 6c8 68 × 40 · 6c10 68 × 45
+2c2 18 × 24 m (allenatore) · 2c4 30 × 24 (proposta)
+Dal 4c6 in poi: tutta la metà campo, 52,5 × 68 m (allenatore, 29/10).
