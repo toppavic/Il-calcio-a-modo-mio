@@ -389,7 +389,7 @@ POST = [
                         "Il gol vale solo se <b>tutti e due gli esterni</b> hanno toccato la palla"], compact=True,
                  h2style="margin-bottom:20px", riqstyle="width:100%;max-width:700px;margin:0 auto"),
             dict(kicker="L'obiettivo", titolo="Perché due tocchi?",
-                 html='<div class="obiettivo"><span>Obiettivo primario</span>Muovere la palla</div><p class="desc">«In 40 × 40, se non muovi la palla in maniera veloce <b>non esci mai</b>: hai subito la gente addosso.»</p><p class="desc" style="color:#5d6b65;font-size:32px">Per Juniores e Prime Squadre.</p>'),
+                 html='<div class="obiettivo"><span>Obiettivo primario</span>Muovere la palla</div><p class="desc">In uno spazio ridotto, se la palla non viaggia veloce gli avversari accorciano subito: la squadra viene <b>pressata</b> e diventa <b>attaccabile</b>.<br><br>Muovendola con rapidità si passa da un lato all’altro del campo e si può <b>attaccare il lato debole</b>.</p><p class="desc" style="color:#5d6b65;font-size:32px">Per Juniores e Prime Squadre.</p>'),
         ],
         fine_h1="Muovere<span>la palla</span>",
         fine_sub="Le idee dei quaderni escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
