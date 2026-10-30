@@ -214,3 +214,15 @@ Vuoi una squadra che impari a pressare nel modo giusto e a colpire dopo aver rec
 **TikTok**
 
 Uno va in pressione. E gli altri? Pressare è individuale, farlo insieme si allena. #allenatore #calcio #pressing #mister
+
+## Post 11 – "Il gol vale solo se l'hanno toccata gli esterni" (sabato 31/10, 13:00, 4 slide, tema avorio)
+Dalla nota dell'allenatore del 30/10 (`materiale/da-classificare/note-2026-10-30-tre-partite-40m.png`), I partita: campo 40 × 40 m (detto da lui), 2 tocchi, esterni fuori dal campo (detto da lui), gol valido solo se tutti e due gli esterni toccano la palla. Obiettivo primario (suo): muovere la palla. Disegnati da Claude: esterni come jolly neutri, 4 contro 4 con portieri (da confermare). Slide con la domanda tolta dall'allenatore.
+
+**Didascalia Instagram / Facebook**
+Il gol vale solo se l'hanno toccata tutti e due gli esterni.
+Una regola sola e la squadra impara a muovere la palla.
+Le idee dei quaderni escono prima sul canale WhatsApp «Il calcio a modo mio»: link in bio.
+#allenatore #calcio #mister #partitaatema #allenamentocalcio
+
+**Didascalia TikTok**
+Il gol vale solo se l'hanno toccata tutti e due gli esterni. Una regola per insegnare alla squadra a muovere la palla. Salva il post. #allenatore #calcio #mister #partitaatema

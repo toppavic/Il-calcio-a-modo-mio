@@ -178,6 +178,25 @@ def schema_pressione_squadra():
              + freccia("M340,235 L306,218", True))
     return _campo_pressione(extra, "LA SQUADRA SI MUOVE INSIEME")
 
+def schema_esterni():
+    rossi = [(180, 120), (215, 245), (305, 235), (300, 110)]
+    blu = [(270, 140), (265, 205), (330, 165), (195, 185)]
+    gioc = "".join(g(x, y, "pA") for x, y in rossi) + "".join(g(x, y, "pB") for x, y in blu)
+    passaggi = (freccia("M186,110 L238,40", tratteggio=True) + freccia("M244,44 L216,230", tratteggio=True)
+                + freccia("M222,256 L240,298", tratteggio=True) + freccia("M262,300 L298,248", tratteggio=True)
+                + freccia("M318,228 L371,157", tratteggio=True))
+    return f'''<svg class="schema" viewBox="0 0 500 340">
+    <rect width="500" height="340" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="125" y="50" width="250" height="250"/><line x1="250" y1="50" x2="250" y2="300" stroke-dasharray="3 6"/></g>
+    <rect x="115" y="150" width="10" height="50" fill="#fff"/><rect x="375" y="150" width="10" height="50" fill="#fff"/>
+    {g(140, 175, "pP")}{g(360, 175, "pP")}
+    {gioc}
+    {g(250, 32, "pJ", "E", "#1d2421")}{g(250, 318, "pJ", "E", "#1d2421")}
+    <use href="#palla" x="168" y="124"/>
+    {passaggi}
+    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">CAMPO 40 × 40 M · ESTERNI FUORI DAL CAMPO</text>
+  </svg>'''
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -356,6 +375,26 @@ POST = [
         fine_sub_tt="Pressare è un'azione individuale. Farlo insieme è un comportamento che si allena.<br><br>La pressione si organizza. Si allena. Si riconosce in campo.<br><br>Vuoi una squadra che impari a <b>pressare nel modo giusto</b> e a <b>colpire dopo aver recuperato la palla</b>? Percorso 1, <b>La ricerca del portiere</b>, su Etsy: <b>ilcalcioamodomio</b>.",
         azioni=["Salva il post"],
     ),
+    dict(
+        n=11, senza_foto=True, tema="chiaro",
+        gancio="Il gol vale solo se<span>l'hanno toccata gli esterni</span>", h1style="font-size:96px",
+        sub="Una regola per insegnare alla squadra a <b>muovere la palla</b>.",
+        kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER",
+        custom=[
+            dict(kicker="Partita a tema", titolo="Gol solo con gli esterni", schema=schema_esterni(),
+                 punti=["Campo <b>40 × 40 m</b>",
+                        "Massimo <b>2 tocchi</b>",
+                        "Due <b>esterni fuori dal campo</b>, uno per lato",
+                        "Il gol vale solo se <b>tutti e due gli esterni</b> hanno toccato la palla"], compact=True,
+                 h2style="margin-bottom:20px", riqstyle="width:100%;max-width:700px;margin:0 auto"),
+            dict(kicker="L'obiettivo", titolo="Perché questa regola?",
+                 html='<div class="obiettivo" style="margin-top:120px;padding:90px 50px;font-size:110px"><span>Obiettivo primario</span>Muovere la palla</div>'),
+        ],
+        fine_h1="Muovere<span>la palla</span>",
+        fine_sub="Le idee dei quaderni escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
+        fine_sub_tt="Una regola sola e la palla deve passare da <b>una fascia all'altra</b>. Salva il post per il prossimo allenamento.",
+        azioni=["Salva il post"],
+    ),
 ]
 
 FIRMA = "La Juniores che ha vinto il campionato <b>senza perdere una partita</b>"
@@ -393,12 +432,13 @@ def slides(p, tot=None, h=1350):
         for i, c in enumerate(p["custom"], start=2):
             sch = ('<div class="riq" style="' + c.get("riqstyle", "") + '">' + c["schema"] + '</div>') if c.get("schema") else ""
             txt = f'<p class="desc">{c["testo"]}</p>' if c.get("testo") else ""
+            htm = c.get("html", "")
             lst = ('<ul class="punti' + (' c' if c.get("compact") else '') + '">' + "".join(f"<li>{x}</li>" for x in c["punti"]) + '</ul>') if c.get("punti") else ""
             pezzi.append(f'''<section class="slide int">
   <div class="num">{i}/{tot}</div>
   <div class="kicker">{c["kicker"]}</div>
   <h2 style="{c.get("h2style", "")}">{c["titolo"]}</h2>
-  {sch}{txt}{lst}
+  {sch}{txt}{lst}{htm}
   {marchio}
 </section>''')
         interni = "\n".join(pezzi)
