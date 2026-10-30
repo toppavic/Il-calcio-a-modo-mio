@@ -165,3 +165,6 @@ La sessione precedente (session_01Y6imChDnJpMKHUHGGzDa7m) era al 75% del contest
 **Promemoria**: trigger giornaliero 6:57 (Europe/Rome) e promemoria del 29/10 ora legati alla nuova sessione; i vecchi (trig_011irDtADw1XLuGq86kWMhMq, trig_01C1niaVtRHdJp7VeWoVTB29) sono spenti e non vanno riaccesi né cancellati.
 
 - **Nuova sessione**: session_01SKxmbbNKCopJuCUrYoDZaV · promemoria 6:57 = trig_01LHDV9FostX4piRn9841U2y · invio E/O 29/10 = trig_01G92JHiCu1sS7Bnjz1GU75H (05:58 UTC). Vecchi trigger spenti (non riaccendere, non cancellare).
+
+## 30/10 – Numeri Etsy (ultimi 7 giorni, screenshot delle 7:02)
+2 visualizzazioni · 2 visite · 0 ordini · 0,00 € (settimana prima, al 25/10: 8 visualizzazioni, 5 visite). In calo nonostante i post 9 e 10 con rimando al Percorso 1. Decisione rimandata alla lettura di domenica 1/11 insieme ai numeri di IG, TikTok e canale WhatsApp.
