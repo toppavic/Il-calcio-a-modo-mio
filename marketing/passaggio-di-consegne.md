@@ -168,3 +168,6 @@ La sessione precedente (session_01Y6imChDnJpMKHUHGGzDa7m) era al 75% del contest
 
 ## 30/10 – Numeri Etsy (ultimi 7 giorni, screenshot delle 7:02)
 2 visualizzazioni · 2 visite · 0 ordini · 0,00 € (settimana prima, al 25/10: 8 visualizzazioni, 5 visite). In calo nonostante i post 9 e 10 con rimando al Percorso 1. Decisione rimandata alla lettura di domenica 1/11 insieme ai numeri di IG, TikTok e canale WhatsApp.
+
+## 30/10 – Post 11 programmato e link del canale in bio
+Post 11 (gol solo con gli esterni) programmato dall'allenatore per sabato 31/10 alle 13:00 su IG/FB (TikTok programmato o da pubblicare alle 13). Link del canale WhatsApp aggiunto nella bio IG sotto quello di Etsy (Etsy resta primo). Da preparare per sabato mattina: Reel "La linea decide" per domenica 19:00 (sì/no dell'allenatore).
