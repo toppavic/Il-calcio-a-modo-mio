@@ -216,7 +216,7 @@ Vuoi una squadra che impari a pressare nel modo giusto e a colpire dopo aver rec
 Uno va in pressione. E gli altri? Pressare è individuale, farlo insieme si allena. #allenatore #calcio #pressing #mister
 
 ## Post 11 – "Il gol vale solo se l'hanno toccata gli esterni" (sabato 31/10, 13:00, 4 slide, tema avorio)
-Dalla nota dell'allenatore del 30/10 (`materiale/da-classificare/note-2026-10-30-tre-partite-40m.png`), I partita: campo 40 × 40 m (detto da lui), 2 tocchi, esterni fuori dal campo (detto da lui), gol valido solo se tutti e due gli esterni toccano la palla. Obiettivo primario (suo): muovere la palla. Disegnati da Claude: esterni come jolly neutri, 4 contro 4 con portieri (da confermare). Slide con la domanda tolta dall'allenatore.
+Dalla nota dell'allenatore del 30/10 (`materiale/da-classificare/note-2026-10-30-tre-partite-40m.png`), I partita: campo 40 × 40 m (detto da lui), 2 tocchi, esterni fuori dal campo (detto da lui), gol valido solo se tutti e due gli esterni toccano la palla. Obiettivo primario (suo): muovere la palla. Correzione dell'allenatore (30/10): si gioca da 7c7 a 11c11 sempre nel 40 × 40, gli esterni stanno nella metà campo offensiva, a 2 tocchi perché con Juniores e Prime Squadre "se non muovi la palla in maniera veloce non esci mai, hai subito la gente addosso" (frase sua nella slide 3). Disegno di Claude: ogni squadra con i suoi due esterni, fuori dal campo lungo la propria metà offensiva (da confermare). Slide con la domanda tolta dall'allenatore.
 
 **Didascalia Instagram / Facebook**
 Il gol vale solo se l'hanno toccata tutti e due gli esterni.

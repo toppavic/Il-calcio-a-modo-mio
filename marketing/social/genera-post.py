@@ -179,23 +179,24 @@ def schema_pressione_squadra():
     return _campo_pressione(extra, "LA SQUADRA SI MUOVE INSIEME")
 
 def schema_esterni():
-    rossi = [(180, 120), (215, 245), (305, 235), (300, 110)]
-    blu = [(270, 140), (265, 205), (330, 165), (195, 185)]
+    rossi = [(160, 110), (165, 240), (215, 175), (270, 95), (280, 255), (330, 175)]
+    blu = [(185, 180), (235, 125), (240, 225), (300, 135), (305, 215), (350, 115)]
     gioc = "".join(g(x, y, "pA") for x, y in rossi) + "".join(g(x, y, "pB") for x, y in blu)
-    passaggi = (freccia("M186,110 L238,40", tratteggio=True) + freccia("M244,44 L216,230", tratteggio=True)
-                + freccia("M222,256 L240,298", tratteggio=True) + freccia("M262,300 L298,248", tratteggio=True)
-                + freccia("M318,228 L371,157", tratteggio=True))
+    est = (g(315, 32, "pA", "E") + g(315, 318, "pA", "E") + g(185, 32, "pB", "E") + g(185, 318, "pB", "E"))
+    passaggi = (freccia("M276,84 L307,44", tratteggio=True) + freccia("M318,44 L328,162", tratteggio=True)
+                + freccia("M330,188 L318,304", tratteggio=True) + freccia("M308,308 L287,268", tratteggio=True)
+                + freccia("M292,248 L371,170", tratteggio=True))
     return f'''<svg class="schema" viewBox="0 0 500 340">
     <rect width="500" height="340" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="125" y="50" width="250" height="250"/><line x1="250" y1="50" x2="250" y2="300" stroke-dasharray="3 6"/></g>
     <rect x="115" y="150" width="10" height="50" fill="#fff"/><rect x="375" y="150" width="10" height="50" fill="#fff"/>
     {g(140, 175, "pP")}{g(360, 175, "pP")}
-    {gioc}
-    {g(250, 32, "pJ", "E", "#1d2421")}{g(250, 318, "pJ", "E", "#1d2421")}
-    <use href="#palla" x="168" y="124"/>
+    {gioc}{est}
+    <use href="#palla" x="258" y="96"/>
     {passaggi}
-    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">CAMPO 40 × 40 M · ESTERNI FUORI DAL CAMPO</text>
+    <text x="250" y="14" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">CAMPO 40 × 40 M · DA 7 CONTRO 7 A 11 CONTRO 11</text>
   </svg>'''
+
 
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
@@ -382,13 +383,13 @@ POST = [
         kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER",
         custom=[
             dict(kicker="Partita a tema", titolo="Gol solo con gli esterni", schema=schema_esterni(),
-                 punti=["Campo <b>40 × 40 m</b>",
+                 punti=["Campo <b>40 × 40 m</b>, da <b>7 contro 7</b> a <b>11 contro 11</b>",
                         "Massimo <b>2 tocchi</b>",
-                        "Due <b>esterni fuori dal campo</b>, uno per lato",
+                        "Gli <b>esterni</b> stanno fuori dal campo, nella <b>metà offensiva</b>",
                         "Il gol vale solo se <b>tutti e due gli esterni</b> hanno toccato la palla"], compact=True,
                  h2style="margin-bottom:20px", riqstyle="width:100%;max-width:700px;margin:0 auto"),
-            dict(kicker="L'obiettivo", titolo="Perché questa regola?",
-                 html='<div class="obiettivo" style="margin-top:120px;padding:90px 50px;font-size:110px"><span>Obiettivo primario</span>Muovere la palla</div>'),
+            dict(kicker="L'obiettivo", titolo="Perché due tocchi?",
+                 html='<div class="obiettivo"><span>Obiettivo primario</span>Muovere la palla</div><p class="desc">«In 40 × 40, se non muovi la palla in maniera veloce <b>non esci mai</b>: hai subito la gente addosso.»</p><p class="desc" style="color:#5d6b65;font-size:32px">Per Juniores e Prime Squadre.</p>'),
         ],
         fine_h1="Muovere<span>la palla</span>",
         fine_sub="Le idee dei quaderni escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
