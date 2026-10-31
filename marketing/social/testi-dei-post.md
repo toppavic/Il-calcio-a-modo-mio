@@ -226,3 +226,13 @@ Le idee dei quaderni escono prima sul canale WhatsApp «Il calcio a modo mio»: 
 
 **Didascalia TikTok**
 Il gol vale solo se l'hanno toccata tutti e due gli esterni. Una regola per insegnare alla squadra a muovere la palla. Salva il post. #allenatore #calcio #mister #partitaatema
+
+## Reel "La linea decide" (domenica 1/11, 19:00, IG + TikTok)
+Concetto dell'allenatore del 17/10: palla scoperta (portatore libero) → la linea scappa e toglie profondità; palla coperta (portatore pressato) → la linea accorcia in avanti. File `marketing/reel/reel-linea.html` → `reel-linea.mp4` (13 s). Prepara il Percorso 2 sulla linea: nessun rimando a Etsy.
+
+**Didascalia Instagram / TikTok**
+La linea decide.
+Palla scoperta: chi ha la palla è libero, la linea scappa e toglie profondità.
+Palla coperta: chi ha la palla è pressato, la linea accorcia in avanti.
+Salvalo e mandalo al tuo vice.
+#allenatore #calcio #mister #lineadifensiva #difesa

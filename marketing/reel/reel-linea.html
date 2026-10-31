@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><title>Reel La linea decide</title>
+<style>
+@font-face { font-family: Oswald; src: url(../../prodotti/gli-imbattibili/font/oswald.woff2) format("woff2"); font-weight: 200 700; }
+@font-face { font-family: Inter; src: url(../../prodotti/gli-imbattibili/font/inter.woff2) format("woff2"); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 1080px; height: 1920px; overflow: hidden; background: #08162a; font-family: Inter, sans-serif; color: #fff; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: radial-gradient(ellipse at 30% 25%, #173556 0%, #0e2440 45%, #08162a 100%); }
+.layer { position: absolute; inset: 0; }
+.kick { font-family: Oswald; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-size: 30px; color: #d4a017; }
+#campo .head { position: absolute; left: 60px; right: 60px; top: 180px; }
+#campo h2 { font-family: Oswald; font-weight: 700; text-transform: uppercase; font-size: 112px; line-height: .98; margin-top: 14px; }
+#campo h2 span { color: #d4a017; display: block; font-size: 112px; line-height: 1.02; }
+#campo svg { position: absolute; left: 197px; top: 540px; width: 686px; height: 960px; border-radius: 20px; }
+#wipe { position: absolute; left: 197px; top: 540px; width: 686px; height: 960px; border-radius: 20px; background: #0e2440; opacity: 0; }
+.cap { position: absolute; left: 60px; right: 60px; top: 1545px; font-size: 66px; line-height: 1.28; font-weight: 600; opacity: 0; }
+.cap b { color: #d4a017; font-weight: 800; }
+.logo { position: absolute; left: 50%; transform: translateX(-50%); -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); }
+#fine .logo { top: 300px; width: 520px; }
+#fine .txt { position: absolute; left: 80px; right: 80px; top: 730px; }
+h1 { font-family: Oswald; font-weight: 700; text-transform: uppercase; font-size: 140px; line-height: .94; margin: 20px 0 34px; }
+h1 span { color: #d4a017; display: block; }
+.sub { font-size: 42px; line-height: 1.4; color: #dbe4ee; }
+.sub b { color: #fff; }
+.azione { margin-top: 60px; font-family: Oswald; text-transform: uppercase; letter-spacing: .06em; font-size: 48px; color: #08162a; background: #d4a017; border-radius: 18px; padding: 28px 30px; text-align: center; font-weight: 700; }
+.azione2 { margin-top: 24px; font-family: Oswald; text-transform: uppercase; letter-spacing: .06em; font-size: 40px; border: 3px solid #d4a017; border-radius: 18px; padding: 24px 30px; text-align: center; }
+</style></head>
+<body><div id="stage">
+
+<div class="layer" id="campo">
+  <div class="head"><div class="kick">Dai quaderni del mister</div><h2>La linea<span>decide</span></h2></div>
+  <svg viewBox="0 0 400 560">
+    <defs>
+      <pattern id="strisce" width="400" height="60" patternUnits="userSpaceOnUse"><rect width="400" height="30" fill="#3f8f5a"/><rect y="30" width="400" height="30" fill="#46995f"/></pattern>
+    </defs>
+    <rect width="400" height="560" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="20" y="20" width="360" height="520"/><line x1="20" y1="280" x2="380" y2="280" stroke-dasharray="3 6"/><rect x="110" y="20" width="180" height="70"/></g>
+    <rect x="160" y="12" width="80" height="8" fill="#fff"/>
+    <rect id="prof" x="40" y="60" width="320" height="100" fill="#f2c230" fill-opacity=".16" stroke="#f2c230" stroke-width="2.5" stroke-dasharray="6 5" rx="8" opacity="0"/>
+    <text id="profT" x="200" y="0" fill="#f2c230" font-family="Oswald" font-size="20" letter-spacing="3" font-weight="700" text-anchor="middle" opacity="0">PROFONDITÀ</text>
+    <text id="lab1" x="32" y="548" fill="#fff" font-family="Oswald" font-size="17" letter-spacing="2" font-weight="600">PALLA SCOPERTA</text>
+    <text id="lab2" x="32" y="548" fill="#f2c230" font-family="Oswald" font-size="17" letter-spacing="2" font-weight="600">PALLA COPERTA</text>
+    <g id="giocatori"></g>
+    <circle id="palla" r="6.5" fill="#fff" stroke="#1d2421" stroke-width="1.8"/>
+  </svg>
+  <div id="wipe"></div>
+  <div class="cap" id="c0">Palla <b>scoperta</b>:<br>chi ha la palla è libero.</div>
+  <div class="cap" id="c1">La linea <b>scappa</b><br>e toglie profondità.</div>
+  <div class="cap" id="c3">Palla <b>coperta</b>:<br>chi ha la palla è pressato.</div>
+  <div class="cap" id="c4">La linea <b>accorcia</b><br>in avanti.</div>
+</div>
+
+<div class="layer" id="fine" style="background:#08162a; opacity:0">
+  <img class="logo" src="../../materiale/brand/logo-cerchio.png">
+  <div class="txt">
+    <h1>La linea<span>decide</span></h1>
+    <p class="sub">Palla scoperta: <b>la linea scappa</b>.<br>Palla coperta: <b>la linea accorcia</b>.</p>
+    <div class="azione">Salvalo</div>
+    <div class="azione2">Mandalo al tuo vice</div>
+  </div>
+</div>
+
+</div>
+<script>
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = x => { x = clamp(x); return x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2; };
+function kf(keys, t) {
+  if (t <= keys[0][0]) return [keys[0][1], keys[0][2]];
+  for (let i = 1; i < keys.length; i++) {
+    if (t <= keys[i][0]) { const a = keys[i-1], b = keys[i], k = ease((t - a[0]) / (b[0] - a[0])); return [a[1] + (b[1]-a[1])*k, a[2] + (b[2]-a[2])*k]; }
+  }
+  const l = keys[keys.length-1]; return [l[1], l[2]];
+}
+const T_END = 10.9, T_WIPE = 5.75;
+// Rossi: la nostra squadra, difende la porta in alto. Linea 2-5-6-3 da sinistra a destra, mediani 4 e 8.
+const NUM = ['', '2', '5', '6', '3', '4', '8'];
+const XL = [0, 85, 155, 245, 315, 160, 240];
+// scena A (palla scoperta): la linea parte a 200 e scappa a 135; scena B (palla coperta): parte a 170 e accorcia a 235.
+const Y = (i, a, b) => i <= 4 ? [a, b] : [a + 70, b + 70];
+const R = [[[0,200,34],[T_WIPE,200,34],[T_END,200,34]]];
+for (let i = 1; i <= 6; i++) {
+  const [ya1, ya2] = Y(i, 200, 135), [yb1, yb2] = Y(i, 170, 235);
+  R.push([[0, XL[i], ya1], [1.0, XL[i], ya1], [2.8, XL[i], ya2], [5.3, XL[i], ya2], [T_WIPE, XL[i], yb1], [7.4, XL[i], yb1], [8.6, XL[i], yb2], [T_END, XL[i], yb2]]);
+}
+// il mediano 8 va in pressione sul portatore nella scena B
+R[6] = [[0,240,270],[1.0,240,270],[2.8,240,205],[5.3,240,205],[T_WIPE,240,240],[6.3,240,240],[7.2,214,312],[T_END,214,312]];
+// Blu: portatore, due attaccanti, due esterni.
+const B = [
+  [[0,200,360],[T_WIPE,200,360],[T_END,200,335]],
+  [[0,150,250],[1.0,150,250],[2.8,145,190],[5.3,145,190],[T_WIPE,150,275],[T_END,150,275]],
+  [[0,255,245],[1.0,255,245],[2.8,262,185],[5.3,262,185],[T_WIPE,255,275],[T_END,255,275]],
+  [[0,70,320],[T_END,70,320]],
+  [[0,330,320],[T_END,330,320]],
+];
+function player(x, y, fill, stroke, n = '') {
+  return `<circle cx="${x}" cy="${y}" r="10" fill="${fill}" stroke="${stroke}" stroke-width="2"/>` + (n ? `<text x="${x}" y="${y + 4.3}" font-family="Oswald" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">${n}</text>` : '');
+}
+const line = (p, q, o, w = 3.5, c = '#f2c230', d = '') => o > 0.01 ? `<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="${c}" stroke-width="${w}" stroke-linecap="round" opacity="${o}" ${d ? 'stroke-dasharray="' + d + '"' : ''}/>` : '';
+const arrow = (p, q, o) => o > 0.01 ? `<path d="M${p[0]},${p[1]} L${q[0]},${q[1]}" stroke="#fff" stroke-width="2.5" fill="none" stroke-dasharray="7 5" opacity="${o}"/>` : '';
+const win = (t, a, z, f = .25) => clamp((t - a) / f) * (1 - clamp((t - (z - f)) / f));
+const seg = (id, t, a, z) => document.getElementById(id).style.opacity = win(t, a, z, .3);
+
+function draw(t) {
+  const el = id => document.getElementById(id);
+  el('fine').style.opacity = clamp((t - T_END) / .5);
+  el('wipe').style.opacity = win(t, 5.35, 6.2, .35);
+  const w = (i, a) => [Math.sin(t * 2.1 + i) * 1.3 * a, Math.cos(t * 1.7 + i * 2) * 1.3 * a];
+  const b = B.map(k => kf(k, t));
+  const r = R.map(k => kf(k, t));
+  // profondità alle spalle della linea: si riduce quando la linea scappa
+  const lineY = r[2][1];
+  const po = win(t, .6, 5.2, .4);
+  el('prof').setAttribute('y', 95); el('prof').setAttribute('height', Math.max(0, lineY - 110));
+  el('prof').setAttribute('opacity', po);
+  el('profT').setAttribute('y', 95 + Math.max(0, lineY - 110) / 2 + 7); el('profT').setAttribute('opacity', po * clamp((lineY - 125) / 20));
+  let s = '';
+  // la linea compatta: catena tra i quattro difensori
+  const k = Math.max(win(t, .4, 5.3, .4), win(t, 6.3, 10.7, .4)) * .85;
+  for (let i = 2; i <= 4; i++) s += line(r[i-1], r[i], k, 2.5, '#ffffff', '2 6');
+  // scena A: attaccanti che cercano la profondità
+  s += arrow([150,250], b[1], win(t, 1.0, 5.2, .3) * .9) + arrow([255,245], b[2], win(t, 1.0, 5.2, .3) * .9);
+  // scena B: pressione sul portatore
+  s += line(r[6], b[0], win(t, 6.6, 10.7, .3), 4);
+  s += player(r[0][0], r[0][1], '#f2c230', '#1d2421');
+  b.forEach((p, i) => { const q = w(i + 3, .5); s += player(p[0]+q[0], p[1]+q[1], '#2a5db0', '#fff'); });
+  r.slice(1).forEach((p, i) => { const q = w(i + 11, .6); s += player(p[0]+q[0], p[1]+q[1], '#c8372d', '#fff', NUM[i + 1]); });
+  el('giocatori').innerHTML = s;
+  el('lab1').style.opacity = win(t, .2, 5.4, .4);
+  el('lab2').style.opacity = win(t, 6.2, 10.7, .4);
+  el('palla').setAttribute('cx', b[0][0]); el('palla').setAttribute('cy', b[0][1] - 13);
+  seg('c0', t, .3, 2.6); seg('c1', t, 2.6, 5.5);
+  seg('c3', t, 6.3, 8.4); seg('c4', t, 8.4, 10.8);
+}
+draw(0);
+</script></body></html>
