@@ -227,12 +227,14 @@ Le idee dei quaderni escono prima sul canale WhatsApp «Il calcio a modo mio»: 
 **Didascalia TikTok**
 Il gol vale solo se l'hanno toccata tutti e due gli esterni. Una regola per insegnare alla squadra a muovere la palla. Salva il post. #allenatore #calcio #mister #partitaatema
 
-## Reel "La linea decide" (domenica 1/11, 19:00, IG + TikTok)
-Concetto dell'allenatore del 17/10: palla scoperta (portatore libero) → la linea scappa e toglie profondità; palla coperta (portatore pressato) → la linea accorcia in avanti. File `marketing/reel/reel-linea.html` → `reel-linea.mp4` (13 s). Prepara il Percorso 2 sulla linea: nessun rimando a Etsy.
+## Reel "La linea decide" (domenica 1/11, 19:00, IG + TikTok, 17 s)
+Concetto dell'allenatore del 17/10: palla scoperta (portatore libero) → la linea scappa e toglie profondità; palla coperta (portatore pressato) → la linea accorcia in avanti. Finale voluto dall'allenatore (31/10): "è quello che ci hanno sempre insegnato, ma come si insegna davvero?" → la progressione del Percorso 1 su Etsy (la ricerca del portiere allena anche la linea a restare compatta e togliere le filtranti, concetto suo del 17/10). File `marketing/reel/reel-linea.html` → `reel-linea.mp4`.
 
-**Didascalia Instagram / TikTok**
-La linea decide.
-Palla scoperta: chi ha la palla è libero, la linea scappa e toglie profondità.
-Palla coperta: chi ha la palla è pressato, la linea accorcia in avanti.
-Salvalo e mandalo al tuo vice.
+**Didascalia Instagram**
+Palla scoperta: la linea scappa e toglie profondità. Palla coperta: la linea accorcia.
+È quello che ci hanno sempre insegnato. Ma come si insegna davvero a una squadra?
+Con una progressione. Percorso 1, La ricerca del portiere: 7 tappe. Link in bio.
 #allenatore #calcio #mister #lineadifensiva #difesa
+
+**Didascalia TikTok**
+Palla scoperta: la linea scappa. Palla coperta: la linea accorcia. È quello che ci hanno sempre insegnato. Ma come si insegna davvero? Percorso 1, La ricerca del portiere, su Etsy: ilcalcioamodomio. #allenatore #calcio #mister #lineadifensiva

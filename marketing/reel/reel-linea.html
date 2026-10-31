@@ -50,13 +50,21 @@ h1 span { color: #d4a017; display: block; }
   <div class="cap" id="c4">La linea <b>accorcia</b><br>in avanti.</div>
 </div>
 
+<div class="layer" id="domanda" style="background:#08162a; opacity:0">
+  <div class="txt" style="position:absolute;left:80px;right:80px;top:640px">
+    <p class="sub" style="font-size:64px;line-height:1.25;color:#dbe4ee">È quello che ci hanno<br>sempre insegnato.</p>
+    <h1 style="margin-top:70px">Ma come<span>si insegna davvero?</span></h1>
+  </div>
+</div>
+
 <div class="layer" id="fine" style="background:#08162a; opacity:0">
   <img class="logo" src="../../materiale/brand/logo-cerchio.png">
   <div class="txt">
-    <h1>La linea<span>decide</span></h1>
-    <p class="sub">Palla scoperta: <b>la linea scappa</b>.<br>Palla coperta: <b>la linea accorcia</b>.</p>
-    <div class="azione">Salvalo</div>
-    <div class="azione2">Mandalo al tuo vice</div>
+    <div class="kick">Dai quaderni del mister · Percorso 1</div>
+    <h1>La ricerca<span>del portiere</span></h1>
+    <p class="sub">Una <b>progressione in 7 tappe</b>. Allena anche la linea a restare compatta e a togliere le filtranti.</p>
+    <div class="azione">Su Etsy: ilcalcioamodomio</div>
+    <div class="azione2">Link in bio</div>
   </div>
 </div>
 
@@ -71,7 +79,7 @@ function kf(keys, t) {
   }
   const l = keys[keys.length-1]; return [l[1], l[2]];
 }
-const T_END = 10.9, T_WIPE = 5.75;
+const T_END = 10.9, T_WIPE = 5.75, T_FINE = 14.0;
 // Rossi: la nostra squadra, difende la porta in alto. Linea 2-5-6-3 da sinistra a destra, mediani 4 e 8.
 const NUM = ['', '2', '5', '6', '3', '4', '8'];
 const XL = [0, 85, 155, 245, 315, 160, 240];
@@ -102,7 +110,8 @@ const seg = (id, t, a, z) => document.getElementById(id).style.opacity = win(t, 
 
 function draw(t) {
   const el = id => document.getElementById(id);
-  el('fine').style.opacity = clamp((t - T_END) / .5);
+  el('domanda').style.opacity = win(t, T_END, T_FINE + .4, .5);
+  el('fine').style.opacity = clamp((t - T_FINE) / .5);
   el('wipe').style.opacity = win(t, 5.35, 6.2, .35);
   const w = (i, a) => [Math.sin(t * 2.1 + i) * 1.3 * a, Math.cos(t * 1.7 + i * 2) * 1.3 * a];
   const b = B.map(k => kf(k, t));
