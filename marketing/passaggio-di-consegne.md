@@ -171,3 +171,6 @@ La sessione precedente (session_01Y6imChDnJpMKHUHGGzDa7m) era al 75% del contest
 
 ## 30/10 – Post 11 programmato e link del canale in bio
 Post 11 (gol solo con gli esterni) programmato dall'allenatore per sabato 31/10 alle 13:00 su IG/FB (TikTok programmato o da pubblicare alle 13). Link del canale WhatsApp aggiunto nella bio IG sotto quello di Etsy (Etsy resta primo). Da preparare per sabato mattina: Reel "La linea decide" per domenica 19:00 (sì/no dell'allenatore).
+
+## 1/11 – Reel "La linea decide" programmato (IG + TikTok, 19:00)
+Nota per i prossimi Reel: fare **due versioni del finale**, una per Instagram con "Link in bio" e una per TikTok senza (su TikTok non c'è link in bio). Questa volta l'allenatore l'ha lasciato così anche su TikTok.
