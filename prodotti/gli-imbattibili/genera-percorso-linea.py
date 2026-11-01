@@ -176,7 +176,7 @@ guida = f'''<section class="page">
   <div class="kicker">Guida al percorso</div>
   <div class="ex-title"><h2>Difendere la palla, non gli uomini</h2></div>
   <div class="testo" style="margin-top:5mm">
-    <p>Il percorso insegna alla <b>linea a 4</b> a difendere lavorando sulla palla. Si parte dalla coppia, nel 2 contro 2, e si arriva alla linea con i due mediani contro dieci attaccanti. Tappa dopo tappa gli attaccanti crescono più dei difensori: in inferiorità non si può marcare l'uomo, si deve leggere la palla, attaccarla con il giocatore più vicino e coprire con gli altri.</p>
+    <p>Il percorso insegna alla <b>linea a 4</b> a difendere lavorando sulla palla. Si parte dalla coppia, nel 2 contro 2, e si arriva alla linea con i due mediani contro dieci attaccanti. La progressione aumenta gradualmente la complessità delle situazioni difensive, dalla coppia alla linea a quattro fino al blocco con i due mediani. In inferiorità numerica diventa fondamentale leggere la palla, attaccarla con il giocatore più vicino e garantire le coperture con gli altri.</p>
     <p>Ogni tappa si gioca <b>a partita</b>: chi segna resta in campo. È questo che fa la differenza, perché i giocatori diventano molto più aggressivi. E non si allena solo la fase difensiva: chi attacca deve fare gol, dal 2 contro 4 c'è il fuorigioco e chi difende, quando recupera, deve giocare bene il primo pallone.</p>
     <p>I giocatori lavorano <b>sempre nel loro ruolo</b> e le coppie non si mescolano: due esterni, due punte, due centrocampisti, due terzini, due centrali. Così ogni reparto si abitua a lavorare con gli altri.</p>
   </div>
