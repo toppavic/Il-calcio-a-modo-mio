@@ -201,7 +201,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
   dal 4c6 porticine esterne da 6 m all'altezza della porta mobile con un riferimento. Campi 2c2 18 × 24, 2c4 30 × 24 (proposta), dal 4c6 metà campo. Tempi 4 × 1'30"
   (rec. 30-40") nel 2c2 e 2c4, poi 4 × 5' (rec. 1'30"; l'adattamento dopo lavoro fisico intenso non è ricordato: solo nota editoriale). Ruoli fissi, coppie mai miste. Dati in
   `prodotti/percorsi/linea-difende-la-palla/bozza.md`; PDF 10 pagine + copertina da `genera-percorso-linea.py` (copertina blu notte). Metodo "coppie per ruolo"
-  (2c2 del venerdì, 4c4/5c5) = idea per un percorso futuro. L'allenatore teme che il metodo venga copiato: deciso tutto nel PDF, nei post solo assaggi, nota © nel PDF.
+  (2c2 del venerdì, 4c4/5c5) = idea per un percorso futuro. L'allenatore teme che il metodo venga copiato: deciso tutto nel PDF, nei post solo assaggi, nota © nel PDF. **1/11: PDF pronto (11 pagine) in `prodotti/percorsi/linea-difende-la-palla/`; uscita Etsy approvata per martedì 17/11 a 6,90 €, preceduta da 2 settimane di post sulla linea (un principio per post, mai l'esercitazione completa); annuncio da preparare la settimana del 9/11.**
 - (storico) Percorso "Ricerca del portiere" (**7 tappe**, confermate il 17/10): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,
   **non impaginare finché l'allenatore non approva il pacchetto**.
   **20/10 sera, rifatto (l'allenatore: la prima versione era confusa)**. Regole per tutti i percorsi:
