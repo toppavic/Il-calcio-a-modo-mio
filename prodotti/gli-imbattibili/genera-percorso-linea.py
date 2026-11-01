@@ -166,7 +166,7 @@ copertina = f'''<section class="page cop">
     <div class="kick">Il calcio a modo mio · Dai quaderni del mister · Percorso 2</div>
     <h1>La linea che<span>difende la palla</span></h1>
     <div class="claim">Si difende la palla, non gli uomini.</div>
-    <p class="sub"><b>6 tappe in inferiorità crescente</b>, dal 2 contro 2 al 6 contro 10, sempre a partita: chi segna resta in campo.</p>
+    <p class="sub"><b>6 tappe progressive</b>, dalla coppia alla linea difensiva con i due mediani, contro un numero crescente di attaccanti. Sempre a partita: chi segna resta in campo.</p>
   </div>
 </section>'''
 
@@ -236,7 +236,8 @@ righe = "".join(f'<tr><td class="n">{i}</td><td class="m">{a}</td><td>{b}</td><t
                 for i, (a, b, c, d, e) in enumerate(QUADRO, 1))
 NOTE_TEMPI = lista([
       "<b>2 contro 2 e 2 contro 4:</b> 4 tempi da 1'30\" con 30-40\" di recupero.",
-      "<b>Dal 4 contro 6:</b> 4 tempi da 5' con 1'30\" di recupero, per non perdere tempo. Se nella seduta c'è già stato un lavoro fisico importante, tempi da 3': è un lavoro molto impegnativo.",
+      "<b>Dal 4 contro 6:</b> 4 tempi da 5' con 1'30\" di recupero, per non perdere tempo.",
+      "<i>Nota editoriale:</i> Se la seduta comprende già un carico fisico importante, l'allenatore può ridurre la durata dei tempi o aumentare il recupero, adattando il lavoro alle condizioni del gruppo.",
       "Metà campo: 52,5 × 68 m su un campo regolamentare."])
 quadro = f'''<section class="page">
   <div class="kicker">La progressione</div>
@@ -357,7 +358,7 @@ c6.didascalia("RECUPERO · SI ATTRAVERSA LA PORTICINA")
 t6 = tappa(6, "6 contro 10", "Tutto insieme contro dieci",
     "il blocco di sei difende la palla contro dieci attaccanti, mettendo insieme tutto il percorso: attacco e copertura, scivolamento, profondità, mediani davanti alla linea.",
     "La linea 2-5-6-3 con i mediani 4 e 8.", "Punte, esterni, centrocampisti, terzini e i due centrali.",
-    "Tutta la metà campo, 52,5 × 68 m", "4 tempi da 5' · recupero 1'30\" (3' dopo un lavoro fisico pesante)", c6.svg(),
+    "Tutta la metà campo, 52,5 × 68 m", "4 tempi da 5' · recupero 1'30\"", c6.svg(),
     ["Le regole a partita, con il fuorigioco.", "La difesa che recupera deve attraversare una porticina palla al piede, senza tirare."],
     ["Entrano i due centrali: gli attaccanti diventano dieci.", "Nessuna regola nuova: si verifica se il blocco difende da solo."],
     ["Si difende la palla anche quando gli uomini liberi sono tanti.", "Ogni uscita ha la sua copertura.", "La linea sceglie da sola quando proteggere la profondità e quando accorciare."],
@@ -369,7 +370,7 @@ nota = f'''<section class="page">
   <div class="ex-title"><h2>Non avere fretta</h2></div>
   <div class="testo" style="margin-top:5mm">
     <p>Il percorso non va affrontato con la fretta di arrivare al 6 contro 10. Ogni tappa va assimilata prima di passare alla successiva: si va avanti quando i comportamenti indicati in fondo alla pagina si vedono con regolarità, senza continue indicazioni dell'allenatore. Se non succede, si ripropone la stessa tappa nelle sedute successive.</p>
-    <p>Il lavoro è molto impegnativo dal punto di vista fisico: con tempi da 5' e recuperi brevi l'intensità resta alta. Se nella seduta c'è già stato un lavoro fisico importante, meglio passare ai tempi da 3'.</p>
+    <p>Il lavoro è molto impegnativo dal punto di vista fisico: con tempi da 5' e recuperi brevi l'intensità resta alta. <i>Nota editoriale:</i> Se la seduta comprende già un carico fisico importante, l'allenatore può ridurre la durata dei tempi o aumentare il recupero, adattando il lavoro alle condizioni del gruppo.</p>
     <p>Il numero ideale è almeno 20 giocatori, ma il percorso si adatta anche a 16: si cambia il numero dei gruppi, non il ruolo dei giocatori.</p>
   </div>
   <p class="copy">© Il calcio a modo mio · Dai quaderni del mister. Materiale per uso personale: è vietata la diffusione, la copia e la rivendita.</p>

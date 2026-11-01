@@ -199,7 +199,7 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - **Percorso 2 "La linea che difende la palla" (29/10, idea dell'allenatore)**: difendere la palla e non gli uomini, 6 tappe 2c2 · 2c4 · 4c6 · 4c8 · 6c8 · 6c10,
   sempre a partita (chi segna resta, palla fuori si cambiano tutti, il proprio portiere al massimo una volta, fuorigioco dal 2c4). Porta vera + porta mobile;
   dal 4c6 porticine esterne da 6 m all'altezza della porta mobile con un riferimento. Campi 2c2 18 × 24, 2c4 30 × 24 (proposta), dal 4c6 metà campo. Tempi 4 × 1'30"
-  (rec. 30-40") nel 2c2 e 2c4, poi 4 × 5' (rec. 1'30", 3' dopo lavoro fisico pesante). Ruoli fissi, coppie mai miste. Dati in
+  (rec. 30-40") nel 2c2 e 2c4, poi 4 × 5' (rec. 1'30"; l'adattamento dopo lavoro fisico intenso non è ricordato: solo nota editoriale). Ruoli fissi, coppie mai miste. Dati in
   `prodotti/percorsi/linea-difende-la-palla/bozza.md`; PDF 10 pagine + copertina da `genera-percorso-linea.py` (copertina blu notte). Metodo "coppie per ruolo"
   (2c2 del venerdì, 4c4/5c5) = idea per un percorso futuro. L'allenatore teme che il metodo venga copiato: deciso tutto nel PDF, nei post solo assaggi, nota © nel PDF.
 - (storico) Percorso "Ricerca del portiere" (**7 tappe**, confermate il 17/10): contenuti in costruzione in `prodotti/percorsi/ricerca-del-portiere/bozza.md`,

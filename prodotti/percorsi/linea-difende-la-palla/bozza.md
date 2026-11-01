@@ -50,3 +50,4 @@ Dal 4c6 in poi: tutta la metà campo, 52,5 × 68 m (allenatore, 29/10).
   Dal 4c6: 4 tempi da 5' con 1'30" di recupero (3' se c'è stato un lavoro fisico pesante).
   Attaccanti: 4c6 = 2 punte + 2 esterni + 2 centrocampisti; 4c8 e 6c8 = + 2 terzini; 6c10 = + 2 difensori centrali.
   Bozza approvata con queste modifiche → si impagina.
+- 01/11: l'allenatore non ricorda se dopo un lavoro fisico intenso riduceva i tempi a 3' o portava il recupero a 3'. Riferimento: 4 × 5' con 1'30" di recupero; nel PDF solo una nota editoriale sull'adattamento.
