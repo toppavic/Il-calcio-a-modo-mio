@@ -43,3 +43,6 @@ Scelto dall'allenatore. Idea sua del 2/10: lavora in inferiorità (4c6, 4c8, 4c1
 
 ## Canale WhatsApp (29/10)
 Creato dall'allenatore il 29/10 alle 13:52: "Il calcio a modo mio". Link: https://whatsapp.com/channel/0029Vb8tj95DOQIbqWqHwL1m — 0 iscritti. Descrizione: «Gli appunti di un allenatore di calcio dilettanti. Qui escono per primi i nuovi percorsi «Dai quaderni del mister» e le novità del negozio.» Prossimi passi: primo messaggio di benvenuto, poi il link nella bio e nei post (un solo rimando a settimana). Obiettivo 50 iscritti in 30 giorni.
+
+## 1/11 – Canale WhatsApp: 3 iscritti, nessuno allenatore
+Decisione dell'allenatore: il messaggio della domenica non si pubblica finché nel canale non ci sono allenatori. Claude: d'accordo. Il canale resta con il messaggio di benvenuto; gli iscritti arrivano dal link in bio IG e da una riga nei caroselli (una volta a settimana). Si riprende il messaggio settimanale quando gli iscritti superano 15-20 o arriva il primo allenatore; nuova valutazione al controllo del 15/11.
