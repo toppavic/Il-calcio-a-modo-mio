@@ -46,3 +46,7 @@ Creato dall'allenatore il 29/10 alle 13:52: "Il calcio a modo mio". Link: https:
 
 ## 1/11 – Canale WhatsApp: 3 iscritti, nessuno allenatore
 Decisione dell'allenatore: il messaggio della domenica non si pubblica finché nel canale non ci sono allenatori. Claude: d'accordo. Il canale resta con il messaggio di benvenuto; gli iscritti arrivano dal link in bio IG e da una riga nei caroselli (una volta a settimana). Si riprende il messaggio settimanale quando gli iscritti superano 15-20 o arriva il primo allenatore; nuova valutazione al controllo del 15/11.
+
+## 1/11 – Percorso 2 "La linea che difende la palla" pronto (PDF 11 pagine, dall'altra conversazione)
+File: `prodotti/percorsi/linea-difende-la-palla/Dai-quaderni-del-mister_Percorso-2_La-linea-che-difende-la-palla.pdf`. 6 tappe 2c2 → 6c10, principio "si difende la palla, non gli uomini".
+Piano di uscita (deciso da Claude, da confermare con un sì): **uscita su Etsy martedì 17/11** a 6,90 € (come il Percorso 1), dopo 2 settimane di post preparatori sulla linea (il Reel "La linea decide" del 1/11 è il primo). Caroselli preparatori: una tappa e un principio ciascuno, mai l'esercitazione completa (temi: chi attacca la palla e chi copre · la coppia in inferiorità · la linea scivola con la palla · i mediani davanti alla linea). Annuncio, foto e copertina Etsy da preparare la settimana del 9/11. Il pacchetto 1-20 resta al 3/12.
