@@ -55,6 +55,7 @@ class Campo:
         self.fl, self.fw = L * self.s, W * self.s
         self.x0, self.y0 = 45, 25
         self.zoom = .255
+        self.etichetta = None
         self.parti = []
         self.sotto = ""
 
@@ -114,7 +115,7 @@ class Campo:
         portieri = (f'<use href="#pP" x="{X(0) + 6:.0f}" y="{Y(c):.0f}"/>'
                     f'<use href="#pP" x="{X(L) - 6:.0f}" y="{Y(c):.0f}"/>')
         lab = (testo(X(0) + 6, Y(c) - 26, "PORTA", "#ffffff", 9) + testo(X(L) - 6, Y(c) - 26, "MOBILE", "#ffffff", 9)
-               + testo(self.x0 + self.fl / 2, self.y0 + self.fw + 18, f"{str(L).replace('.', ',')} × {str(W).replace('.', ',')} M", "#ffffff", 10)
+               + testo(self.x0 + self.fl / 2, self.y0 + self.fw + 18, self.etichetta or f"{str(L).replace('.', ',')} × {str(W).replace('.', ',')} M", "#ffffff", 10)
                + (testo(self.x0 + self.fl / 2, self.y0 + self.fw + 38, self.sotto, "#f2c230", 11) if self.sotto else ""))
         larghezza = larghezza or f"{min(vw * self.zoom, 150):.0f}mm"
         return f'''<svg class="diagram" viewBox="0 0 {vw:.0f} {vh:.0f}" style="width:{larghezza};margin:0 auto">
@@ -237,7 +238,7 @@ righe = "".join(f'<tr><td class="n">{i}</td><td class="m">{a}</td><td>{b}</td><t
 NOTE_TEMPI = lista([
       "<b>2 contro 2 e 2 contro 4:</b> 4 tempi da 1'30\" con 30-40\" di recupero.",
       "<b>Dal 4 contro 6:</b> 4 tempi da 5' con 1'30\" di recupero, per non perdere tempo.",
-      "<i>Nota editoriale:</i> Se la seduta comprende già un carico fisico importante, l'allenatore può ridurre la durata dei tempi o aumentare il recupero, adattando il lavoro alle condizioni del gruppo.",
+      "<i>Nota editoriale:</i> se la seduta comprende già un carico fisico importante, l'allenatore può ridurre la durata dei tempi o aumentare il recupero, adattando il lavoro alle condizioni del gruppo.",
       "Metà campo: 52,5 × 68 m su un campo regolamentare."])
 quadro = f'''<section class="page">
   <div class="kicker">La progressione</div>
@@ -254,6 +255,7 @@ quadro = f'''<section class="page">
 # ======================================================================
 # LE 6 TAPPE
 c1 = Campo(24, 18.32)
+c1.etichetta = "18 × 24 M"
 c1.zoom = .22
 c1.g(10, 5, "pB", 2); c1.g(10, 13, "pB", 5)
 c1.g(19, 5, "pA"); c1.g(17, 13, "pA"); c1.palla(19, 5)
@@ -271,12 +273,13 @@ t1 = tappa(1, "2 contro 2", "Chi attacca la palla, chi copre",
     ["La coppia accorcia sempre sul portatore e i tiri da fuori area diminuiscono.", "Chi copre si trova al posto giusto senza indicazioni.", "Le coppie che recuperano palla segnano nella porta mobile."])
 
 c2 = Campo(24, 30)
+c2.etichetta = "30 × 24 M"
 c2.g(10, 11, "pB", 2); c2.g(10, 19, "pB", 5)
 c2.g(17, 4, "pA"); c2.g(17, 26, "pA"); c2.g(14, 12, "pA"); c2.g(14, 18, "pA"); c2.palla(17, 4)
 c2.freccia(10, 11, 15, 6); c2.freccia(10, 19, 11, 13.5)
 c2.linea_fuorigioco(9.2); c2.scritta(8.2, 29, "FUORIGIOCO", "#ffffff", 9)
 t2 = tappa(2, "2 contro 4", "La coppia in inferiorità",
-    "in due contro quattro non si può marcare l'uomo: la coppia sceglie la palla, la attacca con il più vicino e copre lo spazio più pericoloso.",
+    "in inferiorità numerica la coppia legge la palla, la attacca con il più vicino e copre lo spazio più pericoloso.",
     "Una coppia, a rotazione come nel 2 contro 2.", "Una coppia di esterni con le due punte o con i due centrocampisti: le coppie non si mescolano.",
     "30 × 24 m: più largo, stessa lunghezza", "4 tempi da 1'30\" · recupero 30-40\"", c2.svg(),
     ["Le regole del 2 contro 2.", "Comincia il fuorigioco.", "La coppia che recupera deve fare gol nella porta mobile, a 24 m."],
@@ -324,7 +327,7 @@ t4 = tappa(4, "4 contro 8", "Proteggere la profondità",
     ["Le regole a partita, con il fuorigioco.", "La difesa che recupera trova il portiere della porta mobile o il giocatore in una porticina, senza tirare."],
     ["Entrano i due terzini: gli attaccanti diventano otto.", "La linea deve scegliere quando proteggere la profondità e quando salire."],
     ["Con la palla scoperta la linea arretra insieme, prima che parta il passaggio.", "Con la palla coperta la linea accorcia e usa il fuorigioco.", "Il più vicino attacca la palla solo se i compagni coprono."],
-    ["Uscire sulla palla lasciando la profondità scoperta.", "Un difensore disallineato che tiene in gioco tutti.", "Inseguire i terzini che si sovrappongono."],
+    ["Uscire sulla palla lasciando la profondità scoperta.", "Un difensore disallineato che concede profondità.", "Inseguire i terzini che si sovrappongono."],
     ["La linea arretra e sale insieme, in base alla palla.", "I passaggi alle spalle della linea diminuiscono.", "Il fuorigioco è usato con i tempi giusti."])
 
 c5 = Campo(52.5, 68, porticine=True)
@@ -370,7 +373,7 @@ nota = f'''<section class="page">
   <div class="ex-title"><h2>Non avere fretta</h2></div>
   <div class="testo" style="margin-top:5mm">
     <p>Il percorso non va affrontato con la fretta di arrivare al 6 contro 10. Ogni tappa va assimilata prima di passare alla successiva: si va avanti quando i comportamenti indicati in fondo alla pagina si vedono con regolarità, senza continue indicazioni dell'allenatore. Se non succede, si ripropone la stessa tappa nelle sedute successive.</p>
-    <p>Il lavoro è molto impegnativo dal punto di vista fisico: con tempi da 5' e recuperi brevi l'intensità resta alta. <i>Nota editoriale:</i> Se la seduta comprende già un carico fisico importante, l'allenatore può ridurre la durata dei tempi o aumentare il recupero, adattando il lavoro alle condizioni del gruppo.</p>
+    <p>Il lavoro è molto impegnativo dal punto di vista fisico: con tempi da 5' e recuperi brevi l'intensità resta alta. <i>Nota editoriale:</i> se la seduta comprende già un carico fisico importante, l'allenatore può ridurre la durata dei tempi o aumentare il recupero, adattando il lavoro alle condizioni del gruppo.</p>
     <p>Il numero ideale è almeno 20 giocatori, ma il percorso si adatta anche a 16: si cambia il numero dei gruppi, non il ruolo dei giocatori.</p>
   </div>
   <p class="copy">© Il calcio a modo mio · Dai quaderni del mister. Materiale per uso personale: è vietata la diffusione, la copia e la rivendita.</p>
