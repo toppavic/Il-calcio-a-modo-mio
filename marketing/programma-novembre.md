@@ -6,10 +6,10 @@
 | Lunedì | Diario "Appunti 2.0" 18:00 (conversazione Facebook) |
 | Martedì | Carosello 13:00 IG + TikTok · mattina: invio romanzo (dal calendario) |
 | Mercoledì | Diario Fiorentina (conversazione Facebook) · campo 18-21 |
-| Giovedì | Carosello 13:00 IG + TikTok |
+| Giovedì | Carosello 13:00 IG + TikTok · prima immagine anche in **un gruppo Facebook di allenatori** (due righe + una domanda, testo di Claude, un gruppo diverso ogni settimana) |
 | Venerdì | Screenshot statistiche Etsy · campo 18-21 |
 | Sabato | Carosello 13:00 IG + TikTok · mattina: invio romanzo |
-| Domenica | Reel 19:00 · sera screenshot della settimana + iscritti canale WhatsApp |
+| Domenica | Reel 19:00, su Instagram come **Reel di prova** (mostrato prima a chi non segue) · sera screenshot della settimana + iscritti canale WhatsApp + follower Facebook |
 
 ## Date da ricordare
 | Data | Cosa |
@@ -29,4 +29,4 @@
 | sab 28 | **Invio a Elliot** · controllo finale del piano dei 30 giorni |
 | fine mese | Claude prepara il pacchetto "Gli Imbattibili 1-20" per il 3/12 |
 
-Obiettivi al 28/11: 20 visite Etsy a settimana · 3 vendite · TikTok 200 follower (168 il 1/11) · canale WhatsApp 50 iscritti.
+Obiettivi al 28/11: 20 visite Etsy a settimana · 3 vendite · TikTok 200 follower (168 il 1/11) · **Instagram 4.100** (4.015 il 1/11) · **Facebook 1.300** (1.247 il 2/11) · canale WhatsApp 50 iscritti.
