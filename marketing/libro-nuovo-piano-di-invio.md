@@ -80,6 +80,7 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | entro 10/4/2027 | Premio Navarro (scade 15/4) | email + copia cartacea (Chi apre perde) |
 
 **Secondo romanzo "Dove suona la musica"** (piano nella pagina Claude Docs https://claude.ai/artifact/9tLVjfVwNVECbicntwYC5u, fatta il 2/11 in un'altra conversazione): Premio Da Ponte (entro metà febbraio 2027, 7 copie anonime di carta), Premio Todaro-Faranda (entro il 20/2/2027) e **Premio Calvino** (luglio-ottobre 2027) vanno a *Dove suona la musica*; poi gli editori non usati per *Chi apre perde* da ottobre 2027. Regola: **un libro per destinazione**.
+Preparazione di *Dove suona la musica* (da ricordare nei promemoria, una cosa per volta): **sab 9/1/2027** contare le battute (Da Ponte 100.000-250.000) e chiedere il testo definitivo · **gennaio** sinossi corta da 8 righe, nota biografica, manoscritto .docx/.pdf (Garamond 12, 1,5) e **versione anonima** per il Da Ponte · **entro il 10/2** iscrizione sul sito Diastema e caricamento file · **entro il 15/2** stampa e spedizione delle 7 copie · **entro il 20/2** Todaro-Faranda. Il testo del romanzo non è nel repository (opera inedita).
 
 ### Testo della mail agli editori (nomi aggiornati il 2/11)
 Oggetto: Proposta di manoscritto – «Chi apre perde», romanzo inedito
