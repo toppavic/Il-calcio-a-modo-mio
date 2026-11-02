@@ -58,7 +58,7 @@ Link: https://claude.ai/artifact/EKfDgDMAxM81HJDnYVNnM3 — letto il 2/11; il 2/
 | prima del 17/10/2026 | Premio Dostoevskij (Aletti), sezione inedita gratuita | (dal documento Claude Docs) | risultati dopo il 21/12/2026 |
 | 29/10/2026 | Edizioni E/O | modulo online (sinossi, motivazione, ultimo libro E/O letto, estratto PDF Prologo + cap. 1-2 in 28 pagine, genere «Narrativa non di genere»); pagina «proposta ricevuta», nessun'altra conferma | nessuna: se non rispondono entro 6 mesi (fine aprile 2027) è un no; non scrivere a E/O |
 
-## Calendario degli invii (approvato dall'allenatore il 2/11/2026)
+## Calendario degli invii (approvato dall'allenatore il 2/11/2026; unificato con il secondo romanzo il 2/11 nella pagina "Piano di invio dei romanzi", https://claude.ai/artifact/EKfDgDMAxM81HJDnYVNnM3)
 Un invio alla volta, **martedì e sabato mattina** (la sua ora di scrittura). Il promemoria del mattino glielo dice il giorno stesso, con la mail pronta da copiare. Prima di ogni invio Claude controlla sul sito dell'editore indirizzo e regole (anche sull'IA); dopo, segna l'invio qui e nel documento Claude Docs.
 Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il testo è inedito): `Falleri_Chi-apre-perde_manoscritto.pdf` e `.docx` (Times 12, interlinea 1,5, pagine numerate, nome ed email in prima pagina, 71 pagine) · `Falleri_Chi-apre-perde_sinossi.pdf` · `Falleri_Chi-apre-perde_nota-biografica.pdf`. Mandati all'allenatore il 2/11: li tiene sul telefono/Mac.
 
@@ -75,14 +75,11 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | sab 5/12 | Nutrimenti | manoscritti@nutrimenti.net |
 | mar 8/12 | Fernandel | fernandel@fernandel.it |
 | sab 12/12 | Castelvecchi | manoscritti@castelvecchieditore.com |
-| mar 15/12 | Giunti / Bompiani | direzioneeditoriale@giunti.it |
-| sab 19/12 | Mondadori | segreteria.letteraria@mondadori.it |
-| mar 22/12 | Adelphi | manoscritti@adelphi.it (un solo file sotto 5 MB: sinossi + nota + manoscritto) |
-| gennaio 2027 | Fazi | modulo online quando riapre |
-| gennaio-aprile 2027 | IoScrittore | iscrizione sulla piattaforma |
-| entro 20/2/2027 | Premio Todaro-Faranda (scade 28/2) | regolamento PDF, regola sull'IA |
-| entro 10/4/2027 | Premio Navarro (scade 15/4) | email + copia cartacea |
-| luglio-ottobre 2027 | Premio Calvino | dal sito, quando esce il bando |
+| gennaio 2027 | Giunti/Bompiani, Mondadori, Adelphi, Fazi | **da decidere a quale dei due romanzi** (un editore per un solo libro) |
+| gennaio-aprile 2027 | IoScrittore | iscrizione sulla piattaforma (Chi apre perde) |
+| entro 10/4/2027 | Premio Navarro (scade 15/4) | email + copia cartacea (Chi apre perde) |
+
+**Secondo romanzo "Dove suona la musica"** (piano nella pagina Claude Docs https://claude.ai/artifact/9tLVjfVwNVECbicntwYC5u, fatta il 2/11 in un'altra conversazione): Premio Da Ponte (entro metà febbraio 2027, 7 copie anonime di carta), Premio Todaro-Faranda (entro il 20/2/2027) e **Premio Calvino** (luglio-ottobre 2027) vanno a *Dove suona la musica*; poi gli editori non usati per *Chi apre perde* da ottobre 2027. Regola: **un libro per destinazione**.
 
 ### Testo della mail agli editori (nomi aggiornati il 2/11)
 Oggetto: Proposta di manoscritto – «Chi apre perde», romanzo inedito
