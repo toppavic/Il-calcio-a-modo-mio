@@ -50,7 +50,7 @@
 | luglio 2027 | Premio Calvino, se il bando conferma i requisiti |
 
 ## Documento "Chi apre perde – Piano di invio" (Claude Docs, 17/10, altra conversazione)
-Link: https://claude.ai/artifact/EKfDgDMAxM81HJDnYVNnM3 — letto il 2/11. Contiene in più: Premio Todaro-Faranda (28/2/2027), IoScrittore 2027 (gennaio-aprile), Premio Navarro (15/4/2027), elenco editori via email (Marcos y Marcos, Baldini+Castoldi, Il Saggiatore, Elliot, Hacca, Laurana, Nutrimenti, Fernandel, NEO, Castelvecchi; poi Giunti/Bompiani, Mondadori, Adelphi, Fazi), sezione sull'IA (il Premio Inedito de L'Espresso esclude i testi scritti con l'IA), **Premio Dostoevskij (Aletti) già inviato, risultati dopo il 21/12/2026**. La sinossi e la mail lì hanno ancora i nomi vecchi (Matteo, Giulia, Sieci) e una versione del finale diversa.
+Link: https://claude.ai/artifact/EKfDgDMAxM81HJDnYVNnM3 — letto il 2/11; il 2/11 aggiunta la riga "Edizioni E/O · Inviato il 29/10" nel Calendario. Contiene in più: Premio Todaro-Faranda (28/2/2027), IoScrittore 2027 (gennaio-aprile), Premio Navarro (15/4/2027), elenco editori via email (Marcos y Marcos, Baldini+Castoldi, Il Saggiatore, Elliot, Hacca, Laurana, Nutrimenti, Fernandel, NEO, Castelvecchi; poi Giunti/Bompiani, Mondadori, Adelphi, Fazi), sezione sull'IA (il Premio Inedito de L'Espresso esclude i testi scritti con l'IA), **Premio Dostoevskij (Aletti) già inviato, risultati dopo il 21/12/2026**. La sinossi e la mail lì hanno ancora i nomi vecchi (Matteo, Giulia, Sieci) e una versione del finale diversa.
 
 ## Registro degli invii
 | Data | A chi | Come | Risposta |
