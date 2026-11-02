@@ -174,3 +174,9 @@ Post 11 (gol solo con gli esterni) programmato dall'allenatore per sabato 31/10 
 
 ## 1/11 – Reel "La linea decide" programmato (IG + TikTok, 19:00)
 Nota per i prossimi Reel: fare **due versioni del finale**, una per Instagram con "Link in bio" e una per TikTok senza (su TikTok non c'è link in bio). Questa volta l'allenatore l'ha lasciato così anche su TikTok.
+
+## 2/11 – Numeri della settimana 25/10-1/11 (screenshot delle 7:25)
+- **Instagram**: 1.911 visualizzazioni (3.063 la settimana prima), 98% follower, follower netti +0 (4.015), 36 interazioni, 22 visite al profilo, **1 tocco sul link in bio**. Post 1,4K · Storie 362 · Reel 135. Migliori: Pressare è individuale 479 · Uno va in pressione 411 · Reel La linea decide 406 (in 13 ore) · Esterni 381 · storia "Bravi ragazzi" 205. Pubblico 93,7% uomini, 35-54 anni 65%, Italia 87%. Follower più attivi: domenica 18-24, lunedì 12-15; picchi alle 18 e alle 21.
+- **TikTok**: **168 follower** (117 il 25/10: +51 in 8 giorni, circa 6 al giorno). Esterni **1.922** (il migliore di sempre) · Se corri solo tu 1.064 · Percorso 1 annuncio 887 · Reel La linea decide 844 (13 ore) · Uno va in pressione 668 · Pressare è individuale 571.
+- **Etsy**: 2 visite, 0 ordini in 7 giorni.
+- **Lettura**: si cresce su TikTok, dove non c'è un link cliccabile; Instagram ha il link ma è fermo e arriva solo ai follower. Per questo Etsy non riceve visite. Il formato che rende di più è "una regola che sorprende" (Esterni). **Decisione della settimana**: verificare venerdì 6/11 se con l'account TikTok Business si può mettere subito il link in bio (con la musica commerciale limitata); se sì, link al Percorso 1 e poi al Percorso 2. Nei caroselli sulla linea, aprire sempre con una regola o un principio che sorprende. TikTok: obiettivo 200 del 28/11 quasi raggiunto, nuovo traguardo 300 entro il 31/12 confermato.
