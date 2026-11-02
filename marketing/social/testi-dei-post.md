@@ -238,3 +238,16 @@ Con una progressione. Percorso 1, La ricerca del portiere: 7 tappe. Link in bio.
 
 **Didascalia TikTok**
 Palla scoperta: la linea scappa. Palla coperta: la linea accorcia. È quello che ci hanno sempre insegnato. Ma come si insegna davvero? Percorso 1, La ricerca del portiere, su Etsy: ilcalcioamodomio. #allenatore #calcio #mister #lineadifensiva
+
+## Post 12 – "Si difende la palla, non gli uomini" (martedì 3/11, 13:00, 4 slide, tema scuro)
+Primo post di preparazione al Percorso 2 (uscita 17/11). Principio dal PDF del Percorso 2: il più vicino attacca la palla, l'altro dà la copertura. Domanda e chiusura scritte da Claude. Nessuna esercitazione (niente misure, tempi o regole).
+
+**Didascalia Instagram / Facebook**
+Si difende la palla, non gli uomini.
+Il difensore più vicino attacca la palla, il compagno gli dà la copertura.
+Quando arriva la palla, chi dei tuoi due difensori esce? E l'altro dove va?
+Le novità escono prima sul canale WhatsApp «Il calcio a modo mio»: link in bio.
+#allenatore #calcio #mister #difesa #lineadifensiva
+
+**Didascalia TikTok**
+Si difende la palla, non gli uomini. Il più vicino attacca la palla, l'altro copre. E i tuoi due difensori? Salva il post. #allenatore #calcio #mister #difesa

@@ -198,6 +198,23 @@ def schema_esterni():
   </svg>'''
 
 
+def schema_coppia():
+    return f'''<svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="30" width="420" height="240"/></g>
+    <rect x="460" y="120" width="10" height="60" fill="#fff"/><rect x="30" y="120" width="10" height="60" fill="#fff"/>
+    {g(445, 150, "pP")}{g(55, 150, "pP")}
+    {g(190, 100, "pA")}{g(215, 210, "pA")}
+    <use href="#palla" x="176" y="104"/>
+    {freccia("M318,104 L215,101", True)}
+    {freccia("M335,205 L300,160", True)}
+    {g(330, 100, "pB", 2)}{g(345, 215, "pB", 5)}
+    <text x="262" y="86" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">ATTACCA LA PALLA</text>
+    <text x="290" y="245" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">COPRE</text>
+    <text x="250" y="20" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">2 CONTRO 2 · I DIFENSORI BLU DIFENDONO LA PORTA A DESTRA</text>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -394,6 +411,23 @@ POST = [
         fine_h1="Muovere<span>la palla</span>",
         fine_sub="Le idee dei quaderni escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
         fine_sub_tt="Una regola sola e la palla deve passare da <b>una fascia all'altra</b>. Salva il post per il prossimo allenamento.",
+        azioni=["Salva il post"],
+    ),
+    dict(
+        n=12, senza_foto=True, tema="scuro",
+        gancio="Si difende la palla<span>non gli uomini</span>", h1style="font-size:112px",
+        sub="Il primo principio della <b>linea che difende</b>.",
+        kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER",
+        custom=[
+            dict(kicker="Il principio", titolo="Uno attacca, l’altro copre", schema=schema_coppia(),
+                 testo="Il difensore <b>più vicino</b> attacca la palla.<br>Il compagno gli dà la <b>copertura</b>.",
+                 h2style="margin-bottom:24px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
+            dict(kicker="Domanda", titolo="E i tuoi due difensori?",
+                 html='<p class="desc" style="font-size:52px;line-height:1.3;margin-top:80px">Quando arriva la palla, <b>chi esce</b>?<br><br>E l’altro, <b>dove va</b>?</p>'),
+        ],
+        fine_h1="Si difende<span>la palla</span>",
+        fine_sub="Dai quaderni del mister · <b>Percorso 2</b> in arrivo.<br><br>Le novità escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
+        fine_sub_tt="Dai quaderni del mister · <b>Percorso 2</b> in arrivo. Seguici per non perderlo.",
         azioni=["Salva il post"],
     ),
 ]
