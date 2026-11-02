@@ -57,3 +57,41 @@ Link: https://claude.ai/artifact/EKfDgDMAxM81HJDnYVNnM3 — letto il 2/11; il 2/
 |---|---|---|---|
 | prima del 17/10/2026 | Premio Dostoevskij (Aletti), sezione inedita gratuita | (dal documento Claude Docs) | risultati dopo il 21/12/2026 |
 | 29/10/2026 | Edizioni E/O | modulo online (sinossi, motivazione, ultimo libro E/O letto, estratto PDF Prologo + cap. 1-2 in 28 pagine, genere «Narrativa non di genere»); pagina «proposta ricevuta», nessun'altra conferma | nessuna: se non rispondono entro 6 mesi (fine aprile 2027) è un no; non scrivere a E/O |
+
+## Calendario degli invii (approvato dall'allenatore il 2/11/2026)
+Un invio alla volta, **martedì e sabato mattina** (la sua ora di scrittura). Il promemoria del mattino glielo dice il giorno stesso, con la mail pronta da copiare. Prima di ogni invio Claude controlla sul sito dell'editore indirizzo e regole (anche sull'IA); dopo, segna l'invio qui e nel documento Claude Docs.
+Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il testo è inedito): `Falleri_Chi-apre-perde_manoscritto.pdf` e `.docx` (Times 12, interlinea 1,5, pagine numerate, nome ed email in prima pagina, 71 pagine) · `Falleri_Chi-apre-perde_sinossi.pdf` · `Falleri_Chi-apre-perde_nota-biografica.pdf`. Mandati all'allenatore il 2/11: li tiene sul telefono/Mac.
+
+| Data | A chi | Come |
+|---|---|---|
+| sab 7/11 | Marcos y Marcos | proposte@marcosymarcos.com |
+| mar 10/11 | Baldini+Castoldi | manoscritti@baldinicastoldi.it |
+| sab 14/11 | Il Saggiatore | proposte@ilsaggiatore.com |
+| ~~mar 17/11~~ | (uscita Percorso 2 su Etsy: niente invio) | |
+| sab 21/11 | NEO Edizioni | info@neoedizioni.it |
+| mar 24/11 | Hacca | info@hacca.it |
+| sab 28/11 | Elliot | manoscritti@elliotedizioni.it |
+| mar 1/12 | Laurana | manoscritti@laurana.it |
+| sab 5/12 | Nutrimenti | manoscritti@nutrimenti.net |
+| mar 8/12 | Fernandel | fernandel@fernandel.it |
+| sab 12/12 | Castelvecchi | manoscritti@castelvecchieditore.com |
+| mar 15/12 | Giunti / Bompiani | direzioneeditoriale@giunti.it |
+| sab 19/12 | Mondadori | segreteria.letteraria@mondadori.it |
+| mar 22/12 | Adelphi | manoscritti@adelphi.it (un solo file sotto 5 MB: sinossi + nota + manoscritto) |
+| gennaio 2027 | Fazi | modulo online quando riapre |
+| gennaio-aprile 2027 | IoScrittore | iscrizione sulla piattaforma |
+| entro 20/2/2027 | Premio Todaro-Faranda (scade 28/2) | regolamento PDF, regola sull'IA |
+| entro 10/4/2027 | Premio Navarro (scade 15/4) | email + copia cartacea |
+| luglio-ottobre 2027 | Premio Calvino | dal sito, quando esce il bando |
+
+### Testo della mail agli editori (nomi aggiornati il 2/11)
+Oggetto: Proposta di manoscritto – «Chi apre perde», romanzo inedito
+Allegati: manoscritto · sinossi · nota biografica
+
+Gentile redazione di [editore],
+vi propongo in lettura «Chi apre perde», il mio primo romanzo, inedito, di circa 121.000 battute.
+«Mi sto ammazzando, Stefano.» Quando il suo migliore amico gli telefona per dirgli questo, Stefano promette di arrivare in quaranta minuti e parte. Il romanzo è quella corsa in macchina, tra code, un trattore in salita e i ricordi di un'amicizia lunga quarant'anni fatta di partite, battute e cose mai dette. È una storia sull'amicizia maschile e sulla difficoltà di chiedere aiuto, raccontata con ironia.
+In allegato trovate il manoscritto completo, la sinossi e una breve nota biografica.
+Vi ringrazio per l'attenzione e resto a disposizione.
+Cordiali saluti,
+Matteo Falleri
