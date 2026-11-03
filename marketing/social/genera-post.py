@@ -415,7 +415,7 @@ POST = [
     ),
     dict(
         n=12, senza_foto=True, tema="scuro",
-        gancio="Si difende la palla<span>non gli uomini</span>", h1style="font-size:112px",
+        gancio="Si difende sulla palla<span>non sugli uomini</span>", h1style="font-size:112px",
         sub="Il primo principio della <b>linea che difende</b>.",
         kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER",
         custom=[
@@ -425,7 +425,7 @@ POST = [
             dict(kicker="Domanda", titolo="E i tuoi due difensori?",
                  html='<p class="desc" style="font-size:52px;line-height:1.3;margin-top:80px">Quando arriva la palla, <b>chi esce</b>?<br><br>E l’altro, <b>dove va</b>?</p>'),
         ],
-        fine_h1="Si difende<span>la palla</span>",
+        fine_h1="Si difende<span>sulla palla</span>",
         fine_sub="Dai quaderni del mister · <b>Percorso 2</b> in arrivo.<br><br>Le novità escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
         fine_sub_tt="Dai quaderni del mister · <b>Percorso 2</b> in arrivo. Seguici per non perderlo.",
         azioni=["Salva il post"],
