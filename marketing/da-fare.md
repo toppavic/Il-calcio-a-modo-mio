@@ -6,12 +6,12 @@ Regola dei post sulla linea: **un principio per post**, mai l'esercitazione comp
 | Giorno | Ora | Cosa (una sola cosa dell'allenatore) | Dove | Vai a preparare di là |
 |---|---|---|---|---|
 | Lun 2 | 18:00 | Diario "Appunti 2.0" | FB diario | in mattinata, conversazione FACEBOOK diario |
-| Mar 3 | 13:00 | **Carosello 12 "Si difende la palla, non gli uomini"** (chi attacca la palla, chi copre) programmato | IG + TikTok | – |
+| Mar 3 | 13:00 | ✅ **Carosello 12 "Si difende sulla palla, non sugli uomini"** (chi attacca la palla, chi copre) programmato | IG + TikTok | – |
 | Mer 4 | sera | Diario Fiorentina (discussione della settimana) · campo 18-21 | FB diario | martedì sera, conversazione FACEBOOK diario |
-| Gio 5 | 13:00 | **Carosello 13 "In inferiorità si legge la palla"** (la coppia contro quattro) programmato | IG + TikTok | – |
-| Ven 6 | – | Screenshot statistiche Etsy · campo 18-21 | Etsy | – |
-| Sab 7 | 13:00 | **Carosello 14 "La linea scivola con la palla"** programmato | IG + TikTok | foto dei fogli all'altra chat se ci sono |
-| Dom 8 | 19:00 | Reel sulla coppia (chi attacca la palla, chi copre) programmato · sera screenshot della settimana + iscritti canale | IG + TikTok | – |
+| Gio 5 | 13:00 | **Carosello 13 "In inferiorità si legge la palla"** (pronto, 3 immagini) programmato + prima immagine nel gruppo FB "L'allenatore di Calcio" | IG + TikTok + gruppo FB | – |
+| Ven 6 | – | Screenshot statistiche Etsy · verifica link in bio con TikTok Business · campo 18-21 | Etsy + TikTok | – |
+| Sab 7 | mattina + 13:00 | **Invio del romanzo a Marcos y Marcos** · carosello 14 "La linea scivola con la palla" programmato | email + IG + TikTok | foto dei fogli all'altra chat se ci sono |
+| Dom 8 | 19:00 | Reel sulla coppia programmato (su IG come Reel di prova) · sera screenshot della settimana + iscritti canale + follower FB | IG + TikTok | – |
 
 Tempo per scrivere (suo): martedì e sabato mattina, 1 ora.
 
