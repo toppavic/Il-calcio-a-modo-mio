@@ -215,6 +215,24 @@ def schema_coppia():
   </svg>'''
 
 
+def schema_coppia4():
+    return f'''<svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="30" width="420" height="240"/></g>
+    <rect x="460" y="120" width="10" height="60" fill="#fff"/><rect x="30" y="120" width="10" height="60" fill="#fff"/>
+    {g(445, 150, "pP")}{g(55, 150, "pP")}
+    {g(200, 70, "pA")}{g(230, 125, "pA")}{g(235, 185, "pA")}{g(205, 240, "pA")}
+    <use href="#palla" x="186" y="74"/>
+    {freccia("M318,82 L222,72", True)}
+    {freccia("M352,190 L330,158", True)}
+    {g(330, 85, "pB", 2)}{g(360, 200, "pB", 5)}
+    <rect x="300" y="110" width="110" height="80" rx="8" fill="#f2c230" fill-opacity=".15" stroke="#f2c230" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="270" y="52" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">ATTACCA LA PALLA</text>
+    <text x="355" y="232" fill="#f2c230" font-family="Oswald" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">COPRE LO SPAZIO PIÙ PERICOLOSO</text>
+    <text x="250" y="20" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">2 CONTRO 4 · I DIFENSORI BLU DIFENDONO LA PORTA A DESTRA</text>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -426,6 +444,22 @@ POST = [
                  html='<p class="desc" style="font-size:52px;line-height:1.3;margin-top:80px">Quando arriva la palla, <b>chi esce</b>?<br><br>E l’altro, <b>dove va</b>?</p>'),
         ],
         fine_h1="Si difende<span>sulla palla</span>",
+        fine_sub="Dai quaderni del mister · <b>Percorso 2</b> in arrivo.<br><br>Le novità escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
+        fine_sub_tt="Dai quaderni del mister · <b>Percorso 2</b> in arrivo. Seguici per non perderlo.",
+        azioni=["Salva il post"],
+    ),
+    dict(
+        n=13, senza_foto=True, tema="verde",
+        gancio="In inferiorità<span>si legge la palla</span>", h1style="font-size:120px",
+        sub="Due difensori contro <b>quattro attaccanti</b>.",
+        kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER",
+        custom=[
+            dict(kicker="Il principio", titolo="Uno attacca, l’altro copre lo spazio", schema=schema_coppia4(),
+                 testo="Il <b>più vicino</b> attacca la palla. Il compagno copre lo <b>spazio più pericoloso</b>.<br><br>Due contro quattro: <b>chi marchi?</b>",
+                 html='<p class="desc" style="margin-top:28px;font-family:Oswald;text-transform:uppercase;letter-spacing:.12em;font-size:30px;color:#b8860b">Percorso 2 · in arrivo il 17 novembre</p>',
+                 h2style="font-size:66px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
+        ],
+        fine_h1="Si legge<span>la palla</span>",
         fine_sub="Dai quaderni del mister · <b>Percorso 2</b> in arrivo.<br><br>Le novità escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
         fine_sub_tt="Dai quaderni del mister · <b>Percorso 2</b> in arrivo. Seguici per non perderlo.",
         azioni=["Salva il post"],
