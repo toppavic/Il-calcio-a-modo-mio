@@ -183,3 +183,4 @@ Nota per i prossimi Reel: fare **due versioni del finale**, una per Instagram co
 
 ## 3/11 – Regola nuova per i caroselli (osservazione dell'allenatore)
 Le persone guardano la copertina e la seconda immagine; la terza e la quarta (dove ci sono cosa fare, dove andare, il rimando) le guardano molto meno. Da giovedì 5/11: **caroselli da 3 immagini** (copertina · contenuto con principio e domanda insieme · chiusura), **il rimando anche in fondo alla seconda immagine** (una riga) e **nella prima riga della didascalia**. Niente informazioni importanti dalla terza immagine in poi.
+- 5/11: post 13 su TikTok pubblicato alle ~11 (non alle 13), didascalia con #ilcalcioamodomio. IG programmato alle 13:00.
