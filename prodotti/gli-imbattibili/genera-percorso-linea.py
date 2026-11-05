@@ -1,4 +1,4 @@
-"""Genera percorso-linea-difende-la-palla.html: Dai quaderni del mister · Percorso 2 · La linea che difende la palla.
+"""Genera percorso-linea-difende-la-palla.html: Dai quaderni del mister · Si difende sulla palla.
 
 Contenuti dell'allenatore (29/10/2026) in prodotti/percorsi/linea-difende-la-palla/bozza.md: progressione 2c2 · 2c4 · 4c6 ·
 4c8 · 6c8 · 6c10, regole a partita, porta vera e porta mobile, porticine esterne, tempi, ruoli. Titoli delle tappe, obiettivi,
@@ -10,11 +10,11 @@ import pathlib
 
 QUI = pathlib.Path(__file__).parent
 p1 = (QUI / "percorso-ricerca-del-portiere.html").read_text()
-PIEDE = "Percorso 2 · La linea che difende la palla"
+PIEDE = "Si difende sulla palla"
 
 testa = p1[: p1.index('<section class="page cop">')]
 testa = testa.replace("<title>Dai quaderni del mister – La ricerca del portiere</title>",
-                      "<title>Dai quaderni del mister – La linea che difende la palla</title>")
+                      "<title>Dai quaderni del mister – Si difende sulla palla</title>")
 testa = testa.replace(".cop { background: #0b1d15;", ".cop { background: #10233a;")
 testa = testa.replace("</style>\n</head>", """
 .chi { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; margin-bottom: 3mm; }
@@ -164,9 +164,9 @@ copertina = f'''<section class="page cop">
   <img class="logo" src="../../materiale/brand/logo-cerchio.png">
   <div style="position:absolute;left:55mm;right:55mm;top:72mm;opacity:.9">{cop_c.svg("100%")}</div>
   <div class="txt">
-    <div class="kick">Il calcio a modo mio · Dai quaderni del mister · Percorso 2</div>
-    <h1>La linea che<span>difende la palla</span></h1>
-    <div class="claim">Si difende la palla, non gli uomini.</div>
+    <div class="kick">Il calcio a modo mio · Dai quaderni del mister</div>
+    <h1>Si difende<span>sulla palla</span></h1>
+    <div class="claim">La linea a quattro, dal 2 contro 2 al 6 contro 10.</div>
     <p class="sub"><b>6 tappe progressive</b>, dalla coppia alla linea difensiva con i due mediani, contro un numero crescente di attaccanti. Sempre a partita: chi segna resta in campo.</p>
   </div>
 </section>'''
@@ -175,7 +175,7 @@ copertina = f'''<section class="page cop">
 # GUIDA
 guida = f'''<section class="page">
   <div class="kicker">Guida al percorso</div>
-  <div class="ex-title"><h2>Difendere la palla, non gli uomini</h2></div>
+  <div class="ex-title"><h2>Si difende sulla palla, non sugli uomini</h2></div>
   <div class="testo" style="margin-top:5mm">
     <p>Il percorso insegna alla <b>linea a 4</b> a difendere lavorando sulla palla. Si parte dalla coppia, nel 2 contro 2, e si arriva alla linea con i due mediani contro dieci attaccanti. La progressione aumenta gradualmente la complessità delle situazioni difensive, dalla coppia alla linea a quattro fino al blocco con i due mediani. In inferiorità numerica diventa fondamentale leggere la palla, attaccarla con il giocatore più vicino e garantire le coperture con gli altri.</p>
     <p>Ogni tappa si gioca <b>a partita</b>: chi segna resta in campo. È questo che fa la differenza, perché i giocatori diventano molto più aggressivi. E non si allena solo la fase difensiva: chi attacca deve fare gol, dal 2 contro 4 c'è il fuorigioco e chi difende, quando recupera, deve giocare bene il primo pallone.</p>
@@ -364,7 +364,7 @@ t6 = tappa(6, "6 contro 10", "Tutto insieme contro dieci",
     "Tutta la metà campo, 52,5 × 68 m", "4 tempi da 5' · recupero 1'30\"", c6.svg(),
     ["Le regole a partita, con il fuorigioco.", "La difesa che recupera deve attraversare una porticina palla al piede, senza tirare."],
     ["Entrano i due centrali: gli attaccanti diventano dieci.", "Nessuna regola nuova: si verifica se il blocco difende da solo."],
-    ["Si difende la palla anche quando gli uomini liberi sono tanti.", "Ogni uscita ha la sua copertura.", "La linea sceglie da sola quando proteggere la profondità e quando accorciare."],
+    ["Si difende sulla palla anche quando gli uomini liberi sono tanti.", "Ogni uscita ha la sua copertura.", "La linea sceglie da sola quando proteggere la profondità e quando accorciare."],
     ["Andare a marcare l'uomo libero lontano dalla palla.", "Perdere la distanza tra mediani e linea.", "Correggere ogni azione dalla panchina."],
     ["Il blocco di sei si muove sulla palla senza indicazioni.", "I gol subiti arrivano solo dopo azioni lunghe.", "Se un comportamento manca, si torna alla tappa che lo allena."])
 
