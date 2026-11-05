@@ -19,7 +19,7 @@ La stagione della Juniores è raccontata anche nel libro «Gli Imbattibili», su
 - Team del negozio: foto e presentazione breve
 - Posizione del negozio: sotto il nome compare «United States» (non è nei Dettagli base)
 - «in italiano» nei titoli dei tre annunci
-- riga sulla copertina del Percorso 1 («7 tappe per insegnare il pressing di squadra»)
+- ~~riga sulla copertina del Percorso 1~~ non serve: la copertina dice già «7 tappe per insegnare alla squadra a pressare insieme» e ora il titolo contiene «La ricerca del portiere»
 
 ## Fatto il 5/11 mattina
 - Foto in evidenza (in campo con il giubbotto verde) con didascalia «In campo con il Vaglia. Da qui nascono gli appunti che trovi nei PDF.»
