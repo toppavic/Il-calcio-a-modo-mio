@@ -36,4 +36,4 @@ Per ogni immagine indica: testo esatto e cosa disegnare nello schema.
 
 - Nei post dei percorsi si dà **un principio per post**, mai l'esercitazione completa né l'ordine delle tappe: quelli restano nel PDF.
 - Mai scrivere "Percorso 1" o "Percorso 2": si usa il nome del PDF.
-- Il rimando va anche nella prima riga della didascalia.
+- Prima riga della didascalia nei percorsi: il principio in una frase concreta, seguito dal nome del PDF (es. «In inferiorità la linea legge la palla, non gli uomini. Da «Si difende sulla palla», su Etsy dal 17 novembre.»). Vale al posto della regola generale sulla prima riga.

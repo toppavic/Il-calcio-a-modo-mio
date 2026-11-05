@@ -2,7 +2,7 @@
 
 ## Da caricare
 
-- **File digitale**: `prodotti/gli-imbattibili/precampionato-allenamenti-1-10.pdf` (64 pagine, 4,2 MB: sotto il limite di 20 MB di Etsy)
+- **File digitale**: `prodotti/gli-imbattibili/precampionato-allenamenti-1-10.pdf` (92 pagine, 4,5 MB: sotto il limite di 20 MB di Etsy)
 - **Foto** (in quest'ordine): `marketing/etsy/immagini/etsy-1.png` … `etsy-4.png` (2000 × 1500)
 - **Tipo**: download digitale · fatto da me · prodotto finito
 - **Prezzo**: 8,11 € (Etsy aggiunge l'IVA al 22% per i compratori italiani: 9,89 €)
@@ -18,12 +18,15 @@ Gli Imbattibili · Il Precampionato: i primi 10 allenamenti di calcio in PDF con
 
 Non sono esercizi presi da internet. Sono i 10 allenamenti del precampionato fatti davvero in campo, trascritti dai quaderni dell'allenatore e impaginati uno per uno: dall'attivazione iniziale alle partite a tema, con tutte le esercitazioni di ogni seduta.
 
-**COSA TROVI NEL PDF (64 pagine)**
+**COSA TROVI NEL PDF (92 pagine)**
 
-- 10 allenamenti completi, ognuno con la scheda della seduta: durata, programma e barra dei tempi
+- 10 allenamenti completi, ognuno aperto dal foglio originale scritto a mano dal mister
+- La scheda della seduta: durata, programma e barra dei tempi
 - Una pagina per ogni esercitazione con obiettivo, schema a colori, organizzazione, svolgimento e punti chiave
 - Le partite a tema con le regole tempo per tempo: tocchi, vincoli e punteggi
 - Il lavoro sulla linea difensiva: uscite, coperture, diagonale invertita sui cross, difesa sul lancio
+- Dopo ogni esercitazione principale, le indicazioni tecniche: obiettivo, tempi effettivi, errori da evitare e comportamenti da osservare
+- Tre livelli sempre distinti: dal quaderno, precisato dall'autore, consigliato
 - Lavoro atletico, rapidità e forza, con tempi e ripetizioni
 
 **GLI ALLENAMENTI**
