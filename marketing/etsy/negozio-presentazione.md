@@ -29,3 +29,8 @@ La stagione della Juniores è raccontata anche nel libro «Gli Imbattibili», su
   - Percorso 1: Schede allenamento calcio in italiano · La ricerca del portiere: 7 tappe per allenare la pressione di squadra · PDF (così il titolo ha lo stesso nome della copertina)
   - In campionato: Schede allenamento calcio in italiano · In campionato: le prime 4 settimane | 9 allenamenti e 4 partite | Juniores imbattuta | PDF
   - Precampionato: Schede allenamento calcio in italiano · Il Precampionato: 10 allenamenti con schemi | Juniores imbattuta | Partite a tema | PDF
+
+## Titoli, seconda versione (5/11, parole di ricerca all'inizio + «in italiano»)
+- Percorso 1: Esercizi pressing calcio PDF in italiano · La ricerca del portiere: 7 tappe per allenare la pressione di squadra (112)
+- Precampionato: Allenamenti precampionato calcio PDF in italiano · 10 sedute con schemi | Juniores imbattuta | Partite a tema (109)
+- In campionato: Allenamenti calcio PDF in italiano · In campionato: 9 sedute e 4 partite | Juniores imbattuta | Le prime 4 settimane (116)
