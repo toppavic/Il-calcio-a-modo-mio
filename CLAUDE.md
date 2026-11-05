@@ -354,3 +354,4 @@ Playwright e Chromium sono già installati nell'ambiente. I font sono locali
 - Più avanti: prefazione (mancano nome, società, stagione, numeri del campionato), pagina
   "Chi sono" con la figura intera (tagliare le scarpe: si vede il marchio Adidas), annunci Etsy,
   versione inglese.
+- **Skill «promozione-etsy-pdf» (5/11)**: l'allenatore l'ha corretta con `marketing/skill/promozione-etsy-pdf-correzioni.md` (92/64 pagine, 3 immagini, percorsi separati, prima riga = principio + nome del PDF). Si carica solo nelle sessioni aperte dopo il 5/11: qui seguire il file delle correzioni. Negozio Etsy sistemato il 5/11 (Italia, foto, presentazione, titoli con «in italiano»): `marketing/etsy/negozio-presentazione.md`.
