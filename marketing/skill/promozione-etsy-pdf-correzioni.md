@@ -37,3 +37,13 @@ Per ogni immagine indica: testo esatto e cosa disegnare nello schema.
 - Nei post dei percorsi si dà **un principio per post**, mai l'esercitazione completa né l'ordine delle tappe: quelli restano nel PDF.
 - Mai scrivere "Percorso 1" o "Percorso 2": si usa il nome del PDF.
 - Prima riga della didascalia nei percorsi: il principio in una frase concreta, seguito dal nome del PDF (es. «In inferiorità la linea legge la palla, non gli uomini. Da «Si difende sulla palla», su Etsy dal 17 novembre.»). Vale al posto della regola generale sulla prima riga.
+
+## 4. Al posto della riga «Matteo non appare mai in video» e della sezione «Reel senza volto» (5/11)
+
+## Reel con avatar (HeyGen)
+
+25-30 secondi, avatar di Matteo con il giubbotto verde, grafiche verde, bianco, nero e oro.
+- Scrivi il testo parlato esatto (circa 70 parole, frasi corte) e l'elenco delle parole chiave da far comparire a schermo.
+- Prima frase: la domanda o la situazione di campo (es. "Due contro quattro. Chi marchi?").
+- Ultima frase: invito al PDF con il nome giusto.
+- Ricorda di attivare l'etichetta «creato con IA» su Instagram e TikTok.
