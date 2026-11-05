@@ -456,12 +456,12 @@ POST = [
         custom=[
             dict(kicker="Il principio", titolo="Uno attacca, l’altro copre lo spazio", schema=schema_coppia4(),
                  testo="Il <b>più vicino</b> attacca la palla. Il compagno copre lo <b>spazio più pericoloso</b>.<br><br>Due contro quattro: <b>chi marchi?</b>",
-                 html='<p class="desc" style="margin-top:28px;font-family:Oswald;text-transform:uppercase;letter-spacing:.12em;font-size:30px;color:#b8860b">Percorso 2 · in arrivo il 17 novembre</p>',
+                 html='<p class="desc" style="margin-top:28px;font-family:Oswald;text-transform:uppercase;letter-spacing:.12em;font-size:30px;color:#b8860b">«Si difende sulla palla» · in arrivo il 17 novembre</p>',
                  h2style="font-size:66px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
         ],
         fine_h1="Si legge<span>la palla</span>",
-        fine_sub="Dai quaderni del mister · <b>Percorso 2</b> in arrivo.<br><br>Le novità escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
-        fine_sub_tt="Dai quaderni del mister · <b>Percorso 2</b> in arrivo. Seguici per non perderlo.",
+        fine_sub="Dai quaderni del mister · <b>Si difende sulla palla</b>: la linea a quattro, dal 2 contro 2 al 6 contro 10. In arrivo il 17 novembre.<br><br>Le novità escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
+        fine_sub_tt="Dai quaderni del mister · <b>Si difende sulla palla</b>: la linea a quattro, dal 2 contro 2 al 6 contro 10. In arrivo il 17 novembre. Seguici per non perderlo.",
         azioni=["Salva il post"],
     ),
 ]

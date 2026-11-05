@@ -256,13 +256,13 @@ Si difende sulla palla, non sugli uomini. Il più vicino attacca la palla, l'alt
 Secondo post di preparazione al Percorso 2. Principio dalla guida del Percorso 2 (in inferiorità si legge la palla, il più vicino la attacca, gli altri coprono). Domanda scritta da Claude. Prima regola dei caroselli a 3 immagini con il rimando nella seconda.
 
 **Didascalia Instagram / Facebook**
-Percorso 2 in arrivo il 17 novembre: seguici per non perderlo.
+«Si difende sulla palla», la linea a quattro dal 2 contro 2 al 6 contro 10: in arrivo il 17 novembre, seguici per non perderlo.
 In inferiorità si legge la palla. Il più vicino la attacca, il compagno copre lo spazio più pericoloso.
 Due contro quattro: chi marchi?
 #allenatore #calcio #mister #difesa #lineadifensiva
 
 **Didascalia TikTok**
-Percorso 2 in arrivo il 17 novembre. In inferiorità si legge la palla: il più vicino la attacca, l'altro copre lo spazio più pericoloso. Due contro quattro, chi marchi? #allenatore #calcio #mister #difesa
+«Si difende sulla palla» in arrivo il 17 novembre. In inferiorità si legge la palla: il più vicino la attacca, l'altro copre lo spazio più pericoloso. Due contro quattro, chi marchi? #allenatore #calcio #mister #difesa
 
 **Gruppo Facebook di allenatori** (solo la prima immagine; gruppo: L'allenatore di Calcio)
 Una domanda per chi allena la difesa.
