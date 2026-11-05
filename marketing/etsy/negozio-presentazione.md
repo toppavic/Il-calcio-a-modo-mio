@@ -20,3 +20,12 @@ La stagione della Juniores è raccontata anche nel libro «Gli Imbattibili», su
 - Posizione del negozio: sotto il nome compare «United States» (non è nei Dettagli base)
 - «in italiano» nei titoli dei tre annunci
 - riga sulla copertina del Percorso 1 («7 tappe per insegnare il pressing di squadra»)
+
+## Fatto il 5/11 mattina
+- Foto in evidenza (in campo con il giubbotto verde) con didascalia «In campo con il Vaglia. Da qui nascono gli appunti che trovi nei PDF.»
+- Ubicazione del negozio: **Italia** (prima risultava United States)
+- Team del negozio: foto, ruolo «Allenatore UEFA B · autore dei PDF», presentazione «Alleno da vent'anni. Qui metto in ordine i miei quaderni di allenamento.»
+- Titoli con «in italiano»:
+  - Percorso 1: Schede allenamento calcio in italiano · La ricerca del portiere: 7 tappe per allenare la pressione di squadra · PDF (così il titolo ha lo stesso nome della copertina)
+  - In campionato: Schede allenamento calcio in italiano · In campionato: le prime 4 settimane | 9 allenamenti e 4 partite | Juniores imbattuta | PDF
+  - Precampionato: Schede allenamento calcio in italiano · Il Precampionato: 10 allenamenti con schemi | Juniores imbattuta | Partite a tema | PDF
