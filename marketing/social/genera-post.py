@@ -237,13 +237,13 @@ def schema_uscite():
     return f'''<svg class="schema" viewBox="0 0 500 330">
     <rect width="500" height="330" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="50" y="65" width="400" height="200"/></g>
-    {g(250, 35, "pA", "A")}{g(250, 297, "pA", "C")}
+    {g(250, 35, "pJ", "A", "#1d2421")}{g(250, 297, "pJ", "C", "#1d2421")}
     <g opacity=".4">{g(130, 100, "pB", 2)}{g(210, 100, "pB", 5)}{g(290, 100, "pB", 6)}{g(370, 100, "pB", 3)}</g>
     {freccia("M210,112 L210,178", True)}
     {freccia("M140,104 L160,118", True)}{freccia("M280,104 L262,118", True)}{freccia("M360,102 L332,108", True)}
     {g(210, 190, "pB", 5)}{g(168, 128, "pB", 2)}{g(254, 128, "pB", 6)}{g(322, 110, "pB", 3)}
     <g fill="none" stroke="#f2c230" stroke-width="2" stroke-dasharray="5 4"><path d="M168,128 L210,190 L254,128"/></g>
-    {g(130, 240, "pA")}{g(210, 240, "pA")}{g(290, 240, "pA")}{g(370, 240, "pA")}
+    {g(130, 240, "pA", 7)}{g(210, 240, "pA", 8)}{g(290, 240, "pA", 4)}{g(370, 240, "pA", 11)}
     <use href="#palla" x="222" y="247"/>
     <text x="250" y="58" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1">20 M</text>
     <text x="465" y="170" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1" transform="rotate(90 465 170)">10 M</text>
@@ -256,13 +256,13 @@ def schema_uscite_L():
     return f'''<svg class="schema" viewBox="0 0 500 330">
     <rect width="500" height="330" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="50" y="65" width="400" height="200"/></g>
-    {g(250, 35, "pA", "A")}{g(250, 297, "pA", "C")}
+    {g(250, 35, "pJ", "A", "#1d2421")}{g(250, 297, "pJ", "C", "#1d2421")}
     <g opacity=".4">{g(130, 100, "pB", 2)}{g(210, 100, "pB", 5)}{g(290, 100, "pB", 6)}{g(370, 100, "pB", 3)}</g>
     <g fill="none" stroke="#f2c230" stroke-width="2" stroke-dasharray="5 4"><path d="M118,190 L118,88 L340,88"/></g>
     {freccia("M130,112 L130,178", True)}
     {freccia("M200,100 L188,100", True)}{freccia("M280,100 L266,100", True)}{freccia("M360,100 L346,100", True)}
     {g(130, 190, "pB", 2)}{g(178, 100, "pB", 5)}{g(254, 100, "pB", 6)}{g(330, 100, "pB", 3)}
-    {g(130, 240, "pA")}{g(210, 240, "pA")}{g(290, 240, "pA")}{g(370, 240, "pA")}
+    {g(130, 240, "pA", 7)}{g(210, 240, "pA", 8)}{g(290, 240, "pA", 4)}{g(370, 240, "pA", 11)}
     <use href="#palla" x="142" y="247"/>
     <text x="250" y="58" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1">20 M</text>
     <text x="465" y="170" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1" transform="rotate(90 465 170)">10 M</text>
