@@ -485,13 +485,14 @@ POST = [
     dict(
         n=15, senza_foto=True, tema="chiaro",
         gancio="Uscire<span>senza lasciare spazio</span>", h1style="font-size:120px",
-        sub="Quattro difensori contro <b>quattro centrocampisti</b>.",
+        sub="Difensori e centrocampisti insieme, per chi gioca con il <b>4-4-2</b>.",
         custom=[
             dict(kicker="Esercitazione · Il Precampionato", titolo="Uscite della difesa sul centrocampo", schema=schema_uscite(),
-                 testo="<b>4 difensori</b> contro <b>4 centrocampisti</b> in un rettangolo di <b>20 × 10 m</b>. <b>A</b> oltre la linea dei difensori, <b>C</b> oltre quella dei centrocampisti.<br><br>Quando un centrocampista riceve, il difensore di fronte <b>esce</b> e i compagni vicini si stringono alle sue spalle: la <b>piramide</b>.",
+                 testo="Per chi gioca con il <b>4-4-2</b>: <b>4 difensori</b> contro <b>4 centrocampisti</b> in un rettangolo di <b>20 × 10 m</b>. I due attaccanti fanno da riferimento: <b>A</b> oltre la linea dei difensori, <b>C</b> oltre quella dei centrocampisti.<br><br>Quando un centrocampista riceve, il difensore di fronte <b>esce</b> e i compagni vicini si stringono alle sue spalle: la <b>piramide</b>.",
                  h2style="font-size:62px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
             dict(kicker="Uscite della difesa", titolo="Le regole",
-                 punti=["<b>1ª parte · 10'</b>: uscite della difesa sul centrocampo, curando piramidi e coperture",
+                 punti=["Con <b>10 giocatori</b> lavorano tutti: 4 difensori, 4 centrocampisti e i 2 attaccanti (A e C)",
+                        "<b>1ª parte · 10'</b>: uscite della difesa sul centrocampo, curando piramidi e coperture",
                         "<b>2ª parte · 10' a punti</b>",
                         "I centrocampisti trovano <b>A</b>: <b>1 punto</b>",
                         "I difensori trovano <b>C</b>: <b>1 punto</b>"],
