@@ -34,3 +34,4 @@ La stagione della Juniores è raccontata anche nel libro «Gli Imbattibili», su
 - Percorso 1: Esercizi pressing calcio PDF in italiano · La ricerca del portiere: 7 tappe per allenare la pressione di squadra (112)
 - Precampionato: Allenamenti precampionato calcio PDF in italiano · 10 sedute con schemi | Juniores imbattuta | Partite a tema (109)
 - In campionato: Allenamenti calcio PDF in italiano · In campionato: 9 sedute e 4 partite | Juniores imbattuta | Le prime 4 settimane (116)
+- 6/11: tag cambiati su Precampionato e In campionato: tolti «regalo allenatore» e «preparazione calcio», messi «esercitazioni calcio» e «allenamento juniores».
