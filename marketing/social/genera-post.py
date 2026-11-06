@@ -252,6 +252,25 @@ def schema_uscite():
   </svg>'''
 
 
+def schema_uscite_L():
+    return f'''<svg class="schema" viewBox="0 0 500 330">
+    <rect width="500" height="330" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="50" y="65" width="400" height="200"/></g>
+    {g(250, 35, "pA", "A")}{g(250, 297, "pA", "C")}
+    <g opacity=".4">{g(130, 100, "pB", 2)}{g(210, 100, "pB", 5)}{g(290, 100, "pB", 6)}{g(370, 100, "pB", 3)}</g>
+    <g fill="none" stroke="#f2c230" stroke-width="2" stroke-dasharray="5 4"><path d="M118,190 L118,88 L340,88"/></g>
+    {freccia("M130,112 L130,178", True)}
+    {freccia("M200,100 L188,100", True)}{freccia("M280,100 L266,100", True)}{freccia("M360,100 L346,100", True)}
+    {g(130, 190, "pB", 2)}{g(178, 100, "pB", 5)}{g(254, 100, "pB", 6)}{g(330, 100, "pB", 3)}
+    {g(130, 240, "pA")}{g(210, 240, "pA")}{g(290, 240, "pA")}{g(370, 240, "pA")}
+    <use href="#palla" x="142" y="247"/>
+    <text x="250" y="58" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1">20 M</text>
+    <text x="465" y="170" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1" transform="rotate(90 465 170)">10 M</text>
+    <text x="148" y="160" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" letter-spacing="1">ESCE</text>
+    <text x="260" y="140" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">GLI ALTRI IN LINEA · USCITA A L</text>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -491,6 +510,9 @@ POST = [
             dict(kicker="Esercitazione · Il Precampionato", titolo="Uscite e scivolamenti, difesa e centrocampo", schema=schema_uscite(),
                  testo="Per chi gioca con il <b>4-4-2</b>: <b>4 difensori</b> contro <b>4 centrocampisti</b> in un rettangolo di <b>20 × 10 m</b>, i due attaccanti come riferimento (<b>A</b> e <b>C</b>). Escono entrambi i reparti.<br><br><b>Palla centrale</b>: esce il giocatore di fronte e i compagni si stringono, terzino opposto compreso: la <b>piramide</b>.<br><b>Palla sull'esterno</b>: esce il laterale e gli altri restano in linea: uscita <b>a L</b>.",
                  h2style="font-size:58px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
+            dict(kicker="Uscite e scivolamenti", titolo="Palla sull'esterno: uscita a L", schema=schema_uscite_L(),
+                 testo="Quando la palla è sull'esterno <b>esce il laterale</b>. Gli altri non formano la piramide: <b>scivolano</b> verso la palla e <b>restano in linea</b>.<br><br>Uno attacca, gli altri in linea: l'uscita <b>a L</b>.",
+                 h2style="font-size:62px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
             dict(kicker="Uscite e scivolamenti", titolo="Come si gioca",
                  punti=["Con <b>10 giocatori</b> lavorano tutti: 4 difensori, 4 centrocampisti e i 2 attaccanti (A e C)",
                         "<b>1ª parte · 10'</b>: si gioca mantenendo gli <b>scivolamenti</b> e le uscite giuste",
