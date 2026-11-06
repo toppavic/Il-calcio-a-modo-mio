@@ -237,17 +237,18 @@ def schema_uscite():
     return f'''<svg class="schema" viewBox="0 0 500 330">
     <rect width="500" height="330" fill="url(#strisce)"/>
     <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="50" y="65" width="400" height="200"/></g>
-    {g(250, 35, "pJ", "A", "#1d2421")}{g(250, 297, "pJ", "C", "#1d2421")}
-    <g opacity=".4">{g(130, 100, "pB", 2)}{g(210, 100, "pB", 5)}{g(290, 100, "pB", 6)}</g>
-    {freccia("M130,112 L130,178", True)}
-    {freccia("M218,108 L178,128", True)}{freccia("M292,108 L252,124", True)}
-    {g(130, 190, "pB", 2)}{g(170, 135, "pB", 5)}{g(245, 130, "pB", 6)}{g(370, 100, "pB", 3)}
-    {g(130, 235, "pA")}{g(210, 240, "pA")}{g(290, 240, "pA")}{g(370, 235, "pA")}
-    <use href="#palla" x="142" y="242"/>
+    {g(250, 35, "pA", "A")}{g(250, 297, "pA", "C")}
+    <g opacity=".4">{g(130, 100, "pB", 2)}{g(210, 100, "pB", 5)}{g(290, 100, "pB", 6)}{g(370, 100, "pB", 3)}</g>
+    {freccia("M210,112 L210,178", True)}
+    {freccia("M140,104 L160,118", True)}{freccia("M280,104 L262,118", True)}{freccia("M360,102 L332,108", True)}
+    {g(210, 190, "pB", 5)}{g(168, 128, "pB", 2)}{g(254, 128, "pB", 6)}{g(322, 110, "pB", 3)}
+    <g fill="none" stroke="#f2c230" stroke-width="2" stroke-dasharray="5 4"><path d="M168,128 L210,190 L254,128"/></g>
+    {g(130, 240, "pA")}{g(210, 240, "pA")}{g(290, 240, "pA")}{g(370, 240, "pA")}
+    <use href="#palla" x="222" y="247"/>
     <text x="250" y="58" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1">20 M</text>
     <text x="465" y="170" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1" transform="rotate(90 465 170)">10 M</text>
-    <text x="100" y="160" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1" transform="rotate(-90 100 160)">ESCE</text>
-    <text x="215" y="170" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">PIRAMIDE</text>
+    <text x="228" y="214" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" letter-spacing="1">ESCE</text>
+    <text x="300" y="175" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" letter-spacing="1">PIRAMIDE</text>
   </svg>'''
 
 
@@ -487,15 +488,14 @@ POST = [
         gancio="Uscire<span>senza lasciare spazio</span>", h1style="font-size:120px",
         sub="Difensori e centrocampisti insieme, per chi gioca con il <b>4-4-2</b>.",
         custom=[
-            dict(kicker="Esercitazione · Il Precampionato", titolo="Uscite della difesa sul centrocampo", schema=schema_uscite(),
-                 testo="Per chi gioca con il <b>4-4-2</b>: <b>4 difensori</b> contro <b>4 centrocampisti</b> in un rettangolo di <b>20 × 10 m</b>. I due attaccanti fanno da riferimento: <b>A</b> oltre la linea dei difensori, <b>C</b> oltre quella dei centrocampisti.<br><br>Quando un centrocampista riceve, il difensore di fronte <b>esce</b> e i compagni vicini si stringono alle sue spalle: la <b>piramide</b>.",
-                 h2style="font-size:62px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
-            dict(kicker="Uscite della difesa", titolo="Le regole",
+            dict(kicker="Esercitazione · Il Precampionato", titolo="Uscite e scivolamenti, difesa e centrocampo", schema=schema_uscite(),
+                 testo="Per chi gioca con il <b>4-4-2</b>: <b>4 difensori</b> contro <b>4 centrocampisti</b> in un rettangolo di <b>20 × 10 m</b>, i due attaccanti come riferimento (<b>A</b> e <b>C</b>). Escono entrambi i reparti.<br><br><b>Palla centrale</b>: esce il giocatore di fronte e i compagni si stringono, terzino opposto compreso: la <b>piramide</b>.<br><b>Palla sull'esterno</b>: esce il laterale e gli altri restano in linea: uscita <b>a L</b>.",
+                 h2style="font-size:58px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
+            dict(kicker="Uscite e scivolamenti", titolo="Come si gioca",
                  punti=["Con <b>10 giocatori</b> lavorano tutti: 4 difensori, 4 centrocampisti e i 2 attaccanti (A e C)",
-                        "<b>1ª parte · 10'</b>: uscite della difesa sul centrocampo, curando piramidi e coperture",
-                        "<b>2ª parte · 10' a punti</b>",
-                        "I centrocampisti trovano <b>A</b>: <b>1 punto</b>",
-                        "I difensori trovano <b>C</b>: <b>1 punto</b>"],
+                        "<b>1ª parte · 10'</b>: si gioca mantenendo gli <b>scivolamenti</b> e le uscite giuste",
+                        "<b>2ª parte · 10'</b>: diventa una <b>partita a punti</b>",
+                        "I centrocampisti trovano <b>A</b>: <b>1 punto</b> · i difensori trovano <b>C</b>: <b>1 punto</b>"],
                  h2style="font-size:72px"),
         ],
         fine_h1="Uscire<span>coperti</span>",
