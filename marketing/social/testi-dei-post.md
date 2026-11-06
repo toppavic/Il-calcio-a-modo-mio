@@ -274,3 +274,15 @@ Esercitazione dell'Allenamento 5 mai pubblicata prima (controllato): uscite dell
 Precisato dall'allenatore il 6/11: è per chi gioca con il 4-4-2, allena difensori e centrocampisti insieme sulle uscite; A e C sono i due attaccanti; con 22 giocatori divisi in due gruppi da 10 lavorano tutti e 10. Niente «te la regalo»: si parla da tecnico.
 Correzioni dell'allenatore (6/11, dopo il primo video): escono entrambi i reparti; piramide solo sulla palla centrale (esce il giocatore di fronte, terzino e centrale si stringono, anche il terzino opposto); sull'esterno esce il laterale e gli altri restano in linea = uscita a L; 1ª parte a partita con obiettivo mantenere gli scivolamenti, poi diventa partita a punti.
 Schemi (6/11, allenatore): attaccanti A e C bianchi; centrocampisti numerati 7 (esterno destro), 8 e 4 (centrali), 11 (esterno sinistro), da sinistra a destra sullo schermo come la linea 2-5-6-3.
+
+**Didascalia Instagram (post 15)**
+Difensori e centrocampisti insieme su uscite e scivolamenti: un lavoro per chi gioca con il 4-4-2.
+4 contro 4 in un rettangolo di 20 × 10 metri, con i due attaccanti come riferimento. Con dieci giocatori lavorano tutti.
+Palla centrale: esce il giocatore di fronte e gli altri si stringono a piramide. Palla sull'esterno: esce il laterale e gli altri restano in linea, a L.
+Voi sulle uscite laterali chiedete la linea o la piramide?
+Le variazioni a partita sono nel Precampionato, link in bio.
+#allenatore #calcio #mister #esercitazionicalcio #faseDifensiva #ilcalcioamodomio
+
+**Didascalia TikTok (post 15)**
+Uscite e scivolamenti per chi gioca con il 4-4-2: palla centrale piramide, palla sull'esterno uscita a L. Le variazioni a partita: cerca Il calcio a modo mio su Etsy.
+#allenatore #calcio #mister #esercizicalcio #ilcalcioamodomio
