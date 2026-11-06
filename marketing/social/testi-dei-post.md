@@ -268,3 +268,6 @@ Due contro quattro: chi marchi?
 Una domanda per chi allena la difesa.
 Quando i miei due difensori si trovano contro quattro attaccanti, non chiedo a nessuno di marcare un uomo: il più vicino attacca la palla e l'altro copre lo spazio più pericoloso.
 Voi come lo allenate? Lavorate più sugli uomini o sulla palla?
+
+## Post 15 – «Uscire senza lasciare spazio» (video HeyGen in regalo, 6/11)
+Esercitazione dell'Allenamento 5 mai pubblicata prima (controllato): uscite della difesa sul centrocampo, 4 contro 4, rettangolo **20 m di larghezza × 10 m** (misura data dall'allenatore il 6/11), A oltre i difensori, C oltre i centrocampisti, 1ª parte 10' uscite con piramide, 2ª parte 10' a punti (centrocampisti trovano A = 1, difensori trovano C = 1). Slide verticali `immagini/tiktok-post15-1..4.png`. Video con avatar HeyGen; prompt scena per scena in `marketing/reel/heygen/modello-prompt.md`.

@@ -233,6 +233,24 @@ def schema_coppia4():
   </svg>'''
 
 
+def schema_uscite():
+    return f'''<svg class="schema" viewBox="0 0 500 330">
+    <rect width="500" height="330" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="50" y="65" width="400" height="200"/></g>
+    {g(250, 35, "pJ", "A", "#1d2421")}{g(250, 297, "pJ", "C", "#1d2421")}
+    <g opacity=".4">{g(130, 100, "pB", 2)}{g(210, 100, "pB", 5)}{g(290, 100, "pB", 6)}</g>
+    {freccia("M130,112 L130,178", True)}
+    {freccia("M218,108 L178,128", True)}{freccia("M292,108 L252,124", True)}
+    {g(130, 190, "pB", 2)}{g(170, 135, "pB", 5)}{g(245, 130, "pB", 6)}{g(370, 100, "pB", 3)}
+    {g(130, 235, "pA")}{g(210, 240, "pA")}{g(290, 240, "pA")}{g(370, 235, "pA")}
+    <use href="#palla" x="142" y="242"/>
+    <text x="250" y="58" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1">20 M</text>
+    <text x="465" y="170" fill="#fff" font-family="Oswald" font-size="13" text-anchor="middle" letter-spacing="1" transform="rotate(90 465 170)">10 M</text>
+    <text x="100" y="160" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1" transform="rotate(-90 100 160)">ESCE</text>
+    <text x="215" y="170" fill="#f2c230" font-family="Oswald" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">PIRAMIDE</text>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -462,6 +480,26 @@ POST = [
         fine_h1="Si legge<span>la palla</span>",
         fine_sub="Dai quaderni del mister · <b>Si difende sulla palla</b>: la linea a quattro, dal 2 contro 2 al 6 contro 10. In arrivo il 17 novembre.<br><br>Le novità escono prima sul canale WhatsApp <b>Il calcio a modo mio</b>. Link in bio.",
         fine_sub_tt="Dai quaderni del mister · <b>Si difende sulla palla</b>: la linea a quattro, dal 2 contro 2 al 6 contro 10. In arrivo il 17 novembre. Seguici per non perderlo.",
+        azioni=["Salva il post"],
+    ),
+    dict(
+        n=15, senza_foto=True, tema="chiaro",
+        gancio="Uscire<span>senza lasciare spazio</span>", h1style="font-size:120px",
+        sub="Quattro difensori contro <b>quattro centrocampisti</b>.",
+        custom=[
+            dict(kicker="Esercitazione · Il Precampionato", titolo="Uscite della difesa sul centrocampo", schema=schema_uscite(),
+                 testo="<b>4 difensori</b> contro <b>4 centrocampisti</b> in un rettangolo di <b>20 × 10 m</b>. <b>A</b> oltre la linea dei difensori, <b>C</b> oltre quella dei centrocampisti.<br><br>Quando un centrocampista riceve, il difensore di fronte <b>esce</b> e i compagni vicini si stringono alle sue spalle: la <b>piramide</b>.",
+                 h2style="font-size:62px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
+            dict(kicker="Uscite della difesa", titolo="Le regole",
+                 punti=["<b>1ª parte · 10'</b>: uscite della difesa sul centrocampo, curando piramidi e coperture",
+                        "<b>2ª parte · 10' a punti</b>",
+                        "I centrocampisti trovano <b>A</b>: <b>1 punto</b>",
+                        "I difensori trovano <b>C</b>: <b>1 punto</b>"],
+                 h2style="font-size:72px"),
+        ],
+        fine_h1="Uscire<span>coperti</span>",
+        fine_sub="È una delle sedute del <b>Precampionato</b> de Gli Imbattibili. Le altre sono nel link in bio.",
+        fine_sub_tt="È una delle sedute del <b>Precampionato</b> de Gli Imbattibili. Cerca <b>Il calcio a modo mio</b> su Etsy.",
         azioni=["Salva il post"],
     ),
 ]
