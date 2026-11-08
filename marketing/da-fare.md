@@ -1,28 +1,27 @@
-# Da fare – settimana 2-8 novembre 2026 (aggiornato da Claude il 2/11; si aggiorna ogni domenica)
+# Da fare – settimana 9-15 novembre 2026 (aggiornato da Claude l'8/11; si aggiorna ogni domenica)
 
-Obiettivo della settimana: preparare l'uscita del **Percorso 2 "La linea che difende la palla"** (Etsy martedì 17/11) e far crescere follower e canale.
-Regola dei post sulla linea: **un principio per post**, mai l'esercitazione completa; i testi vengono dal PDF del Percorso 2 (contenuti dell'allenatore), riscritti per i social.
+Obiettivo della settimana: preparare l'uscita di **«Si difende sulla palla»** (Etsy martedì 17/11, 6,90 €) e continuare con i Reel HeyGen, che portano sconosciuti (Reel del 6/11: 63% non follower).
+Regole: un principio per video sulla linea, mai l'esercitazione completa; prima di proporre un contenuto controllare che non sia già uscito (regola del 6/11); Reel nel formato HeyGen scena per scena (`marketing/reel/heygen/modello-prompt.md`), 20-25 s.
 
 | Giorno | Ora | Cosa (una sola cosa dell'allenatore) | Dove | Vai a preparare di là |
 |---|---|---|---|---|
-| Lun 2 | 18:00 | Diario "Appunti 2.0" | FB diario | in mattinata, conversazione FACEBOOK diario |
-| Mar 3 | 13:00 | ✅ **Carosello 12 "Si difende sulla palla, non sugli uomini"** (chi attacca la palla, chi copre) programmato | IG + TikTok | – |
-| Mer 4 | – | ✅ Diario Fiorentina pubblicato (un solo post: vittoria di lunedì + quello che sarebbe andato giovedì con la formazione) · campo 18-21 | FB diario | – |
-| Gio 5 | 13:00 | **Carosello 13 "In inferiorità si legge la palla"** (pronto, 3 immagini) programmato + prima immagine nel gruppo FB "L'allenatore di Calcio" | IG + TikTok + gruppo FB | – |
-| Ven 6 | – | Screenshot statistiche Etsy · verifica link in bio con TikTok Business · campo 18-21 | Etsy + TikTok | – |
-| Sab 7 | mattina + 13:00 | **Invio del romanzo a Marcos y Marcos** · carosello 14 "La linea scivola con la palla" programmato | email + IG + TikTok | foto dei fogli all'altra chat se ci sono |
-| Dom 8 | 19:00 | Reel sulla coppia programmato (su IG come Reel di prova) · sera screenshot della settimana + iscritti canale + follower FB | IG + TikTok | – |
-
-Tempo per scrivere (suo): martedì e sabato mattina, 1 ora.
+| Dom 8 | pomeriggio + sera | Modulo **Marcos y Marcos** (rimasto da sabato) · sera screenshot della settimana + follower FB | sito editore + IG/TikTok/FB | – |
+| Lun 9 | 18:00 | Diario «Appunti 2.0» | FB diario | in mattinata, conversazione FACEBOOK diario |
+| Mar 10 | mattina + 13:00 | **Invio romanzo a Baldini+Castoldi** · Reel HeyGen sulla linea (principio nuovo) | email/modulo + IG/TikTok | – |
+| Mer 11 | – | Diario Fiorentina · campo 18-21 | FB diario | – |
+| Gio 12 | 13:00 | Reel HeyGen sulla linea (secondo principio) | IG + TikTok | – |
+| Ven 13 | mattina | Screenshot Etsy (con «Visite →» per vedere da dove arrivano) · campo 18-21 | Etsy | – |
+| Sab 14 | mattina + 13:00 | **Invio romanzo a Il Saggiatore** · Reel di annuncio «esce martedì» | email/modulo + IG/TikTok | – |
+| Dom 15 | sera | Controllo dei traguardi del 15/11 + iscritti canale WhatsApp | – | – |
 
 ## Claude prepara
-- [ ] Lun 2: carosello 12 (bozza breve → sì/no → immagini)
-- [ ] Mer 4: carosello 13
-- [ ] Ven 6: carosello 14
-- [ ] Sab 7: Reel della domenica (due finali: IG con "link in bio", TikTok senza)
-- [ ] Settimana del 9/11: annuncio Etsy del Percorso 2 (titolo, descrizione, tag, 5 foto con colore nuovo) e verifica sul sito ufficiale del modulo Giunti per il romanzo
-- [ ] Domenica 8: aggiornare questo file
+- [ ] Lun 9: annuncio Etsy di «Si difende sulla palla» (titolo con parole di ricerca + «in italiano», descrizione, 13 tag, 5 foto con colore nuovo) da far approvare
+- [ ] Lun 9: prompt HeyGen + slide del Reel di martedì (controllare che il principio non sia già uscito)
+- [ ] Mer 11: prompt HeyGen del Reel di giovedì
+- [ ] Ven 13: prompt del Reel di sabato
+- [ ] Prima di ogni invio del romanzo: verificare sul sito dell'editore se vuole mail o modulo (Marcos y Marcos usa solo il modulo)
+- [ ] Dom 15: aggiornare questo file
 
 ## Note
-- Canale WhatsApp: niente messaggio settimanale finché non arrivano allenatori (decisione del 1/11); rimando una volta a settimana in un carosello.
-- Domenica 1/11 gli screenshot della settimana non sono arrivati: chiederli una volta, senza insistere.
+- Il carosello 14 «La linea scivola con la palla» non è stato fatto: sostituito dai Reel HeyGen.
+- Canale WhatsApp: ricontrollo il 15/11.
