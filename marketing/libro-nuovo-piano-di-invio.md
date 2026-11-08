@@ -64,7 +64,7 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 
 | Data | A chi | Come |
 |---|---|---|
-| sab 7/11 (pomeriggio) | Marcos y Marcos | modulo «Invia proposta» su marcosymarcos.com/contatti (verificato 7/11: niente email; rispondono solo se interessati, 1-6 mesi) |
+| mar 10/11 (spostato dal 7/11) | Marcos y Marcos | modulo «Invia proposta» su marcosymarcos.com/contatti (verificato 7/11: niente email; rispondono solo se interessati, 1-6 mesi) |
 | mar 10/11 | Baldini+Castoldi | manoscritti@baldinicastoldi.it |
 | sab 14/11 | Il Saggiatore | proposte@ilsaggiatore.com |
 | ~~mar 17/11~~ | (uscita Percorso 2 su Etsy: niente invio) | |
