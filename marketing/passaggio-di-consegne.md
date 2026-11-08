@@ -199,3 +199,4 @@ Le persone guardano la copertina e la seconda immagine; la terza e la quarta (do
 - **TikTok**: **215 follower** (168 il 1/11, obiettivo 200 al 28/11 già superato), 381 like. Ultimi: 953, 904 (HeyGen 2c4), 1.059 (carosello 13), 1.941 (carosello 12), 1.355 (Reel linea), 2.729 (carosello 11 esterni).
 - **Etsy** (7 giorni): 16 visualizzazioni, 8 visite (prima 2-3), **1 ordine (In campionato), 8,11 €**.
 - Lettura: i Reel HeyGen con esercitazione portano sconosciuti e clic sul link; i caroselli su TikTok restano forti. Tenere entrambi.
+- **FB** 8/11: 1.251 follower (1.247 il 2/11). **Canale WhatsApp**: 3 follower, fermo (ricontrollo 15/11: se è ancora così, chiuderlo dal piano).
