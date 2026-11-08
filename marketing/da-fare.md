@@ -25,3 +25,4 @@ Regole: un principio per video sulla linea, mai l'esercitazione completa; prima 
 ## Note
 - Il carosello 14 «La linea scivola con la palla» non è stato fatto: sostituito dai Reel HeyGen.
 - Canale WhatsApp: ricontrollo il 15/11.
+- Approvato l'8/11: secondo volume «In campionato · le settimane 5-8» dall'Allenamento 20, uscita inizio dicembre. Ricordare all'allenatore, un giorno libero di questa settimana, di mandare i fogli nella conversazione ALLENAMENTI.

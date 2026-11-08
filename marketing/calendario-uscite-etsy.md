@@ -25,3 +25,7 @@ Prezzi bassi finché non ci sono vendite e recensioni.
 
 ## Aggiornamento 25/10
 - **Percorso 1 "La ricerca del portiere" (7 tappe, 6,90 €) è uscito il 21/10**, in anticipo sul 29/10. Prossima uscita: 12/11 (contenuto da decidere con l'allenatore). Il misurare le visite parte dal 23/10 (link primo in bio).
+
+## Aggiornamento 8/11/2026 (approvato dall'allenatore)
+- mar 17/11: «Si difende sulla palla» (Dai quaderni del mister), 6,90 €.
+- **inizio dicembre (proposta: mar 1/12)**: «Gli Imbattibili · In campionato · le settimane 5-8», dall'Allenamento 20 (lun 25/10/2021) con le partite del fine settimana, stesso standard del primo volume (foto dei fogli, indicazioni tecniche, tre livelli). Motivo: la prima vendita del progetto (8/11) è stata In campionato. Fogli da trascrivere nella conversazione ALLENAMENTI, uno alla volta; servono pronti verso il 25/11.
