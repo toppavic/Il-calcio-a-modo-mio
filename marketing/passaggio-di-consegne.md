@@ -193,3 +193,9 @@ Le persone guardano la copertina e la seconda immagine; la terza e la quarta (do
 - 7/11 ore 8: Reel post 15 su IG 601 visualizzazioni (451 account), 63,4% non follower, 6 s, età 25-54 = 78%; IG 4.021 follower (4.015 il 1/11). Bio: non cita i PDF, solo il libro.
 - 7/11: bio IG nuova: «Un modo diverso di vedere il calcio. / Paradossi che diventano allenamenti. / 📖 Gli Imbattibili, il libro / 📋 Gli allenamenti in PDF 👇» con il link Etsy sotto.
 - **8/11/2026: PRIMA VENDITA del progetto** (seconda del negozio): 1 ordine, 8,11 €: **In campionato** (anche se il Reel rimandava al Precampionato: a novembre interessa il materiale per la stagione in corso). Arrivata 2 giorni dopo il primo Reel HeyGen con esercitazione (6/11), la bio IG nuova (7/11) e il negozio sistemato (5-6/11).
+
+## Numeri settimana 1-8/11 (screenshot dell'8/11 sera)
+- **IG** (7 giorni): 4.129 visualizzazioni (settimana prima 1.911), 28,2% non follower, follower netti +8 (10 nuovi, 2 persi) → 4.023; interazioni 62; **visite al profilo 49** (prima 22); **tocchi sul link in bio 12** (prima 1). Reel 2.000 visualizzazioni contro 1.900 dei post. Più visti: carosello 12 «Si difende sulla palla» 748, Reel HeyGen uscite 705, carosello 13 572, Reel 13 441. Più follow: Reel HeyGen uscite (3).
+- **TikTok**: **215 follower** (168 il 1/11, obiettivo 200 al 28/11 già superato), 381 like. Ultimi: 953, 904 (HeyGen 2c4), 1.059 (carosello 13), 1.941 (carosello 12), 1.355 (Reel linea), 2.729 (carosello 11 esterni).
+- **Etsy** (7 giorni): 16 visualizzazioni, 8 visite (prima 2-3), **1 ordine (In campionato), 8,11 €**.
+- Lettura: i Reel HeyGen con esercitazione portano sconosciuti e clic sul link; i caroselli su TikTok restano forti. Tenere entrambi.
