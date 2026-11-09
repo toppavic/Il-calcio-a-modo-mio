@@ -11,3 +11,6 @@ Reel verticale di circa 25 secondi in italiano, per TikTok. Usa esattamente ques
 ## Reel 3 – Uscite della difesa sul centrocampo, in regalo (6/11)
 Allegare tiktok-post15-2 (campo) e tiktok-post15-3 (regole).
 Reel verticale di circa 25 secondi in italiano, per TikTok, con il mio avatar. Usa esattamente questo testo, senza cambiarlo: «Questa te la regalo. Quattro difensori contro quattro centrocampisti, in un rettangolo di venti metri per dieci. Quando un centrocampista riceve, il difensore di fronte esce e i compagni vicini si stringono alle sue spalle: è la piramide. Poi si gioca a punti: uno se i centrocampisti trovano A, uno se i difensori trovano C. È nel mio Precampionato: cerca Il calcio a modo mio su Etsy.» (scene: vedi messaggio del 6/11)
+
+## Reel 4 – «Si difende a partita» (mar 10/11, 13:00; approvato il 9/11)
+Principio dagli appunti dell'allenatore del 29/10 (nei lavori sulla linea si gioca a partita; la difesa che recupera riparte e segna nella porta mobile; a partita i difensori diventano più aggressivi). Nessuna misura, tempo o tappa. Slide: immagini/tiktok-post16-2.png.

@@ -271,6 +271,24 @@ def schema_uscite_L():
   </svg>'''
 
 
+def schema_partita_linea():
+    return f'''<svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5"><rect x="40" y="30" width="420" height="240"/></g>
+    <rect x="460" y="115" width="10" height="70" fill="#fff"/>
+    <rect x="30" y="130" width="10" height="40" fill="#fff"/>
+    {g(445, 150, "pP")}{g(55, 150, "pP")}
+    {g(300, 110, "pA")}{g(320, 200, "pA")}
+    {g(330, 115, "pB", 5)}{g(345, 195, "pB", 6)}
+    <use href="#palla" x="342" y="122"/>
+    {freccia("M318,118 L215,132", True)}{freccia("M332,190 L235,170", True)}
+    <text x="250" y="22" fill="#fff" font-family="Oswald" font-size="12" text-anchor="middle" letter-spacing="1">LA DIFESA RECUPERA PALLA</text>
+    <text x="150" y="100" fill="#f2c230" font-family="Oswald" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">RIPARTE E SEGNA</text>
+    <text x="80" y="200" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">PORTA MOBILE</text>
+    <text x="395" y="235" fill="#fff" font-family="Oswald" font-size="11" text-anchor="middle" letter-spacing="1">PORTA DA DIFENDERE</text>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -523,6 +541,22 @@ POST = [
         fine_h1="Uscire<span>coperti</span>",
         fine_sub="È una delle sedute del <b>Precampionato</b> de Gli Imbattibili. Le altre sono nel link in bio.",
         fine_sub_tt="È una delle sedute del <b>Precampionato</b> de Gli Imbattibili. Cerca <b>Il calcio a modo mio</b> su Etsy.",
+        azioni=["Salva il post"],
+    ),
+    dict(
+        n=16, senza_foto=True, tema="scuro",
+        gancio="Si difende<span>a partita</span>", h1style="font-size:120px",
+        sub="Chi recupera la palla <b>non la butta</b>: riparte e segna.",
+        kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER",
+        custom=[
+            dict(kicker="Il principio", titolo="Recuperi? Riparti", schema=schema_partita_linea(),
+                 testo="Nei lavori sulla linea si gioca <b>sempre a partita</b>. Quando la difesa recupera palla <b>non spazza</b>: deve ripartire e segnare nella <b>porta mobile</b>.<br><br>Così i difensori diventano <b>molto più aggressivi</b>.",
+                 html='<p class="desc" style="margin-top:28px;font-family:Oswald;text-transform:uppercase;letter-spacing:.12em;font-size:30px;color:#b8860b">«Si difende sulla palla» · su Etsy dal 17 novembre</p>',
+                 h2style="font-size:66px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
+        ],
+        fine_h1="Si difende<span>sulla palla</span>",
+        fine_sub="La linea a quattro, dal 2 contro 2 al 6 contro 10. Su Etsy dal 17 novembre.",
+        fine_sub_tt="La linea a quattro, dal 2 contro 2 al 6 contro 10. Su Etsy dal 17 novembre. Seguici per non perderlo.",
         azioni=["Salva il post"],
     ),
 ]
