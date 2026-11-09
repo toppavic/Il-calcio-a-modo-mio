@@ -200,3 +200,4 @@ Le persone guardano la copertina e la seconda immagine; la terza e la quarta (do
 - **Etsy** (7 giorni): 16 visualizzazioni, 8 visite (prima 2-3), **1 ordine (In campionato), 8,11 €**.
 - Lettura: i Reel HeyGen con esercitazione portano sconosciuti e clic sul link; i caroselli su TikTok restano forti. Tenere entrambi.
 - **FB** 8/11: 1.251 follower (1.247 il 2/11). **Canale WhatsApp**: 3 follower, fermo (ricontrollo 15/11: se è ancora così, chiuderlo dal piano).
+- 9/11: dopo la prima vendita, deciso con l'allenatore di NON accelerare (costanza: 3 Reel a settimana mar/gio/sab + diario + invii romanzo) e di dedicare il Reel di giovedì 12/11 a In campionato.
