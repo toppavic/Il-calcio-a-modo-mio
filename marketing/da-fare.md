@@ -7,7 +7,7 @@ Regole: un principio per video sulla linea, mai l'esercitazione completa; prima 
 |---|---|---|---|---|
 | Dom 8 | sera | Screenshot della settimana + follower FB (Marcos y Marcos spostato a martedì, deciso dall'allenatore) | IG/TikTok/FB | – |
 | Lun 9 | 18:00 | Diario «Appunti 2.0» | FB diario | in mattinata, conversazione FACEBOOK diario |
-| Mar 10 | giornata libera + 13:00 | **Invio romanzo a Marcos y Marcos (modulo) e Baldini+Castoldi** · Reel HeyGen sulla linea (principio nuovo) | email/modulo + IG/TikTok | – |
+| Mar 10 | giornata libera + 13:00 | **Invio romanzo a Baldini+Castoldi** (Marcos y Marcos ✅ inviato il 9/11) · Reel HeyGen sulla linea (principio nuovo) | email/modulo + IG/TikTok | – |
 | Mer 11 | – | Diario Fiorentina · campo 18-21 | FB diario | – |
 | Gio 12 | 13:00 | Reel HeyGen sulla linea (secondo principio) | IG + TikTok | – |
 | Ven 13 | mattina | Screenshot Etsy (con «Visite →» per vedere da dove arrivano) · campo 18-21 | Etsy | – |
