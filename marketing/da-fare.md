@@ -9,9 +9,9 @@ Regole: un principio per video sulla linea, mai l'esercitazione completa; prima 
 | Lun 9 | 18:00 | Diario «Appunti 2.0» | FB diario | in mattinata, conversazione FACEBOOK diario |
 | Mar 10 | giornata libera + 13:00 | ✅ **Invio romanzo a Baldini+Castoldi** (Marcos y Marcos ✅ 9/11) · Reel HeyGen sulla linea (principio nuovo) | email/modulo + IG/TikTok | – |
 | Mer 11 | – | Diario Fiorentina · campo 18-21 | FB diario | – |
-| Gio 12 | 13:00 | Reel HeyGen su un'esercitazione di **In campionato** (deciso il 9/11 dopo la prima vendita; controllare che non sia già uscita) | IG + TikTok | – |
+| Gio 12 | 13:00 | **Carosello con un'esercitazione da un PDF in vendita** (meglio In campionato, mai già uscita) + rimando al negozio | IG + TikTok | – |
 | Ven 13 | mattina | Screenshot Etsy (con «Visite →» per vedere da dove arrivano) · campo 18-21 | Etsy | – |
-| Sab 14 | mattina + 13:00 | **Invio romanzo a Il Saggiatore** · **carosello con un'esercitazione da un PDF in vendita** (meglio In campionato, mai già uscita) e rimando al negozio | email/modulo + IG/TikTok | – |
+| Sab 14 | mattina + 13:00 | **Invio romanzo a Il Saggiatore** · Reel HeyGen su IG + carosello con le stesse slide su TikTok, rimando al negozio | email + IG + TikTok | – |
 | Dom 15 | sera | Controllo dei traguardi del 15/11 + iscritti canale WhatsApp | – | – |
 
 ## Claude prepara
