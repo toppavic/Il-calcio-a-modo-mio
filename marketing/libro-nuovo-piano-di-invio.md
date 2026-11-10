@@ -56,6 +56,7 @@ Link: https://claude.ai/artifact/EKfDgDMAxM81HJDnYVNnM3 — letto il 2/11; il 2/
 | Data | A chi | Come | Risposta |
 |---|---|---|---|
 | prima del 17/10/2026 | Premio Dostoevskij (Aletti), sezione inedita gratuita | (dal documento Claude Docs) | risultati dopo il 21/12/2026 |
+| 10/11/2026 mattina | Baldini+Castoldi | email a manoscritti@baldinicastoldi.it (presentazione + nota biografica nel testo; allegati manoscritto PDF 71 p., sinossi, nota biografica) | se non rispondono entro 6 mesi (maggio 2027) è un no |
 | 9/11/2026 ore 8:37 | Marcos y Marcos | modulo «Invia proposta» su marcosymarcos.com/contatti (messaggio con presentazione e nota biografica, allegato il manoscritto PDF con email e pagine numerate); «L'invio è avvenuto con successo» + email automatica «Copia della tua richiesta» con il file caricato | rispondono solo se interessati, 1-6 mesi: nessuna risposta entro maggio 2027 = no |
 | 29/10/2026 | Edizioni E/O | modulo online (sinossi, motivazione, ultimo libro E/O letto, estratto PDF Prologo + cap. 1-2 in 28 pagine, genere «Narrativa non di genere»); pagina «proposta ricevuta», nessun'altra conferma | nessuna: se non rispondono entro 6 mesi (fine aprile 2027) è un no; non scrivere a E/O |
 
@@ -66,7 +67,7 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | Data | A chi | Come |
 |---|---|---|
 | ✅ lun 9/11 (spostato dal 7/11) | Marcos y Marcos | modulo «Invia proposta» su marcosymarcos.com/contatti (verificato 7/11: niente email; rispondono solo se interessati, 1-6 mesi) |
-| mar 10/11 | Baldini+Castoldi | manoscritti@baldinicastoldi.it |
+| ✅ mar 10/11 | Baldini+Castoldi | manoscritti@baldinicastoldi.it |
 | sab 14/11 | Il Saggiatore | proposte@ilsaggiatore.com |
 | ~~mar 17/11~~ | (uscita Percorso 2 su Etsy: niente invio) | |
 | sab 21/11 | NEO Edizioni | info@neoedizioni.it |
