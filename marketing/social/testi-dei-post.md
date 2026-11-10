@@ -286,3 +286,17 @@ Le variazioni a partita sono nel Precampionato, link in bio.
 **Didascalia TikTok (post 15)**
 Uscite e scivolamenti per chi gioca con il 4-4-2: palla centrale piramide, palla sull'esterno uscita a L. Le variazioni a partita: cerca Il calcio a modo mio su Etsy.
 #allenatore #calcio #mister #esercizicalcio #ilcalcioamodomio
+
+## Post 16 – Reel HeyGen «Si difende a partita» (mar 10/11, 13:00)
+Video 25 s controllato: 4 scene come da piano, slide originale, scritte giuste. File: marketing/reel/heygen-si-difende-a-partita.mp4
+
+**Didascalia Instagram**
+Nei miei lavori sulla linea si gioca sempre a partita: la difesa che recupera palla non spazza, riparte e segna. È il principio di «Si difende sulla palla», su Etsy dal 17 novembre.
+Un difensore che sa di poter segnare attacca la palla in un altro modo.
+Voi nelle esercitazioni difensive cosa fa la difesa quando recupera?
+Seguimi per non perdere l'uscita.
+#allenatore #calcio #mister #lineadifensiva #fasedifensiva #ilcalcioamodomio
+
+**Didascalia TikTok**
+Nei miei lavori sulla linea la difesa che recupera non spazza: riparte e segna. È il principio di «Si difende sulla palla», su Etsy dal 17 novembre: seguimi per non perderlo.
+#allenatore #calcio #mister #difesa #ilcalcioamodomio
