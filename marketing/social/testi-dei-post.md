@@ -315,7 +315,7 @@ Voi le sponde le usate più per il possesso o per finalizzare?
 Si segna solo di prima, su passaggio della sponda. 4 contro 4 in 20 × 20 m, 4 sponde per squadra. È una seduta di In campionato: cerca Il calcio a modo mio su Etsy.
 #allenatore #calcio #mister #esercizicalcio #ilcalcioamodomio
 
-## Post 18 – Carosello «Entra in meta, poi scegli la porta» (gio 12/11, 13:00, IG + TikTok)
+## Post 18 – ✅ Carosello «Entra in meta, poi scegli la porta» (gio 12/11: TikTok pubblicato, IG programmato 13:00)
 Partita a meta dell'Allenamento 12 (In campionato), approvata il 12/11. Regola aggiunta dall'allenatore il 12/11: **chi difende non può entrare nella zona di meta**. Nel post solo campo, regola della meta e tocchi da 3 a 2; il dettaglio dei tempi resta nel PDF.
 
 **Didascalia Instagram**
