@@ -634,8 +634,8 @@ POST = [
         sub="Una seduta di <b>In campionato</b>: la partita a meta.",
         custom=[
             dict(kicker="Esercitazione · In campionato", titolo="Partita a meta, 7 contro 7", schema=schema_meta(),
-                 testo="Campo di <b>35 m</b> con una <b>meta di 5 m</b> per lato e <b>3 porticine</b> dietro. Si entra in meta palla al piede e si segna in una porticina. <b>Chi difende in meta non entra.</b> 3 tempi da 10', i tocchi scendono da 3 a 2.",
-                 h2style="font-size:56px;margin-bottom:14px", riqstyle="width:100%;max-width:640px;margin:0 auto"),
+                 testo="<b>Obiettivo:</b> attaccare lo spazio e arrivare in meta palla al piede, poi scegliere subito la porticina libera.<br><b>Organizzazione:</b> 7 contro 7 su un campo di 35 m, con una meta di 5 m per lato e 3 porticine dietro ciascuna.<br><b>Regole:</b> si segna solo dopo essere entrati in meta. I difendenti non possono entrare nella zona di meta. 3 tempi da 10', con i tocchi che scendono da 3 a 2.",
+                 h2style="font-size:52px;margin-bottom:12px", riqstyle="width:100%;max-width:520px;margin:0 auto"),
         ],
         fine_h1="Attacca lo spazio<span>alza la testa</span>",
         fine_sub="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>, con le partite del fine settimana. Le trovi tutte nel negozio: link in bio.",
