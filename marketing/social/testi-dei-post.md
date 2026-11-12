@@ -300,3 +300,17 @@ Seguimi per non perdere l'uscita.
 **Didascalia TikTok**
 Nei miei lavori sulla linea la difesa che recupera non spazza: riparte e segna. È il principio di «Si difende sulla palla», su Etsy dal 17 novembre: seguimi per non perderlo.
 #allenatore #calcio #mister #difesa #ilcalcioamodomio
+
+## Post 17 – Carosello «Si segna solo di prima» (gio 12/11, 13:00, IG + TikTok)
+Esercitazione dell'Allenamento 11 (In campionato), mai pubblicata prima (controllato): 4c4 + 4 sponde per squadra, 20 × 20 m, 2 tocchi dentro, sponde 1 tocco, gol solo di prima su passaggio della sponda, 5 × 5'. Proposta mandata l'11/11 senza risposta: preparato lo stesso, l'allenatore decide se pubblicarlo.
+
+**Didascalia Instagram**
+Il gol vale solo se arriva di prima, sul passaggio della sponda: così si impara a cercare il compagno fuori e ad attaccare subito la porta.
+4 contro 4 in 20 × 20 m, 4 sponde per squadra, 2 tocchi dentro e 1 per le sponde. 5 serie da 5'.
+È una delle 9 sedute di Gli Imbattibili · In campionato: le trovi tutte nel negozio, link in bio.
+Voi le sponde le usate più per il possesso o per finalizzare?
+#allenatore #calcio #mister #esercitazionicalcio #allenamentocalcio #ilcalcioamodomio
+
+**Didascalia TikTok**
+Si segna solo di prima, su passaggio della sponda. 4 contro 4 in 20 × 20 m, 4 sponde per squadra. È una seduta di In campionato: cerca Il calcio a modo mio su Etsy.
+#allenatore #calcio #mister #esercizicalcio #ilcalcioamodomio

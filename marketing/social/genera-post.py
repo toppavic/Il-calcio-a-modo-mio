@@ -289,6 +289,28 @@ def schema_partita_linea():
   </svg>'''
 
 
+def schema_sponde():
+    dentro = (g(180, 120, "pB") + g(320, 120, "pB") + g(180, 260, "pB") + g(320, 260, "pB")
+              + g(200, 150, "pA") + g(300, 150, "pA") + g(200, 230, "pA") + g(300, 230, "pA"))
+    sponde_rosse = g(150, 22, "pA") + g(350, 22, "pA") + g(78, 120, "pA") + g(422, 120, "pA")
+    sponde_blu = g(150, 358, "pB") + g(350, 358, "pB") + g(78, 260, "pB") + g(422, 260, "pB")
+    return f'''<svg class="schema" viewBox="0 0 500 380">
+    <rect width="500" height="380" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5">
+      <rect x="100" y="40" width="300" height="300"/>
+      <line x1="100" y1="190" x2="400" y2="190"/>
+      <rect x="220" y="28" width="60" height="12"/><rect x="220" y="340" width="60" height="12"/>
+    </g>
+    {dentro}{sponde_rosse}{sponde_blu}
+    {freccia("M212,226 L408,128", tratteggio=True)}{freccia("M412,112 L264,44", tratteggio=True)}
+    <use href="#palla" x="214" y="244"/>
+    <g font-family="Oswald" font-size="12" fill="#f2c230" font-weight="700" letter-spacing="1">
+      <text x="30" y="100">SPONDA</text><text x="428" y="100">SPONDA</text>
+      <text x="300" y="62">GOL DI PRIMA</text>
+    </g>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -557,6 +579,20 @@ POST = [
         fine_h1="Si difende<span>sulla palla</span>",
         fine_sub="La linea a quattro, dal 2 contro 2 al 6 contro 10. Su Etsy dal 17 novembre.",
         fine_sub_tt="La linea a quattro, dal 2 contro 2 al 6 contro 10. Su Etsy dal 17 novembre. Seguici per non perderlo.",
+        azioni=["Salva il post"],
+    ),
+    dict(
+        n=17, senza_foto=True, tema="chiaro",
+        gancio="Si segna<span>solo di prima</span>", h1style="font-size:120px",
+        sub="Una seduta di <b>In campionato</b>: 4 contro 4 con le sponde.",
+        custom=[
+            dict(kicker="Esercitazione · In campionato", titolo="4 contro 4 con 8 sponde", schema=schema_sponde(),
+                 testo="<b>20 × 20 m</b>, due porte piccole. Ogni squadra ha <b>4 sponde</b> fuori: due ai lati della porta che attacca, due sui lati.<br><b>2 tocchi</b> dentro, sponde a <b>1 tocco</b>. Gol valido solo <b>di prima su passaggio della sponda</b>. 5 serie da 5'.",
+                 h2style="font-size:56px;margin-bottom:14px", riqstyle="width:100%;max-width:760px;margin:0 auto"),
+        ],
+        fine_h1="Cerca la sponda<span>calcia di prima</span>",
+        fine_sub="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>, con le partite del fine settimana. Le trovi tutte nel negozio: link in bio.",
+        fine_sub_tt="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>. Le trovi tutte su Etsy: cerca <b>Il calcio a modo mio</b>.",
         azioni=["Salva il post"],
     ),
 ]
