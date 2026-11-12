@@ -311,6 +311,39 @@ def schema_sponde():
   </svg>'''
 
 
+def schema_meta():
+    porticine = ""
+    for i, x in enumerate((170, 250, 330), 1):
+        porticine += (f'<rect x="{x-16}" y="14" width="32" height="8" fill="#fff"/>'
+                      f'<rect x="{x-16}" y="398" width="32" height="8" fill="#fff"/>')
+    blu = (g(160, 110, "pB") + g(238, 100, "pB") + g(340, 110, "pB")
+           + g(160, 170, "pB") + g(250, 168, "pB") + g(340, 170, "pB") + g(250, 240, "pB"))
+    rossi = (g(262, 120, "pA") + g(168, 200, "pA") + g(255, 202, "pA") + g(335, 200, "pA")
+             + g(160, 290, "pA") + g(262, 268, "pA") + g(340, 290, "pA"))
+    return f'''<svg class="schema" viewBox="0 0 500 422">
+    <rect width="500" height="422" fill="url(#strisce)"/>
+    <rect x="130" y="22" width="240" height="42" fill="#f2c230" fill-opacity=".22"/>
+    <rect x="130" y="356" width="240" height="42" fill="#f2c230" fill-opacity=".22"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5">
+      <rect x="130" y="22" width="240" height="376"/>
+      <line x1="130" y1="64" x2="370" y2="64"/><line x1="130" y1="356" x2="370" y2="356"/>
+    </g>
+    {porticine}
+    <g font-family="Oswald" font-size="14" fill="#fff" letter-spacing="3" text-anchor="middle">
+      <text x="250" y="48">META</text><text x="250" y="382">META</text>
+    </g>
+    <g font-family="Oswald" font-size="12" fill="#fff" letter-spacing="1">
+      <text x="378" y="47">5 M</text><text x="378" y="381">5 M</text><text x="378" y="214">35 M</text>
+    </g>
+    <g font-family="Oswald" font-size="11" fill="#f2c230" font-weight="700" letter-spacing="1">
+      <text x="10" y="40">CHI DIFENDE</text><text x="10" y="54">NON ENTRA</text>
+    </g>
+    {blu}{rossi}
+    {freccia("M335,188 L310,46", oro=True)}{freccia("M306,40 L322,24", tratteggio=True)}
+    <use href="#palla" x="347" y="192"/>
+  </svg>'''
+
+
 # ---------- Contenuti dei post (regole e punti presi dai fogli dell'allenatore)
 POST = [
     dict(
@@ -591,6 +624,20 @@ POST = [
                  h2style="font-size:56px;margin-bottom:14px", riqstyle="width:100%;max-width:760px;margin:0 auto"),
         ],
         fine_h1="Cerca la sponda<span>calcia di prima</span>",
+        fine_sub="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>, con le partite del fine settimana. Le trovi tutte nel negozio: link in bio.",
+        fine_sub_tt="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>. Le trovi tutte su Etsy: cerca <b>Il calcio a modo mio</b>.",
+        azioni=["Salva il post"],
+    ),
+    dict(
+        n=18, senza_foto=True, tema="chiaro",
+        gancio="Entra in meta<span>poi scegli la porta</span>", h1style="font-size:110px",
+        sub="Una seduta di <b>In campionato</b>: la partita a meta.",
+        custom=[
+            dict(kicker="Esercitazione · In campionato", titolo="Partita a meta, 7 contro 7", schema=schema_meta(),
+                 testo="Campo di <b>35 m</b> con una <b>meta di 5 m</b> per lato e <b>3 porticine</b> dietro. Si entra in meta palla al piede e si segna in una porticina. <b>Chi difende in meta non entra.</b> 3 tempi da 10', i tocchi scendono da 3 a 2.",
+                 h2style="font-size:56px;margin-bottom:14px", riqstyle="width:100%;max-width:640px;margin:0 auto"),
+        ],
+        fine_h1="Attacca lo spazio<span>alza la testa</span>",
         fine_sub="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>, con le partite del fine settimana. Le trovi tutte nel negozio: link in bio.",
         fine_sub_tt="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>. Le trovi tutte su Etsy: cerca <b>Il calcio a modo mio</b>.",
         azioni=["Salva il post"],
