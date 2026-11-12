@@ -301,7 +301,7 @@ Seguimi per non perdere l'uscita.
 Nei miei lavori sulla linea la difesa che recupera non spazza: riparte e segna. È il principio di «Si difende sulla palla», su Etsy dal 17 novembre: seguimi per non perderlo.
 #allenatore #calcio #mister #difesa #ilcalcioamodomio
 
-## Post 17 – Carosello «Si segna solo di prima» (gio 12/11, 13:00, IG + TikTok)
+## Post 17 – ❌ NON PUBBLICARE: «Si segna solo di prima» (4c4 con sponde, Allenamento 11) è un must dell'allenatore, non va dato nei post (12/11)
 Esercitazione dell'Allenamento 11 (In campionato), mai pubblicata prima (controllato): 4c4 + 4 sponde per squadra, 20 × 20 m, 2 tocchi dentro, sponde 1 tocco, gol solo di prima su passaggio della sponda, 5 × 5'. Proposta mandata l'11/11 senza risposta: preparato lo stesso, l'allenatore decide se pubblicarlo.
 
 **Didascalia Instagram**
