@@ -201,3 +201,4 @@ Le persone guardano la copertina e la seconda immagine; la terza e la quarta (do
 - Lettura: i Reel HeyGen con esercitazione portano sconosciuti e clic sul link; i caroselli su TikTok restano forti. Tenere entrambi.
 - **FB** 8/11: 1.251 follower (1.247 il 2/11). **Canale WhatsApp**: 3 follower, fermo (ricontrollo 15/11: se è ancora così, chiuderlo dal piano).
 - 9/11: dopo la prima vendita, deciso con l'allenatore di NON accelerare (costanza: 3 Reel a settimana mar/gio/sab + diario + invii romanzo) e di dedicare il Reel di giovedì 12/11 a In campionato.
+- Etsy 13/11 (7 giorni): 14 visualizzazioni, 5 visite (4 da social media, +4; 0 traffico diretto; **0 dalle ricerche di Etsy**), 1 ordine, 8,11 €. Le visite arrivano solo dai social: il negozio non viene trovato nelle ricerche di Etsy. Proposta: link TikTok con account Business (domenica 15/11).
