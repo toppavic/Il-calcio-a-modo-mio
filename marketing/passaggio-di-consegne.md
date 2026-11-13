@@ -202,3 +202,5 @@ Le persone guardano la copertina e la seconda immagine; la terza e la quarta (do
 - **FB** 8/11: 1.251 follower (1.247 il 2/11). **Canale WhatsApp**: 3 follower, fermo (ricontrollo 15/11: se è ancora così, chiuderlo dal piano).
 - 9/11: dopo la prima vendita, deciso con l'allenatore di NON accelerare (costanza: 3 Reel a settimana mar/gio/sab + diario + invii romanzo) e di dedicare il Reel di giovedì 12/11 a In campionato.
 - Etsy 13/11 (7 giorni): 14 visualizzazioni, 5 visite (4 da social media, +4; 0 traffico diretto; **0 dalle ricerche di Etsy**), 1 ordine, 8,11 €. Le visite arrivano solo dai social: il negozio non viene trovato nelle ricerche di Etsy. Proposta: link TikTok con account Business (domenica 15/11).
+
+- **13/11 TikTok**: niente account aziendale nella v47 (solo «Verified Business», da non usare); link in bio solo da 1.000 follower. Messa in bio la riga «📘 PDF di allenamento: cerca «ilcalcioamodomio» su Etsy». 230 follower; «Si difende sulla palla» 2.056 visualizzazioni (il più visto). Raccomandato un solo messaggio all acquirente di In campionato per la recensione.
