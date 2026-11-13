@@ -1,4 +1,6 @@
-# Annuncio Etsy · Dai quaderni del mister · Si difende sulla palla (bozza 13/11/2026, da approvare)
+# Annuncio Etsy · Dai quaderni del mister · Si difende sulla palla (APPROVATO il 13/11/2026, foto granata e oro)
+
+L'allenatore vuole tutto nel messaggio del mattino di MARTEDÌ 17/11: titolo, prezzo, descrizione, tag (in blocchi da copiare), le 5 foto e il PDF con SendUserFile, passi per caricare. Le foto vanno preparate entro lunedì 16/11.
 
 - **File**: `prodotti/percorsi/linea-difende-la-palla/Dai-quaderni-del-mister_Si-difende-sulla-palla.pdf` (11 pagine, 1 MB)
 - **Prezzo**: 5,66 € (con IVA 22%: 6,90 € dall'Italia) · digitale · quantità 999 · rinnovo automatico · dichiarare generatore di IA
