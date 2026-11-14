@@ -71,12 +71,12 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | ~~sab 14/11~~ | ~~Il Saggiatore~~ | **NO (verificato 14/11)**: la pagina contatti dice che a proposte@ilsaggiatore.com si manda solo saggistica, romanzi ignorati |
 | ~~mar 17/11~~ | (uscita Percorso 2 su Etsy: niente invio) | |
 | ~~sab 21/11~~ | ~~NEO Edizioni~~ | **NO (verificato 14/11)**: invio spontaneo di manoscritti sospeso (pagina contatti) |
-| mar 24/11 | Hacca | **da verificare** (14/11: fonti in contrasto, forse solo posta ordinaria; controllare hacca.it/about) |
-| sab 28/11 | Elliot | manoscritti@elliotedizioni.it |
-| mar 1/12 | Laurana | manoscritti@laurana.it |
-| sab 5/12 | Nutrimenti | manoscritti@nutrimenti.net |
-| mar 8/12 | Fernandel | fernandel@fernandel.it |
-| sab 12/12 | Castelvecchi | manoscritti@castelvecchieditore.com |
+| **sab 14/11** | **Elliot** (anticipato: verificato 14/11 sul sito, contatti: narrativa a manoscritti@elliotedizioni.it) | email |
+| mar 24/11 | Laurana | manoscritti@laurana.it (da verificare) |
+| sab 28/11 | Nutrimenti | manoscritti@nutrimenti.net (da verificare) |
+| mar 1/12 | Fernandel | fernandel@fernandel.it (da verificare) |
+| sab 5/12 | Castelvecchi | manoscritti@castelvecchieditore.com (da verificare) |
+| sab 12/12 | Hacca | solo se la verifica conferma l'invio per email (14/11: fonti in contrasto) |
 | gennaio 2027 | Giunti/Bompiani, Mondadori, Adelphi, Fazi | **da decidere a quale dei due romanzi** (un editore per un solo libro) |
 | gennaio-aprile 2027 | IoScrittore | iscrizione sulla piattaforma (Chi apre perde) |
 | entro 10/4/2027 | Premio Navarro (scade 15/4) | email + copia cartacea (Chi apre perde) |
@@ -97,3 +97,4 @@ Cordiali saluti,
 Matteo Falleri
 
 - **14/11**: verifiche dal web (i siti degli editori non sono raggiungibili da qui): Il Saggiatore e NEO esclusi. Prima del prossimo invio ricontrollare tutto il calendario (Hacca, Elliot, Laurana, Nutrimenti, Fernandel, Castelvecchi).
+- **14/11 (allenatore)**: se un editore non si può, si passa subito a quello dopo e si scala tutto: nessun invio saltato. Oggi Elliot al posto di Il Saggiatore.
