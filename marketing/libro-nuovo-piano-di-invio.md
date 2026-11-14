@@ -96,6 +96,8 @@ In allegato trovate il manoscritto completo, la sinossi e una breve nota biograf
 Vi ringrazio per l'attenzione e resto a disposizione.
 Cordiali saluti,
 Matteo Falleri
+Tel. 391 790 3414
 
 - **14/11**: verifiche dal web (i siti degli editori non sono raggiungibili da qui): Il Saggiatore e NEO esclusi. Prima del prossimo invio ricontrollare tutto il calendario (Hacca, Elliot, Laurana, Nutrimenti, Fernandel, Castelvecchi).
 - **14/11 (allenatore)**: se un editore non si può, si passa subito a quello dopo e si scala tutto: nessun invio saltato. Oggi Elliot al posto di Il Saggiatore.
+- **14/11**: dall'invio a Laurana in poi la firma ha il cellulare (dato dall'allenatore) e il manoscritto ha il telefono in prima pagina (rigenerato, sempre 71 pagine, testo identico).
