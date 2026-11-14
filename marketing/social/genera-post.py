@@ -311,6 +311,28 @@ def schema_sponde():
   </svg>'''
 
 
+def schema_accorcia():
+    return f'''<svg class="schema" viewBox="0 0 500 300">
+    <rect width="500" height="300" fill="url(#strisce)"/>
+    <g fill="none" stroke="#fff" stroke-width="2.5">
+      <rect x="20" y="20" width="460" height="260"/>
+      <rect x="370" y="70" width="110" height="160"/><rect x="440" y="115" width="40" height="70"/>
+    </g>
+    <rect x="480" y="125" width="10" height="50" fill="#fff"/>
+    {g(462, 150, "pP")}
+    {g(255, 125, "pA")}{g(230, 215, "pA")}
+    {g(355, 120, "pB", 5)}{g(380, 185, "pB", 6)}
+    <use href="#palla" x="266" y="132"/>
+    {freccia("M342,121 L283,124", True)}{freccia("M382,172 L362,148", True)}
+    {freccia("M270,134 L455,150", tratteggio=True)}
+    <g font-family="Oswald" font-weight="700" letter-spacing="1" text-anchor="middle">
+      <text x="300" y="100" fill="#f2c230" font-size="15">ACCORCIA</text>
+      <text x="410" y="215" fill="#f2c230" font-size="15">COPRI</text>
+      <text x="360" y="268" fill="#fff" font-size="12">SE ASPETTI, TIRA</text>
+    </g>
+  </svg>'''
+
+
 def schema_meta():
     porticine = ""
     for i, x in enumerate((170, 250, 330), 1):
@@ -640,6 +662,22 @@ POST = [
         fine_h1="Attacca lo spazio<span>alza la testa</span>",
         fine_sub="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>, con le partite del fine settimana. Le trovi tutte nel negozio: link in bio.",
         fine_sub_tt="È una delle 9 sedute di <b>Gli Imbattibili · In campionato</b>. Le trovi tutte su Etsy: cerca <b>Il calcio a modo mio</b>.",
+        azioni=["Salva il post"],
+    ),
+    dict(
+        n=19, senza_foto=True, tema="verde",
+        gancio="Se aspetti<span>tira</span>", h1style="font-size:130px",
+        sub="Il difensore più vicino <b>scatta</b> sul portatore. Subito.",
+        kick="Dai quaderni del mister", marchio="DAI QUADERNI DEL MISTER",
+        custom=[
+            dict(kicker="Il principio", titolo="Accorcia prima che tiri", schema=schema_accorcia(),
+                 testo="Quando l'attaccante riceve fuori dall'area, il difensore più vicino deve <b>scattare e accorciare</b> sul portatore: se resta fermo ad aspettarlo, l'attaccante <b>tira subito</b>.<br><br>Mentre il primo attacca la palla, il compagno <b>copre</b> lo spazio alle sue spalle.",
+                 html='<p class="desc" style="margin-top:28px;font-family:Oswald;text-transform:uppercase;letter-spacing:.12em;font-size:30px;color:#b8860b">«Si difende sulla palla» · su Etsy dal 17 novembre</p>',
+                 h2style="font-size:62px;margin-bottom:22px", riqstyle="width:100%;max-width:820px;margin:0 auto"),
+        ],
+        fine_h1="Si difende<span>sulla palla</span>",
+        fine_sub="La linea a quattro, dal 2 contro 2 al 6 contro 10. Su Etsy dal 17 novembre. Intanto nel negozio trovi <b>In campionato</b>: link in bio.",
+        fine_sub_tt="La linea a quattro, dal 2 contro 2 al 6 contro 10. Su Etsy dal 17 novembre. Intanto cerca <b>Il calcio a modo mio</b> su Etsy.",
         azioni=["Salva il post"],
     ),
 ]

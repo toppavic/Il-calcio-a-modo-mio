@@ -68,10 +68,10 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 |---|---|---|
 | ✅ lun 9/11 (spostato dal 7/11) | Marcos y Marcos | modulo «Invia proposta» su marcosymarcos.com/contatti (verificato 7/11: niente email; rispondono solo se interessati, 1-6 mesi) |
 | ✅ mar 10/11 | Baldini+Castoldi | manoscritti@baldinicastoldi.it |
-| sab 14/11 | Il Saggiatore | proposte@ilsaggiatore.com |
+| ~~sab 14/11~~ | ~~Il Saggiatore~~ | **NO (verificato 14/11)**: la pagina contatti dice che a proposte@ilsaggiatore.com si manda solo saggistica, romanzi ignorati |
 | ~~mar 17/11~~ | (uscita Percorso 2 su Etsy: niente invio) | |
-| sab 21/11 | NEO Edizioni | info@neoedizioni.it |
-| mar 24/11 | Hacca | info@hacca.it |
+| ~~sab 21/11~~ | ~~NEO Edizioni~~ | **NO (verificato 14/11)**: invio spontaneo di manoscritti sospeso (pagina contatti) |
+| mar 24/11 | Hacca | **da verificare** (14/11: fonti in contrasto, forse solo posta ordinaria; controllare hacca.it/about) |
 | sab 28/11 | Elliot | manoscritti@elliotedizioni.it |
 | mar 1/12 | Laurana | manoscritti@laurana.it |
 | sab 5/12 | Nutrimenti | manoscritti@nutrimenti.net |
@@ -95,3 +95,5 @@ In allegato trovate il manoscritto completo, la sinossi e una breve nota biograf
 Vi ringrazio per l'attenzione e resto a disposizione.
 Cordiali saluti,
 Matteo Falleri
+
+- **14/11**: verifiche dal web (i siti degli editori non sono raggiungibili da qui): Il Saggiatore e NEO esclusi. Prima del prossimo invio ricontrollare tutto il calendario (Hacca, Elliot, Laurana, Nutrimenti, Fernandel, Castelvecchi).

@@ -14,3 +14,6 @@ Reel verticale di circa 25 secondi in italiano, per TikTok, con il mio avatar. U
 
 ## Reel 4 – «Si difende a partita» (mar 10/11, 13:00; approvato il 9/11)
 Principio dagli appunti dell'allenatore del 29/10 (nei lavori sulla linea si gioca a partita; la difesa che recupera riparte e segna nella porta mobile; a partita i difensori diventano più aggressivi). Nessuna misura, tempo o tappa. Slide: immagini/tiktok-post16-2.png.
+
+## Reel 5 – «Se aspetti, tira» (sab 14/11)
+Allegare tiktok-post19-2 (campo). Testo: «Se aspetti, tira. L'attaccante riceve fuori dall'area: il difensore più vicino deve scattare e accorciare subito sul portatore. Se resta fermo ad aspettarlo, l'attaccante ha il tempo di calciare. Mentre il primo attacca la palla, il compagno copre lo spazio alle sue spalle. È uno dei principi di Si difende sulla palla, su Etsy dal 17 novembre. Intanto cerca Il calcio a modo mio su Etsy.»

@@ -328,3 +328,16 @@ Voi come allenate l'attacco allo spazio?
 **Didascalia TikTok**
 Entri in meta palla al piede, poi scegli la porticina. Chi difende in meta non entra. 7 contro 7 su 35 m. È una seduta di In campionato: cerca Il calcio a modo mio su Etsy.
 #allenatore #calcio #mister #esercizicalcio #ilcalcioamodomio
+
+## Post 19 – Reel HeyGen + carosello «Se aspetti, tira» (sab 14/11)
+Principio dagli appunti dell'allenatore del 29/10 (bozza del PDF sulla linea): i difensori devono scattare e accorciare sul portatore, altrimenti tira subito; il più vicino attacca la palla, l'altro copre. Nessuna misura, tempo o tappa. Slide `immagini/tiktok-post19-1..3.png` e `ig-fb-post19-1..3.png` (tema verde).
+
+**Didascalia Instagram**
+Se aspetti, tira. Il difensore più vicino scatta e accorcia subito sul portatore, il compagno copre lo spazio alle sue spalle.
+È uno dei principi di «Si difende sulla palla», su Etsy dal 17 novembre. Intanto nel negozio trovi In campionato: link in bio.
+I vostri difensori accorciano o aspettano?
+#allenatore #calcio #mister #lineadifensiva #fasedifensiva #ilcalcioamodomio
+
+**Didascalia TikTok**
+Se aspetti, tira: il più vicino scatta sul portatore, il compagno copre. «Si difende sulla palla» esce su Etsy il 17 novembre. Intanto cerca Il calcio a modo mio su Etsy.
+#allenatore #calcio #mister #difesa #ilcalcioamodomio
