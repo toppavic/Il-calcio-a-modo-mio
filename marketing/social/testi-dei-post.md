@@ -329,7 +329,7 @@ Voi come allenate l'attacco allo spazio?
 Entri in meta palla al piede, poi scegli la porticina. Chi difende in meta non entra. 7 contro 7 su 35 m. È una seduta di In campionato: cerca Il calcio a modo mio su Etsy.
 #allenatore #calcio #mister #esercizicalcio #ilcalcioamodomio
 
-## Post 19 – Reel HeyGen + carosello «Se aspetti, tira» (sab 14/11)
+## Post 19 – ✅ Reel HeyGen + carosello «Se aspetti, tira» (sab 14/11: TikTok pubblicato, IG programmato 13:00)
 Principio dagli appunti dell'allenatore del 29/10 (bozza del PDF sulla linea): i difensori devono scattare e accorciare sul portatore, altrimenti tira subito; il più vicino attacca la palla, l'altro copre. Nessuna misura, tempo o tappa. Slide `immagini/tiktok-post19-1..3.png` e `ig-fb-post19-1..3.png` (tema verde).
 
 **Didascalia Instagram**

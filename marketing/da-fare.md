@@ -11,7 +11,7 @@ Regole: un principio per video sulla linea, mai l'esercitazione completa; prima 
 | Mer 11 | – | Diario Fiorentina · campo 18-21 (la scrittura del libro la segue l'allenatore in un altro progetto: qui non se ne parla) | FB diario | – |
 | Gio 12 | 13:00 | **Carosello con un'esercitazione da un PDF in vendita** (meglio In campionato, mai già uscita) + rimando al negozio | IG + TikTok | – |
 | Ven 13 | mattina | Screenshot Etsy (con «Visite →» per vedere da dove arrivano) · campo 18-21 | Etsy | – |
-| Sab 14 | mattina + 13:00 | **Invio romanzo a Il Saggiatore** · Reel HeyGen su IG + carosello con le stesse slide su TikTok, rimando al negozio | email + IG + TikTok | – |
+| Sab 14 | 13:00 | ✅ (niente invio: Il Saggiatore non accetta romanzi) · Reel HeyGen su IG + carosello con le stesse slide su TikTok, rimando al negozio | email + IG + TikTok | – |
 | Dom 15 | sera | Controllo dei traguardi del 15/11 + iscritti canale WhatsApp | – | – |
 
 ## Claude prepara
