@@ -55,6 +55,7 @@ Promemoria del mattino (trig_014qJBMnXCYavpxvEeiUxAQd) riscritto il 15/11 per qu
 Tempo dell'allenatore: lavora 20 ore a settimana al **CAS** (3 giorni), calcio 2 sere + domenica; liberi 2 giorni interi e le mattine dei giorni di allenamento. Inglese: un po'.
 Scartato (15/11, allenatore): gestione dei social per attività locali («non paga nessuno»).
 **Scelta del 15/11: insegnare italiano online agli stranieri** (italki come community tutor, conversazione; poi eventualmente Preply). Commissioni da verificare sui siti ufficiali (blog: italki 15-21%, Preply 100% della prova e 33% all'inizio). Obiettivo 8-10 ore di lezione a settimana nei giorni liberi, 2-3 mesi per arrivare a regime. Primo passo: profilo da insegnante (presentazione scritta + video di 1 minuto).
+**Prova approvata il 15/11 con due controlli (l'allenatore: «non farmi perdere tempo»)**: 1) iscrizione in meno di 2 ore; se italki non accetta o le iscrizioni per l'italiano sono chiuse (tabella su support.italki.com/hc/en-us/articles/115001499873, aggiornata ogni lunedì) ci si ferma o si passa a Preply; 2) se in 4 settimane dall'approvazione non arrivano almeno 5 lezioni pagate, si cerca altro. Mai promettere risultati.
 
 ## Struttura del repository
 
