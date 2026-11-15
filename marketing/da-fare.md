@@ -1,3 +1,5 @@
+> **15/11: PROGETTO CALCIO IN PAUSA** (vedi CLAUDE.md): la tabella sotto non vale più per i contenuti di calcio. Resta solo l'invio del romanzo a Laurana sabato 21. Si cerca un nuovo lavoro da casa (500-600 €/mese).
+
 # Da fare – settimana 16-22 novembre 2026 (aggiornato da Claude il 15/11; si aggiorna ogni domenica)
 
 Obiettivo della settimana: **far uscire «Si difende sulla palla» su Etsy (martedì 17, 6,90 €)** e spingerlo per tutta la settimana, sempre con il rimando al negozio.

@@ -46,6 +46,13 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 - L'allenatore usa **due conversazioni separate**: una per gli **allenamenti** (trascrizione e PDF) e una
   per il **marketing** (post, Etsy, agenda). Tenere ognuna sul suo tema e fare sempre `git pull` prima di lavorare.
 
+## ⛔ 15/11/2026 – PROGETTO CALCIO IN PAUSA (decisione dell'allenatore)
+Gli allenatori avversari studiano i suoi post e questo danneggia la sua squadra (Vaglia). Deciso (sì dell'allenatore):
+niente più post tecnici, Reel, caroselli o schemi; **«Si difende sulla palla» NON esce** (resta nel cassetto per quando cambierà squadra o smetterà);
+i due PDF già su Etsy restano in vendita senza spingerli. Invii del romanzo: continuano.
+**Nuovo obiettivo**: un'entrata di **500-600 € al mese**, da casa, via internet, con qualcosa di serio (no secondo lavoro, no più ore, no PDF banali tipo fogli di calcolo).
+Promemoria del mattino (trig_014qJBMnXCYavpxvEeiUxAQd) riscritto il 15/11 per questa fase.
+
 ## Struttura del repository
 
 - `materiale/precampionato/` – foto originali (`allenamento-NN.jpg`, `allenamento-NN-b.jpg`…)
