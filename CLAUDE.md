@@ -52,6 +52,9 @@ niente più post tecnici, Reel, caroselli o schemi; **«Si difende sulla palla»
 i due PDF già su Etsy restano in vendita senza spingerli. Invii del romanzo: continuano.
 **Nuovo obiettivo**: un'entrata di **500-600 € al mese**, da casa, via internet, con qualcosa di serio (no secondo lavoro, no più ore, no PDF banali tipo fogli di calcolo).
 Promemoria del mattino (trig_014qJBMnXCYavpxvEeiUxAQd) riscritto il 15/11 per questa fase.
+Tempo dell'allenatore: lavora 20 ore a settimana al **CAS** (3 giorni), calcio 2 sere + domenica; liberi 2 giorni interi e le mattine dei giorni di allenamento. Inglese: un po'.
+Scartato (15/11, allenatore): gestione dei social per attività locali («non paga nessuno»).
+**Scelta del 15/11: insegnare italiano online agli stranieri** (italki come community tutor, conversazione; poi eventualmente Preply). Commissioni da verificare sui siti ufficiali (blog: italki 15-21%, Preply 100% della prova e 33% all'inizio). Obiettivo 8-10 ore di lezione a settimana nei giorni liberi, 2-3 mesi per arrivare a regime. Primo passo: profilo da insegnante (presentazione scritta + video di 1 minuto).
 
 ## Struttura del repository
 
