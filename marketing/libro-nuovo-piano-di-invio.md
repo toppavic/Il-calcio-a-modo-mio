@@ -55,7 +55,7 @@ Link: https://claude.ai/artifact/EKfDgDMAxM81HJDnYVNnM3 — letto il 2/11; il 2/
 ## Registro degli invii
 | Data | A chi | Come | Risposta |
 |---|---|---|---|
-| 17/11/2026 mattina | Laurana | email a manoscritti@laurana.it (presentazione nel testo, firma con cellulare; allegati manoscritto PDF, sinossi, nota biografica) | senza risposta entro 6 mesi (maggio 2027) è un no |
+| 17/11/2026 mattina | Laurana | primo invio a manoscritti@laurana.it NON consegnato (casella piena, «user is over quota», ma risposta automatica arrivata); rinviato lo stesso giorno a info@laurana.it (indirizzo previsto dalla pagina contatti) con la stessa mail + nota sulla casella piena; allegati manoscritto PDF, sinossi, nota biografica | senza risposta entro 6 mesi (maggio 2027) è un no |
 | 14/11/2026 mattina | Elliot | email a manoscritti@elliotedizioni.it (presentazione nel testo; allegati manoscritto PDF 71 p., sinossi, nota biografica) | rispondono solo se interessati (una fonte dice entro 3 mesi): nessuna risposta entro maggio 2027 = no |
 | prima del 17/10/2026 | Premio Dostoevskij (Aletti), sezione inedita gratuita | (dal documento Claude Docs) | risultati dopo il 21/12/2026 |
 | 10/11/2026 mattina | Baldini+Castoldi | email a manoscritti@baldinicastoldi.it (presentazione + nota biografica nel testo; allegati manoscritto PDF 71 p., sinossi, nota biografica) | se non rispondono entro 6 mesi (maggio 2027) è un no |
