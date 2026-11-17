@@ -104,3 +104,14 @@ Tel. 391 790 3414
 - **14/11**: dall'invio a Laurana in poi la firma ha il cellulare (dato dall'allenatore) e il manoscritto ha il telefono in prima pagina (rigenerato, sempre 71 pagine, testo identico).
 - **15/11**: calendario scalato ancora per non lasciare vuoto sabato 21 (ex NEO): Laurana passa al 21/11 e gli altri seguono.
 - **17/11**: martedì 17 era libero (l'uscita Etsy è annullata dalla pausa del 15/11): calendario anticipato di un turno, oggi Laurana.
+
+## Scadenze delle risposte (17/11/2026; il promemoria del mattino le ricorda il giorno stesso)
+Silenzio entro la data = no. Non si scrive mai per sollecitare. Dopo un no l'editore torna libero per «Dove suona la musica».
+| Scadenza | Chi | Inviato | Regola |
+|---|---|---|---|
+| dopo il 21/12/2026 | Premio Dostoevskij (Aletti) | prima del 17/10 | escono i risultati: controllare |
+| 28/2/2027 | Edizioni E/O | 29/10/2026 | 4 mesi (regola letta il 19/10; altre fonti dicono attese di 8-10 mesi: chiudere del tutto a fine aprile) |
+| 14/2/2027 | Elliot | 14/11/2026 | 3 mesi (da una fonte di terzi) |
+| 9/5/2027 | Marcos y Marcos | 9/11/2026 | rispondono solo se interessati, 1-6 mesi |
+| 10/5/2027 | Baldini+Castoldi | 10/11/2026 | 6 mesi |
+| 17/5/2027 | Laurana | 17/11/2026 (info@) | 6 mesi |
