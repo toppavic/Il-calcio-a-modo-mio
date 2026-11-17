@@ -73,11 +73,11 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | ~~mar 17/11~~ | (uscita Percorso 2 su Etsy: niente invio) | |
 | ~~sab 21/11~~ | ~~NEO Edizioni~~ | **NO (verificato 14/11)**: invio spontaneo di manoscritti sospeso (pagina contatti) |
 | ✅ **sab 14/11** | **Elliot** (anticipato: verificato 14/11 sul sito, contatti: narrativa a manoscritti@elliotedizioni.it) | email |
-| sab 21/11 | Laurana | manoscritti@laurana.it (da verificare) |
-| mar 24/11 | Nutrimenti | manoscritti@nutrimenti.net (da verificare) |
-| sab 28/11 | Fernandel | fernandel@fernandel.it (da verificare) |
-| mar 1/12 | Castelvecchi | manoscritti@castelvecchieditore.com (da verificare) |
-| sab 5/12 | Hacca | solo se la verifica conferma l'invio per email (14/11: fonti in contrasto) |
+| **mar 17/11** | **Laurana** (verificato 17/11 su laurana.it/contattaci: email a manoscritti@laurana.it, sinossi e breve biografia allegate, recapiti in prima pagina; senza risposta in 6 mesi = no) | email |
+| sab 21/11 | Nutrimenti | manoscritti@nutrimenti.net (da verificare) |
+| mar 24/11 | Fernandel | fernandel@fernandel.it (da verificare) |
+| sab 28/11 | Castelvecchi | manoscritti@castelvecchieditore.com (da verificare) |
+| mar 1/12 | Hacca | solo se la verifica conferma l'invio per email |
 | gennaio 2027 | Giunti/Bompiani, Mondadori, Adelphi, Fazi | **da decidere a quale dei due romanzi** (un editore per un solo libro) |
 | gennaio-aprile 2027 | IoScrittore | iscrizione sulla piattaforma (Chi apre perde) |
 | entro 10/4/2027 | Premio Navarro (scade 15/4) | email + copia cartacea (Chi apre perde) |
@@ -102,3 +102,4 @@ Tel. 391 790 3414
 - **14/11 (allenatore)**: se un editore non si può, si passa subito a quello dopo e si scala tutto: nessun invio saltato. Oggi Elliot al posto di Il Saggiatore.
 - **14/11**: dall'invio a Laurana in poi la firma ha il cellulare (dato dall'allenatore) e il manoscritto ha il telefono in prima pagina (rigenerato, sempre 71 pagine, testo identico).
 - **15/11**: calendario scalato ancora per non lasciare vuoto sabato 21 (ex NEO): Laurana passa al 21/11 e gli altri seguono.
+- **17/11**: martedì 17 era libero (l'uscita Etsy è annullata dalla pausa del 15/11): calendario anticipato di un turno, oggi Laurana.
