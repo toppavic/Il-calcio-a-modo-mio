@@ -16,4 +16,4 @@ Obiettivo della settimana: **la prima lezione di prova su Preply** (controllo: 5
 
 Note
 - 21/11: estratto per gli editori = pp. 1-13 del manoscritto (frontespizio con contatti, dedica, Prologo, Capitolo 1; ~20.000 battute; finisce su «Accelero.»).
-- Nutrimenti (21/11): mail pronta data all'allenatore; conferma dell'invio da chiedere.
+- Nutrimenti: inviato il 21/11 (confermato il 22/11).
