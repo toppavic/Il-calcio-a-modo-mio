@@ -117,3 +117,8 @@ Silenzio entro la data = no. Non si scrive mai per sollecitare. Dopo un no l'edi
 | 9/5/2027 | Marcos y Marcos | 9/11/2026 | rispondono solo se interessati, 1-6 mesi |
 | 10/5/2027 | Baldini+Castoldi | 10/11/2026 | 6 mesi |
 | 17/5/2027 | Laurana | 17/11/2026 (info@) | 6 mesi |
+
+## Racconti (24/11/2026) – testi NON nel repository (inediti)
+- «La guerra in tasca»: circa 12.500 battute, 2.100 parole (Samuele a Firenze e Reza sotto le bombe; l'abitudine alla guerra vista dal telefono). Il PDF esportato da Pages perde le legature «fi/fl» (es. «nestra», «glia»): da rifare dal file originale prima di ogni invio.
+- «Su un letto di bombe» (file «sopra un letto di bombe»): circa 6.100 battute, 1.060 parole (padre e figlio al supermercato dopo la morte della madre; la frase della televisione). Titolo da confermare.
+- Regole: solo concorsi gratuiti e riviste letterarie; un racconto in un posto alla volta finché non risponde; bando verificato sul sito ufficiale. Primi candidati trovati il 24/11 (da verificare, quasi tutti a tema e quindi poco adatti): Le Pagine del Natale (gennaio 2027), Divino Racconto (Zola Predosa), Premio InediTO Colline di Torino (31/1/2027, quota da verificare).
