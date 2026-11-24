@@ -77,7 +77,7 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | ✅ **sab 14/11** | **Elliot** (anticipato: verificato 14/11 sul sito, contatti: narrativa a manoscritti@elliotedizioni.it) | email |
 | ✅ **mar 17/11** | **Laurana** (verificato 17/11 su laurana.it/contattaci: email a manoscritti@laurana.it, sinossi e breve biografia allegate, recapiti in prima pagina; senza risposta in 6 mesi = no) | email |
 | ✅ sab 21/11 | Nutrimenti | manoscritti@nutrimenti.net (verificato 20/11 su nutrimenti.net/manoscritti: presentazione + ESTRATTO di circa 20 pagine Word, i capitoli iniziali, NON il manoscritto intero; niente fantasy, poesia, infanzia; senza risposta in 3 mesi = no) |
-| mar 24/11 | Fernandel | fernandel@fernandel.it (da verificare) |
+| mar 24/11 | Fernandel | fernandel@fernandel.it (verificato 21/11: sinossi + incipit max 20.000 battute, meglio Word che PDF; il sito dice che pubblicherà sempre meno narrativa italiana contemporanea) |
 | sab 28/11 | Castelvecchi | manoscritti@castelvecchieditore.com (da verificare) |
 | mar 1/12 | Hacca | solo se la verifica conferma l'invio per email |
 | gennaio 2027 | Giunti/Bompiani, Mondadori, Adelphi, Fazi | **da decidere a quale dei due romanzi** (un editore per un solo libro) |
