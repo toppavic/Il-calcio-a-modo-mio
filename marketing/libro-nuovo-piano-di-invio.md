@@ -55,6 +55,7 @@ Link: https://claude.ai/artifact/EKfDgDMAxM81HJDnYVNnM3 — letto il 2/11; il 2/
 ## Registro degli invii
 | Data | A chi | Come | Risposta |
 |---|---|---|---|
+| 24/11/2026 | Fernandel | email a fernandel@fernandel.it con presentazione, incipit in Word (Prologo + Capitolo 1, 19.751 battute), sinossi e nota biografica; offerto il manoscritto completo su richiesta (confermato dall'allenatore) | nessun termine indicato: senza risposta entro 6 mesi (24/5/2027) lo consideriamo un no |
 | 21/11/2026 | Nutrimenti | email a manoscritti@nutrimenti.net con presentazione, ESTRATTO (pp. 1-13: Prologo + Capitolo 1, ~20.000 battute), sinossi e nota biografica; offerto il manoscritto completo su richiesta (confermato dall'allenatore il 22/11) | senza risposta entro 3 mesi (21/2/2027) è un no |
 | 17/11/2026 mattina | Laurana | primo invio a manoscritti@laurana.it NON consegnato (casella piena, «user is over quota», ma risposta automatica arrivata); rinviato lo stesso giorno a info@laurana.it (indirizzo previsto dalla pagina contatti) con la stessa mail + nota sulla casella piena; allegati manoscritto PDF, sinossi, nota biografica | senza risposta entro 6 mesi (maggio 2027) è un no |
 | 14/11/2026 mattina | Elliot | email a manoscritti@elliotedizioni.it (presentazione nel testo; allegati manoscritto PDF 71 p., sinossi, nota biografica) | rispondono solo se interessati (una fonte dice entro 3 mesi): nessuna risposta entro maggio 2027 = no |
@@ -77,7 +78,7 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | ✅ **sab 14/11** | **Elliot** (anticipato: verificato 14/11 sul sito, contatti: narrativa a manoscritti@elliotedizioni.it) | email |
 | ✅ **mar 17/11** | **Laurana** (verificato 17/11 su laurana.it/contattaci: email a manoscritti@laurana.it, sinossi e breve biografia allegate, recapiti in prima pagina; senza risposta in 6 mesi = no) | email |
 | ✅ sab 21/11 | Nutrimenti | manoscritti@nutrimenti.net (verificato 20/11 su nutrimenti.net/manoscritti: presentazione + ESTRATTO di circa 20 pagine Word, i capitoli iniziali, NON il manoscritto intero; niente fantasy, poesia, infanzia; senza risposta in 3 mesi = no) |
-| mar 24/11 | Fernandel | fernandel@fernandel.it (verificato 21/11: sinossi + incipit max 20.000 battute, meglio Word che PDF; il sito dice che pubblicherà sempre meno narrativa italiana contemporanea) |
+| ✅ mar 24/11 | Fernandel | fernandel@fernandel.it (verificato 21/11: sinossi + incipit max 20.000 battute, meglio Word che PDF; il sito dice che pubblicherà sempre meno narrativa italiana contemporanea) |
 | sab 28/11 | Castelvecchi | manoscritti@castelvecchieditore.com (da verificare) |
 | mar 1/12 | Hacca | solo se la verifica conferma l'invio per email |
 | gennaio 2027 | Giunti/Bompiani, Mondadori, Adelphi, Fazi | **da decidere a quale dei due romanzi** (un editore per un solo libro) |
@@ -117,6 +118,7 @@ Silenzio entro la data = no. Non si scrive mai per sollecitare. Dopo un no l'edi
 | 9/5/2027 | Marcos y Marcos | 9/11/2026 | rispondono solo se interessati, 1-6 mesi |
 | 10/5/2027 | Baldini+Castoldi | 10/11/2026 | 6 mesi |
 | 17/5/2027 | Laurana | 17/11/2026 (info@) | 6 mesi |
+| 24/5/2027 | Fernandel | 24/11/2026 | nessun termine ufficiale: 6 mesi per prudenza |
 
 ## Racconti (24/11/2026) – testi NON nel repository (inediti)
 - «La guerra in tasca»: circa 12.500 battute, 2.100 parole (Samuele a Firenze e Reza sotto le bombe; l'abitudine alla guerra vista dal telefono). Il PDF esportato da Pages perde le legature «fi/fl» (es. «nestra», «glia»): da rifare dal file originale prima di ogni invio.
