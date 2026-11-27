@@ -79,7 +79,7 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | ✅ **mar 17/11** | **Laurana** (verificato 17/11 su laurana.it/contattaci: email a manoscritti@laurana.it, sinossi e breve biografia allegate, recapiti in prima pagina; senza risposta in 6 mesi = no) | email |
 | ✅ sab 21/11 | Nutrimenti | manoscritti@nutrimenti.net (verificato 20/11 su nutrimenti.net/manoscritti: presentazione + ESTRATTO di circa 20 pagine Word, i capitoli iniziali, NON il manoscritto intero; niente fantasy, poesia, infanzia; senza risposta in 3 mesi = no) |
 | ✅ mar 24/11 | Fernandel | fernandel@fernandel.it (verificato 21/11: sinossi + incipit max 20.000 battute, meglio Word che PDF; il sito dice che pubblicherà sempre meno narrativa italiana contemporanea) |
-| sab 28/11 | Castelvecchi | manoscritti@castelvecchieditore.com (da verificare) |
+| ~~sab 28/11~~ | ~~Castelvecchi~~ | **NO (27/11)**: fa parte del gruppo Lit con Elliot (già inviato il 14/11), Arcana e Ultra; la pagina manoscritti dice che i testi possono passare tra i marchi del gruppo: sarebbe un doppio invio |
 | mar 1/12 | Hacca | solo se la verifica conferma l'invio per email |
 | gennaio 2027 | Giunti/Bompiani, Mondadori, Adelphi, Fazi | **da decidere a quale dei due romanzi** (un editore per un solo libro) |
 | gennaio-aprile 2027 | IoScrittore | iscrizione sulla piattaforma (Chi apre perde) |
@@ -125,3 +125,9 @@ Silenzio entro la data = no. Non si scrive mai per sollecitare. Dopo un no l'edi
 - «Su un letto di bombe» (file «sopra un letto di bombe»): circa 6.100 battute, 1.060 parole (padre e figlio al supermercato dopo la morte della madre; la frase della televisione). Titolo da confermare.
 - Regole: solo concorsi gratuiti e riviste letterarie; un racconto in un posto alla volta finché non risponde; bando verificato sul sito ufficiale. Primi candidati trovati il 24/11 (da verificare, quasi tutti a tema e quindi poco adatti): Le Pagine del Natale (gennaio 2027), Divino Racconto (Zola Predosa), Premio InediTO Colline di Torino (31/1/2027, quota da verificare).
 - Ricerca concorsi racconti 26/11 (aggregatori, da verificare sui bandi): Premio Fracchia 2027 (Casarza Ligure) gratuito, 1 racconto inedito, scadenza 12/5/2027, tema 2027 da leggere sul sito del Comune (2025: «Terreno di meraviglia") · Concorso racconti emiliano romagnoli 2027 gratuito ma solo residenti Emilia-Romagna (escluso) · InediTO Colline di Torino 30 € (escluso) · Racconti nella Rete 30 € (escluso) · INK-7 a pagamento (escluso) · Todaro-Faranda solo romanzi o raccolte · Concorso Rivista Il Mulo n. 5 da guardare. Mancano: riviste letterarie online che accettano racconti.
+
+## 27/11 – Lista racconti (da riviste e concorsi; verificare sul sito il giorno dell'invio)
+Riviste gratuite sempre aperte: La Gazzetta dei Racconti (manoscritti@lagazzettadeiracconti.it, rispondono solo ai selezionati) · Rivista Blam! (racconti@rivistablam.it, 4 mesi di silenzio = no) · Crack (crackrivista@gmail.com, max 15.000 battute; l'iscrizione all'associazione è facoltativa) · Tre racconti, collana «Inediti» (max 15.000 battute) · Colla (info@collacolla.org) · Dis/connessioni letterarie (max 15.000 battute).
+Concorsi gratuiti aperti a tutti: quasi nessuno adatto. Premio Fracchia: bando 2027 non ancora uscito (premiofracchia.it), di solito in primavera, scadenza maggio.
+ATTENZIONE: un racconto pubblicato da una rivista non è più inedito e non può andare ai concorsi per inediti.
+Proposta del 27/11: sab 28/11 «Su un letto di bombe» → La Gazzetta dei Racconti; «La guerra in tasca» → Rivista Blam! appena c'è il file corretto (legature fi/fl). Romanzo: mar 1/12 Hacca (info@hacca.it, regole da ricontrollare).
