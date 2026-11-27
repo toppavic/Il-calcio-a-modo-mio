@@ -80,7 +80,8 @@ Allegati fissi (preparati il 2/11, in scratchpad, NON nel repository perché il 
 | ✅ sab 21/11 | Nutrimenti | manoscritti@nutrimenti.net (verificato 20/11 su nutrimenti.net/manoscritti: presentazione + ESTRATTO di circa 20 pagine Word, i capitoli iniziali, NON il manoscritto intero; niente fantasy, poesia, infanzia; senza risposta in 3 mesi = no) |
 | ✅ mar 24/11 | Fernandel | fernandel@fernandel.it (verificato 21/11: sinossi + incipit max 20.000 battute, meglio Word che PDF; il sito dice che pubblicherà sempre meno narrativa italiana contemporanea) |
 | ~~sab 28/11~~ | ~~Castelvecchi~~ | **NO (27/11)**: fa parte del gruppo Lit con Elliot (già inviato il 14/11), Arcana e Ultra; la pagina manoscritti dice che i testi possono passare tra i marchi del gruppo: sarebbe un doppio invio |
-| mar 1/12 | Hacca | solo se la verifica conferma l'invio per email |
+| **sab 28/11** | **Hacca** (al posto di Castelvecchi, regola del 14/11: si passa subito al successivo) | info@hacca.it (indirizzo dell'elenco recente; il sito rimanda a hacca.it/about) |
+| mar 1/12 | da trovare: nuovo editore indipendente verificato | |
 | gennaio 2027 | Giunti/Bompiani, Mondadori, Adelphi, Fazi | **da decidere a quale dei due romanzi** (un editore per un solo libro) |
 | gennaio-aprile 2027 | IoScrittore | iscrizione sulla piattaforma (Chi apre perde) |
 | entro 10/4/2027 | Premio Navarro (scade 15/4) | email + copia cartacea (Chi apre perde) |
@@ -130,4 +131,4 @@ Silenzio entro la data = no. Non si scrive mai per sollecitare. Dopo un no l'edi
 Riviste gratuite sempre aperte: La Gazzetta dei Racconti (manoscritti@lagazzettadeiracconti.it, rispondono solo ai selezionati) · Rivista Blam! (racconti@rivistablam.it, 4 mesi di silenzio = no) · Crack (crackrivista@gmail.com, max 15.000 battute; l'iscrizione all'associazione è facoltativa) · Tre racconti, collana «Inediti» (max 15.000 battute) · Colla (info@collacolla.org) · Dis/connessioni letterarie (max 15.000 battute).
 Concorsi gratuiti aperti a tutti: quasi nessuno adatto. Premio Fracchia: bando 2027 non ancora uscito (premiofracchia.it), di solito in primavera, scadenza maggio.
 ATTENZIONE: un racconto pubblicato da una rivista non è più inedito e non può andare ai concorsi per inediti.
-Proposta del 27/11: sab 28/11 «Su un letto di bombe» → La Gazzetta dei Racconti; «La guerra in tasca» → Rivista Blam! appena c'è il file corretto (legature fi/fl). Romanzo: mar 1/12 Hacca (info@hacca.it, regole da ricontrollare).
+Proposta del 27/11: sab 28/11 «Su un letto di bombe» → La Gazzetta dei Racconti; «La guerra in tasca» → Rivista Blam! appena c'è il file corretto (legature fi/fl). Romanzo: CORRETTO il 27/11 su richiesta dell'allenatore → sab 28/11 Hacca (non si salta il sabato).
