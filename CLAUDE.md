@@ -49,7 +49,7 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 ## ⛔ 15/11/2026 – PROGETTO CALCIO IN PAUSA (decisione dell'allenatore)
 Gli allenatori avversari studiano i suoi post e questo danneggia la sua squadra (Vaglia). Deciso (sì dell'allenatore):
 niente più post tecnici, Reel, caroselli o schemi; **«Si difende sulla palla» NON esce** (resta nel cassetto per quando cambierà squadra o smetterà);
-i due PDF già su Etsy restano in vendita senza spingerli. Invii del romanzo: **ripartiti il 28/11 con la VERSIONE NUOVA** (manoscritto A4 reimpaginato da Claude, 67 pagine, ~120.000 battute; dettagli nel piano di invio); 8 invii fatti con la versione vecchia; Hacca il 28/11 con la nuova.
+i due PDF già su Etsy restano in vendita senza spingerli. Invii del romanzo: **ripartiti il 28/11 con la VERSIONE NUOVA**. **REGOLA (28/11, allenatore): MAI cambiare l'impaginazione dei suoi manoscritti**: si spedisce il SUO PDF così com'è (al massimo tolta la pagina del copyright 2012 «Stefano Falleri» con l'ISBN vuoto, 80 pagine); il manoscritto A4 reimpaginato da Claude è scartato; 8 invii fatti con la versione vecchia; Hacca il 28/11 con la nuova.
 **Nuovo obiettivo**: un'entrata di **500-600 € al mese**, da casa, via internet, con qualcosa di serio (no secondo lavoro, no più ore, no PDF banali tipo fogli di calcolo).
 Promemoria del mattino (trig_014qJBMnXCYavpxvEeiUxAQd) riscritto il 15/11 per questa fase.
 Tempo dell'allenatore: lavora 20 ore a settimana al **CAS** (3 giorni), calcio 2 sere + domenica; liberi 2 giorni interi e le mattine dei giorni di allenamento. Inglese: un po'.
