@@ -49,7 +49,7 @@ Categoria** (Toscana): allenamenti **mercoledì e venerdì 18-21** (quei giorni 
 ## ⛔ 15/11/2026 – PROGETTO CALCIO IN PAUSA (decisione dell'allenatore)
 Gli allenatori avversari studiano i suoi post e questo danneggia la sua squadra (Vaglia). Deciso (sì dell'allenatore):
 niente più post tecnici, Reel, caroselli o schemi; **«Si difende sulla palla» NON esce** (resta nel cassetto per quando cambierà squadra o smetterà);
-i due PDF già su Etsy restano in vendita senza spingerli. Invii del romanzo: continuano.
+i due PDF già su Etsy restano in vendita senza spingerli. Invii del romanzo: **in pausa dal 28/11** (l'allenatore rivede il testo nel progetto della scrittura; 8 invii fatti, Hacca non inviato; si riparte con la versione nuova quando lo dice lui).
 **Nuovo obiettivo**: un'entrata di **500-600 € al mese**, da casa, via internet, con qualcosa di serio (no secondo lavoro, no più ore, no PDF banali tipo fogli di calcolo).
 Promemoria del mattino (trig_014qJBMnXCYavpxvEeiUxAQd) riscritto il 15/11 per questa fase.
 Tempo dell'allenatore: lavora 20 ore a settimana al **CAS** (3 giorni), calcio 2 sere + domenica; liberi 2 giorni interi e le mattine dei giorni di allenamento. Inglese: un po'.
